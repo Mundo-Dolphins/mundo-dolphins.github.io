@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/gosimple/slug"
 	"log"
 	"os"
 	"path/filepath"
@@ -28,6 +29,7 @@ title: "%s"
 description: "%s"
 date: %s
 draft: %v
+slug: %s
 categories:
   - %s
 ---
@@ -86,6 +88,7 @@ func main() {
 				fmt.Sprintf("%s...", strings.ReplaceAll(post.Description, "\"", "'")[:descriptionLength]),
 				parse.Format("2006-01-02"),
 				false,
+				slug.Make(post.Title),
 				fmt.Sprintf("\"Temporada %s\"", match[1]),
 				post.Description,
 				post.Link,
