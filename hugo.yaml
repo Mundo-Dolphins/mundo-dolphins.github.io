@@ -1,8 +1,46 @@
 baseURL: https://mundodolphins.es/
 title: Mundo Dolphins Podcast
-languageCode: es-ES
+languageCode: es
+DefaultContentLanguage: es
 copyright: Mundo Dolphins
-theme: github.com/heyeshuang/hugo-theme-tokiwa
+theme: github.com/pfadfinder-konstanz/hugo-dpsg
+pagination:
+  pagerSize: 15
+permalinks:
+  news: post/:year/:slug/
 params:
   description: El podcast de los Dolphins de Miami
+  dateformat: "02-01-2006"
+  toc: true
+  pager: true
+  schema: true
+  indexPager: true
+  mainSections:
+    - Principal
+    - blog
+  widgets:
+    recent_num: 10
+    tags_counter: true
+    social:
+      instagram: mundodolphins
+      twitter: MundoDolphins
+  sidebar:
+    home: right
+    list: right
+    single: right
+    widgets:
+      - "recent"
+      - "categories"
+      - "social"
+  style:
+    vars:
+      highlightColor: "#008E97"
+  logo:
+    image: img/Mundo_Dolphins_small.png
+    image_alt: Mundo Dolphins
 
+menus:
+  main:
+    - name: Principal
+      pageRef: /
+      weight: 10

@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 )
@@ -27,10 +28,13 @@ title: "%s"
 description: "%s"
 date: %s
 draft: %v
+categories:
+  - %s
 ---
 
 %s
 
+<!--more-->
 [Escuchar](%s)
 `
 	descriptionLength = 100
@@ -39,6 +43,7 @@ draft: %v
 func main() {
 	dir := "../data"
 	pattern := "season_*.json"
+	re := regexp.MustCompile(`season_(\d+)\.json`)
 
 	files, err := filepath.Glob(filepath.Join(dir, pattern))
 	if err != nil {
@@ -73,13 +78,15 @@ func main() {
 		for _, post := range posts {
 			parse, _ := time.Parse(time.RFC3339, post.DateAndTime)
 			filename := fmt.Sprintf("%s/%d.md", outputDir, parse.Unix())
+			match := re.FindStringSubmatch(file)
 
 			mdContent := fmt.Sprintf(
 				mdFormat,
 				strings.ReplaceAll(post.Title, "\"", "'"),
 				fmt.Sprintf("%s...", strings.ReplaceAll(post.Description, "\"", "'")[:descriptionLength]),
-				post.DateAndTime,
+				parse.Format("2006-01-02"),
 				false,
+				fmt.Sprintf("\"Temporada %s\"", match[1]),
 				post.Description,
 				post.Link,
 			)
