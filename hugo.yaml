@@ -11,7 +11,7 @@ permalinks:
 params:
   description: El podcast de los Dolphins de Miami
   dateformat: "02-01-2006"
-  toc: true
+  toc: false
   pager: true
   schema: true
   indexPager: true
