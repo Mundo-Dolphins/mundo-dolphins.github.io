@@ -21,8 +21,10 @@ type PodcastEpisode struct {
 	Title       string `json:"title"`
 }
 
-const mdFormat = `---
+const (
+	mdFormat = `---
 title: "%s"
+description: "%s"
 date: %s
 draft: %v
 ---
@@ -31,6 +33,8 @@ draft: %v
 
 [Escuchar](%s)
 `
+	descriptionLength = 100
+)
 
 func main() {
 	dir := "../data"
@@ -73,6 +77,7 @@ func main() {
 			mdContent := fmt.Sprintf(
 				mdFormat,
 				strings.ReplaceAll(post.Title, "\"", "'"),
+				fmt.Sprintf("%s...", strings.ReplaceAll(post.Description, "\"", "'")[:descriptionLength]),
 				post.DateAndTime,
 				false,
 				post.Description,
