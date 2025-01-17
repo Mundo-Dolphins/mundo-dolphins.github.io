@@ -1,6 +1,8 @@
 baseURL: https://mundodolphins.es/
 title: Mundo Dolphins Podcast
 languageCode: es-ES
-theme: github.com/frjo/hugo-theme-zen/v4
+copyright: Mundo Dolphins
+theme: github.com/heyeshuang/hugo-theme-tokiwa
 params:
-  subtitle: El podcast de los Dolphins de Miami
+  description: El podcast de los Dolphins de Miami
+
