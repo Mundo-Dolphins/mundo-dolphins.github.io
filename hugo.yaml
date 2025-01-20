@@ -24,6 +24,22 @@ params:
     social:
       instagram: mundodolphins
       twitter: MundoDolphins
+      custom:
+        - title: YouTube
+          url: https://www.youtube.com/@mundodolphins3131
+          icon: svg/youtube.svg
+        - title: BlueSky
+          url: https://bsky.app/profile/mundodolphins.es
+          icon: svg/bluesky.svg
+        - title: Apple Podcast
+          url: https://podcasts.apple.com/es/podcast/mundo-dolphins/id1433813563
+          icon: svg/apple.svg
+        - title: Ivoox
+          url: https://www.ivoox.com/podcast-mundo-dolphins_sq_f1601076_1.html
+          icon: svg/ivoox.svg
+        - title: Spotify
+          url: https://open.spotify.com/show/2N0EdZY3vTPpI4Yq5oOQvb
+          icon: svg/spotify-outline.svg
   sidebar:
     home: right
     list: right
