@@ -7,9 +7,41 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.24
+
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
       - name: Checkout private repository
         uses: actions/checkout@v4.2.2
         with:
           repository: ${{ secrets.CHECKER }}
           ref: main
           token: ${{ secrets.PAT }}
+          path: scripts/checker/
+
+      - name: Run checker
+        working-directory: scripts/checker/
+        run: |
+          go mod vendor
+          go run main.go rss ${GITHUB_WORKSPACE}/data
+
+      - name: Remove checker to avoid commiting it
+        run: rm -rf scripts/checker/
+
+      - name: Commit and push changes
+        uses: devops-infra/action-commit-push@v0.10.0
+        with:
+          github_token: ${{ secrets.PUSH }}
+          commit_prefix: "Added new episodes"
+          target_branch: new-episodes
+
+      - name: Create pull request
+        uses: devops-infra/action-pull-request@v0.6.0
+        with:
+          github_token: ${{ secrets.PUSH }}
+          body: "**Automated pull request after adding new episodes**"
+          title: ${{ github.event.commits[0].message }}
