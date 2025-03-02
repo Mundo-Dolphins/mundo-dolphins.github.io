@@ -1,0 +1,15 @@
+name: Check for new podcast episodes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v4.2.2
+        with:
+          repository: ${{ secrets.CHECKER }}
+          ref: main
+          token: ${{ secrets.PAT }}
