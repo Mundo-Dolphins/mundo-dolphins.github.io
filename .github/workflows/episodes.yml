@@ -7,9 +7,21 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.24
+
       - name: Checkout private repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
         with:
           repository: ${{ secrets.CHECKER }}
           ref: main
           token: ${{ secrets.PAT }}
+          path: checker/
+
+      - name: Run checker
+        working-directory: checker/
+        run: |
+          go mod vendor
+          go run main.go rss ${GITHUB_WORKSPACE}/data
