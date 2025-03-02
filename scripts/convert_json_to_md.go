@@ -37,7 +37,8 @@ categories:
 %s
 
 <!--more-->
-[Escuchar](%s)
+{{< iframe %s >}}
+[Escuchar en Ivoox](%s)
 `
 	descriptionLength = 100
 )
@@ -81,6 +82,7 @@ func main() {
 			parse, _ := time.Parse(time.RFC3339, post.DateAndTime)
 			filename := fmt.Sprintf("%s/%d.md", outputDir, parse.Unix())
 			match := re.FindStringSubmatch(file)
+			id, _ := extractId(post.Link)
 
 			mdContent := fmt.Sprintf(
 				mdFormat,
@@ -91,6 +93,7 @@ func main() {
 				slug.Make(post.Title),
 				fmt.Sprintf("\"Temporada %s\"", match[1]),
 				post.Description,
+				id,
 				post.Link,
 			)
 
@@ -103,4 +106,13 @@ func main() {
 	}
 
 	fmt.Println("Finished.")
+}
+
+func extractId(url string) (string, error) {
+	re := regexp.MustCompile(`_rf_(\d+)_`)
+	matches := re.FindStringSubmatch(url)
+	if len(matches) < 2 {
+		return "", fmt.Errorf("no fragment found in URL")
+	}
+	return matches[1], nil
 }
