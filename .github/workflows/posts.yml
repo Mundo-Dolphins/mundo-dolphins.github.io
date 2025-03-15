@@ -2,6 +2,8 @@ name: Check for new social posts
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   check:
@@ -45,3 +47,4 @@ jobs:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new social posts**"
           title: ${{ github.event.commits[0].message }}
+          label: 'automerge'

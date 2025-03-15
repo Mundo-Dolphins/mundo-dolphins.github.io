@@ -1,0 +1,17 @@
+name: Automerge
+
+on:
+  push:
+  pull_request_target:
+    types:
+      - labeled
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: reitermarkus/automerge@v2
+        with:
+          token: ${{ secrets.PUSH }}
+          merge-method: squash
+          required-labels: automerge
+          pull-request: ${{ github.event.inputs.pull-request }}
