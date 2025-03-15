@@ -51,8 +51,11 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Generate blog posts
-        run: go run convert_json_to_md.go
-        working-directory: scripts/
+        run: go run convert_seasons_to_md.go
+        working-directory: scripts/seasons
+      - name: Generate social posts
+        run: go run cconvert_posts_to_md.go
+        working-directory: scripts/posts
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache

@@ -44,7 +44,7 @@ categories:
 )
 
 func main() {
-	dir := "../data"
+	dir := "../../data"
 	pattern := "season_*.json"
 	re := regexp.MustCompile(`season_(\d+)\.json`)
 
@@ -59,7 +59,7 @@ func main() {
 	}
 
 	for _, file := range files {
-		outputDir := "../content/blog"
+		outputDir := "../../content/blog"
 
 		if err := os.MkdirAll(outputDir, os.ModePerm); err != nil {
 			fmt.Println("Error generating directory:", err)
