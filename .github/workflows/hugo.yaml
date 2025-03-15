@@ -54,7 +54,7 @@ jobs:
         run: go run convert_seasons_to_md.go
         working-directory: scripts/seasons
       - name: Generate social posts
-        run: go run cconvert_posts_to_md.go
+        run: go run convert_posts_to_md.go
         working-directory: scripts/posts
       - name: Build with Hugo
         env:
