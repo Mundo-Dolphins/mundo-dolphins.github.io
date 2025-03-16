@@ -27,7 +27,7 @@ jobs:
         working-directory: scripts/checker/
         run: |
           go mod vendor
-          go run main.go rss ${GITHUB_WORKSPACE}/data
+          go run main.go rss --data ${GITHUB_WORKSPACE}/data
 
       - name: Remove checker to avoid commiting it
         run: rm -rf scripts/checker/
