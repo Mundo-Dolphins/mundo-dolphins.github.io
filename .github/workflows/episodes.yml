@@ -45,3 +45,5 @@ jobs:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new episodes**"
           title: ${{ github.event.commits[0].message }}
+          source_branch: new-episodes
+          target_branch: main

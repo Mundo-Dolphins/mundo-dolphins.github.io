@@ -48,3 +48,5 @@ jobs:
           body: "**Automated pull request after adding new social posts**"
           title: ${{ github.event.commits[0].message }}
           label: 'automerge'
+          source_branch: new-social-posts
+          target_branch: main
