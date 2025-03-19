@@ -56,6 +56,9 @@ jobs:
       - name: Generate social posts
         run: go run convert_posts_to_md.go
         working-directory: scripts/posts
+      - name: Generate API resources
+        run: go run generate_api_resources.go
+        working-directory: scripts/api
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
