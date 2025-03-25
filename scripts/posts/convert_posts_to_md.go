@@ -1,23 +1,46 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
+	"html/template"
+
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
 )
 
+type Type int
+
 type SocialPost struct {
+	ID            string        `json:"id"`
+	SType         Type          `json:"stype"`
+	PublishedOn   string        `json:"PublishedOn"`
+	BlueSkyPost   BlueSkyPost   `json:"BlueSkyPost"`
+	InstagramPost InstagramPost `json:"InstagramPost"`
+}
+
+type BlueSkyPost struct {
 	BskyURI        string `json:"BskyURI"`
 	BskyCID        string `json:"BskyCID"`
 	Description    string `json:"Description"`
 	BskyProfileURI string `json:"BskyProfileURI"`
 	BskyProfile    string `json:"BskyProfile"`
 	BskyPost       string `json:"BskyPost"`
-	PublishedOn    string `json:"PublishedOn"`
 }
+
+type InstagramPost struct {
+	URL         string `json:"URL"`
+	Description string `json:"Description"`
+	SvgPath     string `json:"SvgPath"`
+}
+
+const (
+	BlueSky Type = iota
+	Instagram
+)
 
 func processPosts(input []byte) []SocialPost {
 	var inputPosts []SocialPost
@@ -43,12 +66,6 @@ func processFile(filePath string) {
 	// Create output file name
 	outputFileName := strings.Replace(filepath.Base(filePath), ".json", ".html", 1)
 
-	mdContentTemplate := `
-<blockquote class="bluesky-embed" data-bluesky-uri="%s" data-bluesky-cid="%s">
-   <p lang="es">%s</p>
-   &mdash; <a href="%s">%s</a> <a href="%s">%s</a>
-</blockquote>
-`
 	mdContent := `---
 cascade:
   target:
@@ -58,19 +75,17 @@ title: Redes Sociales
 ---
 `
 	for _, post := range outputContent {
-		mdContent += fmt.Sprintf(
-			mdContentTemplate,
-			post.BskyURI,
-			post.BskyCID,
-			post.Description,
-			post.BskyProfileURI,
-			post.BskyProfile,
-			post.BskyPost,
-			post.PublishedOn,
-		)
+		if post.SType == BlueSky {
+			var tmplFile = "bsky_embed.txt"
+			mdContent += processTemplate(tmplFile, post)
+		} else if post.SType == Instagram {
+			var tmplFile = "ig_embed.txt"
+			mdContent += processTemplate(tmplFile, post.InstagramPost)
+		}
 	}
 
 	mdContent += "<script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>"
+	mdContent += "<script async src=\"//www.instagram.com/embed.js\"></script>"
 
 	outputDir := "../../content/social/"
 	// Write the output JSON to the new file
@@ -86,6 +101,21 @@ title: Redes Sociales
 	}
 
 	fmt.Printf("Processed file %s and wrote output to %s\n", filePath, outputFileName)
+}
+
+func processTemplate(tmplFile string, post interface{}) string {
+	tmpl, err := template.New(tmplFile).ParseFiles(tmplFile)
+	if err != nil {
+		fmt.Printf("Error parsing template %s: %s\n", tmplFile, err)
+	}
+
+	var tpl bytes.Buffer
+	err = tmpl.Execute(&tpl, post)
+	if err != nil {
+		fmt.Printf("Error executing template %s: %s\n", tmplFile, err)
+	}
+
+	return tpl.String() + "\n"
 }
 
 func main() {
