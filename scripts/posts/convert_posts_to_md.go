@@ -4,12 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"html/template"
-
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+	"text/template"
 )
 
 type Type int
@@ -77,7 +76,23 @@ title: Redes Sociales
 	for _, post := range outputContent {
 		if post.SType == BlueSky {
 			var tmplFile = "bsky_embed.txt"
-			mdContent += processTemplate(tmplFile, post)
+			mdContent += processTemplate(tmplFile, struct {
+				URI         string
+				CID         string
+				Description string
+				ProfileURI  string
+				Profile     string
+				Post        string
+				PublishedOn string
+			}{
+				URI:         post.BlueSkyPost.BskyURI,
+				CID:         post.BlueSkyPost.BskyCID,
+				Description: post.BlueSkyPost.Description,
+				ProfileURI:  post.BlueSkyPost.BskyProfileURI,
+				Profile:     post.BlueSkyPost.BskyProfile,
+				Post:        post.BlueSkyPost.BskyPost,
+				PublishedOn: post.PublishedOn,
+			})
 		} else if post.SType == Instagram {
 			var tmplFile = "ig_embed.txt"
 			mdContent += processTemplate(tmplFile, post.InstagramPost)

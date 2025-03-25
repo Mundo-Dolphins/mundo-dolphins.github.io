@@ -1,4 +1,4 @@
-<blockquote class="bluesky-embed" data-bluesky-uri="{{.BlueSkyPost.BskyURI}}" data-bluesky-cid="{{.BlueSkyPost.BskyCID}}">
-   <p lang="es">{{.BlueSkyPost.Description}}</p>
-   &mdash; <a href="{{.BlueSkyPost.BskyProfileURI}}">{{.BlueSkyPost.BskyProfile}}</a> <a href="{{.BlueSkyPost.BskyPost}}">{{.PublishedOn}}</a>
+<blockquote class="bluesky-embed" data-bluesky-uri="{{.URI}}" data-bluesky-cid="{{.CID}}" data-bluesky-embed-color-mode="system">
+   <p lang="es">{{.Description}}</p>
+   &mdash; (<a href="{{.ProfileURI}}">{{.Profile}}</a>) <a href="{{.Post}}?ref_src=embed">{{.PublishedOn}}</a>
 </blockquote>
