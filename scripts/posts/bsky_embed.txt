@@ -1,0 +1,4 @@
+<blockquote class="bluesky-embed" data-bluesky-uri="{{.BlueSkyPost.BskyURI}}" data-bluesky-cid="{{.BlueSkyPost.BskyCID}}">
+   <p lang="es">{{.BlueSkyPost.Description}}</p>
+   &mdash; <a href="{{.BlueSkyPost.BskyProfileURI}}">{{.BlueSkyPost.BskyProfile}}</a> <a href="{{.BlueSkyPost.BskyPost}}">{{.PublishedOn}}</a>
+</blockquote>
