@@ -12,9 +12,21 @@ import (
 )
 
 const (
-	srcDir = "../../data"
-	dstDir = "../../static/api"
+	srcDir          = "../../data"
+	dstDir          = "../../static/api"
+	lastestEpisodes = 25
 )
+
+type PodcastEpisode struct {
+	DateAndTime string `json:"dateAndTime"`
+	Description string `json:"description"`
+	Audio       string `json:"audio"`
+	ImgMain     string `json:"imgMain"`
+	ImgMini     string `json:"imgMini"`
+	Len         string `json:"len"`
+	Link        string `json:"link"`
+	Title       string `json:"title"`
+}
 
 func main() {
 	files, err := os.ReadDir(srcDir)
@@ -68,6 +80,8 @@ func main() {
 			continue
 		}
 	}
+
+	generateLatestEpisodes(seasonFiles)
 }
 
 func cleanDirectory(dir string) error {
@@ -122,4 +136,47 @@ func copyFiles(fileName string) error {
 
 	fmt.Println("Copied file:", fileName)
 	return nil
+}
+
+func generateLatestEpisodes(seasonFiles []string) {
+	var latest []PodcastEpisode
+	for _, file := range seasonFiles {
+		data, err := os.ReadFile(filepath.Join(srcDir, file))
+		if err != nil {
+			fmt.Println("Error reading JSON file:", err)
+			return
+		}
+
+		var posts []PodcastEpisode
+		if err := json.Unmarshal(data, &posts); err != nil {
+			fmt.Println("Error parsing JSON file:", err)
+			return
+		}
+
+		for _, post := range posts {
+			latest = append(latest, post)
+			if len(latest) > lastestEpisodes {
+				break
+			}
+		}
+
+		if len(latest) > lastestEpisodes {
+			break
+		}
+	}
+
+	outputFile := "latests.json"
+	outputData, err := json.MarshalIndent(latest, "", "  ")
+	if err != nil {
+		fmt.Println("Error marshalling JSON:", err)
+		return
+	}
+
+	err = os.WriteFile(filepath.Join(dstDir, outputFile), outputData, 0644)
+	if err != nil {
+		fmt.Println("Error writing JSON file:", err)
+		return
+	}
+
+	fmt.Println("JSON file generated:", outputFile)
 }
