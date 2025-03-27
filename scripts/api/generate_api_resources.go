@@ -12,9 +12,10 @@ import (
 )
 
 const (
-	srcDir          = "../../data"
-	dstDir          = "../../static/api"
-	lastestEpisodes = 25
+	srcDir        = "../../data"
+	dstDir        = "../../static/api"
+	limitEpisodes = 30
+	latestFile    = "feed.json"
 )
 
 type PodcastEpisode struct {
@@ -155,28 +156,27 @@ func generateLatestEpisodes(seasonFiles []string) {
 
 		for _, post := range posts {
 			latest = append(latest, post)
-			if len(latest) > lastestEpisodes {
+			if len(latest) > limitEpisodes {
 				break
 			}
 		}
 
-		if len(latest) > lastestEpisodes {
+		if len(latest) > limitEpisodes {
 			break
 		}
 	}
 
-	outputFile := "latests.json"
-	outputData, err := json.MarshalIndent(latest, "", "  ")
+	outputData, err := json.MarshalIndent(latestFile, "", "  ")
 	if err != nil {
 		fmt.Println("Error marshalling JSON:", err)
 		return
 	}
 
-	err = os.WriteFile(filepath.Join(dstDir, outputFile), outputData, 0644)
+	err = os.WriteFile(filepath.Join(dstDir, latestFile), outputData, 0644)
 	if err != nil {
 		fmt.Println("Error writing JSON file:", err)
 		return
 	}
 
-	fmt.Println("JSON file generated:", outputFile)
+	fmt.Println("JSON file generated:", latestFile)
 }
