@@ -166,7 +166,7 @@ func generateLatestEpisodes(seasonFiles []string) {
 		}
 	}
 
-	outputData, err := json.MarshalIndent(latestFile, "", "  ")
+	outputData, err := json.MarshalIndent(latest, "", "  ")
 	if err != nil {
 		fmt.Println("Error marshalling JSON:", err)
 		return
