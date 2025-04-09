@@ -30,6 +30,7 @@ description: "%s"
 date: %s
 draft: %v
 slug: %s
+length: %s
 categories:
   - %s
 ---
@@ -88,9 +89,10 @@ func main() {
 				mdFormat,
 				strings.ReplaceAll(post.Title, "\"", "'"),
 				fmt.Sprintf("%s...", strings.ReplaceAll(post.Description, "\"", "'")[:descriptionLength]),
-				parse.Format("2006-01-02"),
+				parse.Format(time.RFC3339),
 				false,
 				slug.Make(post.Title),
+				post.Len,
 				fmt.Sprintf("\"Temporada %s\"", match[1]),
 				post.Description,
 				id,
