@@ -3,13 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gosimple/slug"
 	"log"
 	"os"
 	"path/filepath"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/gosimple/slug"
 )
 
 type PodcastEpisode struct {
@@ -33,6 +34,7 @@ slug: %s
 length: %s
 categories:
   - %s
+showDate: true
 ---
 
 %s
