@@ -40,7 +40,7 @@ jobs:
           author_name: "GitHub Action"
           author_email: "action@github.com"
           message: "Added new social posts"
-          add: "./data/"
+          add: "."
           push: true
           new_branch: new-social-posts
 
