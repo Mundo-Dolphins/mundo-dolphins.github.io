@@ -34,13 +34,15 @@ jobs:
       - name: Remove checker to avoid commiting it
         run: rm -rf scripts/checker/
 
-      - name: Commit and push changes
-        uses: devops-infra/action-commit-push@v0.10.0
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.1.4
         with:
-          github_token: ${{ secrets.PUSH }}
-          commit_prefix: "Added new social posts"
-          target_branch: new-social-posts
-          add_timestamp: true
+          author_name: "GitHub Action"
+          author_email: "action@github.com"
+          message: "Added new social posts"
+          add: "./data/"
+          push: true
+          new_branch: new-social-posts
 
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.6.0
