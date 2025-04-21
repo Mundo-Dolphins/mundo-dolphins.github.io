@@ -42,6 +42,9 @@ params:
         - title: Spotify
           url: https://open.spotify.com/show/2N0EdZY3vTPpI4Yq5oOQvb
           icon: svg/spotify-outline.svg
+        - title: Google Play
+          url: https://play.google.com/store/apps/details?id=es.mundodolphins.app
+          icon: svg/google-play.svg
   sidebar:
     home: right
     list: right
