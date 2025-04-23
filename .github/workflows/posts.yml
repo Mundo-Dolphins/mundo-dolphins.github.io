@@ -25,27 +25,14 @@ jobs:
           token: ${{ secrets.PAT }}
           path: scripts/checker/
 
-      - name: Copy data files to checker
-        run: |
-          mkdir -p scripts/checker/data
-          cp -r data/* scripts/checker/data/
-
       - name: Run checker
         working-directory: scripts/checker/
         run: |
           go mod vendor
-          go run main.go social --data ./data --debug
+          go run main.go social --data ${GITHUB_WORKSPACE}/data --debug
 
-      - name: Read and echo posts_*.json files to data folder
-        run: |
-            mkdir -p data
-            for file in scripts/checker/data/posts_*.json; do
-              if [[ -e "$file" ]]; then
-                echo "Procesando archivo: $file"
-                cat "$file" > "data/$(basename "$file")"
-                echo "Contenido del archivo $file copiado a data/$(basename "$file")"
-              fi
-            done
+      - name: Remove checker to avoid commiting it
+        run: rm -rf scripts/checker/
 
       - name: Remove checker to avoid commiting it
         run: rm -rf scripts/checker/
@@ -61,7 +48,7 @@ jobs:
         uses: EndBug/add-and-commit@v9.1.4
         with:
           message: "Added new social posts"
-          add: "."
+          add: "./data"
           push: true
           new_branch: new-social-posts
 
