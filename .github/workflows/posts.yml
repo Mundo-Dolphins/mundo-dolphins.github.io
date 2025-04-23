@@ -33,18 +33,9 @@ jobs:
 
       - name: Remove checker to avoid commiting it
         run: rm -rf scripts/checker/
-
-      - name: Remove checker to avoid commiting it
-        run: rm -rf scripts/checker/
           
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git diff --exit-code || echo "Changes detected"
-
       - name: Add & Commit
         id: add_commit
-        if: steps.check_changes.outputs.exit_code == '0'
         uses: EndBug/add-and-commit@v9.1.4
         with:
           message: "Added new social posts"
