@@ -29,23 +29,23 @@ jobs:
         working-directory: scripts/checker/
         run: |
           go mod vendor
-          go run main.go social --data ${GITHUB_WORKSPACE}/data --debug
+          go run main.go social --data ${GITHUB_WORKSPACE}/data
 
       - name: Remove checker to avoid commiting it
         run: rm -rf scripts/checker/
-
+          
       - name: Add & Commit
+        id: add_commit
         uses: EndBug/add-and-commit@v9.1.4
         with:
-          author_name: "GitHub Action"
-          author_email: "action@github.com"
           message: "Added new social posts"
-          add: "./data/"
+          add: "./data"
           push: true
           new_branch: new-social-posts
 
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.6.0
+        if: steps.add_commit.outputs.committed == 'true'
         with:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new social posts**"
