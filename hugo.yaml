@@ -20,6 +20,8 @@ params:
   mainSections:
     - Principal
     - blog
+    - Noticias
+    - Social
   widgets:
     recent_num: 10
     tags_counter: true
@@ -68,3 +70,6 @@ menus:
     - name: Redes Sociales
       pageRef: /social/posts_1
       weight: 20
+    - name: Noticias
+      pageRef: /news
+      weight: 30

@@ -12,7 +12,9 @@
             {{- end }}
             {{ $format := "2 Jan 2006 15:04" }}
             <div>Publicado: {{ .Date.Format $format }}</div>
-            <div>Duración: {{ .Params.Length }}</div>
+            {{- if .Params.length }}
+                <div>Duración: {{ .Params.Length }}</div>
+            {{- end }}
         </header>
         {{ end}}
         {{- if .Site.Params.belowTitlePartial }}{{ partial .Site.Params.belowTitlePartial . }}{{ end }}
