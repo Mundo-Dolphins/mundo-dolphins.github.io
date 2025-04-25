@@ -62,7 +62,7 @@ func main() {
 	}
 
 	for _, file := range files {
-		outputDir := "../../content/blog"
+		outputDir := "../../content/podcast"
 
 		if err := os.MkdirAll(outputDir, os.ModePerm); err != nil {
 			fmt.Println("Error generating directory:", err)

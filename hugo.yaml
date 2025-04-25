@@ -19,9 +19,9 @@ params:
   - css/mundodolphins.css
   mainSections:
     - Principal
-    - blog
-    - Noticias
-    - Social
+    - podcast
+    - noticias
+    - social
   widgets:
     recent_num: 10
     tags_counter: true
@@ -67,9 +67,12 @@ menus:
     - name: Principal
       pageRef: /
       weight: 10
-    - name: Redes Sociales
-      pageRef: /social/posts_1
+    - name: Podcast
+      pageRef: /podcast
       weight: 20
     - name: Noticias
-      pageRef: /news
+      pageRef: /noticias
       weight: 30
+    - name: Redes Sociales
+      pageRef: /social/posts_1
+      weight: 40
