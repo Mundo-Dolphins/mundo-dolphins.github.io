@@ -11,7 +11,7 @@
             <div class="post__meta meta">{{ . }}</div>
             {{- end }}
             {{ $format := "2 Jan 2006 15:04" }}
-            <div>Publicado: {{ .Date.Format $format }}</div>
+            <div>Publicado: {{ partial "fecha-es.html" .Date }}</div>
             {{- if .Params.length }}
                 <div>Duración: {{ .Params.Length }}</div>
             {{- end }}

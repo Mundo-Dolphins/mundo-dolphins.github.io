@@ -1,0 +1,8 @@
+{{ $meses := slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre" }}
+{{ $fecha := . }}
+{{ $dia := $fecha.Day }}
+{{ $mes := index $meses (sub $fecha.Month 1) }}
+{{ $anio := $fecha.Year }}
+{{ $hora := $fecha.Format "15:04" }}
+
+{{ printf "%d %s %d %s" $dia $mes $anio $hora }}

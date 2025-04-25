@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main class="main" role="main">
+    <article class="post">
+        
+        <header class="post__header">
+            <h1 class="post__title">{{ .Title }}</h1>
+            {{ $format := "02-01-2006 15:04" }}
+            <div>Publicado: {{ partial "fecha-es.html" .Date }}</div>
+            <div>Autor: <a href="{{ .Params.AuthorLink }}">{{ .Params.Author }}</a></div>
+        </header>
+        
+        <div class="content post__content clearfix">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+{{ partial "authorbox.html" . }}
+{{ end }}
