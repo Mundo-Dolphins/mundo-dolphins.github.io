@@ -7,11 +7,11 @@ authorLink: https://bsky.app/profile/undolfan.mundodolphins.es
 ---
 Aunque gran parte del foco mediático del Draft 2025 se centró en la caída de Shedeur Sanders hasta la quinta ronda, el descenso de Quinn Ewers hasta la séptima fue igualmente sorprendente.  
 
-El exmariscal de campo de Texas, considerado uno de los prospectos más prometedores en su etapa de reclutamiento, terminó siendo seleccionado por los Miami Dolphins con el pick número 231.
+El exQB de Texas, considerado uno de los prospectos más prometedores en su etapa pre-draft, terminó siendo seleccionado por los Miami Dolphins con el pick número 231.
 
-Según explicó el gerente general de los Dolphins, Chris Grier, el interés por Ewers se consolidó en el Pro Day de Texas en 2024.  
+Según explicó el GM de los Dolphins, Chris Grier, el interés por Ewers se consolidó en el Pro Day de Texas en 2024.  
 
-Allí, Grier y el entrenador Mike McDaniel tuvieron la oportunidad de reunirse personalmente con el jugador y conversar extensamente con el entrenador de Texas, Steve Sarkisian.
+Allí, Grier y el HC Mike McDaniel tuvieron la oportunidad de reunirse personalmente con el jugador y conversar extensamente con el entrenador de Texas, Steve Sarkisian.
 
 Sarkisian, una figura respetada en el mundo del fútbol americano, destacó la resiliencia mental y competitividad de Ewers, quien jugó gran parte de la temporada pasada lidiando con lesiones.  
 
