@@ -62,33 +62,6 @@ params:
     image: img/Mundo_Dolphins_small.png
     image_alt: Mundo Dolphins
 
-  headless_cms:
-    engine: "sveltia"
-    site_url: "https://mundodolphins.es"
-    publish_mode: editorial_workflow
-    squash_merges: true
-    slug:
-      encoding: "ascii"
-      clean_accents: true
-      sanitize_replacement: "-"
-    backend:
-      name: "github"
-      repo: "Mundo-Dolphins/mundo-dolphins.github.io"
-      base_url: https://sveltia-cms-auth.webmasterhhp.workers.dev/
-    collections:
-    - name: "noticias"
-      label: "noticias"
-      folder: "content/noticias"
-      create: true
-      slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - { label: "Layout", name: "layout", widget: "hidden", default: "noticias" }
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Author", name: "author", widget: "string" }
-        - { label: "BlueSky Link", name: "authorLink", widget: "string", default: "https://bsky.app/profile/mundodolphins.es" }
-        - { label: "Body", name: "body", widget: "markdown" }
-
 menus:
   main:
     - name: Principal
