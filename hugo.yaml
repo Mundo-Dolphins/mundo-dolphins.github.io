@@ -74,6 +74,7 @@ params:
     backend:
       name: "github"
       repo: "Mundo-Dolphins/mundo-dolphins.github.io"
+      base_url: https://sveltia-cms-auth.webmasterhhp.workers.dev/
     collections:
     - name: "noticias"
       label: "noticias"
