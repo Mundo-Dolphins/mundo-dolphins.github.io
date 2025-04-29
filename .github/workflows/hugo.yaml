@@ -56,6 +56,9 @@ jobs:
       - name: Generate social posts
         run: go run convert_posts_to_md.go
         working-directory: scripts/posts
+      - name: Generate news API
+        run: go run generate_api.go
+        working-directory: scripts/news
       - name: Generate API resources
         run: go run generate_api_resources.go
         working-directory: scripts/api
