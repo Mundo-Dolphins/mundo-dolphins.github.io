@@ -1,7 +1,7 @@
 ---
 layout: noticias
 title: 'Quinn Ewers: Una apuesta de futuro para los Miami Dolphins'
-date: 2025-04-28T07:55:00
+date: 2025-04-28T07:55:00Z
 author: Javi Martín
 authorLink: https://bsky.app/profile/undolfan.mundodolphins.es
 ---

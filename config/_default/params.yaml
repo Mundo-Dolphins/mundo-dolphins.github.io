@@ -11,7 +11,7 @@ headless_cms:
     name: "github"
     repo: "Mundo-Dolphins/mundo-dolphins.github.io"
     base_url: https://sveltia-cms-auth.webmasterhhp.workers.dev/
-    branch: new_articles
+    branch: main
     commit_messages:
       create: Create {{collection}} “{{slug}}”
       update: Update {{collection}} “{{slug}}”
@@ -28,7 +28,7 @@ headless_cms:
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "noticias" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "BlueSky Link", name: "authorLink", widget: "string", default: "https://bsky.app/profile/mundodolphins.es" }
       - { label: "Body", name: "body", widget: "markdown" }
