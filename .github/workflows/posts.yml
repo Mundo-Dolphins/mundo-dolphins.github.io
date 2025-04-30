@@ -41,15 +41,15 @@ jobs:
           message: "Added new social posts"
           add: "./data"
           push: true
-          new_branch: new-social-posts
+          new_branch: main
 
-      - name: Create pull request
-        uses: devops-infra/action-pull-request@v0.6.0
-        if: steps.add_commit.outputs.committed == 'true'
-        with:
-          github_token: ${{ secrets.PUSH }}
-          body: "**Automated pull request after adding new social posts**"
-          title: "Added new social posts"
-          label: 'automerge'
-          source_branch: new-social-posts
-          target_branch: main
+      # - name: Create pull request
+      #   uses: devops-infra/action-pull-request@v0.6.0
+      #   if: steps.add_commit.outputs.committed == 'true'
+      #   with:
+      #     github_token: ${{ secrets.PUSH }}
+      #     body: "**Automated pull request after adding new social posts**"
+      #     title: "Added new social posts"
+      #     label: 'automerge'
+      #     source_branch: new-social-posts
+      #     target_branch: main
