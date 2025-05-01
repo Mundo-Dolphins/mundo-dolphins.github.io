@@ -44,3 +44,5 @@ Su principal reto será mejorar su mecánica de lanzamiento, especialmente en ju
 La selección de Quinn Ewers representa una apuesta de bajo riesgo y alto potencial para los Miami Dolphins.  
 
 Apoyados en relaciones de confianza y en un esquema ofensivo que encaja con las habilidades actuales del mariscal de campo, los Dolphins buscan moldear a un prospecto que, aunque haya perdido parte del brillo de sus primeros años, todavía tiene tiempo para redescubrir su mejor versión en la NFL.
+
+{{< youtube 5-IierUkJNQ >}}
