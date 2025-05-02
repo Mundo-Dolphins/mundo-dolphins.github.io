@@ -5,9 +5,9 @@ date: 2025-05-01T16:25:00+02:00
 author: Hugo Manero
 authorLink: https://bsky.app/profile/mundodolphins.es
 ---
-Finalizado el draft de la NFL de dos mil veinticinco, los **Miami Dolphins** continuaron reforzando la plantilla con el objetivo de incrementar el nivel deportivo y la competitividad del conjunto del sur de**&#32;**Florida.    
+Finalizado el draft de la NFL de dos mil veinticinco, los **Miami Dolphins** continuaron reforzando la plantilla con el objetivo de incrementar el nivel deportivo y la competitividad del conjunto de Florida.    
 
-Chris Grier y Mike McDaniel continuaron realizando llamadas y consiguieron firmar a catorce jugadores que tendrán la oportunidad de demostrar su talento y luchar por un puesto en la plantilla definitiva de los Miami Dolphins**&#32;**.
+Chris Grier y Mike McDaniel continuaron realizando llamadas y consiguieron firmar a catorce jugadores que tendrán la oportunidad de demostrar su talento y luchar por un puesto en la plantilla definitiva de los Miami Dolphins.
 
 - **_Alex Huntley , DT South Carolina_**: otro jugador para el centro de la línea defensiva. Capitán de los Gamecocks los dos últimos años, viene de una campaña con dieciséis placajes y un sack.
 - **_John Saunders, S Ole Miss_**: un safety con gran tamaño y envergadura que en su última temporada universitaria ha obtenido cuarenta y seis placajes y tres interceptaciones.
