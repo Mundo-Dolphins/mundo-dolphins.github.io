@@ -13,4 +13,4 @@ Shula dirigió a los Dolphins durante 26 temporadas, consiguiendo dos títulos d
 
 Más allá de los números, Don Shula encarnó una ética de trabajo y una visión táctica que revolucionaron el juego. Fue un mentor para generaciones de jugadores y entrenadores, y una figura de integridad que trascendió el deporte.
 
-Hoy, al recordarlo cinco años después de su fallecimiento, el universo NFL rinde homenaje a un hombre cuya influencia permanece intacta. En Miami, su nombre sigue pronunciándose con reverencia y su estatua nos recuerda que aunque no esté presente su recuerdo vivirá para siempre en Miami Gardens y en la memoria de los aficionados de la frabquicia. Don Shula no solo fue un entrenador. Fue, y siempre será, el alma de los Dolphins.
+Hoy, al recordarlo cinco años después de su fallecimiento, el universo NFL rinde homenaje a un hombre cuya influencia permanece intacta. En Miami, su nombre sigue pronunciándose con reverencia y su estatua nos recuerda que aunque no esté presente su recuerdo vivirá para siempre en Miami Gardens y en la memoria de los aficionados de la franquicia. Don Shula no solo fue un entrenador. Fue, y siempre será, el alma de los Dolphins.
