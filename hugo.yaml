@@ -76,6 +76,9 @@ menus:
     - name: Redes Sociales
       pageRef: /social/posts_1
       weight: 40
+    - name: Histórico
+      pageRef: /historia
+      weight: 50
 
 module:
   imports:
