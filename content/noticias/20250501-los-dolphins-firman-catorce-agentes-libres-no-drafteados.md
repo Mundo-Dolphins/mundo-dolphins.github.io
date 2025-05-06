@@ -3,7 +3,7 @@ layout: noticias
 title: Los Dolphins firman catorce agentes libres no drafteados
 date: 2025-05-01T16:25:00+02:00
 author: Hugo Manero
-authorLink: https://bsky.app/profile/mundodolphins.es
+authorLink: https://bsky.app/profile/hugomanero1.mundodolphins.es
 ---
 Finalizado el draft de la NFL de dos mil veinticinco, los **Miami Dolphins** continuaron reforzando la plantilla con el objetivo de incrementar el nivel deportivo y la competitividad del conjunto de Florida.    
 
