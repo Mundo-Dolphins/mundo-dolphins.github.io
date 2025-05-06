@@ -3,7 +3,7 @@ layout: noticias
 title: Un lustro sin Shula
 date: 2025-05-04T19:57:00+02:00
 author: Hugo Manero
-authorLink: https://bsky.app/profile/mundodolphins.es
+authorLink: https://bsky.app/profile/hugomanero1.mundodolphins.es
 ---
 Hoy cuatro de mayo de dos mil veinticinco se cumplen cinco años del fallecimiento de Don Shula, una leyenda del fútbol americano y el entrenador más emblemático en la historia de los Miami Dolphins. Su partida dejó un vacío imposible de llenar, pero su legado sigue vivo en cada rincón de la NFL y en el corazón de los aficionados del sur de Florida.
 
