@@ -13,7 +13,7 @@ Fue en 1946, con la creación de los Miami Seahawks, que Miami contó por prim
 
 Cierto es que su andadura fue demasiado breve (una sola temporada) y con resultado negativo para los mismos con un total de 3-11, lo que le granjeó la última plaza en su división.
 
-![](blob:https://mundodolphins.es/4ad37b4d-0eb8-4ac1-ad89-a7268ffe89da)Tras dicha temporada infructuosatanto en lo deportivo como en lo económico (el equipo acumuló una serie de deudas que terminaron con la bancarrota de la franquicia) la AAFC tomó el control de dicha franquicia vendiéndosela a un grupo de empresarios de Baltimore, los cuales se hicieron con la misma y la renombraron como los Baltimore Colts (no confundir con los actuales Indianápolis Colts)
+Tras dicha temporada infructuosatanto en lo deportivo como en lo económico (el equipo acumuló una serie de deudas que terminaron con la bancarrota de la franquicia) la AAFC tomó el control de dicha franquicia vendiéndosela a un grupo de empresarios de Baltimore, los cuales se hicieron con la misma y la renombraron como los Baltimore Colts (no confundir con los actuales Indianápolis Colts)
 
 ….Pero seguimos con nuestra historia en busca de los orígenes de los Miami Dolphins.
 
@@ -34,7 +34,7 @@ Posteriormente, y para suerte de nuestra franquicia, el empresario Viktor Po
 
 Joe Foss, declinó dicha petición, pero a cambio le dio la oportunidad de abrir una nueva franquicia en la ciudad de Miami ante las nuevas oportunidades y el crecimiento que estaba desarrollándose en la ciudad. 
 
-![](blob:https://mundodolphins.es/9b7b9663-7efb-4def-b117-5e85c8d2d129)Joe Robbie trasladó dicha oferta a V. Potamkin, el cual la rechazó. 
+Joe Robbie trasladó dicha oferta a V. Potamkin, el cual la rechazó. 
 
 Ante esto, Joe Robbie lo estudió con detenimiento y (como citaría años después su hijo “mi padre era un hombre que sabía aprovechar las oportunidades”) aceptó la oferta y se embarcó en la nueva franquicia
 
@@ -52,21 +52,22 @@ En palabras del mismísimo J. Robbie, el nombre seleccionado le encajaba a la p
 
 **_"el delfín es una de las criaturas más rápidas e inteligentes en el mar"_**
 
-![](blob:https://mundodolphins.es/1681af01-4555-4c6a-9334-84f8ba88caf0)Y así, fue como finalmente la franquicia instalada en Miami se quedó con el nombre definitivo de Miami Dolphins.  
+Y así, fue como finalmente la franquicia instalada en Miami se quedó con el nombre definitivo de Miami Dolphins.  
 
-![](blob:https://mundodolphins.es/fd2a2a0e-9a99-4c39-8517-3f2cac2b8053)Y claro con dicho nombre, el equipo necesitaba una mascota. Desde el primer año un delfín archiconocido en la televisión estadounidense empezó a realizar sus acrobacias en el Miami Orange Bowl para regocijo de los asistentes y aficionados al equipo, ya que Flipper (como así se llamaba) estaba entrenado para realizar sus espectaculares saltos cada vez que el equipo anotaba un nuevo touchdown.
+Y claro con dicho nombre, el equipo necesitaba una mascota. Desde el primer año un delfín archiconocido en la televisión estadounidense empezó a realizar sus acrobacias en el Miami Orange Bowl para regocijo de los asistentes y aficionados al equipo, ya que Flipper (como así se llamaba) estaba entrenado para realizar sus espectaculares saltos cada vez que el equipo anotaba un nuevo touchdown.
 
 Flipper que estaba en el Miami Seaquarium colaboró con los Miami Dolphins desde 1966 hasta 1968 quedando el equipo sin mascota para las siguientes décadas hasta la aparición de nuestro querido TD.
  
-
 
 **Primeros años difíciles para Miami Dolphins**
 
 Desde 1965 hasta 1969, fueron las cuatro primeras temporadas para nuestros Miami Dolphins, dichas temporadas no fueron muy positivas para esta, todas ellas con marca perdedoras y con una asistencia promedio de algo menos de 30.000 aficionados (recordemos que el aforo completo del Orange Bowl Stadium era de 75.000 aficionados)
 
-![](blob:https://mundodolphins.es/7ad2ab41-6470-43fd-99ef-544a5f28054f)La situación financiera de la franquicia no era mucho mejor, provocando la salida del socio accionista Danny Thomas, más preocupado por recuperar su inicial inversión que por apostar por un equipo que generaba más dudas que certezas. Sin embargo, nuestro protagonista Joe Robbie, se mantuvo firme en su apuesta por el equipo diseñando una nueva estrategia para los años setenta que cambiaría el rumbo de nuestra franquicia para siempre
+La situación financiera de la franquicia no era mucho mejor, provocando la salida del socio accionista Danny Thomas, más preocupado por recuperar su inicial inversión que por apostar por un equipo que generaba más dudas que certezas. Sin embargo, nuestro protagonista Joe Robbie, se mantuvo firme en su apuesta por el equipo diseñando una nueva estrategia para los años setenta que cambiaría el rumbo de nuestra franquicia para siempre
 
-A modo de curiosidad, citamos los récords de las primeras cuatro temporadas, así como el acceso a nuestra sección de históricos donde encontrarás toda la información de cada temporada, jugadores, resultados, vídeos, draft… Consúltala, es una verdadera joya
+A modo de curiosidad, citamos los récords de las primeras cuatro temporadas, así como el acceso a nuestra sección de históricos donde encontrarás toda la información de cada temporada, jugadores, resultados, vídeos, draft…
+
+ Consúltala, es una verdadera joya
 
 1966  [https://mundodolphins.es/historia/1966/](https://mundodolphins.es/historia/1966/)      Récord​3-11-0
 
@@ -78,21 +79,17 @@ A modo de curiosidad, citamos los récords de las primeras cuatro temporada
 
 Por último, no podemos abandonar la década de lossesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadoresmás importantes de los sesenta.
 
-Por un lado tenemos, a **Bob** **Griese**, nuestro legendario Quatterback miembro de Hall of Fame (HoF) en 1990, seleccionado en el Draft de 1967 con la primera selección de los Dolphins,![](blob:https://mundodolphins.es/a4958939-b25f-4123-801d-f3d53f79b47b)
+Por un lado tenemos, a **Bob** **Griese**, nuestro legendario Quatterback miembro de Hall of Fame (HoF) en 1990, seleccionado en el Draft de 1967 con la primera selección de los Dolphins,
 
 el cual aportó al equipo en su primera temporada de novato nada más y nada menos que 2005 yardas y 15 touchdowns.
 
 A lo largo de su carrera consiguió tres campeonatos de la AFC (1971, 1972 y 1973) y dos SuperBowls VII y VIII (1972 y 1973)
 
-![](blob:https://mundodolphins.es/06fba4d1-207c-4039-8fe4-5aea2c2bfe77) 
-
 **Larry** **Csonka**, fue nuestra primera selección en el draft de 1968, aportando al equipo un fullback que en sus dos primeras temporadas consiguió 269 acarreos para 1,106 yardas y 8 touchdowns, a lo largo de dichas temporadas sufrió diferentes lesiones impidiendo que mostrara su mejor nivel como veríamos en la siguiente década llevándole directamente al Hall Of Fame (HoF) en 1987
  
-![](blob:https://mundodolphins.es/f659db34-ea85-4676-aa8a-070e08a64d56)
-
 **Larry Little** se incorporó a Miami en 1969 procedente de los San Diego Chargers a cambio del esquinero Mack Lamb, desarrollósu juego como Guardia Derecho y tal y comocitó personalmente tenía como objetivo dejara la gente con la boca abierta y ganarse el respeto de la gente.Fue miembro del Hall of Fame en 1993 desarrollando todosu talento en la década de los setenta.
  
-![](blob:https://mundodolphins.es/93572db6-82bb-4f6a-b8f6-30539edb2d29)
+
 
 **Creación** **del** **logotipo** **1966**
 
