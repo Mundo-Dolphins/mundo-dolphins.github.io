@@ -58,6 +58,8 @@ En palabras del mismísimo J. Robbie, el nombre seleccionado le encajaba a la p
 
 Flipper que estaba en el Miami Seaquarium colaboró con los Miami Dolphins desde 1966 hasta 1968 quedando el equipo sin mascota para las siguientes décadas hasta la aparición de nuestro querido TD.
  
+
+
 **Primeros años difíciles para Miami Dolphins**
 
 Desde 1965 hasta 1969, fueron las cuatro primeras temporadas para nuestros Miami Dolphins, dichas temporadas no fueron muy positivas para esta, todas ellas con marca perdedoras y con una asistencia promedio de algo menos de 30.000 aficionados (recordemos que el aforo completo del Orange Bowl Stadium era de 75.000 aficionados)
@@ -88,11 +90,11 @@ A lo largo de su carrera consiguió tres campeonatos de la AFC (1971, 1972 y 1
  
 ![](blob:https://mundodolphins.es/f659db34-ea85-4676-aa8a-070e08a64d56)
 
-**Larry Little** se incorporó a Miami en 1969 procedente de los San Diego Chargers a cambio del esquinero Mack Lamb, desarrollósu juego como Guardia Derecho y tal y comocitó personalmente tenía como objetivo dejara la gente con la boca abierta y ganarse el respeto de la gente.
-
-Fue miembro del Hall of Fame en 1993 desarrollando todosu talento en la década de los setenta.
+**Larry Little** se incorporó a Miami en 1969 procedente de los San Diego Chargers a cambio del esquinero Mack Lamb, desarrollósu juego como Guardia Derecho y tal y comocitó personalmente tenía como objetivo dejara la gente con la boca abierta y ganarse el respeto de la gente.Fue miembro del Hall of Fame en 1993 desarrollando todosu talento en la década de los setenta.
  
-![](blob:https://mundodolphins.es/93572db6-82bb-4f6a-b8f6-30539edb2d29)**Creación** **del** **logotipo** **1966**
+![](blob:https://mundodolphins.es/93572db6-82bb-4f6a-b8f6-30539edb2d29)
+
+**Creación** **del** **logotipo** **1966**
 
 Y como broche final a este primer episodio analizaremos el primer logotipode Miami Dolphins, creado en 1966, añoen el que se fundó la franquicia y en elque se destacan tres aspectosfundamentales del mismo: un delfín de color aqua marina, un sol de color Naranja y una letra “M” en el casco del delfin en honor a la ciudad que representa: MIAMI.
 
