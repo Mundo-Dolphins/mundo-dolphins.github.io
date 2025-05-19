@@ -3,9 +3,9 @@ layout: noticias
 title: Miami Dolphins, y su primera década de historia, los años 60. (1966 – 1969)
 date: 2025-05-18T21:17:00+02:00
 author: José Ramon
-authorLink: https://bsky.app/profile/mundodolphins.es
+authorLink: https://bsky.app/profile/jrremis.bsky.social
 ---
-Hoy por hoy nos costaría imaginar una ciudad como Miami sin una franquicia en la NFL, y más a nosotros los dolfans, pero déjame que te cuente que transcurrieron muchos años desde la creación de la primera competiciónde football americano hasta la existencia de un equipo en la ciudad.
+Hoy por hoy nos costaría imaginar una ciudad como Miami sin una franquicia en la NFL, y más a nosotros los dolfans, pero déjame que te cuente que transcurrieron muchos años desde la creación de la primera competición de football americano hasta la existencia de un equipo en la ciudad.
 
 De hecho, los Miami Dolphins no fueron el primer equipo en portar la bandera de la ciudad en el Football profesional. 
 
@@ -68,12 +68,12 @@ A modo de curiosidad, citamos los récords de las primeras cuatro temporada
 
 Consúltala, es una verdadera joya
 
-| Año  | Enlace                                                                 | Récord    |
-|------|------------------------------------------------------------------------|-----------|
-| 1966 | [https://mundodolphins.es/historia/1966/](https://mundodolphins.es/historia/1966/) | 3-11-0   |
-| 1967 | [https://mundodolphins.es/historia/1967/](https://mundodolphins.es/historia/1967/) | 4-10-0   |
-| 1968 | [https://mundodolphins.es/historia/1968/](https://mundodolphins.es/historia/1968/) | 5-8-1    |
-| 1969 | [https://mundodolphins.es/historia/1969/](https://mundodolphins.es/historia/1969/) | 3-10-1   |
+| Año | Enlace | Récord |
+| --- | --- | --- |
+| 1966 | [https://mundodolphins.es/historia/1966/](https://mundodolphins.es/historia/1966/) | 3-11-0 |
+| 1967 | [https://mundodolphins.es/historia/1967/](https://mundodolphins.es/historia/1967/) | 4-10-0 |
+| 1968 | [https://mundodolphins.es/historia/1968/](https://mundodolphins.es/historia/1968/) | 5-8-1 |
+| 1969 | [https://mundodolphins.es/historia/1969/](https://mundodolphins.es/historia/1969/) | 3-10-1 |
 
 Por último, no podemos abandonar la década de los sesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadoresmás importantes de los sesenta.
 
