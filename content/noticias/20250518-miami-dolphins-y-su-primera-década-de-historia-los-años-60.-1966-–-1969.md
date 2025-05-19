@@ -3,9 +3,9 @@ layout: noticias
 title: Miami Dolphins, y su primera década de historia, los años 60. (1966 – 1969)
 date: 2025-05-18T21:17:00+02:00
 author: José Ramon
-authorLink: https://bsky.app/profile/mundodolphins.es
+authorLink: https://bsky.app/profile/jrremis.bsky.social
 ---
-Hoy por hoy nos costaría imaginar una ciudad como Miami sin una franquicia en la NFL, y más a nosotros los dolfans, pero déjame que te cuente que transcurrieron muchos años desde la creación de la primera competiciónde football americano hasta la existencia de un equipo en la ciudad.
+Hoy por hoy nos costaría imaginar una ciudad como Miami sin una franquicia en la NFL, y más a nosotros los dolfans, pero déjame que te cuente que transcurrieron muchos años desde la creación de la primera competición de football americano hasta la existencia de un equipo en la ciudad.
 
 De hecho, los Miami Dolphins no fueron el primer equipo en portar la bandera de la ciudad en el Football profesional. 
 
@@ -25,8 +25,7 @@ En Miami, la llegada de Fidel Castro al poder en 1959 provocó una oleada de inm
 
 En este punto, es donde damos entrada a la primera figura emblemática de nuestra franquicia, **Joe** **Robbie**
 
-Joe Robbie, (Dakota del Sur en 1916) trabajó duro desde muy pequeño empujado a las montañas por la Gran Depresión, para ayudar a su familia en la tala de árboles. 
-Pasada esta época retomó sus estudios en secundaria, hasta que el ataque de Pearl Harbor, durante la II Guerra Mundial provocó que se alistara en la US Navycombatiendo en el Pacífico Sur por su país. Esta contienda, le permitió obtener la Medalla de Bronce y una beca de excombatiente para estudiar leyes.
+Joe Robbie, (Dakota del Sur en 1916) trabajó duro desde muy pequeño empujado a las montañas por la Gran Depresión, para ayudar a su familia en la tala de árboles. Pasada esta época retomó sus estudios en secundaria, hasta que el ataque de Pearl Harbor, durante la II Guerra Mundial provocó que se alistara en la US Navy combatiendo en el Pacífico Sur por su país. Esta contienda, le permitió obtener la Medalla de Bronce y una beca de excombatiente para estudiar leyes.
 
 Creó su propio despacho una vez finalizados sus estudios de Políticas y Derecho, llevándole incluso a presentarse en las elecciones como gobernador de Dakota, con resultado negativo (pero con récord de votos para un candidato demócrata en dicho estado), por lo que a la postre este hecho le daría la oportunidad de trabajar con el ex vicepresidente del país Hubert Humphrey.
 
@@ -36,7 +35,7 @@ Joe Foss, declinó dicha petición, pero a cambio le dio la oportunidad de ab
 
 Joe Robbie trasladó dicha oferta a V. Potamkin, el cual la rechazó. 
 
-Ante esto, Joe Robbie lo estudió con detenimiento y (como citaría años después su hijo “mi padre era un hombre que sabía aprovechar las oportunidades”) aceptó la oferta y se embarcó en la nueva franquicia
+Ante esto, Joe Robbie lo estudió con detenimiento y (como citaría años después su hijo "mi padre era un hombre que sabía aprovechar las oportunidades") aceptó la oferta y se embarcó en la nueva franquicia
 
 La franquicia de Miami tendría un coste de 7.5 millones de dólares, de los cuales Joe Robbie sólo disponía en aquel momento de 100.000$ y un gran poder de convencimiento. Esto último le permitió formar un equipo de accionistas con el objetivo de aportar el resto del dinero hasta el montante total para su total adquisición, embarcándose en la compra de la nueva franquicia junto al famoso actor y comediante Danny Thomas
 
@@ -44,7 +43,7 @@ Y así, los Dolphins jugaron su primera temporada en 1966 debutando en el h
 
 **¿Qué provocó que los delfines fueran nuestra seña de identidad?**
 
-El 8 de octubre de 1965, los dueños de la franquicia organizan junto con el rotativo local **MIAMI HERALD**un concurso público con el objetivo de encontrar un nombre que identificara a la nueva franquicia que llegaba a Miami.
+El 8 de octubre de 1965, los dueños de la franquicia organizan junto con el rotativo local **MIAMI HERALD** un concurso público con el objetivo de encontrar un nombre que identificara a la nueva franquicia que llegaba a Miami.
 
 Más de 18.000 personas propusieron nombres para la misma, entre los cuales estaba Mariners, Marauders, Mustangs, Missiles, Moons, Sharks, Suns y por supuesto los Dolphins. Este último, sería el que finalmente se seleccionaría como ganador al obtener más votos que el resto de los nombres propuestos.
 
@@ -67,32 +66,28 @@ La situación financiera de la franquicia no era mucho mejor, provocando la sali
 
 A modo de curiosidad, citamos los récords de las primeras cuatro temporadas, así como el acceso a nuestra sección de históricos donde encontrarás toda la información de cada temporada, jugadores, resultados, vídeos, draft…
 
- Consúltala, es una verdadera joya
+Consúltala, es una verdadera joya
 
-1966  [https://mundodolphins.es/historia/1966/](https://mundodolphins.es/historia/1966/)      Récord​3-11-0
+| Año | Enlace | Récord |
+| --- | --- | --- |
+| 1966 | [https://mundodolphins.es/historia/1966/](https://mundodolphins.es/historia/1966/) | 3-11-0 |
+| 1967 | [https://mundodolphins.es/historia/1967/](https://mundodolphins.es/historia/1967/) | 4-10-0 |
+| 1968 | [https://mundodolphins.es/historia/1968/](https://mundodolphins.es/historia/1968/) | 5-8-1 |
+| 1969 | [https://mundodolphins.es/historia/1969/](https://mundodolphins.es/historia/1969/) | 3-10-1 |
 
-1967 [https://mundodolphins.es/historia/1967/](https://mundodolphins.es/historia/1967/)       Récord​4-10-0
+Por último, no podemos abandonar la década de los sesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadores más importantes de los sesenta.
 
-1968 [https://mundodolphins.es/historia/1968/](https://mundodolphins.es/historia/1968/)     Récord​5-8-1
-
-1969 [https://mundodolphins.es/historia/1969/](https://mundodolphins.es/historia/1969/)     Récord​3-10-1
-
-Por último, no podemos abandonar la década de lossesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadoresmás importantes de los sesenta.
-
-Por un lado tenemos, a **Bob** **Griese**, nuestro legendario Quatterback miembro de Hall of Fame (HoF) en 1990, seleccionado en el Draft de 1967 con la primera selección de los Dolphins,
-
-el cual aportó al equipo en su primera temporada de novato nada más y nada menos que 2005 yardas y 15 touchdowns.
+Por un lado tenemos, a **Bob** **Griese**, nuestro legendario Quatterback miembro de Hall of Fame (HoF) en 1990, seleccionado en el Draft de 1967 con la primera selección de los Dolphins, el cual aportó al equipo en su primera temporada de novato nada más y nada menos que 2005 yardas y 15 touchdowns.
 
 A lo largo de su carrera consiguió tres campeonatos de la AFC (1971, 1972 y 1973) y dos SuperBowls VII y VIII (1972 y 1973)
 
 **Larry** **Csonka**, fue nuestra primera selección en el draft de 1968, aportando al equipo un fullback que en sus dos primeras temporadas consiguió 269 acarreos para 1,106 yardas y 8 touchdowns, a lo largo de dichas temporadas sufrió diferentes lesiones impidiendo que mostrara su mejor nivel como veríamos en la siguiente década llevándole directamente al Hall Of Fame (HoF) en 1987
  
-**Larry Little** se incorporó a Miami en 1969 procedente de los San Diego Chargers a cambio del esquinero Mack Lamb, desarrollósu juego como Guardia Derecho y tal y comocitó personalmente tenía como objetivo dejara la gente con la boca abierta y ganarse el respeto de la gente.Fue miembro del Hall of Fame en 1993 desarrollando todosu talento en la década de los setenta.
+**Larry Little** se incorporó a Miami en 1969 procedente de los San Diego Chargers a cambio del esquinero Mack Lamb, desarrolló su juego como Guardia Derecho y tal y como citó personalmente tenía como objetivo dejara la gente con la boca abierta y ganarse el respeto de la gente. Fue miembro del Hall of Fame en 1993 desarrollando todo su talento en la década de los setenta.
  
-
 
 **Creación** **del** **logotipo** **1966**
 
-Y como broche final a este primer episodio analizaremos el primer logotipode Miami Dolphins, creado en 1966, añoen el que se fundó la franquicia y en elque se destacan tres aspectosfundamentales del mismo: un delfín de color aqua marina, un sol de color Naranja y una letra “M” en el casco del delfin en honor a la ciudad que representa: MIAMI.
+Y como broche final a este primer episodio analizaremos el primer logotipo de Miami Dolphins, creado en 1966 año en el que se fundó la franquicia y en elque se destacan tres aspectos fundamentales del mismo: un delfín de color aqua marina, un sol de color Naranja y una letra “M” en el casco del delfin en honor a la ciudad que representa: MIAMI.
 
-Como se puede apreciar el delfín se encuentrasaltando frente a los rayos del sol haciendocontraste el naranja con el azul aquamarinacolores que hoy en día acompaña a nuestroequipo cada temporada.
+Como se puede apreciar el delfín se encuentra saltando frente a los rayos del sol haciendo contraste el naranja con el azul aquamarina colores que hoy en día acompaña a nuestro equipo cada temporada.

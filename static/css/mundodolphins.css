@@ -63,3 +63,7 @@
 .post__header div {
     color: #FC4C02;
 }
+
+.post__content p {
+    text-align: justify;
+}
