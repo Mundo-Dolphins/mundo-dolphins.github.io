@@ -75,7 +75,7 @@ Consúltala, es una verdadera joya
 | 1968 | [https://mundodolphins.es/historia/1968/](https://mundodolphins.es/historia/1968/) | 5-8-1 |
 | 1969 | [https://mundodolphins.es/historia/1969/](https://mundodolphins.es/historia/1969/) | 3-10-1 |
 
-Por último, no podemos abandonar la década de los sesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadoresmás importantes de los sesenta.
+Por último, no podemos abandonar la década de los sesenta sin mencionar el aporte que tuvieron durante las cuatro primeras temporadas del equipo los tres jugadores más importantes de los sesenta.
 
 Por un lado tenemos, a **Bob** **Griese**, nuestro legendario Quatterback miembro de Hall of Fame (HoF) en 1990, seleccionado en el Draft de 1967 con la primera selección de los Dolphins, el cual aportó al equipo en su primera temporada de novato nada más y nada menos que 2005 yardas y 15 touchdowns.
 
