@@ -7,6 +7,7 @@ draft: false
 # Historia de los Miami Dolphins
 
 Listado de temporadas:
+- [Temporada 2025](/historia/2025)
 - [Temporada 2024](/historia/2024)
 - [Temporada 2023](/historia/2023)
 - [Temporada 2022](/historia/2022)
