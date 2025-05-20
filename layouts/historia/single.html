@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $image := resources.Get .Params.logo }}
-{{ $image := $image.Resize "150x" }}
+{{ if $image }}
+  {{ $image = $image.Resize "150x" }}
+{{ end }}
 
 <main class="main" role="main">
     <article class="post">
@@ -8,7 +10,9 @@
         <header class="post__header">
             <h1 class="post__title">{{ .Title }}</h1>
         </header>
-        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+        {{ if $image }}
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+        {{ end }}
         <div class="content post__content clearfix">
             {{ .Content }}
         </div>
