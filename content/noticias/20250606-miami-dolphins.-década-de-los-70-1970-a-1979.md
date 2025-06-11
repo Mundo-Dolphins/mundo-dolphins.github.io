@@ -37,25 +37,25 @@ Otro aspecto que resaltar fue su carácter disciplinario y su autonomía opera
 
 Para conocer un poco más los excelentes resultados del trabajo de **Don Shula** en esta década, os invitamos a revisar todas las temporadas a través de nuestros links donde podréis encontrar datos, estadísticas y vídeos que os trasladaran a la época más laureada de nuestra franquicia
 
-[https://mundodolphins.es/historia/1970/](https://mundodolphins.es/historia/1970/)    Record​10-4-0
+[1970](https://mundodolphins.es/historia/1970/)    Record ​10-4-0
 
-[https://mundodolphins.es/historia/1971/](https://mundodolphins.es/historia/1971/)    Record​10-3-1
+[1971](https://mundodolphins.es/historia/1971/)    Record​ 10-3-1
 
-[https://mundodolphins.es/historia/1972/](https://mundodolphins.es/historia/1972/)    Record​14-0-0
+[1972](https://mundodolphins.es/historia/1972/)    Record​ 14-0-0
 
-[https://mundodolphins.es/historia/1973/](https://mundodolphins.es/historia/1973/)    Record​12-2-0
+[1973](https://mundodolphins.es/historia/1973/)    Record​ 12-2-0
 
-[https://mundodolphins.es/historia/1974/](https://mundodolphins.es/historia/1974/)    Record​11-3-0
+[1974](https://mundodolphins.es/historia/1974/)    Record​ 11-3-0
 
-[https://mundodolphins.es/historia/1975/](https://mundodolphins.es/historia/1975/)    Record​10-4-0
+[1975](https://mundodolphins.es/historia/1975/)    Record​ 10-4-0
 
-[https://mundodolphins.es/historia/1976/](https://mundodolphins.es/historia/1976/)    Record​6-8-0
+[1976](https://mundodolphins.es/historia/1976/)    Record​ 6-8-0
 
-[https://mundodolphins.es/historia/1977/](https://mundodolphins.es/historia/1977/)    Record​10-4-0
+[1977](https://mundodolphins.es/historia/1977/)    Record​ 10-4-0
 
-[https://mundodolphins.es/historia/1978/](https://mundodolphins.es/historia/1978/)    Record​11-5-0
+[1978](https://mundodolphins.es/historia/1978/)    Record​ 11-5-0
 
-[https://mundodolphins.es/historia/1979/](https://mundodolphins.es/historia/1979/)    Record​10-6-0
+[1979](https://mundodolphins.es/historia/1979/)    Record​ 10-6-0
  
 La gestión de **Don Shula** llevó a la franquicia a crecer tanto económica como deportivamente como hemos podido ver, y con las victorias llegaron los ansiados títulos que citamos a continuación:
 
@@ -85,13 +85,12 @@ A continuación, te dejamos la letra y el link para que puedas ir ensayando ante
 
 **_"Miami has the Dolphins, the greatest football team. We take the ball from goal to goal like no one's ever seen. We're in the air, we're on the ground, we're always in control. And when you say Miami, you're talking Super Bowl._** **_'Cause_** **_we're the Miami Dolphins, Miami Dolphins, Miami Dolphins Number One"._**
  
- 
-[https://youtu.be/Mz4lIFYEgqQ?si=-YvK9zh4F5RTVnwQ](https://youtu.be/Mz4lIFYEgqQ?si=-YvK9zh4F5RTVnwQ)
+ {{< youtube Mz4lIFYEgqQ >}}
  
 ✓ Por otro lado, debemos citar a la llamada defensa sin nombre (en inglés, "No Name Defense"), términoacuñado en 1972 por el entrenador de los Dallas Cowboys (**Tom** **Landry**) al mencionar en una entrevista que al contrario de la ofensiva de Miami la cual contaba con grandes nombres reconocidos, la defensa, sin embargo, no conocía los nombres de dichos jugadores debido a que ésta se caracterizabamás por un juego colectivo, sólido y eficaz donde predominaba el conjunto más que las individualidades 
  
  
-Para terminar, debemos comentar que a lo largo de la década de los setenta muchas son las figuras importantes que destacan, algunas las tratamos en la década anterioradjuntamos mail para su lectura ([https://mundodolphins.es/noticias/20250518-miami-dolphins-y-su-primera-d%C3%A9cada-de-historia-los-a%C3%B1os-60.-1966--1969/](https://mundodolphins.es/noticias/20250518-miami-dolphins-y-su-primera-d%C3%A9cada-de-historia-los-a%C3%B1os-60.-1966--1969/)), y otras las trataremos a continuación. 
+Para terminar, debemos comentar que a lo largo de la década de los setenta muchas son las figuras importantes que destacan, algunas las tratamos en la década anterioradjuntamos mail para su lectura ([Miami Dolphins, y su primera década de historia, los años 60. (1966 – 1969)](https://mundodolphins.es/noticias/20250518-miami-dolphins-y-su-primera-d%C3%A9cada-de-historia-los-a%C3%B1os-60.-1966--1969/)), y otras las trataremos a continuación. 
 
 ✓ En primer lugar, debemos tener en cuenta que el éxito de Miami no podemos entenderlo sin las contribuciones fundamentales tanto dentro como fuera del terreno de juego de la que fue sin duda una de las piezas fundamentales en la historia de la franquicia, nuestro entrenador **Don Shula**.
 
