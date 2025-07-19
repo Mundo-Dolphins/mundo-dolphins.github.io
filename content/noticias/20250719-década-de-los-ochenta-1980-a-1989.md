@@ -73,7 +73,13 @@ Para conocer un poco más los excelentes resultados del trabajo de Don Shula y D
 
 Para terminar, citaremos a continuación algunas de las figuras más importantes de la década, para ello obviaremos los ya citados Dan Marino, Don Shula y ¨The Killer B´s” por haber sido desarrollados a lo largo del artículo.
 Entre los jugadores más destacados de la década debemos citar a nuestro center Dwight Stephenson, el cual fue seleccionado en segunda ronda con el pick 48 del año 1980 y que a lo largo de su carrera fue nombrado mejor center de la NFL consiguiendo ser cinco veces All-Pro
-En segundo lugar, destacaremos a Bob Kuechenberg pilar fundamental en la época dorada de los setenta y parte fundamental de la ofensiva hasta 1983, fue seis veces All-Pro siendo un ejemplo de durabilidad y constancia con 194 partidos en sus 14 años de profesional y sólo 5 ausencias, ostenta el récord de ser el único jugador de la franquicia en jugar 5 Superbowl con 2 de ellos ganados.
-En tercer lugar, os traemos a Mark Duper, miembro fundamental de la ofensiva del equipo de Miami de Dan Marino. Mark Duper fue seleccionado en la segunda ronda del draft del 82 y destacó tanto por su velocidad como por la capacidad de generar jugadas explosivas, fue 3 veces Pro Bowl y consiguió 4 temporadas con más de 1000 yardas y 511 recepciones con 8869 yardas y 59 TD en sus 146 partidos.
+
+
+En segundo lugar, destacaremos a **Bob Kuechenberg** pilar fundamental en la época dorada de los setenta y parte fundamental de la ofensiva hasta 1983, fue seis veces All-Pro siendo un ejemplo de durabilidad y constancia con 194 partidos en sus 14 años de profesional y sólo 5 ausencias, ostenta el récord de ser el único jugador de la franquicia en jugar 5 Superbowl con 2 de ellos ganados.
+
+
+En tercer lugar, os traemos a **Mark Duper**, miembro fundamental de la ofensiva del equipo de Miami de **Dan Marino**. **Mark Duper** fue seleccionado en la segunda ronda del draft del 82 y destacó tanto por su velocidad como por la capacidad de generar jugadas explosivas, fue 3 veces Pro Bowl y consiguió 4 temporadas con más de 1000 yardas y 511 recepciones con 8869 yardas y 59 TD en sus 146 partidos.
 Por último, conviene citar al tercer miembro del tridente estrella de los Miami Dolphins en esta década y miembro de los conocidos como Mark Brothers (Clayton y Duper): Dan Marino (en primer lugar), por el citado Mark Duper (en segundo lugar) y por Mark Clayton (como tercer miembro destacado)
+
+
 Mark Clayton fue el receptor estrella de los Miami Dolphins en los años ochenta, consiguiendo en 1984 el récord de touchdown en una sola temporada en 18, lo que le sirvió para convertirse en referente en su posición a lo largo de dicha década. Con sus 84 touchdown al retirarse, estableció el récord de la franquicia en ese momento, dichas actuaciones a lo largo de su carrera le sirvieron para ser  5 veces Pro Bowl y dejando su huella en nuestra franquicia para siempre
