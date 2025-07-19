@@ -6,7 +6,7 @@ on:
     - cron: "*/15 * * * *"
 
 jobs:
-  check:
+  check-social:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Go
