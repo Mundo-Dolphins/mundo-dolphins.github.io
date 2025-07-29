@@ -33,7 +33,7 @@ jobs:
         run: rm -rf scripts/checker/
 
       - name: Commit and push changes
-        uses: devops-infra/action-commit-push@v0.11.1
+        uses: devops-infra/action-commit-push@v0.11.2
         with:
           github_token: ${{ secrets.PUSH }}
           commit_prefix: "Added new episodes"
