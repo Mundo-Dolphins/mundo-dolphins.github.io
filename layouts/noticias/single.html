@@ -1,36 +1,4 @@
 {{ define "main" }}
-<!-- Configuración PWA segura inyectada desde GitHub Secrets -->
-<script>
-{{- $vapidKey := getenv "VAPID_PUBLIC_KEY" -}}
-window.PWA_SECURE_CONFIG = window.PWA_SECURE_CONFIG || {};
-window.PWA_SECURE_CONFIG.environment = "{{ hugo.Environment }}";
-window.PWA_SECURE_CONFIG.buildTime = {{ now.Unix }};
-{{ if $vapidKey -}}
-window.PWA_SECURE_CONFIG.vapidKey = "{{ $vapidKey }}";
-window.PWA_SECURE_CONFIG.hasVapidFromEnv = true;
-window.siteConfig = window.siteConfig || {};
-window.siteConfig.vapidPublicKey = "{{ $vapidKey }}";
-console.log('🔐 VAPID key cargada desde variable de entorno');
-{{ else -}}
-window.PWA_SECURE_CONFIG.hasVapidFromEnv = false;
-// En desarrollo, cargar desde archivo local
-fetch('/vapid-config.json')
-  .then(response => response.ok ? response.json() : Promise.reject('No config'))
-  .then(config => {
-    if (config.publicKey) {
-      window.siteConfig = window.siteConfig || {};
-      window.siteConfig.vapidPublicKey = config.publicKey;
-      console.log('🔧 VAPID key cargada desde configuración local');
-    }
-  })
-  .catch(() => {
-    console.log('🔧 Modo desarrollo - VAPID key no disponible');
-  });
-{{ end -}}
-</script>
-
-<!-- Script PWA Meta Injector -->
-<script src="/js/pwa-meta-injector.js"></script>
 
 <main class="main" role="main">
     <article class="post">

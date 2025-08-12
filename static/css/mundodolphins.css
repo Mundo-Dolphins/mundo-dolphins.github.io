@@ -183,10 +183,10 @@
 }
 
 /* ==========================================================================
-   Push Notifications Widget Sidebar
+   FCM Notifications Widget Sidebar
    ========================================================================== */
 
-.widget--push-notifications {
+.widget--fcm-notifications {
     background: #fff;
     border: 1px solid #e2e2e2;
     border-radius: 8px;
@@ -194,7 +194,7 @@
     margin-bottom: 20px;
 }
 
-.widget--push-notifications .widget__title {
+.widget--fcm-notifications .widget__title {
     font-size: 1.1rem;
     margin: 0;
     padding: 15px 20px 10px;
@@ -202,21 +202,21 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
-.widget--push-notifications .widget__content {
+.widget--fcm-notifications .widget__content {
     padding: 15px 20px 20px;
 }
 
 /* Estilos específicos para sidebar */
-.push-notifications--sidebar {
+.fcm-notifications--sidebar {
     font-size: 0.9rem;
 }
 
-.push-notifications--sidebar .push-notifications__status {
+.fcm-notifications--sidebar .fcm-notifications__status {
     margin-bottom: 12px;
     text-align: center;
 }
 
-.push-notifications--sidebar .notification-status {
+.fcm-notifications--sidebar .notification-status {
     font-size: 0.85rem;
     padding: 6px 12px;
     border-radius: 15px;
@@ -225,19 +225,19 @@
     display: inline-block;
 }
 
-.push-notifications--sidebar .notification-status--active {
+.fcm-notifications--sidebar .notification-status--active {
     background: #e8f5e8;
     color: #2d5a2d;
 }
 
-.push-notifications--sidebar .push-notifications__buttons {
+.fcm-notifications--sidebar .fcm-notifications__buttons {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-bottom: 12px;
 }
 
-.push-btn--compact {
+.fcm-btn--compact {
     padding: 8px 12px;
     font-size: 0.85rem;
     border-radius: 6px;
@@ -250,42 +250,42 @@
     cursor: pointer;
 }
 
-.push-btn--compact .push-btn__icon {
+.fcm-btn--compact .fcm-btn__icon {
     width: 16px;
     height: 16px;
 }
 
-.push-btn--primary.push-btn--compact {
+.fcm-btn--primary.fcm-btn--compact {
     background: #3c8b94;
     color: white;
 }
 
-.push-btn--primary.push-btn--compact:hover {
+.fcm-btn--primary.fcm-btn--compact:hover {
     background: #2a6b73;
     transform: translateY(-1px);
 }
 
-.push-btn--secondary.push-btn--compact {
+.fcm-btn--secondary.fcm-btn--compact {
     background: #6c757d;
     color: white;
 }
 
-.push-btn--secondary.push-btn--compact:hover {
+.fcm-btn--secondary.fcm-btn--compact:hover {
     background: #565e64;
     transform: translateY(-1px);
 }
 
-.push-btn--test.push-btn--compact {
+.fcm-btn--test.fcm-btn--compact {
     background: #28a745;
     color: white;
 }
 
-.push-btn--test.push-btn--compact:hover {
+.fcm-btn--test.fcm-btn--compact:hover {
     background: #218838;
     transform: translateY(-1px);
 }
 
-.push-notifications__note--compact {
+.fcm-notifications__note--compact {
     font-size: 0.75rem;
     color: #666;
     line-height: 1.3;
@@ -297,11 +297,11 @@
 
 /* Responsive para sidebar */
 @media (max-width: 768px) {
-    .widget--push-notifications {
+    .widget--fcm-notifications {
         margin-bottom: 15px;
     }
     
-    .push-btn--compact {
+    .fcm-btn--compact {
         padding: 10px;
         font-size: 0.8rem;
     }
