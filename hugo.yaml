@@ -111,7 +111,7 @@ outputs:
   - RSS
   - HeadlessCMSConfig
 
-# Configuración de seguridad para permitir acceso a variables VAPID
+# Configuración de seguridad para permitir acceso a variables de entorno
 security:
   funcs:
     getenv:
@@ -119,3 +119,10 @@ security:
       - "^CI$"
       - "^VAPID_PUBLIC_KEY$"
       - "^VAPID_PRIVATE_KEY$"
+      - "^FIREBASE_API_KEY$"
+      - "^FIREBASE_AUTH_DOMAIN$"
+      - "^FIREBASE_PROJECT_ID$"
+      - "^FIREBASE_STORAGE_BUCKET$"
+      - "^FIREBASE_MESSAGING_SENDER_ID$"
+      - "^FIREBASE_APP_ID$"
+      - "^FCM_VAPID_KEY$"

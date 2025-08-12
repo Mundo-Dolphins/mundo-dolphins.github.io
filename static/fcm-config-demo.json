@@ -1,0 +1,12 @@
+{
+  "firebase": {
+    "apiKey": "demo-api-key",
+    "authDomain": "demo-project.firebaseapp.com",
+    "projectId": "demo-project",
+    "storageBucket": "demo-project.appspot.com",
+    "messagingSenderId": "123456789",
+    "appId": "1:123456789:web:abcdef"
+  },
+  "vapidKey": "demo-vapid-key",
+  "note": "Esta es una configuración demo para desarrollo local. Para configurar FCM real, sigue las instrucciones en FCM-SETUP.md"
+}

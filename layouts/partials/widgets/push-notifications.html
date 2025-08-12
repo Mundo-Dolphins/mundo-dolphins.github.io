@@ -1,10 +1,10 @@
 {{ if .Site.Params.pushNotifications.enabled }}
 <aside class="widget widget--push-notifications">
   <div class="widget__header">
-    <h4 class="widget__title">🔔 Notificaciones</h4>
+    <h4 class="widget__title">� Notificaciones FCM</h4>
   </div>
   <div class="widget__content">
-    {{ partial "push-notifications.html" . }}
+    {{ partial "fcm-notifications.html" . }}
   </div>
 </aside>
 {{ end }}
