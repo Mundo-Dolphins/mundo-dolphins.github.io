@@ -123,6 +123,16 @@
     border-color: #6c757d;
 }
 
+.social-share__button--copied {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.social-share__button--error {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .social-share__buttons {
