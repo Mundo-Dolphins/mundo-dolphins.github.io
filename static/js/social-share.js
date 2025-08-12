@@ -26,11 +26,11 @@ function copyToClipboard(text, event) {
 /**
  * Método fallback para copiar al portapapeles usando execCommand
  * NOTA: document.execCommand('copy') fue declarada obsoleta en 2020 y será removida
- * completamente en futuras versiones de navegadores. Se mantiene aquí
+ * en Chrome 110+ (2023), Firefox 115+ (2023), Safari 17+ (2023). Se mantiene aquí
  * intencionalmente como fallback para navegadores que no soportan la
  * API moderna de Clipboard (principalmente IE y algunos contextos sin HTTPS).
- * Plan de migración: Revisar soporte en 2026 y considerar remover si
- * el soporte de navegadores antiguos ya no es necesario.
+ * Plan de migración: Revisar soporte en 2026 cuando IE esté completamente
+ * descontinuado y considerar remover si el soporte ya no es necesario.
  * @param {string} text - Texto a copiar
  * @param {Event} event - Evento del click
  */

@@ -7,6 +7,7 @@ params:
   socialShare:
     enabled: true              # Habilitar/deshabilitar sistema completo
     autoLoadScript: true       # Cargar script automáticamente
+    twitterHandle: "MundoDolphins"  # Usuario de Twitter/X para compartir
     contentTypes:              # Tipos de contenido que incluyen botones
       - noticias
       - podcast  
@@ -54,6 +55,13 @@ socialShare: false
 ```
 
 ## Personalización Avanzada
+
+### Personalización de Twitter/X
+```yaml
+params:
+  socialShare:
+    twitterHandle: "MiUsuario"  # Cambiar el usuario de Twitter/X
+```
 
 ### Añadir Nuevo Tipo de Contenido
 ```yaml

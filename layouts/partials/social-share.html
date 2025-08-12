@@ -8,13 +8,14 @@
 {{- if .Params.tags }}
   {{- $hashtags = delimit .Params.tags "," }}
 {{- end }}
+{{- $twitterHandle := .Site.Params.socialShare.twitterHandle | default "MundoDolphins" }}
 
 <div class="social-share">
   <h4 class="social-share__title">Comparte este artículo</h4>
   <div class="social-share__buttons">
     
     <!-- X (Twitter) -->
-    <a href="https://x.com/intent/tweet?text={{ $title | urlquery }}&url={{ $url | urlquery }}&hashtags={{ $hashtags | urlquery }}&via=MundoDolphins" 
+    <a href="https://x.com/intent/tweet?text={{ $title | urlquery }}&url={{ $url | urlquery }}&hashtags={{ $hashtags | urlquery }}&via={{ $twitterHandle | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--x"

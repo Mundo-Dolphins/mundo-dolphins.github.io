@@ -3,7 +3,7 @@
 ## Cambios Implementados
 
 ### 1. Escape Seguro de URLs (XSS Prevention)
-- **Problema**: La URL se inyectaba directamente en JavaScript sin escape
+- **Problema**: La URL se insertaba directamente en JavaScript sin escape
 - **Solución**: Usar `{{ $url | htmlEscape }}` para data attributes HTML
 - **Beneficio**: Previene vulnerabilidades XSS con el filtro correcto para contexto HTML
 
@@ -68,6 +68,21 @@
 - **Problema**: Tipos de contenido hardcodeados en múltiples archivos
 - **Solución**: Configuración centralizada en `hugo.yaml` con helper compartido
 - **Beneficio**: Fácil mantenimiento y adición de nuevos tipos de contenido
+
+### 10. Optimización de Rendimiento (Performance)
+- **Mejora**: Eliminación de búsquedas regex costosas en contenido
+- **Implementación**: Lógica semántica basada en propiedades de página
+- **Beneficio**: Mejor rendimiento en sitios con contenido extenso
+
+### 11. Desacoplamiento de Layout (Arquitectura)
+- **Problema**: Lógica acoplada a nombres de layout específicos
+- **Solución**: Verificación semántica usando `.IsPage`, `.IsHome`, `.IsSection`
+- **Beneficio**: Mayor flexibilidad y menos acoplamiento arquitectural
+
+### 12. Parámetros Configurables (Flexibilidad)
+- **Mejora**: Twitter handle configurable en lugar de hardcoded
+- **Implementación**: `{{ .Site.Params.socialShare.twitterHandle | default "MundoDolphins" }}`
+- **Beneficio**: Reutilización en diferentes proyectos sin modificar código
 
 ## Arquitectura del Sistema
 
@@ -140,13 +155,29 @@ function isValidUrl(url) {
 }
 ```
 
-### URLs Seguras con Encoding
-```html
-<!-- Antes: Vulnerable a inyección -->
-<a href="https://x.com/intent/tweet?text={{ $title }}&url={{ $url }}">
+### Timeline Específico de Navegadores
+```javascript
+* NOTA: Será removida en Chrome 110+ (2023), Firefox 115+ (2023), Safari 17+ (2023)
+* Plan de migración: Revisar soporte en 2026 cuando IE esté completamente descontinuado
+```
 
-<!-- Después: Seguro con encoding -->
-<a href="https://x.com/intent/tweet?text={{ $title | urlquery }}&url={{ $url | urlquery }}">
+### Configuración Flexible
+```yaml
+# En hugo.yaml
+params:
+  socialShare:
+    enabled: true
+    twitterHandle: "MundoDolphins"  # Configurable
+    contentTypes: ["noticias", "podcast"]
+```
+
+### Lógica Semántica Sin Acoplamiento
+```html
+<!-- Antes: Acoplado a layout -->
+{{- if eq .Layout "single" -}}
+
+<!-- Después: Semántico -->
+{{- if and (.IsPage) (not .IsHome) (not .IsSection) -}}
 ```
 
 ## Compatibilidad
@@ -186,15 +217,18 @@ El sistema funciona automáticamente cuando se carga la página. Los scripts se 
 ✅ **APIs Modernas**: Clipboard API con fallback robusto  
 ✅ **Compatibilidad Universal**: Navegadores antiguos y modernos  
 ✅ **URLs Actualizadas**: X.com en lugar de Twitter.com  
-✅ **Documentación Clara**: APIs obsoletas explicadas con timeline  
+✅ **Documentación Clara**: APIs obsoletas explicadas con timeline específico  
 ✅ **Carga Optimizada**: Script único sin duplicación  
 ✅ **Validación URLs**: Prevención XSS con validación de protocolos  
 ✅ **Encoding Seguro**: Filtro `urlquery` en todos los parámetros  
 ✅ **Prevención Inyección**: URLs correctamente codificadas  
 ✅ **Configuración Centralizada**: Sistema completamente configurable  
 ✅ **Lógica Compartida**: Helper centralizado sin duplicación  
+✅ **Optimización Rendimiento**: Sin búsquedas regex costosas  
+✅ **Desacoplamiento**: Lógica semántica sin dependencia de layouts  
+✅ **Parámetros Flexibles**: Twitter handle y configuraciones adaptables  
 ✅ **Monitoreo**: Console warnings para observabilidad  
-✅ **Plan de Migración**: Timeline claro para futuras actualizaciones  
+✅ **Plan de Migración**: Timeline específico con versiones de navegadores  
 ✅ **Feedback Visual**: Estados de éxito y error  
 ✅ **Rendimiento**: Carga diferida y condicional  
 ✅ **Calidad Lingüística**: Terminología precisa en español  

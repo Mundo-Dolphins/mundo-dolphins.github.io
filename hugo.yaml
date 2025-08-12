@@ -57,6 +57,8 @@ params:
       - historia
     # Cargar script automáticamente en layouts single
     autoLoadScript: true
+    # Usuario de Twitter/X para el parámetro via
+    twitterHandle: "MundoDolphins"
   sidebar:
     home: right
     list: right
