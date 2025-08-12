@@ -25,6 +25,9 @@ function copyToClipboard(text, event) {
 
 /**
  * Método fallback para copiar al portapapeles usando execCommand
+ * NOTA: document.execCommand('copy') está deprecado, pero se mantiene
+ * intencionalmente como fallback para soporte de navegadores antiguos
+ * que no tienen la API moderna de Clipboard.
  * @param {string} text - Texto a copiar
  * @param {Event} event - Evento del click
  */
@@ -41,6 +44,7 @@ function fallbackCopyToClipboard(text, event) {
   textArea.select();
   
   try {
+    // execCommand está deprecado, pero necesario para navegadores antiguos
     const successful = document.execCommand('copy');
     if (successful) {
       showCopySuccess(event);

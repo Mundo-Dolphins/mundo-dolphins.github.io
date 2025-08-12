@@ -1,0 +1,11 @@
+{{/*
+Partial para cargar el script de social-share de manera optimizada
+Solo se carga si la página actual lo necesita y no se ha cargado ya
+*/}}
+
+{{- if not (.Scratch.Get "social-share-loaded") -}}
+  {{- if or (eq .Type "noticias") (eq .Layout "single") (.Params.socialShare) -}}
+    <script src="{{ "js/social-share.js" | relURL }}" defer></script>
+    {{- .Scratch.Set "social-share-loaded" true -}}
+  {{- end -}}
+{{- end -}}
