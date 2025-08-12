@@ -1,0 +1,31 @@
+{{/*
+Helper para determinar si una página debe mostrar botones de compartir
+Configuración desde hugo.yaml: params.socialShare.contentTypes
+Usa enfoques semánticos en lugar de nombres de layout hardcodeados
+Retorna: boolean
+*/}}
+
+{{- $socialShareConfig := .Site.Params.socialShare | default dict -}}
+{{- $enabled := $socialShareConfig.enabled | default true -}}
+{{- $contentTypes := $socialShareConfig.contentTypes | default (slice "noticias" "podcast") -}}
+{{- $shouldShow := false -}}
+
+{{- if $enabled -}}
+  {{- /* Verificar si el tipo de contenido está en la lista configurada */ -}}
+  {{- if in $contentTypes .Type -}}
+    {{- $shouldShow = true -}}
+  {{- end -}}
+  
+  {{- /* O si tiene parámetro socialShare habilitado explícitamente */ -}}
+  {{- if .Params.socialShare -}}
+    {{- $shouldShow = true -}}
+  {{- end -}}
+  
+  {{- /* Para contenido individual (páginas de artículo) sin tipo específico */ -}}
+  {{- if and (.IsPage) (not .IsHome) (not .IsSection) (ne .Params.socialShare false) (not $shouldShow) -}}
+    {{- /* Solo para páginas que no están explícitamente excluidas */ -}}
+    {{- $shouldShow = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $shouldShow -}}

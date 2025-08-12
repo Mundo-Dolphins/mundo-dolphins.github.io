@@ -81,10 +81,10 @@
 }
 
 /* Platform specific colors */
-.social-share__button--twitter {
-    background-color: #1da1f2;
+.social-share__button--x {
+    background-color: #000000;
     color: white;
-    border-color: #1da1f2;
+    border-color: #000000;
 }
 
 .social-share__button--facebook {
@@ -121,6 +121,16 @@
     background-color: #6c757d;
     color: white;
     border-color: #6c757d;
+}
+
+.social-share__button--copied {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.social-share__button--error {
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 /* Responsive design */
