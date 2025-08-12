@@ -21,6 +21,15 @@ class FCMNotificationManager {
            firebase.messaging.isSupported();
   }
 
+  /**
+   * Obtiene las opciones de token para Firebase Messaging
+   * @returns {Object} Objeto con configuración VAPID si está disponible
+   * @private
+   */
+  getTokenOptions() {
+    return this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
+  }
+
   async init() {
     console.log('🔥 Iniciando FCM...');
     
@@ -57,8 +66,7 @@ class FCMNotificationManager {
       });
 
       // Verificar si ya tenemos un token
-      const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
-      this.token = await this.messaging.getToken(tokenOptions);
+      this.token = await this.messaging.getToken(this.getTokenOptions());
       if (this.token) {
         console.log('🔥 Token FCM existente:', this.token);
         this.updateUI(true, 'Notificaciones activas');
@@ -70,8 +78,7 @@ class FCMNotificationManager {
 
       // Escuchar cambios en el token
       this.messaging.onTokenRefresh(() => {
-        const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
-        this.messaging.getToken(tokenOptions).then((refreshedToken) => {
+        this.messaging.getToken(this.getTokenOptions()).then((refreshedToken) => {
           console.log('🔥 Token FCM actualizado:', refreshedToken);
           this.saveToken(refreshedToken);
         });
@@ -118,8 +125,7 @@ class FCMNotificationManager {
       }
 
       // Obtener token FCM con configuración VAPID
-      const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
-      this.token = await this.messaging.getToken(tokenOptions);
+      this.token = await this.messaging.getToken(this.getTokenOptions());
       
       if (this.token) {
         console.log('✅ Token FCM obtenido:', this.token);
