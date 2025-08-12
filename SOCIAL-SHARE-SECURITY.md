@@ -54,31 +54,57 @@
 - **Solución**: Usar términos correctos en español: "obsoleto/descontinuado"
 - **Beneficio**: Mejor calidad y precisión del código en español
 
+### 7. Documentación Detallada de Depreciación (Mantenimiento)
+- **Mejora**: Información específica sobre timeline y plan de migración
+- **Contenido**: Fecha de depreciación (2020) y plan de revisión (2026)
+- **Beneficio**: Mejor planificación para futuras actualizaciones
+
+### 8. Monitoreo con Console Warnings (Observabilidad)
+- **Implementación**: Warning automático cuando se usa execCommand fallback
+- **Mensaje**: "Usando execCommand fallback (obsoleto). Considerar actualizar navegador o habilitar HTTPS."
+- **Beneficio**: Visibilidad para monitoreo y planificación de migración
+
+### 9. Sistema Configurable (Mantenibilidad)
+- **Problema**: Tipos de contenido hardcodeados en múltiples archivos
+- **Solución**: Configuración centralizada en `hugo.yaml` con helper compartido
+- **Beneficio**: Fácil mantenimiento y adición de nuevos tipos de contenido
+
 ## Arquitectura del Sistema
 
 ### Estructura de Archivos
 ```
 layouts/
-├── _default/
-│   └── single.html          # Layout principal con partial script
-├── noticias/
-│   └── single.html          # Layout de noticias con partial script
+├── _default/single.html         # Layout principal con partials
+├── noticias/single.html         # Layout de noticias con partials
 ├── partials/
-│   ├── social-share.html    # Componente de botones sociales (solo HTML)
-│   └── social-share-script.html # Carga inteligente de script
+│   ├── social-share.html            # Componente principal con lógica condicional
+│   ├── social-share-script.html     # Carga inteligente de script
+│   └── should-show-social-share.html # Helper compartido para detección
 └── static/js/
-    └── social-share.js      # Lógica completa con fallbacks
+    └── social-share.js          # Lógica completa con fallbacks y warnings
+
+hugo.yaml                       # Configuración centralizada
 ```
 
-### Carga Inteligente y Sin Duplicación
-```html
-<!-- En layouts usando social-share -->
-{{ partial "social-share-script.html" . }}
+### Sistema Configurable
+```yaml
+# En hugo.yaml
+params:
+  socialShare:
+    enabled: true
+    autoLoadScript: true
+    contentTypes:
+      - noticias
+      - podcast
+      - historia
+```
 
-<!-- En social-share-script.html -->
-{{- if not (.Scratch.Get "social-share-loaded") -}}
-  <script src="js/social-share.js" defer></script>
-  {{- .Scratch.Set "social-share-loaded" true -}}
+### Helper Compartido
+```html
+<!-- En should-show-social-share.html -->
+{{- $shouldShow := partial "should-show-social-share.html" . -}}
+{{- if $shouldShow -}}
+  <!-- Mostrar botones -->
 {{- end -}}
 ```## Funcionalidades Añadidas
 
@@ -160,12 +186,20 @@ El sistema funciona automáticamente cuando se carga la página. Los scripts se 
 ✅ **APIs Modernas**: Clipboard API con fallback robusto  
 ✅ **Compatibilidad Universal**: Navegadores antiguos y modernos  
 ✅ **URLs Actualizadas**: X.com en lugar de Twitter.com  
-✅ **Documentación Clara**: APIs obsoletas explicadas correctamente  
+✅ **Documentación Clara**: APIs obsoletas explicadas con timeline  
 ✅ **Carga Optimizada**: Script único sin duplicación  
 ✅ **Validación URLs**: Prevención XSS con validación de protocolos  
 ✅ **Encoding Seguro**: Filtro `urlquery` en todos los parámetros  
 ✅ **Prevención Inyección**: URLs correctamente codificadas  
+✅ **Configuración Centralizada**: Sistema completamente configurable  
+✅ **Lógica Compartida**: Helper centralizado sin duplicación  
+✅ **Monitoreo**: Console warnings para observabilidad  
+✅ **Plan de Migración**: Timeline claro para futuras actualizaciones  
 ✅ **Feedback Visual**: Estados de éxito y error  
 ✅ **Rendimiento**: Carga diferida y condicional  
 ✅ **Calidad Lingüística**: Terminología precisa en español  
-✅ **Mantenibilidad**: Código modular y bien documentado
+✅ **Mantenibilidad**: Código modular y completamente configurable
+
+## Configuración y Uso
+
+Para detalles completos sobre configuración, ver: [SOCIAL-SHARE-CONFIG.md](SOCIAL-SHARE-CONFIG.md)

@@ -1,11 +1,20 @@
 {{/*
 Partial para cargar el script de social-share de manera optimizada
 Solo se carga si la página actual lo necesita y no se ha cargado ya
+Configuración desde hugo.yaml: params.socialShare
 */}}
 
 {{- if not (.Scratch.Get "social-share-loaded") -}}
-  {{- if or (eq .Type "noticias") (eq .Layout "single") (.Params.socialShare) -}}
-    <script src="{{ "js/social-share.js" | relURL }}" defer></script>
-    {{- .Scratch.Set "social-share-loaded" true -}}
+  {{- $socialShareConfig := .Site.Params.socialShare | default dict -}}
+  {{- $enabled := $socialShareConfig.enabled | default true -}}
+  {{- $autoLoad := $socialShareConfig.autoLoadScript | default true -}}
+  
+  {{- if and $enabled $autoLoad -}}
+    {{- $shouldShow := partial "should-show-social-share.html" . -}}
+    
+    {{- if $shouldShow -}}
+      <script src="{{ "js/social-share.js" | relURL }}" defer></script>
+      {{- .Scratch.Set "social-share-loaded" true -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}

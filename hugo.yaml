@@ -47,6 +47,16 @@ params:
         - title: Google Play
           url: https://play.google.com/store/apps/details?id=es.mundodolphins.app
           icon: svg/google-play.svg
+  # Configuración de botones de compartir en redes sociales
+  socialShare:
+    enabled: true
+    # Tipos de contenido que incluyen automáticamente los botones de compartir
+    contentTypes:
+      - noticias
+      - podcast
+      - historia
+    # Cargar script automáticamente en layouts single
+    autoLoadScript: true
   sidebar:
     home: right
     list: right

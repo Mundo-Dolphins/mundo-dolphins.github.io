@@ -1,3 +1,6 @@
+{{- $shouldShow := partial "should-show-social-share.html" . -}}
+
+{{- if $shouldShow -}}
 {{- $title := .Title | htmlEscape }}
 {{- $url := .Permalink }}
 {{- $description := .Summary | default .Site.Params.description | htmlEscape }}
@@ -93,3 +96,5 @@
     </button>
   </div>
 </div>
+
+{{- end -}}
