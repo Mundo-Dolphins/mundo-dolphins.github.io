@@ -89,7 +89,7 @@ Usar el helper para verificar si debe mostrarse:
 ### Console Warnings
 El sistema emite warnings cuando usa métodos obsoletos:
 ```
-Usando execCommand fallback (obsoleto). Considerar actualizar navegador o habilitar HTTPS.
+Usando execCommand fallback (función obsoleta). Considerar actualizar navegador o habilitar HTTPS.
 ```
 
 ### Plan de Migración

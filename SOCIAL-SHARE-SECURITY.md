@@ -50,18 +50,18 @@
 - **Beneficio**: Prevención de ataques de inyección URL
 
 ### 6. Corrección Terminológica (Calidad)
-- **Problema**: Uso de anglicismo "deprecado"
-- **Solución**: Usar términos correctos en español: "obsoleto/descontinuado"
-- **Beneficio**: Mejor calidad y precisión del código en español
+- **Problema**: Uso de anglicismo "deprecado" y falta de concordancia de género
+- **Solución**: Usar términos correctos en español: "obsoleta/descontinuada" (femenino)
+- **Beneficio**: Mejor calidad y precisión del código en español con gramática correcta
 
 ### 7. Documentación Detallada de Depreciación (Mantenimiento)
 - **Mejora**: Información específica sobre timeline y plan de migración
-- **Contenido**: Fecha de depreciación (2020) y plan de revisión (2026)
+- **Contenido**: Fecha de obsolescencia (2020) y plan de revisión (2026)
 - **Beneficio**: Mejor planificación para futuras actualizaciones
 
 ### 8. Monitoreo con Console Warnings (Observabilidad)
 - **Implementación**: Warning automático cuando se usa execCommand fallback
-- **Mensaje**: "Usando execCommand fallback (obsoleto). Considerar actualizar navegador o habilitar HTTPS."
+- **Mensaje**: "Usando execCommand fallback (función obsoleta). Considerar actualizar navegador o habilitar HTTPS."
 - **Beneficio**: Visibilidad para monitoreo y planificación de migración
 
 ### 9. Sistema Configurable (Mantenibilidad)

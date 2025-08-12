@@ -25,7 +25,7 @@ function copyToClipboard(text, event) {
 
 /**
  * Método fallback para copiar al portapapeles usando execCommand
- * NOTA: document.execCommand('copy') fue obsoleto en 2020 y será removido
+ * NOTA: document.execCommand('copy') fue declarada obsoleta en 2020 y será removida
  * completamente en futuras versiones de navegadores. Se mantiene aquí
  * intencionalmente como fallback para navegadores que no soportan la
  * API moderna de Clipboard (principalmente IE y algunos contextos sin HTTPS).
@@ -36,7 +36,7 @@ function copyToClipboard(text, event) {
  */
 function fallbackCopyToClipboard(text, event) {
   // Advertir sobre el uso del método obsoleto para monitoreo
-  console.warn('Usando execCommand fallback (obsoleto). Considerar actualizar navegador o habilitar HTTPS.');
+  console.warn('Usando execCommand fallback (función obsoleta). Considerar actualizar navegador o habilitar HTTPS.');
   
   // Crear un elemento temporal
   const textArea = document.createElement('textarea');
@@ -50,7 +50,7 @@ function fallbackCopyToClipboard(text, event) {
   textArea.select();
   
   try {
-    // execCommand está obsoleto, pero necesario para navegadores antiguos
+    // execCommand es una función obsoleta, pero necesaria para navegadores antiguos
     const successful = document.execCommand('copy');
     if (successful) {
       showCopySuccess(event);
