@@ -59,6 +59,14 @@ params:
     autoLoadScript: true
     # Usuario de Twitter/X para el parámetro via
     twitterHandle: "MundoDolphins"
+  
+  # Configuración de notificaciones push
+  pushNotifications:
+    enabled: true
+    # Clave VAPID pública (la privada va en GitHub Secrets)
+    # La clave pública ahora se obtiene de la variable de entorno VAPID_PUBLIC_KEY
+    vapidPublicKey: "{{ getenv \"VAPID_PUBLIC_KEY\" }}"
+    
   sidebar:
     home: right
     list: right
@@ -66,6 +74,7 @@ params:
     widgets:
       - "recent"
       - "categories"
+      - "push-notifications"
       - "social"
   style:
     vars:
@@ -101,3 +110,12 @@ outputs:
   - HTML
   - RSS
   - HeadlessCMSConfig
+
+# Configuración de seguridad para permitir acceso a variables VAPID
+security:
+  funcs:
+    getenv:
+      - "^HUGO_"
+      - "^CI$"
+      - "^VAPID_PUBLIC_KEY$"
+      - "^VAPID_PRIVATE_KEY$"

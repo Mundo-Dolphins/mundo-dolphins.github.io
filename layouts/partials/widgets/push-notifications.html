@@ -1,0 +1,10 @@
+{{ if .Site.Params.pushNotifications.enabled }}
+<aside class="widget widget--push-notifications">
+  <div class="widget__header">
+    <h4 class="widget__title">🔔 Notificaciones</h4>
+  </div>
+  <div class="widget__content">
+    {{ partial "push-notifications.html" . }}
+  </div>
+</aside>
+{{ end }}

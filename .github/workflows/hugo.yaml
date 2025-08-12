@@ -67,6 +67,8 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: Europe/Madrid
+          # Inyectar clave VAPID desde GitHub Secrets de forma segura
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
         run: |
           hugo \
             --gc \

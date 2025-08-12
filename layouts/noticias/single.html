@@ -1,4 +1,23 @@
 {{ define "main" }}
+<!-- Configuración PWA segura inyectada desde GitHub Secrets -->
+<script>
+{{- $vapidKey := getenv "VAPID_PUBLIC_KEY" -}}
+window.PWA_SECURE_CONFIG = window.PWA_SECURE_CONFIG || {};
+window.PWA_SECURE_CONFIG.environment = "{{ hugo.Environment }}";
+window.PWA_SECURE_CONFIG.buildTime = {{ now.Unix }};
+{{ if $vapidKey -}}
+window.PWA_SECURE_CONFIG.vapidKey = "{{ $vapidKey }}";
+window.PWA_SECURE_CONFIG.hasVapidFromEnv = true;
+console.log('🔐 VAPID key cargada desde variable de entorno');
+{{ else -}}
+window.PWA_SECURE_CONFIG.hasVapidFromEnv = false;
+console.log('🔧 Modo desarrollo - VAPID key se cargará dinámicamente');
+{{ end -}}
+</script>
+
+<!-- Script PWA Meta Injector -->
+<script src="/js/pwa-meta-injector.js"></script>
+
 <main class="main" role="main">
     <article class="post">
         
