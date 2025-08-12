@@ -44,14 +44,11 @@ class FCMNotificationManager {
         this.app = firebase.app();
       }
 
+      // Registrar service worker primero
+      await this.registerServiceWorker();
+
       // Obtener messaging
       this.messaging = firebase.messaging();
-
-      // Configurar VAPID key
-      if (this.config.vapidKey) {
-        this.messaging.useServiceWorker(await this.registerServiceWorker());
-        this.messaging.usePublicVapidKey(this.config.vapidKey);
-      }
 
       // Configurar manejo de mensajes en foreground
       this.messaging.onMessage((payload) => {
@@ -60,7 +57,8 @@ class FCMNotificationManager {
       });
 
       // Verificar si ya tenemos un token
-      this.token = await this.messaging.getToken();
+      const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
+      this.token = await this.messaging.getToken(tokenOptions);
       if (this.token) {
         console.log('🔥 Token FCM existente:', this.token);
         this.updateUI(true, 'Notificaciones activas');
@@ -72,7 +70,8 @@ class FCMNotificationManager {
 
       // Escuchar cambios en el token
       this.messaging.onTokenRefresh(() => {
-        this.messaging.getToken().then((refreshedToken) => {
+        const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
+        this.messaging.getToken(tokenOptions).then((refreshedToken) => {
           console.log('🔥 Token FCM actualizado:', refreshedToken);
           this.saveToken(refreshedToken);
         });
@@ -118,8 +117,9 @@ class FCMNotificationManager {
         return false;
       }
 
-      // Obtener token FCM
-      this.token = await this.messaging.getToken();
+      // Obtener token FCM con configuración VAPID
+      const tokenOptions = this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
+      this.token = await this.messaging.getToken(tokenOptions);
       
       if (this.token) {
         console.log('✅ Token FCM obtenido:', this.token);
