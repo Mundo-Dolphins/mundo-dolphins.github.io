@@ -56,10 +56,11 @@
       return { vapidPublicKey: metaVapid.content, source: 'meta-tag' };
     }
     
-    // 5. Último fallback: configuración local
-    if (window.PWAConfig && window.PWAConfig.vapidPublicKey) {
-      console.log('✅ VAPID key cargada desde configuración local');
-      return { vapidPublicKey: window.PWAConfig.vapidPublicKey, source: 'local-config' };
+    // 5. Último fallback: desarrollo local desde meta tag legacy
+    const metaVapidLegacy = document.querySelector('meta[name="vapid-key"]');
+    if (metaVapidLegacy && metaVapidLegacy.content && metaVapidLegacy.content.length > 50) {
+      console.log('✅ VAPID key cargada desde meta tag legacy');
+      return { vapidPublicKey: metaVapidLegacy.content, source: 'meta-legacy' };
     }
     
     console.warn('⚠️ No se pudo cargar clave VAPID desde ninguna fuente segura');

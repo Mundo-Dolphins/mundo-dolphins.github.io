@@ -57,10 +57,9 @@
 - `.github/workflows/hugo.yaml` - **Integración con GitHub Secrets**
 
 ### Archivos Creados 🆕
-- `static/js/config.js` - Sistema de configuración centralizado
 - `static/api/pwa-config.json` - Endpoint de configuración PWA
 - `scripts/push-notifications-secure.js` - Sistema backend mejorado con encriptación
-- `layouts/shortcodes/pwa-config.html` - **Shortcode para inyección segura desde GitHub Secrets**
+- `layouts/shortcodes/pwa-config.html` - **Shortcode para inyección segura desde GitHub Secrets** (eliminado - configuración inline)
 - `scripts/setup-dev-env.sh` - **Script para configuración de desarrollo local**
 
 ## 🧪 Verificaciones de Seguridad Pasadas
