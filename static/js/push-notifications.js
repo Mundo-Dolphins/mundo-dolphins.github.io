@@ -68,65 +68,93 @@ class PushNotificationManager {
 
   // Inicializar el servicio
   async init() {
+    console.log('🔍 Iniciando init() de PushNotificationManager...');
+    
     if (!this.isSupported) {
-      console.log('Push notifications no son soportadas');
+      console.log('❌ Push notifications no son soportadas');
+      this.updateUI(false);
+      return false;
+    }
+
+    if (!this.vapidPublicKey) {
+      console.error('❌ No se pudo obtener la clave VAPID pública');
+      this.updateUI(false);
       return false;
     }
 
     try {
+      console.log('🔍 Registrando service worker...');
       // Registrar service worker
       this.registration = await navigator.serviceWorker.register('/sw.js');
-      console.log('Service Worker registrado:', this.registration);
+      console.log('✅ Service Worker registrado:', this.registration);
 
+      console.log('🔍 Verificando suscripción existente...');
       // Verificar si ya hay una suscripción
       this.subscription = await this.registration.pushManager.getSubscription();
       
       if (this.subscription) {
-        console.log('Ya hay una suscripción activa');
+        console.log('✅ Ya hay una suscripción activa');
         this.updateUI(true);
       } else {
-        console.log('No hay suscripción activa');
+        console.log('ℹ️ No hay suscripción activa');
         this.updateUI(false);
       }
 
+      console.log('✅ Init() completado exitosamente');
       return true;
     } catch (error) {
-      console.error('Error inicializando push notifications:', error);
+      console.error('❌ Error inicializando push notifications:', error);
+      this.updateUI(false);
       return false;
     }
   }
 
   // Solicitar permiso y suscribirse
   async subscribe() {
+    console.log('🔍 Iniciando suscripción...');
+    
     if (!this.registration) {
-      console.error('Service Worker no está registrado');
+      console.error('❌ Service Worker no está registrado');
+      return false;
+    }
+
+    if (!this.vapidPublicKey) {
+      console.error('❌ Clave VAPID no disponible');
       return false;
     }
 
     try {
+      console.log('🔍 Solicitando permiso de notificaciones...');
       // Solicitar permiso
       const permission = await Notification.requestPermission();
+      console.log('🔍 Permiso obtenido:', permission);
       
       if (permission !== 'granted') {
-        console.log('Permiso de notificaciones denegado');
+        console.log('❌ Permiso de notificaciones denegado');
         return false;
       }
 
+      console.log('🔍 Creando suscripción push...');
+      console.log('🔍 VAPID key a usar:', this.vapidPublicKey.substring(0, 20) + '...');
+      
       // Crear suscripción
       this.subscription = await this.registration.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: this.urlBase64ToUint8Array(this.vapidPublicKey)
       });
 
-      console.log('Suscripción creada:', this.subscription);
+      console.log('✅ Suscripción creada:', this.subscription);
 
-      // Enviar suscripción al servidor
+      // Almacenar suscripción localmente
+      console.log('🔍 Almacenando suscripción...');
       await this.sendSubscriptionToServer(this.subscription);
       
       this.updateUI(true);
+      console.log('✅ Suscripción completada exitosamente');
       return true;
     } catch (error) {
-      console.error('Error al suscribirse:', error);
+      console.error('❌ Error al suscribirse:', error);
+      console.error('❌ Stack trace:', error.stack);
       return false;
     }
   }

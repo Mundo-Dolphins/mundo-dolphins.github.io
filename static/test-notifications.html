@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Notificaciones Push - Mundo Dolphins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.warning { background: #fff3cd; color: #856404; }
+        .status.info { background: #d1ecf1; color: #0c5460; }
+        button {
+            background: #007cba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background: #005a8a;
+        }
+        .debug-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔔 Test de Notificaciones Push</h1>
+    <p>Esta página te ayuda a diagnosticar problemas con las notificaciones push.</p>
+
+    <div class="test-section">
+        <h2>1. Verificación de Soporte</h2>
+        <div id="support-status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>2. Configuración VAPID</h2>
+        <div id="vapid-status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Service Worker</h2>
+        <div id="sw-status"></div>
+        <button id="register-sw">Registrar Service Worker</button>
+    </div>
+
+    <div class="test-section">
+        <h2>4. Permisos de Notificación</h2>
+        <div id="permission-status"></div>
+        <button id="request-permission">Solicitar Permisos</button>
+    </div>
+
+    <div class="test-section">
+        <h2>5. Suscripción Push</h2>
+        <div id="subscription-status"></div>
+        <button id="subscribe-btn">Suscribirse</button>
+        <button id="unsubscribe-btn" disabled>Desuscribirse</button>
+    </div>
+
+    <div class="test-section">
+        <h2>6. Test de Notificación</h2>
+        <div id="notification-test-status"></div>
+        <button id="test-notification" disabled>Enviar Notificación de Prueba</button>
+    </div>
+
+    <div class="test-section">
+        <h2>7. Debug Info</h2>
+        <div class="debug-info" id="debug-info"></div>
+        <button id="refresh-debug">Actualizar Debug Info</button>
+    </div>
+
+    <script>
+        class NotificationTester {
+            constructor() {
+                this.swRegistration = null;
+                this.subscription = null;
+                this.init();
+            }
+
+            async init() {
+                this.checkSupport();
+                this.checkVapidConfig();
+                this.checkServiceWorker();
+                this.checkPermissions();
+                this.setupEventListeners();
+                this.updateDebugInfo();
+            }
+
+            log(message, type = 'info') {
+                console.log(`[${type.toUpperCase()}] ${message}`);
+                const debugDiv = document.getElementById('debug-info');
+                debugDiv.textContent += `[${new Date().toLocaleTimeString()}] [${type.toUpperCase()}] ${message}\n`;
+                debugDiv.scrollTop = debugDiv.scrollHeight;
+            }
+
+            showStatus(elementId, message, type = 'info') {
+                const element = document.getElementById(elementId);
+                element.innerHTML = `<div class="status ${type}">${message}</div>`;
+            }
+
+            checkSupport() {
+                const hasServiceWorker = 'serviceWorker' in navigator;
+                const hasPushManager = 'PushManager' in window;
+                const hasNotification = 'Notification' in window;
+
+                if (hasServiceWorker && hasPushManager && hasNotification) {
+                    this.showStatus('support-status', '✅ Soporte completo para notificaciones push', 'success');
+                    this.log('Soporte verificado: Service Worker, Push Manager y Notifications disponibles');
+                } else {
+                    this.showStatus('support-status', 
+                        `❌ Soporte incompleto:<br>
+                        Service Worker: ${hasServiceWorker ? '✅' : '❌'}<br>
+                        Push Manager: ${hasPushManager ? '✅' : '❌'}<br>
+                        Notifications: ${hasNotification ? '✅' : '❌'}`, 'error');
+                    this.log('Soporte incompleto detectado', 'error');
+                }
+            }
+
+            checkVapidConfig() {
+                const hasWindowConfig = window.PWA_SECURE_CONFIG && window.PWA_SECURE_CONFIG.vapidKey;
+                const hasSiteConfig = window.siteConfig && window.siteConfig.vapidPublicKey;
+
+                if (hasWindowConfig || hasSiteConfig) {
+                    const vapidKey = hasWindowConfig ? window.PWA_SECURE_CONFIG.vapidKey : window.siteConfig.vapidPublicKey;
+                    this.showStatus('vapid-status', 
+                        `✅ Configuración VAPID encontrada<br>
+                        Key: ${vapidKey.substring(0, 20)}...<br>
+                        Fuente: ${hasWindowConfig ? 'PWA_SECURE_CONFIG' : 'siteConfig'}`, 'success');
+                    this.log(`VAPID key encontrada: ${vapidKey.substring(0, 20)}...`);
+                } else {
+                    this.showStatus('vapid-status', '❌ No se encontró configuración VAPID', 'error');
+                    this.log('No se encontró configuración VAPID', 'error');
+                }
+            }
+
+            async checkServiceWorker() {
+                if (!('serviceWorker' in navigator)) {
+                    this.showStatus('sw-status', '❌ Service Worker no soportado', 'error');
+                    return;
+                }
+
+                try {
+                    const registration = await navigator.serviceWorker.getRegistration();
+                    if (registration) {
+                        this.swRegistration = registration;
+                        this.showStatus('sw-status', 
+                            `✅ Service Worker registrado<br>
+                            Scope: ${registration.scope}<br>
+                            Estado: ${registration.active ? 'Activo' : 'Inactivo'}`, 'success');
+                        this.log(`Service Worker encontrado: ${registration.scope}`);
+                    } else {
+                        this.showStatus('sw-status', '⚠️ Service Worker no registrado', 'warning');
+                        this.log('Service Worker no registrado', 'warning');
+                    }
+                } catch (error) {
+                    this.showStatus('sw-status', `❌ Error verificando Service Worker: ${error.message}`, 'error');
+                    this.log(`Error verificando Service Worker: ${error.message}`, 'error');
+                }
+            }
+
+            checkPermissions() {
+                const permission = Notification.permission;
+                let message, type;
+
+                switch (permission) {
+                    case 'granted':
+                        message = '✅ Permisos concedidos';
+                        type = 'success';
+                        break;
+                    case 'denied':
+                        message = '❌ Permisos denegados';
+                        type = 'error';
+                        break;
+                    default:
+                        message = '⚠️ Permisos no solicitados';
+                        type = 'warning';
+                }
+
+                this.showStatus('permission-status', message, type);
+                this.log(`Estado de permisos: ${permission}`);
+            }
+
+            setupEventListeners() {
+                document.getElementById('register-sw').addEventListener('click', () => this.registerServiceWorker());
+                document.getElementById('request-permission').addEventListener('click', () => this.requestPermission());
+                document.getElementById('subscribe-btn').addEventListener('click', () => this.subscribe());
+                document.getElementById('unsubscribe-btn').addEventListener('click', () => this.unsubscribe());
+                document.getElementById('test-notification').addEventListener('click', () => this.testNotification());
+                document.getElementById('refresh-debug').addEventListener('click', () => this.updateDebugInfo());
+            }
+
+            async registerServiceWorker() {
+                try {
+                    const registration = await navigator.serviceWorker.register('/sw.js');
+                    this.swRegistration = registration;
+                    this.showStatus('sw-status', '✅ Service Worker registrado exitosamente', 'success');
+                    this.log('Service Worker registrado exitosamente');
+                    this.updateDebugInfo();
+                } catch (error) {
+                    this.showStatus('sw-status', `❌ Error registrando Service Worker: ${error.message}`, 'error');
+                    this.log(`Error registrando Service Worker: ${error.message}`, 'error');
+                }
+            }
+
+            async requestPermission() {
+                try {
+                    const permission = await Notification.requestPermission();
+                    this.checkPermissions();
+                    this.log(`Permiso solicitado: ${permission}`);
+                } catch (error) {
+                    this.showStatus('permission-status', `❌ Error solicitando permisos: ${error.message}`, 'error');
+                    this.log(`Error solicitando permisos: ${error.message}`, 'error');
+                }
+            }
+
+            async subscribe() {
+                if (!this.swRegistration) {
+                    this.showStatus('subscription-status', '❌ Service Worker no registrado', 'error');
+                    return;
+                }
+
+                if (Notification.permission !== 'granted') {
+                    this.showStatus('subscription-status', '❌ Permisos no concedidos', 'error');
+                    return;
+                }
+
+                try {
+                    const vapidKey = window.PWA_SECURE_CONFIG?.vapidKey || window.siteConfig?.vapidPublicKey;
+                    if (!vapidKey) {
+                        this.showStatus('subscription-status', '❌ Clave VAPID no disponible', 'error');
+                        return;
+                    }
+
+                    this.subscription = await this.swRegistration.pushManager.subscribe({
+                        userVisibleOnly: true,
+                        applicationServerKey: this.urlBase64ToUint8Array(vapidKey)
+                    });
+
+                    this.showStatus('subscription-status', '✅ Suscripción exitosa', 'success');
+                    this.log('Suscripción creada exitosamente');
+                    
+                    document.getElementById('subscribe-btn').disabled = true;
+                    document.getElementById('unsubscribe-btn').disabled = false;
+                    document.getElementById('test-notification').disabled = false;
+                    
+                    this.updateDebugInfo();
+                } catch (error) {
+                    this.showStatus('subscription-status', `❌ Error en suscripción: ${error.message}`, 'error');
+                    this.log(`Error en suscripción: ${error.message}`, 'error');
+                }
+            }
+
+            async unsubscribe() {
+                if (!this.subscription) {
+                    this.showStatus('subscription-status', '❌ No hay suscripción activa', 'error');
+                    return;
+                }
+
+                try {
+                    await this.subscription.unsubscribe();
+                    this.subscription = null;
+                    
+                    this.showStatus('subscription-status', '✅ Desuscripción exitosa', 'success');
+                    this.log('Desuscripción exitosa');
+                    
+                    document.getElementById('subscribe-btn').disabled = false;
+                    document.getElementById('unsubscribe-btn').disabled = true;
+                    document.getElementById('test-notification').disabled = true;
+                    
+                    this.updateDebugInfo();
+                } catch (error) {
+                    this.showStatus('subscription-status', `❌ Error en desuscripción: ${error.message}`, 'error');
+                    this.log(`Error en desuscripción: ${error.message}`, 'error');
+                }
+            }
+
+            async testNotification() {
+                if (!this.swRegistration) {
+                    this.showStatus('notification-test-status', '❌ Service Worker no disponible', 'error');
+                    return;
+                }
+
+                try {
+                    await this.swRegistration.showNotification('🐬 Test de Notificación', {
+                        body: 'Esta es una notificación de prueba de Mundo Dolphins',
+                        icon: '/favicon-192x192.png',
+                        badge: '/favicon-96x96.png',
+                        tag: 'test-notification'
+                    });
+
+                    this.showStatus('notification-test-status', '✅ Notificación de prueba enviada', 'success');
+                    this.log('Notificación de prueba enviada');
+                } catch (error) {
+                    this.showStatus('notification-test-status', `❌ Error enviando notificación: ${error.message}`, 'error');
+                    this.log(`Error enviando notificación: ${error.message}`, 'error');
+                }
+            }
+
+            updateDebugInfo() {
+                const debugDiv = document.getElementById('debug-info');
+                debugDiv.textContent = '';
+                
+                this.log('=== INFORMACIÓN DE DEBUG ===');
+                this.log(`URL actual: ${window.location.href}`);
+                this.log(`User Agent: ${navigator.userAgent}`);
+                this.log(`Permisos: ${Notification.permission}`);
+                this.log(`PWA_SECURE_CONFIG: ${JSON.stringify(window.PWA_SECURE_CONFIG || 'No disponible', null, 2)}`);
+                this.log(`siteConfig: ${JSON.stringify(window.siteConfig || 'No disponible', null, 2)}`);
+                this.log(`Service Worker registrado: ${this.swRegistration ? 'Sí' : 'No'}`);
+                this.log(`Suscripción activa: ${this.subscription ? 'Sí' : 'No'}`);
+                
+                if (this.subscription) {
+                    this.log(`Endpoint: ${this.subscription.endpoint}`);
+                }
+            }
+
+            urlBase64ToUint8Array(base64String) {
+                const padding = '='.repeat((4 - base64String.length % 4) % 4);
+                const base64 = (base64String + padding)
+                    .replace(/-/g, '+')
+                    .replace(/_/g, '/');
+
+                const rawData = window.atob(base64);
+                const outputArray = new Uint8Array(rawData.length);
+
+                for (let i = 0; i < rawData.length; ++i) {
+                    outputArray[i] = rawData.charCodeAt(i);
+                }
+                return outputArray;
+            }
+        }
+
+        // Iniciar cuando la página carga
+        document.addEventListener('DOMContentLoaded', () => {
+            new NotificationTester();
+        });
+    </script>
+</body>
+</html>
