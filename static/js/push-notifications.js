@@ -153,69 +153,47 @@ class PushNotificationManager {
     }
   }
 
-  // Enviar suscripción al servidor (mejorado para seguridad)
+  // Almacenar suscripción localmente (para sitio estático)
   async sendSubscriptionToServer(subscription) {
     try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest', // Protección CSRF básica
-        },
-        body: JSON.stringify({
-          subscription: subscription,
-          timestamp: Date.now(),
-          userAgent: navigator.userAgent,
-          origin: window.location.origin // Verificación de origen
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Error enviando suscripción al servidor');
-      }
-
-      const result = await response.json();
+      // Para sitio estático Hugo, solo almacenamos localmente
+      console.log('💾 Almacenando suscripción localmente (sitio estático)');
       
-      // Almacenar solo identificador seguro, no datos sensibles
-      if (result.subscriptionId) {
-        this.storeSecureSubscriptionData(result.subscriptionId, true);
-      }
-
-      console.log('Suscripción enviada al servidor');
+      // Generar ID único para la suscripción
+      const subscriptionId = 'sub_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      
+      // Almacenar datos básicos de la suscripción
+      const subscriptionData = {
+        id: subscriptionId,
+        endpoint: subscription.endpoint,
+        timestamp: Date.now(),
+        origin: window.location.origin,
+        userAgent: navigator.userAgent.substring(0, 100) // Limitar tamaño
+      };
+      
+      // Almacenar en localStorage de forma segura
+      this.storeSecureSubscriptionData(subscriptionId, true, subscriptionData);
+      
+      console.log('✅ Suscripción almacenada localmente:', subscriptionId);
     } catch (error) {
-      console.error('Error enviando suscripción:', error);
-      // Fallback con datos mínimos no sensibles
-      this.storeSecureSubscriptionData(null, true);
+      console.error('Error almacenando suscripción:', error);
+      // Fallback con datos mínimos
+      this.storeSecureSubscriptionData('fallback_' + Date.now(), true);
     }
   }
 
-  // Remover suscripción del servidor (mejorado para seguridad)
+  // Remover suscripción localmente (para sitio estático)
   async removeSubscriptionFromServer(subscription) {
     try {
-      const response = await fetch('/api/unsubscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest', // Protección CSRF básica
-        },
-        body: JSON.stringify({
-          subscription: subscription,
-          timestamp: Date.now(),
-          origin: window.location.origin // Verificación de origen
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Error removiendo suscripción del servidor');
-      }
-
-      console.log('Suscripción removida del servidor');
+      console.log('🗑️ Removiendo suscripción localmente (sitio estático)');
+      
+      // Para sitio estático, solo limpiamos el almacenamiento local
+      this.clearSecureSubscriptionData();
+      
+      console.log('✅ Suscripción removida localmente');
     } catch (error) {
       console.error('Error removiendo suscripción:', error);
     }
-    
-    // Limpiar almacenamiento local
-    this.clearSecureSubscriptionData();
   }
 
   // Almacenamiento seguro de datos de suscripción con validación
