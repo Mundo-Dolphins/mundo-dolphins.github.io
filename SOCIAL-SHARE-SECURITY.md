@@ -39,6 +39,21 @@
 - **Solución**: Partial inteligente con `Scratch.Set/Get` para rastrear cargas
 - **Beneficio**: Garantía de carga única, mejor rendimiento y limpieza de código
 
+### 4. Validación de URLs (Seguridad XSS)
+- **Problema**: URLs desde data attributes podrían ser maliciosas
+- **Solución**: Función `isValidUrl()` que valida protocolos seguros
+- **Beneficio**: Prevención de ataques XSS a través de URLs maliciosas
+
+### 5. Encoding Correcto de Parámetros URL (Inyección URL)
+- **Problema**: Parámetros interpolados directamente sin encoding
+- **Solución**: Usar filtro `urlquery` para todos los parámetros URL
+- **Beneficio**: Prevención de ataques de inyección URL
+
+### 6. Corrección Terminológica (Calidad)
+- **Problema**: Uso de anglicismo "deprecado"
+- **Solución**: Usar términos correctos en español: "obsoleto/descontinuado"
+- **Beneficio**: Mejor calidad y precisión del código en español
+
 ## Arquitectura del Sistema
 
 ### Estructura de Archivos
@@ -82,10 +97,31 @@ if (navigator.clipboard && window.isSecureContext) {
 - **Error**: Botón rojo con "Error al copiar"
 - **Restauración**: Vuelve al estado original después de 2 segundos
 
-### Filtros Hugo Correctos
-- **Data Attributes**: `{{ $url | htmlEscape }}` (correcto para HTML)
+### Filtros Hugo Apropiados
+- **Data Attributes HTML**: `{{ $url | htmlEscape }}` (correcto para HTML)
+- **URL Parameters**: `{{ $url | urlquery }}` (correcto para parámetros URL)
 - **JavaScript Inline**: `{{ $url | js }}` (para contextos JavaScript)
-- **URL Parameters**: `{{ $url | urlquery }}` (para parámetros de URL)
+
+### Validación de URLs en JavaScript
+```javascript
+function isValidUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    return ['http:', 'https:'].includes(urlObj.protocol);
+  } catch (error) {
+    return false;
+  }
+}
+```
+
+### URLs Seguras con Encoding
+```html
+<!-- Antes: Vulnerable a inyección -->
+<a href="https://x.com/intent/tweet?text={{ $title }}&url={{ $url }}">
+
+<!-- Después: Seguro con encoding -->
+<a href="https://x.com/intent/tweet?text={{ $title | urlquery }}&url={{ $url | urlquery }}">
+```
 
 ## Compatibilidad
 
@@ -124,8 +160,12 @@ El sistema funciona automáticamente cuando se carga la página. Los scripts se 
 ✅ **APIs Modernas**: Clipboard API con fallback robusto  
 ✅ **Compatibilidad Universal**: Navegadores antiguos y modernos  
 ✅ **URLs Actualizadas**: X.com en lugar de Twitter.com  
-✅ **Documentación Clara**: APIs deprecadas explicadas  
+✅ **Documentación Clara**: APIs obsoletas explicadas correctamente  
 ✅ **Carga Optimizada**: Script único sin duplicación  
+✅ **Validación URLs**: Prevención XSS con validación de protocolos  
+✅ **Encoding Seguro**: Filtro `urlquery` en todos los parámetros  
+✅ **Prevención Inyección**: URLs correctamente codificadas  
 ✅ **Feedback Visual**: Estados de éxito y error  
 ✅ **Rendimiento**: Carga diferida y condicional  
+✅ **Calidad Lingüística**: Terminología precisa en español  
 ✅ **Mantenibilidad**: Código modular y bien documentado

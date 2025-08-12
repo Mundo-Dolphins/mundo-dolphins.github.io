@@ -11,7 +11,7 @@
   <div class="social-share__buttons">
     
     <!-- X (Twitter) -->
-    <a href="https://x.com/intent/tweet?text={{ $title }}&url={{ $url }}&hashtags={{ $hashtags }}&via=MundoDolphins" 
+    <a href="https://x.com/intent/tweet?text={{ $title | urlquery }}&url={{ $url | urlquery }}&hashtags={{ $hashtags | urlquery }}&via=MundoDolphins" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--x"
@@ -23,7 +23,7 @@
     </a>
 
     <!-- Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" 
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--facebook"
@@ -35,7 +35,7 @@
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" 
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--linkedin"
@@ -47,7 +47,7 @@
     </a>
 
     <!-- WhatsApp -->
-    <a href="https://api.whatsapp.com/send?text={{ $title }} {{ $url }}" 
+    <a href="https://api.whatsapp.com/send?text={{ $title | urlquery }}%20{{ $url | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--whatsapp"
@@ -59,7 +59,7 @@
     </a>
 
     <!-- Telegram -->
-    <a href="https://t.me/share/url?url={{ $url }}&text={{ $title }}" 
+    <a href="https://t.me/share/url?url={{ $url | urlquery }}&text={{ $title | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--telegram"
@@ -71,7 +71,7 @@
     </a>
 
     <!-- BlueSky -->
-    <a href="https://bsky.app/intent/compose?text={{ $title }} {{ $url }}" 
+    <a href="https://bsky.app/intent/compose?text={{ $title | urlquery }}%20{{ $url | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer" 
        class="social-share__button social-share__button--bluesky"

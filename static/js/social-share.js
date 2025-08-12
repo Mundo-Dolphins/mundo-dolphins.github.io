@@ -25,7 +25,7 @@ function copyToClipboard(text, event) {
 
 /**
  * Método fallback para copiar al portapapeles usando execCommand
- * NOTA: document.execCommand('copy') está deprecado, pero se mantiene
+ * NOTA: document.execCommand('copy') está obsoleto/descontinuado, pero se mantiene
  * intencionalmente como fallback para soporte de navegadores antiguos
  * que no tienen la API moderna de Clipboard.
  * @param {string} text - Texto a copiar
@@ -44,7 +44,7 @@ function fallbackCopyToClipboard(text, event) {
   textArea.select();
   
   try {
-    // execCommand está deprecado, pero necesario para navegadores antiguos
+    // execCommand está obsoleto, pero necesario para navegadores antiguos
     const successful = document.execCommand('copy');
     if (successful) {
       showCopySuccess(event);
@@ -102,6 +102,21 @@ function showCopyError(event) {
 }
 
 /**
+ * Valida que una URL sea segura para prevenir ataques XSS
+ * @param {string} url - URL a validar
+ * @returns {boolean} - true si la URL es segura
+ */
+function isValidUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    // Solo permitir protocolos seguros
+    return ['http:', 'https:'].includes(urlObj.protocol);
+  } catch (error) {
+    return false;
+  }
+}
+
+/**
  * Inicializar los botones de compartir cuando el DOM está listo
  */
 document.addEventListener('DOMContentLoaded', function() {
@@ -114,7 +129,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       button.addEventListener('click', function(event) {
         // Obtener la URL del data attribute o usar la URL actual como fallback
-        const url = this.getAttribute('data-url') || window.location.href;
+        let url = this.getAttribute('data-url') || window.location.href;
+        
+        // Validar la URL antes de usarla
+        if (!isValidUrl(url)) {
+          console.warn('URL no válida detectada, usando URL actual como fallback');
+          url = window.location.href;
+        }
+        
         copyToClipboard(url, event);
       });
     }
