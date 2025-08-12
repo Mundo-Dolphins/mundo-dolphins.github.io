@@ -1,17 +1,61 @@
 name: Automerge
 
 on:
-  push:
   pull_request_target:
     types:
       - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status:
+
 jobs:
   automerge:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
     steps:
-      - uses: reitermarkus/automerge@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.PUSH }}
-          merge-method: squash
-          required-labels: automerge
-          pull-request: ${{ github.event.inputs.pull-request }}
+
+      - name: Enable auto-merge for pull request
+        if: contains(github.event.pull_request.labels.*.name, 'automerge')
+        run: |
+          # Wait for checks to complete
+          sleep 30
+          
+          # Check if all required checks pass
+          gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews \
+            --jq '.[] | select(.state == "APPROVED") | .state' | wc -l > approvals.txt
+          
+          # Get check status
+          gh api repos/${{ github.repository }}/commits/${{ github.event.pull_request.head.sha }}/status \
+            --jq '.state' > status.txt
+          
+          STATUS=$(cat status.txt)
+          APPROVALS=$(cat approvals.txt)
+          
+          echo "Status: $STATUS"
+          echo "Approvals: $APPROVALS"
+          
+          # Enable auto-merge if checks pass
+          if [[ "$STATUS" == "success" ]]; then
+            echo "All checks passed, enabling auto-merge"
+            gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch --auto
+          else
+            echo "Checks not yet complete or failed"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH }}
+          GH_TOKEN: ${{ secrets.PUSH }}
