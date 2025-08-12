@@ -1,0 +1,19 @@
+{{/*
+Helper para detectar si una página tiene componentes de social share
+*/}}
+
+{{- $hasSocialShare := false -}}
+
+{{- if .Content -}}
+  {{- if (findRE `social-share` .Content) -}}
+    {{- $hasSocialShare = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (not $hasSocialShare) .Type -}}
+  {{- if in (slice "noticias" "podcast" "historia") .Type -}}
+    {{- $hasSocialShare = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $hasSocialShare -}}
