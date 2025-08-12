@@ -27,6 +27,10 @@
         <div class="content post__content clearfix">
             {{ .Content }}
         </div>
+        
+        <!-- Social Share Buttons -->
+        {{ partial "social-share.html" . }}
+        
         {{- if .Params.tags }}
         <footer class="post__footer">
             {{ partial "post_tags.html" . }}

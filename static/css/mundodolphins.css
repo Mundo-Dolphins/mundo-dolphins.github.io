@@ -28,7 +28,111 @@
 .description p {
     padding: 20px;
     color: #333;
-    line-height: 1.5;
+}
+
+/* Social Share Styles */
+.social-share {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3c8b94;
+}
+
+.social-share__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.social-share__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.social-share__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.social-share__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.social-share__icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* Platform specific colors */
+.social-share__button--twitter {
+    background-color: #1da1f2;
+    color: white;
+    border-color: #1da1f2;
+}
+
+.social-share__button--facebook {
+    background-color: #1877f2;
+    color: white;
+    border-color: #1877f2;
+}
+
+.social-share__button--linkedin {
+    background-color: #0a66c2;
+    color: white;
+    border-color: #0a66c2;
+}
+
+.social-share__button--whatsapp {
+    background-color: #25d366;
+    color: white;
+    border-color: #25d366;
+}
+
+.social-share__button--telegram {
+    background-color: #0088cc;
+    color: white;
+    border-color: #0088cc;
+}
+
+.social-share__button--bluesky {
+    background-color: #00bcd4;
+    color: white;
+    border-color: #00bcd4;
+}
+
+.social-share__button--copy {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .social-share__buttons {
+        flex-direction: column;
+    }
+    
+    .social-share__button {
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .card-footer {
