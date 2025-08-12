@@ -1,0 +1,32 @@
+<!-- Configuración PWA universal inyectada desde GitHub Secrets -->
+<script>
+{{- $vapidKey := getenv "VAPID_PUBLIC_KEY" -}}
+// Solo configurar si no existe ya
+if (!window.PWA_SECURE_CONFIG) {
+  window.PWA_SECURE_CONFIG = {};
+  window.PWA_SECURE_CONFIG.environment = "{{ hugo.Environment }}";
+  window.PWA_SECURE_CONFIG.buildTime = {{ now.Unix }};
+  {{ if $vapidKey -}}
+  window.PWA_SECURE_CONFIG.vapidKey = "{{ $vapidKey }}";
+  window.PWA_SECURE_CONFIG.hasVapidFromEnv = true;
+  window.siteConfig = window.siteConfig || {};
+  window.siteConfig.vapidPublicKey = "{{ $vapidKey }}";
+  console.log('🔐 VAPID key cargada desde variable de entorno (global)');
+  {{ else -}}
+  window.PWA_SECURE_CONFIG.hasVapidFromEnv = false;
+  // En desarrollo, cargar desde archivo local
+  fetch('/vapid-config.json')
+    .then(response => response.ok ? response.json() : Promise.reject('No config'))
+    .then(config => {
+      if (config.publicKey) {
+        window.siteConfig = window.siteConfig || {};
+        window.siteConfig.vapidPublicKey = config.publicKey;
+        console.log('🔧 VAPID key cargada desde configuración local (global)');
+      }
+    })
+    .catch(() => {
+      console.log('🔧 Modo desarrollo - VAPID key no disponible (global)');
+    });
+  {{ end -}}
+}
+</script>
