@@ -4,7 +4,26 @@ class PushNotificationManager {
     this.isSupported = 'serviceWorker' in navigator && 'PushManager' in window;
     this.registration = null;
     this.subscription = null;
-    this.vapidPublicKey = 'BNVHEdU6MquHk0FNf5rMSLiGqN-4HjueaGeDztf-rCjaJHaM-3bmGJ6Lxj-2QfRgZygiioAwJp9yjgsKhEW9IZ0'; // Clave VAPID pública generada
+    // Cargar clave VAPID desde configuración del sitio
+    this.vapidPublicKey = this.getVapidPublicKey();
+  }
+
+  // Obtener clave VAPID pública desde configuración
+  getVapidPublicKey() {
+    // Intentar obtener desde meta tag primero
+    const metaVapid = document.querySelector('meta[name="vapid-public-key"]');
+    if (metaVapid && metaVapid.content !== 'TU_CLAVE_VAPID_PUBLICA_AQUI') {
+      return metaVapid.content;
+    }
+    
+    // Fallback desde configuración global del sitio
+    if (window.siteConfig && window.siteConfig.vapidPublicKey) {
+      return window.siteConfig.vapidPublicKey;
+    }
+    
+    // Error si no se encuentra configuración válida
+    console.error('VAPID public key no configurada. Verifica la configuración del sitio.');
+    return null;
   }
 
   // Inicializar el servicio
@@ -116,8 +135,15 @@ class PushNotificationManager {
       console.log('Suscripción enviada al servidor');
     } catch (error) {
       console.error('Error enviando suscripción:', error);
-      // Por ahora, guardar en localStorage como fallback
-      localStorage.setItem('pushSubscription', JSON.stringify(subscription));
+      // ⚠️ ADVERTENCIA: Guardar en localStorage expone URLs del endpoint
+      // TODO: Implementar mecanismo más seguro con identificador mínimo
+      const secureData = {
+        timestamp: Date.now(),
+        userAgent: navigator.userAgent.substring(0, 50), // Solo primeros 50 chars
+        // No guardar endpoint completo por seguridad
+        subscribed: true
+      };
+      localStorage.setItem('pushSubscriptionStatus', JSON.stringify(secureData));
     }
   }
 
@@ -141,8 +167,8 @@ class PushNotificationManager {
       console.log('Suscripción removida del servidor');
     } catch (error) {
       console.error('Error removiendo suscripción:', error);
-      // Remover de localStorage también
-      localStorage.removeItem('pushSubscription');
+      // Limpiar estado de localStorage
+      localStorage.removeItem('pushSubscriptionStatus');
     }
   }
 

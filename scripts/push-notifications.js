@@ -10,7 +10,15 @@ const path = require('path');
 
 // Cargar configuración VAPID (solo si no estamos generando claves)
 function loadVapidKeys() {
-  // Primero intentar desde archivo de configuración
+  // Priorizar variables de entorno
+  if (process.env.VAPID_PUBLIC_KEY && process.env.VAPID_PRIVATE_KEY) {
+    return {
+      publicKey: process.env.VAPID_PUBLIC_KEY,
+      privateKey: process.env.VAPID_PRIVATE_KEY
+    };
+  }
+  
+  // Intentar desde archivo de configuración local
   const configPath = path.join(__dirname, 'vapid-config.json');
   if (fs.existsSync(configPath)) {
     try {
@@ -20,11 +28,8 @@ function loadVapidKeys() {
     }
   }
   
-  // Fallback a claves por defecto (necesitarás cambiar estas)
-  return {
-    publicKey: process.env.VAPID_PUBLIC_KEY || 'TU_CLAVE_PUBLICA_VAPID',
-    privateKey: process.env.VAPID_PRIVATE_KEY || 'TU_CLAVE_PRIVADA_VAPID'
-  };
+  // No usar fallbacks inválidos - retornar null
+  return null;
 }
 
 // Solo configurar VAPID si no estamos generando claves y tenemos claves válidas
@@ -33,8 +38,17 @@ if (process.argv[2] !== 'generate-keys') {
   const vapidKeys = loadVapidKeys();
 
   // Verificar que tenemos claves válidas
-  if (vapidKeys.publicKey !== 'TU_CLAVE_PUBLICA_VAPID' && 
-      vapidKeys.privateKey !== 'TU_CLAVE_PRIVADA_VAPID') {
+  if (!vapidKeys || !vapidKeys.publicKey || !vapidKeys.privateKey) {
+    console.error('❌ Error: Claves VAPID no configuradas.');
+    console.log('📋 Opciones para configurar claves VAPID:');
+    console.log('   1. Variables de entorno: VAPID_PUBLIC_KEY y VAPID_PRIVATE_KEY');
+    console.log('   2. Archivo local: scripts/vapid-config.json');
+    console.log('   3. Generar nuevas: node push-notifications.js generate-keys');
+    
+    if (process.argv[2] !== undefined) {
+      process.exit(1);
+    }
+  } else {
     try {
       webpush.setVapidDetails(
         'mailto:contacto@mundodolphins.es',
@@ -42,23 +56,19 @@ if (process.argv[2] !== 'generate-keys') {
         vapidKeys.privateKey
       );
     } catch (error) {
-      console.error('Error configurando claves VAPID:', error.message);
-      console.log('Ejecuta "node push-notifications.js generate-keys" para generar claves válidas');
-      process.exit(1);
-    }
-  } else {
-    console.error('Claves VAPID no configuradas.');
-    console.log('Ejecuta "node push-notifications.js generate-keys" para generar claves');
-    if (process.argv[2] !== undefined) {
+      console.error('❌ Error configurando claves VAPID:', error.message);
+      console.log('💡 Ejecuta "node push-notifications.js generate-keys" para generar claves válidas');
       process.exit(1);
     }
   }
 }
 
-// Base de datos simple con archivos JSON (en producción usar una DB real)
+// Base de datos simple con archivos JSON 
+// ⚠️ ADVERTENCIA: Este almacenamiento basado en archivos NO es adecuado para producción
+// TODO: Implementar base de datos real con operaciones atómicas y bloqueo de archivos
 const SUBSCRIPTIONS_FILE = path.join(__dirname, 'subscriptions.json');
 
-// Cargar suscripciones
+// Cargar suscripciones con advertencia de concurrencia
 function loadSubscriptions() {
   try {
     if (fs.existsSync(SUBSCRIPTIONS_FILE)) {
@@ -66,7 +76,8 @@ function loadSubscriptions() {
       return JSON.parse(data);
     }
   } catch (error) {
-    console.error('Error cargando suscripciones:', error);
+    console.error('❌ Error cargando suscripciones:', error);
+    console.warn('⚠️  ADVERTENCIA: Almacenamiento en archivo puede perder datos en acceso concurrente');
   }
   return [];
 }

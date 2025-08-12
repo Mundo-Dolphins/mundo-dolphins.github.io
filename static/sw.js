@@ -101,10 +101,10 @@ self.addEventListener('notificationclick', function(event) {
         type: 'window',
         includeUncontrolled: true
       }).then(function(clientList) {
-        // Si ya hay una ventana abierta, enfocarla
+        // Si ya hay una ventana abierta del mismo origen, enfocarla
         for (let i = 0; i < clientList.length; i++) {
           const client = clientList[i];
-          if (client.url.includes(self.location.origin) && 'focus' in client) {
+          if (client.url.startsWith(self.location.origin) && 'focus' in client) {
             return client.focus().then(() => {
               return client.navigate(urlToOpen);
             });

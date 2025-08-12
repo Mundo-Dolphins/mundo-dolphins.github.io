@@ -1,12 +1,5 @@
-<!-- Componente de notificaciones push -->
-<div class="push-notifications">
-  <div class="push-notifications__header">
-    <h4 class="push-notifications__title">🔔 Notificaciones</h4>
-    <p class="push-notifications__description">
-      Recibe notificaciones cuando publiquemos nuevos artículos y episodios del podcast
-    </p>
-  </div>
-  
+<!-- Componente de notificaciones push para sidebar -->
+<div class="push-notifications push-notifications--sidebar">
   <div class="push-notifications__content">
     <div class="push-notifications__status">
       <span id="notification-status" class="notification-status notification-status--inactive">
@@ -15,31 +8,31 @@
     </div>
     
     <div class="push-notifications__buttons">
-      <button id="subscribe-btn" class="push-btn push-btn--primary">
+      <button id="subscribe-btn" class="push-btn push-btn--primary push-btn--compact">
         <svg class="push-btn__icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
         </svg>
-        Activar notificaciones
+        Activar
       </button>
       
-      <button id="unsubscribe-btn" class="push-btn push-btn--secondary" style="display: none;">
+      <button id="unsubscribe-btn" class="push-btn push-btn--secondary push-btn--compact" style="display: none;">
         <svg class="push-btn__icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M20 18.69L7.84 6.14 5.27 3.49 4 4.76l2.8 2.8v.01c-.52.99-.8 2.16-.8 3.42v5l-2 2v1h13.73l2 2L21 19.72 20 18.69zM12 22c1.1 0 2-.9 2-2h-4C10 21.1 10.9 22 12 22zM7.58 4.08L6.15 2.65C8.42 1.34 10.16 1 12 1s3.58.34 5.85 1.65L16.42 4.08C14.58 3.05 13.32 3 12 3S9.42 3.05 7.58 4.08z"/>
         </svg>
-        Desactivar notificaciones
+        Desactivar
       </button>
       
-      <button id="test-notification-btn" class="push-btn push-btn--test">
+      <button id="test-notification-btn" class="push-btn push-btn--test push-btn--compact">
         <svg class="push-btn__icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
         </svg>
-        Probar notificación
+        Probar
       </button>
     </div>
     
     <div class="push-notifications__info">
-      <p class="push-notifications__note">
-        <strong>Nota:</strong> Puedes desactivar las notificaciones en cualquier momento desde la configuración de tu navegador.
+      <p class="push-notifications__note push-notifications__note--compact">
+        Recibe notificaciones de nuevos episodios y noticias
       </p>
     </div>
   </div>

@@ -114,7 +114,7 @@ function extractMetadata(filePath) {
       metadata.description = descMatch[1].trim();
     }
     
-    // Determinar tipo de contenido
+    // Determinar tipo de contenido con valor por defecto
     if (filePath.includes('/podcast/')) {
       metadata.type = 'podcast';
       metadata.emoji = '🎧';
@@ -124,6 +124,10 @@ function extractMetadata(filePath) {
     } else if (filePath.includes('/social/')) {
       metadata.type = 'social';
       metadata.emoji = '📱';
+    } else {
+      // Valor por defecto para contenido no categorizado
+      metadata.type = 'general';
+      metadata.emoji = '📄';
     }
     
     // Generar URL
@@ -243,7 +247,13 @@ async function main() {
     });
     
     // Solo enviar notificaciones para contenido nuevo (no modificaciones)
-    const newContent = changes.new.filter(c => c.type !== 'social'); // Excluir posts sociales automáticos
+    // Excluir posts sociales automáticos y contenido general no categorizado
+    const newContent = changes.new.filter(c => 
+      c.type && 
+      c.type !== 'social' && 
+      c.type !== 'general' &&
+      (c.type === 'podcast' || c.type === 'noticia')
+    );
     
     if (newContent.length > 0) {
       console.log(`\n🔔 Enviando notificaciones para ${newContent.length} contenido nuevo...`);

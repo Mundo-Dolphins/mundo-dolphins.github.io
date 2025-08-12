@@ -14,6 +14,7 @@
 <!-- Meta tags para notificaciones -->
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="application-name" content="Mundo Dolphins">
+<meta name="vapid-public-key" content="{{ .Site.Params.pushNotifications.vapidPublicKey | default "BNVHEdU6MquHk0FNf5rMSLiGqN-4HjueaGeDztf-rCjaJHaM-3bmGJ6Lxj-2QfRgZygiioAwJp9yjgsKhEW9IZ0" }}">
 
 <!-- Open Graph para notificaciones compartidas -->
 <meta property="og:title" content="{{ .Title | default .Site.Title }}">
