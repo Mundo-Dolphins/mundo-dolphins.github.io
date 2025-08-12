@@ -64,7 +64,8 @@ params:
   pushNotifications:
     enabled: true
     # Clave VAPID pública (la privada va en GitHub Secrets)
-    vapidPublicKey: "BNVHEdU6MquHk0FNf5rMSLiGqN-4HjueaGeDztf-rCjaJHaM-3bmGJ6Lxj-2QfRgZygiioAwJp9yjgsKhEW9IZ0"
+    # La clave pública ahora se obtiene de la variable de entorno VAPID_PUBLIC_KEY
+    vapidPublicKey: "{{ getenv \"VAPID_PUBLIC_KEY\" }}"
     
   sidebar:
     home: right
