@@ -17,8 +17,51 @@ const SECURITY_CONFIG = {
   maxRequestsPerWindow: 10
 };
 
-// Cache de límite de tasa simple (en producción usar Redis)
-const rateLimitCache = new Map();
+// Cache de límite de tasa con limpieza automática
+class RateLimitCache {
+  constructor() {
+    this.cache = new Map();
+    this.cleanupInterval = 5 * 60 * 1000; // Limpiar cada 5 minutos
+    this.startCleanupTimer();
+  }
+  
+  startCleanupTimer() {
+    setInterval(() => {
+      this.cleanup();
+    }, this.cleanupInterval);
+  }
+  
+  cleanup() {
+    const now = Date.now();
+    const windowStart = now - SECURITY_CONFIG.rateLimitWindow;
+    
+    for (const [identifier, requests] of this.cache.entries()) {
+      const recentRequests = requests.filter(time => time > windowStart);
+      
+      if (recentRequests.length === 0) {
+        this.cache.delete(identifier);
+      } else {
+        this.cache.set(identifier, recentRequests);
+      }
+    }
+    
+    console.log(`🧹 Rate limit cache limpiado. Entradas activas: ${this.cache.size}`);
+  }
+  
+  has(identifier) {
+    return this.cache.has(identifier);
+  }
+  
+  get(identifier) {
+    return this.cache.get(identifier) || [];
+  }
+  
+  set(identifier, value) {
+    this.cache.set(identifier, value);
+  }
+}
+
+const rateLimitCache = new RateLimitCache();
 
 // Cargar configuración VAPID (solo si no estamos generando claves)
 function loadVapidKeys() {
@@ -70,18 +113,33 @@ function generateSecureId() {
   return crypto.randomBytes(16).toString('hex');
 }
 
-// Validar origen de la solicitud
+// Validar origen de la solicitud con configuración por ambiente
 function validateOrigin(origin) {
+  const isProduction = process.env.NODE_ENV === 'production';
+  
   const allowedOrigins = [
     'https://mundo-dolphins.github.io',
-    'https://mundodolphins.es',
-    'http://localhost:1313',
-    'http://localhost:1319',
-    'http://127.0.0.1:1313',
-    'http://127.0.0.1:1319'
+    'https://mundodolphins.es'
   ];
   
-  return allowedOrigins.includes(origin);
+  // Solo permitir localhost en desarrollo
+  if (!isProduction) {
+    // Solo HTTPS localhost en desarrollo, HTTP solo para 127.0.0.1
+    allowedOrigins.push(
+      'https://localhost:1313',
+      'https://localhost:1319',
+      'http://127.0.0.1:1313',
+      'http://127.0.0.1:1319'
+    );
+  }
+  
+  const isAllowed = allowedOrigins.includes(origin);
+  
+  if (!isAllowed) {
+    console.warn(`⚠️  Origen no autorizado rechazado: ${origin}`);
+  }
+  
+  return isAllowed;
 }
 
 // Almacenamiento mejorado con encriptación básica
@@ -96,9 +154,20 @@ class SecureSubscriptionStorage {
       fs.mkdirSync(this.dataDir, { mode: 0o700 }); // Solo propietario puede acceder
     }
     
-    // Clave de encriptación simple (en producción usar HSM o key management)
-    this.encryptionKey = process.env.SUBSCRIPTION_ENCRYPTION_KEY || 
-                        crypto.scryptSync('mundo-dolphins-default', 'salt', 32);
+    // Clave de encriptación segura con salt aleatorio
+    this.salt = process.env.SUBSCRIPTION_SALT || this.generateSecureSalt();
+    this.password = process.env.SUBSCRIPTION_PASSWORD || 'mundo-dolphins-default-change-in-production';
+    
+    if (!process.env.SUBSCRIPTION_SALT || !process.env.SUBSCRIPTION_PASSWORD) {
+      console.warn('⚠️  ADVERTENCIA: Usando configuración de encriptación por defecto. Configure SUBSCRIPTION_SALT y SUBSCRIPTION_PASSWORD en producción.');
+    }
+    
+    this.encryptionKey = crypto.scryptSync(this.password, this.salt, 32);
+  }
+  
+  // Generar salt seguro para encriptación
+  generateSecureSalt() {
+    return crypto.randomBytes(16).toString('hex');
   }
   
   // Encriptar datos

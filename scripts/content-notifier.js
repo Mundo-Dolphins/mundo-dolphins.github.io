@@ -17,6 +17,12 @@ const CONTENT_DIRS = [
   'content/social'
 ];
 
+const SCAN_CONFIG = {
+  maxDepth: 3, // Limitar profundidad de escaneo
+  maxFiles: 1000, // Limitar número de archivos
+  batchSize: 50 // Procesar en lotes
+};
+
 const HASH_FILE = path.join(__dirname, '../data/content-hash.json');
 
 // Función para obtener el hash de un archivo
@@ -29,9 +35,10 @@ function getFileHash(filePath) {
   }
 }
 
-// Función para escanear contenido y generar hashes
+// Función para escanear contenido y generar hashes con limitaciones de seguridad
 function scanContent() {
   const contentHashes = {};
+  let totalFiles = 0;
   
   CONTENT_DIRS.forEach(dir => {
     const fullPath = path.join(__dirname, '..', dir);
@@ -41,23 +48,66 @@ function scanContent() {
       return;
     }
     
-    const files = fs.readdirSync(fullPath, { recursive: true })
-      .filter(file => file.endsWith('.md') && !file.includes('_index.md'));
-    
-    files.forEach(file => {
-      const filePath = path.join(fullPath, file);
-      const hash = getFileHash(filePath);
-      if (hash) {
-        contentHashes[`${dir}/${file}`] = {
-          hash,
-          path: filePath,
-          lastModified: fs.statSync(filePath).mtime.toISOString()
-        };
+    try {
+      // Escaneo recursivo limitado
+      const files = scanDirectoryLimited(fullPath, SCAN_CONFIG.maxDepth);
+      
+      // Limitar número total de archivos procesados
+      if (totalFiles + files.length > SCAN_CONFIG.maxFiles) {
+        console.warn(`⚠️  Límite de archivos alcanzado (${SCAN_CONFIG.maxFiles}). Algunos archivos no serán procesados.`);
+        files.splice(SCAN_CONFIG.maxFiles - totalFiles);
       }
-    });
+      
+      files.forEach(file => {
+        const filePath = path.join(fullPath, file);
+        const hash = getFileHash(filePath);
+        if (hash) {
+          contentHashes[`${dir}/${file}`] = {
+            hash,
+            path: filePath,
+            lastModified: fs.statSync(filePath).mtime.toISOString()
+          };
+          totalFiles++;
+        }
+      });
+      
+    } catch (error) {
+      console.error(`Error escaneando directorio ${dir}:`, error);
+    }
   });
   
+  console.log(`📊 Total de archivos procesados: ${totalFiles}`);
   return contentHashes;
+}
+
+// Función para escaneo recursivo limitado
+function scanDirectoryLimited(dirPath, maxDepth, currentDepth = 0) {
+  if (currentDepth >= maxDepth) {
+    return [];
+  }
+  
+  try {
+    const items = fs.readdirSync(dirPath, { withFileTypes: true });
+    let files = [];
+    
+    for (const item of items) {
+      if (item.isFile() && item.name.endsWith('.md') && !item.name.includes('_index.md')) {
+        files.push(item.name);
+      } else if (item.isDirectory() && currentDepth < maxDepth - 1) {
+        const subFiles = scanDirectoryLimited(
+          path.join(dirPath, item.name), 
+          maxDepth, 
+          currentDepth + 1
+        );
+        files = files.concat(subFiles.map(f => path.join(item.name, f)));
+      }
+    }
+    
+    return files;
+  } catch (error) {
+    console.error(`Error leyendo directorio ${dirPath}:`, error);
+    return [];
+  }
 }
 
 // Función para cargar hashes previos
@@ -247,13 +297,24 @@ async function main() {
     });
     
     // Solo enviar notificaciones para contenido nuevo (no modificaciones)
-    // Excluir posts sociales automáticos y contenido general no categorizado
-    const newContent = changes.new.filter(c => 
-      c.type && 
-      c.type !== 'social' && 
-      c.type !== 'general' &&
-      (c.type === 'podcast' || c.type === 'noticia')
-    );
+    // Filtro mejorado: asegurar que el contenido tiene un tipo válido y es notificable
+    const newContent = changes.new.filter(c => {
+      // Verificar que tiene tipo definido
+      if (!c.type) {
+        console.log(`⚠️  Contenido sin tipo ignorado: ${c.file}`);
+        return false;
+      }
+      
+      // Solo permitir tipos específicos para notificaciones
+      const notifiableTypes = ['podcast', 'noticia'];
+      
+      if (!notifiableTypes.includes(c.type)) {
+        console.log(`ℹ️  Contenido tipo '${c.type}' no genera notificaciones: ${c.file}`);
+        return false;
+      }
+      
+      return true;
+    });
     
     if (newContent.length > 0) {
       console.log(`\n🔔 Enviando notificaciones para ${newContent.length} contenido nuevo...`);

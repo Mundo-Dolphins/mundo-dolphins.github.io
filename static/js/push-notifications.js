@@ -8,22 +8,53 @@ class PushNotificationManager {
     this.vapidPublicKey = this.getVapidPublicKey();
   }
 
-  // Obtener clave VAPID pública desde configuración
+  // Obtener clave VAPID pública desde configuración con validación mejorada
   getVapidPublicKey() {
     // Intentar obtener desde meta tag primero
     const metaVapid = document.querySelector('meta[name="vapid-public-key"]');
-    if (metaVapid && metaVapid.content !== 'TU_CLAVE_VAPID_PUBLICA_AQUI') {
+    if (metaVapid && metaVapid.content && this.isValidVapidKey(metaVapid.content)) {
       return metaVapid.content;
     }
     
     // Fallback desde configuración global del sitio
-    if (window.siteConfig && window.siteConfig.vapidPublicKey) {
+    if (window.siteConfig && window.siteConfig.vapidPublicKey && this.isValidVapidKey(window.siteConfig.vapidPublicKey)) {
       return window.siteConfig.vapidPublicKey;
     }
     
     // Error si no se encuentra configuración válida
-    console.error('VAPID public key no configurada. Verifica la configuración del sitio.');
+    console.error('VAPID public key no configurada o inválida. Verifica la configuración del sitio.');
     return null;
+  }
+  
+  // Validar formato de clave VAPID
+  isValidVapidKey(key) {
+    if (!key || typeof key !== 'string') {
+      return false;
+    }
+    
+    // Verificar que no sea un placeholder conocido
+    const invalidPlaceholders = [
+      'TU_CLAVE_VAPID_PUBLICA_AQUI',
+      'YOUR_VAPID_PUBLIC_KEY_HERE',
+      'PLACEHOLDER',
+      ''
+    ];
+    
+    if (invalidPlaceholders.includes(key)) {
+      return false;
+    }
+    
+    // Verificar longitud básica (las claves VAPID tienen ~87 caracteres en base64)
+    if (key.length < 80 || key.length > 100) {
+      return false;
+    }
+    
+    // Verificar que parece ser base64 URL-safe
+    if (!/^[A-Za-z0-9_-]+$/.test(key)) {
+      return false;
+    }
+    
+    return true;
   }
 
   // Inicializar el servicio
@@ -178,56 +209,98 @@ class PushNotificationManager {
     this.clearSecureSubscriptionData();
   }
 
-  // Almacenamiento seguro de datos de suscripción
+  // Almacenamiento seguro de datos de suscripción con validación
   storeSecureSubscriptionData(subscriptionId, isSubscribed) {
+    // Validar entradas
+    if (typeof isSubscribed !== 'boolean') {
+      console.warn('Estado de suscripción inválido');
+      return;
+    }
+    
     const secureData = {
       // Solo datos mínimos no sensibles
       subscribed: isSubscribed,
       timestamp: Date.now(),
-      // Hash simple del user agent para consistencia (no identificación)
-      clientHash: this.generateSimpleHash(navigator.userAgent.substring(0, 20)),
       // ID del servidor (si está disponible) para identificación segura
-      id: subscriptionId || null
+      id: subscriptionId || null,
+      // Version para migración futura
+      version: '2.0'
     };
     
     try {
+      // Validar que localStorage está disponible
+      if (typeof Storage === 'undefined') {
+        console.warn('localStorage no está disponible');
+        return;
+      }
+      
       localStorage.setItem('push_status', JSON.stringify(secureData));
     } catch (error) {
       console.warn('No se pudo guardar estado en localStorage:', error);
     }
   }
 
-  // Leer datos seguros de suscripción
+  // Leer datos seguros de suscripción con validación
   getSecureSubscriptionData() {
     try {
+      if (typeof Storage === 'undefined') {
+        return null;
+      }
+      
       const data = localStorage.getItem('push_status');
-      return data ? JSON.parse(data) : null;
+      if (!data) {
+        return null;
+      }
+      
+      const parsed = JSON.parse(data);
+      
+      // Validar estructura de datos
+      if (!parsed || typeof parsed.subscribed !== 'boolean') {
+        console.warn('Datos de suscripción corruptos, limpiando...');
+        this.clearSecureSubscriptionData();
+        return null;
+      }
+      
+      // Verificar expiración (30 días)
+      const maxAge = 30 * 24 * 60 * 60 * 1000;
+      if (Date.now() - parsed.timestamp > maxAge) {
+        console.log('Datos de suscripción expirados, limpiando...');
+        this.clearSecureSubscriptionData();
+        return null;
+      }
+      
+      return parsed;
     } catch (error) {
       console.warn('Error leyendo estado de suscripción:', error);
+      this.clearSecureSubscriptionData();
       return null;
     }
   }
 
-  // Limpiar datos de suscripción
+  // Limpiar datos de suscripción de forma segura
   clearSecureSubscriptionData() {
     try {
-      localStorage.removeItem('push_status');
-      // Limpiar también el formato anterior por compatibilidad
-      localStorage.removeItem('pushSubscriptionStatus');
+      if (typeof Storage === 'undefined') {
+        return;
+      }
+      
+      // Limpiar múltiples claves por compatibilidad
+      const keysToRemove = [
+        'push_status',
+        'pushSubscriptionStatus', // Formato anterior
+        'push_subscription_data' // Formato legacy
+      ];
+      
+      keysToRemove.forEach(key => {
+        try {
+          localStorage.removeItem(key);
+        } catch (error) {
+          console.warn(`Error removiendo ${key}:`, error);
+        }
+      });
     } catch (error) {
       console.warn('Error limpiando estado de suscripción:', error);
     }
-  }
-
-  // Generar hash simple (no criptográfico, solo para consistencia)
-  generateSimpleHash(str) {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-      const char = str.charCodeAt(i);
-      hash = ((hash << 5) - hash) + char;
-      hash = hash & hash; // Convertir a 32-bit integer
-    }
-    return Math.abs(hash).toString(16);
   }
 
   // Actualizar UI basado en el estado de suscripción
