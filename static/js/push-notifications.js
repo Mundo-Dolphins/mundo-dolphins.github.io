@@ -1,28 +1,37 @@
 // Gestión de notificaciones push
 class PushNotificationManager {
   constructor() {
+    console.log('🔍 Construyendo PushNotificationManager...');
     this.isSupported = 'serviceWorker' in navigator && 'PushManager' in window;
+    console.log('🔍 Soporte verificado:', this.isSupported);
     this.registration = null;
     this.subscription = null;
     // Cargar clave VAPID desde configuración del sitio
     this.vapidPublicKey = this.getVapidPublicKey();
+    console.log('🔍 VAPID key obtenida:', this.vapidPublicKey ? 'Sí' : 'No');
   }
 
   // Obtener clave VAPID pública desde configuración con validación mejorada
   getVapidPublicKey() {
+    console.log('🔍 Obteniendo VAPID key...');
+    
     // Intentar obtener desde meta tag primero
     const metaVapid = document.querySelector('meta[name="vapid-public-key"]');
+    console.log('🔍 Meta tag encontrado:', metaVapid);
     if (metaVapid && metaVapid.content && this.isValidVapidKey(metaVapid.content)) {
+      console.log('✅ VAPID key desde meta tag válida');
       return metaVapid.content;
     }
     
     // Fallback desde configuración global del sitio
+    console.log('🔍 Verificando window.siteConfig:', window.siteConfig);
     if (window.siteConfig && window.siteConfig.vapidPublicKey && this.isValidVapidKey(window.siteConfig.vapidPublicKey)) {
+      console.log('✅ VAPID key desde siteConfig válida');
       return window.siteConfig.vapidPublicKey;
     }
     
     // Error si no se encuentra configuración válida
-    console.error('VAPID public key no configurada o inválida. Verifica la configuración del sitio.');
+    console.error('❌ VAPID public key no configurada o inválida. Verifica la configuración del sitio.');
     return null;
   }
   
@@ -370,34 +379,51 @@ class PushNotificationManager {
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('🔍 DOM cargado, inicializando PushNotificationManager...');
+  
   const pushManager = new PushNotificationManager();
+  console.log('🔍 PushNotificationManager creado:', pushManager);
   
   // Inicializar
-  pushManager.init();
+  pushManager.init().then(() => {
+    console.log('✅ PushNotificationManager inicializado');
+  }).catch(error => {
+    console.error('❌ Error inicializando PushNotificationManager:', error);
+  });
 
   // Event listeners para los botones
   const subscribeBtn = document.getElementById('subscribe-btn');
   const unsubscribeBtn = document.getElementById('unsubscribe-btn');
   const testBtn = document.getElementById('test-notification-btn');
 
+  console.log('🔍 Botones encontrados:', {
+    subscribe: subscribeBtn,
+    unsubscribe: unsubscribeBtn,
+    test: testBtn
+  });
+
   if (subscribeBtn) {
     subscribeBtn.addEventListener('click', () => {
+      console.log('🔍 Click en botón suscribir');
       pushManager.subscribe();
     });
   }
 
   if (unsubscribeBtn) {
     unsubscribeBtn.addEventListener('click', () => {
+      console.log('🔍 Click en botón desuscribir');
       pushManager.unsubscribe();
     });
   }
 
   if (testBtn) {
     testBtn.addEventListener('click', () => {
+      console.log('🔍 Click en botón test');
       pushManager.showTestNotification();
     });
   }
 
   // Hacer disponible globalmente para debugging
   window.pushManager = pushManager;
+  window.PushNotificationManager = PushNotificationManager;
 });

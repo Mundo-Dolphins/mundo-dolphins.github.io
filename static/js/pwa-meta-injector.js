@@ -20,7 +20,7 @@
   // Función para cargar configuración de forma segura (con GitHub Secrets)
   async function loadPWAConfig() {
     // 1. Prioridad máxima: Configuración inyectada desde GitHub Secrets durante el build
-    if (window.PWA_SECURE_CONFIG && window.PWA_SECURE_CONFIG.hasVapidFromEnv) {
+    if (window.PWA_SECURE_CONFIG && window.PWA_SECURE_CONFIG.hasVapidFromEnv && window.PWA_SECURE_CONFIG.vapidKey) {
       console.log('✅ VAPID key cargada desde GitHub Secrets de forma segura');
       return { 
         vapidPublicKey: window.PWA_SECURE_CONFIG.vapidKey,
@@ -28,7 +28,21 @@
       };
     }
     
-    // 2. Fallback: Función de configuración segura (si existe)
+    // 2. Fallback para desarrollo: Archivo de configuración local
+    try {
+      const response = await fetch('/vapid-config.json');
+      if (response.ok) {
+        const config = await response.json();
+        if (config.publicKey) {
+          console.log('✅ VAPID key cargada desde archivo de configuración local');
+          return { vapidPublicKey: config.publicKey, source: 'local-config' };
+        }
+      }
+    } catch (error) {
+      console.warn('No se pudo cargar configuración VAPID local:', error);
+    }
+    
+    // 3. Fallback: Función de configuración segura (si existe)
     if (window.getSecureVapidKey) {
       const vapidKey = window.getSecureVapidKey();
       if (vapidKey) {
@@ -37,7 +51,7 @@
       }
     }
     
-    // 3. Fallback: Cargar desde endpoint de configuración
+    // 4. Fallback: Cargar desde endpoint de configuración
     try {
       const response = await fetch('/api/pwa-config.json');
       if (response.ok) {
@@ -49,14 +63,14 @@
       console.warn('No se pudo cargar configuración PWA desde endpoint');
     }
     
-    // 4. Fallback para desarrollo: Meta tag
+    // 5. Fallback para desarrollo: Meta tag
     const metaVapid = document.querySelector('meta[name="vapid-public-key"]');
     if (metaVapid && metaVapid.content && metaVapid.content.length > 50) {
       console.log('✅ VAPID key cargada desde meta tag de desarrollo');
       return { vapidPublicKey: metaVapid.content, source: 'meta-tag' };
     }
     
-    // 5. Último fallback: desarrollo local desde meta tag legacy
+    // 6. Último fallback: desarrollo local desde meta tag legacy
     const metaVapidLegacy = document.querySelector('meta[name="vapid-key"]');
     if (metaVapidLegacy && metaVapidLegacy.content && metaVapidLegacy.content.length > 50) {
       console.log('✅ VAPID key cargada desde meta tag legacy');
