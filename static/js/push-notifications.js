@@ -113,18 +113,20 @@ class PushNotificationManager {
     }
   }
 
-  // Enviar suscripción al servidor (necesitarás implementar el endpoint)
+  // Enviar suscripción al servidor (mejorado para seguridad)
   async sendSubscriptionToServer(subscription) {
     try {
       const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest', // Protección CSRF básica
         },
         body: JSON.stringify({
           subscription: subscription,
           timestamp: Date.now(),
-          userAgent: navigator.userAgent
+          userAgent: navigator.userAgent,
+          origin: window.location.origin // Verificación de origen
         })
       });
 
@@ -132,31 +134,34 @@ class PushNotificationManager {
         throw new Error('Error enviando suscripción al servidor');
       }
 
+      const result = await response.json();
+      
+      // Almacenar solo identificador seguro, no datos sensibles
+      if (result.subscriptionId) {
+        this.storeSecureSubscriptionData(result.subscriptionId, true);
+      }
+
       console.log('Suscripción enviada al servidor');
     } catch (error) {
       console.error('Error enviando suscripción:', error);
-      // ⚠️ ADVERTENCIA: Guardar en localStorage expone URLs del endpoint
-      // TODO: Implementar mecanismo más seguro con identificador mínimo
-      const secureData = {
-        timestamp: Date.now(),
-        userAgent: navigator.userAgent.substring(0, 50), // Solo primeros 50 chars
-        // No guardar endpoint completo por seguridad
-        subscribed: true
-      };
-      localStorage.setItem('pushSubscriptionStatus', JSON.stringify(secureData));
+      // Fallback con datos mínimos no sensibles
+      this.storeSecureSubscriptionData(null, true);
     }
   }
 
-  // Remover suscripción del servidor
+  // Remover suscripción del servidor (mejorado para seguridad)
   async removeSubscriptionFromServer(subscription) {
     try {
       const response = await fetch('/api/unsubscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest', // Protección CSRF básica
         },
         body: JSON.stringify({
-          subscription: subscription
+          subscription: subscription,
+          timestamp: Date.now(),
+          origin: window.location.origin // Verificación de origen
         })
       });
 
@@ -167,9 +172,62 @@ class PushNotificationManager {
       console.log('Suscripción removida del servidor');
     } catch (error) {
       console.error('Error removiendo suscripción:', error);
-      // Limpiar estado de localStorage
-      localStorage.removeItem('pushSubscriptionStatus');
     }
+    
+    // Limpiar almacenamiento local
+    this.clearSecureSubscriptionData();
+  }
+
+  // Almacenamiento seguro de datos de suscripción
+  storeSecureSubscriptionData(subscriptionId, isSubscribed) {
+    const secureData = {
+      // Solo datos mínimos no sensibles
+      subscribed: isSubscribed,
+      timestamp: Date.now(),
+      // Hash simple del user agent para consistencia (no identificación)
+      clientHash: this.generateSimpleHash(navigator.userAgent.substring(0, 20)),
+      // ID del servidor (si está disponible) para identificación segura
+      id: subscriptionId || null
+    };
+    
+    try {
+      localStorage.setItem('push_status', JSON.stringify(secureData));
+    } catch (error) {
+      console.warn('No se pudo guardar estado en localStorage:', error);
+    }
+  }
+
+  // Leer datos seguros de suscripción
+  getSecureSubscriptionData() {
+    try {
+      const data = localStorage.getItem('push_status');
+      return data ? JSON.parse(data) : null;
+    } catch (error) {
+      console.warn('Error leyendo estado de suscripción:', error);
+      return null;
+    }
+  }
+
+  // Limpiar datos de suscripción
+  clearSecureSubscriptionData() {
+    try {
+      localStorage.removeItem('push_status');
+      // Limpiar también el formato anterior por compatibilidad
+      localStorage.removeItem('pushSubscriptionStatus');
+    } catch (error) {
+      console.warn('Error limpiando estado de suscripción:', error);
+    }
+  }
+
+  // Generar hash simple (no criptográfico, solo para consistencia)
+  generateSimpleHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convertir a 32-bit integer
+    }
+    return Math.abs(hash).toString(16);
   }
 
   // Actualizar UI basado en el estado de suscripción

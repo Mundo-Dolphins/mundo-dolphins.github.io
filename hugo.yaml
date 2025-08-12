@@ -109,3 +109,12 @@ outputs:
   - HTML
   - RSS
   - HeadlessCMSConfig
+
+# Configuración de seguridad para permitir acceso a variables VAPID
+security:
+  funcs:
+    getenv:
+      - "^HUGO_"
+      - "^CI$"
+      - "^VAPID_PUBLIC_KEY$"
+      - "^VAPID_PRIVATE_KEY$"

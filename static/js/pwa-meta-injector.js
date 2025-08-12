@@ -17,6 +17,55 @@
     }
   }
   
+  // Función para cargar configuración de forma segura (con GitHub Secrets)
+  async function loadPWAConfig() {
+    // 1. Prioridad máxima: Configuración inyectada desde GitHub Secrets durante el build
+    if (window.PWA_SECURE_CONFIG && window.PWA_SECURE_CONFIG.hasVapidFromEnv) {
+      console.log('✅ VAPID key cargada desde GitHub Secrets de forma segura');
+      return { 
+        vapidPublicKey: window.PWA_SECURE_CONFIG.vapidKey,
+        source: 'github-secrets'
+      };
+    }
+    
+    // 2. Fallback: Función de configuración segura (si existe)
+    if (window.getSecureVapidKey) {
+      const vapidKey = window.getSecureVapidKey();
+      if (vapidKey) {
+        console.log('✅ VAPID key cargada desde función segura');
+        return { vapidPublicKey: vapidKey, source: 'secure-function' };
+      }
+    }
+    
+    // 3. Fallback: Cargar desde endpoint de configuración
+    try {
+      const response = await fetch('/api/pwa-config.json');
+      if (response.ok) {
+        const config = await response.json();
+        console.log('✅ Configuración PWA cargada desde endpoint');
+        return { ...config, source: 'endpoint' };
+      }
+    } catch (error) {
+      console.warn('No se pudo cargar configuración PWA desde endpoint');
+    }
+    
+    // 4. Fallback para desarrollo: Meta tag
+    const metaVapid = document.querySelector('meta[name="vapid-public-key"]');
+    if (metaVapid && metaVapid.content && metaVapid.content.length > 50) {
+      console.log('✅ VAPID key cargada desde meta tag de desarrollo');
+      return { vapidPublicKey: metaVapid.content, source: 'meta-tag' };
+    }
+    
+    // 5. Último fallback: configuración local
+    if (window.PWAConfig && window.PWAConfig.vapidPublicKey) {
+      console.log('✅ VAPID key cargada desde configuración local');
+      return { vapidPublicKey: window.PWAConfig.vapidPublicKey, source: 'local-config' };
+    }
+    
+    console.warn('⚠️ No se pudo cargar clave VAPID desde ninguna fuente segura');
+    return null;
+  }
+  
   // Función para añadir link si no existe
   function addLink(rel, href, attributes = {}) {
     if (!document.querySelector(`link[href="${href}"]`)) {
@@ -35,13 +84,18 @@
   
   // Ejecutar cuando el DOM esté listo
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addPWAMetas);
+    document.addEventListener('DOMContentLoaded', initPWA);
   } else {
-    addPWAMetas();
+    initPWA();
   }
   
-  function addPWAMetas() {
-    // PWA Meta Tags
+  async function initPWA() {
+    const config = await loadPWAConfig();
+    addPWAMetas(config);
+  }
+  
+  function addPWAMetas(config) {
+    // PWA Meta Tags básicos
     addMetaTag('theme-color', '#3c8b94');
     addMetaTag('apple-mobile-web-app-capable', 'yes');
     addMetaTag('apple-mobile-web-app-status-bar-style', 'default');
@@ -51,8 +105,13 @@
     addMetaTag('mobile-web-app-capable', 'yes');
     addMetaTag('application-name', 'Mundo Dolphins');
     
-    // VAPID Key para push notifications
-    addMetaTag('vapid-public-key', 'BNVHEdU6MquHk0FNf5rMSLiGqN-4HjueaGeDztf-rCjaJHaM-3bmGJ6Lxj-2QfRgZygiioAwJp9yjgsKhEW9IZ0');
+    // VAPID Key solo si está disponible en la configuración
+    if (config && config.vapidPublicKey) {
+      addMetaTag('vapid-public-key', config.vapidPublicKey);
+      console.log('✅ VAPID key cargada desde configuración segura');
+    } else {
+      console.warn('⚠️ No se pudo cargar VAPID key desde configuración');
+    }
     
     // Links PWA
     addLink('manifest', '/manifest.json');

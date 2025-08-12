@@ -2,11 +2,20 @@
 
 Este documento detalla las mejoras de seguridad implementadas en respuesta a las sugerencias de GitHub Copilot.
 
-## 🔒 Problemas de Seguridad Resueltos
+## 🔒 Problemas de Seguridad Resueltos (ACTUALIZADOS)
 
-### 1. Clave VAPID Hardcodeada ✅ RESUELTO
+### 1. Clave VAPID Hardcodeada ✅ COMPLETAMENTE RESUELTO
 
-**Problema**: La clave VAPID pública estaba hardcodeada en el archivo JavaScript.
+**Problema Original**: La clave VAPID pública estaba hardcodeada en el archivo JavaScript.
+
+**Problema Adicional**: La clave VAPID también estaba hardcodeada en `static/js/pwa-meta-injector.js`.
+
+**Solución Completa Implementada**:
+- ✅ Eliminada clave hardcodeada de `pwa-meta-injector.js`
+- ✅ Sistema de configuración dinámica desde variables de entorno
+- ✅ Endpoint de configuración PWA (`/api/pwa-config.json`)
+- ✅ Múltiples fallbacks seguros para desarrollo
+- ✅ Validación de configuración antes de uso
 
 **Solución**:
 - Movida la configuración VAPID a `hugo.yaml`
