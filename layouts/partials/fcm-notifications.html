@@ -32,6 +32,22 @@
       </button>
     </div>
 
+    <!-- Topic Subscriptions -->
+    <div class="push-notifications__topics">
+      <div class="push-notifications__topic-status">
+        <span id="topic-subscription-status" class="notification-status notification-status--inactive">
+          🔔 Puedes suscribirte a notificaciones de noticias
+        </span>
+      </div>
+      
+      <button id="news-subscription-btn" class="push-btn push-btn--secondary push-btn--compact">
+        <svg class="push-btn__icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+        </svg>
+        🔔 Suscribirse a Noticias
+      </button>
+    </div>
+
     <div class="push-notifications__info">
       <p class="push-notifications__note push-notifications__note--compact">
         🔥 Notificaciones push con Firebase
@@ -44,4 +60,5 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js"></script>
 <script src="/js/fcm-notifications.js"></script>
+<script src="/js/fcm-topic-manager.js"></script>
 <script src="/js/fcm-test.js"></script>

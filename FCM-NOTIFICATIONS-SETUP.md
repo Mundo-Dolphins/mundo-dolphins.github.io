@@ -1,0 +1,157 @@
+# 🔔 Configuración de Notificaciones FCM para Nuevos Artículos
+
+Este workflow de GitHub Actions detecta automáticamente nuevos artículos y envía notificaciones push usando Firebase Cloud Messaging (FCM).
+
+## 🚀 Características
+
+- ✅ **Detección automática** de nuevos artículos en `content/noticias/` y `content/podcast/`
+- 📱 **Notificaciones push** con Firebase Cloud Messaging
+- 🔗 **Enlaces directos** a los artículos nuevos
+- 📊 **Resumen detallado** en GitHub Actions
+- 🧪 **Modo de prueba** para testing
+
+## ⚙️ Configuración de Secretos de GitHub
+
+Para que el workflow funcione, necesitas configurar estos secretos en tu repositorio de GitHub:
+
+### 1. Crear Cuenta de Servicio en Firebase
+
+1. Ve a [Firebase Console](https://console.firebase.google.com)
+2. Selecciona tu proyecto
+3. Ve a **Project Settings** ⚙️ > **Service Accounts**
+4. Haz clic en **"Generate new private key"**
+5. Descarga el archivo JSON
+
+### 2. Configurar Secretos en GitHub
+
+Ve a tu repositorio en GitHub > **Settings** > **Secrets and variables** > **Actions** y añade:
+
+| Secreto | Descripción | Valor |
+|---------|-------------|-------|
+| `FIREBASE_PROJECT_ID` | ID del proyecto Firebase | Valor del campo `project_id` del JSON |
+| `FIREBASE_PRIVATE_KEY` | Clave privada | Valor completo del campo `private_key` del JSON |
+| `FIREBASE_CLIENT_EMAIL` | Email del cliente | Valor del campo `client_email` del JSON |
+| `FCM_TOPIC` | Tema FCM (opcional) | `mundo-dolphins-news` (por defecto) |
+
+### 3. Configurar Tema FCM
+
+En tu aplicación web, suscribe a los usuarios al tema:
+
+```javascript
+// En tu código FCM
+import { getMessaging, getToken } from 'firebase/messaging';
+
+const messaging = getMessaging();
+
+// Suscribir al tema después de obtener el token
+getToken(messaging, { vapidKey: 'tu-vapid-key' }).then((token) => {
+  // Enviar token al servidor para suscribir al tema
+  fetch('/api/subscribe-to-topic', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ 
+      token: token, 
+      topic: 'mundo-dolphins-news' 
+    })
+  });
+});
+```
+
+## 🔄 Funcionamiento del Workflow
+
+### Activación
+- **Automática**: Se ejecuta cuando se hace push a `main` con nuevos archivos `.md` en las carpetas de contenido
+- **Manual**: Se puede ejecutar manualmente desde GitHub Actions
+
+### Proceso
+1. **Detección**: Compara commits para encontrar archivos nuevos
+2. **Extracción**: Lee el frontmatter (título, autor, fecha) de cada artículo
+3. **Generación**: Crea URLs basadas en la estructura del sitio
+4. **Notificación**: Envía notificaciones FCM con enlace al artículo
+
+### Estructura de Notificación
+```json
+{
+  "notification": {
+    "title": "🐬 Nuevo en Mundo Dolphins",
+    "body": "Título del artículo"
+  },
+  "data": {
+    "url": "https://mundodolphins.es/noticias/articulo/",
+    "title": "Título del artículo",
+    "author": "Autor",
+    "section": "noticias",
+    "timestamp": "2025-08-13T10:00:00.000Z"
+  }
+}
+```
+
+## 🧪 Testing
+
+### Ejecutar en Modo de Prueba
+1. Ve a **Actions** en tu repositorio
+2. Selecciona **"🔔 Notify New Articles via FCM"**
+3. Haz clic en **"Run workflow"**
+4. Marca **"Run in test mode"**
+5. Ejecuta
+
+### Debug
+- Revisa los logs en GitHub Actions
+- Comprueba que los secretos estén configurados
+- Verifica que los usuarios estén suscritos al tema FCM
+
+## 📝 Formatos de Archivo Soportados
+
+El workflow detecta archivos con este frontmatter:
+
+```yaml
+---
+title: 'Título del Artículo'
+date: 2025-08-13T10:00:00+02:00
+author: Nombre del Autor
+authorLink: https://ejemplo.com/perfil
+---
+```
+
+## 🔧 Personalización
+
+### Cambiar el Tema FCM
+Modifica el secreto `FCM_TOPIC` o edita el workflow:
+
+```yaml
+env:
+  FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'tu-tema-personalizado' }}
+```
+
+### Añadir Más Secciones
+Edita las rutas monitoreadas en el workflow:
+
+```yaml
+on:
+  push:
+    paths:
+      - 'content/noticias/**/*.md'
+      - 'content/podcast/**/*.md'
+      - 'content/nueva-seccion/**/*.md'  # Nueva sección
+```
+
+## ❗ Troubleshooting
+
+### Error: "Invalid private key"
+- Asegúrate de que `FIREBASE_PRIVATE_KEY` incluye `-----BEGIN PRIVATE KEY-----` y `-----END PRIVATE KEY-----`
+- No modifiques los saltos de línea `\n` en la clave
+
+### Error: "Topic not found"
+- Verifica que el tema existe y tiene suscriptores
+- Los temas se crean automáticamente cuando el primer usuario se suscribe
+
+### No se envían notificaciones
+- Comprueba que hay usuarios suscritos al tema
+- Verifica los permisos de la cuenta de servicio Firebase
+- Revisa los logs del workflow en GitHub Actions
+
+## 📊 Monitoreo
+
+- **GitHub Actions**: Logs detallados y resumen en cada ejecución
+- **Firebase Console**: Estadísticas de mensajes enviados
+- **Analytics**: Tracking de clicks y engagement en las notificaciones

@@ -1,0 +1,212 @@
+name: 🔔 Notify New Articles via FCM
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/noticias/**/*.md'
+      - 'content/podcast/**/*.md'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Run in test mode'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  detect-and-notify:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🔄 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Fetch last 2 commits to compare
+    
+    - name: 🔍 Detect new articles
+      id: detect_new
+      run: |
+        echo "🔍 Checking for new articles..."
+        
+        # Get changed files in the push
+        NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep -E '^content/(noticias|podcast)/.*\.md$' || true)
+        
+        if [ -z "$NEW_FILES" ]; then
+          echo "ℹ️ No new articles detected"
+          echo "has_new_articles=false" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+        
+        echo "🆕 New articles detected:"
+        echo "$NEW_FILES"
+        
+        # Process each new article
+        ARTICLES_JSON="[]"
+        
+        for file in $NEW_FILES; do
+          if [ -f "$file" ]; then
+            echo "📄 Processing: $file"
+            
+            # Extract frontmatter
+            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"]* *$//" || echo "Nuevo artículo")
+            DATE=$(grep -m1 '^date:' "$file" | sed "s/^date: *//" || echo "")
+            AUTHOR=$(grep -m1 '^author:' "$file" | sed "s/^author: *//" || echo "Mundo Dolphins")
+            
+            # Generate URL from filename
+            FILENAME=$(basename "$file" .md)
+            if [[ "$file" == content/noticias/* ]]; then
+              SECTION="noticias"
+            elif [[ "$file" == content/podcast/* ]]; then
+              SECTION="podcast"
+            else
+              SECTION="noticias"
+            fi
+            
+            URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
+            
+            # Create JSON object for this article
+            ARTICLE_JSON=$(jq -n \
+              --arg title "$TITLE" \
+              --arg url "$URL" \
+              --arg author "$AUTHOR" \
+              --arg date "$DATE" \
+              --arg section "$SECTION" \
+              '{title: $title, url: $url, author: $author, date: $date, section: $section}')
+            
+            # Add to articles array
+            ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
+            
+            echo "✅ Article processed: $TITLE"
+            echo "🔗 URL: $URL"
+          fi
+        done
+        
+        echo "has_new_articles=true" >> $GITHUB_OUTPUT
+        echo "articles_count=$(echo "$ARTICLES_JSON" | jq length)" >> $GITHUB_OUTPUT
+        
+        # Save articles data for next step
+        echo "$ARTICLES_JSON" > articles.json
+        cat articles.json
+    
+    - name: 🔔 Send FCM notifications
+      if: steps.detect_new.outputs.has_new_articles == 'true'
+      env:
+        FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
+        FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
+        FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
+      run: |
+        echo "🔔 Sending FCM notifications..."
+        
+        # Install Node.js dependencies
+        npm init -y
+        npm install firebase-admin
+        
+        # Create FCM notification script
+        cat > send_notification.js << 'EOF'
+        const admin = require('firebase-admin');
+        const fs = require('fs');
+        
+        // Initialize Firebase Admin
+        const serviceAccount = {
+          type: "service_account",
+          project_id: process.env.FIREBASE_PROJECT_ID,
+          private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+          client_email: process.env.FIREBASE_CLIENT_EMAIL,
+        };
+        
+        admin.initializeApp({
+          credential: admin.credential.cert(serviceAccount),
+          projectId: process.env.FIREBASE_PROJECT_ID
+        });
+        
+        async function sendNotifications() {
+          try {
+            const articles = JSON.parse(fs.readFileSync('articles.json', 'utf8'));
+            const topic = process.env.FCM_TOPIC;
+            
+            console.log(`📤 Sending notifications for ${articles.length} article(s) to topic: ${topic}`);
+            
+            for (const article of articles) {
+              const message = {
+                topic: topic,
+                notification: {
+                  title: '🐬 Nuevo en Mundo Dolphins',
+                  body: article.title
+                },
+                data: {
+                  url: article.url,
+                  title: article.title,
+                  author: article.author,
+                  section: article.section,
+                  timestamp: new Date().toISOString()
+                },
+                android: {
+                  notification: {
+                    icon: 'ic_notification',
+                    color: '#008B8B',
+                    clickAction: article.url
+                  }
+                },
+                webpush: {
+                  notification: {
+                    icon: '/favicon-192x192.png',
+                    badge: '/favicon-96x96.png',
+                    tag: 'mundo-dolphins-article',
+                    requireInteraction: true,
+                    actions: [
+                      {
+                        action: 'read',
+                        title: 'Leer artículo',
+                        icon: '/favicon-96x96.png'
+                      }
+                    ]
+                  },
+                  fcmOptions: {
+                    link: article.url
+                  }
+                }
+              };
+              
+              console.log(`📨 Sending notification for: "${article.title}"`);
+              console.log(`🔗 URL: ${article.url}`);
+              
+              const response = await admin.messaging().send(message);
+              console.log(`✅ Notification sent successfully: ${response}`);
+              
+              // Small delay between notifications
+              await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+            
+            console.log('🎉 All notifications sent successfully!');
+          } catch (error) {
+            console.error('❌ Error sending notifications:', error);
+            process.exit(1);
+          }
+        }
+        
+        sendNotifications();
+        EOF
+        
+        # Run the notification script
+        node send_notification.js
+    
+    - name: 📊 Summary
+      if: always()
+      run: |
+        echo "## 📋 Notification Summary" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.detect_new.outputs.has_new_articles }}" == "true" ]; then
+          echo "✅ **New articles detected:** ${{ steps.detect_new.outputs.articles_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "🔔 **FCM notifications sent to topic:** \`${{ env.FCM_TOPIC || 'mundo-dolphins-news' }}\`" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f articles.json ]; then
+            echo "### 📰 Articles:" >> $GITHUB_STEP_SUMMARY
+            jq -r '.[] | "- **\(.title)** - [\(.url)](\(.url))"' articles.json >> $GITHUB_STEP_SUMMARY
+          fi
+        else
+          echo "ℹ️ **No new articles detected**" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "🕒 **Workflow completed at:** $(date)" >> $GITHUB_STEP_SUMMARY
