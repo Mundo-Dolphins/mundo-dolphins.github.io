@@ -7,6 +7,10 @@ class FCMNotificationManager {
     this.isSupported = this.checkSupport();
     this.config = window.FCM_CONFIG || null;
     
+    // Constants for better maintainability
+    this.RETRY_DELAY_MS = 100;
+    this.SW_ACTIVATION_TIMEOUT_MS = 15000;
+    
     console.log('🔥 FCMNotificationManager iniciado');
     console.log('🔥 Soporte:', this.isSupported);
     console.log('🔥 Configuración:', !!this.config);
@@ -111,8 +115,8 @@ class FCMNotificationManager {
     try {
       console.log('🔄 Verificando estado del Service Worker...');
       
-      // Primero, asegurar que tenemos una registración
-      let registration = await navigator.serviceWorker.getRegistration('/firebase-messaging-sw.js');
+      // Get registration by scope, not script URL
+      let registration = await navigator.serviceWorker.getRegistration('/');
       
       if (!registration) {
         console.log('🔄 No hay registración, registrando Service Worker...');
@@ -135,11 +139,16 @@ class FCMNotificationManager {
       // Esperar a que esté activo
       return new Promise((resolve, reject) => {
         let timeoutId;
+        let controllerChangeListener;
         
         const safeResolve = (value) => {
           if (timeoutId) {
             clearTimeout(timeoutId);
             timeoutId = null;
+          }
+          if (controllerChangeListener) {
+            navigator.serviceWorker.removeEventListener('controllerchange', controllerChangeListener);
+            controllerChangeListener = null;
           }
           resolve(value);
         };
@@ -148,6 +157,10 @@ class FCMNotificationManager {
           if (timeoutId) {
             clearTimeout(timeoutId);
             timeoutId = null;
+          }
+          if (controllerChangeListener) {
+            navigator.serviceWorker.removeEventListener('controllerchange', controllerChangeListener);
+            controllerChangeListener = null;
           }
           reject(err);
         };
@@ -180,16 +193,19 @@ class FCMNotificationManager {
             // Forzar activación del waiting worker
             registration.waiting.postMessage({ type: 'SKIP_WAITING' });
             
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
+            // Create and store the controller change listener
+            controllerChangeListener = () => {
               console.log('✅ Service Worker tomó control');
               safeResolve(registration);
-            });
+            };
+            
+            navigator.serviceWorker.addEventListener('controllerchange', controllerChangeListener);
           } else {
             console.log('⚠️ Service Worker en estado inesperado, re-registrando...');
             this.registerServiceWorker()
               .then(newRegistration => {
                 registration = newRegistration;
-                setTimeout(checkAndWait, 100);
+                setTimeout(checkAndWait, this.RETRY_DELAY_MS);
               })
               .catch(safeReject);
           }
@@ -197,10 +213,10 @@ class FCMNotificationManager {
         
         checkAndWait();
         
-        // Timeout después de 15 segundos
+        // Timeout después de los segundos configurados
         timeoutId = setTimeout(() => {
           safeReject(new Error('Timeout esperando que Service Worker esté activo'));
-        }, 15000);
+        }, this.SW_ACTIVATION_TIMEOUT_MS);
       });
       
     } catch (error) {
