@@ -18,13 +18,13 @@ Para que el workflow funcione, necesitas configurar estos secretos en tu reposit
 
 1. Ve a [Firebase Console](https://console.firebase.google.com)
 2. Selecciona tu proyecto
-3. Ve a **Project Settings** ⚙️ > **Service Accounts**
-4. Haz clic en **"Generate new private key"**
+3. Ve a **Configuración del Proyecto** ⚙️ > **Cuentas de Servicio**
+4. Haz clic en **"Generar nueva clave privada"**
 5. Descarga el archivo JSON
 
 ### 2. Configurar Secretos en GitHub
 
-Ve a tu repositorio en GitHub > **Settings** > **Secrets and variables** > **Actions** y añade:
+Ve a tu repositorio en GitHub > **Configuración** > **Secretos y variables** > **Acciones** y añade:
 
 | Secreto | Descripción | Valor |
 |---------|-------------|-------|
@@ -89,14 +89,14 @@ getToken(messaging, { vapidKey: 'tu-vapid-key' }).then((token) => {
 ## 🧪 Testing
 
 ### Ejecutar en Modo de Prueba
-1. Ve a **Actions** en tu repositorio
+1. Ve a **Acciones** en tu repositorio
 2. Selecciona **"🔔 Notify New Articles via FCM"**
-3. Haz clic en **"Run workflow"**
-4. Marca **"Run in test mode"**
+3. Haz clic en **"Ejecutar workflow"**
+4. Marca **"Ejecutar en modo de prueba"**
 5. Ejecuta
 
 ### Debug
-- Revisa los logs en GitHub Actions
+- Revisa los logs en Acciones de GitHub
 - Comprueba que los secretos estén configurados
 - Verifica que los usuarios estén suscritos al tema FCM
 
@@ -148,10 +148,10 @@ on:
 ### No se envían notificaciones
 - Comprueba que hay usuarios suscritos al tema
 - Verifica los permisos de la cuenta de servicio Firebase
-- Revisa los logs del workflow en GitHub Actions
+- Revisa los logs del workflow en Acciones de GitHub
 
 ## 📊 Monitoreo
 
-- **GitHub Actions**: Logs detallados y resumen en cada ejecución
-- **Firebase Console**: Estadísticas de mensajes enviados
+- **Acciones de GitHub**: Logs detallados y resumen en cada ejecución
+- **Consola Firebase**: Estadísticas de mensajes enviados
 - **Analytics**: Tracking de clicks y engagement en las notificaciones

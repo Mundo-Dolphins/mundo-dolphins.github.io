@@ -49,7 +49,7 @@ jobs:
             echo "📄 Processing: $file"
             
             # Extract frontmatter
-            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"]* *$//" || echo "Nuevo artículo")
+            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"][[:space:]]*$//" || echo "Nuevo artículo")
             DATE=$(grep -m1 '^date:' "$file" | sed "s/^date: *//" || echo "")
             AUTHOR=$(grep -m1 '^author:' "$file" | sed "s/^author: *//" || echo "Mundo Dolphins")
             
@@ -95,7 +95,7 @@ jobs:
         FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
         FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
         FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-        FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
+        FCM_TOPIC: 'mundo-dolphins-news'
       run: |
         echo "🔔 Sending FCM notifications..."
         
@@ -112,7 +112,9 @@ jobs:
         const serviceAccount = {
           type: "service_account",
           project_id: process.env.FIREBASE_PROJECT_ID,
-          private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+          private_key: process.env.FIREBASE_PRIVATE_KEY.includes('\\n')
+            ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
+            : process.env.FIREBASE_PRIVATE_KEY,
           client_email: process.env.FIREBASE_CLIENT_EMAIL,
         };
         
@@ -199,7 +201,7 @@ jobs:
         
         if [ "${{ steps.detect_new.outputs.has_new_articles }}" == "true" ]; then
           echo "✅ **New articles detected:** ${{ steps.detect_new.outputs.articles_count }}" >> $GITHUB_STEP_SUMMARY
-          echo "🔔 **FCM notifications sent to topic:** \`${{ env.FCM_TOPIC || 'mundo-dolphins-news' }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "🔔 **FCM notifications sent to topic:** \`mundo-dolphins-news\`" >> $GITHUB_STEP_SUMMARY
           
           if [ -f articles.json ]; then
             echo "### 📰 Articles:" >> $GITHUB_STEP_SUMMARY
