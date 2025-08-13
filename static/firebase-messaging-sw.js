@@ -157,5 +157,14 @@ self.addEventListener('error', function(event) {
 
 self.addEventListener('unhandledrejection', function(event) {
   console.error('[FCM SW] Unhandled promise rejection:', event.reason);
-  event.preventDefault(); // Prevent the error from failing the SW
+  
+  // Only prevent default for known, non-critical errors
+  if (event.reason && (
+        (typeof event.reason === 'object' && event.reason.name === 'QuotaExceededError') ||
+        (typeof event.reason === 'object' && event.reason.name === 'NetworkError') ||
+        (typeof event.reason === 'string' && event.reason.includes('QuotaExceededError')) ||
+        (typeof event.reason === 'string' && event.reason.includes('NetworkError'))
+    )) {
+    event.preventDefault();
+  }
 });

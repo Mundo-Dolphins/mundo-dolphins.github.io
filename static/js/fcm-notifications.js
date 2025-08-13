@@ -10,6 +10,8 @@ class FCMNotificationManager {
     // Constants for better maintainability
     this.RETRY_DELAY_MS = 100;
     this.SW_ACTIVATION_TIMEOUT_MS = 15000;
+    this.SW_ACTIVATION_DELAY_MS = 100;  // Small delay to ensure SW is fully ready after state change
+    this.SW_CONTROLLER_DELAY_MS = 200;  // Longer delay for controller change to stabilize
     
     console.log('🔥 FCMNotificationManager iniciado');
     console.log('🔥 Soporte:', this.isSupported);
@@ -184,7 +186,7 @@ class FCMNotificationManager {
               if (installingWorker.state === 'activated') {
                 installingWorker.removeEventListener('statechange', onStateChange);
                 // Wait a bit more to ensure it's really ready
-                setTimeout(() => safeResolve(registration), 100);
+                setTimeout(() => safeResolve(registration), this.SW_ACTIVATION_DELAY_MS);
               } else if (installingWorker.state === 'redundant') {
                 installingWorker.removeEventListener('statechange', onStateChange);
                 safeReject(new Error('Service Worker se volvió redundante durante la instalación'));
@@ -201,7 +203,7 @@ class FCMNotificationManager {
             controllerChangeListener = () => {
               console.log('✅ Service Worker tomó control');
               // Wait a bit to ensure it's really ready
-              setTimeout(() => safeResolve(registration), 200);
+              setTimeout(() => safeResolve(registration), this.SW_CONTROLLER_DELAY_MS);
             };
             
             navigator.serviceWorker.addEventListener('controllerchange', controllerChangeListener);
