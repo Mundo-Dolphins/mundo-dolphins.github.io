@@ -97,6 +97,64 @@ class FCMNotificationManager {
     }
   }
 
+  async ensureServiceWorkerActive() {
+    try {
+      // Check if there's an active service worker
+      const registration = await navigator.serviceWorker.ready;
+      
+      if (!registration.active) {
+        console.log('🔄 Waiting for Service Worker to become active...');
+        
+        // Wait until the service worker is active
+        return new Promise((resolve, reject) => {
+          let timeoutId;
+          
+          const safeResolve = (value) => {
+            clearTimeout(timeoutId);
+            resolve(value);
+          };
+          
+          const safeReject = (err) => {
+            clearTimeout(timeoutId);
+            reject(err);
+          };
+          
+          const checkActive = () => {
+            if (registration.active) {
+              console.log('✅ Service Worker is now active');
+              safeResolve(registration);
+            } else if (registration.installing) {
+              const installingWorker = registration.installing;
+              installingWorker.addEventListener('statechange', function onStateChange() {
+                if (installingWorker.state === 'activated') {
+                  console.log('✅ Service Worker activated');
+                  installingWorker.removeEventListener('statechange', onStateChange);
+                  safeResolve(registration);
+                }
+              });
+            } else {
+              // Try to register again if there's none
+              this.registerServiceWorker().then(safeResolve).catch(safeReject);
+            }
+          };
+          
+          checkActive();
+          
+          // Timeout after 10 seconds
+          timeoutId = setTimeout(() => {
+            safeReject(new Error('Timeout waiting for Service Worker to become active'));
+          }, 10000);
+        });
+      }
+      
+      console.log('✅ Service Worker is already active');
+      return registration;
+    } catch (error) {
+      console.error('❌ Error ensuring Service Worker is active:', error);
+      throw error;
+    }
+  }
+
   async subscribe() {
     console.log('🔥 Iniciando suscripción FCM...');
 
@@ -115,6 +173,9 @@ class FCMNotificationManager {
         this.updateUI(false, 'Permisos denegados');
         return false;
       }
+
+      // Asegurar que el Service Worker esté activo antes de obtener token
+      await this.ensureServiceWorkerActive();
 
       // Get FCM token with VAPID configuration
       this.token = await this.messaging.getToken(this.getTokenOptions());
