@@ -143,7 +143,37 @@ class FCMNotificationManager {
           
           // Timeout después de 10 segundos
           setTimeout(() => {
-            reject(new Error('Timeout esperando Service Worker activo'));
+          let timeoutId;
+          const safeResolve = (value) => {
+            clearTimeout(timeoutId);
+            resolve(value);
+          };
+          const safeReject = (err) => {
+            clearTimeout(timeoutId);
+            reject(err);
+          };
+          const checkActive = () => {
+            if (registration.active) {
+              console.log('✅ Service Worker activo');
+              safeResolve(registration);
+            } else if (registration.installing) {
+              registration.installing.addEventListener('statechange', () => {
+                if (registration.installing.state === 'activated') {
+                  console.log('✅ Service Worker activado');
+                  safeResolve(registration);
+                }
+              });
+            } else {
+              // Intentar registrar nuevamente si no hay ninguno
+              this.registerServiceWorker().then(safeResolve).catch(safeReject);
+            }
+          };
+          
+          checkActive();
+          
+          // Timeout después de 10 segundos
+          timeoutId = setTimeout(() => {
+            safeReject(new Error('Timeout esperando Service Worker activo'));
           }, 10000);
         });
       }
