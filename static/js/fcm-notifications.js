@@ -76,14 +76,6 @@ class FCMNotificationManager {
         this.updateUI(false, 'No suscrito');
       }
 
-      // Escuchar cambios en el token
-      this.messaging.onTokenRefresh(() => {
-        this.messaging.getToken(this.getTokenOptions()).then((refreshedToken) => {
-          console.log('🔥 Token FCM actualizado:', refreshedToken);
-          this.saveToken(refreshedToken);
-        });
-      });
-
       console.log('✅ FCM inicializado correctamente');
       return true;
 
