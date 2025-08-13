@@ -103,85 +103,54 @@ class FCMNotificationManager {
       const registration = await navigator.serviceWorker.ready;
       
       if (!registration.active) {
-        console.log('🔄 Esperando a que el Service Worker esté activo...');
+        console.log('🔄 Waiting for Service Worker to become active...');
         
-        // Esperar hasta que el service worker esté activo
+        // Wait until the service worker is active
         return new Promise((resolve, reject) => {
-          const checkActive = () => {
-            if (registration.active) {
-              console.log('✅ Service Worker activo');
-              resolve(registration);
-            } else if (registration.installing) {
-              registration.installing.addEventListener('statechange', () => {
-              const installingWorker = registration.installing;
-              installingWorker.addEventListener('statechange', () => {
-                if (installingWorker.state === 'activated') {
-                  console.log('✅ Service Worker activado');
-                if (registration.installing.state === 'installed') {
-                  // Now wait for the active worker to become 'activated'
-                  if (registration.active && registration.active.state === 'activated') {
-                    console.log('✅ Service Worker activado');
-                    resolve(registration);
-                  } else if (registration.active) {
-                    registration.active.addEventListener('statechange', function onActiveStateChange() {
-                      if (registration.active.state === 'activated') {
-                        console.log('✅ Service Worker activado');
-                        registration.active.removeEventListener('statechange', onActiveStateChange);
-                        resolve(registration);
-                      }
-                    });
-                  }
-                }
-              });
-            } else {
-              // Intentar registrar nuevamente si no hay ninguno
-              this.registerServiceWorker().then(resolve).catch(reject);
-            }
-          };
-          
-          checkActive();
-          
-          // Timeout después de 10 segundos
-          setTimeout(() => {
           let timeoutId;
+          
           const safeResolve = (value) => {
             clearTimeout(timeoutId);
             resolve(value);
           };
+          
           const safeReject = (err) => {
             clearTimeout(timeoutId);
             reject(err);
           };
+          
           const checkActive = () => {
             if (registration.active) {
-              console.log('✅ Service Worker activo');
+              console.log('✅ Service Worker is now active');
               safeResolve(registration);
             } else if (registration.installing) {
-              registration.installing.addEventListener('statechange', () => {
-                if (registration.installing.state === 'activated') {
-                  console.log('✅ Service Worker activado');
+              const installingWorker = registration.installing;
+              installingWorker.addEventListener('statechange', function onStateChange() {
+                if (installingWorker.state === 'activated') {
+                  console.log('✅ Service Worker activated');
+                  installingWorker.removeEventListener('statechange', onStateChange);
                   safeResolve(registration);
                 }
               });
             } else {
-              // Intentar registrar nuevamente si no hay ninguno
+              // Try to register again if there's none
               this.registerServiceWorker().then(safeResolve).catch(safeReject);
             }
           };
           
           checkActive();
           
-          // Timeout después de 10 segundos
+          // Timeout after 10 seconds
           timeoutId = setTimeout(() => {
-            safeReject(new Error('Timeout esperando Service Worker activo'));
+            safeReject(new Error('Timeout waiting for Service Worker to become active'));
           }, 10000);
         });
       }
       
-      console.log('✅ Service Worker ya está activo');
+      console.log('✅ Service Worker is already active');
       return registration;
     } catch (error) {
-      console.error('❌ Error asegurando Service Worker activo:', error);
+      console.error('❌ Error ensuring Service Worker is active:', error);
       throw error;
     }
   }
