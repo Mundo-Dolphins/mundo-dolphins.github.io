@@ -53,8 +53,9 @@ class FCMNotificationManager {
         this.app = firebase.app();
       }
 
-      // Registrar service worker primero
+      // Registrar service worker y asegurar que esté activo
       await this.registerServiceWorker();
+      await this.ensureServiceWorkerActive();
 
       // Obtener messaging
       this.messaging = firebase.messaging();
@@ -65,7 +66,7 @@ class FCMNotificationManager {
         this.showForegroundNotification(payload);
       });
 
-      // Verificar si ya tenemos un token
+      // Verificar si ya tenemos un token (solo después de que SW esté activo)
       this.token = await this.messaging.getToken(this.getTokenOptions());
       if (this.token) {
         console.log('🔥 Token FCM existente:', this.token);
@@ -88,8 +89,17 @@ class FCMNotificationManager {
 
   async registerServiceWorker() {
     try {
-      const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+      console.log('🔄 Registrando Service Worker FCM...');
+      const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js', {
+        scope: '/'
+      });
+      
       console.log('🔥 Service Worker FCM registrado:', registration);
+      
+      // Wait for the service worker to be ready
+      await navigator.serviceWorker.ready;
+      console.log('✅ Service Worker listo');
+      
       return registration;
     } catch (error) {
       console.error('❌ Error registrando Service Worker FCM:', error);
@@ -99,58 +109,102 @@ class FCMNotificationManager {
 
   async ensureServiceWorkerActive() {
     try {
-      // Check if there's an active service worker
-      const registration = await navigator.serviceWorker.ready;
+      console.log('🔄 Verificando estado del Service Worker...');
       
-      if (!registration.active) {
-        console.log('🔄 Waiting for Service Worker to become active...');
-        
-        // Wait until the service worker is active
-        return new Promise((resolve, reject) => {
-          let timeoutId;
-          
-          const safeResolve = (value) => {
-            clearTimeout(timeoutId);
-            resolve(value);
-          };
-          
-          const safeReject = (err) => {
-            clearTimeout(timeoutId);
-            reject(err);
-          };
-          
-          const checkActive = () => {
-            if (registration.active) {
-              console.log('✅ Service Worker is now active');
-              safeResolve(registration);
-            } else if (registration.installing) {
-              const installingWorker = registration.installing;
-              installingWorker.addEventListener('statechange', function onStateChange() {
-                if (installingWorker.state === 'activated') {
-                  console.log('✅ Service Worker activated');
-                  installingWorker.removeEventListener('statechange', onStateChange);
-                  safeResolve(registration);
-                }
-              });
-            } else {
-              // Try to register again if there's none
-              this.registerServiceWorker().then(safeResolve).catch(safeReject);
-            }
-          };
-          
-          checkActive();
-          
-          // Timeout after 10 seconds
-          timeoutId = setTimeout(() => {
-            safeReject(new Error('Timeout waiting for Service Worker to become active'));
-          }, 10000);
-        });
+      // Primero, asegurar que tenemos una registración
+      let registration = await navigator.serviceWorker.getRegistration('/firebase-messaging-sw.js');
+      
+      if (!registration) {
+        console.log('🔄 No hay registración, registrando Service Worker...');
+        registration = await this.registerServiceWorker();
       }
       
-      console.log('✅ Service Worker is already active');
-      return registration;
+      // Ahora verificar el estado del Service Worker
+      if (registration.active) {
+        console.log('✅ Service Worker ya está activo');
+        return registration;
+      }
+      
+      console.log('🔄 Service Worker no está activo, esperando...');
+      console.log('🔄 Estado actual:', {
+        active: !!registration.active,
+        installing: !!registration.installing,
+        waiting: !!registration.waiting
+      });
+      
+      // Esperar a que esté activo
+      return new Promise((resolve, reject) => {
+        let timeoutId;
+        
+        const safeResolve = (value) => {
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+          }
+          resolve(value);
+        };
+        
+        const safeReject = (err) => {
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+          }
+          reject(err);
+        };
+        
+        const checkAndWait = () => {
+          if (registration.active) {
+            console.log('✅ Service Worker ahora está activo');
+            safeResolve(registration);
+            return;
+          }
+          
+          if (registration.installing) {
+            console.log('🔄 Service Worker instalándose...');
+            const installingWorker = registration.installing;
+            
+            const onStateChange = () => {
+              console.log('🔄 Cambio de estado SW:', installingWorker.state);
+              if (installingWorker.state === 'activated') {
+                installingWorker.removeEventListener('statechange', onStateChange);
+                safeResolve(registration);
+              } else if (installingWorker.state === 'redundant') {
+                installingWorker.removeEventListener('statechange', onStateChange);
+                safeReject(new Error('Service Worker se volvió redundante durante la instalación'));
+              }
+            };
+            
+            installingWorker.addEventListener('statechange', onStateChange);
+          } else if (registration.waiting) {
+            console.log('🔄 Service Worker esperando activación...');
+            // Forzar activación del waiting worker
+            registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+            
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+              console.log('✅ Service Worker tomó control');
+              safeResolve(registration);
+            });
+          } else {
+            console.log('⚠️ Service Worker en estado inesperado, re-registrando...');
+            this.registerServiceWorker()
+              .then(newRegistration => {
+                registration = newRegistration;
+                setTimeout(checkAndWait, 100);
+              })
+              .catch(safeReject);
+          }
+        };
+        
+        checkAndWait();
+        
+        // Timeout después de 15 segundos
+        timeoutId = setTimeout(() => {
+          safeReject(new Error('Timeout esperando que Service Worker esté activo'));
+        }, 15000);
+      });
+      
     } catch (error) {
-      console.error('❌ Error ensuring Service Worker is active:', error);
+      console.error('❌ Error asegurando Service Worker activo:', error);
       throw error;
     }
   }

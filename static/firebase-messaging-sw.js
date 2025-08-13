@@ -122,3 +122,10 @@ self.addEventListener('activate', function(event) {
   // Reclamar todos los clientes
   self.clients.claim();
 });
+
+// Manejar mensajes del cliente
+self.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
