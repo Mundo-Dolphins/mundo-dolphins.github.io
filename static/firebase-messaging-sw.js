@@ -88,8 +88,6 @@ self.addEventListener('notificationclick', function(event) {
 const CACHE_NAME = 'mundo-dolphins-fcm-v1';
 const urlsToCache = [
   '/',
-  '/css/mundodolphins.css',
-  '/js/fcm-notifications.js',
   '/favicon-192x192.png',
   '/favicon-96x96.png'
 ];
@@ -99,7 +97,19 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        return cache.addAll(urlsToCache);
+        // Cache resources individually to avoid failures
+        return Promise.allSettled(
+          urlsToCache.map(url => 
+            cache.add(url).catch(err => {
+              console.warn('Failed to cache:', url, err);
+              return null;
+            })
+          )
+        );
+      })
+      .catch(err => {
+        console.warn('Cache installation failed, but continuing:', err);
+        return Promise.resolve();
       })
   );
   // Forzar activación inmediata
@@ -108,15 +118,23 @@ self.addEventListener('install', function(event) {
 
 // Activar service worker
 self.addEventListener('activate', function(event) {
+  console.log('[FCM SW] Activating Service Worker...');
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
           if (cacheName !== CACHE_NAME) {
+            console.log('[FCM SW] Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
       );
+    }).then(() => {
+      console.log('[FCM SW] Service Worker activated successfully');
+      return Promise.resolve();
+    }).catch(err => {
+      console.warn('[FCM SW] Error during activation:', err);
+      return Promise.resolve(); // Don't fail activation
     })
   );
   // Reclamar todos los clientes
@@ -125,7 +143,28 @@ self.addEventListener('activate', function(event) {
 
 // Manejar mensajes del cliente
 self.addEventListener('message', function(event) {
+  console.log('[FCM SW] Message received:', event.data);
   if (event.data && event.data.type === 'SKIP_WAITING') {
+    console.log('[FCM SW] Skipping waiting...');
     self.skipWaiting();
+  }
+});
+
+// Manejo de errores global
+self.addEventListener('error', function(event) {
+  console.error('[FCM SW] Service Worker error:', event.error);
+});
+
+self.addEventListener('unhandledrejection', function(event) {
+  console.error('[FCM SW] Unhandled promise rejection:', event.reason);
+  
+  // Only prevent default for known, non-critical errors
+  if (event.reason && (
+        (typeof event.reason === 'object' && event.reason.name === 'QuotaExceededError') ||
+        (typeof event.reason === 'object' && event.reason.name === 'NetworkError') ||
+        (typeof event.reason === 'string' && event.reason.includes('QuotaExceededError')) ||
+        (typeof event.reason === 'string' && event.reason.includes('NetworkError'))
+    )) {
+    event.preventDefault();
   }
 });
