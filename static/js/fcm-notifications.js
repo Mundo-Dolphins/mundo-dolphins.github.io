@@ -22,8 +22,8 @@ class FCMNotificationManager {
   }
 
   /**
-   * Obtiene las opciones de token para Firebase Messaging
-   * @returns {Object} Objeto con configuración VAPID si está disponible
+   * Gets token options for Firebase Messaging
+   * @returns {Object} Object with VAPID configuration if available
    * @private
    */
   getTokenOptions() {
@@ -124,7 +124,7 @@ class FCMNotificationManager {
         return false;
       }
 
-      // Obtener token FCM con configuración VAPID
+      // Get FCM token with VAPID configuration
       this.token = await this.messaging.getToken(this.getTokenOptions());
       
       if (this.token) {

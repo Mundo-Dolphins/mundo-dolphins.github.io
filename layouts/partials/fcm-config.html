@@ -1,8 +1,8 @@
 <script>
-// Configuración de Firebase para notificaciones push
-// Esta configuración se inyecta desde GitHub Secrets en producción
+// Firebase configuration for push notifications
+// This configuration is injected from GitHub Secrets in production
 
-// Configuración de Firebase (se inyecta desde GitHub Secrets)
+// Firebase configuration (injected from GitHub Secrets)
 const firebaseConfig = {
   apiKey: "{{ getenv "FIREBASE_API_KEY" | default "demo-api-key" }}",
   authDomain: "{{ getenv "FIREBASE_AUTH_DOMAIN" | default "demo-project.firebaseapp.com" }}",
@@ -12,10 +12,10 @@ const firebaseConfig = {
   appId: "{{ getenv "FIREBASE_APP_ID" | default "1:123456789:web:abcdef" }}"
 };
 
-// VAPID key para FCM
+// VAPID key for FCM
 const fcmVapidKey = "{{ getenv "FCM_VAPID_KEY" | default "" }}";
 
-// Configuración global para FCM
+// Global configuration for FCM
 window.FCM_CONFIG = {
   firebase: firebaseConfig,
   vapidKey: fcmVapidKey,
@@ -24,11 +24,11 @@ window.FCM_CONFIG = {
   hasKeys: {{ if getenv "FIREBASE_API_KEY" }}true{{ else }}false{{ end }}
 };
 
-console.log('🔥 Firebase Config cargado:', window.FCM_CONFIG.environment);
+console.log('🔥 Firebase Config loaded:', window.FCM_CONFIG.environment);
 {{ if not (getenv "FIREBASE_API_KEY") -}}
-console.warn('⚠️ Configuración de Firebase no encontrada. Usando valores demo para desarrollo.');
-console.log('📋 Para configurar FCM, sigue las instrucciones en FCM-SETUP.md');
+console.warn('⚠️ Firebase configuration not found. Using demo values for development.');
+console.log('📋 To configure FCM, follow instructions in FCM-SETUP.md');
 {{ else -}}
-console.log('✅ Configuración de Firebase cargada desde variables de entorno');
+console.log('✅ Firebase configuration loaded from environment variables');
 {{ end -}}
 </script>
