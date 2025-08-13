@@ -117,7 +117,20 @@ class FCMNotificationManager {
               installingWorker.addEventListener('statechange', () => {
                 if (installingWorker.state === 'activated') {
                   console.log('✅ Service Worker activado');
-                  resolve(registration);
+                if (registration.installing.state === 'installed') {
+                  // Now wait for the active worker to become 'activated'
+                  if (registration.active && registration.active.state === 'activated') {
+                    console.log('✅ Service Worker activado');
+                    resolve(registration);
+                  } else if (registration.active) {
+                    registration.active.addEventListener('statechange', function onActiveStateChange() {
+                      if (registration.active.state === 'activated') {
+                        console.log('✅ Service Worker activado');
+                        registration.active.removeEventListener('statechange', onActiveStateChange);
+                        resolve(registration);
+                      }
+                    });
+                  }
                 }
               });
             } else {
