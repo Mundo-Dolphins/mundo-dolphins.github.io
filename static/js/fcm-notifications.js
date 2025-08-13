@@ -97,6 +97,50 @@ class FCMNotificationManager {
     }
   }
 
+  async ensureServiceWorkerActive() {
+    try {
+      // Verificar si hay un service worker activo
+      const registration = await navigator.serviceWorker.ready;
+      
+      if (!registration.active) {
+        console.log('🔄 Esperando a que el Service Worker esté activo...');
+        
+        // Esperar hasta que el service worker esté activo
+        return new Promise((resolve, reject) => {
+          const checkActive = () => {
+            if (registration.active) {
+              console.log('✅ Service Worker activo');
+              resolve(registration);
+            } else if (registration.installing) {
+              registration.installing.addEventListener('statechange', () => {
+                if (registration.installing.state === 'activated') {
+                  console.log('✅ Service Worker activado');
+                  resolve(registration);
+                }
+              });
+            } else {
+              // Intentar registrar nuevamente si no hay ninguno
+              this.registerServiceWorker().then(resolve).catch(reject);
+            }
+          };
+          
+          checkActive();
+          
+          // Timeout después de 10 segundos
+          setTimeout(() => {
+            reject(new Error('Timeout esperando Service Worker activo'));
+          }, 10000);
+        });
+      }
+      
+      console.log('✅ Service Worker ya está activo');
+      return registration;
+    } catch (error) {
+      console.error('❌ Error asegurando Service Worker activo:', error);
+      throw error;
+    }
+  }
+
   async subscribe() {
     console.log('🔥 Iniciando suscripción FCM...');
 
@@ -115,6 +159,9 @@ class FCMNotificationManager {
         this.updateUI(false, 'Permisos denegados');
         return false;
       }
+
+      // Asegurar que el Service Worker esté activo antes de obtener token
+      await this.ensureServiceWorkerActive();
 
       // Get FCM token with VAPID configuration
       this.token = await this.messaging.getToken(this.getTokenOptions());
