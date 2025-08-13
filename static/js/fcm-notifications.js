@@ -123,17 +123,20 @@ class FCMNotificationManager {
         registration = await this.registerServiceWorker();
       }
       
-      // Ahora verificar el estado del Service Worker
-      if (registration.active) {
-        console.log('✅ Service Worker ya está activo');
+      // Verificar si hay errores en el Service Worker
+      if (registration.active && registration.active.state === 'activated') {
+        console.log('✅ Service Worker ya está activo y funcionando');
         return registration;
       }
       
-      console.log('🔄 Service Worker no está activo, esperando...');
+      console.log('🔄 Service Worker no está completamente activo, esperando...');
       console.log('🔄 Estado actual:', {
         active: !!registration.active,
+        activeState: registration.active?.state,
         installing: !!registration.installing,
-        waiting: !!registration.waiting
+        installingState: registration.installing?.state,
+        waiting: !!registration.waiting,
+        waitingState: registration.waiting?.state
       });
       
       // Esperar a que esté activo
@@ -166,8 +169,8 @@ class FCMNotificationManager {
         };
         
         const checkAndWait = () => {
-          if (registration.active) {
-            console.log('✅ Service Worker ahora está activo');
+          if (registration.active && registration.active.state === 'activated') {
+            console.log('✅ Service Worker ahora está activo y funcionando');
             safeResolve(registration);
             return;
           }
@@ -180,7 +183,8 @@ class FCMNotificationManager {
               console.log('🔄 Cambio de estado SW:', installingWorker.state);
               if (installingWorker.state === 'activated') {
                 installingWorker.removeEventListener('statechange', onStateChange);
-                safeResolve(registration);
+                // Wait a bit more to ensure it's really ready
+                setTimeout(() => safeResolve(registration), 100);
               } else if (installingWorker.state === 'redundant') {
                 installingWorker.removeEventListener('statechange', onStateChange);
                 safeReject(new Error('Service Worker se volvió redundante durante la instalación'));
@@ -196,7 +200,8 @@ class FCMNotificationManager {
             // Create and store the controller change listener
             controllerChangeListener = () => {
               console.log('✅ Service Worker tomó control');
-              safeResolve(registration);
+              // Wait a bit to ensure it's really ready
+              setTimeout(() => safeResolve(registration), 200);
             };
             
             navigator.serviceWorker.addEventListener('controllerchange', controllerChangeListener);
