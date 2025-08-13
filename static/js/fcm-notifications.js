@@ -99,7 +99,7 @@ class FCMNotificationManager {
 
   async ensureServiceWorkerActive() {
     try {
-      // Verificar si hay un service worker activo
+      // Check if there's an active service worker
       const registration = await navigator.serviceWorker.ready;
       
       if (!registration.active) {
