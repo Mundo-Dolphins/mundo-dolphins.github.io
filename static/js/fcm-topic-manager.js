@@ -19,15 +19,6 @@ class FCMTopicManager {
 
       console.log(`🔔 Subscribing to topic: ${topic}`);
 
-      // In a real implementation, you would send this to your server
-      // Here we simulate the subscription
-      const subscriptionData = {
-        token: this.fcmManager.token,
-        topic: topic,
-        timestamp: Date.now(),
-        action: 'subscribe'
-      };
-
       // Store subscription locally for now
       const existingSubscriptions = this.getSubscriptions();
       if (!existingSubscriptions.includes(topic)) {
@@ -36,34 +27,56 @@ class FCMTopicManager {
         
         console.log(`✅ Subscribed to topic: ${topic}`);
         this.showSubscriptionNotification(topic, 'subscribed');
+        
+        // TODO: Implement server-side topic subscription
+        // When server is available, call this._subscribeToTopicOnServer(topic, token)
+        
         return true;
       } else {
         console.log(`ℹ️ Already subscribed to topic: ${topic}`);
         return true;
       }
 
-      // TODO: Implement server-side topic subscription
-      // Example server call:
-      /*
-      const response = await fetch('/api/fcm/subscribe-topic', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(subscriptionData)
-      });
-      
-      if (response.ok) {
-        console.log(`✅ Successfully subscribed to topic: ${topic}`);
-        return true;
-      } else {
-        console.error(`❌ Failed to subscribe to topic: ${topic}`);
-        return false;
-      }
-      */
-
     } catch (error) {
       console.error('❌ Error subscribing to topic:', error);
       return false;
     }
+  }
+
+  /**
+   * Server-side topic subscription (for future implementation)
+   * @param {string} topic - Topic name
+   * @param {string} token - FCM token
+   * @returns {Promise<boolean>} Success status
+   * @private
+   */
+  async _subscribeToTopicOnServer(topic, token) {
+    // Example server implementation:
+    /*
+    const subscriptionData = {
+      token: token,
+      topic: topic,
+      timestamp: Date.now(),
+      action: 'subscribe'
+    };
+    
+    const response = await fetch('/api/fcm/subscribe-topic', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(subscriptionData)
+    });
+    
+    if (response.ok) {
+      console.log(`✅ Successfully subscribed to topic on server: ${topic}`);
+      return true;
+    } else {
+      console.error(`❌ Failed to subscribe to topic on server: ${topic}`);
+      return false;
+    }
+    */
+    
+    // For now, return true (local-only implementation)
+    return true;
   }
 
   /**
@@ -87,14 +100,39 @@ class FCMTopicManager {
       
       console.log(`✅ Unsubscribed from topic: ${topic}`);
       this.showSubscriptionNotification(topic, 'unsubscribed');
+      
+      // TODO: Implement server-side topic unsubscription
+      // When server is available, call this._unsubscribeFromTopicOnServer(topic, token)
+      
       return true;
 
-      // TODO: Implement server-side topic unsubscription
-      
     } catch (error) {
       console.error('❌ Error unsubscribing from topic:', error);
       return false;
     }
+  }
+
+  /**
+   * Server-side topic unsubscription (for future implementation)
+   * @param {string} topic - Topic name
+   * @param {string} token - FCM token
+   * @returns {Promise<boolean>} Success status
+   * @private
+   */
+  async _unsubscribeFromTopicOnServer(topic, token) {
+    // Example server implementation:
+    /*
+    const response = await fetch('/api/fcm/unsubscribe-topic', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token, topic })
+    });
+    
+    return response.ok;
+    */
+    
+    // For now, return true (local-only implementation)
+    return true;
   }
 
   /**
