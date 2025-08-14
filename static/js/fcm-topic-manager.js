@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Try again in configured retry delay
       setTimeout(() => waitForFCM(retryCount + 1, maxRetries), FCM_CONFIG.RETRY_DELAY_MS);
     } else {
-      console.warn('⚠️ FCM initialization timeout reached. Topic manager will not be available.');
+      console.warn('⚠️ FCM initialization timeout reached. Topic manager will not be available. Please check your browser compatibility, ensure notifications are enabled, and try refreshing the page.');
       // Optionally, still update UI to show unavailable state
       const subscriptionStatus = document.getElementById('topic-subscription-status');
       if (subscriptionStatus) {
