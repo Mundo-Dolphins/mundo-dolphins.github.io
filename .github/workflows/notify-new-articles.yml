@@ -51,9 +51,8 @@ jobs:
         for file in $NEW_FILES; do
           if [ -f "$file" ]; then
             echo "📄 Processing: $file"
-            
             # Extract frontmatter using yq (now always available)
-            TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "Nuevo artículo")
+            TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
             DATE=$(yq '.date' "$file" 2>/dev/null | sed 's/^null$//' || echo "")
             AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
             
@@ -115,20 +114,26 @@ jobs:
         
         // Configuration constants
         const DEFAULT_NOTIFICATION_DELAY_MS = 1000; // Default delay between notifications in ms
-        const BASE64_REGEX = /^[A-Za-z0-9+/]*={0,2}$/;
+  // Regex to validate base64 (allows newlines, whitespace, padding)
+  const BASE64_REGEX = /^[A-Za-z0-9+/=\s\r\n]+$/;
         
         // Validation constants
         const VALIDATION_CONSTANTS = {
           // Default: 2048-bit RSA private key is 256 bytes, base64-encoded is ~344 chars.
-          // You can override this with the MIN_PRIVATE_KEY_LENGTH environment variable if your key type/size differs.
-          MIN_PRIVATE_KEY_LENGTH: process.env.MIN_PRIVATE_KEY_LENGTH
-            ? parseInt(process.env.MIN_PRIVATE_KEY_LENGTH, 10)
-            : 344
+          // You can override this with the MIN_PRIVATE_KEY_LENGTH environment variable if your key type/size differs,
+          // but it cannot be menor que el mínimo seguro.
+          HARD_MIN_PRIVATE_KEY_LENGTH: 344,
+          MIN_PRIVATE_KEY_LENGTH: Math.max(
+            process.env.MIN_PRIVATE_KEY_LENGTH
+              ? parseInt(process.env.MIN_PRIVATE_KEY_LENGTH, 10)
+              : 344,
+            344
+          )
         };
         
         // Runtime configuration
         const NOTIFICATION_CONFIG = {
-          NOTIFICATION_DELAY_MS: process.env.NOTIFICATION_DELAY_MS || DEFAULT_NOTIFICATION_DELAY_MS  // Delay between notifications (configurable)
+          NOTIFICATION_DELAY_MS: parseInt(process.env.NOTIFICATION_DELAY_MS, 10) || DEFAULT_NOTIFICATION_DELAY_MS  // Delay between notifications (configurable)
         };
         
         // Validate and process private key
@@ -153,23 +158,18 @@ jobs:
             .replace('-----BEGIN PRIVATE KEY-----', '')
             .replace('-----END PRIVATE KEY-----', '')
             .replace(/\s/g, '');
-          
           if (keyContent.length < VALIDATION_CONSTANTS.MIN_PRIVATE_KEY_LENGTH) {
             throw new Error('Private key appears to be too short or malformed');
           }
-          
-          // Validate base64 encoding
+          // Validate base64 encoding (allow whitespace, rely on Buffer for strictness)
           try {
-            // Check if keyContent looks like valid base64
             if (!BASE64_REGEX.test(keyContent)) {
               throw new Error('Private key content does not appear to be valid base64');
             }
-            // Try to decode to verify it's valid base64
             Buffer.from(keyContent, 'base64');
           } catch (base64Error) {
             throw new Error('Private key base64 validation failed: ' + base64Error.message);
           }
-          
           return processedKey;
         }
         
@@ -242,7 +242,7 @@ jobs:
               console.log(`✅ Notification sent successfully: ${response}`);
               
               // Configurable delay between notifications to avoid rate limiting (skip for last notification)
-              if (i < articles.length - 1) {
+              if (i < articles.length - 1 && NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS > 0) {
                 await new Promise(resolve => setTimeout(resolve, NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS));
               }
             }

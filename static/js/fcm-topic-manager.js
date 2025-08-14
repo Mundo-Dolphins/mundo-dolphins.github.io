@@ -48,31 +48,23 @@ class FCMTopicManager {
         console.warn('⚠️ Invalid topic name. Must be non-empty and contain only alphanumeric characters, hyphens, and underscores.');
         return false;
       }
-
       if (!this.fcmManager || !this.fcmManager.token) {
-        console.warn('⚠️ FCM not initialized or no token available');
+        console.warn('⚠️ FCM not initialized or no token available. Please check your browser compatibility or refresh the page.');
         return false;
       }
-
       console.log(`🔔 Subscribing to topic: ${topic}`);
-
-      // Store subscription locally for now
       const existingSubscriptions = this.getSubscriptions();
       if (!existingSubscriptions.includes(topic)) {
         existingSubscriptions.push(topic);
         localStorage.setItem('fcm_subscriptions', JSON.stringify(existingSubscriptions));
-        
         console.log(`✅ Subscribed to topic: ${topic}`);
         this.showSubscriptionNotification(topic, 'subscribed');
-        
-        // TODO: Implement server-side topic subscription when backend is available
-        
+        // No server-side subscription implementado aún
         return true;
       } else {
         console.log(`ℹ️ Already subscribed to topic: ${topic}`);
         return true;
       }
-
     } catch (error) {
       console.error('❌ Error subscribing to topic:', error);
       return false;
@@ -90,26 +82,18 @@ class FCMTopicManager {
         console.warn('⚠️ Invalid topic name. Must be non-empty and contain only alphanumeric characters, hyphens, and underscores.');
         return false;
       }
-
       if (!this.fcmManager || !this.fcmManager.token) {
-        console.warn('⚠️ FCM not initialized or no token available');
+        console.warn('⚠️ FCM not initialized or no token available. Please check your browser compatibility or refresh the page.');
         return false;
       }
-
       console.log(`🔕 Unsubscribing from topic: ${topic}`);
-
-      // Remove from local storage
       const existingSubscriptions = this.getSubscriptions();
       const updatedSubscriptions = existingSubscriptions.filter(t => t !== topic);
       localStorage.setItem('fcm_subscriptions', JSON.stringify(updatedSubscriptions));
-      
       console.log(`✅ Unsubscribed from topic: ${topic}`);
       this.showSubscriptionNotification(topic, 'unsubscribed');
-      
-      // TODO: Implement server-side topic unsubscription when backend is available
-      
+      // No server-side unsubscription implementado aún
       return true;
-
     } catch (error) {
       console.error('❌ Error unsubscribing from topic:', error);
       return false;
@@ -126,14 +110,12 @@ class FCMTopicManager {
       if (!stored) {
         return [];
       }
-      
       const parsed = JSON.parse(stored);
       if (!Array.isArray(parsed)) {
-        console.warn('⚠️ Invalid subscription data format in localStorage, resetting...');
+  console.warn('⚠️ Invalid subscription data format in localStorage, resetting...');
         localStorage.removeItem('fcm_subscriptions');
         return [];
       }
-      
       return parsed;
     } catch (error) {
       if (error instanceof SyntaxError) {
@@ -142,7 +124,6 @@ class FCMTopicManager {
       } else {
         console.error('❌ Error reading topic subscriptions from localStorage:', error);
       }
-      
       return [];
     }
   }
@@ -153,6 +134,7 @@ class FCMTopicManager {
    * @returns {boolean} Subscription status
    */
   isSubscribedToTopic(topic) {
+    if (!this.isValidTopicName(topic)) return false;
     return this.getSubscriptions().includes(topic);
   }
 
@@ -230,31 +212,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const waitForFCM = (retryCount = 0, maxRetries = FCM_CONFIG.MAX_INITIALIZATION_RETRIES) => {
     if (isFCMInitialized(window.fcmManager)) {
       console.log('🔔 Initializing Topic Manager...');
-      
       const topicManager = new FCMTopicManager(window.fcmManager);
-      
-      // Auto-subscribe to news if FCM is working
       setTimeout(() => {
         topicManager.autoSubscribeToNews();
         topicManager.updateTopicUI();
       }, FCM_CONFIG.AUTO_SUBSCRIBE_DELAY_MS);
-      
-      // Make available globally
       window.fcmTopicManager = topicManager;
-      
     } else if (retryCount < maxRetries) {
-      // Try again in configured retry delay
       setTimeout(() => waitForFCM(retryCount + 1, maxRetries), FCM_CONFIG.RETRY_DELAY_MS);
     } else {
       console.warn('⚠️ FCM initialization timeout reached. Topic manager will not be available. Please check your browser compatibility, ensure notifications are enabled, and try refreshing the page.');
-      // Optionally, still update UI to show unavailable state
       const subscriptionStatus = document.getElementById('topic-subscription-status');
       if (subscriptionStatus) {
-        subscriptionStatus.textContent = '⚠️ Notificaciones push no disponibles';
+        subscriptionStatus.textContent = '⚠️ Push notifications not available';
       }
     }
   };
-  
   waitForFCM();
 });
 
