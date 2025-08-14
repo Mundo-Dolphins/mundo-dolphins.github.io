@@ -96,6 +96,7 @@ jobs:
         FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
         FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
         FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
+        NOTIFICATION_DELAY_MS: ${{ vars.NOTIFICATION_DELAY_MS || '1000' }}
       run: |
         echo "🔔 Sending FCM notifications..."
         
@@ -107,6 +108,12 @@ jobs:
         cat > send_notification.js << 'EOF'
         const admin = require('firebase-admin');
         const fs = require('fs');
+        
+        // Configuration constants
+        const NOTIFICATION_CONFIG = {
+          MIN_PRIVATE_KEY_LENGTH: 100,      // Minimum length for private key validation (excludes header/footer)
+          NOTIFICATION_DELAY_MS: process.env.NOTIFICATION_DELAY_MS || 1000  // Delay between notifications (configurable)
+        };
         
         // Validate and process private key
         function validateAndProcessPrivateKey(privateKey) {
@@ -131,7 +138,7 @@ jobs:
             .replace('-----END PRIVATE KEY-----', '')
             .replace(/\s/g, '');
           
-          if (keyContent.length < 100) {
+          if (keyContent.length < NOTIFICATION_CONFIG.MIN_PRIVATE_KEY_LENGTH) {
             throw new Error('Private key appears to be too short or malformed');
           }
           
@@ -205,8 +212,8 @@ jobs:
               const response = await admin.messaging().send(message);
               console.log(`✅ Notification sent successfully: ${response}`);
               
-              // Small delay between notifications
-              await new Promise(resolve => setTimeout(resolve, 1000));
+              // Configurable delay between notifications to avoid rate limiting
+              await new Promise(resolve => setTimeout(resolve, NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS));
             }
             
             console.log('🎉 All notifications sent successfully!');

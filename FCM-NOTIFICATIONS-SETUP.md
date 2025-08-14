@@ -33,6 +33,14 @@ Ve a tu repositorio en GitHub > **Configuración** > **Secretos y variables** > 
 | `FIREBASE_CLIENT_EMAIL` | Email del cliente | Valor del campo `client_email` del JSON |
 | `FCM_TOPIC` | Tema FCM (opcional) | `mundo-dolphins-news` (por defecto) |
 
+#### Variables de Configuración (Opcionales)
+
+También puedes configurar estas variables en **Configuración** > **Secretos y variables** > **Variables**:
+
+| Variable | Descripción | Valor por Defecto |
+|----------|-------------|-------------------|
+| `NOTIFICATION_DELAY_MS` | Retraso entre notificaciones en milisegundos | `1000` |
+
 ### 3. Configurar Tema FCM
 
 En tu aplicación web, suscribe a los usuarios al tema:

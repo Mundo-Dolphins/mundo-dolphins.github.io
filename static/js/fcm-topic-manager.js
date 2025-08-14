@@ -1,4 +1,12 @@
 // Topic subscription helper for FCM notifications
+
+// Configuration constants
+const FCM_CONFIG = {
+  MAX_INITIALIZATION_RETRIES: 20,    // Maximum attempts to wait for FCM initialization
+  RETRY_DELAY_MS: 500,               // Delay between FCM initialization retry attempts
+  AUTO_SUBSCRIBE_DELAY_MS: 1000,     // Delay before auto-subscribing to ensure FCM is fully ready
+};
+
 class FCMTopicManager {
   constructor(fcmManager) {
     this.fcmManager = fcmManager;
@@ -240,7 +248,7 @@ class FCMTopicManager {
 // Auto-initialize when FCM is ready
 document.addEventListener('DOMContentLoaded', function() {
   // Wait for FCM to be ready with timeout protection
-  const waitForFCM = (retryCount = 0, maxRetries = 20) => {
+  const waitForFCM = (retryCount = 0, maxRetries = FCM_CONFIG.MAX_INITIALIZATION_RETRIES) => {
     if (window.fcmManager && window.fcmManager.token) {
       console.log('🔔 Initializing Topic Manager...');
       
@@ -250,14 +258,14 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(() => {
         topicManager.autoSubscribeToNews();
         topicManager.updateTopicUI();
-      }, 1000);
+      }, FCM_CONFIG.AUTO_SUBSCRIBE_DELAY_MS);
       
       // Make available globally
       window.fcmTopicManager = topicManager;
       
     } else if (retryCount < maxRetries) {
-      // Try again in 500ms
-      setTimeout(() => waitForFCM(retryCount + 1, maxRetries), 500);
+      // Try again in configured retry delay
+      setTimeout(() => waitForFCM(retryCount + 1, maxRetries), FCM_CONFIG.RETRY_DELAY_MS);
     } else {
       console.warn('⚠️ FCM initialization timeout reached. Topic manager will not be available.');
       // Optionally, still update UI to show unavailable state
