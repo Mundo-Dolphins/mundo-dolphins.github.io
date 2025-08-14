@@ -48,10 +48,18 @@ jobs:
           if [ -f "$file" ]; then
             echo "📄 Processing: $file"
             
-            # Extract frontmatter
-            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"]*[[:space:]]*$//" || echo "Nuevo artículo")
-            DATE=$(grep -m1 '^date:' "$file" | sed "s/^date: *//" || echo "")
-            AUTHOR=$(grep -m1 '^author:' "$file" | sed "s/^author: *//" || echo "Mundo Dolphins")
+            # Extract frontmatter (try yq first for robustness, fallback to sed)
+            if command -v yq >/dev/null 2>&1; then
+              # Use yq for more robust YAML parsing
+              TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "Nuevo artículo")
+              DATE=$(yq '.date' "$file" 2>/dev/null | sed 's/^null$//' || echo "")
+              AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+            else
+              # Fallback to sed parsing
+              TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"]*[[:space:]]*$//" || echo "Nuevo artículo")
+              DATE=$(grep -m1 '^date:' "$file" | sed "s/^date: *//" || echo "")
+              AUTHOR=$(grep -m1 '^author:' "$file" | sed "s/^author: *//" || echo "Mundo Dolphins")
+            fi
             
             # Generate URL from filename
             FILENAME=$(basename "$file" .md)
@@ -110,9 +118,13 @@ jobs:
         const fs = require('fs');
         
         // Configuration constants
+        const DEFAULT_NOTIFICATION_DELAY_MS = 1000; // Default delay between notifications in ms
+        const BASE64_REGEX = /^[A-Za-z0-9+/]*={0,2}$/;
         const NOTIFICATION_CONFIG = {
-          MIN_PRIVATE_KEY_LENGTH: 100,      // Minimum length for private key validation (excludes header/footer)
-          NOTIFICATION_DELAY_MS: process.env.NOTIFICATION_DELAY_MS || 1000  // Delay between notifications (configurable)
+          // Minimum length for private key validation (excludes header/footer).
+          // 2048-bit RSA private key is 256 bytes, base64-encoded is ~344 chars.
+          MIN_PRIVATE_KEY_LENGTH: 344,
+          NOTIFICATION_DELAY_MS: process.env.NOTIFICATION_DELAY_MS || DEFAULT_NOTIFICATION_DELAY_MS  // Delay between notifications (configurable)
         };
         
         // Validate and process private key
@@ -145,7 +157,7 @@ jobs:
           // Validate base64 encoding
           try {
             // Check if keyContent looks like valid base64
-            if (!/^[A-Za-z0-9+/]*={0,2}$/.test(keyContent)) {
+            if (!BASE64_REGEX.test(keyContent)) {
               throw new Error('Private key content does not appear to be valid base64');
             }
             // Try to decode to verify it's valid base64

@@ -2,7 +2,8 @@
 
 // Configuration constants
 const FCM_CONFIG = {
-  MAX_INITIALIZATION_RETRIES: 20,    // Maximum attempts to wait for FCM initialization
+  INITIALIZATION_TIMEOUT_MS: 10000,  // Total time to wait for FCM initialization (e.g., 10 seconds)
+  MAX_INITIALIZATION_RETRIES: 20,    // Maximum attempts to wait for FCM initialization (calculated: 10000ms / 500ms = 20 retries)
   RETRY_DELAY_MS: 500,               // Delay between FCM initialization retry attempts
   AUTO_SUBSCRIBE_DELAY_MS: 1000,     // Delay before auto-subscribing to ensure FCM is fully ready
 };
@@ -68,7 +69,7 @@ class FCMTopicManager {
         this.showSubscriptionNotification(topic, 'subscribed');
         
         // TODO: Implement server-side topic subscription when backend is available
-        // When server is available, call this._subscribeToTopicOnServer(topic, token)
+        // Tracking issue: https://github.com/Mundo-Dolphins/mundo-dolphins.github.io/issues/XXX
         
         return true;
       } else {
@@ -80,42 +81,6 @@ class FCMTopicManager {
       console.error('❌ Error subscribing to topic:', error);
       return false;
     }
-  }
-
-  /**
-   * Server-side topic subscription (for future implementation)
-   * @param {string} topic - Topic name
-   * @param {string} token - FCM token
-   * @returns {Promise<boolean>} Success status
-   * @private
-   */
-  async _subscribeToTopicOnServer(topic, token) {
-    // Example server implementation:
-    /*
-    const subscriptionData = {
-      token: token,
-      topic: topic,
-      timestamp: Date.now(),
-      action: 'subscribe'
-    };
-    
-    const response = await fetch('/api/fcm/subscribe-topic', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(subscriptionData)
-    });
-    
-    if (response.ok) {
-      console.log(`✅ Successfully subscribed to topic on server: ${topic}`);
-      return true;
-    } else {
-      console.error(`❌ Failed to subscribe to topic on server: ${topic}`);
-      return false;
-    }
-    */
-    
-    // For now, return true (local-only implementation)
-    return true;
   }
 
   /**
@@ -146,7 +111,7 @@ class FCMTopicManager {
       this.showSubscriptionNotification(topic, 'unsubscribed');
       
       // TODO: Implement server-side topic unsubscription when backend is available
-      // When server is available, call this._unsubscribeFromTopicOnServer(topic, token)
+      // Tracking issue: https://github.com/Mundo-Dolphins/mundo-dolphins.github.io/issues/XXX
       
       return true;
 
@@ -154,29 +119,6 @@ class FCMTopicManager {
       console.error('❌ Error unsubscribing from topic:', error);
       return false;
     }
-  }
-
-  /**
-   * Server-side topic unsubscription (for future implementation)
-   * @param {string} topic - Topic name
-   * @param {string} token - FCM token
-   * @returns {Promise<boolean>} Success status
-   * @private
-   */
-  async _unsubscribeFromTopicOnServer(topic, token) {
-    // Example server implementation:
-    /*
-    const response = await fetch('/api/fcm/unsubscribe-topic', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token, topic })
-    });
-    
-    return response.ok;
-    */
-    
-    // For now, return true (local-only implementation)
-    return true;
   }
 
   /**
@@ -199,8 +141,12 @@ class FCMTopicManager {
       
       return parsed;
     } catch (error) {
-      console.error('❌ Error reading/parsing topic subscriptions. Clearing corrupted data:', error);
-      localStorage.removeItem('fcm_subscriptions');
+      if (error instanceof SyntaxError) {
+        console.error('❌ Corrupted subscription data in localStorage (invalid JSON). Clearing corrupted data:', error);
+        localStorage.removeItem('fcm_subscriptions');
+      } else {
+        console.error('❌ Error reading topic subscriptions from localStorage:', error);
+      }
       
       return [];
     }
