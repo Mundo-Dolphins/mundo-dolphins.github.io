@@ -14,12 +14,32 @@ class FCMTopicManager {
   }
 
   /**
+   * Validate FCM topic name.
+   * FCM topic names must be non-empty and contain only alphanumeric characters, hyphens, and underscores.
+   * @param {string} topic
+   * @returns {boolean}
+   * @private
+   */
+  isValidTopicName(topic) {
+    return (
+      typeof topic === 'string' &&
+      topic.length > 0 &&
+      /^[A-Za-z0-9_-]+$/.test(topic)
+    );
+  }
+
+  /**
    * Subscribe user to a topic after getting FCM token
    * @param {string} topic - Topic name to subscribe to
    * @returns {Promise<boolean>} Success status
    */
   async subscribeToTopic(topic = this.defaultTopic) {
     try {
+      if (!this.isValidTopicName(topic)) {
+        console.warn('⚠️ Invalid topic name. Must be non-empty and contain only alphanumeric characters, hyphens, and underscores.');
+        return false;
+      }
+
       if (!this.fcmManager || !this.fcmManager.token) {
         console.warn('⚠️ FCM not initialized or no token available');
         return false;
@@ -36,7 +56,7 @@ class FCMTopicManager {
         console.log(`✅ Subscribed to topic: ${topic}`);
         this.showSubscriptionNotification(topic, 'subscribed');
         
-        // TODO: Implement server-side topic subscription
+        // TODO: Implement server-side topic subscription when backend is available
         // When server is available, call this._subscribeToTopicOnServer(topic, token)
         
         return true;
@@ -94,6 +114,11 @@ class FCMTopicManager {
    */
   async unsubscribeFromTopic(topic = this.defaultTopic) {
     try {
+      if (!this.isValidTopicName(topic)) {
+        console.warn('⚠️ Invalid topic name. Must be non-empty and contain only alphanumeric characters, hyphens, and underscores.');
+        return false;
+      }
+
       if (!this.fcmManager || !this.fcmManager.token) {
         console.warn('⚠️ FCM not initialized or no token available');
         return false;
@@ -109,7 +134,7 @@ class FCMTopicManager {
       console.log(`✅ Unsubscribed from topic: ${topic}`);
       this.showSubscriptionNotification(topic, 'unsubscribed');
       
-      // TODO: Implement server-side topic unsubscription
+      // TODO: Implement server-side topic unsubscription when backend is available
       // When server is available, call this._unsubscribeFromTopicOnServer(topic, token)
       
       return true;
@@ -163,15 +188,8 @@ class FCMTopicManager {
       
       return parsed;
     } catch (error) {
-      console.error('❌ Error parsing topic subscriptions from localStorage:', error);
-      console.log('🔧 Attempting to recover by clearing corrupted data...');
-      
-      try {
-        localStorage.removeItem('fcm_subscriptions');
-        console.log('✅ Corrupted subscription data cleared');
-      } catch (clearError) {
-        console.error('❌ Failed to clear corrupted data:', clearError);
-      }
+      console.error('❌ Error reading/parsing topic subscriptions. Clearing corrupted data:', error);
+      localStorage.removeItem('fcm_subscriptions');
       
       return [];
     }
@@ -249,7 +267,7 @@ class FCMTopicManager {
 document.addEventListener('DOMContentLoaded', function() {
   // Wait for FCM to be ready with timeout protection
   const waitForFCM = (retryCount = 0, maxRetries = FCM_CONFIG.MAX_INITIALIZATION_RETRIES) => {
-    if (window.fcmManager && window.fcmManager.token) {
+    if (window.fcmManager && (typeof window.fcmManager.isInitialized === 'function' ? window.fcmManager.isInitialized() : window.fcmManager.token)) {
       console.log('🔔 Initializing Topic Manager...');
       
       const topicManager = new FCMTopicManager(window.fcmManager);

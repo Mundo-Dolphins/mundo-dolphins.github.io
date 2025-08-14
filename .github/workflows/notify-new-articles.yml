@@ -2,7 +2,8 @@ name: 🔔 Notify New Articles via FCM
 
 on:
   push:
-    branches: [ main ]
+            # Extract frontmatter
+            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//g" | sed "s/['\"]*[[:space:]]*$//g" || echo "Nuevo artículo")  branches: [ main ]
     paths:
       - 'content/noticias/**/*.md'
       - 'content/podcast/**/*.md'
@@ -165,7 +166,8 @@ jobs:
             
             console.log(`📤 Sending notifications for ${articles.length} article(s) to topic: ${topic}`);
             
-            for (const article of articles) {
+            for (let i = 0; i < articles.length; i++) {
+              const article = articles[i];
               const message = {
                 topic: topic,
                 notification: {
@@ -212,8 +214,10 @@ jobs:
               const response = await admin.messaging().send(message);
               console.log(`✅ Notification sent successfully: ${response}`);
               
-              // Configurable delay between notifications to avoid rate limiting
-              await new Promise(resolve => setTimeout(resolve, NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS));
+              // Configurable delay between notifications to avoid rate limiting (skip for last notification)
+              if (i < articles.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS));
+              }
             }
             
             console.log('🎉 All notifications sent successfully!');
