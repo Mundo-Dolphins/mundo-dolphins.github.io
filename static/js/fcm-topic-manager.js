@@ -15,8 +15,6 @@ class FCMTopicManager {
   }
 
   /**
-   * Validate FCM topic name.
-   * FCM topic names must be non-empty and contain only alphanumeric characters, hyphens, and underscores.
    * Validates an FCM topic name according to the following rules:
    * - The topic name must be a non-empty string.
    * - Only alphanumeric characters (A-Z, a-z, 0-9), hyphens (-), and underscores (_) are allowed.
@@ -68,7 +66,6 @@ class FCMTopicManager {
         this.showSubscriptionNotification(topic, 'subscribed');
         
         // TODO: Implement server-side topic subscription when backend is available
-        // Tracking issue: https://github.com/Mundo-Dolphins/mundo-dolphins.github.io/issues/XXX
         
         return true;
       } else {
@@ -110,7 +107,6 @@ class FCMTopicManager {
       this.showSubscriptionNotification(topic, 'unsubscribed');
       
       // TODO: Implement server-side topic unsubscription when backend is available
-      // Tracking issue: https://github.com/Mundo-Dolphins/mundo-dolphins.github.io/issues/XXX
       
       return true;
 
