@@ -49,7 +49,7 @@ jobs:
             echo "📄 Processing: $file"
             
             # Extract frontmatter
-            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"][[:space:]]*$//" || echo "Nuevo artículo")
+            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//" | sed "s/['\"]*[[:space:]]*$//" || echo "Nuevo artículo")
             DATE=$(grep -m1 '^date:' "$file" | sed "s/^date: *//" || echo "")
             AUTHOR=$(grep -m1 '^author:' "$file" | sed "s/^author: *//" || echo "Mundo Dolphins")
             
@@ -140,6 +140,18 @@ jobs:
           
           if (keyContent.length < NOTIFICATION_CONFIG.MIN_PRIVATE_KEY_LENGTH) {
             throw new Error('Private key appears to be too short or malformed');
+          }
+          
+          // Validate base64 encoding
+          try {
+            // Check if keyContent looks like valid base64
+            if (!/^[A-Za-z0-9+/]*={0,2}$/.test(keyContent)) {
+              throw new Error('Private key content does not appear to be valid base64');
+            }
+            // Try to decode to verify it's valid base64
+            Buffer.from(keyContent, 'base64');
+          } catch (base64Error) {
+            throw new Error('Private key base64 validation failed: ' + base64Error.message);
           }
           
           return processedKey;

@@ -265,9 +265,18 @@ class FCMTopicManager {
 
 // Auto-initialize when FCM is ready
 document.addEventListener('DOMContentLoaded', function() {
+  // Helper to check if FCM is initialized
+  function isFCMInitialized(fcmManager) {
+    if (!fcmManager) return false;
+    if (typeof fcmManager.isInitialized === 'function') {
+      return fcmManager.isInitialized();
+    }
+    return !!fcmManager.token;
+  }
+
   // Wait for FCM to be ready with timeout protection
   const waitForFCM = (retryCount = 0, maxRetries = FCM_CONFIG.MAX_INITIALIZATION_RETRIES) => {
-    if (window.fcmManager && (typeof window.fcmManager.isInitialized === 'function' ? window.fcmManager.isInitialized() : window.fcmManager.token)) {
+    if (isFCMInitialized(window.fcmManager)) {
       console.log('🔔 Initializing Topic Manager...');
       
       const topicManager = new FCMTopicManager(window.fcmManager);
