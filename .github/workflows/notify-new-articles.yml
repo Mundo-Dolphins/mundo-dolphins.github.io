@@ -2,8 +2,7 @@ name: 🔔 Notify New Articles via FCM
 
 on:
   push:
-            # Extract frontmatter
-            TITLE=$(grep -m1 '^title:' "$file" | sed "s/^title: *['\"]*//g" | sed "s/['\"]*[[:space:]]*$//g" || echo "Nuevo artículo")  branches: [ main ]
+    branches: [ main ]
     paths:
       - 'content/noticias/**/*.md'
       - 'content/podcast/**/*.md'
