@@ -95,7 +95,7 @@ jobs:
         FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
         FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
         FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-        FCM_TOPIC: 'mundo-dolphins-news'
+        FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
       run: |
         echo "🔔 Sending FCM notifications..."
         
@@ -108,13 +108,41 @@ jobs:
         const admin = require('firebase-admin');
         const fs = require('fs');
         
+        // Validate and process private key
+        function validateAndProcessPrivateKey(privateKey) {
+          if (!privateKey) {
+            throw new Error('FIREBASE_PRIVATE_KEY environment variable is not set');
+          }
+          
+          // Process escaped newlines if present
+          let processedKey = privateKey.includes('\\n') 
+            ? privateKey.replace(/\\n/g, '\n')
+            : privateKey;
+          
+          // Validate key format
+          if (!processedKey.includes('-----BEGIN PRIVATE KEY-----') || 
+              !processedKey.includes('-----END PRIVATE KEY-----')) {
+            throw new Error('Invalid private key format. Key must include BEGIN and END markers.');
+          }
+          
+          // Additional validation: check if key has reasonable length
+          const keyContent = processedKey
+            .replace('-----BEGIN PRIVATE KEY-----', '')
+            .replace('-----END PRIVATE KEY-----', '')
+            .replace(/\s/g, '');
+          
+          if (keyContent.length < 100) {
+            throw new Error('Private key appears to be too short or malformed');
+          }
+          
+          return processedKey;
+        }
+        
         // Initialize Firebase Admin
         const serviceAccount = {
           type: "service_account",
           project_id: process.env.FIREBASE_PROJECT_ID,
-          private_key: process.env.FIREBASE_PRIVATE_KEY.includes('\\n')
-            ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
-            : process.env.FIREBASE_PRIVATE_KEY,
+          private_key: validateAndProcessPrivateKey(process.env.FIREBASE_PRIVATE_KEY),
           client_email: process.env.FIREBASE_CLIENT_EMAIL,
         };
         
@@ -196,12 +224,14 @@ jobs:
     
     - name: 📊 Summary
       if: always()
+      env:
+        FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
       run: |
         echo "## 📋 Notification Summary" >> $GITHUB_STEP_SUMMARY
         
         if [ "${{ steps.detect_new.outputs.has_new_articles }}" == "true" ]; then
           echo "✅ **New articles detected:** ${{ steps.detect_new.outputs.articles_count }}" >> $GITHUB_STEP_SUMMARY
-          echo "🔔 **FCM notifications sent to topic:** \`mundo-dolphins-news\`" >> $GITHUB_STEP_SUMMARY
+          echo "🔔 **FCM notifications sent to topic:** \`${FCM_TOPIC}\`" >> $GITHUB_STEP_SUMMARY
           
           if [ -f articles.json ]; then
             echo "### 📰 Articles:" >> $GITHUB_STEP_SUMMARY

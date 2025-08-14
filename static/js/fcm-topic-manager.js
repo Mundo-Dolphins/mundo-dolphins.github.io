@@ -142,9 +142,29 @@ class FCMTopicManager {
   getSubscriptions() {
     try {
       const stored = localStorage.getItem('fcm_subscriptions');
-      return stored ? JSON.parse(stored) : [];
+      if (!stored) {
+        return [];
+      }
+      
+      const parsed = JSON.parse(stored);
+      if (!Array.isArray(parsed)) {
+        console.warn('⚠️ Invalid subscription data format in localStorage, resetting...');
+        localStorage.removeItem('fcm_subscriptions');
+        return [];
+      }
+      
+      return parsed;
     } catch (error) {
-      console.warn('⚠️ Error reading topic subscriptions:', error);
+      console.error('❌ Error parsing topic subscriptions from localStorage:', error);
+      console.log('🔧 Attempting to recover by clearing corrupted data...');
+      
+      try {
+        localStorage.removeItem('fcm_subscriptions');
+        console.log('✅ Corrupted subscription data cleared');
+      } catch (clearError) {
+        console.error('❌ Failed to clear corrupted data:', clearError);
+      }
+      
       return [];
     }
   }
@@ -219,8 +239,8 @@ class FCMTopicManager {
 
 // Auto-initialize when FCM is ready
 document.addEventListener('DOMContentLoaded', function() {
-  // Wait for FCM to be ready
-  const waitForFCM = () => {
+  // Wait for FCM to be ready with timeout protection
+  const waitForFCM = (retryCount = 0, maxRetries = 20) => {
     if (window.fcmManager && window.fcmManager.token) {
       console.log('🔔 Initializing Topic Manager...');
       
@@ -235,9 +255,16 @@ document.addEventListener('DOMContentLoaded', function() {
       // Make available globally
       window.fcmTopicManager = topicManager;
       
-    } else {
+    } else if (retryCount < maxRetries) {
       // Try again in 500ms
-      setTimeout(waitForFCM, 500);
+      setTimeout(() => waitForFCM(retryCount + 1, maxRetries), 500);
+    } else {
+      console.warn('⚠️ FCM initialization timeout reached. Topic manager will not be available.');
+      // Optionally, still update UI to show unavailable state
+      const subscriptionStatus = document.getElementById('topic-subscription-status');
+      if (subscriptionStatus) {
+        subscriptionStatus.textContent = '⚠️ Notificaciones push no disponibles';
+      }
     }
   };
   
