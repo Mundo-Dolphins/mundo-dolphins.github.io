@@ -17,7 +17,6 @@ class FCMTopicManager {
   /**
    * Validate FCM topic name.
    * FCM topic names must be non-empty and contain only alphanumeric characters, hyphens, and underscores.
-   * @param {string} topic
    * Validates an FCM topic name according to the following rules:
    * - The topic name must be a non-empty string.
    * - Only alphanumeric characters (A-Z, a-z, 0-9), hyphens (-), and underscores (_) are allowed.
