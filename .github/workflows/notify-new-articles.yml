@@ -102,26 +102,19 @@ jobs:
         NOTIFICATION_DELAY_MS: ${{ vars.NOTIFICATION_DELAY_MS || '1000' }}
       run: |
         echo "🔔 Sending FCM notifications..."
-        
-        # Install Node.js dependencies
         npm init -y
         npm install firebase-admin
-        
-        # Create FCM notification script
         cat > send_notification.js << 'EOF'
         const admin = require('firebase-admin');
         const fs = require('fs');
-        
+
         // Configuration constants
         const DEFAULT_NOTIFICATION_DELAY_MS = 1000; // Default delay between notifications in ms
-  // Regex to validate base64 (allows newlines, whitespace, padding)
-  const BASE64_REGEX = /^[A-Za-z0-9+/=\s\r\n]+$/;
-        
+        // Regex to validate base64 (allows newlines, whitespace, padding)
+        const BASE64_REGEX = /^[A-Za-z0-9+/=\s\r\n]+$/;
+
         // Validation constants
         const VALIDATION_CONSTANTS = {
-          // Default: 2048-bit RSA private key is 256 bytes, base64-encoded is ~344 chars.
-          // You can override this with the MIN_PRIVATE_KEY_LENGTH environment variable if your key type/size differs,
-          // but it cannot be menor que el mínimo seguro.
           HARD_MIN_PRIVATE_KEY_LENGTH: 344,
           MIN_PRIVATE_KEY_LENGTH: Math.max(
             process.env.MIN_PRIVATE_KEY_LENGTH
@@ -130,30 +123,24 @@ jobs:
             344
           )
         };
-        
+
         // Runtime configuration
         const NOTIFICATION_CONFIG = {
-          NOTIFICATION_DELAY_MS: parseInt(process.env.NOTIFICATION_DELAY_MS, 10) || DEFAULT_NOTIFICATION_DELAY_MS  // Delay between notifications (configurable)
+          NOTIFICATION_DELAY_MS: parseInt(process.env.NOTIFICATION_DELAY_MS, 10) || DEFAULT_NOTIFICATION_DELAY_MS
         };
-        
+
         // Validate and process private key
         function validateAndProcessPrivateKey(privateKey) {
           if (!privateKey) {
             throw new Error('FIREBASE_PRIVATE_KEY environment variable is not set');
           }
-          
-          // Process escaped newlines if present
           let processedKey = privateKey.includes('\\n') 
             ? privateKey.replace(/\\n/g, '\n')
             : privateKey;
-          
-          // Validate key format
           if (!processedKey.includes('-----BEGIN PRIVATE KEY-----') || 
               !processedKey.includes('-----END PRIVATE KEY-----')) {
             throw new Error('Invalid private key format. Key must include BEGIN and END markers.');
           }
-          
-          // Additional validation: check if key has reasonable length
           const keyContent = processedKey
             .replace('-----BEGIN PRIVATE KEY-----', '')
             .replace('-----END PRIVATE KEY-----', '')
@@ -161,7 +148,6 @@ jobs:
           if (keyContent.length < VALIDATION_CONSTANTS.MIN_PRIVATE_KEY_LENGTH) {
             throw new Error('Private key appears to be too short or malformed');
           }
-          // Validate base64 encoding (allow whitespace, rely on Buffer for strictness)
           try {
             if (!BASE64_REGEX.test(keyContent)) {
               throw new Error('Private key content does not appear to be valid base64');
@@ -172,7 +158,7 @@ jobs:
           }
           return processedKey;
         }
-        
+
         // Initialize Firebase Admin
         const serviceAccount = {
           type: "service_account",
@@ -180,19 +166,17 @@ jobs:
           private_key: validateAndProcessPrivateKey(process.env.FIREBASE_PRIVATE_KEY),
           client_email: process.env.FIREBASE_CLIENT_EMAIL,
         };
-        
+
         admin.initializeApp({
           credential: admin.credential.cert(serviceAccount),
           projectId: process.env.FIREBASE_PROJECT_ID
         });
-        
+
         async function sendNotifications() {
           try {
             const articles = JSON.parse(fs.readFileSync('articles.json', 'utf8'));
             const topic = process.env.FCM_TOPIC;
-            
             console.log(`📤 Sending notifications for ${articles.length} article(s) to topic: ${topic}`);
-            
             for (let i = 0; i < articles.length; i++) {
               const article = articles[i];
               const message = {
@@ -234,49 +218,20 @@ jobs:
                   }
                 }
               };
-              
               console.log(`📨 Sending notification for: "${article.title}"`);
               console.log(`🔗 URL: ${article.url}`);
-              
               const response = await admin.messaging().send(message);
               console.log(`✅ Notification sent successfully: ${response}`);
-              
-              // Configurable delay between notifications to avoid rate limiting (skip for last notification)
               if (i < articles.length - 1 && NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS > 0) {
                 await new Promise(resolve => setTimeout(resolve, NOTIFICATION_CONFIG.NOTIFICATION_DELAY_MS));
               }
             }
-            
             console.log('🎉 All notifications sent successfully!');
           } catch (error) {
             console.error('❌ Error sending notifications:', error);
             process.exit(1);
           }
         }
-        
         sendNotifications();
         EOF
-        
-        # Run the notification script
         node send_notification.js
-    
-    - name: 📊 Summary
-      if: always()
-      env:
-        FCM_TOPIC: ${{ secrets.FCM_TOPIC || 'mundo-dolphins-news' }}
-      run: |
-        echo "## 📋 Notification Summary" >> $GITHUB_STEP_SUMMARY
-        
-        if [ "${{ steps.detect_new.outputs.has_new_articles }}" == "true" ]; then
-          echo "✅ **New articles detected:** ${{ steps.detect_new.outputs.articles_count }}" >> $GITHUB_STEP_SUMMARY
-          echo "🔔 **FCM notifications sent to topic:** \`${FCM_TOPIC}\`" >> $GITHUB_STEP_SUMMARY
-          
-          if [ -f articles.json ]; then
-            echo "### 📰 Articles:" >> $GITHUB_STEP_SUMMARY
-            jq -r '.[] | "- **\(.title)** - [\(.url)](\(.url))"' articles.json >> $GITHUB_STEP_SUMMARY
-          fi
-        else
-          echo "ℹ️ **No new articles detected**" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        echo "🕒 **Workflow completed at:** $(date)" >> $GITHUB_STEP_SUMMARY
