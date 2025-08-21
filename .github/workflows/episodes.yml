@@ -40,7 +40,7 @@ jobs:
           target_branch: new-episodes
 
       - name: Create pull request
-        uses: devops-infra/action-pull-request@v0.6.0
+        uses: devops-infra/action-pull-request@v0.6.1
         with:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new episodes**"
