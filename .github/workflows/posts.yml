@@ -56,7 +56,7 @@ jobs:
           new_branch: new-social-posts
 
       - name: Create pull request
-        uses: devops-infra/action-pull-request@v0.6.0
+        uses: devops-infra/action-pull-request@v0.6.1
         if: steps.add_commit.outputs.committed == 'true'
         with:
           github_token: ${{ secrets.PUSH }}
