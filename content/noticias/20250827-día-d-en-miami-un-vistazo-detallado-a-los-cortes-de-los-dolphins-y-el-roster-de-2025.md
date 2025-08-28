@@ -5,6 +5,8 @@ date: 2025-08-27T13:17:00+02:00
 author: Javi Martín
 authorLink: https://bsky.app/profile/undolfan.mundodolphins.es
 ---
+> **Nota**: Desde la publicación original de este artículo, los Miami Dolphins realizaron varios movimientos adicionales en su plantilla. Todos ellos se detallan en la sección **Actualización** al final.
+
 El **martes 26 de agosto de 2025** marcó un día crucial para los Miami Dolphins y el resto de la NFL, ya que los equipos tuvieron que reducir sus plantillas a un máximo de **53 jugadores** de cara a la temporada regular. Este día estuvo cargado de movimientos estratégicos, incorporaciones y dolorosas despedidas, todo con el objetivo de optimizar el equipo para la campaña de 2025.
 
 **Movimientos Clave y Lesiones Importantes**
@@ -126,3 +128,23 @@ Los Dolphins también intentarán traer de vuelta a varios de sus propios cortes
 La flexibilidad de la practice squad permite a los equipos seguir ajustando la plantilla a medida que se acerca el inicio de la temporada. Los jugadores con menos de cuatro temporadas acumuladas deben pasar por waivers, mientras que los veteranos son agentes libres inmediatamente. La practice squad tiene límites de elegibilidad y los jugadores pueden ser reclamados por otros equipos si les ofrecen un puesto en el roster de 53, siempre que el equipo que reclame al jugador lo mantenga en su roster activo durante al menos tres semanas. Los equipos también pueden elevar jugadores del practice squad al roster activo hasta tres veces por temporada para los días de partido.
 
 Con la temporada a la vuelta de la esquina (el 7 de septiembre contra los Indianapolis Colts), los Dolphins tienen un trabajo continuo para afinar su roster y asegurar que tienen la mejor oportunidad de éxito en 2025.
+
+**Actualización**
+
+**Firma de Rasul Douglas y baja de Jordan Colbert**
+
+Los Miami Dolphins anunciaron la firma del cornerback **Rasul Douglas**, veterano con ocho temporadas y experiencia en Philadelphia, Carolina, Green Bay y Buffalo, además de un título de Super Bowl con los Eagles (LII). Douglas suma **425 tackles, 19 intercepciones y 79 pases defendidos** en su carrera.
+
+Para hacerle hueco, el equipo cortó**&#32;al safety Jordan Colbert**, quien había llegado como undrafted free agent en 2024 y pasó la temporada en la practice squad.
+
+**JuJu Brents reclamado de waivers y salida de Isaiah Johnson**
+
+Miami reclamó vía waivers al cornerback **JuJu Brents**, procedente de Indianapolis. Brents, pick de segunda ronda en 2023, ha jugado 11 partidos (9 como titular) con los Colts y destaca por su físico y capacidad en cobertura.
+
+En contrapartida, los Dolphins cortaron**&#32;al cornerback Isaiah Johnson**, firmado como UDFA en 2024.
+
+**Firma de Kendall Lamm y baja de Cam Smith**
+
+Los Dolphins firmaron al tackle ofensivo **Kendall Lamm**, quien ya formó parte de la plantilla entre 2022 y 2024, con experiencia previa en Texans, Browns y Titans. Ha jugado **119 partidos de temporada regular y 8 de playoffs** en su carrera.
+
+Por otro lado, el cornerback **Cam Smith** fue colocado en la lista de **reserva/NFI (non-football injury)**, quedando fuera de la plantilla activa.
