@@ -57,7 +57,8 @@ jobs:
           NEW_LAST_DATE="$LAST_DATE"
           for file in $(cat changed_posts_files.txt); do
             echo "Processing $file..."
-            jq -c '.[]' "$file" | while read -r post; do
+            # Sort posts by PublishedOn ascending (oldest to newest)
+            jq -c 'sort_by(.PublishedOn)[]' "$file" | while read -r post; do
               stype=$(echo "$post" | jq -r '.stype // 1')
               [ "$stype" = "0" ] || continue
               published=$(echo "$post" | jq -r '.PublishedOn // empty')
@@ -67,10 +68,28 @@ jobs:
               if [ -n "$published" ] && { [ -z "$LAST_DATE" ] || [[ "$published" > "$LAST_DATE" ]]; }; then
                 if [ -n "$text" ] && [ -n "$url" ]; then
                   message="${text}\n🔗 ${url}"
-                  curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-                    -d chat_id="$TELEGRAM_CHAT_ID" \
-                    -d text="$message" \
-                    -d parse_mode="Markdown"
+                  echo "Sending post to Telegram: $url"
+                  while true; do
+                    response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+                      -d chat_id="$TELEGRAM_CHAT_ID" \
+                      -d text="$message" \
+                      -d parse_mode="Markdown")
+                    ok=$(echo "$response" | jq -r '.ok')
+                    if [ "$ok" = "true" ]; then
+                      echo "Successfully sent post: $url"
+                      break
+                    fi
+                    error_code=$(echo "$response" | jq -r '.error_code // empty')
+                    if [ "$error_code" = "429" ]; then
+                      retry_after=$(echo "$response" | jq -r '.parameters.retry_after // 30')
+                      echo "Rate limit hit (429). Waiting $retry_after seconds before retrying post: $url"
+                      sleep $retry_after
+                    else
+                      echo "Telegram error sending post: $url"
+                      echo "Response: $response"
+                      break
+                    fi
+                  done
                   # Update the new last date if it's greater
                   if [[ "$published" > "$NEW_LAST_DATE" ]]; then
                     NEW_LAST_DATE="$published"
