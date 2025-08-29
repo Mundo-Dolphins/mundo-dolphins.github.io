@@ -1,0 +1,150 @@
+
+
+name: 🚀 Notify new articles or podcasts to Telegram
+
+# ---
+# This workflow sends notifications to a Telegram channel whenever a new article or podcast is published.
+#
+# Manual usage (for testing):
+# - You can run the workflow from the GitHub Actions tab and fill in the fields "Title", "URL" and "Type".
+# - If all fields are filled, it will send that custom message to Telegram, without analyzing the repository.
+# - If left empty, it will work automatically by detecting new articles or podcasts.
+#
+# Example of manual usage:
+#   Title: Dolphins Podcast Ep. 1
+#   URL: https://mundodolphins.es/podcast/episodio-1/
+#   Type: podcast
+#
+# Example of message sent:
+# �️ New podcast episode published: Dolphins Podcast Ep. 1
+# 🔗 https://mundodolphins.es/podcast/episodio-1/
+#
+# Requires the secrets TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID configured in the repository.
+# ---
+
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/noticias/**/*.md'
+      - 'content/podcast/**/*.md'
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'Title (optional for manual test)'
+        required: false
+        type: string
+      url:
+        description: 'URL (optional for manual test)'
+        required: false
+        type: string
+      type:
+        description: 'Content type (article or podcast, optional for manual test)'
+        required: false
+        default: 'article'
+        type: choice
+        options:
+          - article
+          - podcast
+
+jobs:
+  detect-and-notify-telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: 🔍 Detect new articles
+        id: detect_new
+        run: |
+          echo "🔍 Checking for new articles..."
+          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep -E '^content/(noticias|podcast)/.*\.md$' || true)
+          if [ -z "$NEW_FILES" ]; then
+            echo "ℹ️ No new articles detected"
+            echo "has_new_articles=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          echo "🆕 New articles detected:"
+          echo "$NEW_FILES"
+          ARTICLES_JSON="[]"
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+          for file in $NEW_FILES; do
+            if [ -f "$file" ]; then
+              TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
+              AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+              FILENAME=$(basename "$file" .md)
+              if [[ "$file" == content/noticias/* ]]; then
+                SECTION="noticias"
+              elif [[ "$file" == content/podcast/* ]]; then
+                SECTION="podcast"
+              else
+                SECTION="noticias"
+              fi
+              URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
+              ARTICLE_JSON=$(jq -n \
+                --arg title "$TITLE" \
+                --arg url "$URL" \
+                --arg author "$AUTHOR" \
+                --arg section "$SECTION" \
+                '{title: $title, url: $url, author: $author, section: $section}')
+              ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
+              echo "✅ Article processed: $TITLE"
+              echo "🔗 URL: $URL"
+            fi
+          done
+          echo "has_new_articles=true" >> $GITHUB_OUTPUT
+          echo "$ARTICLES_JSON" > articles.json
+
+      - name: 🚀 Enviar notificaciones a Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INPUT_TITLE: ${{ github.event.inputs.title }}
+          INPUT_URL: ${{ github.event.inputs.url }}
+          INPUT_TYPE: ${{ github.event.inputs.type }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
+            exit 1
+          fi
+          # If title and url are provided manually, send only that message, using the selected type
+          if [ -n "$INPUT_TITLE" ] && [ -n "$INPUT_URL" ]; then
+            if [ "$INPUT_TYPE" = "podcast" ]; then
+              message="🎙️ Nuevo capítulo del podcast publicado: *${INPUT_TITLE}*%0A🔗 ${INPUT_URL}"
+            else
+              message="🆕 Nuevo artículo publicado en la web: *${INPUT_TITLE}*%0A🔗 ${INPUT_URL}"
+            fi
+            curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+              -d chat_id="$TELEGRAM_CHAT_ID" \
+              -d text="$message" \
+              -d parse_mode="Markdown"
+            exit 0
+          fi
+          # Otherwise, proceed with the normal detected articles logic
+          if [ ! -f articles.json ]; then
+            echo "articles.json not found"
+            exit 1
+          fi
+          count=$(jq length articles.json)
+          if [ "$count" -eq 0 ]; then
+            echo "No new articles to notify"
+            exit 0
+          fi
+          for i in $(seq 0 $((count - 1))); do
+            title=$(jq -r ".[$i].title" articles.json)
+            url=$(jq -r ".[$i].url" articles.json)
+            section=$(jq -r ".[$i].section" articles.json)
+            if [ "$section" = "podcast" ]; then
+              message="🎙️ Nuevo capítulo del podcast publicado: *${title}*%0A🔗 ${url}"
+            else
+              message="🆕 Nuevo artículo publicado en la web: *${title}*%0A🔗 ${url}"
+            fi
+            curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+              -d chat_id="$TELEGRAM_CHAT_ID" \
+              -d text="$message" \
+              -d parse_mode="Markdown"
+          done
