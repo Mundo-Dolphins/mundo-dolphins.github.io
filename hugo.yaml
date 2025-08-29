@@ -104,6 +104,10 @@ outputs:
   - RSS
   - HeadlessCMSConfig
 
+services:
+    googleAnalytics:
+      id: G-5BLTW0CSE0
+
 # Configuración de seguridad para permitir acceso a variables de entorno
 security:
   funcs:
