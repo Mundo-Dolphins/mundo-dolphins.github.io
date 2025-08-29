@@ -29,8 +29,8 @@ Ve a tu repositorio en GitHub > **Configuración** > **Secretos y variables** > 
 | Secreto | Descripción | Valor |
 |---------|-------------|-------|
 | `FIREBASE_PROJECT_ID` | ID del proyecto Firebase | Valor del campo `project_id` del JSON |
-| `FIREBASE_PRIVATE_KEY` | Clave privada | Valor completo del campo `private_key` del JSON |
-| `FIREBASE_CLIENT_EMAIL` | Email del cliente | Valor del campo `client_email` del JSON |
+| `FIREBASE_PRIVATE_KEY` | Clave privada | Valor completo del campo `private_key` del JSON. Debe incluir los delimitadores `-----BEGIN PRIVATE KEY-----` y `-----END PRIVATE KEY-----`. Si tienes problemas con los saltos de línea, reemplázalos por `\n`. |
+| `FIREBASE_CLIENT_EMAIL` | Email del cliente | Valor del campo `client_email` del JSON. Es obligatorio para que el workflow funcione. |
 | `FCM_TOPIC` | Tema FCM (opcional) | `mundo-dolphins-news` (por defecto) |
 
 #### Variables de Configuración (Opcionales)
@@ -145,18 +145,22 @@ on:
 
 ## ❗ Troubleshooting
 
+
+### Error: "Service account object must contain a string 'client_email' property."
+- El secreto `FIREBASE_CLIENT_EMAIL` es obligatorio. Asegúrate de copiar el valor exacto del campo `client_email` del JSON de la cuenta de servicio y añadirlo como secreto en GitHub.
+
 ### Error: "Invalid private key"
-- Asegúrate de que `FIREBASE_PRIVATE_KEY` incluye `-----BEGIN PRIVATE KEY-----` y `-----END PRIVATE KEY-----`
-- No modifiques los saltos de línea `\n` en la clave
+- Asegúrate de que `FIREBASE_PRIVATE_KEY` incluye `-----BEGIN PRIVATE KEY-----` y `-----END PRIVATE KEY-----`.
+- Si tienes problemas con los saltos de línea, reemplázalos por `\n`.
 
 ### Error: "Topic not found"
-- Verifica que el tema existe y tiene suscriptores
-- Los temas se crean automáticamente cuando el primer usuario se suscribe
+- Verifica que el tema existe y tiene suscriptores.
+- Los temas se crean automáticamente cuando el primer usuario se suscribe.
 
 ### No se envían notificaciones
-- Comprueba que hay usuarios suscritos al tema
-- Verifica los permisos de la cuenta de servicio Firebase
-- Revisa los logs del workflow en Acciones de GitHub
+- Comprueba que hay usuarios suscritos al tema.
+- Verifica los permisos de la cuenta de servicio Firebase.
+- Revisa los logs del workflow en Acciones de GitHub.
 
 ## 📊 Monitoreo
 

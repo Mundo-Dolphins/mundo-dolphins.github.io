@@ -1,0 +1,12 @@
+{{/* layouts/partials/analytics.html - Google Analytics 4 (GA4) integration */}}
+{{ $ga_id := .Site.Config.Services.GoogleAnalytics.ID }}
+{{ if $ga_id }}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $ga_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $ga_id }}');
+</script>
+{{ end }}
