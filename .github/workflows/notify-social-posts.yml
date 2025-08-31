@@ -31,12 +31,28 @@ jobs:
           echo "has_new_posts=true" >> $GITHUB_OUTPUT
           echo "$FILES" > changed_posts_files.txt
 
-      - name: Cache last published date
-        id: cache-date
-        uses: actions/cache@v4
-        with:
-          path: .github/last_bluesky_published.txt
-          key: bluesky-last-published
+
+      - name: Get last successful workflow run datetime
+        id: last_run
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Retrieving last successful workflow run datetime..."
+          # Get the workflow file name
+          WORKFLOW_FILE=".github/workflows/notify-social-posts.yml"
+          # Get the last successful run (excluding current run)
+          LAST_RUN_JSON=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${GITHUB_REPOSITORY}/actions/workflows/$(basename $WORKFLOW_FILE)/runs?status=success&branch=${GITHUB_REF_NAME}&per_page=2" \
+            --jq '.workflow_runs | map(select(.id != ${{ github.run_id }})) | .[0]')
+          LAST_RUN_TIME=$(echo "$LAST_RUN_JSON" | jq -r '.updated_at // empty')
+          if [ -z "$LAST_RUN_TIME" ] || [ "$LAST_RUN_TIME" = "null" ]; then
+            echo "No previous successful run found. Will publish all posts."
+            echo "last_run_time=" >> $GITHUB_OUTPUT
+          else
+            echo "Last successful run finished at: $LAST_RUN_TIME"
+            echo "last_run_time=$LAST_RUN_TIME" >> $GITHUB_OUTPUT
+          fi
 
       - name: Send Bluesky posts to Telegram
         if: steps.detect_posts.outputs.has_new_posts == 'true'
@@ -48,24 +64,18 @@ jobs:
             echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
             exit 1
           fi
-          # Read last published date from cache (if exists)
-          LAST_DATE=""
-          if [ -f .github/last_bluesky_published.txt ]; then
-            LAST_DATE=$(cat .github/last_bluesky_published.txt)
-            echo "Last published date from cache: $LAST_DATE"
-          fi
-          NEW_LAST_DATE="$LAST_DATE"
+          LAST_RUN_TIME="${{ steps.last_run.outputs.last_run_time }}"
+          echo "Filtering posts published after: $LAST_RUN_TIME"
           for file in $(cat changed_posts_files.txt); do
             echo "Processing $file..."
-            # Sort posts by PublishedOn ascending (oldest to newest)
             jq -c 'sort_by(.PublishedOn)[]' "$file" | while read -r post; do
               stype=$(echo "$post" | jq -r '.stype // 1')
               [ "$stype" = "0" ] || continue
               published=$(echo "$post" | jq -r '.PublishedOn // empty')
               text=$(echo "$post" | jq -r '.BlueSkyPost.Description // empty')
               url=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost // empty')
-              # Only publish if the date is greater than the last published
-              if [ -n "$published" ] && { [ -z "$LAST_DATE" ] || [[ "$published" > "$LAST_DATE" ]]; }; then
+              # Only publish if the date is greater than the last successful run
+              if [ -n "$published" ] && { [ -z "$LAST_RUN_TIME" ] || [[ "$published" > "$LAST_RUN_TIME" ]]; }; then
                 if [ -n "$text" ] && [ -n "$url" ]; then
                   message="${text}\n🔗 ${url}"
                   echo "Sending post to Telegram: $url"
@@ -90,15 +100,7 @@ jobs:
                       break
                     fi
                   done
-                  # Update the new last date if it's greater
-                  if [[ "$published" > "$NEW_LAST_DATE" ]]; then
-                    NEW_LAST_DATE="$published"
-                  fi
                 fi
               fi
             done
           done
-          # Save the new last published date to cache
-          if [ -n "$NEW_LAST_DATE" ] && [ "$NEW_LAST_DATE" != "$LAST_DATE" ]; then
-            echo "$NEW_LAST_DATE" > .github/last_bluesky_published.txt
-          fi
