@@ -5,6 +5,21 @@ on:
     branches: [ main ]
     paths:
       - 'data/posts_*.json'
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Mensaje a enviar (opcional)'
+        required: false
+        type: string
+      url:
+        description: 'URL del post (opcional)'
+        required: false
+        type: string
+      force_send:
+        description: 'Forzar envío de mensaje manual'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   notify-telegram-social:
@@ -15,7 +30,41 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Send manual message to Telegram
+        if: github.event_name == 'workflow_dispatch' && inputs.force_send == true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
+            exit 1
+          fi
+          
+          MESSAGE="${{ inputs.message }}"
+          URL="${{ inputs.url }}"
+          
+          if [ -n "$URL" ]; then
+            FINAL_MESSAGE="${MESSAGE}%0A🔗 ${URL}"
+          else
+            FINAL_MESSAGE="${MESSAGE}"
+          fi
+          
+          echo "Sending manual message to Telegram"
+          response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+            -d chat_id="$TELEGRAM_CHAT_ID" \
+            -d text="$FINAL_MESSAGE" \
+            -d parse_mode="Markdown")
+          ok=$(echo "$response" | jq -r '.ok')
+          if [ "$ok" = "true" ]; then
+            echo "Successfully sent manual message"
+          else
+            echo "Error sending manual message: $response"
+            exit 1
+          fi
+
       - name: Detect new social posts
+        if: github.event_name == 'push'
         id: detect_posts
         run: |
           echo "Detecting new social posts..."
@@ -33,6 +82,7 @@ jobs:
 
 
       - name: Get last successful workflow run datetime
+        if: github.event_name == 'push'
         id: last_run
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,7 +105,7 @@ jobs:
           fi
 
       - name: Send Bluesky posts to Telegram
-        if: steps.detect_posts.outputs.has_new_posts == 'true'
+        if: github.event_name == 'push' && steps.detect_posts.outputs.has_new_posts == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -77,7 +127,8 @@ jobs:
               # Only publish if the date is greater than the last successful run
               if [ -n "$published" ] && { [ -z "$LAST_RUN_TIME" ] || [[ "$published" > "$LAST_RUN_TIME" ]]; }; then
                 if [ -n "$text" ] && [ -n "$url" ]; then
-                  message="${text}\n🔗 ${url}"
+                  # URL encode the newline character for proper Telegram formatting
+                  message="${text}%0A🔗 ${url}"
                   echo "Sending post to Telegram: $url"
                   while true; do
                     response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
