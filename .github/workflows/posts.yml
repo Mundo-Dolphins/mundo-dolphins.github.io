@@ -9,42 +9,33 @@ jobs:
   check-social:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: 1.25
-
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Checkout private repository
-        uses: actions/checkout@v5
-        with:
-          repository: ${{ secrets.CHECKER }}
-          ref: main
-          token: ${{ secrets.PAT }}
-          path: scripts/checker/
-
-      - name: Cache Go modules
-        uses: actions/cache@v4
-        with:
-          path: |
-            scripts/checker/vendor/
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('scripts/checker/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
-
-      - name: Build checker
-        working-directory: scripts/checker/
+      - name: Download checker binary
         run: |
-          go build -o checker main.go
+          # Get the latest release info
+          LATEST_RELEASE=$(curl -s -H "Authorization: token ${{ secrets.PAT }}" \
+                               "https://api.github.com/${{ secrets.CHECKER }}/releases/latest")
+          
+          # Extract the download URL for the linux-amd64 tar.gz file
+          DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz")) | .url')
+          
+          # Download the binary
+          curl -L -H "Authorization: token ${{ secrets.PAT }}" \
+               -H "Accept: application/octet-stream" \
+               -o checker.tar.gz \
+               "$DOWNLOAD_URL"
+          
+          tar -xzf checker.tar.gz
+          chmod +x checker
 
       - name: Run checker
-        working-directory: scripts/checker/
         run: |
           ./checker social --data ${GITHUB_WORKSPACE}/data
+
+      - name: Clean up
+        run: rm -f checker checker.tar.gz
           
       - name: Add & Commit
         id: add_commit
