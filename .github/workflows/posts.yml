@@ -15,17 +15,50 @@ jobs:
       - name: Download checker binary
         run: |
           # Get the latest release info
+          echo "Fetching latest release info..."
           LATEST_RELEASE=$(curl -s -H "Authorization: token ${{ secrets.PAT }}" \
                                "https://api.github.com/${{ secrets.CHECKER }}/releases/latest")
           
+          # Check if we got a valid response
+          if [ -z "$LATEST_RELEASE" ] || [ "$LATEST_RELEASE" = "null" ]; then
+            echo "Error: Failed to fetch release information"
+            exit 1
+          fi
+          
+          # Debug: show the response
+          echo "Release info received. Parsing assets..."
+          
+          # Check if assets exist and extract the download URL
+          ASSETS_COUNT=$(echo "$LATEST_RELEASE" | jq -r '.assets | length')
+          if [ "$ASSETS_COUNT" = "0" ] || [ "$ASSETS_COUNT" = "null" ]; then
+            echo "Error: No assets found in the latest release"
+            echo "Release response: $LATEST_RELEASE"
+            exit 1
+          fi
+          
           # Extract the download URL for the linux-amd64 tar.gz file
           DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz")) | .url')
+          
+          if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
+            echo "Error: No linux-amd64.tar.gz asset found in the release"
+            echo "Available assets:"
+            echo "$LATEST_RELEASE" | jq -r '.assets[].name'
+            exit 1
+          fi
+          
+          echo "Downloading binary from: $DOWNLOAD_URL"
           
           # Download the binary
           curl -L -H "Authorization: token ${{ secrets.PAT }}" \
                -H "Accept: application/octet-stream" \
                -o checker.tar.gz \
                "$DOWNLOAD_URL"
+          
+          # Verify the download
+          if [ ! -f checker.tar.gz ]; then
+            echo "Error: Failed to download the binary"
+            exit 1
+          fi
           
           tar -xzf checker.tar.gz
           chmod +x checker
