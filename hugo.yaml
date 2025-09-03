@@ -16,7 +16,7 @@ params:
   schema: true
   indexPager: true
   customCSS:
-  - css/mundodolphins.css
+    - css/mundodolphins.css
   mainSections:
     - Principal
     - podcast
@@ -47,6 +47,10 @@ params:
         - title: Google Play
           url: https://play.google.com/store/apps/details?id=es.mundodolphins.app
           icon: svg/google-play.svg
+        - title: Telegram
+          url: https://t.me/mundodolphinspodcast
+          icon: svg/telegram.svg
+
   # Configuración de botones de compartir en redes sociales
   socialShare:
     enabled: true
@@ -59,7 +63,7 @@ params:
     autoLoadScript: true
     # Usuario de Twitter/X para el parámetro via
     twitterHandle: "MundoDolphins"
-    
+
   sidebar:
     home: right
     list: right
@@ -96,17 +100,17 @@ menus:
 
 module:
   imports:
-  - path: github.com/privatemaker/headless-cms
+    - path: github.com/privatemaker/headless-cms
 
 outputs:
   home:
-  - HTML
-  - RSS
-  - HeadlessCMSConfig
+    - HTML
+    - RSS
+    - HeadlessCMSConfig
 
 services:
-    googleAnalytics:
-      id: G-5BLTW0CSE0
+  googleAnalytics:
+    id: G-5BLTW0CSE0
 
 # Configuración de seguridad para permitir acceso a variables de entorno
 security:
