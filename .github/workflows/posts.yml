@@ -29,8 +29,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            checker
-            checker.tar.gz
+            ./checker
           key: checker-binary-${{ steps.release_info.outputs.tag_name }}
           restore-keys: |
             checker-binary-
@@ -171,6 +170,7 @@ jobs:
           
           echo "Binary downloaded successfully"
           tar -xzf checker.tar.gz
+          rm -f checker.tar.gz  # Clean up tar file after extraction
           chmod +x checker
           echo "Binary extracted and ready to use"
 
@@ -184,9 +184,6 @@ jobs:
       - name: Run checker
         run: |
           ./checker social --data ${GITHUB_WORKSPACE}/data
-
-      - name: Clean up
-        run: rm -f checker checker.tar.gz
           
       - name: Add & Commit
         id: add_commit

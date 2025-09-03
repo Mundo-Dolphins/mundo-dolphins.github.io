@@ -27,8 +27,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            checker
-            checker.tar.gz
+            ./checker
           key: checker-binary-${{ steps.release_info.outputs.tag_name }}
           restore-keys: |
             checker-binary-
@@ -146,6 +145,7 @@ jobs:
           
           echo "Binary downloaded successfully"
           tar -xzf checker.tar.gz
+          rm -f checker.tar.gz  # Clean up tar file after extraction
           chmod +x checker
           echo "Binary extracted and ready to use"
 
@@ -160,18 +160,21 @@ jobs:
         run: |
           ./checker rss --data ${GITHUB_WORKSPACE}/data
 
-      - name: Clean up
-        run: rm -f checker checker.tar.gz
+      - name: Clean up binary before commit
+        run: rm -f checker.tar.gz
 
-      - name: Commit and push changes
-        uses: devops-infra/action-commit-push@v0.11.4
+      - name: Add & Commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v9.1.4
         with:
-          github_token: ${{ secrets.PUSH }}
-          commit_prefix: "Added new episodes"
-          target_branch: new-episodes
+          message: "Added new episodes"
+          add: "./data"
+          push: true
+          new_branch: new-episodes
 
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.6.1
+        if: steps.add_commit.outputs.committed == 'true'
         with:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new episodes**"
