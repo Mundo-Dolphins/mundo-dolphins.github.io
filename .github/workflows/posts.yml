@@ -15,26 +15,48 @@ jobs:
       - name: Download checker binary
         run: |
           # Get the latest release info
-          echo "Fetching latest release info..."
-          LATEST_RELEASE=$(curl -s -H "Authorization: token ${{ secrets.PAT }}" \
+          echo "Fetching latest release info from: https://api.github.com/${{ secrets.CHECKER }}/releases/latest"
+          HTTP_RESPONSE=$(curl -s -w "HTTPSTATUS:%{http_code}" -H "Authorization: token ${{ secrets.PAT }}" \
                                "https://api.github.com/${{ secrets.CHECKER }}/releases/latest")
           
-          # Check if we got a valid response
-          if [ -z "$LATEST_RELEASE" ] || [ "$LATEST_RELEASE" = "null" ]; then
-            echo "Error: Failed to fetch release information"
+          # Extract HTTP status code and response body
+          HTTP_STATUS=$(echo $HTTP_RESPONSE | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          LATEST_RELEASE=$(echo $HTTP_RESPONSE | sed -e 's/HTTPSTATUS:.*//g')
+          
+          echo "HTTP Status: $HTTP_STATUS"
+          
+          # Check HTTP status
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "Error: API request failed with status $HTTP_STATUS"
+            if [ "$HTTP_STATUS" = "404" ]; then
+              echo "Repository not found or no releases exist. Please check:"
+              echo "2. PAT token has access to the repository"
+              echo "3. Repository has at least one published release"
+            elif [ "$HTTP_STATUS" = "401" ]; then
+              echo "Authentication failed. Please check the PAT token permissions."
+            fi
+            echo "Response: $LATEST_RELEASE"
             exit 1
           fi
           
-          # Debug: show the response
-          echo "Release info received. Parsing assets..."
+          # Check if we got a valid response
+          if [ -z "$LATEST_RELEASE" ] || [ "$LATEST_RELEASE" = "null" ]; then
+            echo "Error: Empty response from API"
+            exit 1
+          fi
+          
+          echo "Release info received successfully. Parsing assets..."
           
           # Check if assets exist and extract the download URL
           ASSETS_COUNT=$(echo "$LATEST_RELEASE" | jq -r '.assets | length')
           if [ "$ASSETS_COUNT" = "0" ] || [ "$ASSETS_COUNT" = "null" ]; then
             echo "Error: No assets found in the latest release"
-            echo "Release response: $LATEST_RELEASE"
+            RELEASE_TAG=$(echo "$LATEST_RELEASE" | jq -r '.tag_name')
+            echo "Release tag: $RELEASE_TAG"
             exit 1
           fi
+          
+          echo "Found $ASSETS_COUNT assets in the release"
           
           # Extract the download URL for the linux-amd64 tar.gz file
           DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz")) | .url')
@@ -60,8 +82,10 @@ jobs:
             exit 1
           fi
           
+          echo "Binary downloaded successfully"
           tar -xzf checker.tar.gz
           chmod +x checker
+          echo "Binary extracted and ready to use"
 
       - name: Run checker
         run: |
