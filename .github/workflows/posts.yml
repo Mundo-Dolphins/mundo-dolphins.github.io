@@ -44,6 +44,20 @@ jobs:
           
           echo "Release info received successfully. Parsing assets..."
           
+          # Debug: Show first few lines of the response file
+          echo "Response file content (first 10 lines):"
+          head -n 10 "$RESPONSE_FILE"
+          echo "---"
+          
+          # Debug: Check if it's valid JSON
+          if ! jq empty "$RESPONSE_FILE" 2>/dev/null; then
+            echo "Error: Response file contains invalid JSON"
+            echo "Full content:"
+            cat "$RESPONSE_FILE"
+            rm -f "$RESPONSE_FILE"
+            exit 1
+          fi
+          
           # Check if assets exist and extract the download URL
           ASSETS_COUNT=$(jq -r '.assets | length' "$RESPONSE_FILE")
           if [ "$ASSETS_COUNT" = "0" ] || [ "$ASSETS_COUNT" = "null" ]; then
@@ -57,27 +71,77 @@ jobs:
           echo "Found $ASSETS_COUNT assets in the release"
           
           # Extract the download URL for the linux-amd64 tar.gz file
-          DOWNLOAD_URL=$(jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz") and (.name | contains(".md5") | not)) | .browser_download_url' "$RESPONSE_FILE")
+          # First, let's debug what assets we have
+          echo "Available assets:"
+          jq -r '.assets[].name' "$RESPONSE_FILE"
+          echo "---"
+          
+          # Use a simpler approach: get all assets and filter in bash
+          DOWNLOAD_URL=""
+          API_URL=""
+          
+          # Detect if running in act (local testing) to use different binary
+          if [ -n "$ACT" ]; then
+            ARCH_FILTER="darwin-amd64.tar.gz"
+            echo "Detected 'act' environment - looking for macOS binary"
+          else
+            ARCH_FILTER="linux-amd64.tar.gz"
+            echo "Production environment - looking for Linux binary"
+          fi
+          
+          while IFS= read -r asset_name; do
+            if [[ "$asset_name" == *"$ARCH_FILTER"* && "$asset_name" != *".md5"* ]]; then
+              API_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .url' "$RESPONSE_FILE")
+              DOWNLOAD_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .browser_download_url' "$RESPONSE_FILE")
+              echo "Found compatible binary: $asset_name"
+              break
+            fi
+          done < <(jq -r '.assets[].name' "$RESPONSE_FILE")
+          
+          # Fallback to linux if darwin not found
+          if [ -z "$DOWNLOAD_URL" ] && [ -n "$ACT" ]; then
+            echo "macOS binary not found, falling back to Linux binary for testing"
+            while IFS= read -r asset_name; do
+              if [[ "$asset_name" == *"linux-amd64.tar.gz"* && "$asset_name" != *".md5"* ]]; then
+                API_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .url' "$RESPONSE_FILE")
+                DOWNLOAD_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .browser_download_url' "$RESPONSE_FILE")
+                break
+              fi
+            done < <(jq -r '.assets[].name' "$RESPONSE_FILE")
+          fi
           
           if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
-            echo "Error: No linux-amd64.tar.gz asset found in the release"
-            echo "Available assets:"
-            jq -r '.assets[].name' "$RESPONSE_FILE"
+            echo "Error: No compatible binary found in the release"
+            echo "Looked for assets containing '$ARCH_FILTER' but not '.md5'"
             rm -f "$RESPONSE_FILE"
             exit 1
           fi
           
-          echo "Downloading binary from: $DOWNLOAD_URL"
+          echo "Downloading binary from API URL (private repo): $API_URL"
           
           # Clean up the response file
           rm -f "$RESPONSE_FILE"
           
-          # Download the binary (using browser_download_url, no auth needed for public releases)
-          curl -L -o checker.tar.gz "$DOWNLOAD_URL"
+          # Download the binary using API URL for private repositories
+          curl -L -H "Authorization: token ${{ secrets.PAT }}" \
+               -H "Accept: application/octet-stream" \
+               -o checker.tar.gz \
+               "$API_URL"
           
           # Verify the download
           if [ ! -f checker.tar.gz ]; then
             echo "Error: Failed to download the binary"
+            exit 1
+          fi
+          
+          # Check file size (should be much larger than a few bytes)
+          FILE_SIZE=$(stat -c%s "checker.tar.gz" 2>/dev/null || stat -f%z "checker.tar.gz" 2>/dev/null || echo "0")
+          echo "Downloaded file size: $FILE_SIZE bytes"
+          
+          if [ "$FILE_SIZE" -lt 1000 ]; then
+            echo "Error: Downloaded file is too small ($FILE_SIZE bytes), likely an error response"
+            echo "File content:"
+            cat checker.tar.gz
             exit 1
           fi
           
