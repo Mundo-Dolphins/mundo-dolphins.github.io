@@ -58,7 +58,7 @@ jobs:
           echo "Found $ASSETS_COUNT assets in the release"
           
           # Extract the download URL for the linux-amd64 tar.gz file
-          DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz")) | .url')
+          DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("linux-amd64.tar.gz") and (.name | contains(".md5") | not)) | .browser_download_url')
           
           if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
             echo "Error: No linux-amd64.tar.gz asset found in the release"
@@ -69,11 +69,8 @@ jobs:
           
           echo "Downloading binary from: $DOWNLOAD_URL"
           
-          # Download the binary
-          curl -L -H "Authorization: token ${{ secrets.PAT }}" \
-               -H "Accept: application/octet-stream" \
-               -o checker.tar.gz \
-               "$DOWNLOAD_URL"
+          # Download the binary (using browser_download_url, no auth needed for public releases)
+          curl -L -o checker.tar.gz "$DOWNLOAD_URL"
           
           # Verify the download
           if [ ! -f checker.tar.gz ]; then
