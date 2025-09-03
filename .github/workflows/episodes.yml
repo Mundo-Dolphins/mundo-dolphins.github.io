@@ -10,7 +10,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      - name: Get latest release info for cache key
+        id: release_info
+        run: |
+          # Get just the release info to determine cache key
+          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.PAT }}" \
+                          "https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest")
+          
+          # Extract tag name for cache key
+          RELEASE_TAG=$(echo "$RESPONSE" | jq -r '.tag_name')
+          echo "Latest release: $RELEASE_TAG"
+          echo "tag_name=$RELEASE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Cache checker binary
+        id: cache-checker
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./checker
+          key: checker-binary-${{ steps.release_info.outputs.tag_name }}
+          restore-keys: |
+            checker-binary-
+
       - name: Download checker binary
+        if: steps.cache-checker.outputs.cache-hit != 'true'
         run: |
           # Get the latest release info
           echo "Fetching latest release info from: https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest"
@@ -122,25 +145,36 @@ jobs:
           
           echo "Binary downloaded successfully"
           tar -xzf checker.tar.gz
+          rm -f checker.tar.gz  # Clean up tar file after extraction
           chmod +x checker
           echo "Binary extracted and ready to use"
+
+      - name: Prepare cached binary
+        if: steps.cache-checker.outputs.cache-hit == 'true'
+        run: |
+          echo "Using cached checker binary"
+          chmod +x checker
+          echo "Cached binary ready to use"
 
       - name: Run checker
         run: |
           ./checker rss --data ${GITHUB_WORKSPACE}/data
 
-      - name: Clean up
-        run: rm -f checker checker.tar.gz
+      - name: Clean up binary before commit
+        run: rm -f checker.tar.gz
 
-      - name: Commit and push changes
-        uses: devops-infra/action-commit-push@v0.11.4
+      - name: Add & Commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v9.1.4
         with:
-          github_token: ${{ secrets.PUSH }}
-          commit_prefix: "Added new episodes"
-          target_branch: new-episodes
+          message: "Added new episodes"
+          add: "./data"
+          push: true
+          new_branch: new-episodes
 
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.6.1
+        if: steps.add_commit.outputs.committed == 'true'
         with:
           github_token: ${{ secrets.PUSH }}
           body: "**Automated pull request after adding new episodes**"
