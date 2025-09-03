@@ -13,9 +13,9 @@ jobs:
       - name: Download checker binary
         run: |
           # Get the latest release info
-          echo "Fetching latest release info from: https://api.github.com/${{ secrets.CHECKER }}/releases/latest"
+          echo "Fetching latest release info from: https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest"
           HTTP_RESPONSE=$(curl -s -w "HTTPSTATUS:%{http_code}" -H "Authorization: token ${{ secrets.PAT }}" \
-                               "https://api.github.com/${{ secrets.CHECKER }}/releases/latest")
+                               "https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest")
           
           # Extract HTTP status code and response body
           HTTP_STATUS=$(echo $HTTP_RESPONSE | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
