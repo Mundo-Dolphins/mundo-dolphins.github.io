@@ -19,7 +19,7 @@ on:
     branches: [ main ]
     paths:
       - 'content/noticias/**/*.md'
-      - 'content/podcast/**/*.md'
+      - 'data/season_**.json'
 
 jobs:
   detect-and-notify-telegram:
@@ -34,7 +34,7 @@ jobs:
         id: detect_new
         run: |
           echo "🔍 Checking for new articles..."
-          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep -E '^content/(noticias|podcast)/.*\.md$' || true)
+            NEW_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '^content/noticias/.*\.md$|^data/season_.*\.json$' || true)
           if [ -z "$NEW_FILES" ]; then
             echo "ℹ️ No new articles detected"
             echo "has_new_articles=false" >> $GITHUB_OUTPUT
@@ -46,28 +46,41 @@ jobs:
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
           for file in $NEW_FILES; do
-            if [ -f "$file" ]; then
-              TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
-              AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
-              FILENAME=$(basename "$file" .md)
-              if [[ "$file" == content/noticias/* ]]; then
-                SECTION="noticias"
-              elif [[ "$file" == content/podcast/* ]]; then
-                SECTION="podcast"
-              else
-                SECTION="noticias"
+              if [ -f "$file" ]; then
+                if [[ "$file" == content/noticias/* ]]; then
+                  TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
+                  AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+                  FILENAME=$(basename "$file" .md)
+                  SECTION="noticias"
+                  URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
+                  ARTICLE_JSON=$(jq -n \
+                    --arg title "$TITLE" \
+                    --arg url "$URL" \
+                    --arg author "$AUTHOR" \
+                    --arg section "$SECTION" \
+                    '{title: $title, url: $url, author: $author, section: $section}')
+                  ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
+                  echo "✅ Article processed: $TITLE"
+                  echo "🔗 URL: $URL"
+                elif [[ "$file" == data/season_*.json ]]; then
+                  echo "🔍 Detectando nuevos episodios de podcast en $file..."
+                  # Buscar episodios nuevos en el JSON modificado
+                  EPISODES=$(jq -c '.[]' "$file")
+                  for episode in $EPISODES; do
+                    TITLE=$(echo "$episode" | jq -r '.title // "Nuevo Podcast"')
+                    FILENAME=$(echo "$episode" | jq -r '.slug // ""')
+                    URL="https://mundodolphins.es/podcast/${FILENAME}/"
+                    ARTICLE_JSON=$(jq -n \
+                      --arg title "$TITLE" \
+                      --arg url "$URL" \
+                      --arg section "podcast" \
+                      '{title: $title, url: $url, section: $section}')
+                    ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
+                    echo "✅ Podcast procesado: $TITLE"
+                    echo "🔗 URL: $URL"
+                  done
+                fi
               fi
-              URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
-              ARTICLE_JSON=$(jq -n \
-                --arg title "$TITLE" \
-                --arg url "$URL" \
-                --arg author "$AUTHOR" \
-                --arg section "$SECTION" \
-                '{title: $title, url: $url, author: $author, section: $section}')
-              ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
-              echo "✅ Article processed: $TITLE"
-              echo "🔗 URL: $URL"
-            fi
           done
           echo "has_new_articles=true" >> $GITHUB_OUTPUT
           echo "$ARTICLES_JSON" > articles.json
