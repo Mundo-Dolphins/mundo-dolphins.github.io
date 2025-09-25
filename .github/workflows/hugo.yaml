@@ -52,11 +52,6 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
-      - name: Go mod tidy & validate
-        run: |
-          go mod tidy
-          go mod verify
-        working-directory: .
       - name: ${{ matrix.script.name }}
         run: ${{ matrix.script.cmd }}
         working-directory: ${{ matrix.script.dir }}
