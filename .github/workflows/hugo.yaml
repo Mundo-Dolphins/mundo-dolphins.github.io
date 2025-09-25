@@ -55,6 +55,11 @@ jobs:
       - name: ${{ matrix.script.name }}
         run: ${{ matrix.script.cmd }}
         working-directory: ${{ matrix.script.dir }}
+      - name: Upload generated content
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-content
+          path: content
 
   build:
     runs-on: ubuntu-latest
@@ -67,6 +72,12 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Download generated content
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-content
+          path: content
 
       - name: Cache Node.js modules
         uses: actions/cache@v4
