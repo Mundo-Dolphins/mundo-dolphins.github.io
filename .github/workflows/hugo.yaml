@@ -58,8 +58,10 @@ jobs:
       - name: Upload generated content
         uses: actions/upload-artifact@v4
         with:
-          name: generated-content
+          name: generated-content-${{ matrix.script.name }}
           path: content
+
+    # Elimina el job upload-content, ya no es necesario
 
   build:
     runs-on: ubuntu-latest
@@ -73,10 +75,25 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Download generated content
+      - name: Download generated blog posts
         uses: actions/download-artifact@v4
         with:
-          name: generated-content
+          name: generated-content-Generate blog posts
+          path: content
+      - name: Download generated social posts
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-content-Generate social posts
+          path: content
+      - name: Download generated API resources
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-content-Generate API resources
+          path: content
+      - name: Download generated news API
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-content-Generate news API
           path: content
 
       - name: Cache Node.js modules
