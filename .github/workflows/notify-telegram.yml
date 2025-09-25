@@ -1,18 +1,13 @@
-
+# ---
+# This workflow sends notifications to Telegram cuando se publica un nuevo artículo o podcast.
+# Detecta automáticamente nuevos artículos o podcasts cuando se hace push a la rama main.
+# Ejemplo de mensaje enviado:
+# 🎙️ Nuevo capítulo del podcast publicado: Dolphins Podcast Ep. 1
+# 🔗 https://mundodolphins.es/podcast/episodio-1/
+# Requiere los secrets TELEGRAM_BOT_TOKEN y TELEGRAM_CHAT_ID configurados en el repositorio.
+# ---
 
 name: 🚀 Notify new articles or podcasts to Telegram
-
-# ---
-# This workflow sends notifications to a Telegram channel whenever a new article or podcast is published.
-# It automatically detects new articles or podcasts when they are pushed to the main branch.
-#
-# Example of message sent:
-# 🎙️ New podcast episode published: Dolphins Podcast Ep. 1
-# 🔗 https://mundodolphins.es/podcast/episodio-1/
-#
-# Requires the secrets TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID configured in the repository.
-# ---
-
 
 on:
   push:
@@ -22,92 +17,107 @@ on:
       - 'data/season_**.json'
 
 jobs:
-  detect-and-notify-telegram:
+  detect-articles:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && contains(join(github.event.commits.*.added, github.event.commits.*.modified), 'content/noticias/')
     steps:
       - name: 🔄 Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 2
-
-      - name: 🔍 Detect new articles
-        id: detect_new
+      - name: Detect new articles
+        id: detect_new_articles
         run: |
-          echo "🔍 Checking for new articles..."
-            NEW_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '^content/noticias/.*\.md$|^data/season_.*\.json$' || true)
-          if [ -z "$NEW_FILES" ]; then
-            echo "ℹ️ No new articles detected"
-            echo "has_new_articles=false" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          echo "🆕 New articles detected:"
-          echo "$NEW_FILES"
+          NEW_ARTICLES=$(git diff --name-only HEAD~1 HEAD | grep -E '^content/noticias/.*\.md$' || true)
           ARTICLES_JSON="[]"
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
-          for file in $NEW_FILES; do
-              if [ -f "$file" ]; then
-                if [[ "$file" == content/noticias/* ]]; then
-                  TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
-                  AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
-                  FILENAME=$(basename "$file" .md)
-                  SECTION="noticias"
-                  URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
-                  ARTICLE_JSON=$(jq -n \
-                    --arg title "$TITLE" \
-                    --arg url "$URL" \
-                    --arg author "$AUTHOR" \
-                    --arg section "$SECTION" \
-                    '{title: $title, url: $url, author: $author, section: $section}')
-                  ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
-                  echo "✅ Article processed: $TITLE"
-                  echo "🔗 URL: $URL"
-                elif [[ "$file" == data/season_*.json ]]; then
-                  echo "🔍 Detectando nuevos episodios de podcast en $file..."
-                  # Buscar episodios nuevos en el JSON modificado
-                  EPISODES=$(jq -c '.[]' "$file")
-                  for episode in $EPISODES; do
-                    TITLE=$(echo "$episode" | jq -r '.title // "Nuevo Podcast"')
-                    FILENAME=$(echo "$episode" | jq -r '.slug // ""')
-                    URL="https://mundodolphins.es/podcast/${FILENAME}/"
-                    ARTICLE_JSON=$(jq -n \
-                      --arg title "$TITLE" \
-                      --arg url "$URL" \
-                      --arg section "podcast" \
-                      '{title: $title, url: $url, section: $section}')
-                    ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
-                    echo "✅ Podcast procesado: $TITLE"
-                    echo "🔗 URL: $URL"
-                  done
-                fi
-              fi
+          for file in $NEW_ARTICLES; do
+            if [ -f "$file" ]; then
+              TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
+              AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+              FILENAME=$(basename "$file" .md)
+              SECTION="noticias"
+              URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
+              ARTICLE_JSON=$(jq -n \
+                --arg title "$TITLE" \
+                --arg url "$URL" \
+                --arg author "$AUTHOR" \
+                --arg section "$SECTION" \
+                '{title: $title, url: $url, author: $author, section: $section}')
+              ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
+              echo "✅ Article processed: $TITLE"
+              echo "🔗 URL: $URL"
+            fi
           done
-          echo "has_new_articles=true" >> $GITHUB_OUTPUT
           echo "$ARTICLES_JSON" > articles.json
 
-      - name: 🚀 Enviar notificaciones a Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  detect-podcasts:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && contains(join(github.event.commits.*.added, github.event.commits.*.modified), 'data/season_')
+    steps:
+      - name: 🔄 Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+      - name: Detect new podcasts
+        id: detect_new_podcasts
+        run: |
+          NEW_PODCASTS=$(git diff --name-only HEAD~1 HEAD | grep -E '^data/season_.*\.json$' || true)
+          PODCASTS_JSON="[]"
+          for file in $NEW_PODCASTS; do
+            if [ -f "$file" ]; then
+              if ! jq empty "$file"; then
+                echo "⚠️ El archivo $file no es un JSON válido, se omite."
+                continue
+              fi
+              EPISODES=$(jq -c '.[]' "$file")
+              for episode in $EPISODES; do
+                TITLE=$(echo "$episode" | jq -r '.title // "Nuevo Podcast"')
+                FILENAME=$(echo "$episode" | jq -r '.slug // ""')
+                URL="https://mundodolphins.es/podcast/${FILENAME}/"
+                PODCAST_JSON=$(jq -n \
+                  --arg title "$TITLE" \
+                  --arg url "$URL" \
+                  --arg section "podcast" \
+                  '{title: $title, url: $url, section: $section}')
+                PODCASTS_JSON=$(echo "$PODCASTS_JSON" | jq ". + [$PODCAST_JSON]")
+                echo "✅ Podcast procesado: $TITLE"
+                echo "🔗 URL: $URL"
+              done
+            fi
+          done
+          echo "$PODCASTS_JSON" > podcasts.json
+
+  notify-telegram:
+    runs-on: ubuntu-latest
+    needs: [detect-articles, detect-podcasts]
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - name: 🔄 Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+      - name: Notificar a Telegram
         run: |
           if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
             echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
             exit 1
           fi
-          
-          if [ ! -f articles.json ]; then
-            echo "articles.json not found"
-            exit 1
-          fi
-          count=$(jq length articles.json)
+          ARTICLES_JSON=$(cat articles.json 2>/dev/null || echo '[]')
+          PODCASTS_JSON=$(cat podcasts.json 2>/dev/null || echo '[]')
+          ALL_JSON=$(jq -s 'add' <(echo "$ARTICLES_JSON") <(echo "$PODCASTS_JSON"))
+          count=$(echo "$ALL_JSON" | jq length)
           if [ "$count" -eq 0 ]; then
-            echo "No new articles to notify"
+            echo "No new articles or podcasts to notify"
             exit 0
           fi
           for i in $(seq 0 $((count - 1))); do
-            title=$(jq -r ".[$i].title" articles.json)
-            url=$(jq -r ".[$i].url" articles.json)
-            section=$(jq -r ".[$i].section" articles.json)
+            title=$(echo "$ALL_JSON" | jq -r ".[$i].title")
+            url=$(echo "$ALL_JSON" | jq -r ".[$i].url")
+            section=$(echo "$ALL_JSON" | jq -r ".[$i].section")
             if [ "$section" = "podcast" ]; then
               message="🎙️ Nuevo capítulo del podcast publicado: *${title}*%0A🔗 ${url}"
             else
