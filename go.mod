@@ -1,4 +1,5 @@
 
+module github.com/Mundo-Dolphins/mundo-dolphins.github.io
 go 1.25
 
 require github.com/gosimple/slug v1.15.0
