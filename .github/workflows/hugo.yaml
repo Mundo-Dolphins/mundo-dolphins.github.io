@@ -62,6 +62,12 @@ jobs:
     env:
       HUGO_VERSION: 0.150.0
     steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
       - name: Cache Node.js modules
         uses: actions/cache@v4
         with:
@@ -106,6 +112,7 @@ jobs:
             --minify \
             --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+        working-directory: .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
