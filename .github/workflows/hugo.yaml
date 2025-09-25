@@ -28,40 +28,70 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
-  build:
+  generate-content:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.149.0
+    strategy:
+      matrix:
+        script:
+          - { name: "Generate blog posts", cmd: "go run convert_seasons_to_md.go", dir: "scripts/seasons" }
+          - { name: "Generate social posts", cmd: "go run convert_posts_to_md.go", dir: "scripts/posts" }
+          - { name: "Generate API resources", cmd: "go run generate_api_resources.go", dir: "scripts/api" }
+          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news" }
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Cache Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+      - name: Go mod tidy & validate
+        run: |
+          go mod tidy
+          go mod verify
+        working-directory: .
+      - name: ${{ matrix.script.name }}
+        run: ${{ matrix.script.cmd }}
+        working-directory: ${{ matrix.script.dir }}
+
+  build:
+    runs-on: ubuntu-latest
+    needs: generate-content
+    env:
+      HUGO_VERSION: 0.150.0
+    steps:
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Hugo
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/*') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Generate blog posts
-        run: go run convert_seasons_to_md.go
-        working-directory: scripts/seasons
-      - name: Generate social posts
-        run: go run convert_posts_to_md.go
-        working-directory: scripts/posts
-      - name: Generate API resources
-        run: go run generate_api_resources.go
-        working-directory: scripts/api
-      - name: Generate news API
-        run: go run generate_api.go
-        working-directory: scripts/news
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
