@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'content/noticias/**/*.md'
-      - 'content/podcast/**/*.md'
+      - 'content/podcast/*.md'
   workflow_dispatch:
     inputs:
       test_mode:
@@ -29,8 +29,16 @@ jobs:
       run: |
         echo "🔍 Checking for new articles..."
         
-        # Get changed files in the push
-        NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep -E '^content/(noticias|podcast)/.*\.md$' || true)
+        # Get changed files in the push (both added and modified)
+        NEW_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep -E '^content/(noticias|podcast)/.*\.md$' || true)
+        
+        # Debug: Show what git diff found
+        echo "🔍 Files detected by git diff:"
+        git diff --name-only --diff-filter=AM HEAD~1 HEAD || echo "No files detected by git diff"
+        
+        # Debug: Show filtered results
+        echo "🔍 Filtered markdown files:"
+        echo "$NEW_FILES" || echo "No markdown files found"
         
         if [ -z "$NEW_FILES" ]; then
           echo "ℹ️ No new articles detected"
@@ -51,10 +59,14 @@ jobs:
         for file in $NEW_FILES; do
           if [ -f "$file" ]; then
             echo "📄 Processing: $file"
-            # Extract frontmatter using yq (now always available)
-            TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
-            DATE=$(yq '.date' "$file" 2>/dev/null | sed 's/^null$//' || echo "")
-            AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+            
+            # Extract frontmatter from markdown file (everything between --- lines)
+            FRONTMATTER=$(sed -n '/^---$/,/^---$/p' "$file" | sed '1d;$d')
+            
+            # Extract fields from frontmatter
+            TITLE=$(echo "$FRONTMATTER" | yq '.title' 2>/dev/null | sed 's/^null$//' || echo "New Article")
+            DATE=$(echo "$FRONTMATTER" | yq '.date' 2>/dev/null | sed 's/^null$//' || echo "")
+            AUTHOR=$(echo "$FRONTMATTER" | yq '.author' 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
             
             # Generate URL from filename
             FILENAME=$(basename "$file" .md)
@@ -82,6 +94,8 @@ jobs:
             
             echo "✅ Article processed: $TITLE"
             echo "🔗 URL: $URL"
+          else
+            echo "⚠️ File not found: $file"
           fi
         done
         
@@ -90,6 +104,7 @@ jobs:
         
         # Save articles data for next step
         echo "$ARTICLES_JSON" > articles.json
+        echo "📊 Articles JSON content:"
         cat articles.json
     
     - name: 🔔 Send FCM notifications
