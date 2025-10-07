@@ -66,20 +66,41 @@ jobs:
           fi
           LAST_RUN_TIME="${{ steps.last_run.outputs.last_run_time }}"
           echo "Filtering posts published after: $LAST_RUN_TIME"
+          
+          # Create a temporary file to store all posts to process
+          temp_posts_file=$(mktemp)
+          
           for file in $(cat changed_posts_files.txt); do
             echo "Processing $file..."
-            jq -c 'sort_by(.PublishedOn)[]' "$file" | while read -r post; do
-              stype=$(echo "$post" | jq -r '.stype // 1')
-              [ "$stype" = "0" ] || continue
+            # Extract posts that should be sent to Telegram
+            jq -c '.[] | select(.stype == 0) | select(.PublishedOn != null and .BlueSkyPost.Description != null and .BlueSkyPost.BskyPost != null)' "$file" >> "$temp_posts_file"
+          done
+          
+          # Sort all posts by publication date and process them
+          if [ -s "$temp_posts_file" ]; then
+            echo "Found posts to process. Sorting by publication date..."
+            sorted_posts_file=$(mktemp)
+            jq -s 'sort_by(.PublishedOn)' "$temp_posts_file" > "$sorted_posts_file"
+            
+            # Get the number of posts to process
+            total_posts=$(jq length "$sorted_posts_file")
+            echo "Total posts to evaluate: $total_posts"
+            
+            # Process each post
+            for i in $(seq 0 $((total_posts - 1))); do
+              post=$(jq -r ".[$i]" "$sorted_posts_file")
               published=$(echo "$post" | jq -r '.PublishedOn // empty')
               text=$(echo "$post" | jq -r '.BlueSkyPost.Description // empty')
               url=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost // empty')
+              
               # Only publish if the date is greater than the last successful run
               if [ -n "$published" ] && { [ -z "$LAST_RUN_TIME" ] || [[ "$published" > "$LAST_RUN_TIME" ]]; }; then
+                echo "Processing post $((i+1))/$total_posts published at: $published"
                 if [ -n "$text" ] && [ -n "$url" ]; then
                   # URL encode the newline character for proper Telegram formatting
                   message="${text}%0A🔗 ${url}"
                   echo "Sending post to Telegram: $url"
+                  
                   while true; do
                     response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
                       -d chat_id="$TELEGRAM_CHAT_ID" \
@@ -87,21 +108,36 @@ jobs:
                       -d parse_mode="Markdown")
                     ok=$(echo "$response" | jq -r '.ok')
                     if [ "$ok" = "true" ]; then
-                      echo "Successfully sent post: $url"
+                      echo "✅ Successfully sent post $((i+1))/$total_posts: $url"
                       break
                     fi
                     error_code=$(echo "$response" | jq -r '.error_code // empty')
                     if [ "$error_code" = "429" ]; then
                       retry_after=$(echo "$response" | jq -r '.parameters.retry_after // 30')
-                      echo "Rate limit hit (429). Waiting $retry_after seconds before retrying post: $url"
+                      echo "⏳ Rate limit hit (429). Waiting $retry_after seconds before retrying post $((i+1))/$total_posts: $url"
                       sleep $retry_after
                     else
-                      echo "Telegram error sending post: $url"
+                      echo "❌ Telegram error sending post $((i+1))/$total_posts: $url"
                       echo "Response: $response"
                       break
                     fi
                   done
+                  
+                  # Add a small delay between messages to avoid rate limiting
+                  sleep 1
+                else
+                  echo "⚠️ Skipping post $((i+1))/$total_posts due to missing text or URL"
                 fi
+              else
+                echo "⏭️ Skipping post $((i+1))/$total_posts - already processed (published: $published)"
               fi
             done
-          done
+            
+            # Clean up temporary files
+            rm -f "$sorted_posts_file"
+          else
+            echo "No posts found to process"
+          fi
+          
+          # Clean up temporary files
+          rm -f "$temp_posts_file"
