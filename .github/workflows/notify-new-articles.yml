@@ -1,11 +1,10 @@
-name: 🔔 Notify New Articles via FCM
+name: Notify New Articles via FCM
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'content/noticias/**/*.md'
-      - 'content/podcast/*.md'
+  workflow_run:
+    workflows: ["Deploy Hugo site to Pages"]
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       test_mode:

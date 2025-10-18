@@ -10,11 +10,10 @@
 name: 🚀 Notify new articles or podcasts to Telegram
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'content/noticias/**/*.md'
-      - 'data/season_**.json'
+  workflow_run:
+    workflows: ["Deploy Hugo site to Pages"]
+    types:
+      - completed
 
 jobs:
   detect-and-notify:
@@ -27,35 +26,38 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 2
-          
-      - name: 🔍 Detect new articles and podcasts
+
+      - name: 🔍 Detect new articles/podcasts
         id: detect_content
         run: |
-          echo "🔍 Checking for new articles..."
-          NEW_ARTICLES=$(git diff --name-only HEAD~1 HEAD | grep -E '^content/noticias/.*\.md$' || true)
-          NEW_PODCASTS=$(git diff --name-only HEAD~1 HEAD | grep -E '^data/season_.*\.json$' || true)
-          
-          # Initialize content arrays
+          echo "🔍 Searching for new markdown files in content/noticias and content/podcast..."
+          # Find .md files added in the latest commit on main
+          git fetch origin main
+          LAST_COMMIT=$(git rev-parse origin/main)
+          CURRENT_COMMIT=$(git rev-parse HEAD)
+          NEW_MARKDOWN=$(git diff --name-status $LAST_COMMIT $CURRENT_COMMIT | grep -E '^A\s+content/(noticias|podcast)/.*\.md$' | awk '{print $2}')
+
           ALL_CONTENT="[]"
-          
-          # Process articles
-          if [ -n "$NEW_ARTICLES" ]; then
-            echo "🆕 New articles detected:"
-            echo "$NEW_ARTICLES"
-            
-            # Install yq for parsing YAML frontmatter
+
+          if [ -n "$NEW_MARKDOWN" ]; then
+            echo "🆕 New markdown files detected:"
+            echo "$NEW_MARKDOWN"
+            # Install yq for YAML frontmatter extraction
             sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
             sudo chmod +x /usr/local/bin/yq
-            
-            for file in $NEW_ARTICLES; do
+            for file in $NEW_MARKDOWN; do
               if [ -f "$file" ]; then
-                echo "📝 Processing article: $file"
-                TITLE=$(yq '.title' "$file" 2>/dev/null | sed 's/^null$//' || echo "New Article")
-                AUTHOR=$(yq '.author' "$file" 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
-                FILENAME=$(basename "$file" .md)
-                SECTION="noticias"
-                URL="https://mundodolphins.es/${SECTION}/${FILENAME}/"
-                
+                echo "📝 Processing: $file"
+                FRONTMATTER=$(sed -n '/^---$/,/^---$/p' "$file" | sed '1d;$d')
+                TITLE=$(echo "$FRONTMATTER" | yq '.title' 2>/dev/null | sed 's/^null$//' || echo "New Article")
+                AUTHOR=$(echo "$FRONTMATTER" | yq '.author' 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
+                SLUG=$(echo "$FRONTMATTER" | yq '.slug' 2>/dev/null | sed 's/^null$//' || echo "")
+                if [[ "$file" == content/podcast/* ]]; then
+                  SECTION="podcast"
+                else
+                  SECTION="news"
+                fi
+                URL="https://mundodolphins.es/${SECTION}/${SLUG}/"
                 ARTICLE_JSON=$(jq -n \
                   --arg title "$TITLE" \
                   --arg url "$URL" \
@@ -68,58 +70,14 @@ jobs:
               fi
             done
           else
-            echo "ℹ️ No new articles detected"
+            echo "ℹ️ No new markdown files detected in the specified paths."
           fi
-          
-          # Process podcasts
-          if [ -n "$NEW_PODCASTS" ]; then
-            echo "🆕 New podcasts detected:"
-            echo "$NEW_PODCASTS"
-            
-            for file in $NEW_PODCASTS; do
-              echo "🔍 Detecting new podcast episodes in $file..."
-              if [ -f "$file" ]; then
-                # First, validate JSON
-                if ! jq empty "$file" 2>/dev/null; then
-                  echo "⚠️ File $file is not valid JSON, skipping."
-                  continue
-                fi
-                
-                # Get array length to process episodes safely
-                EPISODES_COUNT=$(jq length "$file")
-                echo "📊 Found $EPISODES_COUNT episodes in $file"
-                
-                # Process each episode by index instead of using pipeline
-                for i in $(seq 0 $((EPISODES_COUNT - 1))); do
-                  EPISODE=$(jq -r ".[$i]" "$file")
-                  if [ "$EPISODE" != "null" ]; then
-                    TITLE=$(echo "$EPISODE" | jq -r '.title // "Nuevo Podcast"')
-                    # Create slug from title since there's no slug field
-                    FILENAME=$(echo "$TITLE" | sed 's/[^a-zA-Z0-9 ]//g' | sed 's/ /-/g' | tr '[:upper:]' '[:lower:]')
-                    URL="https://mundodolphins.es/podcast/${FILENAME}/"
-                    
-                    PODCAST_JSON=$(jq -n \
-                      --arg title "$TITLE" \
-                      --arg url "$URL" \
-                      --arg section "podcast" \
-                      '{title: $title, url: $url, section: $section}')
-                    ALL_CONTENT=$(echo "$ALL_CONTENT" | jq ". + [$PODCAST_JSON]")
-                    echo "✅ Podcast processed: $TITLE"
-                    echo "🔗 URL: $URL"
-                  fi
-                done
-              fi
-            done
-          else
-            echo "ℹ️ No new podcasts detected"
-          fi
-          
-          # Save content count for next step
+
           CONTENT_COUNT=$(echo "$ALL_CONTENT" | jq length)
           echo "has_content=$([ "$CONTENT_COUNT" -gt 0 ] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
           echo "content_count=$CONTENT_COUNT" >> $GITHUB_OUTPUT
           echo "$ALL_CONTENT" > all_content.json
-          echo "📊 Total content items to notify: $CONTENT_COUNT"
+          echo "📊 Total articles to notify: $CONTENT_COUNT"
 
       - name: 📱 Send notifications to Telegram
         if: steps.detect_content.outputs.has_content == 'true'
@@ -141,7 +99,7 @@ jobs:
             SECTION=$(echo "$ITEM" | jq -r '.section')
             
             if [ "$SECTION" = "podcast" ]; then
-              MESSAGE="🎙️ Nuevo capítulo del podcast publicado: *${TITLE}*%0A🔗 ${URL}"
+              MESSAGE="🎙️ Nuevo episodio de podcast publicado: *${TITLE}*%0A🔗 ${URL}"
             else
               MESSAGE="🆕 Nuevo artículo publicado en la web: *${TITLE}*%0A🔗 ${URL}"
             fi
