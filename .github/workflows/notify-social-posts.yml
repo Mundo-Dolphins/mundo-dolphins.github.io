@@ -31,30 +31,43 @@ jobs:
           echo "has_new_posts=true" >> $GITHUB_OUTPUT
           echo "$FILES" > changed_posts_files.txt
 
+      - name: Restore last notified post date cache
+        id: cache_restore
+        uses: actions/cache/restore@v4
+        with:
+          path: last_notified_post_date.txt
+          key: last-notified-post-date-${{ github.repository }}
 
-      - name: Get last successful workflow run datetime
-        id: last_run
+      - name: Get last notified post date
+        id: last_notified
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Retrieving last successful workflow run datetime..."
-          # Get the workflow file name
-          WORKFLOW_FILE=".github/workflows/notify-social-posts.yml"
-          # Get the last successful run (excluding current run)
-          LAST_RUN_JSON=$(gh api \
-            -H "Accept: application/vnd.github+json" \
-            "/repos/${GITHUB_REPOSITORY}/actions/workflows/$(basename $WORKFLOW_FILE)/runs?status=success&branch=${GITHUB_REF_NAME}&per_page=2" \
-            --jq '.workflow_runs | map(select(.id != ${{ github.run_id }})) | .[0]')
-          LAST_RUN_TIME=$(echo "$LAST_RUN_JSON" | jq -r '.updated_at // empty')
-          if [ -z "$LAST_RUN_TIME" ] || [ "$LAST_RUN_TIME" = "null" ]; then
-            echo "No previous successful run found. Will publish all posts."
-            echo "last_run_time=" >> $GITHUB_OUTPUT
+          if [ -f "last_notified_post_date.txt" ]; then
+            LAST_NOTIFIED_DATE=$(cat last_notified_post_date.txt)
+            echo "Found cached last notified post date: $LAST_NOTIFIED_DATE"
+            echo "last_notified_date=$LAST_NOTIFIED_DATE" >> $GITHUB_OUTPUT
           else
-            echo "Last successful run finished at: $LAST_RUN_TIME"
-            echo "last_run_time=$LAST_RUN_TIME" >> $GITHUB_OUTPUT
+            echo "No cached date found. Getting last successful workflow run datetime as fallback..."
+            # Get the workflow file name
+            WORKFLOW_FILE=".github/workflows/notify-social-posts.yml"
+            # Get the last successful run (excluding current run)
+            LAST_RUN_JSON=$(gh api \
+              -H "Accept: application/vnd.github+json" \
+              "/repos/${GITHUB_REPOSITORY}/actions/workflows/$(basename $WORKFLOW_FILE)/runs?status=success&branch=${GITHUB_REF_NAME}&per_page=2" \
+              --jq '.workflow_runs | map(select(.id != ${{ github.run_id }})) | .[0]')
+            LAST_RUN_TIME=$(echo "$LAST_RUN_JSON" | jq -r '.updated_at // empty')
+            if [ -z "$LAST_RUN_TIME" ] || [ "$LAST_RUN_TIME" = "null" ]; then
+              echo "No previous successful run found. Will publish all posts."
+              echo "last_notified_date=" >> $GITHUB_OUTPUT
+            else
+              echo "Using last successful run finished at: $LAST_RUN_TIME"
+              echo "last_notified_date=$LAST_RUN_TIME" >> $GITHUB_OUTPUT
+            fi
           fi
 
       - name: Send Bluesky posts to Telegram
+        id: send_posts
         if: steps.detect_posts.outputs.has_new_posts == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -64,8 +77,8 @@ jobs:
             echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
             exit 1
           fi
-          LAST_RUN_TIME="${{ steps.last_run.outputs.last_run_time }}"
-          echo "Filtering posts published after: $LAST_RUN_TIME"
+          LAST_NOTIFIED_DATE="${{ steps.last_notified.outputs.last_notified_date }}"
+          echo "Filtering posts published after: $LAST_NOTIFIED_DATE"
           
           # Create a temporary file to store all posts to process
           temp_posts_file=$(mktemp)
@@ -86,6 +99,10 @@ jobs:
             total_posts=$(jq length "$sorted_posts_file")
             echo "Total posts to evaluate: $total_posts"
             
+            # Variable to track the latest notified post date
+            latest_notified_date=""
+            posts_sent=0
+            
             # Process each post
             for i in $(seq 0 $((total_posts - 1))); do
               post=$(jq -r ".[$i]" "$sorted_posts_file")
@@ -93,8 +110,8 @@ jobs:
               text=$(echo "$post" | jq -r '.BlueSkyPost.Description // empty')
               url=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost // empty')
               
-              # Only publish if the date is greater than the last successful run
-              if [ -n "$published" ] && { [ -z "$LAST_RUN_TIME" ] || [[ "$published" > "$LAST_RUN_TIME" ]]; }; then
+              # Only publish if the date is greater than the last notified date
+              if [ -n "$published" ] && { [ -z "$LAST_NOTIFIED_DATE" ] || [[ "$published" > "$LAST_NOTIFIED_DATE" ]]; }; then
                 echo "Processing post $((i+1))/$total_posts published at: $published"
                 if [ -n "$text" ] && [ -n "$url" ]; then
                   # URL encode the newline character for proper Telegram formatting
@@ -109,6 +126,9 @@ jobs:
                     ok=$(echo "$response" | jq -r '.ok')
                     if [ "$ok" = "true" ]; then
                       echo "✅ Successfully sent post $((i+1))/$total_posts: $url"
+                      # Update the latest notified date
+                      latest_notified_date="$published"
+                      posts_sent=$((posts_sent + 1))
                       break
                     fi
                     error_code=$(echo "$response" | jq -r '.error_code // empty')
@@ -133,11 +153,32 @@ jobs:
               fi
             done
             
+            # Save the latest notified date to outputs for caching
+            if [ -n "$latest_notified_date" ]; then
+              echo "Latest notified post date: $latest_notified_date"
+              echo "$latest_notified_date" > last_notified_post_date.txt
+              echo "latest_notified_date=$latest_notified_date" >> $GITHUB_OUTPUT
+              echo "posts_sent=$posts_sent" >> $GITHUB_OUTPUT
+            else
+              echo "No new posts were sent"
+              echo "latest_notified_date=" >> $GITHUB_OUTPUT
+              echo "posts_sent=0" >> $GITHUB_OUTPUT
+            fi
+            
             # Clean up temporary files
             rm -f "$sorted_posts_file"
           else
             echo "No posts found to process"
+            echo "latest_notified_date=" >> $GITHUB_OUTPUT
+            echo "posts_sent=0" >> $GITHUB_OUTPUT
           fi
           
           # Clean up temporary files
           rm -f "$temp_posts_file"
+
+      - name: Save last notified post date cache
+        if: steps.detect_posts.outputs.has_new_posts == 'true' && steps.send_posts.outputs.posts_sent > 0
+        uses: actions/cache/save@v4
+        with:
+          path: last_notified_post_date.txt
+          key: last-notified-post-date-${{ github.repository }}
