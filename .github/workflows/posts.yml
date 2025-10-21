@@ -53,7 +53,7 @@ jobs:
             echo "Error: API request failed with status $HTTP_STATUS"
             if [ "$HTTP_STATUS" = "404" ]; then
               echo "Repository not found or no releases exist. Please check:"
-              echo "1. Repository name in secrets.CHECKER: ${{ secrets.CHECKER }}"
+              echo "1. Repository name in secrets.CHECKER"
               echo "2. PAT token has access to the repository"
               echo "3. Repository has at least one published release"
             elif [ "$HTTP_STATUS" = "401" ]; then
