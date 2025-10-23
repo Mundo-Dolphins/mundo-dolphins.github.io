@@ -35,70 +35,10 @@ jobs:
 
       - name: 📱 Send notifications to Telegram
         if: steps.detect_new.outputs.has_new_articles == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
-            echo "❌ Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
-            exit 1
-          fi
-
-          if [ ! -f articles.json ]; then
-            echo "❌ articles.json not found; nothing to send"
-            exit 1
-          fi
-
-          ALL_CONTENT=$(cat articles.json)
-          CONTENT_COUNT="${{ steps.detect_new.outputs.articles_count }}"
-
-          echo "📱 Sending $CONTENT_COUNT notifications to Telegram..."
-
-          for i in $(seq 0 $((CONTENT_COUNT - 1))); do
-            ITEM=$(echo "$ALL_CONTENT" | jq -r ".[$i]")
-            TITLE=$(echo "$ITEM" | jq -r '.title')
-            URL=$(echo "$ITEM" | jq -r '.url')
-            SECTION=$(echo "$ITEM" | jq -r '.section')
-
-            if [ "$SECTION" = "podcast" ]; then
-              MESSAGE="🎙️ Nuevo episodio de podcast publicado: *${TITLE}*%0A🔗 ${URL}"
-            else
-              MESSAGE="🆕 Nuevo artículo publicado en la web: *${TITLE}*%0A🔗 ${URL}"
-            fi
-
-            echo "📤 Sending notification $((i+1))/$CONTENT_COUNT: $TITLE"
-
-            MAX_RETRIES=3
-            RETRY_COUNT=0
-
-            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-              RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-                -d chat_id="$TELEGRAM_CHAT_ID" \
-                -d text="$MESSAGE" \
-                -d parse_mode="Markdown")
-
-              OK=$(echo "$RESPONSE" | jq -r '.ok')
-              if [ "$OK" = "true" ]; then
-                echo "✅ Successfully sent notification $((i+1))/$CONTENT_COUNT"
-                break
-              fi
-
-              ERROR_CODE=$(echo "$RESPONSE" | jq -r '.error_code // empty')
-              if [ "$ERROR_CODE" = "429" ]; then
-                RETRY_AFTER=$(echo "$RESPONSE" | jq -r '.parameters.retry_after // 30')
-                echo "⏳ Rate limit hit. Waiting $RETRY_AFTER seconds..."
-                sleep $RETRY_AFTER
-              else
-                RETRY_COUNT=$((RETRY_COUNT + 1))
-                echo "⚠️ Attempt $RETRY_COUNT/$MAX_RETRIES failed. Response: $RESPONSE"
-                if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
-                  sleep 2
-                fi
-              fi
-            done
-
-            if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
-              echo "❌ Failed to send notification after $MAX_RETRIES attempts"
-            fi
-
-            sleep 1
-          done
-
-          echo "🎉 Notification process completed!"
+          chmod +x scripts/notify/send_to_telegram.sh
+          # pass articles.json explicitly; NOTIFICATION_DELAY_SEC can be set in the workflow env if desired
+          ./scripts/notify/send_to_telegram.sh articles.json
