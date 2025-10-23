@@ -3,6 +3,12 @@ set -euo pipefail
 
 echo "🔍 Checking for new articles..."
 
+# Support running locally: if GITHUB_OUTPUT is not set (not in Actions), write outputs to a local file
+if [ -z "${GITHUB_OUTPUT:-}" ]; then
+  GITHUB_OUTPUT=$(pwd)/.github_output
+  echo "(local) writing outputs to $GITHUB_OUTPUT"
+fi
+
 # Detect two types of content:
 # 1. Markdown articles in content/noticias/ (added/modified .md files)
 # 2. Podcast episodes in data/season_*.json files (episodes are added to JSON, not as separate .md files)
