@@ -40,6 +40,7 @@ jobs:
 
       - name: Get last notified post date
         id: last_notified
+        if: steps.detect_posts.outputs.has_new_posts == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -49,9 +50,7 @@ jobs:
             echo "last_notified_date=$LAST_NOTIFIED_DATE" >> $GITHUB_OUTPUT
           else
             echo "No cached date found. Getting last successful workflow run datetime as fallback..."
-            # Get the workflow file name
             WORKFLOW_FILE=".github/workflows/notify-social-posts.yml"
-            # Get the last successful run (excluding current run)
             LAST_RUN_JSON=$(gh api \
               -H "Accept: application/vnd.github+json" \
               "/repos/${GITHUB_REPOSITORY}/actions/workflows/$(basename $WORKFLOW_FILE)/runs?status=success&branch=${GITHUB_REF_NAME}&per_page=2" \
@@ -77,15 +76,53 @@ jobs:
             echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
             exit 1
           fi
+          
           LAST_NOTIFIED_DATE="${{ steps.last_notified.outputs.last_notified_date }}"
           echo "Filtering posts published after: $LAST_NOTIFIED_DATE"
+          
+          # Convert last notified date to timestamp for comparison
+          if [ -n "$LAST_NOTIFIED_DATE" ]; then
+            LAST_TIMESTAMP=$(date -d "$LAST_NOTIFIED_DATE" +%s 2>/dev/null || echo "0")
+          else
+            LAST_TIMESTAMP=0
+          fi
+          echo "Last cached timestamp: $LAST_TIMESTAMP"
+          
+          # If no cached date or cache is invalid, query Telegram for the last message date
+          if [ $LAST_TIMESTAMP -eq 0 ]; then
+            echo "⚠️ No cached date found. Querying Telegram for last message..."
+            
+            # Get the last message from the Telegram channel
+            telegram_response=$(curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates?chat_id=$TELEGRAM_CHAT_ID&limit=1&offset=-1")
+            
+            # Try to get date from last message
+            last_msg_date=$(echo "$telegram_response" | jq -r '.result[-1].message.date // empty' 2>/dev/null)
+            
+            if [ -n "$last_msg_date" ] && [ "$last_msg_date" != "null" ]; then
+              LAST_TIMESTAMP=$last_msg_date
+              echo "✅ Found last Telegram message at timestamp: $LAST_TIMESTAMP ($(date -u -d @$LAST_TIMESTAMP +%Y-%m-%dT%H:%M:%SZ))"
+            else
+              # Alternative: get channel history directly
+              echo "Trying alternative method: getting chat history..."
+              history_response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getChat" \
+                -d chat_id="$TELEGRAM_CHAT_ID")
+              
+              # If still no date, use 24 hours ago as ultimate fallback
+              if [ $LAST_TIMESTAMP -eq 0 ]; then
+                TWENTY_FOUR_HOURS_AGO=$(date -u -d '24 hours ago' +%s)
+                LAST_TIMESTAMP=$TWENTY_FOUR_HOURS_AGO
+                echo "⚠️ Could not retrieve Telegram message date. Using 24-hour fallback: $(date -u -d @$LAST_TIMESTAMP +%Y-%m-%dT%H:%M:%SZ)"
+              fi
+            fi
+          fi
+          
+          echo "Effective timestamp filter: $LAST_TIMESTAMP ($(date -u -d @$LAST_TIMESTAMP +%Y-%m-%dT%H:%M:%SZ))"
           
           # Create a temporary file to store all posts to process
           temp_posts_file=$(mktemp)
           
           for file in $(cat changed_posts_files.txt); do
             echo "Processing $file..."
-            # Extract posts that should be sent to Telegram
             jq -c '.[] | select(.stype == 0) | select(.PublishedOn != null and .BlueSkyPost.Description != null and .BlueSkyPost.BskyPost != null)' "$file" >> "$temp_posts_file"
           done
           
@@ -95,11 +132,9 @@ jobs:
             sorted_posts_file=$(mktemp)
             jq -s 'sort_by(.PublishedOn)' "$temp_posts_file" > "$sorted_posts_file"
             
-            # Get the number of posts to process
             total_posts=$(jq length "$sorted_posts_file")
             echo "Total posts to evaluate: $total_posts"
             
-            # Variable to track the latest notified post date
             latest_notified_date=""
             posts_sent=0
             
@@ -110,46 +145,83 @@ jobs:
               text=$(echo "$post" | jq -r '.BlueSkyPost.Description // empty')
               url=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost // empty')
               
-              # Only publish if the date is greater than the last notified date
-              if [ -n "$published" ] && { [ -z "$LAST_NOTIFIED_DATE" ] || [[ "$published" > "$LAST_NOTIFIED_DATE" ]]; }; then
+              # Convert post date to timestamp for comparison
+              if [ -n "$published" ]; then
+                post_timestamp=$(date -d "$published" +%s 2>/dev/null || echo "0")
+              else
+                post_timestamp=0
+              fi
+              
+              # Only publish if timestamp is greater than last notified timestamp
+              if [ "$post_timestamp" -gt "$LAST_TIMESTAMP" ]; then
                 echo "Processing post $((i+1))/$total_posts published at: $published"
                 if [ -n "$text" ] && [ -n "$url" ]; then
-                  # URL encode the newline character for proper Telegram formatting
-                  message="${text}%0A🔗 ${url}"
+                  # Escape special characters for Telegram Markdown V2
+                  # Replace problematic characters that break Markdown
+                  escaped_text=$(echo "$text" | sed 's/\\/\\\\/g' | sed 's/_/\\_/g' | sed 's/\*/\\*/g' | sed 's/\[/\\[/g' | sed 's/]/\\]/g' | sed 's/(/\\(/g' | sed 's/)/\\)/g' | sed 's/~/\\~/g' | sed 's/`/\\`/g' | sed 's/>/\\>/g' | sed 's/#/\\#/g' | sed 's/+/\\+/g' | sed 's/-/\\-/g' | sed 's/=/\\=/g' | sed 's/|/\\|/g' | sed 's/{/\\{/g' | sed 's/}/\\}/g' | sed 's/\./\\./g' | sed 's/!/\\!/g')
+                  
+                  # Create message with proper formatting
+                  message="${escaped_text}%0A%0A🔗 ${url}"
                   echo "Sending post to Telegram: $url"
                   
-                  while true; do
+                  retry_count=0
+                  max_retries=3
+                  
+                  while [ $retry_count -lt $max_retries ]; do
                     response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
                       -d chat_id="$TELEGRAM_CHAT_ID" \
                       -d text="$message" \
-                      -d parse_mode="Markdown")
+                      -d parse_mode="MarkdownV2" \
+                      -d disable_web_page_preview=false)
+                    
                     ok=$(echo "$response" | jq -r '.ok')
+                    
                     if [ "$ok" = "true" ]; then
                       echo "✅ Successfully sent post $((i+1))/$total_posts: $url"
-                      # Update the latest notified date
                       latest_notified_date="$published"
                       posts_sent=$((posts_sent + 1))
                       break
                     fi
+                    
                     error_code=$(echo "$response" | jq -r '.error_code // empty')
+                    error_desc=$(echo "$response" | jq -r '.description // empty')
+                    
                     if [ "$error_code" = "429" ]; then
                       retry_after=$(echo "$response" | jq -r '.parameters.retry_after // 30')
-                      echo "⏳ Rate limit hit (429). Waiting $retry_after seconds before retrying post $((i+1))/$total_posts: $url"
+                      echo "⏳ Rate limit hit (429). Waiting $retry_after seconds..."
                       sleep $retry_after
+                      retry_count=$((retry_count + 1))
+                    elif [ "$error_code" = "400" ] && [[ "$error_desc" == *"parse entities"* ]]; then
+                      echo "⚠️ Markdown parsing error. Retrying without formatting..."
+                      # Retry without Markdown formatting
+                      simple_message="${text}%0A%0A🔗 ${url}"
+                      response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+                        -d chat_id="$TELEGRAM_CHAT_ID" \
+                        -d text="$simple_message")
+                      ok=$(echo "$response" | jq -r '.ok')
+                      if [ "$ok" = "true" ]; then
+                        echo "✅ Successfully sent post (plain text) $((i+1))/$total_posts: $url"
+                        latest_notified_date="$published"
+                        posts_sent=$((posts_sent + 1))
+                      else
+                        echo "❌ Failed to send even without formatting: $url"
+                        echo "Response: $response"
+                      fi
+                      break
                     else
                       echo "❌ Telegram error sending post $((i+1))/$total_posts: $url"
-                      echo "Response: $response"
+                      echo "Error: $error_desc"
                       break
                     fi
                   done
                   
-                  # Add a small delay between messages to avoid rate limiting
+                  # Small delay between messages
                   sleep 1
                 else
                   echo "⚠️ Skipping post $((i+1))/$total_posts due to missing text or URL"
                 fi
               else
-                echo "⏭️ Skipping post $((i+1))/$total_posts - already processed (published: $published)"
+                echo "⏭️ Skipping post $((i+1))/$total_posts - already processed (published: $published, timestamp: $post_timestamp vs $LAST_TIMESTAMP)"
               fi
             done
             
@@ -165,7 +237,6 @@ jobs:
               echo "posts_sent=0" >> $GITHUB_OUTPUT
             fi
             
-            # Clean up temporary files
             rm -f "$sorted_posts_file"
           else
             echo "No posts found to process"
@@ -173,7 +244,6 @@ jobs:
             echo "posts_sent=0" >> $GITHUB_OUTPUT
           fi
           
-          # Clean up temporary files
           rm -f "$temp_posts_file"
 
       - name: Save last notified post date cache
