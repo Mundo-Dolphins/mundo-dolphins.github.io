@@ -126,12 +126,25 @@ jobs:
             jq -c '.[] | select(.stype == 0) | select(.PublishedOn != null and .BlueSkyPost.Description != null and .BlueSkyPost.BskyPost != null)' "$file" >> "$temp_posts_file"
           done
           
-          # Sort all posts by publication date and process them
+          # Sort and deduplicate all posts by post URL (BlueSkyPost.BskyPost) before processing
           if [ -s "$temp_posts_file" ]; then
-            echo "Found posts to process. Sorting by publication date..."
-            sorted_posts_file=$(mktemp)
-            jq -s 'sort_by(.PublishedOn)' "$temp_posts_file" > "$sorted_posts_file"
-            
+            echo "Found posts to process. Deduplicating and sorting by publication date..."
+            dedup_posts_file=$(mktemp)
+            # unique_by requires reading as array; we keep only posts with a non-empty BskyPost
+            jq -s '[.[] | select(.BlueSkyPost.BskyPost != null and .BlueSkyPost.BskyPost != "") ] | unique_by(.BlueSkyPost.BskyPost) | sort_by(.PublishedOn)' "$temp_posts_file" > "$dedup_posts_file"
+
+            # if dedup result is empty, no posts to process
+            if [ ! -s "$dedup_posts_file" ]; then
+              echo "No valid posts after deduplication"
+              echo "latest_notified_date=" >> $GITHUB_OUTPUT
+              echo "posts_sent=0" >> $GITHUB_OUTPUT
+              rm -f "$dedup_posts_file"
+              rm -f "$temp_posts_file"
+              exit 0
+            fi
+
+            sorted_posts_file="$dedup_posts_file"
+
             total_posts=$(jq length "$sorted_posts_file")
             echo "Total posts to evaluate: $total_posts"
             
