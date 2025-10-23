@@ -259,9 +259,18 @@ jobs:
           
           rm -f "$temp_posts_file"
 
+      - name: Delay to reduce cache save race
+        if: steps.detect_posts.outputs.has_new_posts == 'true' && steps.send_posts.outputs.posts_sent > 0
+        run: |
+          # Sleep a small random amount to reduce the chance of multiple concurrent jobs trying to reserve the same cache key
+          jitter=$((RANDOM % 10))
+          echo "Sleeping for $jitter seconds to avoid cache reservation collision"
+          sleep "$jitter"
+
       - name: Save last notified post date cache
         if: steps.detect_posts.outputs.has_new_posts == 'true' && steps.send_posts.outputs.posts_sent > 0
         uses: actions/cache/save@v4
+        continue-on-error: true
         with:
           path: last_notified_post_date.txt
           key: last-notified-post-date-${{ github.repository }}
