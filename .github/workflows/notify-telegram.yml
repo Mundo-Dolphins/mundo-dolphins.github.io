@@ -28,120 +28,17 @@ jobs:
           fetch-depth: 2
 
       - name: 🔍 Detect new articles/podcasts
-        id: detect_content
+        id: detect_new
         run: |
-          echo "🔍 Searching for new markdown files in content/noticias and content/podcast..."
-          # Find .md files added in the latest commit on main
-          git fetch origin main
-          LAST_COMMIT=$(git rev-parse origin/main)
-          CURRENT_COMMIT=$(git rev-parse HEAD)
-          NEW_MARKDOWN=$(git diff --name-status $LAST_COMMIT $CURRENT_COMMIT | grep -E '^A\s+content/(noticias|podcast)/.*\.md$' | awk '{print $2}')
-
-          ALL_CONTENT="[]"
-
-          if [ -n "$NEW_MARKDOWN" ]; then
-            echo "🆕 New markdown files detected:"
-            echo "$NEW_MARKDOWN"
-            # Install yq for YAML frontmatter extraction
-            sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-            sudo chmod +x /usr/local/bin/yq
-            for file in $NEW_MARKDOWN; do
-              if [ -f "$file" ]; then
-                echo "📝 Processing: $file"
-                FRONTMATTER=$(sed -n '/^---$/,/^---$/p' "$file" | sed '1d;$d')
-                TITLE=$(echo "$FRONTMATTER" | yq '.title' 2>/dev/null | sed 's/^null$//' || echo "New Article")
-                AUTHOR=$(echo "$FRONTMATTER" | yq '.author' 2>/dev/null | sed 's/^null$//' || echo "Mundo Dolphins")
-                SLUG=$(echo "$FRONTMATTER" | yq '.slug' 2>/dev/null | sed 's/^null$//' || echo "")
-                if [[ "$file" == content/podcast/* ]]; then
-                  SECTION="podcast"
-                else
-                  SECTION="news"
-                fi
-                URL="https://mundodolphins.es/${SECTION}/${SLUG}/"
-                ARTICLE_JSON=$(jq -n \
-                  --arg title "$TITLE" \
-                  --arg url "$URL" \
-                  --arg author "$AUTHOR" \
-                  --arg section "$SECTION" \
-                  '{title: $title, url: $url, author: $author, section: $section}')
-                ALL_CONTENT=$(echo "$ALL_CONTENT" | jq ". + [$ARTICLE_JSON]")
-                echo "✅ Article processed: $TITLE"
-                echo "🔗 URL: $URL"
-              fi
-            done
-          else
-            echo "ℹ️ No new markdown files detected in the specified paths."
-          fi
-
-          CONTENT_COUNT=$(echo "$ALL_CONTENT" | jq length)
-          echo "has_content=$([ "$CONTENT_COUNT" -gt 0 ] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
-          echo "content_count=$CONTENT_COUNT" >> $GITHUB_OUTPUT
-          echo "$ALL_CONTENT" > all_content.json
-          echo "📊 Total articles to notify: $CONTENT_COUNT"
+          chmod +x scripts/notify/detect_new_articles.sh
+          scripts/notify/detect_new_articles.sh
 
       - name: 📱 Send notifications to Telegram
-        if: steps.detect_content.outputs.has_content == 'true'
+        if: steps.detect_new.outputs.has_new_articles == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
-            echo "❌ Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables"
-            exit 1
-          fi
-          
-          ALL_CONTENT=$(cat all_content.json)
-          CONTENT_COUNT="${{ steps.detect_content.outputs.content_count }}"
-          
-          echo "📱 Sending $CONTENT_COUNT notifications to Telegram..."
-          
-          for i in $(seq 0 $((CONTENT_COUNT - 1))); do
-            ITEM=$(echo "$ALL_CONTENT" | jq -r ".[$i]")
-            TITLE=$(echo "$ITEM" | jq -r '.title')
-            URL=$(echo "$ITEM" | jq -r '.url')
-            SECTION=$(echo "$ITEM" | jq -r '.section')
-            
-            if [ "$SECTION" = "podcast" ]; then
-              MESSAGE="🎙️ Nuevo episodio de podcast publicado: *${TITLE}*%0A🔗 ${URL}"
-            else
-              MESSAGE="🆕 Nuevo artículo publicado en la web: *${TITLE}*%0A🔗 ${URL}"
-            fi
-            
-            echo "📤 Sending notification $((i+1))/$CONTENT_COUNT: $TITLE"
-            
-            # Send message with retry logic
-            MAX_RETRIES=3
-            RETRY_COUNT=0
-            
-            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-              RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-                -d chat_id="$TELEGRAM_CHAT_ID" \
-                -d text="$MESSAGE" \
-                -d parse_mode="Markdown")
-              
-              OK=$(echo "$RESPONSE" | jq -r '.ok')
-              if [ "$OK" = "true" ]; then
-                echo "✅ Successfully sent notification $((i+1))/$CONTENT_COUNT"
-                break
-              fi
-              
-              ERROR_CODE=$(echo "$RESPONSE" | jq -r '.error_code // empty')
-              if [ "$ERROR_CODE" = "429" ]; then
-                RETRY_AFTER=$(echo "$RESPONSE" | jq -r '.parameters.retry_after // 30')
-                echo "⏳ Rate limit hit. Waiting $RETRY_AFTER seconds..."
-                sleep $RETRY_AFTER
-              else
-                RETRY_COUNT=$((RETRY_COUNT + 1))
-                echo "⚠️ Attempt $RETRY_COUNT/$MAX_RETRIES failed. Response: $RESPONSE"
-                if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
-                  sleep 2
-                fi
-              fi
-            done
-            
-            if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
-              echo "❌ Failed to send notification after $MAX_RETRIES attempts"
-            fi
-            
-            # Small delay between messages
-            sleep 1
-          done
-          
-          echo "🎉 Notification process completed!"
+          chmod +x scripts/notify/send_to_telegram.sh
+          # pass articles.json explicitly; NOTIFICATION_DELAY_SEC can be set in the workflow env if desired
+          ./scripts/notify/send_to_telegram.sh articles.json
