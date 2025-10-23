@@ -11,9 +11,13 @@ set -euo pipefail
 
 ARTICLES_FILE="${1:-articles.json}"
 
-if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
-  echo "❌ TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set"
-  exit 1
+if [ "${DRY_RUN:-0}" != "1" ]; then
+  if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+    echo "❌ TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set (or set DRY_RUN=1 for testing)"
+    exit 1
+  fi
+else
+  echo "DRY_RUN=1: skipping credential checks"
 fi
 
 if [ ! -f "$ARTICLES_FILE" ]; then
