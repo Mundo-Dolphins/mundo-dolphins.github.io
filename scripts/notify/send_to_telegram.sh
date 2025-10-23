@@ -10,6 +10,7 @@ set -euo pipefail
 # - NOTIFICATION_DELAY_SEC optional delay between messages (default 1)
 
 ARTICLES_FILE="${1:-articles.json}"
+VERBOSE=${VERBOSE:-0}
 
 if [ "${DRY_RUN:-0}" != "1" ]; then
   if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
@@ -60,10 +61,20 @@ for i in $(seq 0 $((CONTENT_COUNT - 1))); do
       -d chat_id="${TELEGRAM_CHAT_ID}" \
       -d text="${MESSAGE}" \
       -d parse_mode="Markdown")
+    if [ "$VERBOSE" -eq 1 ]; then
+      echo "--- VERBOSE: message body ---"
+      echo "$MESSAGE"
+      echo "--- END message body ---"
+    fi
 
     OK=$(echo "$RESPONSE" | jq -r '.ok // false')
     if [ "$OK" = "true" ]; then
       echo "✅ Successfully sent notification $((i+1))/$CONTENT_COUNT"
+      if [ "$VERBOSE" -eq 1 ]; then
+        echo "--- VERBOSE: Telegram response ---"
+        echo "$RESPONSE" | sed -n '1,200p'
+        echo "--- END response ---"
+      fi
       break
     fi
 
