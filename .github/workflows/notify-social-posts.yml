@@ -80,13 +80,19 @@ jobs:
           
           echo "Effective timestamp filter: $LAST_TIMESTAMP ($(date -u -d @$LAST_TIMESTAMP +%Y-%m-%dT%H:%M:%SZ))"
           
-          # Create a temporary file to store all posts to process
+          # Create a temporary file to store all posts to process (NDJSON)
           temp_posts_file=$(mktemp)
-          
+
           for file in $(cat changed_posts_files.txt); do
             echo "Processing $file..."
             jq -c '.[] | select(.stype == 0) | select(.PublishedOn != null and .BlueSkyPost.Description != null and .BlueSkyPost.BskyPost != null)' "$file" >> "$temp_posts_file"
           done
+
+          # Filter out posts that were already shared in Telegram channel messages
+          filtered_posts_json=$(mktemp)
+          chmod +x scripts/notify/filter_posts_against_telegram.sh
+          # script will write a JSON array of remaining posts
+          scripts/notify/filter_posts_against_telegram.sh "$temp_posts_file" "$filtered_posts_json"
           
           # Sort and deduplicate all posts by post URL (BlueSkyPost.BskyPost) before processing
           if [ -s "$temp_posts_file" ]; then
@@ -131,44 +137,42 @@ jobs:
               if [ "$post_timestamp" -gt "$LAST_TIMESTAMP" ]; then
                 echo "Processing post $((i+1))/$total_posts published at: $published"
                 if [ -n "$text" ] && [ -n "$url" ]; then
-                  # Escape special characters for Telegram Markdown V2
-                  # Replace problematic characters that break Markdown
-                  escaped_text=$(echo "$text" | sed 's/\\/\\\\/g' | sed 's/_/\\_/g' | sed 's/\*/\\*/g' | sed 's/\[/\\[/g' | sed 's/]/\\]/g' | sed 's/(/\\(/g' | sed 's/)/\\)/g' | sed 's/~/\\~/g' | sed 's/`/\\`/g' | sed 's/>/\\>/g' | sed 's/#/\\#/g' | sed 's/+/\\+/g' | sed 's/-/\\-/g' | sed 's/=/\\=/g' | sed 's/|/\\|/g' | sed 's/{/\\{/g' | sed 's/}/\\}/g' | sed 's/\./\\./g' | sed 's/!/\\!/g')
-                  
-                  # Create message with proper formatting
-                  message="${escaped_text}%0A%0A🔗 ${url}"
-                  echo "Sending post to Telegram: $url"
-                  
+                  # Use HTML <pre> block to avoid MarkdownV2 parsing issues. Escape HTML special characters.
+                  escaped_html=$(echo "$text" | sed 's/&/\&amp;/g' | sed 's/</\&lt;/g' | sed 's/>/\&gt;/g')
+                  # Wrap in <pre> so Telegram treats content as preformatted text (no markdown parsing)
+                  message_html="<pre>${escaped_html}</pre>%0A%0A🔗 ${url}"
+                  echo "Sending post to Telegram: $url (using HTML <pre>)"
+
                   retry_count=0
                   max_retries=3
-                  
+
                   while [ $retry_count -lt $max_retries ]; do
                     response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
                       -d chat_id="$TELEGRAM_CHAT_ID" \
-                      -d text="$message" \
-                      -d parse_mode="MarkdownV2" \
+                      -d text="$message_html" \
+                      -d parse_mode="HTML" \
                       -d disable_web_page_preview=false)
-                    
+
                     ok=$(echo "$response" | jq -r '.ok')
-                    
+
                     if [ "$ok" = "true" ]; then
                       echo "✅ Successfully sent post $((i+1))/$total_posts: $url"
                       latest_notified_date="$published"
                       posts_sent=$((posts_sent + 1))
                       break
                     fi
-                    
+
                     error_code=$(echo "$response" | jq -r '.error_code // empty')
                     error_desc=$(echo "$response" | jq -r '.description // empty')
-                    
+
                     if [ "$error_code" = "429" ]; then
                       retry_after=$(echo "$response" | jq -r '.parameters.retry_after // 30')
                       echo "⏳ Rate limit hit (429). Waiting $retry_after seconds..."
                       sleep $retry_after
                       retry_count=$((retry_count + 1))
-                    elif [ "$error_code" = "400" ] && [[ "$error_desc" == *"parse entities"* ]]; then
-                      echo "⚠️ Markdown parsing error. Retrying without formatting..."
-                      # Retry without Markdown formatting
+                    else
+                      echo "⚠️ HTML send failed: $error_desc. Retrying once with plain text..."
+                      # Retry once in plain text mode without parse_mode
                       simple_message="${text}%0A%0A🔗 ${url}"
                       response=$(curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
                         -d chat_id="$TELEGRAM_CHAT_ID" \
@@ -182,10 +186,6 @@ jobs:
                         echo "❌ Failed to send even without formatting: $url"
                         echo "Response: $response"
                       fi
-                      break
-                    else
-                      echo "❌ Telegram error sending post $((i+1))/$total_posts: $url"
-                      echo "Error: $error_desc"
                       break
                     fi
                   done
