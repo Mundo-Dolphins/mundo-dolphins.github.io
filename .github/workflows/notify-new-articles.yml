@@ -28,7 +28,9 @@ jobs:
       run: |
         echo "🔍 Checking for new articles..."
         
-        # Get changed files in the push (both added and modified)
+        # Detect two types of content:
+        # 1. Markdown articles in content/noticias/ (added/modified .md files)
+        # 2. Podcast episodes in data/season_*.json files (episodes are added to JSON, not as separate .md files)
         NEW_MARKDOWN=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep -E '^content/noticias/.*\.md$' || true)
         NEW_SEASON_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep -E '^data/season_.*\.json$' || true)
         
@@ -98,6 +100,8 @@ jobs:
         fi
         
         # Process podcast episodes from season JSON files
+        # Podcast episodes are stored in data/season_*.json files, not as individual markdown files
+        # We need to compare the current and previous versions to find new episodes
         if [ -n "$NEW_SEASON_FILES" ]; then
           echo "🆕 New podcast episodes detected in season files:"
           echo "$NEW_SEASON_FILES"
