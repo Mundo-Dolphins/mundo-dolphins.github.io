@@ -164,10 +164,15 @@ jobs:
                     if [ -z "$FOUND" ]; then
                       echo "🎙️ New podcast episode found: $TITLE"
                       
+                      # Extract slug from ivoox URL to build Mundo Dolphins URL
+                      # Pattern: https://www.ivoox.com/SLUG-audios-mp3_rf_NUMBER_1.html
+                      SLUG=$(echo "$LINK" | sed -n 's|.*ivoox\.com/\(.*\)-audios-mp3_rf_.*|\1|p')
+                      PODCAST_URL="https://mundodolphins.es/podcast/${SLUG}/"
+                      
                       # Create article JSON object
                       ARTICLE_JSON=$(jq -n \
                         --arg title "$TITLE" \
-                        --arg url "$LINK" \
+                        --arg url "$PODCAST_URL" \
                         --arg author "Mundo Dolphins" \
                         --arg date "$DATE" \
                         --arg section "podcast" \
@@ -177,7 +182,7 @@ jobs:
                       ARTICLES_JSON=$(echo "$ARTICLES_JSON" | jq ". + [$ARTICLE_JSON]")
                       
                       echo "✅ Podcast episode processed: $TITLE"
-                      echo "🔗 URL: $LINK"
+                      echo "🔗 URL: $PODCAST_URL"
                     fi
                   fi
                 done < <(echo "$CURRENT_EPISODES")
