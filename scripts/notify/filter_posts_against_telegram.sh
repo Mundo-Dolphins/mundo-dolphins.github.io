@@ -17,6 +17,9 @@ fi
 
 echo "🔍 Filtering posts in $IN_FILE against Telegram message history"
 
+# Verbose logging control
+VERBOSE=${VERBOSE:-0}
+
 # If bot credentials missing, fallback: copy input -> out as JSON array
 if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
   echo "⚠️ TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set; skipping Telegram deduplication"
@@ -45,12 +48,24 @@ if [ -z "$MSG_URLS" ]; then
   exit 0
 fi
 
-echo "Found URLs in Telegram messages:"
-echo "$MSG_URLS" | sed 's/^/ - /'
+MSG_COUNT=$(echo "$MSG_URLS" | wc -l | tr -d ' ')
+echo "Found $MSG_COUNT URLs in Telegram messages:"
+if [ "$VERBOSE" -eq 1 ]; then
+  echo "$MSG_URLS" | sed 's/^/ - /' | sed -n '1,20p'
+else
+  echo "$MSG_URLS" | sed 's/^/ - /' | sed -n '1,5p'
+  if [ "$MSG_COUNT" -gt 5 ]; then
+    echo "  ... and $((MSG_COUNT-5)) more"
+  fi
+fi
 
 # Build jq filter: for each post, check BlueSkyPost.BskyPost not in the list
 TMP_URLS=$(mktemp)
 echo "$MSG_URLS" | sort -u > "$TMP_URLS"
+
+# Count posts in input
+TOTAL_POSTS=$(wc -l < "$IN_FILE" | tr -d ' ')
+echo "Total posts in input NDJSON: $TOTAL_POSTS"
 
 # Convert NDJSON input to array and filter
 jq -n --argfile posts "$IN_FILE" --slurpfile seen_urls "$TMP_URLS" '
@@ -59,41 +74,63 @@ jq -n --argfile posts "$IN_FILE" --slurpfile seen_urls "$TMP_URLS" '
 
 # We'll implement filtering by reading URLs into shell and using jq select
 FILTERED=$(mktemp)
+DISCARDED_TMP=$(mktemp)
 python3 - <<'PY'
 import sys, json
-infile=sys.argv[1]
-tmpurls=sys.argv[2]
-out=sys.argv[3]
-seen=set()
+infile = sys.argv[1]
+tmpurls = sys.argv[2]
+out = sys.argv[3]
+seen = set()
 with open(tmpurls) as f:
-    for l in f:
-        seen.add(l.strip())
-arr=[]
+  for l in f:
+    ln = l.strip()
+    if ln:
+      seen.add(ln)
+arr = []
+discarded = []
 with open(infile) as f:
-    for line in f:
-        line=line.strip()
-        if not line: continue
-        obj=json.loads(line)
-        # Try to find post URL under BlueSkyPost.BskyPost or .BlueSkyPost.BskyPost
-        url=None
-        # nested lookup safe
-        try:
-            url=obj.get('BlueSkyPost', {}).get('BskyPost')
-        except Exception:
-            url=None
-        if not url:
-            # also try top-level 'BskyPost' or 'link'
-            url=obj.get('link') or obj.get('BskyPost')
-        if url and url in seen:
-            # skip
-            continue
-        arr.append(obj)
+  for line in f:
+    line = line.strip()
+    if not line:
+      continue
+    try:
+      obj = json.loads(line)
+    except Exception:
+      # skip invalid json lines
+      continue
+    url = None
+    try:
+      url = obj.get('BlueSkyPost', {}).get('BskyPost')
+    except Exception:
+      url = None
+    if not url:
+      url = obj.get('link') or obj.get('BskyPost') or ''
+    if url and url in seen:
+      discarded.append(url)
+      continue
+    arr.append(obj)
 with open(out, 'w') as f:
-    json.dump(arr, f)
+  json.dump(arr, f)
+with open(out + '.discarded', 'w') as f:
+  json.dump(discarded, f)
 PY "$IN_FILE" "$TMP_URLS" "$FILTERED"
 
 # Ensure output is a JSON array
 jq '.' "$FILTERED" > "$OUT_FILE"
 echo "✅ Wrote filtered posts to $OUT_FILE"
 
-rm -f "$TMP_URLS" "$FILTERED"
+# Report filtering stats
+DISCARDED_FILE="$FILTERED.discarded"
+if [ -f "$DISCARDED_FILE" ]; then
+  DISC_COUNT=$(jq length "$DISCARDED_FILE" 2>/dev/null || echo 0)
+else
+  DISC_COUNT=0
+fi
+REMAINING=$(jq length "$OUT_FILE" 2>/dev/null || echo 0)
+echo "Filtered: $DISC_COUNT discarded, $REMAINING remaining"
+if [ "$VERBOSE" -eq 1 ] && [ "$DISC_COUNT" -gt 0 ]; then
+  echo "Discarded URLs (sample):"
+  jq -r '.[]' "$DISCARDED_FILE" | sed 's/^/ - /' | sed -n '1,20p'
+fi
+
+rm -f "$TMP_URLS" "$FILTERED" "$DISCARDED_FILE"
