@@ -164,9 +164,8 @@ jobs:
                     if [ -z "$FOUND" ]; then
                       echo "🎙️ New podcast episode found: $TITLE"
                       
-                      # Extract slug from ivoox URL to build Mundo Dolphins URL
-                      # Pattern: https://www.ivoox.com/SLUG-audios-mp3_rf_NUMBER_1.html
-                      SLUG=$(echo "$LINK" | sed -n 's|.*ivoox\.com/\(.*\)-audios-mp3_rf_.*|\1|p')
+                      # Generate slug using Python for robust Unicode handling (no Go dependency)
+                      SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
                       PODCAST_URL="https://mundodolphins.es/podcast/${SLUG}/"
                       
                       # Create article JSON object
