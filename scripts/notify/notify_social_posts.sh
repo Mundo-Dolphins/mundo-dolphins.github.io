@@ -83,8 +83,8 @@ else
     select(.BlueSkyPost.Description != null) |
     select(.BlueSkyPost.BskyPost != null)
   ' "$POSTS_FILE" | while IFS= read -r post; do
-    URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost')
-    if ! grep -Fxq "$URL" "$KNOWN_URLS" 2>/dev/null; then
+    URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost' | xargs)
+    if ! grep -Fq "$URL" "$KNOWN_URLS" 2>/dev/null; then
       echo "$post"
     fi
   done > "$TEMP_POSTS"
