@@ -139,9 +139,9 @@ while IFS= read -r post; do
       SENT_COUNT=$((SENT_COUNT + 1))
       
       # Update latest date
-      # Note: String comparison with '\>' works correctly for ISO 8601 formatted dates
+      # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
       # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
-      if [ -z "$LATEST_DATE" ] || [ "$POST_DATE" \> "$LATEST_DATE" ]; then
+      if [ -z "$LATEST_DATE" ] || [[ "$POST_DATE" > "$LATEST_DATE" ]]; then
         LATEST_DATE="$POST_DATE"
       fi
       
@@ -154,9 +154,9 @@ while IFS= read -r post; do
   else
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}..."
     SENT_COUNT=$((SENT_COUNT + 1))
-    # Note: String comparison with '\>' works correctly for ISO 8601 formatted dates
+    # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
     # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
-    if [ -z "$LATEST_DATE" ] || [ "$POST_DATE" \> "$LATEST_DATE" ]; then
+    if [ -z "$LATEST_DATE" ] || [[ "$POST_DATE" > "$LATEST_DATE" ]]; then
       LATEST_DATE="$POST_DATE"
     fi
   fi
