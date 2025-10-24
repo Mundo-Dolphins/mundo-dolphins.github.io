@@ -2,58 +2,58 @@
 set -euo pipefail
 
 # notify_social_posts.sh
-# Script principal que detecta y envía posts sociales nuevos a Telegram
-# Criterios:
-# 1. Lee solo data/posts_1.json (posts más recientes cronológicamente)
-# 2. Filtra posts por fecha usando cache (.github/notifications/last_post_date.txt)
-# 3. Si no hay cache, consulta Telegram para ver qué URLs ya están publicadas
-# 4. Después de enviar, actualiza la cache con la fecha del post más reciente enviado
+# Main script that detects and sends new social posts to Telegram
+# Criteria:
+# 1. Read only data/posts_1.json (most recent posts chronologically)
+# 2. Filter posts by date using cache (.github/notifications/last_post_date.txt)
+# 3. If no cache exists, query Telegram to see which URLs are already published
+# 4. After sending, update cache with the date of the most recent post sent
 
 CACHE_FILE=".github/notifications/last_post_date.txt"
 POSTS_FILE="data/posts_1.json"
 
-# Verificar que existe el archivo de posts
+# Verify posts file exists
 if [ ! -f "$POSTS_FILE" ]; then
-  echo "❌ No se encontró $POSTS_FILE"
+  echo "❌ Posts file not found: $POSTS_FILE"
   exit 1
 fi
 
-# Crear directorio de notificaciones si no existe
+# Create notifications directory if it doesn't exist
 mkdir -p .github/notifications
 
-echo "📋 Leyendo posts desde $POSTS_FILE"
+echo "📋 Reading posts from $POSTS_FILE"
 
-# Paso 1: Leer la fecha del último post enviado desde cache
+# Step 1: Read last sent post date from cache
 LAST_DATE=""
 if [ -f "$CACHE_FILE" ]; then
   LAST_DATE=$(cat "$CACHE_FILE")
-  echo "📅 Última fecha en cache: $LAST_DATE"
+  echo "📅 Last cached date: $LAST_DATE"
 else
-  echo "⚠️ No hay fecha en cache"
+  echo "⚠️ No cached date found"
 fi
 
-# Paso 2: Obtener lista de URLs ya publicadas en Telegram (fallback si no hay cache)
+# Step 2: Get list of already published URLs from Telegram (fallback if no cache)
 KNOWN_URLS=$(mktemp)
 if [ -z "$LAST_DATE" ]; then
-  echo "📡 Consultando Telegram para obtener URLs ya publicadas..."
+  echo "📡 Querying Telegram for already published URLs..."
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
     UPDATES=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates?limit=100" || echo '{"ok":false}')
     if echo "$UPDATES" | jq -e '.ok' >/dev/null 2>&1; then
       echo "$UPDATES" | jq -r '.result[]?.message?.text // empty' | \
         grep -oE 'https?://[^[:space:]]+' | sort -u > "$KNOWN_URLS"
-      echo "✅ Se encontraron $(wc -l < "$KNOWN_URLS" | tr -d ' ') URLs en Telegram"
+      echo "✅ Found $(wc -l < "$KNOWN_URLS" | tr -d ' ') URLs in Telegram"
     else
-      echo "⚠️ No se pudieron obtener mensajes de Telegram"
+      echo "⚠️ Could not retrieve messages from Telegram"
     fi
   else
-    echo "⚠️ TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID no configurados"
+    echo "⚠️ TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not configured"
   fi
 fi
 
-# Paso 3: Filtrar posts nuevos
+# Step 3: Filter new posts
 TEMP_POSTS=$(mktemp)
 if [ -n "$LAST_DATE" ]; then
-  # Filtrar por fecha
+  # Filter by date
   jq -c --arg last_date "$LAST_DATE" '
     .[] | 
     select(.stype == 0) |
@@ -63,7 +63,7 @@ if [ -n "$LAST_DATE" ]; then
     select(.PublishedOn > $last_date)
   ' "$POSTS_FILE" > "$TEMP_POSTS"
 else
-  # Filtrar por URLs conocidas
+  # Filter by known URLs
   jq -c '
     .[] | 
     select(.stype == 0) |
@@ -78,12 +78,12 @@ else
   done > "$TEMP_POSTS"
 fi
 
-# Contar posts nuevos
+# Count new posts
 NEW_COUNT=$(wc -l < "$TEMP_POSTS" | tr -d ' ')
-echo "📊 Posts nuevos encontrados: $NEW_COUNT"
+echo "📊 New posts found: $NEW_COUNT"
 
 if [ "$NEW_COUNT" -eq 0 ]; then
-  echo "✅ No hay posts nuevos para enviar"
+  echo "✅ No new posts to send"
   rm -f "$TEMP_POSTS" "$KNOWN_URLS"
   echo "has_new_posts=false"
   exit 0
@@ -92,8 +92,8 @@ fi
 echo "has_new_posts=true"
 echo "posts_count=$NEW_COUNT"
 
-# Paso 4: Enviar posts a Telegram
-echo "📤 Enviando posts a Telegram..."
+# Step 4: Send posts to Telegram
+echo "📤 Sending posts to Telegram..."
 
 LATEST_DATE=""
 SENT_COUNT=0
@@ -103,12 +103,12 @@ while IFS= read -r post; do
   URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost')
   POST_DATE=$(echo "$post" | jq -r '.PublishedOn')
   
-  # Construir mensaje
+  # Build message
   MESSAGE="🐬 ${DESCRIPTION}
 
 🔗 ${URL}"
   
-  # Enviar a Telegram
+  # Send to Telegram
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
     ENCODED_MESSAGE=$(printf '%s' "$MESSAGE" | jq -sRr '@uri')
     
@@ -120,19 +120,19 @@ while IFS= read -r post; do
       -d "disable_web_page_preview=false")
     
     if echo "$RESPONSE" | jq -e '.ok' >/dev/null 2>&1; then
-      echo "✅ Enviado: ${DESCRIPTION:0:50}..."
+      echo "✅ Sent: ${DESCRIPTION:0:50}..."
       SENT_COUNT=$((SENT_COUNT + 1))
       
-      # Actualizar última fecha
+      # Update latest date
       if [ -z "$LATEST_DATE" ] || [ "$POST_DATE" \> "$LATEST_DATE" ]; then
         LATEST_DATE="$POST_DATE"
       fi
       
-      # Pequeña pausa entre mensajes
+      # Small pause between messages
       sleep 2
     else
-      echo "❌ Error al enviar: ${DESCRIPTION:0:50}..."
-      echo "Respuesta: $RESPONSE"
+      echo "❌ Error sending: ${DESCRIPTION:0:50}..."
+      echo "Response: $RESPONSE"
     fi
   else
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}..."
@@ -143,15 +143,15 @@ while IFS= read -r post; do
   fi
 done < "$TEMP_POSTS"
 
-echo "📊 Posts enviados: $SENT_COUNT de $NEW_COUNT"
+echo "📊 Posts sent: $SENT_COUNT of $NEW_COUNT"
 
-# Paso 5: Actualizar cache con la fecha del último post enviado
+# Step 5: Update cache with the date of the last sent post
 if [ -n "$LATEST_DATE" ] && [ "$SENT_COUNT" -gt 0 ]; then
   echo "$LATEST_DATE" > "$CACHE_FILE"
-  echo "💾 Cache actualizada con fecha: $LATEST_DATE"
+  echo "💾 Cache updated with date: $LATEST_DATE"
 fi
 
-# Limpiar archivos temporales
+# Clean up temporary files
 rm -f "$TEMP_POSTS" "$KNOWN_URLS"
 
-echo "✅ Proceso completado"
+echo "✅ Process completed"
