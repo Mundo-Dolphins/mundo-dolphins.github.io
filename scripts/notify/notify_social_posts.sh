@@ -84,9 +84,7 @@ else
     select(.BlueSkyPost.BskyPost != null)
   ' "$POSTS_FILE" | while IFS= read -r post; do
     URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost' | xargs)
-    # grep returns exit code 1 when no match, which would fail with set -e
-    # Use || true to prevent script exit
-    if ! grep -Fq "$URL" "$KNOWN_URLS" 2>/dev/null || [ ! -s "$KNOWN_URLS" ]; then
+    if ! grep -Fq "$URL" "$KNOWN_URLS" 2>/dev/null; then
       echo "$post"
     fi
   done > "$TEMP_POSTS"
@@ -157,7 +155,7 @@ while IFS= read -r post; do
     SENT_COUNT=$((SENT_COUNT + 1))
     # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
     # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
-    if [ -z "$LATEST_DATE" ] || [[ "$POST_DATE" > "$LATEST_DATE" ]]; then
+    if [[ -z \"$LATEST_DATE\" ]] || [[ \"$POST_DATE\" > \"$LATEST_DATE\" ]]; then
       LATEST_DATE="$POST_DATE"
     fi
   fi
