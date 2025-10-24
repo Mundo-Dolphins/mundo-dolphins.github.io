@@ -33,15 +33,25 @@ else
 fi
 
 # Step 2: Get list of already published URLs from Telegram (fallback if no cache)
+# Note: This is a best-effort fallback. For production use, maintaining a persistent
+# cache file is the recommended approach as Telegram's getUpdates API has limitations.
 KNOWN_URLS=$(mktemp)
 if [ -z "$LAST_DATE" ]; then
   echo "📡 Querying Telegram for already published URLs..."
+  echo "⚠️ Note: Without cache, relying on Telegram history. First run may send duplicates."
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+    # getUpdates provides bot updates, which may not include all channel messages
+    # This is a best-effort approach; cache-based filtering is more reliable
     UPDATES=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates?limit=100" || echo '{"ok":false}')
     if echo "$UPDATES" | jq -e '.ok' >/dev/null 2>&1; then
       echo "$UPDATES" | jq -r '.result[]?.message?.text // empty' | \
         grep -oE 'https?://[^[:space:]]+' | sort -u > "$KNOWN_URLS"
-      echo "✅ Found $(wc -l < "$KNOWN_URLS" | tr -d ' ') URLs in Telegram"
+      FOUND_COUNT=$(wc -l < "$KNOWN_URLS" | tr -d ' ')
+      if [ "$FOUND_COUNT" -gt 0 ]; then
+        echo "✅ Found $FOUND_COUNT URLs in Telegram history"
+      else
+        echo "⚠️ No URLs found in Telegram history (may be first run or channel)"
+      fi
     else
       echo "⚠️ Could not retrieve messages from Telegram"
     fi
@@ -87,12 +97,16 @@ echo "📊 New posts found: $NEW_COUNT"
 if [ "$NEW_COUNT" -eq 0 ]; then
   echo "✅ No new posts to send"
   rm -f "$TEMP_POSTS" "$KNOWN_URLS"
-  echo "has_new_posts=false"
+  if [ -n "${GITHUB_OUTPUT:-}" ]; then
+    echo "has_new_posts=false" >> "$GITHUB_OUTPUT"
+  fi
   exit 0
 fi
 
-echo "has_new_posts=true"
-echo "posts_count=$NEW_COUNT"
+if [ -n "${GITHUB_OUTPUT:-}" ]; then
+  echo "has_new_posts=true" >> "$GITHUB_OUTPUT"
+  echo "posts_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
+fi
 
 # Step 4: Send posts to Telegram
 echo "📤 Sending posts to Telegram..."
@@ -112,12 +126,11 @@ while IFS= read -r post; do
   
   # Send to Telegram
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
-    ENCODED_MESSAGE=$(printf '%s' "$MESSAGE" | jq -sRr '@uri')
-    
+    # Use curl's --data-urlencode for proper form-data encoding
     RESPONSE=$(curl -s -X POST \
       "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-      -d "chat_id=${TELEGRAM_CHAT_ID}" \
-      -d "text=${ENCODED_MESSAGE}" \
+      --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+      --data-urlencode "text=${MESSAGE}" \
       -d "parse_mode=HTML" \
       -d "disable_web_page_preview=false")
     
