@@ -24,9 +24,9 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: .github/notifications/last_post_date.txt
-          key: social-posts-last-date-${{ github.run_id }}
+          key: social-posts-last-date
           restore-keys: |
-            social-posts-last-date-
+            social-posts-last-date
 
       - name: 📤 Detectar y enviar posts a Telegram
         id: notify
@@ -50,4 +50,4 @@ jobs:
         continue-on-error: true
         with:
           path: .github/notifications/last_post_date.txt
-          key: social-posts-last-date-${{ github.run_id }}
+          key: social-posts-last-date
