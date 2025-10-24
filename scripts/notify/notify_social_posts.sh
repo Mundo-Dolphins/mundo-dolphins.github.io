@@ -131,7 +131,6 @@ while IFS= read -r post; do
       "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
       --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
       --data-urlencode "text=${MESSAGE}" \
-      -d "parse_mode=HTML" \
       -d "disable_web_page_preview=false")
     
     if echo "$RESPONSE" | jq -e '.ok' >/dev/null 2>&1; then
