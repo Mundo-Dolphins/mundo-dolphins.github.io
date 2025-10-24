@@ -5,102 +5,49 @@ on:
     branches: [ main ]
     paths:
       - 'data/posts_*.json'
+      - '.github/workflows/notify-social-posts.yml'
+
+concurrency:
+  group: notify-social-posts
+  cancel-in-progress: false
 
 jobs:
-  notify-telegram-social:
+  notify-social-posts:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: 🔄 Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 2
 
-      - name: Detect new social posts
-        id: detect_posts
-        run: |
-          chmod +x scripts/notify/detect_social_posts.sh
-          ./scripts/notify/detect_social_posts.sh
-          # read outputs written by the script (printed to stdout)
-          # the script prints lines like 'has_new_posts=true' and 'posts_count=N'
-          while read -r line; do
-            case "$line" in
-              has_new_posts=*) echo "${line}" >> $GITHUB_OUTPUT ;;
-              posts_count=*) echo "articles_count=${line#posts_count=}" >> $GITHUB_OUTPUT ;;
-            esac
-          done < <(./scripts/notify/detect_social_posts.sh)
-
-      - name: Restore last notified post date cache
-        id: cache_restore
+      - name: 📥 Restore cache (última fecha de post enviado)
         uses: actions/cache/restore@v4
         with:
-          path: last_notified_post_date.txt
-          key: last-notified-post-date-${{ github.repository }}
+          path: .github/notifications/last_post_date.txt
+          key: social-posts-last-date-${{ github.run_id }}
+          restore-keys: |
+            social-posts-last-date-
 
-      - name: Get last notified post date
-        id: last_notified
-        if: steps.detect_posts.outputs.has_new_posts == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f "last_notified_post_date.txt" ]; then
-            LAST_NOTIFIED_DATE=$(cat last_notified_post_date.txt)
-            echo "Found cached last notified post date: $LAST_NOTIFIED_DATE"
-            echo "last_notified_date=$LAST_NOTIFIED_DATE" >> $GITHUB_OUTPUT
-          else
-            echo "No cached date found. Getting last successful workflow run datetime as fallback..."
-            WORKFLOW_FILE=".github/workflows/notify-social-posts.yml"
-            LAST_RUN_JSON=$(gh api \
-              -H "Accept: application/vnd.github+json" \
-              "/repos/${GITHUB_REPOSITORY}/actions/workflows/$(basename $WORKFLOW_FILE)/runs?status=success&branch=${GITHUB_REF_NAME}&per_page=2" \
-              --jq '.workflow_runs | map(select(.id != ${{ github.run_id }})) | .[0]')
-            LAST_RUN_TIME=$(echo "$LAST_RUN_JSON" | jq -r '.updated_at // empty')
-            if [ -z "$LAST_RUN_TIME" ] || [ "$LAST_RUN_TIME" = "null" ]; then
-              echo "No previous successful run found. Will publish all posts."
-              echo "last_notified_date=" >> $GITHUB_OUTPUT
-            else
-              echo "Using last successful run finished at: $LAST_RUN_TIME"
-              echo "last_notified_date=$LAST_RUN_TIME" >> $GITHUB_OUTPUT
-            fi
-          fi
-
-      - name: Send Bluesky posts to Telegram
-        id: send_posts
-        if: steps.detect_posts.outputs.has_new_posts == 'true'
+      - name: 📤 Detectar y enviar posts a Telegram
+        id: notify
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          chmod +x scripts/notify/send_social_to_telegram.sh
-          # copy filtered file created by detect script
-          if [ ! -f filtered_posts.json ]; then
-            echo "No filtered_posts.json found; nothing to send"
-            echo "latest_notified_date=" >> $GITHUB_OUTPUT
-            echo "posts_sent=0" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          VERBOSE=0 DRY_RUN=0 ./scripts/notify/send_social_to_telegram.sh filtered_posts.json
-          # We can't easily extract last_notified_date from the send script; rely on the send script to write last_notified_post_date.txt if needed
-          if [ -f last_notified_post_date.txt ]; then
-            echo "latest_notified_date=$(cat last_notified_post_date.txt)" >> $GITHUB_OUTPUT
-            echo "posts_sent=1" >> $GITHUB_OUTPUT
-          else
-            # best effort: set posts_sent=0
-            echo "latest_notified_date=" >> $GITHUB_OUTPUT
-            echo "posts_sent=0" >> $GITHUB_OUTPUT
-          fi
+          chmod +x scripts/notify/notify_social_posts.sh
+          ./scripts/notify/notify_social_posts.sh
 
-      - name: Delay to reduce cache save race
-        if: steps.detect_posts.outputs.has_new_posts == 'true' && steps.send_posts.outputs.posts_sent > 0
+      - name: ⏱️ Delay para reducir colisión de cache
+        if: success()
         run: |
-          # Sleep a small random amount to reduce the chance of multiple concurrent jobs trying to reserve the same cache key
-          jitter=$((RANDOM % 10))
-          echo "Sleeping for $jitter seconds to avoid cache reservation collision"
+          jitter=$((RANDOM % 5 + 1))
+          echo "Esperando $jitter segundos para evitar colisión de cache"
           sleep "$jitter"
 
-      - name: Save last notified post date cache
-        if: steps.detect_posts.outputs.has_new_posts == 'true' && steps.send_posts.outputs.posts_sent > 0
+      - name: 💾 Guardar cache (última fecha de post enviado)
+        if: success()
         uses: actions/cache/save@v4
         continue-on-error: true
         with:
-          path: last_notified_post_date.txt
-          key: last-notified-post-date-${{ github.repository }}
+          path: .github/notifications/last_post_date.txt
+          key: social-posts-last-date-${{ github.run_id }}
