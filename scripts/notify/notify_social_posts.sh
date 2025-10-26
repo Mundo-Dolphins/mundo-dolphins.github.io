@@ -88,6 +88,11 @@ else
 fi
 
 
+# Step 3: Sort posts by date (oldest first) for chronological sending
+TEMP_SORTED=$(mktemp)
+jq -s 'sort_by(.PublishedOn)' "$TEMP_POSTS" | jq -c '.[]' > "$TEMP_SORTED"
+mv "$TEMP_SORTED" "$TEMP_POSTS"
+
 # Count new posts
 NEW_COUNT=$(wc -l < "$TEMP_POSTS" | tr -d ' ')
 echo "📊 New posts found: $NEW_COUNT"
@@ -106,7 +111,7 @@ if [ -n "${GITHUB_OUTPUT:-}" ]; then
   echo "posts_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 fi
 
-# Step 3: Send posts to Telegram
+# Step 4: Send posts to Telegram (in chronological order)
 echo "📤 Sending posts to Telegram..."
 
 LATEST_DATE=""
@@ -169,7 +174,7 @@ done < "$TEMP_POSTS"
 
 echo "📊 Posts sent: $SENT_COUNT of $NEW_COUNT"
 
-# Step 4: Update caches
+# Step 5: Update caches
 if [ "$SENT_COUNT" -gt 0 ]; then
   # Update date cache with the date of the last sent post
   if [ -n "$LATEST_DATE" ]; then
