@@ -5,12 +5,14 @@ set -euo pipefail
 # Main script that detects and sends new social posts to Telegram
 # Criteria:
 # 1. Read only data/posts_1.json (most recent posts chronologically)
-# 2. Filter posts by date using cache (.github/notifications/last_post_date.txt)
-# 3. If no cache exists, query Telegram to see which URLs are already published
-# 4. After sending, update cache with the date of the most recent post sent
+# 2. Filter posts using cache of last 20 sent URLs (.github/notifications/sent_urls_cache.txt)
+# 3. If no cache exists, filter by date using last_post_date.txt from previous successful run
+# 4. After sending, update cache with sent URLs (keep last 20)
 
-CACHE_FILE=".github/notifications/last_post_date.txt"
+DATE_CACHE_FILE=".github/notifications/last_post_date.txt"
+URL_CACHE_FILE=".github/notifications/sent_urls_cache.txt"
 POSTS_FILE="data/posts_1.json"
+MAX_CACHE_URLS=20
 
 # Verify posts file exists
 if [ ! -f "$POSTS_FILE" ]; then
@@ -23,47 +25,46 @@ mkdir -p .github/notifications
 
 echo "📋 Reading posts from $POSTS_FILE"
 
-# Step 1: Read last sent post date from cache
+# Step 1: Determine filtering method
+FILTER_METHOD=""
 LAST_DATE=""
-if [ -f "$CACHE_FILE" ]; then
-  LAST_DATE=$(cat "$CACHE_FILE")
-  echo "📅 Last cached date: $LAST_DATE"
+
+if [ -f "$URL_CACHE_FILE" ] && [ -s "$URL_CACHE_FILE" ]; then
+  FILTER_METHOD="url_cache"
+  CACHE_COUNT=$(wc -l < "$URL_CACHE_FILE" | tr -d ' ')
+  echo "📦 URL cache found with $CACHE_COUNT entries"
+elif [ -f "$DATE_CACHE_FILE" ] && [ -s "$DATE_CACHE_FILE" ]; then
+  FILTER_METHOD="date_cache"
+  LAST_DATE=$(cat "$DATE_CACHE_FILE")
+  echo "📅 Date cache found: $LAST_DATE"
 else
-  echo "⚠️ No cached date found"
+  echo "⚠️ No cache found. This appears to be the first run."
+  echo "⚠️ Will process all posts in $POSTS_FILE"
+  FILTER_METHOD="none"
 fi
 
-# Step 2: Get list of already published URLs from Telegram (fallback if no cache)
-# Note: This is a best-effort fallback. For production use, maintaining a persistent
-# cache file is the recommended approach as Telegram's getUpdates API has limitations.
-KNOWN_URLS=$(mktemp)
-if [ -z "$LAST_DATE" ]; then
-  echo "📡 Querying Telegram for already published URLs..."
-  echo "⚠️ Note: Without cache, relying on Telegram history. First run may send duplicates."
-  if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
-    # getUpdates provides bot updates, which may not include all channel messages
-    # This is a best-effort approach; cache-based filtering is more reliable
-    UPDATES=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates?limit=100" || echo '{"ok":false}')
-    if echo "$UPDATES" | jq -e '.ok' >/dev/null 2>&1; then
-      echo "$UPDATES" | jq -r '.result[]?.message?.text // empty' | \
-        grep -oE 'https?://[^[:space:]]+' | sort -u > "$KNOWN_URLS"
-      FOUND_COUNT=$(wc -l < "$KNOWN_URLS" | tr -d ' ')
-      if [ "$FOUND_COUNT" -gt 0 ]; then
-        echo "✅ Found $FOUND_COUNT URLs in Telegram history"
-      else
-        echo "⚠️ No URLs found in Telegram history (may be first run or channel)"
-      fi
-    else
-      echo "⚠️ Could not retrieve messages from Telegram"
-    fi
-  else
-    echo "⚠️ TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not configured"
-  fi
-fi
 
-# Step 3: Filter new posts
+# Step 2: Filter new posts based on cache method
 TEMP_POSTS=$(mktemp)
-if [ -n "$LAST_DATE" ]; then
-  # Filter by date
+
+if [ "$FILTER_METHOD" = "url_cache" ]; then
+  echo "🔍 Filtering by URL cache..."
+  jq -c '
+    .[] | 
+    select(.stype == 0) |
+    select(.PublishedOn != null) |
+    select(.BlueSkyPost.Description != null) |
+    select(.BlueSkyPost.BskyPost != null)
+  ' "$POSTS_FILE" | while IFS= read -r post; do
+    URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost' | xargs)
+    # Check if URL is NOT in cache
+    if ! grep -Fxq "$URL" "$URL_CACHE_FILE" 2>/dev/null; then
+      echo "$post"
+    fi
+  done > "$TEMP_POSTS"
+  
+elif [ "$FILTER_METHOD" = "date_cache" ]; then
+  echo "🔍 Filtering by date cache..."
   # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
   # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
   jq -c --arg last_date "$LAST_DATE" '
@@ -74,23 +75,18 @@ if [ -n "$LAST_DATE" ]; then
     select(.BlueSkyPost.BskyPost != null) |
     select(.PublishedOn > $last_date)
   ' "$POSTS_FILE" > "$TEMP_POSTS"
+  
 else
-  # Filter by known URLs
+  echo "🔍 No cache - processing all posts..."
   jq -c '
     .[] | 
     select(.stype == 0) |
     select(.PublishedOn != null) |
     select(.BlueSkyPost.Description != null) |
     select(.BlueSkyPost.BskyPost != null)
-  ' "$POSTS_FILE" | while IFS= read -r post; do
-    URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost' | xargs)
-    # grep returns exit code 1 when no match, which would fail with set -e
-    # Use || true to prevent script exit
-    if ! grep -Fq "$URL" "$KNOWN_URLS" 2>/dev/null || [ ! -s "$KNOWN_URLS" ]; then
-      echo "$post"
-    fi
-  done > "$TEMP_POSTS"
+  ' "$POSTS_FILE" > "$TEMP_POSTS"
 fi
+
 
 # Count new posts
 NEW_COUNT=$(wc -l < "$TEMP_POSTS" | tr -d ' ')
@@ -98,7 +94,7 @@ echo "📊 New posts found: $NEW_COUNT"
 
 if [ "$NEW_COUNT" -eq 0 ]; then
   echo "✅ No new posts to send"
-  rm -f "$TEMP_POSTS" "$KNOWN_URLS"
+  rm -f "$TEMP_POSTS"
   if [ -n "${GITHUB_OUTPUT:-}" ]; then
     echo "has_new_posts=false" >> "$GITHUB_OUTPUT"
   fi
@@ -110,11 +106,12 @@ if [ -n "${GITHUB_OUTPUT:-}" ]; then
   echo "posts_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 fi
 
-# Step 4: Send posts to Telegram
+# Step 3: Send posts to Telegram
 echo "📤 Sending posts to Telegram..."
 
 LATEST_DATE=""
 SENT_COUNT=0
+SENT_URLS=$(mktemp)
 
 while IFS= read -r post; do
   DESCRIPTION=$(echo "$post" | jq -r '.BlueSkyPost.Description')
@@ -139,6 +136,9 @@ while IFS= read -r post; do
       echo "✅ Sent: ${DESCRIPTION:0:50}..."
       SENT_COUNT=$((SENT_COUNT + 1))
       
+      # Save URL to sent list
+      echo "$URL" >> "$SENT_URLS"
+      
       # Update latest date
       # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
       # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
@@ -155,6 +155,10 @@ while IFS= read -r post; do
   else
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}..."
     SENT_COUNT=$((SENT_COUNT + 1))
+    
+    # Save URL to sent list (dry run)
+    echo "$URL" >> "$SENT_URLS"
+    
     # Note: String comparison with '>' works correctly for ISO 8601 formatted dates
     # because they are lexicographically sortable (YYYY-MM-DDTHH:MM:SSZ)
     if [ -z "$LATEST_DATE" ] || [[ "$POST_DATE" > "$LATEST_DATE" ]]; then
@@ -165,13 +169,29 @@ done < "$TEMP_POSTS"
 
 echo "📊 Posts sent: $SENT_COUNT of $NEW_COUNT"
 
-# Step 5: Update cache with the date of the last sent post
-if [ -n "$LATEST_DATE" ] && [ "$SENT_COUNT" -gt 0 ]; then
-  echo "$LATEST_DATE" > "$CACHE_FILE"
-  echo "💾 Cache updated with date: $LATEST_DATE"
+# Step 4: Update caches
+if [ "$SENT_COUNT" -gt 0 ]; then
+  # Update date cache with the date of the last sent post
+  if [ -n "$LATEST_DATE" ]; then
+    echo "$LATEST_DATE" > "$DATE_CACHE_FILE"
+    echo "💾 Date cache updated: $LATEST_DATE"
+  fi
+  
+  # Update URL cache (keep last 20 URLs)
+  if [ -f "$URL_CACHE_FILE" ]; then
+    # Merge old cache with new URLs, keep last MAX_CACHE_URLS unique entries
+    cat "$URL_CACHE_FILE" "$SENT_URLS" | tail -n "$MAX_CACHE_URLS" > "${URL_CACHE_FILE}.tmp"
+    mv "${URL_CACHE_FILE}.tmp" "$URL_CACHE_FILE"
+  else
+    # Create new cache with sent URLs (up to MAX_CACHE_URLS)
+    tail -n "$MAX_CACHE_URLS" "$SENT_URLS" > "$URL_CACHE_FILE"
+  fi
+  
+  CACHE_SIZE=$(wc -l < "$URL_CACHE_FILE" | tr -d ' ')
+  echo "💾 URL cache updated: $CACHE_SIZE entries"
 fi
 
 # Clean up temporary files
-rm -f "$TEMP_POSTS" "$KNOWN_URLS"
+rm -f "$TEMP_POSTS" "$SENT_URLS"
 
 echo "✅ Process completed"
