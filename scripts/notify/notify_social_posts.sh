@@ -144,6 +144,14 @@ echo "📊 Posts to send: $NEW_COUNT"
 
 if [ "$NEW_COUNT" -eq 0 ]; then
   echo "✅ No new posts to send"
+  
+  # Update cache with latest post date from file to ensure cache is saved
+  LATEST_POST_DATE=$(jq -r 'sort_by(.PublishedOn) | last | .PublishedOn' "$POSTS_FILE")
+  if [ -n "$LATEST_POST_DATE" ] && [ "$LATEST_POST_DATE" != "null" ]; then
+    echo "$LATEST_POST_DATE" > "$CACHE_FILE"
+    echo "💾 Cache updated with latest post date: $LATEST_POST_DATE"
+  fi
+  
   rm -f "$TEMP_POSTS"
   if [ -n "${GITHUB_OUTPUT:-}" ]; then
     echo "has_new_posts=false" >> "$GITHUB_OUTPUT"
