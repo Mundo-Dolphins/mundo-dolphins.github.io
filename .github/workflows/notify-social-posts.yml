@@ -20,15 +20,13 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: 📥 Restore cache (last sent post date and URLs)
+      - name: 📥 Restore cache (last sent post date)
         uses: actions/cache/restore@v4
         with:
-          path: |
-            .github/notifications/last_post_date.txt
-            .github/notifications/sent_urls_cache.txt
-          key: social-posts-cache
+          path: .github/notifications/last_post_date.txt
+          key: social-posts-last-date
           restore-keys: |
-            social-posts-cache
+            social-posts-last-date
 
       - name: 📤 Detect and send posts to Telegram
         id: notify
@@ -46,12 +44,10 @@ jobs:
           echo "Waiting $jitter seconds to avoid cache collision"
           sleep "$jitter"
 
-      - name: 💾 Save cache (last sent post date and URLs)
+      - name: 💾 Save cache (last sent post date)
         if: success()
         uses: actions/cache/save@v4
         continue-on-error: true
         with:
-          path: |
-            .github/notifications/last_post_date.txt
-            .github/notifications/sent_urls_cache.txt
-          key: social-posts-cache
+          path: .github/notifications/last_post_date.txt
+          key: social-posts-last-date
