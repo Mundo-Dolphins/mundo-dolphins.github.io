@@ -111,6 +111,49 @@ if [ -n "${GITHUB_OUTPUT:-}" ]; then
   echo "posts_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 fi
 
+# Function to send message to Telegram with retry logic for rate limits
+send_to_telegram() {
+  local message="$1"
+  local max_retries=3
+  local retry_count=0
+  
+  while [ $retry_count -lt $max_retries ]; do
+    RESPONSE=$(curl -s -X POST \
+      "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+      --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+      --data-urlencode "text=${message}" \
+      -d "disable_web_page_preview=false")
+    
+    # Check if request was successful
+    if echo "$RESPONSE" | jq -e '.ok' >/dev/null 2>&1; then
+      echo "success"
+      return 0
+    fi
+    
+    # Check if it's a rate limit error (429)
+    ERROR_CODE=$(echo "$RESPONSE" | jq -r '.error_code // empty')
+    if [ "$ERROR_CODE" = "429" ]; then
+      RETRY_AFTER=$(echo "$RESPONSE" | jq -r '.parameters.retry_after // 10')
+      retry_count=$((retry_count + 1))
+      
+      if [ $retry_count -lt $max_retries ]; then
+        echo "⏳ Rate limit hit. Waiting ${RETRY_AFTER}s before retry ${retry_count}/${max_retries}..."
+        sleep "$RETRY_AFTER"
+      else
+        echo "❌ Max retries reached after rate limit"
+        echo "$RESPONSE"
+        return 1
+      fi
+    else
+      # Other error, don't retry
+      echo "$RESPONSE"
+      return 1
+    fi
+  done
+  
+  return 1
+}
+
 # Step 4: Send posts to Telegram (in chronological order)
 echo "📤 Sending posts to Telegram..."
 
@@ -130,14 +173,9 @@ while IFS= read -r post; do
   
   # Send to Telegram
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
-    # Use curl's --data-urlencode for proper form-data encoding
-    RESPONSE=$(curl -s -X POST \
-      "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-      --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-      --data-urlencode "text=${MESSAGE}" \
-      -d "disable_web_page_preview=false")
+    SEND_RESULT=$(send_to_telegram "$MESSAGE")
     
-    if echo "$RESPONSE" | jq -e '.ok' >/dev/null 2>&1; then
+    if [ "$SEND_RESULT" = "success" ]; then
       echo "✅ Sent: ${DESCRIPTION:0:50}..."
       SENT_COUNT=$((SENT_COUNT + 1))
       
@@ -155,7 +193,7 @@ while IFS= read -r post; do
       sleep 2
     else
       echo "❌ Error sending: ${DESCRIPTION:0:50}..."
-      echo "Response: $RESPONSE"
+      echo "Response: $SEND_RESULT"
     fi
   else
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}..."
