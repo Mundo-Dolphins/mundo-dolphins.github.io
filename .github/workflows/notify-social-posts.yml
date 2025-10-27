@@ -20,34 +20,10 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: 📥 Restore cache (last sent post date)
-        uses: actions/cache/restore@v4
-        with:
-          path: .github/notifications/last_post_date.txt
-          key: social-posts-last-date
-          restore-keys: |
-            social-posts-last-date
-
-      - name: 📤 Detect and send posts to Telegram
-        id: notify
+      - name: � Detect and send new posts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           chmod +x scripts/notify/notify_social_posts.sh
           ./scripts/notify/notify_social_posts.sh
-
-      - name: ⏱️ Delay to reduce cache collision
-        if: success()
-        run: |
-          jitter=$((RANDOM % 5 + 1))
-          echo "Waiting $jitter seconds to avoid cache collision"
-          sleep "$jitter"
-
-      - name: 💾 Save cache (last sent post date)
-        if: success()
-        uses: actions/cache/save@v4
-        continue-on-error: true
-        with:
-          path: .github/notifications/last_post_date.txt
-          key: social-posts-last-date
