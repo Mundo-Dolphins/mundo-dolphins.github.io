@@ -49,9 +49,9 @@ while IFS= read -r file; do
     TEMP_PREV=$(mktemp)
     TEMP_CURR=$(mktemp)
     
-    # Extract episode URLs to compare
-    echo "$PREVIOUS_JSON" | jq -r '.[].AudioUrl // empty' | sort > "$TEMP_PREV"
-    echo "$CURRENT_JSON" | jq -r '.[].AudioUrl // empty' | sort > "$TEMP_CURR"
+    # Extract episode URLs to compare (using 'audio' field, not 'AudioUrl')
+    echo "$PREVIOUS_JSON" | jq -r '.[].audio // empty' | sort > "$TEMP_PREV"
+    echo "$CURRENT_JSON" | jq -r '.[].audio // empty' | sort > "$TEMP_CURR"
     
     # Find new episodes (in current but not in previous)
     NEW_URLS=$(comm -13 "$TEMP_PREV" "$TEMP_CURR")
@@ -59,12 +59,16 @@ while IFS= read -r file; do
     if [ -n "$NEW_URLS" ]; then
       # Get full episode objects for new URLs
       while IFS= read -r url; do
-        EPISODE=$(echo "$CURRENT_JSON" | jq -r --arg url "$url" '
-          .[] | select(.AudioUrl == $url) | 
-          "\(.Title)|\(.Slug)"
-        ')
-        if [ -n "$EPISODE" ]; then
-          echo "$EPISODE" >> "$TEMP_PODCASTS"
+        # Get title from episode and generate slug
+        TITLE=$(echo "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .title')
+        
+        if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
+          # Generate slug from title using Python
+          SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          
+          if [ -n "$SLUG" ]; then
+            echo "${TITLE}|${SLUG}" >> "$TEMP_PODCASTS"
+          fi
         fi
       done <<< "$NEW_URLS"
     fi
