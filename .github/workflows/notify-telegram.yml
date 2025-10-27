@@ -1,9 +1,14 @@
 # ---
 # This workflow sends notifications to Telegram when a new article or podcast is published.
-# Automatically detects new articles or podcasts when pushed to the main branch.
-# Example message sent:
+# Automatically detects new articles (content/noticias/*.md) or podcasts (data/season_*.json) 
+# when deployed to production.
+# Example messages sent:
+# 📰 Nuevo artículo publicado: Dolphins ganan el Super Bowl
+# 🔗 https://mundodolphins.es/noticias/victoria-super-bowl/
+#
 # 🎙️ Nuevo capítulo del podcast publicado: Dolphins Podcast Ep. 1
 # 🔗 https://mundodolphins.es/podcast/episodio-1/
+#
 # Requires TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID secrets configured in the repository.
 # ---
 
@@ -15,30 +20,24 @@ on:
     types:
       - completed
 
+concurrency:
+  group: notify-articles-podcasts
+  cancel-in-progress: false
+
 jobs:
-  detect-and-notify:
+  notify-content:
     runs-on: ubuntu-latest
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 🔄 Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 2
 
-      - name: 🔍 Detect new articles/podcasts
-        id: detect_new
-        run: |
-          chmod +x scripts/notify/detect_new_articles.sh
-          scripts/notify/detect_new_articles.sh
-
-      - name: 📱 Send notifications to Telegram
-        if: steps.detect_new.outputs.has_new_articles == 'true'
+      - name: � Detect and send new articles/podcasts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          chmod +x scripts/notify/send_to_telegram.sh
-          # pass articles.json explicitly; NOTIFICATION_DELAY_SEC can be set in the workflow env if desired
-          ./scripts/notify/send_to_telegram.sh articles.json
+          chmod +x scripts/notify/notify_articles_podcasts.sh
+          ./scripts/notify/notify_articles_podcasts.sh
