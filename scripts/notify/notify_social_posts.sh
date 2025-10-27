@@ -2,29 +2,18 @@
 set -euo pipefail
 
 # notify_social_posts.sh
-# Sends new social posts from data/posts_1.json to Telegram
-#
-# Logic:
-# 1. Check cache for last successful send date
-# 2. If cache exists: send posts newer than cached date
-# 3. If no cache: get posts added in last git commit to avoid spam
-# 4. Sort posts chronologically (oldest first) before sending
-# 5. Retry on Telegram rate limits (429 errors)
-# 6. Update cache with latest post date after successful sends
+# Detects new posts added in the last commit to data/posts_1.json
+# and sends them to Telegram in chronological order (oldest first)
 
-CACHE_FILE=".github/notifications/last_post_date.txt"
 POSTS_FILE="data/posts_1.json"
+
+echo "📋 Checking for new posts in last commit..."
 
 # Verify posts file exists
 if [ ! -f "$POSTS_FILE" ]; then
   echo "❌ Posts file not found: $POSTS_FILE"
   exit 1
 fi
-
-# Create notifications directory if it doesn't exist
-mkdir -p .github/notifications
-
-echo "📋 Reading posts from $POSTS_FILE"
 
 # Function to send message to Telegram with retry logic for rate limits
 send_to_telegram() {
@@ -69,108 +58,70 @@ send_to_telegram() {
   return 1
 }
 
-# Function to get posts added in last commit
-get_posts_from_last_commit() {
-  echo "📜 No cache found. Getting posts from last commit to avoid spam..." >&2
-  
-  # Get the JSON content from the last commit that modified posts_1.json
-  LAST_COMMIT_JSON=$(git show HEAD:"$POSTS_FILE" 2>/dev/null || echo "[]")
-  CURRENT_JSON=$(cat "$POSTS_FILE")
-  
-  # Create temp files for comparison
-  TEMP_LAST=$(mktemp)
-  TEMP_CURRENT=$(mktemp)
-  
-  # Extract URLs from both versions
-  echo "$LAST_COMMIT_JSON" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort > "$TEMP_LAST"
-  echo "$CURRENT_JSON" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort > "$TEMP_CURRENT"
-  
-  # Get URLs that are in current but not in last commit (newly added)
-  NEW_URLS=$(comm -13 "$TEMP_LAST" "$TEMP_CURRENT")
-  
-  rm -f "$TEMP_LAST" "$TEMP_CURRENT"
-  
-  if [ -z "$NEW_URLS" ]; then
-    echo "[]"
-    return
-  fi
-  
-  # Get full post objects for new URLs
-  echo "$CURRENT_JSON" | jq -c --arg urls "$NEW_URLS" '
-    [ .[] | 
-      select(.stype == 0) |
-      select(.PublishedOn != null) |
-      select(.BlueSkyPost.Description != null) |
-      select(.BlueSkyPost.BskyPost != null) |
-      select(
-        (.BlueSkyPost.BskyPost as $url) | 
-        ($urls | split("\n") | any(. == $url))
-      )
-    ]
-  '
-}
+# Get posts from current commit
+CURRENT_JSON=$(cat "$POSTS_FILE")
 
-# Step 1: Determine which posts to send
-TEMP_POSTS=$(mktemp)
+# Get posts from parent commit (HEAD~1)
+PREVIOUS_JSON=$(git show HEAD~1:"$POSTS_FILE" 2>/dev/null || echo "[]")
 
-if [ -f "$CACHE_FILE" ] && [ -s "$CACHE_FILE" ]; then
-  # Cache exists: filter by date
-  LAST_DATE=$(cat "$CACHE_FILE")
-  echo "📅 Last successful send: $LAST_DATE"
-  echo "🔍 Filtering posts newer than $LAST_DATE..."
-  
-  jq -c --arg last_date "$LAST_DATE" '
-    [ .[] | 
-      select(.stype == 0) |
-      select(.PublishedOn != null) |
-      select(.BlueSkyPost.Description != null) |
-      select(.BlueSkyPost.BskyPost != null) |
-      select(.PublishedOn > $last_date)
-    ]
-  ' "$POSTS_FILE" > "$TEMP_POSTS"
-else
-  # No cache: get posts from last commit
-  get_posts_from_last_commit > "$TEMP_POSTS"
-fi
+# Create temp files for comparison
+TEMP_PREVIOUS=$(mktemp)
+TEMP_CURRENT=$(mktemp)
+TEMP_NEW_POSTS=$(mktemp)
 
-# Step 2: Sort posts chronologically (oldest first)
-TEMP_SORTED=$(mktemp)
-jq 'sort_by(.PublishedOn)' "$TEMP_POSTS" > "$TEMP_SORTED"
-mv "$TEMP_SORTED" "$TEMP_POSTS"
+# Extract URLs from both versions (only BlueSky posts)
+echo "$PREVIOUS_JSON" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort > "$TEMP_PREVIOUS"
+echo "$CURRENT_JSON" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort > "$TEMP_CURRENT"
 
-# Count posts to send
-NEW_COUNT=$(jq 'length' "$TEMP_POSTS")
-echo "📊 Posts to send: $NEW_COUNT"
+# Get URLs that are in current but not in previous commit (newly added)
+NEW_URLS=$(comm -13 "$TEMP_PREVIOUS" "$TEMP_CURRENT")
 
-if [ "$NEW_COUNT" -eq 0 ]; then
-  echo "✅ No new posts to send"
-  
-  # Update cache with latest post date from file to ensure cache is saved
-  LATEST_POST_DATE=$(jq -r 'sort_by(.PublishedOn) | last | .PublishedOn' "$POSTS_FILE")
-  if [ -n "$LATEST_POST_DATE" ] && [ "$LATEST_POST_DATE" != "null" ]; then
-    echo "$LATEST_POST_DATE" > "$CACHE_FILE"
-    echo "💾 Cache updated with latest post date: $LATEST_POST_DATE"
-  fi
-  
-  rm -f "$TEMP_POSTS"
-  if [ -n "${GITHUB_OUTPUT:-}" ]; then
-    echo "has_new_posts=false" >> "$GITHUB_OUTPUT"
-  fi
+if [ -z "$NEW_URLS" ]; then
+  echo "✅ No new posts found in last commit"
+  rm -f "$TEMP_PREVIOUS" "$TEMP_CURRENT" "$TEMP_NEW_POSTS"
   exit 0
 fi
 
-if [ -n "${GITHUB_OUTPUT:-}" ]; then
-  echo "has_new_posts=true" >> "$GITHUB_OUTPUT"
-  echo "posts_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
+# Get full post objects for new URLs and sort chronologically (oldest first)
+# Process each new URL and find its post object
+{
+  echo "["
+  FIRST=true
+  while IFS= read -r url; do
+    POST=$(echo "$CURRENT_JSON" | jq -c --arg url "$url" '
+      .[] | 
+      select(.stype == 0) |
+      select(.PublishedOn != null) |
+      select(.BlueSkyPost.Description != null) |
+      select(.BlueSkyPost.BskyPost == $url)
+    ')
+    if [ -n "$POST" ]; then
+      if [ "$FIRST" = false ]; then
+        echo ","
+      fi
+      echo "$POST"
+      FIRST=false
+    fi
+  done <<< "$NEW_URLS"
+  echo "]"
+} | jq 'sort_by(.PublishedOn)' > "$TEMP_NEW_POSTS"
+
+# Count posts to send
+NEW_COUNT=$(jq 'length' "$TEMP_NEW_POSTS")
+echo "📊 New posts found: $NEW_COUNT"
+
+if [ "$NEW_COUNT" -eq 0 ]; then
+  echo "✅ No valid posts to send"
+  rm -f "$TEMP_PREVIOUS" "$TEMP_CURRENT" "$TEMP_NEW_POSTS"
+  exit 0
 fi
 
-# Step 3: Send posts to Telegram (in chronological order)
+# Send posts to Telegram (in chronological order: oldest first)
 echo "📤 Sending $NEW_COUNT posts to Telegram..."
 
-LATEST_DATE=""
 SENT_COUNT=0
 
-jq -c '.[]' "$TEMP_POSTS" | while IFS= read -r post; do
+jq -c '.[]' "$TEMP_NEW_POSTS" | while IFS= read -r post; do
   DESCRIPTION=$(echo "$post" | jq -r '.BlueSkyPost.Description')
   URL=$(echo "$post" | jq -r '.BlueSkyPost.BskyPost')
   POST_DATE=$(echo "$post" | jq -r '.PublishedOn')
@@ -180,38 +131,29 @@ jq -c '.[]' "$TEMP_POSTS" | while IFS= read -r post; do
 
 🔗 ${URL}"
   
-  # Send to Telegram (or dry run)
+  # Send to Telegram
   if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
     SEND_RESULT=$(send_to_telegram "$MESSAGE")
     
     if [ "$SEND_RESULT" = "success" ]; then
       echo "✅ Sent: ${DESCRIPTION:0:50}... (${POST_DATE})"
       SENT_COUNT=$((SENT_COUNT + 1))
-      LATEST_DATE="$POST_DATE"
       
-      # Small pause between messages
+      # Small pause between messages to avoid rate limits
       sleep 2
     else
       echo "❌ Error sending: ${DESCRIPTION:0:50}..."
       echo "Response: $SEND_RESULT"
-      # Don't update cache if send failed
     fi
   else
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}... (${POST_DATE})"
     SENT_COUNT=$((SENT_COUNT + 1))
-    LATEST_DATE="$POST_DATE"
   fi
 done
 
 echo "📊 Posts sent: $SENT_COUNT of $NEW_COUNT"
 
-# Step 4: Update cache with latest post date (only if we sent something)
-if [ -n "$LATEST_DATE" ] && [ "$SENT_COUNT" -gt 0 ]; then
-  echo "$LATEST_DATE" > "$CACHE_FILE"
-  echo "💾 Cache updated with date: $LATEST_DATE"
-fi
-
 # Clean up
-rm -f "$TEMP_POSTS"
+rm -f "$TEMP_PREVIOUS" "$TEMP_CURRENT" "$TEMP_NEW_POSTS"
 
 echo "✅ Process completed"
