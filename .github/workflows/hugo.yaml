@@ -76,22 +76,22 @@ jobs:
           fetch-depth: 0
 
       - name: Download generated blog posts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: generated-content-Generate blog posts
           path: content
       - name: Download generated social posts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: generated-content-Generate social posts
           path: content
       - name: Download generated API resources
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: generated-content-Generate API resources
           path: content
       - name: Download generated news API
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: generated-content-Generate news API
           path: content
