@@ -56,7 +56,7 @@ jobs:
         run: ${{ matrix.script.cmd }}
         working-directory: ${{ matrix.script.dir }}
       - name: Upload generated content
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: generated-content-${{ matrix.script.name }}
           path: content
