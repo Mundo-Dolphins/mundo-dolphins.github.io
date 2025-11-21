@@ -39,7 +39,7 @@ jobs:
           - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news" }
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           submodules: recursive
           fetch-depth: 0
@@ -70,7 +70,7 @@ jobs:
       HUGO_VERSION: 0.150.0
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           submodules: recursive
           fetch-depth: 0
