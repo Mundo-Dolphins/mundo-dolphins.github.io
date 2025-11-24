@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PUSH }}
 
       - name: Get latest release info for cache key
         id: release_info
@@ -181,18 +183,66 @@ jobs:
           chmod +x checker
           echo "Cached binary ready to use"
 
+      - name: Checkout existing new-social-posts branch (if any)
+        run: |
+          set -euo pipefail
+
+          BRANCH="new-social-posts"
+          REMOTE="origin"
+
+          echo "Checking for remote branch $REMOTE/$BRANCH"
+          if git ls-remote --exit-code --heads "$REMOTE" "$BRANCH" >/dev/null 2>&1; then
+            echo "Remote branch exists — fetching and checking out $BRANCH"
+            git fetch "$REMOTE" "$BRANCH":"$BRANCH"
+            git checkout "$BRANCH"
+            # Try to update local branch from remote using rebase to preserve local changes
+            git pull --rebase --autostash "$REMOTE" "$BRANCH" || true
+            echo "Checked out branch $BRANCH"
+          else
+            echo "Remote branch $BRANCH not found — staying on current branch"
+          fi
+
       - name: Run checker
         run: |
           ./checker social --data ${GITHUB_WORKSPACE}/data
           
       - name: Add & Commit
         id: add_commit
-        uses: EndBug/add-and-commit@v9.1.4
-        with:
-          message: "Added new social posts"
-          add: "./data"
-          push: true
-          new_branch: new-social-posts
+        run: |
+          set -euo pipefail
+
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+          BRANCH="new-social-posts"
+          REMOTE="origin"
+
+          # Try to fetch remote branch if it exists (won't fail pipeline)
+          git fetch "$REMOTE" "$BRANCH":"$BRANCH" || true
+
+          # Checkout the branch (use existing local branch if present)
+          if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
+            git checkout "$BRANCH"
+            git pull --rebase --autostash "$REMOTE" "$BRANCH" || true
+          else
+            git checkout -b "$BRANCH"
+          fi
+
+          # Stage changes
+          git add ./data
+
+          # If there are no staged changes, signal downstream steps and exit
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "committed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Commit and push changes to the branch
+          git commit -m "Added new social posts"
+          git push --set-upstream "$REMOTE" "$BRANCH"
+
+          echo "committed=true" >> $GITHUB_OUTPUT
 
       - name: Create pull request
         uses: devops-infra/action-pull-request@v1.0.2
