@@ -12,12 +12,17 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/telegram_send.sh"
 
 # Detect changed files in last commit
-CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+# Use raw (unquoted) paths and NUL separation to correctly handle
+# filenames with non-ASCII characters (git may escape them otherwise).
+CHANGED_FILES=$(git -c core.quotepath=false diff --name-only -z HEAD~1 HEAD 2>/dev/null || true)
 
 if [ -z "$CHANGED_FILES" ]; then
   echo "✅ No files changed in last commit"
   exit 0
 fi
+
+# Convert NUL-separated list to newline-separated for easier iteration
+CHANGED_FILES=$(printf '%s' "$CHANGED_FILES" | tr '\0' '\n')
 
 # Temp files for storing detected items
 TEMP_ARTICLES=$(mktemp)
