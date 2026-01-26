@@ -23,7 +23,7 @@ jobs:
       with:
         fetch-depth: 2  # Fetch last 2 commits to compare
     
-    - name: 🔍 Detect new articles
+    - name: 🔍 Detect new content
       id: detect_new
       run: |
         chmod +x scripts/notify/detect_new_articles.sh
@@ -39,7 +39,5 @@ jobs:
         NOTIFICATION_DELAY_MS: ${{ vars.NOTIFICATION_DELAY_MS || '1000' }}
       run: |
         echo "🔔 Sending FCM notifications..."
-        npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+        npm install --no-audit --no-fund
         node scripts/notify/send_notification.js
-        EOF
-        node send_notification.js
