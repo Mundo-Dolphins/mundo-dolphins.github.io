@@ -5,16 +5,28 @@
 {{ end }}
 
 <main class="main" role="main">
-    <article class="post">
-        
-        <header class="post__header">
-            <h1 class="post__title">{{ .Title }}</h1>
+    <article class="post history-season">
+        <header class="post__header history-season__hero">
+            <div class="history-season__hero-text">
+                <span class="history-season__eyebrow">Temporada</span>
+                <h1 class="post__title">{{ .Title }}</h1>
+                <div class="history-season__meta">
+                    <span class="history-season__year">{{ .Date.Format "2006" }}</span>
+                    <span class="history-season__badge">Miami Dolphins</span>
+                </div>
+            </div>
+            {{ if $image }}
+            <div class="history-season__logo-wrap">
+                <img class="history-season__logo" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+            </div>
+            {{ end }}
         </header>
-        {{ if $image }}
-          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
-        {{ end }}
-        <div class="content post__content clearfix">
-            {{ .Content }}
+        <div class="content post__content history-season__content clearfix">
+            {{- $content := .Content -}}
+            {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a>\\s*(?:<br\\s*/?>\\s*)?<strong>([^<]+)</strong>\\s*-\\s*<strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__stage\">$3</span><span class=\"season-game__date\">$4</span></div>" -}}
+            {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a>\\s*(?:<br\\s*/?>\\s*)?<strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__date\">$3</span></div>" -}}
+            {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a></p>\\s*<p><strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__date\">$3</span></div>" -}}
+            {{ $content | safeHTML }}
         </div>
     </article>
 </main>

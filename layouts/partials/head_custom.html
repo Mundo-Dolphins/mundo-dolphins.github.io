@@ -1,2 +1,4 @@
+{{- $fcmSw := resources.Get "firebase-messaging-sw.js" | resources.ExecuteAsTemplate "firebase-messaging-sw.js" . -}}
+<link rel="prefetch" href="{{ $fcmSw.RelPermalink }}" as="script">
 {{ with .Site.Params.customHead }}{{ . | safeHTML }}{{ end }}
 {{ partial "analytics.html" . }}

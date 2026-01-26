@@ -1,0 +1,10 @@
+{
+  "name": "mundo-dolphins-site",
+  "private": true,
+  "description": "Notification scripts for Mundo Dolphins",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "firebase-admin": "^12.7.0"
+  }
+}

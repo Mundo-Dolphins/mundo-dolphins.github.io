@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<main class="main stats-page" role="main">
+    <article class="post stats-page__article">
+        <header class="stats-hero">
+            <div class="stats-hero__text">
+                <span class="stats-hero__eyebrow">Estadisticas</span>
+                <h1 class="post__title">{{ .Title }}</h1>
+                <div class="stats-hero__meta">
+                    <span class="stats-hero__year">{{ .Date.Format "2006" }}</span>
+                    <span class="stats-hero__badge">Miami Dolphins</span>
+                </div>
+            </div>
+        </header>
+        <div class="content post__content stats-page__content clearfix">
+            {{- $content := .Content -}}
+            {{- $content = $content | replaceRE "<ul>" "<ul class=\"stats-grid\">" -}}
+            {{- $content = $content | replaceRE "<li>([^<]+?):\\s*([^<]+)</li>" "<li><span class=\"stat-label\">$1</span><span class=\"stat-value\">$2</span></li>" -}}
+            {{ $content | safeHTML }}
+        </div>
+
+        {{ partial "social-share.html" . }}
+    </article>
+</main>
+
+{{ partial "authorbox.html" . }}
+{{ partial "pager.html" . }}
+{{ partial "comments.html" . }}
+
+{{ partial "social-share-script.html" . }}
+
+{{ end }}
