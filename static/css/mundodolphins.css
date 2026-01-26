@@ -80,6 +80,15 @@
     flex-shrink: 0;
 }
 
+/* Fix oversized SVGs in sidebar social links */
+.widget-social__link svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
 /* Platform specific colors */
 .social-share__button--x {
     background-color: #000000;
