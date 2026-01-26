@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="main list history-list" role="main">
+<main class="main list stats-list" role="main">
 	{{- with .Title }}
 	<header class="main__header">
 		<h1 class="main__title">{{ . }}</h1>
@@ -10,17 +10,13 @@
 		{{ . }}
 	</div>
 	{{- end }}
-	{{- $seasonPages := where .RegularPages "File.Dir" "eq" "historia/" }}
-	<section class="history-archive" aria-label="Temporadas de los Miami Dolphins">
+	<section class="history-archive" aria-label="Estadisticas por temporada">
 		<div class="history-grid">
-			{{- range $seasonPages.ByDate.Reverse }}
+			{{- range .RegularPages.ByDate.Reverse }}
 			<a class="history-card" href="{{ .RelPermalink }}">
 				<span class="history-card__year">{{ .Date.Format "2006" }}</span>
 				<span class="history-card__title">{{ .Title }}</span>
-				{{- with .Params.logo }}
-				<img class="history-card__logo" src="{{ . | relURL }}" alt="" loading="lazy">
-				{{- end }}
-				<span class="history-card__cta">Ver temporada</span>
+				<span class="history-card__cta">Ver estadisticas</span>
 			</a>
 			{{- end }}
 		</div>

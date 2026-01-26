@@ -191,143 +191,818 @@
     text-align: justify;
 }
 
+/* Header */
+.header {
+    position: relative;
+    background: linear-gradient(110deg, #0b7b84 0%, #0a6c75 55%, #0b7b84 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .logo {
+    padding: 18px 0 56px;
+}
+
+.header .logo__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header .logo__img {
+    max-height: 132px;
+    width: auto;
+}
+
+.header .logo__text {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.header .logo__title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #f6ffff;
+    text-shadow: none;
+}
+
+.header + .menu {
+    margin-top: -52px;
+    background: transparent;
+}
+
+.header + .menu .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header + .menu,
+.header + .menu .menu__btn {
+    background: transparent;
+}
+
+.header + .menu .menu__list {
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.header + .menu .menu__item {
+    padding: 0 0.5rem;
+}
+
+.header + .menu .menu__item:hover {
+    background: transparent;
+}
+
+.header + .menu .menu__link {
+    color: #f6ffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.header + .menu .menu__link::after {
+    border: 0;
+    width: 100%;
+    height: 3px;
+    background: #f07d00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    opacity: 0;
+}
+
+.header + .menu .menu__item--active .menu__link::after,
+.header + .menu .menu__item:hover .menu__link::after {
+    opacity: 1;
+}
+
+.header + .menu .menu__btn-title {
+    color: #f6ffff;
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        padding: 14px 0 20px;
+    }
+
+    .header .logo__link {
+        gap: 12px;
+    }
+
+    .header .logo__img {
+        max-height: 96px;
+    }
+
+    .header .logo__title {
+        font-size: 1.6rem;
+        letter-spacing: 0.06em;
+    }
+
+    .header + .menu {
+        margin-top: 0;
+        background: #0b7b84;
+    }
+
+    .header + .menu .menu__btn {
+        background: #0b7b84;
+    }
+
+    .header + .menu .menu__list--active {
+        background: #0b7b84;
+    }
+}
+
+/* Historia list */
+.history-list .main__content {
+    margin-bottom: 2rem;
+}
+
+.history-archive {
+    position: relative;
+    padding: 1rem 0 2rem;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+}
+
+.history-card {
+    position: relative;
+    display: grid;
+    gap: 0.4rem;
+    padding: 1.25rem 1.2rem 1rem;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #0f2f33;
+    background: linear-gradient(135deg, #f3fbfb 0%, #e2f4f6 100%);
+    border: 1px solid rgba(0, 142, 151, 0.18);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.history-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(0, 142, 151, 0.2), transparent 60%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.history-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+}
+
+.history-card__year {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #00727a;
+    z-index: 1;
+}
+
+.history-card__title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #12363a;
+    z-index: 1;
+}
+
+.history-card__logo {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    z-index: 1;
+}
+
+.history-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #00727a;
+    z-index: 1;
+}
+
+.history-card__cta::after {
+    content: "->";
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    .history-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .history-card {
+        padding: 1rem 1rem 0.9rem;
+    }
+
+    .history-card__year {
+        font-size: 1.6rem;
+    }
+
+    .history-card__logo {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* Historia single */
+.history-season__hero {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #eef9f9 0%, #d9f1f4 100%);
+    border: 1px solid rgba(0, 142, 151, 0.18);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.history-season__hero-text {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.history-season__eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #0b6f76;
+}
+
+.history-season__meta {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.history-season__year {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: #0b6f76;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.history-season__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(0, 142, 151, 0.12);
+    color: #0f2f33;
+    font-weight: 600;
+}
+
+.history-season__logo-wrap {
+    width: 110px;
+    height: 110px;
+    border-radius: 18px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.history-season__logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.history-season__content {
+    display: grid;
+    gap: 1.75rem;
+    min-width: 0;
+}
+
+.history-season__content h2 {
+    font-size: 1.4rem;
+    color: #0f2f33;
+    margin-top: 0.5rem;
+}
+
+.history-season__content table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+.history-season__content table thead {
+    background: #0b6f76;
+    color: #fff;
+}
+
+.history-season__content table th,
+.history-season__content table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e7eef0;
+    text-align: left;
+    font-size: 0.95rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.history-season__content table tbody tr:nth-child(even) {
+    background: #f6fbfb;
+}
+
+.history-season__content table tbody tr:hover {
+    background: #eaf6f7;
+}
+
+.history-season__content table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.history-season__content table caption {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: #0f2f33;
+}
+
+.season-game {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.9rem 1.1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 142, 151, 0.15);
+    background: #ffffff;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+}
+
+.season-game + .season-game {
+    margin-top: 0.85rem;
+}
+
+.season-game__link {
+    font-weight: 600;
+    color: #0f2f33;
+    text-decoration: none;
+}
+
+.season-game__link:hover {
+    color: #00727a;
+}
+
+.season-game__stage {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: #0b6f76;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.season-game__date {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(0, 142, 151, 0.12);
+    color: #0b6f76;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .season-game {
+        grid-template-columns: 1fr;
+    }
+
+    .season-game__date {
+        justify-self: start;
+    }
+
+    .season-game__stage {
+        justify-self: start;
+    }
+}
+
+/* Historia stats */
+.stats-page__content {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.stats-hero {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #eef9f9 0%, #d9f1f4 100%);
+    border: 1px solid rgba(0, 142, 151, 0.18);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.stats-hero__text {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.stats-hero__eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #0b6f76;
+}
+
+.stats-hero__meta {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stats-hero__year {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: #0b6f76;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.stats-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(0, 142, 151, 0.12);
+    color: #0f2f33;
+    font-weight: 600;
+}
+
+.stats-page__content h2 {
+    font-size: 1.5rem;
+    color: #0f2f33;
+    margin-top: 0.5rem;
+}
+
+.stats-page__content h3 {
+    font-size: 1.2rem;
+    color: #0b6f76;
+    margin-top: 0.75rem;
+}
+
+.stats-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.85rem;
+}
+
+.stats-grid li {
+    background: #ffffff;
+    border: 1px solid rgba(0, 142, 151, 0.12);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    align-items: baseline;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+}
+
+.stats-grid .stat-label {
+    font-weight: 600;
+    color: #0f2f33;
+}
+
+.stats-grid .stat-value {
+    font-weight: 700;
+    color: #00727a;
+    text-align: right;
+}
+
+.stats-page__content table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+.stats-page__content table thead {
+    background: #0b6f76;
+    color: #fff;
+}
+
+.stats-page__content table th,
+.stats-page__content table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e7eef0;
+    text-align: left;
+    font-size: 0.95rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.stats-page__content table tbody tr:nth-child(even) {
+    background: #f6fbfb;
+}
+
+.stats-page__content table tbody tr:hover {
+    background: #eaf6f7;
+}
+
+.stats-page__content table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .stats-hero {
+        padding: 1.5rem;
+    }
+
+    .stats-grid li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-grid .stat-value {
+        text-align: left;
+    }
+
+    .stats-page__content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 860px) {
+    .history-season__hero {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .history-season__logo-wrap {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 640px) {
+    .history-season__hero {
+        padding: 1.5rem;
+    }
+
+    .history-season__content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
 /* ==========================================================================
    FCM Notifications Widget Sidebar
    ========================================================================== */
 
+.sidebar .widget {
+    background: #fff;
+    border: 1px solid #e6eef0;
+    border-radius: 12px;
+    padding: 14px 16px 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar .widget + .widget {
+    margin-top: 16px;
+}
+
+.sidebar .widget__title {
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0f2f33;
+    border-bottom: 1px solid #e6eef0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar .widget__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.sidebar .widget__item {
+    border-bottom: 0;
+    padding: 0;
+}
+
+.sidebar .widget__link {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #f6fbfb;
+    color: #0f2f33;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar .widget__link:hover {
+    background: #eaf6f7;
+    transform: translateY(-1px);
+}
+
+.sidebar .widget-social__link {
+    color: #0f2f33;
+}
+
+.sidebar .widget-social__link svg {
+    fill: currentColor;
+}
+
 .widget--fcm-notifications {
     background: #fff;
     border: 1px solid #e2e2e2;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 0;
     margin-bottom: 20px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
 }
 
 .widget--fcm-notifications .widget__title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
-    padding: 15px 20px 10px;
-    color: #333;
-    border-bottom: 1px solid #f0f0f0;
+    padding: 14px 18px 12px;
+    color: #0f2f33;
+    border-bottom: 1px solid #eef2f3;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .widget--fcm-notifications .widget__content {
-    padding: 15px 20px 20px;
+    padding: 14px 18px 18px;
 }
 
 /* Estilos específicos para sidebar */
 .fcm-notifications--sidebar {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 }
 
 .fcm-notifications--sidebar .fcm-notifications__status {
-    margin-bottom: 12px;
-    text-align: center;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .fcm-notifications--sidebar .notification-status {
-    font-size: 0.85rem;
-    padding: 6px 12px;
-    border-radius: 15px;
-    background: #f5f5f5;
-    color: #666;
-    display: inline-block;
+    font-size: 0.78rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #f3f7f8;
+    color: #3a5659;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
 }
 
 .fcm-notifications--sidebar .notification-status--active {
-    background: #e8f5e8;
-    color: #2d5a2d;
+    background: #e1f4f0;
+    color: #0b5a4f;
 }
 
-.fcm-notifications--sidebar .fcm-notifications__buttons {
-    display: flex;
-    flex-direction: column;
+.push-notifications--sidebar .push-notifications__content {
+    display: grid;
+    gap: 12px;
+}
+
+.push-notifications--sidebar .push-notifications__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
-    margin-bottom: 12px;
 }
 
-.fcm-btn--compact {
-    padding: 8px 12px;
-    font-size: 0.85rem;
-    border-radius: 6px;
-    display: flex;
+.push-notifications--sidebar .push-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
-    transition: all 0.2s ease;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: none;
 }
 
-.fcm-btn--compact .fcm-btn__icon {
+.push-notifications--sidebar .push-btn__icon {
     width: 16px;
     height: 16px;
 }
 
-.fcm-btn--primary.fcm-btn--compact {
-    background: #3c8b94;
-    color: white;
+.push-notifications--sidebar .push-btn--primary {
+    background: #0b6f76;
+    color: #fff;
 }
 
-.fcm-btn--primary.fcm-btn--compact:hover {
-    background: #2a6b73;
+.push-notifications--sidebar .push-btn--primary:hover {
+    background: #095c62;
     transform: translateY(-1px);
 }
 
-.fcm-btn--secondary.fcm-btn--compact {
-    background: #6c757d;
-    color: white;
+.push-notifications--sidebar .push-btn--secondary {
+    background: #f1f5f6;
+    color: #0f2f33;
+    border-color: rgba(15, 47, 51, 0.15);
 }
 
-.fcm-btn--secondary.fcm-btn--compact:hover {
-    background: #565e64;
+.push-notifications--sidebar .push-btn--secondary:hover {
+    background: #e7eef0;
     transform: translateY(-1px);
 }
 
-.fcm-btn--test.fcm-btn--compact {
-    background: #28a745;
-    color: white;
+.push-notifications--sidebar .push-btn--test {
+    background: #0f2f33;
+    color: #fff;
+    grid-column: auto;
 }
 
-.fcm-btn--test.fcm-btn--compact:hover {
-    background: #218838;
+.push-notifications--sidebar .push-btn--test:hover {
+    background: #0b2224;
     transform: translateY(-1px);
 }
 
 .fcm-notifications__note--compact {
-    font-size: 0.75rem;
-    color: #666;
-    line-height: 1.3;
+    font-size: 0.72rem;
+    color: #4b6063;
+    line-height: 1.4;
     margin: 0;
-    text-align: center;
+    text-align: left;
     padding: 8px 0 0;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #eef2f3;
 }
 
 /* Topic Subscriptions */
 .push-notifications__topics {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eef2f3;
 }
 
 .push-notifications__topic-status {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .push-notifications__topics .notification-status {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: 6px 10px;
-    background: #f8f9fa;
-    border-radius: 4px;
-    border: 1px solid #e9ecef;
+    background: #f6f9fa;
+    border-radius: 10px;
+    border: 1px solid #e7eef0;
     color: #495057;
 }
 
 .push-notifications__topics .notification-status--active {
-    background: #d4edda;
-    border-color: #c3e6cb;
-    color: #155724;
+    background: #e1f4f0;
+    border-color: #c8e9e3;
+    color: #0b5a4f;
+}
+
+.push-notifications__topics .push-btn {
+    width: 100%;
 }
 
 /* Responsive para sidebar */
@@ -336,7 +1011,7 @@
         margin-bottom: 15px;
     }
     
-    .fcm-btn--compact {
+    .push-notifications--sidebar .push-btn {
         padding: 10px;
         font-size: 0.8rem;
     }
