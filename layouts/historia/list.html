@@ -18,7 +18,10 @@
 				<span class="history-card__year">{{ .Date.Format "2006" }}</span>
 				<span class="history-card__title">{{ .Title }}</span>
 				{{- with .Params.logo }}
-				<img class="history-card__logo" src="{{ . | relURL }}" alt="" loading="lazy">
+				{{- $logoImage := resources.Get . }}
+				{{- if $logoImage }}
+				<img class="history-card__logo" src="{{ $logoImage.RelPermalink }}" alt="" loading="lazy">
+				{{- end }}
 				{{- end }}
 				<span class="history-card__cta">Ver temporada</span>
 			</a>
