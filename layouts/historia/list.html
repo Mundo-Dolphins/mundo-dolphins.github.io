@@ -7,7 +7,7 @@
 	{{- end }}
 	{{- with .Content }}
 	<div class="content main__content clearfix">
-		{{ . }}
+		{{ partial "table-wrap.html" (dict "content" .) }}
 	</div>
 	{{- end }}
 	{{- $seasonPages := where .RegularPages "File.Dir" "eq" "historia/" }}

@@ -16,7 +16,7 @@
             {{- $content := .Content -}}
             {{- $content = $content | replaceRE "<ul>" "<ul class=\"stats-grid\">" -}}
             {{- $content = $content | replaceRE "<li>([^<]+?):\\s*([^<]+)</li>" "<li><span class=\"stat-label\">$1</span><span class=\"stat-value\">$2</span></li>" -}}
-            {{ $content | safeHTML }}
+            {{ partial "table-wrap.html" (dict "content" $content) }}
         </div>
 
         {{ partial "social-share.html" . }}
