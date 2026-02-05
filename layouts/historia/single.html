@@ -26,7 +26,7 @@
             {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a>\\s*(?:<br\\s*/?>\\s*)?<strong>([^<]+)</strong>\\s*-\\s*<strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__stage\">$3</span><span class=\"season-game__date\">$4</span></div>" -}}
             {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a>\\s*(?:<br\\s*/?>\\s*)?<strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__date\">$3</span></div>" -}}
             {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a></p>\\s*<p><strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__date\">$3</span></div>" -}}
-            {{ $content | safeHTML }}
+            {{ partial "table-wrap.html" (dict "content" $content) }}
         </div>
     </article>
 </main>
