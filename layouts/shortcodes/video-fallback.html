@@ -1,0 +1,7 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default "Video" -}}
+<figure class="video-fallback">
+  <a class="video-fallback__link" href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener noreferrer">
+    <img class="video-fallback__img" src="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ $title }}">
+  </a>
+</figure>

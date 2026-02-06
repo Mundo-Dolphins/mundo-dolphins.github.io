@@ -1,0 +1,184 @@
+🎬 Improved Interactive YouTube Video to Podcast Matcher
+================================================================================
+Features:
+  - Title similarity matching (fuzzy)
+  - Publication date proximity matching
+  - Auto-confirm high-confidence matches
+================================================================================
+
+📂 Loading data...
+✓ Loaded 82 videos
+✓ Loaded 8 seasons
+
+[1/82] Processing video... ✗ No match
+
+[2/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[3/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[4/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[5/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[6/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[7/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[8/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[9/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[10/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[11/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[12/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[13/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[14/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[15/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[16/82] Processing video... 
+📹 Video: Mundo Dolphins 2024. Análisis Frente defensivo Anthony Weaver
+   Duration: 16:38
+   Published: 2024-09-02T01:13:22-07:00
+   URL: https://www.youtube.com/watch?v=rUhxMzzR5AA
+
+✓ Best Match (Score: 82.0% = Title:82% + Date:0%):
+   Season 1, Episode: Promo Mundo Dolphins
+   Published: 2018-08-14T01:34:00Z
+   Date difference: 2211 day(s)
+   [PARTIAL MATCH]
+
+📋 Other candidates (1 more):
+   1. Season 3, Mundo Dolphins con Tomás Monge (1614d) (65.0%)
+
+================================================================================
+Options:
+  (y)es - Add this match
+  (n)o - Skip this video
+  (s)kip - Skip and show next candidate
+  (c)ancel - Cancel this video and move to next
+  (q)uit - Exit script
+================================================================================
+Your choice: ✗ Skipped by user
+
+[17/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[18/82] Processing video... ✓ Auto-matched
+   ✓ Added to Season 1
+
+[19/82] Processing video... 
+📹 Video: Calendario, quiniela y más (T4 P6) 2a parte
+   Duration: 11:26
+   Published: 2022-08-25T05:18:20-07:00
+   URL: https://www.youtube.com/watch?v=th347cvkrUk
+
+✓ Best Match (Score: 77.0% = Title:77% + Date:0%):
+   Season 3, Episode: Temp. 2020. Cap. 9. Calendario, quiniela y previa Vs Pats
+   Published: 2020-09-09T23:10:02Z
+   Date difference: 715 day(s)
+   [PARTIAL MATCH]
+
+📋 Other candidates (2 more):
+   1. Season 4, Calendario, quiniela y previa vs Pats (352d) (77.0%)
+   2. Season 5, Profundidad posicional y batallas del roster (T5 P3) (1d) (68.0%)
+
+================================================================================
+Options:
+  (y)es - Add this match
+  (n)o - Skip this video
+  (s)kip - Skip and show next candidate
+  (c)ancel - Cancel this video and move to next
+  (q)uit - Exit script
+================================================================================
+Your choice: 
+📹 Video: Calendario, quiniela y más (T4 P6) 2a parte
+   Duration: 11:26
+   Published: 2022-08-25T05:18:20-07:00
+   URL: https://www.youtube.com/watch?v=th347cvkrUk
+
+✓ Best Match (Score: 77.0% = Title:77% + Date:0%):
+   Season 4, Episode: Calendario, quiniela y previa vs Pats
+   Published: 2021-09-07T23:49:11Z
+   Date difference: 352 day(s)
+   [PARTIAL MATCH]
+
+📋 Other candidates (1 more):
+   1. Season 5, Profundidad posicional y batallas del roster (T5 P3) (1d) (68.0%)
+
+================================================================================
+Options:
+  (y)es - Add this match
+  (n)o - Skip this video
+  (s)kip - Skip and show next candidate
+  (c)ancel - Cancel this video and move to next
+  (q)uit - Exit script
+================================================================================
+Your choice: ✓ User confirmed
+   ✓ Added to Season 4
+
+[20/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[21/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[22/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[23/82] Processing video... ✓ Auto-matched
+   ✓ Added to Season 4
+
+[24/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[25/82] Processing video... ✓ Auto-matched
+   ℹ️  Video already in episode
+
+[26/82] Processing video... ✗ No match
+
+[27/82] Processing video... ✗ No match
+
+[28/82] Processing video... 
+📹 Video: JUGANDO AL MADDEN 21. Modo Franquicia. En busca de la 1ª victoria
+   Duration: 2:35:49
+   Published: 2021-03-13T13:07:50-08:00
+   URL: https://www.youtube.com/watch?v=D-5mNVfqxlU
+
+✓ Best Match (Score: 64.0% = Title:64% + Date:0%):
+   Season 7, Episode: Victoria Especial
+   Published: 2024-12-11T19:12:53Z
+   Date difference: 1369 day(s)
+   [PARTIAL MATCH]
+
+📋 Other candidates (2 more):
+   1. Season 5, Semana de Victoria. T5 P6 (557d) (63.0%)
+   2. Season 8, A por la quinta victoria ..... (1734d) (63.0%)
+
+================================================================================
+Options:
+  (y)es - Add this match
+  (n)o - Skip this video
+  (s)kip - Skip and show next candidate
+  (c)ancel - Cancel this video and move to next
+  (q)uit - Exit script
+================================================================================
+Your choice: 

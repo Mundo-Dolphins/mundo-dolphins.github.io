@@ -2,10 +2,11 @@
 set -euo pipefail
 
 # notify_articles_podcasts.sh
-# Detects new articles (content/noticias/*.md) and podcasts (data/season_*.json)
+# Detects new articles (content/noticias/*.md), podcasts (data/season_*.json),
+# and videos (data/videos.json or content/videos/*.md) added in the last commit.
 # added in the last commit and sends them to Telegram
 
-echo "📋 Checking for new articles and podcasts in last commit..."
+echo "📋 Checking for new articles, podcasts, and videos in last commit..."
 
 # Source common Telegram send function with retry logic
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -27,6 +28,7 @@ CHANGED_FILES=$(printf '%s' "$CHANGED_FILES" | tr '\0' '\n')
 # Temp files for storing detected items
 TEMP_ARTICLES=$(mktemp)
 TEMP_PODCASTS=$(mktemp)
+TEMP_VIDEOS=$(mktemp)
 
 # Check for new articles in content/noticias/
 while IFS= read -r file; do
@@ -82,18 +84,66 @@ while IFS= read -r file; do
   fi
 done <<< "$CHANGED_FILES"
 
+# Check for new videos in content/videos/
+while IFS= read -r file; do
+  if [[ "$file" =~ ^content/videos/.*\.md$ ]] && [ -f "$file" ]; then
+    TITLE=$(grep -m 1 "^title:" "$file" | sed 's/title: *//;s/\"//g;s/'"'"'//g' || echo "")
+    SLUG=$(grep -m 1 "^slug:" "$file" | sed 's/slug: *//;s/\"//g;s/'"'"'//g' || echo "")
+    if [ -z "$SLUG" ]; then
+      SLUG=$(basename "$file" .md)
+    fi
+    if [ -n "$TITLE" ]; then
+      echo "${TITLE}|${SLUG}" >> "$TEMP_VIDEOS"
+    fi
+  fi
+done <<< "$CHANGED_FILES"
+
+# Check for new videos in data/videos.json (non-podcast)
+while IFS= read -r file; do
+  if [[ "$file" == "data/videos.json" ]] && [ -f "$file" ]; then
+    CURRENT_JSON=$(cat "$file")
+    PREVIOUS_JSON=$(git show HEAD~1:"$file" 2>/dev/null || echo "[]")
+
+    TEMP_PREV=$(mktemp)
+    TEMP_CURR=$(mktemp)
+
+    echo "$PREVIOUS_JSON" | jq -r '.[] | select(.isPodcast == false) | .url // empty' | sort > "$TEMP_PREV"
+    echo "$CURRENT_JSON" | jq -r '.[] | select(.isPodcast == false) | .url // empty' | sort > "$TEMP_CURR"
+
+    NEW_URLS=$(comm -13 "$TEMP_PREV" "$TEMP_CURR")
+
+    if [ -n "$NEW_URLS" ]; then
+      while IFS= read -r url; do
+        TITLE=$(echo "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.url == $url) | .title')
+        if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
+          SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          if [ -n "$SLUG" ]; then
+            # Avoid duplicates if content/videos was also committed
+            if ! grep -Fq "|${SLUG}" "$TEMP_VIDEOS" 2>/dev/null; then
+              echo "${TITLE}|${SLUG}" >> "$TEMP_VIDEOS"
+            fi
+          fi
+        fi
+      done <<< "$NEW_URLS"
+    fi
+
+    rm -f "$TEMP_PREV" "$TEMP_CURR"
+  fi
+done <<< "$CHANGED_FILES"
+
 # Count total items
 ARTICLES_COUNT=$(wc -l < "$TEMP_ARTICLES" | tr -d ' ')
 PODCASTS_COUNT=$(wc -l < "$TEMP_PODCASTS" | tr -d ' ')
-TOTAL_ITEMS=$((ARTICLES_COUNT + PODCASTS_COUNT))
+VIDEOS_COUNT=$(wc -l < "$TEMP_VIDEOS" | tr -d ' ')
+TOTAL_ITEMS=$((ARTICLES_COUNT + PODCASTS_COUNT + VIDEOS_COUNT))
 
 if [ "$TOTAL_ITEMS" -eq 0 ]; then
-  echo "✅ No new articles or podcasts found"
-  rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS"
+  echo "✅ No new articles, podcasts, or videos found"
+  rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS"
   exit 0
 fi
 
-echo "📊 Found: ${ARTICLES_COUNT} articles, ${PODCASTS_COUNT} podcasts"
+echo "📊 Found: ${ARTICLES_COUNT} articles, ${PODCASTS_COUNT} podcasts, ${VIDEOS_COUNT} videos"
 
 # Send articles to Telegram
 if [ "$ARTICLES_COUNT" -gt 0 ]; then
@@ -143,8 +193,31 @@ if [ "$PODCASTS_COUNT" -gt 0 ]; then
   done < "$TEMP_PODCASTS"
 fi
 
+# Send videos to Telegram
+if [ "$VIDEOS_COUNT" -gt 0 ]; then
+  echo "🎥 Sending ${VIDEOS_COUNT} videos to Telegram..."
+  while IFS='|' read -r title slug; do
+    MESSAGE="🎥 Nuevo vídeo publicado: ${title}
+
+🔗 https://mundodolphins.es/videos/${slug}/"
+
+    if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+      SEND_RESULT=$(send_to_telegram "$MESSAGE")
+
+      if [ "$SEND_RESULT" = "success" ]; then
+        echo "✅ Sent video: ${title:0:50}..."
+        sleep 2
+      else
+        echo "❌ Error sending video: ${title:0:50}..."
+        echo "Response: $SEND_RESULT"
+      fi
+    else
+      echo "⚠️ DRY RUN: Video - ${title:0:50}..."
+    fi
+  done < "$TEMP_VIDEOS"
+fi
+
 # Clean up
-rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS"
+rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS"
 
 echo "✅ Process completed"
-

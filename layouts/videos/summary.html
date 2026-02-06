@@ -1,0 +1,23 @@
+    <div class="card">
+        <div class="card-header">
+            <h2><a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a></h2>
+            <p class="date">{{ partial "fecha-es.html" .Date }}</p>
+        </div>
+
+        <div class="description">
+            {{- with .Params.videoId }}
+            <figure class="video-fallback video-fallback--summary">
+                <a class="video-fallback__link" href="{{ $.RelPermalink }}" rel="bookmark">
+                    <img class="video-fallback__img" src="https://img.youtube.com/vi/{{ . }}/hqdefault.jpg" alt="{{ $.Title }}">
+                </a>
+            </figure>
+            {{- else }}
+            {{ .Summary | plainify | truncate 200 }}
+            {{- end }}
+        </div>
+        <div class="card-footer">
+            <a href="{{ .Permalink }}">
+                <button class="info-btn">Más información</button>
+            </a>
+        </div>
+    </div>
