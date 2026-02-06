@@ -26,7 +26,7 @@ jobs:
 
       - name: Download and process videos
         env:
-          RSS_URL: https://rss-bridge.org/bridge01/?action=display&bridge=YouTubeFeedExpanderBridge&channel=UC0D3OSsOWsgrVeHisHSxQuQ&embed=on&format=Json
+          RSS_URL: ${{ secrets.RSS_URL }}
         run: python .github/scripts/update_videos.py
 
       - name: Check for changes

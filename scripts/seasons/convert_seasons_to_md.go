@@ -14,14 +14,22 @@ import (
 )
 
 type PodcastEpisode struct {
-	DateAndTime string `json:"dateAndTime"`
-	Description string `json:"description"`
-	Audio       string `json:"audio"`
-	ImgMain     string `json:"imgMain"`
-	ImgMini     string `json:"imgMini"`
-	Len         string `json:"len"`
-	Link        string `json:"link"`
+	DateAndTime string       `json:"dateAndTime"`
+	Description string       `json:"description"`
+	Audio       string       `json:"audio"`
+	ImgMain     string       `json:"imgMain"`
+	ImgMini     string       `json:"imgMini"`
+	Len         string       `json:"len"`
+	Link        string       `json:"link"`
+	Title       string       `json:"title"`
+	Video       []VideoEntry `json:"video"`
+}
+
+type VideoEntry struct {
 	Title       string `json:"title"`
+	Duration    string `json:"duration"`
+	URL         string `json:"url"`
+	PublishedAt string `json:"published_at"`
 }
 
 const (
@@ -40,6 +48,7 @@ showDate: true
 %s
 
 <!--more-->
+%s
 {{< iframe %s >}}
 [Escuchar en Ivoox](%s)
 `
@@ -86,6 +95,7 @@ func main() {
 			filename := fmt.Sprintf("%s/%d.md", outputDir, parse.Unix())
 			match := re.FindStringSubmatch(file)
 			id, _ := extractId(post.Link)
+			videoShortcode := generateVideoShortcode(post.Video)
 
 			mdContent := fmt.Sprintf(
 				mdFormat,
@@ -97,6 +107,7 @@ func main() {
 				post.Len,
 				fmt.Sprintf("\"Temporada %s\"", match[1]),
 				post.Description,
+				videoShortcode,
 				id,
 				post.Link,
 			)
@@ -119,4 +130,30 @@ func extractId(url string) (string, error) {
 		return "", fmt.Errorf("no fragment found in URL")
 	}
 	return matches[1], nil
+}
+
+func extractYouTubeID(youtubeURL string) (string, error) {
+	// Extract YouTube video ID from various URL formats
+	// Formats: https://www.youtube.com/watch?v=VIDEO_ID or v=VIDEO_ID&...
+	re := regexp.MustCompile(`(?:youtube\.com/watch\?v=|youtube\.com/.*[?&]v=|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)`)
+	matches := re.FindStringSubmatch(youtubeURL)
+	if len(matches) < 2 {
+		return "", fmt.Errorf("no YouTube video ID found in URL: %s", youtubeURL)
+	}
+	return matches[1], nil
+}
+
+func generateVideoShortcode(videos []VideoEntry) string {
+	if len(videos) == 0 {
+		return ""
+	}
+
+	video := videos[0] // Use first video if multiple exist
+	videoID, err := extractYouTubeID(video.URL)
+	if err != nil {
+		fmt.Printf("Warning: Could not extract YouTube ID from %s: %v\n", video.URL, err)
+		return ""
+	}
+
+	return fmt.Sprintf("{{< youtube %s >}}\n\n", videoID)
 }
