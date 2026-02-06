@@ -26,7 +26,9 @@ jobs:
 
       - name: Download and process videos
         env:
-          RSS_URL: ${{ secrets.RSS_URL }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+          YOUTUBE_MAX_PAGES: ${{ vars.YOUTUBE_MAX_PAGES || '4' }}
         run: python .github/scripts/update_videos.py
 
       - name: Check for changes
@@ -50,20 +52,21 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: new_video_${{ github.run_id }}
           base: main
-          title: "chore: update youtube videos from rss feed"
+          title: "chore: update youtube videos from api"
           body: |
-            Automated PR to update YouTube videos from RSS feed
+            Automated PR to update YouTube videos from API
             
-            This PR adds new videos from the Mundo Dolphins YouTube channel RSS feed.
+            This PR adds new videos from the Mundo Dolphins YouTube channel API.
             
             Changes include:
             - New videos added to `data/videos.json` (sorted by publication date)
+            - embeddable flag set for new videos
             - Podcast episodes updated with video links where applicable
             - isPodcast flag set based on episode matching
             
             **Auto-merge enabled** ✅
           labels: automerge
           delete-branch: true
-          commit-message: "chore: update youtube videos from rss feed"
+          commit-message: "chore: update youtube videos from api"
           committer: "GitHub Action <action@github.com>"
           author: "GitHub Action <action@github.com>"

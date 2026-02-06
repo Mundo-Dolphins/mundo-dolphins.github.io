@@ -19,6 +19,7 @@ type Video struct {
 	URL         string `json:"url"`
 	PublishedAt string `json:"published_at"`
 	IsPodcast   bool   `json:"isPodcast"`
+	Embeddable  *bool  `json:"embeddable"`
 }
 
 const (
@@ -34,7 +35,7 @@ categories:
 showDate: true
 ---
 
-{{< youtube %s >}}
+%s
 `
 	descriptionLength = 120
 )
@@ -81,6 +82,21 @@ func main() {
 			desc = desc[:descriptionLength]
 		}
 
+		embeddable := true
+		if video.Embeddable != nil {
+			embeddable = *video.Embeddable
+		}
+
+		videoBlock := fmt.Sprintf("{{< youtube %s >}}\n", videoID)
+		if !embeddable {
+			videoBlock = fmt.Sprintf(
+				"[![%s](https://img.youtube.com/vi/%s/hqdefault.jpg)](https://www.youtube.com/watch?v=%s)\n",
+				cleanTitle,
+				videoID,
+				videoID,
+			)
+		}
+
 		mdContent := fmt.Sprintf(
 			mdFormat,
 			cleanTitle,
@@ -89,7 +105,7 @@ func main() {
 			false,
 			slug.Make(video.Title),
 			video.Duration,
-			videoID,
+			videoBlock,
 		)
 
 		if err := os.WriteFile(filename, []byte(mdContent), 0644); err != nil {
