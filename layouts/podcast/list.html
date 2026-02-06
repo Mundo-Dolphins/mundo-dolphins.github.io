@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<main class="main" role="main">
+    <div class="posts">
+        {{- $pages := .Pages.ByDate.Reverse -}}
+        {{- $paginator := .Paginate $pages -}}
+        {{- range $paginator.Pages -}}
+            {{ .Render "summary" }}
+        {{- end -}}
+    </div>
+
+    {{- partial "pager.html" . -}}
+</main>
+
+{{ end }}

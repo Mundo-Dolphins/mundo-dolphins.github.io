@@ -22,7 +22,7 @@ type PodcastEpisode struct {
 	Len         string       `json:"len"`
 	Link        string       `json:"link"`
 	Title       string       `json:"title"`
-	Video       []VideoEntry `json:"video"`
+	Video       VideoEntries `json:"video"`
 }
 
 type VideoEntry struct {
@@ -30,6 +30,31 @@ type VideoEntry struct {
 	Duration    string `json:"duration"`
 	URL         string `json:"url"`
 	PublishedAt string `json:"published_at"`
+}
+
+type VideoEntries []VideoEntry
+
+func (v *VideoEntries) UnmarshalJSON(data []byte) error {
+	if len(data) == 0 || string(data) == "null" {
+		*v = nil
+		return nil
+	}
+
+	// Try array first
+	var arr []VideoEntry
+	if err := json.Unmarshal(data, &arr); err == nil {
+		*v = arr
+		return nil
+	}
+
+	// Fallback to single object
+	var single VideoEntry
+	if err := json.Unmarshal(data, &single); err == nil {
+		*v = []VideoEntry{single}
+		return nil
+	}
+
+	return fmt.Errorf("invalid video field format")
 }
 
 const (
