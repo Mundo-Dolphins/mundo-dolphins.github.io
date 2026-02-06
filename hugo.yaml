@@ -20,6 +20,7 @@ params:
   mainSections:
     - Principal
     - podcast
+    - videos
     - noticias
     - social
   widgets:
@@ -58,6 +59,7 @@ params:
     contentTypes:
       - noticias
       - podcast
+      - videos
       - historia
     # Cargar script automáticamente en layouts single
     autoLoadScript: true
@@ -88,6 +90,9 @@ menus:
     - name: Podcast
       pageRef: /podcast
       weight: 20
+    - name: Videos
+      pageRef: /videos
+      weight: 25
     - name: Noticias
       pageRef: /noticias
       weight: 30
