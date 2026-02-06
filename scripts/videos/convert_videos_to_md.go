@@ -30,11 +30,15 @@ date: %s
 draft: %v
 slug: %s
 length: %s
+videoId: "%s"
+embeddable: %v
 categories:
   - "Videos"
 showDate: true
 ---
 
+%s
+<!--more-->
 %s
 `
 	descriptionLength = 120
@@ -89,12 +93,7 @@ func main() {
 
 		videoBlock := fmt.Sprintf("{{< youtube %s >}}\n", videoID)
 		if !embeddable {
-			videoBlock = fmt.Sprintf(
-				"[![%s](https://img.youtube.com/vi/%s/hqdefault.jpg)](https://www.youtube.com/watch?v=%s)\n",
-				cleanTitle,
-				videoID,
-				videoID,
-			)
+			videoBlock = fmt.Sprintf("{{< video-fallback id=\"%s\" title=\"%s\" >}}\n", videoID, cleanTitle)
 		}
 
 		mdContent := fmt.Sprintf(
@@ -105,6 +104,9 @@ func main() {
 			false,
 			slug.Make(video.Title),
 			video.Duration,
+			videoID,
+			embeddable,
+			cleanTitle,
 			videoBlock,
 		)
 

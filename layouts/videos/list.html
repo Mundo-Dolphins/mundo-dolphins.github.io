@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<main class="main" role="main">
+    <div class="posts videos-list">
+        {{- $paginator := .Paginator -}}
+        {{- range $paginator.Pages -}}
+            {{ .Render "summary" }}
+        {{- end -}}
+    </div>
+
+    {{- partial "pager.html" . -}}
+</main>
+
+{{ end }}
