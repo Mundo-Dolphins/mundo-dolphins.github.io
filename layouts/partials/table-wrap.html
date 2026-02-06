@@ -1,0 +1,4 @@
+{{- $content := .content -}}
+{{- $content = $content | replaceRE "<table(\\s|>)" "<div class=\"table-wrapper\"><table$1" -}}
+{{- $content = $content | replaceRE "</table>" "</table></div>" -}}
+{{- $content | safeHTML -}}

@@ -26,7 +26,7 @@
         {{- end }}
         {{- partial "post_toc.html" . -}}
         <div class="content post__content clearfix">
-            {{ .Content }}
+            {{ partial "table-wrap.html" (dict "content" .Content) }}
         </div>
         
         <!-- Social Share Buttons -->

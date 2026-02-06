@@ -11,7 +11,7 @@
         </header>
         
         <div class="content post__content clearfix">
-            {{ .Content }}
+            {{ partial "table-wrap.html" (dict "content" .Content) }}
         </div>
     </article>
 </main>
