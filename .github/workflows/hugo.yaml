@@ -62,7 +62,7 @@ jobs:
           name: generated-content-${{ matrix.script.name }}
           path: ${{ matrix.script.upload }}
 
-    # Elimina el job upload-content, ya no es necesario
+    # Remove upload-content job, no longer needed
 
   build:
     runs-on: ubuntu-latest
@@ -76,31 +76,38 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Download generated blog posts
+      - name: Download all generated artifacts
         uses: actions/download-artifact@v7
         with:
-          name: generated-content-Generate blog posts
-          path: content
-      - name: Download generated videos
-        uses: actions/download-artifact@v7
-        with:
-          name: generated-content-Generate videos
-          path: content
-      - name: Download generated social posts
-        uses: actions/download-artifact@v7
-        with:
-          name: generated-content-Generate social posts
-          path: content
-      - name: Download generated API resources
-        uses: actions/download-artifact@v7
-        with:
-          name: generated-content-Generate API resources
-          path: static/api
-      - name: Download generated news API
-        uses: actions/download-artifact@v7
-        with:
-          name: generated-content-Generate news API
-          path: content
+          pattern: generated-content-*
+          merge-multiple: false
+
+      - name: Organize downloaded artifacts
+        run: |
+          echo "📦 Organizing downloaded artifacts..."
+          
+          # Move generated content to correct locations
+          # Blog posts, videos and social posts -> content/
+          for dir in "generated-content-Generate blog posts" "generated-content-Generate videos" "generated-content-Generate social posts"; do
+            if [ -d "$dir" ]; then
+              echo "  → Moving $dir to content/"
+              cp -r "$dir"/* content/ 2>/dev/null || true
+            fi
+          done
+          
+          # API resources and news API -> static/api/
+          mkdir -p static/api
+          for dir in "generated-content-Generate API resources" "generated-content-Generate news API"; do
+            if [ -d "$dir" ]; then
+              echo "  → Moving $dir to static/api/"
+              cp -r "$dir"/* static/api/ 2>/dev/null || true
+            fi
+          done
+          
+          # Clean up temporary artifact directories
+          rm -rf generated-content-*
+          
+          echo "✅ Artifacts organized successfully"
 
       - name: Cache Node.js modules
         uses: actions/cache@v5
