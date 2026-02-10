@@ -100,7 +100,7 @@ jobs:
         uses: actions/download-artifact@v7
         with:
           name: generated-content-Generate news API
-          path: content
+          path: static/api
 
       - name: Cache Node.js modules
         uses: actions/cache@v5
