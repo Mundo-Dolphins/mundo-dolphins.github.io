@@ -33,11 +33,11 @@ jobs:
     strategy:
       matrix:
         script:
-          - { name: "Generate blog posts", cmd: "go run convert_seasons_to_md.go", dir: "scripts/seasons" }
-          - { name: "Generate videos", cmd: "go run convert_videos_to_md.go", dir: "scripts/videos" }
-          - { name: "Generate social posts", cmd: "go run convert_posts_to_md.go", dir: "scripts/posts" }
-          - { name: "Generate API resources", cmd: "go run generate_api_resources.go", dir: "scripts/api" }
-          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news" }
+          - { name: "Generate blog posts", cmd: "go run convert_seasons_to_md.go", dir: "scripts/seasons", upload: "content" }
+          - { name: "Generate videos", cmd: "go run convert_videos_to_md.go", dir: "scripts/videos", upload: "content" }
+          - { name: "Generate social posts", cmd: "go run convert_posts_to_md.go", dir: "scripts/posts", upload: "content" }
+          - { name: "Generate API resources", cmd: "go run generate_api_resources.go", dir: "scripts/api", upload: "static/api" }
+          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news", upload: "content" }
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: generated-content-${{ matrix.script.name }}
-          path: content
+          path: ${{ matrix.script.upload }}
 
     # Elimina el job upload-content, ya no es necesario
 
@@ -95,7 +95,7 @@ jobs:
         uses: actions/download-artifact@v7
         with:
           name: generated-content-Generate API resources
-          path: content
+          path: static/api
       - name: Download generated news API
         uses: actions/download-artifact@v7
         with:
