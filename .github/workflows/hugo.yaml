@@ -37,7 +37,7 @@ jobs:
           - { name: "Generate videos", cmd: "go run convert_videos_to_md.go", dir: "scripts/videos", upload: "content" }
           - { name: "Generate social posts", cmd: "go run convert_posts_to_md.go", dir: "scripts/posts", upload: "content" }
           - { name: "Generate API resources", cmd: "go run generate_api_resources.go", dir: "scripts/api", upload: "static/api" }
-          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news", upload: "content" }
+          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news", upload: "static/api" }
     steps:
       - name: Checkout
         uses: actions/checkout@v6
