@@ -1,0 +1,82 @@
+name: Notify New Articles via Android FCM
+
+on:
+  workflow_run:
+    workflows: ["Deploy Hugo site to Pages"]
+    types:
+      - completed
+
+jobs:
+  detect-and-notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🔄 Checkout repository
+      uses: actions/checkout@v6
+      with:
+        fetch-depth: 2  # Fetch last 2 commits to compare
+
+    - name: 🔍 Detect new content
+      id: detect_new
+      run: |
+        chmod +x scripts/notify/detect_new_articles.sh
+        scripts/notify/detect_new_articles.sh
+
+    - name: Authenticate to Google Cloud
+      if: steps.detect_new.outputs.has_new_articles == 'true'
+      id: auth
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.ANDROID_FIREBASE_SERVICE_ACCOUNT_JSON }}
+        token_format: access_token
+
+    - name: 🔔 Send Android FCM notifications
+      if: steps.detect_new.outputs.has_new_articles == 'true'
+      env:
+        PROJECT_ID: ${{ secrets.ANDROID_FIREBASE_PROJECT_ID }}
+        ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        DEFAULT_FCM_TOPIC: ${{ secrets.ANDROID_FCM_TOPIC }}
+        NOTIFICATION_DELAY_MS: ${{ vars.NOTIFICATION_DELAY_MS || '1000' }}
+      run: |
+        set -euo pipefail
+        echo "🔔 Sending Android FCM notifications..."
+        chmod +x scripts/send_fcm.sh
+
+        TOPIC="$DEFAULT_FCM_TOPIC"
+        if [[ -z "$TOPIC" ]]; then
+          TOPIC="mundo-dolphins-news"
+        fi
+
+        NOTIFICATIONS_FILE="scripts/notify/notifications.json"
+        if [[ ! -f "$NOTIFICATIONS_FILE" ]]; then
+          echo "Notifications file not found: $NOTIFICATIONS_FILE" >&2
+          exit 1
+        fi
+
+        COUNT=$(jq 'length' "$NOTIFICATIONS_FILE")
+        if [[ "$COUNT" == "0" ]]; then
+          echo "No notifications to send."
+          exit 0
+        fi
+
+        jq -c '.[]' "$NOTIFICATIONS_FILE" | while read -r item; do
+          TYPE=$(echo "$item" | jq -r '.type')
+          TITLE=$(echo "$item" | jq -r '.title')
+          BODY=$(echo "$item" | jq -r '.body')
+          EPISODE_ID=$(echo "$item" | jq -r '.episode_id // empty')
+          ARTICLE_TS=$(echo "$item" | jq -r '.article_published_timestamp // empty')
+
+          scripts/send_fcm.sh \
+            --project-id "$PROJECT_ID" \
+            --access-token "$ACCESS_TOKEN" \
+            --type "$TYPE" \
+            --title "$TITLE" \
+            --body "$BODY" \
+            --episode-id "$EPISODE_ID" \
+            --article-published-timestamp "$ARTICLE_TS" \
+            --topic "$TOPIC"
+
+          if [[ "${NOTIFICATION_DELAY_MS}" =~ ^[0-9]+$ ]] && [[ "${NOTIFICATION_DELAY_MS}" -gt 0 ]]; then
+            sleep "${NOTIFICATION_DELAY_MS}"
+          fi
+        done

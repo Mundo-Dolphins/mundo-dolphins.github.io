@@ -348,21 +348,48 @@ class FCMNotificationManager {
   }
 
   showForegroundNotification(payload) {
-    const title = payload.notification?.title || payload.data?.title || 'Mundo Dolphins';
-    const body = payload.notification?.body || payload.data?.body || 'Nuevo contenido disponible';
+    // Extraer datos del payload.data (enviamos data-only)
+    const title = payload.data?.title || 'Mundo Dolphins';
+    const body = payload.data?.body || 'Nuevo contenido disponible';
+    const url = payload.data?.url || '/';
+    const type = payload.data?.type || 'content';
     
-    this.showLocalNotification(title, body);
+    console.log('🔥 Foreground notification:', { title, body, type });
+    
+    this.showLocalNotification(title, body, { 
+      url, 
+      type,
+      requireInteraction: true 
+    });
   }
 
   showLocalNotification(title, body, options = {}) {
-    if (Notification.permission === 'granted') {
-      new Notification(title, {
+    if (Notification.permission !== 'granted') {
+      console.warn('⚠️ Notification permission not granted. Skipping foreground notification.');
+      return;
+    }
+    
+    try {
+      const notification = new Notification(title, {
         body: body,
         icon: '/favicon-192x192.png',
         badge: '/favicon-96x96.png',
         tag: 'mundo-dolphins-local',
+        requireInteraction: true,
         ...options
       });
+
+      // Click handler
+      notification.onclick = () => {
+        window.focus();
+        const targetUrl = options.url || '/';
+        window.location.href = targetUrl;
+        notification.close();
+      };
+
+      console.log('✅ Foreground notification displayed:', title);
+    } catch (error) {
+      console.error('❌ Error showing foreground notification:', error);
     }
   }
 
