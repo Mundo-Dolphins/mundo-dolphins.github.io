@@ -47,15 +47,30 @@ async function sendNotifications(notifications) {
   }
 
   for (const notification of notifications) {
+    const data = {
+      title: notification.title || 'Mundo Dolphins',
+      body: notification.body || 'Nuevo contenido disponible',
+      url: notification.url || '/',
+      type: notification.type || 'content'
+    };
+
+    if (notification.episode_id) {
+      data.episode_id = String(notification.episode_id);
+    }
+
+    if (notification.article_published_timestamp) {
+      data.article_published_timestamp = String(notification.article_published_timestamp);
+    }
+
     const payload = {
       topic,
-      notification: {
-        title: notification.title || 'Mundo Dolphins',
-        body: notification.body || 'Nuevo contenido disponible'
-      },
       data: {
-        url: notification.url || '/',
-        type: notification.type || 'content'
+        title: data.title,
+        body: data.body,
+        url: data.url,
+        type: data.type,
+        ...(data.episode_id && { episode_id: data.episode_id }),
+        ...(data.article_published_timestamp && { article_published_timestamp: data.article_published_timestamp })
       }
     };
 

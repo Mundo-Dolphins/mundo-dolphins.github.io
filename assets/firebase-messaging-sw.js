@@ -16,23 +16,31 @@ firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage(function(payload) {
-  const notificationTitle = payload.notification?.title || payload.data?.title || 'Mundo Dolphins';
+  // Extraer title y body del payload.data ya que enviamos data-only
+  const notificationTitle = payload.data?.title || 'Mundo Dolphins';
+  const notificationBody = payload.data?.body || 'Nuevo contenido disponible';
+  
   const notificationOptions = {
-    body: payload.notification?.body || payload.data?.body || 'Nuevo contenido disponible',
-    icon: payload.notification?.icon || payload.data?.icon || '/favicon-192x192.png',
+    body: notificationBody,
+    icon: payload.data?.icon || '/favicon-192x192.png',
     badge: '/favicon-96x96.png',
     tag: 'mundo-dolphins-fcm',
     renotify: true,
     requireInteraction: false,
     data: {
-      url: payload.notification?.click_action || payload.data?.url || '/',
+      url: payload.data?.url || '/',
+      type: payload.data?.type || 'content',
+      episode_id: payload.data?.episode_id || '',
+      article_published_timestamp: payload.data?.article_published_timestamp || '',
       fcm_message_id: payload.fcmMessageId
     },
     actions: [
-      { action: 'view', title: 'Ver', icon: '/favicon-32x32.png' },
-      { action: 'dismiss', title: 'Cerrar', icon: '/favicon-16x16.png' }
+      { action: 'view', title: 'Ver' },
+      { action: 'dismiss', title: 'Cerrar' }
     ]
   };
+
+  console.log('🔥 Background message received:', { title: notificationTitle, ...notificationOptions });
 
   return self.registration.showNotification(notificationTitle, notificationOptions);
 });
