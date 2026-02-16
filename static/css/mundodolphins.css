@@ -273,7 +273,12 @@
 
 .header + .menu {
     margin-top: -52px;
-    background: transparent;
+    background: rgba(11, 123, 132, 0.96);
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
 .header + .menu .container {
@@ -283,7 +288,7 @@
 
 .header + .menu,
 .header + .menu .menu__btn {
-    background: transparent;
+    background: rgba(11, 123, 132, 0.96);
 }
 
 .header + .menu .menu__list {
@@ -536,15 +541,56 @@
 }
 
 .history-season__content {
-    display: grid;
-    gap: 1.75rem;
+    display: block;
     min-width: 0;
+}
+
+.history-season__content p {
+    margin: 0 0 1.1rem;
+}
+
+.history-season__content p:last-child {
+    margin-bottom: 0;
 }
 
 .history-season__content h2 {
     font-size: 1.4rem;
     color: #0f2f33;
+    margin: 1.75rem 0 0.8rem;
+}
+
+.history-season__content h2:first-child {
     margin-top: 0.5rem;
+}
+
+.history-season__content h3 {
+    margin: 1.35rem 0 0.65rem;
+    color: #0f2f33;
+}
+
+.history-season__content h4 {
+    margin: 1.1rem 0 0.55rem;
+    color: #0f2f33;
+}
+
+.history-season__content ul,
+.history-season__content ol {
+    margin: 0 0 1rem 1.1rem;
+    padding-left: 0.95rem;
+}
+
+.history-season__content li {
+    margin: 0.28rem 0;
+}
+
+.history-season__content li > p {
+    margin: 0.15rem 0 0.45rem;
+}
+
+.history-season__content li > ul,
+.history-season__content li > ol {
+    margin-top: 0.35rem;
+    margin-bottom: 0.65rem;
 }
 
 .history-season__content table {
@@ -589,6 +635,143 @@
     font-weight: 600;
     text-align: left;
     color: #0f2f33;
+}
+
+/* Historia game pages */
+.history-game .history-season__hero {
+    background: linear-gradient(145deg, #f5fbfc 0%, #e9f4f6 100%);
+}
+
+.history-game .history-season__content {
+    line-height: 1.55;
+}
+
+.history-game .history-season__content > ul:first-of-type {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 0.6rem;
+}
+
+.history-game .history-season__content > ul:first-of-type > li {
+    margin: 0;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.history-game .history-season__content > ul:first-of-type > li > p {
+    margin: 0;
+}
+
+.history-game .history-season__content > ul:first-of-type > li > p > strong {
+    display: block;
+    margin-bottom: 0.22rem;
+}
+
+.history-game .history-season__content .table-wrapper + ul {
+    list-style: none;
+    margin: 0.8rem 0 1.3rem;
+    padding: 0;
+    display: grid;
+    gap: 0.45rem;
+}
+
+.history-game .history-season__content .table-wrapper + ul > li {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border-left: 4px solid #0b6f76;
+    border-radius: 8px;
+    background: #f4fafb;
+}
+
+.history-game .history-season__content h2 {
+    margin-top: 1.55rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(11, 111, 118, 0.2);
+}
+
+.history-game .history-season__content h3 {
+    margin-top: 1.55rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 10px;
+    background: #eef6f8;
+    border-left: 5px solid #0b6f76;
+}
+
+.history-game .history-season__content h3 + ul {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.history-game .history-season__content h3 + ul > li {
+    margin: 0;
+    padding: 0.4rem 0.65rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.history-game .history-season__content h4 + ul {
+    list-style: none;
+    margin: 0 0 1.1rem;
+    padding: 0.8rem 0.95rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.history-game .history-season__content h4 + ul > li {
+    margin: 0.3rem 0;
+}
+
+.history-game .history-season__content h4 + ul > li > ul {
+    margin: 0.35rem 0 0.35rem 1rem;
+}
+
+.history-game .history-season__content p + ul {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+}
+
+.history-game .history-season__content p + ul > li {
+    margin: 0 0 0.65rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.history-game .history-season__content p + ul > li > p {
+    margin: 0 0 0.45rem;
+    font-weight: 700;
+    color: #0f2f33;
+}
+
+.history-game .history-season__content p + ul > li > ul {
+    margin: 0;
+    padding-left: 1rem;
+    columns: 2;
+    column-gap: 1.5rem;
+}
+
+.history-game .history-season__content p + ul > li > ul > li {
+    break-inside: avoid;
+    margin: 0.2rem 0;
+}
+
+@media (max-width: 760px) {
+    .history-game .history-season__content p + ul > li > ul {
+        columns: 1;
+    }
 }
 
 .season-game {
