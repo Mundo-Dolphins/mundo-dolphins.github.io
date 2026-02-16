@@ -1,14 +1,15 @@
 {{ define "main" }}
 {{ $image := resources.Get .Params.logo }}
+{{ $isGame := and .File (in .File.Path "historia/partidos/") }}
 {{ if $image }}
   {{ $image = $image.Resize "150x" }}
 {{ end }}
 
 <main class="main" role="main">
-    <article class="post history-season">
+    <article class="post history-season{{ if $isGame }} history-game{{ end }}">
         <header class="post__header history-season__hero">
             <div class="history-season__hero-text">
-                <span class="history-season__eyebrow">Temporada</span>
+                <span class="history-season__eyebrow">{{ if $isGame }}Partido{{ else }}Temporada{{ end }}</span>
                 <h1 class="post__title">{{ .Title }}</h1>
                 <div class="history-season__meta">
                     <span class="history-season__year">{{ .Date.Format "2006" }}</span>
