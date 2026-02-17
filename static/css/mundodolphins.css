@@ -283,7 +283,7 @@
 
 .header + .menu .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .header + .menu,
@@ -292,12 +292,13 @@
 }
 
 .header + .menu .menu__list {
-    justify-content: flex-end;
-    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.2rem;
 }
 
 .header + .menu .menu__item {
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
 }
 
 .header + .menu .menu__item:hover {
@@ -307,9 +308,10 @@
 .header + .menu .menu__link {
     color: #f6ffff;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    font-size: 0.8rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .header + .menu .menu__link::after {
