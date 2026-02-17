@@ -4,6 +4,7 @@ title: Miami Dolphins. Década de los 70 (1970 a 1979)
 date: 2025-06-06T10:22:00+02:00
 author: José Ramon
 authorLink: https://bsky.app/profile/jrremis.bsky.social
+categories: [Historia]
 ---
 La década de los setenta, supone para Miami y el estado de Florida una etapa de consolidación demográfica.
 
