@@ -32,3 +32,15 @@ headless_cms:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "BlueSky Link", name: "authorLink", widget: "string", default: "https://bsky.app/profile/mundodolphins.es" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "historia"
+    label: "Historia de los Dolphins"
+    folder: "content/historia/articulos/decadas"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "noticias" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "BlueSky Link", name: "authorLink", widget: "string", default: "https://bsky.app/profile/mundodolphins.es" }
+      - { label: "Body", name: "body", widget: "markdown" }

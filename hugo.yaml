@@ -22,6 +22,7 @@ params:
     - podcast
     - videos
     - noticias
+    - historia
     - social
   widgets:
     recent_num: 10
@@ -96,6 +97,9 @@ menus:
     - name: Noticias
       pageRef: /noticias
       weight: 30
+    - name: Historia de los Dolphins
+      pageRef: /historia
+      weight: 35
     - name: Redes Sociales
       pageRef: /social/posts_1
       weight: 40
