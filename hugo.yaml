@@ -116,6 +116,14 @@ outputs:
     - HTML
     - RSS
     - HeadlessCMSConfig
+    - FCMServiceWorker
+
+outputFormats:
+  FCMServiceWorker:
+    mediaType: "text/javascript"
+    baseName: "firebase-messaging-sw"
+    isPlainText: true
+    notAlternative: true
 
 services:
   googleAnalytics:
