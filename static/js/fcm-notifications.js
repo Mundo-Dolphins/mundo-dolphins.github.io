@@ -36,6 +36,30 @@ class FCMNotificationManager {
     return this.config.vapidKey ? { vapidKey: this.config.vapidKey } : {};
   }
 
+  async resetMessagingDb() {
+    if (!('indexedDB' in window)) {
+      return;
+    }
+
+    const dbNames = [
+      'firebase-messaging-database',
+      'firebase-messaging-database-v2',
+      'firebase-messaging'
+    ];
+
+    await Promise.all(
+      dbNames.map(
+        name =>
+          new Promise(resolve => {
+            const request = indexedDB.deleteDatabase(name);
+            request.onsuccess = () => resolve();
+            request.onerror = () => resolve();
+            request.onblocked = () => resolve();
+          })
+      )
+    );
+  }
+
   async init() {
     console.log('🔥 Iniciando FCM...');
     
@@ -73,7 +97,18 @@ class FCMNotificationManager {
       });
 
       // Verificar si ya tenemos un token (solo después de que SW esté activo)
-      this.token = await this.messaging.getToken(this.getTokenOptions());
+      try {
+        this.token = await this.messaging.getToken(this.getTokenOptions());
+      } catch (error) {
+        const message = String(error?.message || error || '');
+        if (message.includes('firebase-messaging-store')) {
+          // Recover from stale IndexedDB schema and retry once.
+          await this.resetMessagingDb();
+          this.token = await this.messaging.getToken(this.getTokenOptions());
+        } else {
+          throw error;
+        }
+      }
       if (this.token) {
         console.log('🔥 Token FCM existente:', this.token);
         this.updateUI(true, 'Notificaciones activas');
