@@ -199,6 +199,23 @@ class FCMTopicManager {
 
 // Auto-initialize when FCM is ready
 document.addEventListener('DOMContentLoaded', function() {
+  let topicManager = null;
+  let topicManagerInitialized = false;
+
+  const initTopicManager = () => {
+    if (topicManagerInitialized || !isFCMInitialized(window.fcmManager)) {
+      return;
+    }
+    topicManagerInitialized = true;
+    console.log('🔔 Initializing Topic Manager...');
+    topicManager = new FCMTopicManager(window.fcmManager);
+    setTimeout(() => {
+      topicManager.autoSubscribeToNews();
+      topicManager.updateTopicUI();
+    }, FCM_CONFIG.AUTO_SUBSCRIBE_DELAY_MS);
+    window.fcmTopicManager = topicManager;
+  };
+
   // Helper to check if FCM is initialized
   function isFCMInitialized(fcmManager) {
     if (!fcmManager) return false;
@@ -211,13 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Wait for FCM to be ready with timeout protection
   const waitForFCM = (retryCount = 0, maxRetries = FCM_CONFIG.MAX_INITIALIZATION_RETRIES) => {
     if (isFCMInitialized(window.fcmManager)) {
-      console.log('🔔 Initializing Topic Manager...');
-      const topicManager = new FCMTopicManager(window.fcmManager);
-      setTimeout(() => {
-        topicManager.autoSubscribeToNews();
-        topicManager.updateTopicUI();
-      }, FCM_CONFIG.AUTO_SUBSCRIBE_DELAY_MS);
-      window.fcmTopicManager = topicManager;
+      initTopicManager();
     } else if (retryCount < maxRetries) {
       setTimeout(() => waitForFCM(retryCount + 1, maxRetries), FCM_CONFIG.RETRY_DELAY_MS);
     } else {
@@ -228,6 +239,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   };
+  window.addEventListener('fcm:ready', () => {
+    initTopicManager();
+  });
   waitForFCM();
 });
 

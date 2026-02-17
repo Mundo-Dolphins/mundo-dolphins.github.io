@@ -60,6 +60,25 @@ class FCMNotificationManager {
     );
   }
 
+  async clearMessagingState() {
+    if ('serviceWorker' in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map(registration => registration.unregister()));
+    }
+
+    if ('caches' in window) {
+      const cacheNames = await caches.keys();
+      await Promise.all(cacheNames.map(name => caches.delete(name)));
+    }
+
+    try {
+      localStorage.removeItem('fcm_token');
+      localStorage.removeItem('fcm_subscriptions');
+    } catch (error) {
+      console.warn('⚠️ Error limpiando almacenamiento FCM:', error);
+    }
+  }
+
   async init() {
     console.log('🔥 Iniciando FCM...');
     
@@ -102,7 +121,14 @@ class FCMNotificationManager {
       } catch (error) {
         const message = String(error?.message || error || '');
         if (message.includes('firebase-messaging-store')) {
-          // Recover from stale IndexedDB schema and retry once.
+          // Recover from stale IndexedDB schema and reload once to rebuild stores.
+          if (!sessionStorage.getItem('fcm_recovered')) {
+            sessionStorage.setItem('fcm_recovered', '1');
+            await this.resetMessagingDb();
+            await this.clearMessagingState();
+            window.location.reload();
+            return false;
+          }
           await this.resetMessagingDb();
           this.token = await this.messaging.getToken(this.getTokenOptions());
         } else {
@@ -113,6 +139,7 @@ class FCMNotificationManager {
         console.log('🔥 Token FCM existente:', this.token);
         this.updateUI(true, 'Notificaciones activas');
         this.saveToken(this.token);
+        window.dispatchEvent(new CustomEvent('fcm:ready', { detail: { token: this.token } }));
       } else {
         console.log('🔥 No hay token FCM');
         this.updateUI(false, 'No suscrito');
