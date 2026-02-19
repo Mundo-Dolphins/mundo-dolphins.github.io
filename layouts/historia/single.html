@@ -22,6 +22,12 @@
             </div>
             {{ end }}
         </header>
+        {{ if .Params.toc }}
+        <div class="toc">
+            <h2>Tabla de Contenidos</h2>
+            {{ .TableOfContents }}
+        </div>
+        {{ end }}
         <div class="content post__content history-season__content clearfix">
             {{- $content := .Content -}}
             {{- $content = $content | replaceRE "<p><a href=\\\"([^\\\"]+)\\\">([^<]+)</a>\\s*(?:<br\\s*/?>\\s*)?<strong>([^<]+)</strong>\\s*-\\s*<strong>Fecha</strong>:\\s*([^<]+)</p>" "<div class=\"season-game\"><a class=\"season-game__link\" href=\"$1\">$2</a><span class=\"season-game__stage\">$3</span><span class=\"season-game__date\">$4</span></div>" -}}
