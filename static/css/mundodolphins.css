@@ -648,7 +648,8 @@
     line-height: 1.55;
 }
 
-.history-game .history-season__content > ul:first-of-type {
+.history-game .history-season__content h2#informacion-del-partido + ul,
+.history-game .history-season__content h2#información-del-partido + ul {
     list-style: none;
     margin: 0 0 1.25rem;
     padding: 0;
@@ -657,7 +658,8 @@
     gap: 0.6rem;
 }
 
-.history-game .history-season__content > ul:first-of-type > li {
+.history-game .history-season__content h2#informacion-del-partido + ul > li,
+.history-game .history-season__content h2#información-del-partido + ul > li {
     margin: 0;
     padding: 0.55rem 0.7rem;
     border: 1px solid #d7e5e8;
@@ -665,11 +667,13 @@
     background: #fff;
 }
 
-.history-game .history-season__content > ul:first-of-type > li > p {
+.history-game .history-season__content h2#informacion-del-partido + ul > li > p,
+.history-game .history-season__content h2#información-del-partido + ul > li > p {
     margin: 0;
 }
 
-.history-game .history-season__content > ul:first-of-type > li > p > strong {
+.history-game .history-season__content h2#informacion-del-partido + ul > li > p > strong,
+.history-game .history-season__content h2#información-del-partido + ul > li > p > strong {
     display: block;
     margin-bottom: 0.22rem;
 }
@@ -756,6 +760,134 @@
     margin: 0 0 0.45rem;
     font-weight: 700;
     color: #0f2f33;
+}
+
+/* Keep nested TOC levels as plain lists (no "card" boxes). */
+.history-game .history-season__content h2#contenido + ul ul,
+.history-game .history-season__content h2#contents + ul ul {
+    list-style: disc;
+    margin: 0.35rem 0 0.65rem 1.1rem;
+    padding-left: 0.95rem;
+    display: block;
+}
+
+.history-game .history-season__content h2#contenido + ul ul > li,
+.history-game .history-season__content h2#contents + ul ul > li {
+    margin: 0.28rem 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.history-game .history-season__content h2#contenido + ul ul > li > p,
+.history-game .history-season__content h2#contents + ul ul > li > p {
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+}
+
+/* Team stats blocks: table-like layout for "Estadisticas <equipo>" sections. */
+.history-game .history-season__content h4[id^="estadísticas-"] + ul,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul {
+    list-style: none;
+    margin: 0 0 1.15rem;
+    padding: 0;
+    border: 1px solid #d7e5e8;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul > li,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul > li {
+    margin: 0;
+    padding: 0.62rem 0.95rem;
+    border-bottom: 1px solid #e7eef0;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul > li:last-child,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul > li:last-child {
+    border-bottom: 0;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.9rem;
+    font-weight: 500;
+    color: #0f2f33;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p > strong,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p > strong {
+    flex: 0 0 auto;
+    min-width: 165px;
+    font-weight: 700;
+}
+
+/* Override generic "p + ul" card style inside team stats only. */
+.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul {
+    list-style: none;
+    margin: 0.55rem 0 0.15rem;
+    padding: 0;
+    border: 1px solid #e7eef0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li {
+    margin: 0;
+    padding: 0.55rem 0.75rem;
+    border: 0;
+    border-bottom: 1px solid #edf2f4;
+    background: #fbfeff;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li:last-child,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li:last-child {
+    border-bottom: 0;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.8rem;
+    font-weight: 500;
+    color: #0f2f33;
+}
+
+.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p > strong,
+.history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p > strong {
+    flex: 0 0 auto;
+    min-width: 135px;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p,
+    .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p,
+    .history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p,
+    .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    .history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p > strong,
+    .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p > strong,
+    .history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p > strong,
+    .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p > strong {
+        min-width: 0;
+    }
 }
 
 .history-game .history-season__content p + ul > li > ul {
