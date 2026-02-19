@@ -15,15 +15,17 @@ source "${SCRIPT_DIR}/telegram_send.sh"
 # Detect changed files in last commit
 # Use raw (unquoted) paths and NUL separation to correctly handle
 # filenames with non-ASCII characters (git may escape them otherwise).
-CHANGED_FILES=$(git -c core.quotepath=false diff --name-only -z HEAD~1 HEAD 2>/dev/null || true)
+# IMPORTANT: Do NOT assign to a variable - it loses NUL bytes. Write directly to file.
+TEMP_FILELIST=$(mktemp)
+git -c core.quotepath=false diff --name-only -z HEAD~1 HEAD 2>/dev/null | \
+  tr '\0' '\n' > "$TEMP_FILELIST" || echo "" > "$TEMP_FILELIST"
 
-if [ -z "$CHANGED_FILES" ]; then
+# Check if file list is empty or has content
+if [ ! -s "$TEMP_FILELIST" ]; then
   echo "✅ No files changed in last commit"
+  rm -f "$TEMP_FILELIST"
   exit 0
 fi
-
-# Convert NUL-separated list to newline-separated for easier iteration
-CHANGED_FILES=$(printf '%s' "$CHANGED_FILES" | tr '\0' '\n')
 
 # Temp files for storing detected items
 TEMP_ARTICLES=$(mktemp)
@@ -32,6 +34,7 @@ TEMP_VIDEOS=$(mktemp)
 
 # Check for new articles in content/noticias/
 while IFS= read -r file; do
+  [ -z "$file" ] && continue
   if [[ "$file" =~ ^content/noticias/.*\.md$ ]] && [ -f "$file" ]; then
     # Extract frontmatter
     TITLE=$(grep -m 1 "^title:" "$file" | sed 's/title: *//;s/"//g;s/'"'"'//g' || echo "")
@@ -41,10 +44,11 @@ while IFS= read -r file; do
       echo "${TITLE}|${SLUG}" >> "$TEMP_ARTICLES"
     fi
   fi
-done <<< "$CHANGED_FILES"
+done < "$TEMP_FILELIST"
 
 # Check for new podcasts in data/season_*.json
 while IFS= read -r file; do
+  [ -z "$file" ] && continue
   if [[ "$file" =~ ^data/season_.*\.json$ ]] && [ -f "$file" ]; then
     # Get episodes from current commit
     CURRENT_JSON=$(cat "$file")
@@ -65,9 +69,14 @@ while IFS= read -r file; do
     
     if [ -n "$NEW_URLS" ]; then
       # Get full episode objects for new URLs
+      # Use a temporary file instead of here-string to avoid file descriptor issues
+      TEMP_URLS=$(mktemp)
+      printf '%s\n' "$NEW_URLS" > "$TEMP_URLS"
+      
       while IFS= read -r url; do
+        [ -z "$url" ] && continue
         # Get title from episode and generate slug
-        TITLE=$(echo "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .title')
+        TITLE=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .title')
         
         if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
           # Generate slug from title using Python
@@ -77,15 +86,18 @@ while IFS= read -r file; do
             echo "${TITLE}|${SLUG}" >> "$TEMP_PODCASTS"
           fi
         fi
-      done <<< "$NEW_URLS"
+      done < "$TEMP_URLS"
+      
+      rm -f "$TEMP_URLS"
     fi
     
     rm -f "$TEMP_PREV" "$TEMP_CURR"
   fi
-done <<< "$CHANGED_FILES"
+done < "$TEMP_FILELIST"
 
 # Check for new videos in content/videos/
 while IFS= read -r file; do
+  [ -z "$file" ] && continue
   if [[ "$file" =~ ^content/videos/.*\.md$ ]] && [ -f "$file" ]; then
     TITLE=$(grep -m 1 "^title:" "$file" | sed 's/title: *//;s/\"//g;s/'"'"'//g' || echo "")
     SLUG=$(grep -m 1 "^slug:" "$file" | sed 's/slug: *//;s/\"//g;s/'"'"'//g' || echo "")
@@ -96,10 +108,11 @@ while IFS= read -r file; do
       echo "${TITLE}|${SLUG}" >> "$TEMP_VIDEOS"
     fi
   fi
-done <<< "$CHANGED_FILES"
+done < "$TEMP_FILELIST"
 
 # Check for new videos in data/videos.json (non-podcast)
 while IFS= read -r file; do
+  [ -z "$file" ] && continue
   if [[ "$file" == "data/videos.json" ]] && [ -f "$file" ]; then
     CURRENT_JSON=$(cat "$file")
     PREVIOUS_JSON=$(git show HEAD~1:"$file" 2>/dev/null || echo "[]")
@@ -113,8 +126,13 @@ while IFS= read -r file; do
     NEW_URLS=$(comm -13 "$TEMP_PREV" "$TEMP_CURR")
 
     if [ -n "$NEW_URLS" ]; then
+      # Use a temporary file instead of here-string to avoid file descriptor issues
+      TEMP_URLS=$(mktemp)
+      printf '%s\n' "$NEW_URLS" > "$TEMP_URLS"
+      
       while IFS= read -r url; do
-        TITLE=$(echo "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.url == $url) | .title')
+        [ -z "$url" ] && continue
+        TITLE=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.url == $url) | .title')
         if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
           SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
           if [ -n "$SLUG" ]; then
@@ -124,12 +142,17 @@ while IFS= read -r file; do
             fi
           fi
         fi
-      done <<< "$NEW_URLS"
+      done < "$TEMP_URLS"
+      
+      rm -f "$TEMP_URLS"
     fi
 
     rm -f "$TEMP_PREV" "$TEMP_CURR"
   fi
-done <<< "$CHANGED_FILES"
+done < "$TEMP_FILELIST"
+
+# Clean up temporary file list
+rm -f "$TEMP_FILELIST"
 
 # Count total items
 ARTICLES_COUNT=$(wc -l < "$TEMP_ARTICLES" | tr -d ' ')
@@ -218,6 +241,6 @@ if [ "$VIDEOS_COUNT" -gt 0 ]; then
 fi
 
 # Clean up
-rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS"
+rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS" "$TEMP_FILELIST"
 
 echo "✅ Process completed"
