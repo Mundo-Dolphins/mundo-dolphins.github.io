@@ -84,12 +84,12 @@ params:
     image_alt: Mundo Dolphins
   androidApp:
     enabled: true
-    ctaLabel: Listen in the Mundo Dolphins app
-    openButtonLabel: Open in app
-    installButtonLabel: Install app
-    backButtonLabel: Back to website
-    nonAndroidMessage: This page is intended for the Mundo Dolphins Android app.
-    androidFallbackMessage: Trying to open the Mundo Dolphins app. If it does not open, you will be redirected to Google Play.
+    ctaLabel: Escuchar en la app de Mundo Dolphins
+    openButtonLabel: Abrir en la app
+    installButtonLabel: Instalar app
+    backButtonLabel: Volver a la web
+    nonAndroidMessage: Esta página está pensada para abrir episodios en la app Android de Mundo Dolphins.
+    androidFallbackMessage: Intentando abrir la app de Mundo Dolphins. Si no se abre, te redirigiremos a Google Play.
     episodePathPrefix: /app/episode
     appLinkBaseUrl: https://mundodolphins.es/app/episode
     playStoreBaseUrl: https://play.google.com/store/apps/details

@@ -1,10 +1,10 @@
 {{ define "main" }}
 {{- $appConfig := .Site.Params.androidApp -}}
-{{- $openLabel := default "Open in app" $appConfig.openButtonLabel -}}
-{{- $installLabel := default "Install app" $appConfig.installButtonLabel -}}
-{{- $backLabel := default "Back to website" $appConfig.backButtonLabel -}}
-{{- $nonAndroidMessage := default "This page is intended for the Mundo Dolphins Android app." $appConfig.nonAndroidMessage -}}
-{{- $androidFallbackMessage := default "Trying to open the Mundo Dolphins app. If it does not open, you will be redirected to Google Play." $appConfig.androidFallbackMessage -}}
+{{- $openLabel := default "Abrir en la app" $appConfig.openButtonLabel -}}
+{{- $installLabel := default "Instalar app" $appConfig.installButtonLabel -}}
+{{- $backLabel := default "Volver a la web" $appConfig.backButtonLabel -}}
+{{- $nonAndroidMessage := default "Esta pagina esta pensada para abrir episodios en la app Android de Mundo Dolphins." $appConfig.nonAndroidMessage -}}
+{{- $androidFallbackMessage := default "Intentando abrir la app de Mundo Dolphins. Si no se abre, te redirigiremos a Google Play." $appConfig.androidFallbackMessage -}}
 {{- $episodePathPrefix := strings.TrimSuffix "/" (default "/app/episode" $appConfig.episodePathPrefix) -}}
 {{- $appLinkBase := strings.TrimSuffix "/" (default "https://mundodolphins.es/app/episode" $appConfig.appLinkBaseUrl) -}}
 {{- $playStoreBase := default "https://play.google.com/store/apps/details" $appConfig.playStoreBaseUrl -}}
@@ -13,8 +13,9 @@
 
 <main class="main" role="main">
     <section id="app-episode-landing" class="app-episode-landing" hidden>
-        <h1 class="app-episode-landing__title">Mundo Dolphins App</h1>
-        <p class="app-episode-landing__meta">Episode ID: <strong id="app-episode-id">-</strong></p>
+  <p class="app-episode-landing__eyebrow">Mundo Dolphins</p>
+  <h1 class="app-episode-landing__title">Abrir episodio en la app</h1>
+  <p class="app-episode-landing__meta">Episodio <strong id="app-episode-id">-</strong></p>
         <p id="app-episode-message" class="app-episode-landing__message">{{ $nonAndroidMessage }}</p>
 
         <div class="app-episode-landing__actions">
@@ -24,7 +25,7 @@
         </div>
 
         <noscript>
-            <p>JavaScript is disabled. Use the buttons above to open or install the app.</p>
+            <p>JavaScript esta desactivado. Usa los botones para abrir o instalar la app.</p>
         </noscript>
     </section>
 

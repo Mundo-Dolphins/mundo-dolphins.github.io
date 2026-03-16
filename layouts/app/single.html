@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{- $appConfig := .Site.Params.androidApp -}}
+{{- $episodeId := default "" .Params.episodeId -}}
+{{- $openLabel := default "Abrir en la app" $appConfig.openButtonLabel -}}
+{{- $installLabel := default "Instalar app" $appConfig.installButtonLabel -}}
+{{- $backLabel := default "Volver a la web" $appConfig.backButtonLabel -}}
+{{- $nonAndroidMessage := default "Esta pagina esta pensada para abrir episodios en la app Android de Mundo Dolphins." $appConfig.nonAndroidMessage -}}
+{{- $androidFallbackMessage := default "Intentando abrir la app de Mundo Dolphins. Si no se abre, te redirigiremos a Google Play." $appConfig.androidFallbackMessage -}}
+{{- $appLinkBase := strings.TrimSuffix "/" (default "https://mundodolphins.es/app/episode" $appConfig.appLinkBaseUrl) -}}
+{{- $playStoreBase := default "https://play.google.com/store/apps/details" $appConfig.playStoreBaseUrl -}}
+{{- $playStorePackage := default "es.mundodolphins.app" $appConfig.playStorePackageName -}}
+{{- $openFallbackDelayMs := default 1500 $appConfig.openFallbackDelayMs -}}
+{{- $appLink := printf "%s/%s" $appLinkBase $episodeId -}}
+{{- $playStoreUrl := printf "%s?id=%s&referrer=%s" $playStoreBase $playStorePackage (urlquery (printf "episodeId=%s" $episodeId)) -}}
+
+<main class="main" role="main">
+  <section
+    class="app-episode-landing"
+    data-non-android-message="{{ $nonAndroidMessage }}"
+    data-android-fallback-message="{{ $androidFallbackMessage }}"
+    data-app-attempt-link="{{ printf "%s?appAttempt=1" $appLink }}"
+    data-play-store-url="{{ $playStoreUrl }}"
+    data-fallback-delay="{{ $openFallbackDelayMs }}"
+  >
+        <p class="app-episode-landing__eyebrow">Mundo Dolphins</p>
+        <h1 class="app-episode-landing__title">Abrir episodio en la app</h1>
+        <p class="app-episode-landing__meta">Episodio <strong>{{ $episodeId }}</strong></p>
+        <p id="app-episode-message" class="app-episode-landing__message">{{ $nonAndroidMessage }}</p>
+
+        <div class="app-episode-landing__actions">
+            <a id="open-in-app-btn" class="app-episode-landing__btn app-episode-landing__btn--primary" href="{{ $appLink }}">{{ $openLabel }}</a>
+            <a id="install-app-btn" class="app-episode-landing__btn app-episode-landing__btn--secondary" href="{{ $playStoreUrl }}" rel="noopener noreferrer">{{ $installLabel }}</a>
+            <a class="app-episode-landing__btn app-episode-landing__btn--secondary" href="/">{{ $backLabel }}</a>
+        </div>
+
+        <noscript>
+            <p>JavaScript esta desactivado. Usa los botones para abrir o instalar la app.</p>
+        </noscript>
+    </section>
+</main>
+
+<script>
+    (function () {
+      var landing = document.querySelector('.app-episode-landing');
+      if (!landing) {
+        return;
+      }
+
+      var isAndroid = /Android/i.test(navigator.userAgent || '');
+      var attempted = new URLSearchParams(window.location.search).get('appAttempt') === '1';
+      var messageNode = document.getElementById('app-episode-message');
+      var nonAndroidMessage = landing.dataset.nonAndroidMessage || '';
+      var androidFallbackMessage = landing.dataset.androidFallbackMessage || '';
+      var appAttemptLink = landing.dataset.appAttemptLink || '';
+      var playStoreUrl = landing.dataset.playStoreUrl || '';
+      var fallbackDelay = Number(landing.dataset.fallbackDelay || '1500');
+
+      if (!isAndroid) {
+        if (messageNode) {
+          messageNode.textContent = nonAndroidMessage;
+        }
+        return;
+      }
+
+      if (messageNode) {
+        messageNode.textContent = androidFallbackMessage;
+      }
+
+      if (attempted) {
+        return;
+      }
+
+      var fallbackTimer = window.setTimeout(function () {
+        window.location.replace(playStoreUrl);
+      }, fallbackDelay);
+
+      // A normal App Link navigation lets Android hand off to the app when installed.
+      window.location.replace(appAttemptLink);
+
+      window.addEventListener('pagehide', function () {
+        window.clearTimeout(fallbackTimer);
+      });
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+          window.clearTimeout(fallbackTimer);
+        }
+      });
+    })();
+</script>
+{{ end }}
