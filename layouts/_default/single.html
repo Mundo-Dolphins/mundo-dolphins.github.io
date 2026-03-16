@@ -28,6 +28,10 @@
         <div class="content post__content clearfix">
             {{ partial "table-wrap.html" (dict "content" .Content) }}
         </div>
+
+        {{- if eq .Section "podcast" -}}
+        {{ partial "android-app-cta.html" . }}
+        {{- end -}}
         
         <!-- Social Share Buttons -->
         {{ partial "social-share.html" . }}

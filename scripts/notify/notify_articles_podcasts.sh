@@ -12,12 +12,46 @@ echo "📋 Checking for new articles, podcasts, and videos in last commit..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/telegram_send.sh"
 
+TARGET_SHA="${NOTIFY_COMMIT_SHA:-HEAD}"
+if ! git rev-parse --verify "$TARGET_SHA" >/dev/null 2>&1; then
+  echo "⚠️ Target commit '$TARGET_SHA' not found locally. Falling back to HEAD."
+  TARGET_SHA="HEAD"
+fi
+
+BASE_SHA="${NOTIFY_BASE_SHA:-${TARGET_SHA}^}"
+if ! git rev-parse --verify "$BASE_SHA" >/dev/null 2>&1; then
+  echo "⚠️ Base commit '$BASE_SHA' not found. Falling back to HEAD~1."
+  BASE_SHA="HEAD~1"
+fi
+
+MAX_PODCASTS_RAW="${TELEGRAM_MAX_PODCASTS:-1}"
+if [[ "$MAX_PODCASTS_RAW" =~ ^[0-9]+$ ]]; then
+  MAX_PODCASTS="$MAX_PODCASTS_RAW"
+else
+  MAX_PODCASTS=1
+fi
+
+echo "🧭 Diff range: ${BASE_SHA}..${TARGET_SHA}"
+echo "🎙️ Max podcast notifications to send: ${MAX_PODCASTS}"
+
+LATEST_SEASON_FILE=$(find data -maxdepth 1 -type f -name 'season_*.json' | \
+  sed -E 's#^data/season_([0-9]+)\.json$#\1|&#' | \
+  sort -t'|' -k1,1n | \
+  tail -n 1 | \
+  cut -d'|' -f2-)
+
+if [ -n "$LATEST_SEASON_FILE" ]; then
+  echo "🗂️ Latest season file for podcast notifications: ${LATEST_SEASON_FILE}"
+else
+  echo "⚠️ Could not determine latest season file. Podcast detection will be skipped."
+fi
+
 # Detect changed files in last commit
 # Use raw (unquoted) paths and NUL separation to correctly handle
 # filenames with non-ASCII characters (git may escape them otherwise).
 # IMPORTANT: Do NOT assign to a variable - it loses NUL bytes. Write directly to file.
 TEMP_FILELIST=$(mktemp)
-git -c core.quotepath=false diff --name-only -z HEAD~1 HEAD 2>/dev/null | \
+git -c core.quotepath=false diff --name-only -z "$BASE_SHA" "$TARGET_SHA" 2>/dev/null | \
   tr '\0' '\n' > "$TEMP_FILELIST" || echo "" > "$TEMP_FILELIST"
 
 # Check if file list is empty or has content
@@ -50,11 +84,15 @@ done < "$TEMP_FILELIST"
 while IFS= read -r file; do
   [ -z "$file" ] && continue
   if [[ "$file" =~ ^data/season_.*\.json$ ]] && [ -f "$file" ]; then
+    if [ -z "$LATEST_SEASON_FILE" ] || [ "$file" != "$LATEST_SEASON_FILE" ]; then
+      continue
+    fi
+
     # Get episodes from current commit
     CURRENT_JSON=$(cat "$file")
     
     # Get episodes from previous commit
-    PREVIOUS_JSON=$(git show HEAD~1:"$file" 2>/dev/null || echo "[]")
+    PREVIOUS_JSON=$(git show "${BASE_SHA}:$file" 2>/dev/null || echo "[]")
     
     # Create temp files
     TEMP_PREV=$(mktemp)
@@ -81,9 +119,25 @@ while IFS= read -r file; do
         if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
           # Generate slug from title using Python
           SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          PUBLISHED=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .dateAndTime // empty' | head -n 1)
+          EPISODE_TS=$(printf '%s' "$PUBLISHED" | python3 -c 'import sys,datetime
+s=(sys.stdin.read() or "").strip()
+if not s:
+  print(0)
+  raise SystemExit(0)
+if s.endswith("Z"):
+  s=s[:-1]+"+00:00"
+try:
+  dt=datetime.datetime.fromisoformat(s)
+except ValueError:
+  print(0)
+  raise SystemExit(0)
+if dt.tzinfo is None:
+  dt=dt.replace(tzinfo=datetime.timezone.utc)
+print(int(dt.timestamp()*1000))')
           
           if [ -n "$SLUG" ]; then
-            echo "${TITLE}|${SLUG}" >> "$TEMP_PODCASTS"
+            echo "${TITLE}|${SLUG}|${EPISODE_TS}" >> "$TEMP_PODCASTS"
           fi
         fi
       done < "$TEMP_URLS"
@@ -115,7 +169,7 @@ while IFS= read -r file; do
   [ -z "$file" ] && continue
   if [[ "$file" == "data/videos.json" ]] && [ -f "$file" ]; then
     CURRENT_JSON=$(cat "$file")
-    PREVIOUS_JSON=$(git show HEAD~1:"$file" 2>/dev/null || echo "[]")
+    PREVIOUS_JSON=$(git show "${BASE_SHA}:$file" 2>/dev/null || echo "[]")
 
     TEMP_PREV=$(mktemp)
     TEMP_CURR=$(mktemp)
@@ -194,8 +248,12 @@ fi
 
 # Send podcasts to Telegram
 if [ "$PODCASTS_COUNT" -gt 0 ]; then
-  echo "🎙️ Sending ${PODCASTS_COUNT} podcasts to Telegram..."
-  while IFS='|' read -r title slug; do
+  echo "🎙️ Detected ${PODCASTS_COUNT} podcasts. Sending up to ${MAX_PODCASTS} most recent..."
+  TEMP_PODCASTS_SORTED=$(mktemp)
+  sort -t'|' -k3,3nr "$TEMP_PODCASTS" | head -n "$MAX_PODCASTS" > "$TEMP_PODCASTS_SORTED"
+  SENT_PODCASTS_COUNT=$(wc -l < "$TEMP_PODCASTS_SORTED" | tr -d ' ')
+
+  while IFS='|' read -r title slug episode_ts; do
     MESSAGE="🎙️ Nuevo capítulo del podcast publicado: ${title}
 
 🔗 https://mundodolphins.es/podcast/${slug}/"
@@ -213,7 +271,10 @@ if [ "$PODCASTS_COUNT" -gt 0 ]; then
     else
       echo "⚠️ DRY RUN: Podcast - ${title:0:50}..."
     fi
-  done < "$TEMP_PODCASTS"
+  done < "$TEMP_PODCASTS_SORTED"
+
+  echo "✅ Podcasts sent: ${SENT_PODCASTS_COUNT} (detected: ${PODCASTS_COUNT})"
+  rm -f "$TEMP_PODCASTS_SORTED"
 fi
 
 # Send videos to Telegram

@@ -32,12 +32,16 @@ jobs:
       - name: 🔄 Checkout repository
         uses: actions/checkout@v6
         with:
-          fetch-depth: 2
+          # Use full history because we diff the deployed commit against its parent.
+          fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_sha }}
 
-      - name: � Detect and send new articles/podcasts to Telegram
+      - name: 🔍 Detect and send new articles/podcasts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NOTIFY_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
+          TELEGRAM_MAX_PODCASTS: ${{ vars.TELEGRAM_MAX_PODCASTS || '1' }}
         run: |
           chmod +x scripts/notify/notify_articles_podcasts.sh
           ./scripts/notify/notify_articles_podcasts.sh

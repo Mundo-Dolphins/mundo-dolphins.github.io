@@ -1,0 +1,123 @@
+{{ define "main" }}
+{{- $appConfig := .Site.Params.androidApp -}}
+{{- $openLabel := default "Open in app" $appConfig.openButtonLabel -}}
+{{- $installLabel := default "Install app" $appConfig.installButtonLabel -}}
+{{- $backLabel := default "Back to website" $appConfig.backButtonLabel -}}
+{{- $nonAndroidMessage := default "This page is intended for the Mundo Dolphins Android app." $appConfig.nonAndroidMessage -}}
+{{- $androidFallbackMessage := default "Trying to open the Mundo Dolphins app. If it does not open, you will be redirected to Google Play." $appConfig.androidFallbackMessage -}}
+{{- $episodePathPrefix := strings.TrimSuffix "/" (default "/app/episode" $appConfig.episodePathPrefix) -}}
+{{- $appLinkBase := strings.TrimSuffix "/" (default "https://mundodolphins.es/app/episode" $appConfig.appLinkBaseUrl) -}}
+{{- $playStoreBase := default "https://play.google.com/store/apps/details" $appConfig.playStoreBaseUrl -}}
+{{- $playStorePackage := default "es.mundodolphins.app" $appConfig.playStorePackageName -}}
+{{- $openFallbackDelayMs := default 1500 $appConfig.openFallbackDelayMs -}}
+
+<main class="main" role="main">
+    <section id="app-episode-landing" class="app-episode-landing" hidden>
+        <h1 class="app-episode-landing__title">Mundo Dolphins App</h1>
+        <p class="app-episode-landing__meta">Episode ID: <strong id="app-episode-id">-</strong></p>
+        <p id="app-episode-message" class="app-episode-landing__message">{{ $nonAndroidMessage }}</p>
+
+        <div class="app-episode-landing__actions">
+            <a id="open-in-app-btn" class="app-episode-landing__btn app-episode-landing__btn--primary" href="{{ $appLinkBase }}">{{ $openLabel }}</a>
+            <a id="install-app-btn" class="app-episode-landing__btn app-episode-landing__btn--secondary" href="{{ printf "%s?id=%s" $playStoreBase $playStorePackage }}" rel="noopener noreferrer">{{ $installLabel }}</a>
+            <a class="app-episode-landing__btn app-episode-landing__btn--secondary" href="/">{{ $backLabel }}</a>
+        </div>
+
+        <noscript>
+            <p>JavaScript is disabled. Use the buttons above to open or install the app.</p>
+        </noscript>
+    </section>
+
+    <div id="default-404" class="warning">
+        <h1 class="warning__headline">404. Pagina no encontrada</h1>
+        <p class="warning__text">La pagina que estas buscando no aparece, no existe o se ha movido a otro lugar. <a href="/">Pagina principal</a>.</p>
+    </div>
+</main>
+
+<script>
+    (function () {
+      var episodePathPrefix = {{ $episodePathPrefix | jsonify }};
+      var path = window.location.pathname || '';
+      var normalizedPrefix = episodePathPrefix.replace(/\/$/, '');
+
+      if (path.indexOf(normalizedPrefix + '/') !== 0) {
+        return;
+      }
+
+      var episodePart = path.slice((normalizedPrefix + '/').length).replace(/\/$/, '');
+      if (!/^\d+$/.test(episodePart)) {
+        return;
+      }
+
+      var episodeId = episodePart;
+      var isAndroid = /Android/i.test(navigator.userAgent || '');
+      var attempted = new URLSearchParams(window.location.search).get('appAttempt') === '1';
+
+      var appLinkBase = {{ $appLinkBase | jsonify }};
+      var playStoreBase = {{ $playStoreBase | jsonify }};
+      var playStorePackage = {{ $playStorePackage | jsonify }};
+      var fallbackDelay = {{ $openFallbackDelayMs }};
+      var nonAndroidMessage = {{ $nonAndroidMessage | jsonify }};
+      var androidFallbackMessage = {{ $androidFallbackMessage | jsonify }};
+
+      var appLink = appLinkBase.replace(/\/$/, '') + '/' + episodeId;
+      var appAttemptLink = appLink + '?appAttempt=1';
+      var playStoreUrl = playStoreBase + '?id=' + encodeURIComponent(playStorePackage) + '&referrer=' + encodeURIComponent('episodeId=' + episodeId);
+
+      var appLanding = document.getElementById('app-episode-landing');
+      var default404 = document.getElementById('default-404');
+      var episodeIdNode = document.getElementById('app-episode-id');
+      var messageNode = document.getElementById('app-episode-message');
+      var openButton = document.getElementById('open-in-app-btn');
+      var installButton = document.getElementById('install-app-btn');
+
+      if (episodeIdNode) {
+        episodeIdNode.textContent = episodeId;
+      }
+      if (openButton) {
+        openButton.href = appLink;
+      }
+      if (installButton) {
+        installButton.href = playStoreUrl;
+      }
+
+      if (default404) {
+        default404.hidden = true;
+      }
+      if (appLanding) {
+        appLanding.hidden = false;
+      }
+
+      if (!isAndroid) {
+        if (messageNode) {
+          messageNode.textContent = nonAndroidMessage;
+        }
+        return;
+      }
+
+      if (messageNode) {
+        messageNode.textContent = androidFallbackMessage;
+      }
+
+      if (attempted) {
+        return;
+      }
+
+      var fallbackTimer = window.setTimeout(function () {
+        window.location.replace(playStoreUrl);
+      }, fallbackDelay);
+
+      // A normal App Link navigation lets Android hand off to the app when installed.
+      window.location.replace(appAttemptLink);
+
+      window.addEventListener('pagehide', function () {
+        window.clearTimeout(fallbackTimer);
+      });
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+          window.clearTimeout(fallbackTimer);
+        }
+      });
+    })();
+</script>
+{{ end }}

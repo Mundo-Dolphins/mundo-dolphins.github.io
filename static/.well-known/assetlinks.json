@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "es.mundodolphins.app",
+      "sha256_cert_fingerprints":
+        ["8F:44:45:FD:FB:AA:2D:BF:E6:E2:D4:A1:8D:18:8E:32:8D:D2:C7:CF:B3:04:AF:BB:09:CF:CB:15:0D:D0:76:64", "0B:6D:06:82:5A:BB:60:66:E1:94:4C:E9:0B:44:C1:9A:E4:D4:37:67:54:AC:42:B7:61:22:F3:25:EF:75:5F:68"]
+    }
+  }
+]
