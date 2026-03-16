@@ -1,0 +1,25 @@
+{{- $appConfig := .Site.Params.androidApp -}}
+{{- if not (eq $appConfig.enabled false) -}}
+  {{- $episodeId := mul .Date.Unix 1000 -}}
+  {{- $ctaLabel := default "Listen in the Mundo Dolphins app" $appConfig.ctaLabel -}}
+  {{- $pathPrefix := strings.TrimSuffix "/" (default "/app/episode" $appConfig.episodePathPrefix) -}}
+  {{- $episodePath := printf "%s/%d" $pathPrefix $episodeId -}}
+
+  <section class="android-app-cta" data-android-app-cta>
+    <a class="android-app-cta__button" href="{{ $episodePath }}" rel="nofollow">{{ $ctaLabel }}</a>
+  </section>
+
+  <script>
+    (function () {
+      var cta = document.querySelector('[data-android-app-cta]');
+      if (!cta) {
+        return;
+      }
+
+      var ua = navigator.userAgent || '';
+      if (ua.indexOf('Android') !== -1) {
+        cta.classList.add('android-app-cta--visible');
+      }
+    })();
+  </script>
+{{- end -}}

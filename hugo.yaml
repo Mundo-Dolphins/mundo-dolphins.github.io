@@ -82,6 +82,19 @@ params:
   logo:
     image: img/Mundo_Dolphins_small.png
     image_alt: Mundo Dolphins
+  androidApp:
+    enabled: true
+    ctaLabel: Listen in the Mundo Dolphins app
+    openButtonLabel: Open in app
+    installButtonLabel: Install app
+    backButtonLabel: Back to website
+    nonAndroidMessage: This page is intended for the Mundo Dolphins Android app.
+    androidFallbackMessage: Trying to open the Mundo Dolphins app. If it does not open, you will be redirected to Google Play.
+    episodePathPrefix: /app/episode
+    appLinkBaseUrl: https://mundodolphins.es/app/episode
+    playStoreBaseUrl: https://play.google.com/store/apps/details
+    playStorePackageName: es.mundodolphins.app
+    openFallbackDelayMs: 1500
 
 menus:
   main:

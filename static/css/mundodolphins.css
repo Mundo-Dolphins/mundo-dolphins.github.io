@@ -1520,3 +1520,111 @@
         padding-top: 10px;
     }
 }
+
+/* Android app CTA on podcast episodes */
+.android-app-cta {
+    display: none;
+    margin: 1.25rem 0 0.75rem;
+    padding: 1rem;
+    background: #f4fafb;
+    border: 1px solid #cfe5e8;
+    border-radius: 10px;
+}
+
+.android-app-cta--visible {
+    display: block;
+}
+
+.android-app-cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 360px;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    background: #0b7b84;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.android-app-cta__button:hover,
+.android-app-cta__button:focus {
+    background: #095f67;
+    color: #ffffff;
+}
+
+/* Smart landing UI for /app/episode/{episodeId} via 404 catch-all */
+.app-episode-landing {
+    padding: 1.4rem;
+    border-radius: 12px;
+    background: #f8fbfc;
+    border: 1px solid #d8e8eb;
+}
+
+.app-episode-landing__title {
+    margin: 0 0 0.55rem;
+}
+
+.app-episode-landing__meta {
+    font-size: 0.95rem;
+    color: #0f2f33;
+    margin-bottom: 0.75rem;
+}
+
+.app-episode-landing__message {
+    margin: 0 0 1rem;
+}
+
+.app-episode-landing__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.app-episode-landing__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    padding: 0.7rem 0.9rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+.app-episode-landing__btn--primary {
+    background: #0b7b84;
+    color: #ffffff;
+}
+
+.app-episode-landing__btn--primary:hover,
+.app-episode-landing__btn--primary:focus {
+    background: #095f67;
+    color: #ffffff;
+}
+
+.app-episode-landing__btn--secondary {
+    background: #ffffff;
+    color: #0b7b84;
+    border-color: #0b7b84;
+}
+
+.app-episode-landing__btn--secondary:hover,
+.app-episode-landing__btn--secondary:focus {
+    background: #edf7f8;
+    color: #0b7b84;
+}
+
+@media (max-width: 640px) {
+    .app-episode-landing__actions {
+        flex-direction: column;
+    }
+
+    .app-episode-landing__btn {
+        width: 100%;
+    }
+}
