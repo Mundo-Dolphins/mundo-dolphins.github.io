@@ -156,10 +156,29 @@ jobs:
             --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
         working-directory: .
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Validate App Links file
+        run: |
+          test -f ./public/.well-known/assetlinks.json
+          echo "✅ Found ./public/.well-known/assetlinks.json"
+
+      # upload-pages-artifact excludes dot-directories (e.g. .well-known),
+      # so package the Pages artifact manually to preserve Android App Links files.
+      - name: Package Pages artifact (include dot-directories)
+        run: |
+          mkdir -p "${{ runner.temp }}/pages-artifact"
+          tar \
+            --directory ./public \
+            -cvf "${{ runner.temp }}/pages-artifact/artifact.tar" \
+            .
+          gzip -f "${{ runner.temp }}/pages-artifact/artifact.tar"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: ./public
+          name: github-pages
+          path: ${{ runner.temp }}/pages-artifact/artifact.tar.gz
+          retention-days: 1
+          if-no-files-found: error
 
   # Deployment job
   deploy:
