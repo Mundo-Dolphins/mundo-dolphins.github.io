@@ -1,7 +1,7 @@
 {{- $appConfig := .Site.Params.androidApp -}}
 {{- if not (eq $appConfig.enabled false) -}}
   {{- $episodeId := mul .Date.Unix 1000 -}}
-  {{- $ctaLabel := default "Listen in the Mundo Dolphins app" $appConfig.ctaLabel -}}
+  {{- $ctaLabel := default "Escuchar en la app de Mundo Dolphins" $appConfig.ctaLabel -}}
   {{- $pathPrefix := strings.TrimSuffix "/" (default "/app/episode" $appConfig.episodePathPrefix) -}}
   {{- $episodePath := printf "%s/%d" $pathPrefix $episodeId -}}
 

@@ -1558,53 +1558,80 @@
 
 /* Smart landing UI for /app/episode/{episodeId} via 404 catch-all */
 .app-episode-landing {
-    padding: 1.4rem;
-    border-radius: 12px;
-    background: #f8fbfc;
-    border: 1px solid #d8e8eb;
+    margin: 1rem auto;
+    padding: 1.6rem;
+    max-width: 740px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, #f7fdff 0%, #eef8fa 100%);
+    border: 1px solid #cfe3e8;
+    box-shadow: 0 10px 28px rgba(11, 123, 132, 0.12);
+}
+
+.app-episode-landing__eyebrow {
+    margin: 0 0 0.4rem;
+    color: #0b7b84;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
 }
 
 .app-episode-landing__title {
-    margin: 0 0 0.55rem;
+    margin: 0 0 0.6rem;
+    color: #082327;
+    font-size: clamp(1.35rem, 2.7vw, 2rem);
+    line-height: 1.2;
 }
 
 .app-episode-landing__meta {
-    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid #b8d8df;
+    background: #ffffff;
+    font-size: 0.92rem;
     color: #0f2f33;
-    margin-bottom: 0.75rem;
+    margin: 0 0 0.85rem;
 }
 
 .app-episode-landing__message {
-    margin: 0 0 1rem;
+    margin: 0 0 1.1rem;
+    color: #123d42;
+    max-width: 60ch;
 }
 
 .app-episode-landing__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.65rem;
+    gap: 0.75rem;
 }
 
 .app-episode-landing__btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 170px;
-    padding: 0.7rem 0.9rem;
-    border-radius: 8px;
+    min-width: 185px;
+    padding: 0.74rem 1rem;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 700;
     border: 1px solid transparent;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .app-episode-landing__btn--primary {
     background: #0b7b84;
     color: #ffffff;
+    box-shadow: 0 6px 18px rgba(11, 123, 132, 0.3);
 }
 
 .app-episode-landing__btn--primary:hover,
 .app-episode-landing__btn--primary:focus {
     background: #095f67;
     color: #ffffff;
+    transform: translateY(-1px);
 }
 
 .app-episode-landing__btn--secondary {
@@ -1617,6 +1644,7 @@
 .app-episode-landing__btn--secondary:focus {
     background: #edf7f8;
     color: #0b7b84;
+    transform: translateY(-1px);
 }
 
 @media (max-width: 640px) {

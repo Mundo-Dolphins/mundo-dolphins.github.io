@@ -1,0 +1,20 @@
+{{- $adapter := . -}}
+{{- $podcastEntries := os.ReadDir "content/podcast" -}}
+
+{{- range $entry := $podcastEntries -}}
+  {{- if not $entry.IsDir -}}
+    {{- $fileName := $entry.Name -}}
+    {{- if and (strings.HasSuffix $fileName ".md") (findRE `^[0-9]+\.md$` $fileName) -}}
+      {{- $seconds := strings.TrimSuffix ".md" $fileName -}}
+      {{- $episodeId := printf "%d" (mul (int $seconds) 1000) -}}
+      {{- $page := dict
+        "path" (printf "episode/%s" $episodeId)
+        "title" (printf "Abrir episodio %s en la app" $episodeId)
+        "type" "app"
+        "layout" "single"
+        "params" (dict "episodeId" $episodeId)
+      -}}
+      {{- $adapter.AddPage $page -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
