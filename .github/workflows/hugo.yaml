@@ -167,16 +167,18 @@ jobs:
         run: |
           mkdir -p "${{ runner.temp }}/pages-artifact"
           tar \
+            --dereference --hard-dereference \
             --directory ./public \
             -cvf "${{ runner.temp }}/pages-artifact/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
             .
-          gzip -f "${{ runner.temp }}/pages-artifact/artifact.tar"
 
       - name: Upload Pages artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ${{ runner.temp }}/pages-artifact/artifact.tar.gz
+          path: ${{ runner.temp }}/pages-artifact/artifact.tar
           retention-days: 1
           if-no-files-found: error
 
