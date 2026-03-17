@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{- $appConfig := .Site.Params.androidApp -}}
 {{- $episodeId := default "" .Params.episodeId -}}
+{{- $episodeTitle := default (printf "Episodio %s" $episodeId) .Params.episodeTitle -}}
 {{- $openLabel := default "Abrir en la app" $appConfig.openButtonLabel -}}
 {{- $installLabel := default "Instalar app" $appConfig.installButtonLabel -}}
 {{- $backLabel := default "Volver a la web" $appConfig.backButtonLabel -}}
@@ -24,7 +25,7 @@
   >
         <p class="app-episode-landing__eyebrow">Mundo Dolphins</p>
         <h1 class="app-episode-landing__title">Abrir episodio en la app</h1>
-        <p class="app-episode-landing__meta">Episodio <strong>{{ $episodeId }}</strong></p>
+        <p class="app-episode-landing__meta">{{ $episodeTitle }}</p>
         <p id="app-episode-message" class="app-episode-landing__message">{{ $nonAndroidMessage }}</p>
 
         <div class="app-episode-landing__actions">
