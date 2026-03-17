@@ -7,8 +7,15 @@
     {{- if and (strings.HasSuffix $fileName ".md") (findRE `^[0-9]+\.md$` $fileName) -}}
       {{- $seconds := strings.TrimSuffix ".md" $fileName -}}
       {{- $episodeId := printf "%d" (mul (int $seconds) 1000) -}}
-      {{- $podcastPage := site.GetPage (printf "podcast/%s" $seconds) -}}
-      {{- $episodeTitle := cond (and (ne $podcastPage nil) (ne $podcastPage.Title "")) $podcastPage.Title (printf "Episodio %s" $episodeId) -}}
+      {{- $episodeTitle := printf "Episodio %s" $episodeId -}}
+      {{- $podcastContent := os.ReadFile (printf "content/podcast/%s" $fileName) -}}
+      {{- $frontMatter := replaceRE `(?s)^---\s*\n(.*?)\n---\s*.*$` "$1" $podcastContent -}}
+      {{- if ne $frontMatter $podcastContent -}}
+        {{- $frontMatterData := transform.Unmarshal (dict "format" "yaml") $frontMatter -}}
+        {{- with index $frontMatterData "title" -}}
+          {{- $episodeTitle = . -}}
+        {{- end -}}
+      {{- end -}}
       {{- $page := dict
         "path" (printf "episode/%s" $episodeId)
         "title" (printf "Abrir '%s' en la app" $episodeTitle)
