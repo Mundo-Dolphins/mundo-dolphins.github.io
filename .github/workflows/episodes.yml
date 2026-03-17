@@ -156,9 +156,64 @@ jobs:
           chmod +x checker
           echo "Cached binary ready to use"
 
+      - name: Get latest episode date
+        id: latest_episode
+        run: |
+          LATEST=$(python3 - << 'EOF'
+          import json, glob
+          from datetime import timezone
+          dates = []
+          for fpath in glob.glob('data/season_*.json'):
+              try:
+                  items = json.load(open(fpath, encoding='utf-8'))
+                  for item in items:
+                      dt = item.get('dateAndTime', '')
+                      if dt:
+                          dates.append(dt)
+              except Exception:
+                  pass
+          if dates:
+              print(sorted(dates)[-1])
+          EOF
+          )
+          echo "Latest episode date: $LATEST"
+          echo "since=$LATEST" >> $GITHUB_OUTPUT
+
       - name: Run checker
         run: |
-          ./checker rss --data ${GITHUB_WORKSPACE}/data
+          SINCE="${{ steps.latest_episode.outputs.since }}"
+          if [ -n "$SINCE" ]; then
+            echo "Fetching episodes since: $SINCE"
+            ./checker rss --data ${GITHUB_WORKSPACE}/data --since "$SINCE"
+          else
+            echo "No existing episodes found, fetching all"
+            ./checker rss --data ${GITHUB_WORKSPACE}/data
+          fi
+
+      - name: Validate no duplicate episodes
+        run: |
+          python3 - << 'EOF'
+          import json, glob, sys, collections
+          errors = []
+          for fpath in sorted(glob.glob('data/season_*.json')):
+              try:
+                  data = json.load(open(fpath, encoding='utf-8'))
+              except Exception as e:
+                  errors.append(f"{fpath}: error al leer JSON: {e}")
+                  continue
+              seen = collections.Counter(i.get('link', '') for i in data if i.get('link'))
+              dups = [k for k, v in seen.items() if v > 1]
+              if dups:
+                  errors.append(f"{fpath}: {len(dups)} episode(s) duplicado(s)")
+                  for d in dups[:3]:
+                      errors.append(f"  - {d}")
+          if errors:
+              print("❌ Duplicados detectados — abortando commit:")
+              for e in errors:
+                  print(e)
+              sys.exit(1)
+          print("✅ Sin duplicados")
+          EOF
 
       - name: Clean up binary before commit
         run: rm -f checker.tar.gz
