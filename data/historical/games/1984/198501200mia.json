@@ -1,0 +1,131 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-02-18T11:41:05Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Rival",
+    "date": "1985-01-20",
+    "slug": "mia-riv-19850120",
+    "path": "historia/partidos/mia-riv-19850120",
+    "params": {
+      "game_id": "198501200mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [
+        {
+          "Equipo": "Miami Dolphins",
+          "1": "10",
+          "2": "6",
+          "3": "0",
+          "4": "0",
+          "Final": "16"
+        },
+        {
+          "Equipo": "San Francisco 49ers",
+          "1": "7",
+          "2": "21",
+          "3": "10",
+          "4": "0",
+          "Final": "38"
+        }
+      ],
+      "scoring_summary": [
+        {
+          "Cuarto": "1",
+          "Equipo": "Dolphins",
+          "Descripción": "Uwe von Schamann field goal de 37 yardas",
+          "Marcador visitante": "3",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "1",
+          "Equipo": "49ers",
+          "Descripción": "Carl Monroe pase de 33 yardas de Joe Montana (Ray Wersching kick)",
+          "Marcador visitante": "3",
+          "Marcador local": "7"
+        },
+        {
+          "Cuarto": "1",
+          "Equipo": "Dolphins",
+          "Descripción": "Dan Johnson pase de 2 yardas de Dan Marino (Uwe von Schamann kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "7"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "49ers",
+          "Descripción": "Roger Craig pase de 8 yardas de Joe Montana (Ray Wersching kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "14"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "49ers",
+          "Descripción": "Joe Montana carrera de 6 yardas (Ray Wersching kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "21"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "49ers",
+          "Descripción": "Roger Craig carrera de 2 yardas (Ray Wersching kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "28"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Uwe von Schamann field goal de 31 yardas",
+          "Marcador visitante": "13",
+          "Marcador local": "28"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Uwe von Schamann field goal de 30 yardas",
+          "Marcador visitante": "16",
+          "Marcador local": "28"
+        },
+        {
+          "Cuarto": "3",
+          "Equipo": "49ers",
+          "Descripción": "Ray Wersching field goal de 27 yardas",
+          "Marcador visitante": "16",
+          "Marcador local": "31"
+        },
+        {
+          "Cuarto": "3",
+          "Equipo": "49ers",
+          "Descripción": "Roger Craig pase de 16 yardas de Joe Montana (Ray Wersching kick)",
+          "Marcador visitante": "16",
+          "Marcador local": "38"
+        }
+      ]
+    },
+    "Conteo de snaps": {},
+    "Equipos": {},
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Playoffs",
+      "Fecha": "20 de enero de 1985",
+      "Estadio": "Stanford Stadium",
+      "Tipo de estadio": "Al aire libre",
+      "Clima": "45 grados, humedad relativa 91%, viento 8 mph"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": [
+      {
+        "youtube_id": "SEOo3yNSB2g",
+        "title": "Legacy import",
+        "url": "https://www.youtube.com/watch?v=SEOo3yNSB2g",
+        "duration_seconds": 12152
+      }
+    ]
+  }
+}

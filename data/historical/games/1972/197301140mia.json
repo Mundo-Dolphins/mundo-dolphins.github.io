@@ -1,0 +1,83 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-02-18T11:41:02Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Rival",
+    "date": "1973-01-14",
+    "slug": "mia-riv-19730114",
+    "path": "historia/partidos/mia-riv-19730114",
+    "params": {
+      "game_id": "197301140mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [
+        {
+          "Equipo": "Miami Dolphins",
+          "1": "7",
+          "2": "7",
+          "3": "0",
+          "4": "0",
+          "Final": "14"
+        },
+        {
+          "Equipo": "Washington Redskins",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "7",
+          "Final": "7"
+        }
+      ],
+      "scoring_summary": [
+        {
+          "Cuarto": "1",
+          "Equipo": "Dolphins",
+          "Descripción": "Howard Twilley pase de 28 yardas de Bob Griese (Garo Yepremian kick)",
+          "Marcador visitante": "7",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Jim Kiick carrera de 1 yarda (Garo Yepremian kick)",
+          "Marcador visitante": "14",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Redskins",
+          "Descripción": "Mike Bass 49 yardas special teams fumble return (Curt Knight kick)",
+          "Marcador visitante": "14",
+          "Marcador local": "7"
+        }
+      ]
+    },
+    "Conteo de snaps": {},
+    "Equipos": {},
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Playoffs",
+      "Fecha": "14 de enero de 1973",
+      "Estadio": "Los Angeles Memorial Coliseum",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "64 grados, humedad relativa 53%, viento 7 mph"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": [
+      {
+        "youtube_id": "vRiRRXKg8Qk",
+        "title": "Legacy import",
+        "url": "https://www.youtube.com/watch?v=vRiRRXKg8Qk",
+        "duration_seconds": 1315
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-02-18T11:41:02Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Rival",
+    "date": "1972-01-16",
+    "slug": "mia-riv-19720116",
+    "path": "historia/partidos/mia-riv-19720116",
+    "params": {
+      "game_id": "197201160dal"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [
+        {
+          "Equipo": "Dallas Cowboys",
+          "1": "3",
+          "2": "7",
+          "3": "7",
+          "4": "7",
+          "Final": "24"
+        },
+        {
+          "Equipo": "Miami Dolphins",
+          "1": "0",
+          "2": "3",
+          "3": "0",
+          "4": "0",
+          "Final": "3"
+        }
+      ],
+      "scoring_summary": [
+        {
+          "Cuarto": "1",
+          "Equipo": "Cowboys",
+          "Descripción": "Mike Clark field goal de 9 yardas",
+          "Marcador visitante": "3",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Cowboys",
+          "Descripción": "Lance Alworth pase de 7 yardas de Roger Staubach (Mike Clark kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Garo Yepremian field goal de 31 yardas",
+          "Marcador visitante": "10",
+          "Marcador local": "3"
+        },
+        {
+          "Cuarto": "3",
+          "Equipo": "Cowboys",
+          "Descripción": "Duane Thomas carrera de 3 yardas (Mike Clark kick)",
+          "Marcador visitante": "17",
+          "Marcador local": "3"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Cowboys",
+          "Descripción": "Mike Ditka pase de 7 yardas de Roger Staubach (Mike Clark kick)",
+          "Marcador visitante": "24",
+          "Marcador local": "3"
+        }
+      ]
+    },
+    "Conteo de snaps": {},
+    "Equipos": {},
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Playoffs",
+      "Fecha": "16 de enero de 1972",
+      "Estadio": "Tulane Stadium",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "astroturf",
+      "Clima": "35 grados, humedad relativa 40%, viento 18 mph, viento chill 24"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": [
+      {
+        "youtube_id": "bUZmshN_Kzs",
+        "title": "Legacy import",
+        "url": "https://www.youtube.com/watch?v=bUZmshN_Kzs",
+        "duration_seconds": 656
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{{/*
+  Partial: historia/season-draft.html
+  
+  Renderiza la tabla de jugadores seleccionados en el draft.
+  
+  Recibe: . = slice de objetos de sections["Jugadores seleccionados en el draft"]
+  
+  Columnas: Ronda, Pick, Posición, Nombre, Universidad.
+  Las columnas estadísticas adicionales del JSON se omiten.
+*/}}
+{{ $picks := . }}
+
+<h2 id="jugadores-seleccionados-en-el-draft">Jugadores seleccionados en el draft</h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+  <th>Ronda</th>
+  <th>Pick</th>
+  <th>Posición</th>
+  <th>Nombre</th>
+  <th>Universidad</th>
+</tr>
+</thead>
+<tbody>
+{{ range $picks }}
+<tr>
+  <td>{{ index . "Ronda" }}</td>
+  <td>{{ index . "Pick" }}</td>
+  <td>{{ index . "Posición" }}</td>
+  <td>{{ index . "Nombre" }}</td>
+  <td>{{ index . "Universidad" }}</td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+</div>

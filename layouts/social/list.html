@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main" role="main">
+    <div class="posts">
+        {{- $pages := .Pages.ByDate.Reverse -}}
+        {{- $paginator := .Paginate $pages -}}
+        {{- range $paginator.Pages -}}
+            {{ .Render "summary" }}
+        {{- end -}}
+    </div>
+
+    {{- partial "pager.html" . -}}
+</main>
+
+<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+{{ end }}

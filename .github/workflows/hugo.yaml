@@ -28,88 +28,16 @@ defaults:
     shell: bash
 
 jobs:
-  generate-content:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        script:
-          - { name: "Generate blog posts", cmd: "go run convert_seasons_to_md.go", dir: "scripts/seasons", upload: "content" }
-          - { name: "Generate videos", cmd: "go run convert_videos_to_md.go", dir: "scripts/videos", upload: "content" }
-          - { name: "Generate social posts", cmd: "go run convert_posts_to_md.go", dir: "scripts/posts", upload: "content" }
-          - { name: "Generate API resources", cmd: "go run generate_api_resources.go", dir: "scripts/api", upload: "static/api" }
-          - { name: "Generate news API", cmd: "go run generate_api.go", dir: "scripts/news", upload: "static/api" }
-          - { name: "Generate videos API", cmd: "go run generate_videos_api.go", dir: "scripts/videos", upload: "static/api" }
-          - { name: "Generate social API", cmd: "go run generate_social_api.go", dir: "scripts/posts", upload: "static/api" }
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Cache Go modules
-        uses: actions/cache@v5
-        with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
-      - name: ${{ matrix.script.name }}
-        run: ${{ matrix.script.cmd }}
-        working-directory: ${{ matrix.script.dir }}
-      - name: Upload generated content
-        uses: actions/upload-artifact@v7
-        with:
-          name: generated-content-${{ matrix.script.name }}
-          path: ${{ matrix.script.upload }}
-
-    # Remove upload-content job, no longer needed
-
   build:
     runs-on: ubuntu-latest
-    needs: generate-content
     env:
-      HUGO_VERSION: 0.150.0
+      HUGO_VERSION: 0.158.0
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           submodules: recursive
           fetch-depth: 0
-
-      - name: Download all generated artifacts
-        uses: actions/download-artifact@v8
-        with:
-          pattern: generated-content-*
-          merge-multiple: false
-
-      - name: Organize downloaded artifacts
-        run: |
-          echo "📦 Organizing downloaded artifacts..."
-          
-          # Move generated content to correct locations
-          # Blog posts, videos and social posts -> content/
-          for dir in "generated-content-Generate blog posts" "generated-content-Generate videos" "generated-content-Generate social posts"; do
-            if [ -d "$dir" ]; then
-              echo "  → Moving $dir to content/"
-              cp -r "$dir"/* content/ 2>/dev/null || true
-            fi
-          done
-          
-          # API resources, news API, and videos API -> static/api/
-          mkdir -p static/api
-          for dir in "generated-content-Generate API resources" "generated-content-Generate news API" "generated-content-Generate videos API" "generated-content-Generate social API"; do
-            if [ -d "$dir" ]; then
-              echo "  → Moving $dir to static/api/"
-              cp -r "$dir"/* static/api/ 2>/dev/null || true
-            fi
-          done
-          
-          # Clean up temporary artifact directories
-          rm -rf generated-content-*
-          
-          echo "✅ Artifacts organized successfully"
 
       - name: Cache Node.js modules
         uses: actions/cache@v5

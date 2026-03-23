@@ -1,0 +1,46 @@
+{{/*
+  Partial: historia/game-teams.html
+  Recibe: . = $data.sections (dict completo de secciones)
+
+  Usa el orden del linescore (Anotaciones) para iterar los equipos,
+  luego presenta estadísticas de equipo y por jugador para cada uno.
+*/}}
+{{ $equipos   := index . "Equipos" }}
+{{ $linescore := (index . "Anotaciones").linescore }}
+
+<h2 id="equipos">Equipos</h2>
+
+{{ range $linescore }}
+  {{ $teamName := .Equipo }}
+  {{ $teamData := index $equipos $teamName }}
+  {{ $score    := .Final }}
+
+  <h3 id="{{ $teamName | urlize }}">{{ $teamName }}</h3>
+
+  <p>
+    <strong>Coach:</strong> {{ $teamData.Coach }} &nbsp;|&nbsp;
+    <strong>Puntos:</strong> {{ $teamData.Puntos }} &nbsp;|&nbsp;
+    <strong>Record:</strong> {{ $teamData.Record }}
+  </p>
+
+  {{/* Estadísticas aggregate del equipo */}}
+  {{ with (index $teamData "Estadísticas") }}
+  <h4>Estadísticas del equipo</h4>
+  <div class="table-responsive">
+  <table class="game-team-stats">
+    <tbody>
+      {{ range $key, $val := . }}
+      <tr>
+        <th>{{ $key }}</th>
+        <td>{{ $val }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  </div>
+  {{ end }}
+
+  {{/* Estadísticas por jugador */}}
+  {{ partial "historia/game-player-stats.html" $teamData }}
+
+{{ end }}

@@ -1,0 +1,108 @@
+{{/*
+  Layout: layouts/historia/season.html
+  
+  Renderiza una página de temporada histórica generada dinámicamente
+  desde el content adapter content/historia/_content.gotmpl.
+  
+  Cómo resuelve los datos:
+  ─────────────────────────
+  El adapter pasa en .Params.season_key la clave del JSON (p.ej. "2017").
+  Este layout recupera el dato completo desde:
+    site.Data.historical.seasons[key]
+  y delega cada sección a partials especializados.
+  
+  Si por algún motivo la clave no existe en site.Data (no debería ocurrir
+  nunca en producción), se muestra un error claro.
+*/}}
+{{ define "main" }}
+  {{/* ── Resolver datos de la temporada ── */}}
+  {{ $key  := .Params.season_key }}
+  {{ $data := index site.Data.historical.seasons $key }}
+
+  {{ if not $data }}
+    <main class="main" role="main">
+      <p>Error: no se encontraron datos para la temporada {{ $key }}</p>
+    </main>
+  {{ else }}
+    {{ $sections := $data.sections }}
+
+    {{/* ── Logo del equipo (igual que en el single.html original) ── */}}
+    {{ $image := resources.Get .Params.logo }}
+    {{ if $image }}
+      {{ $image = $image.Resize "150x" }}
+    {{ end }}
+
+    <main class="main" role="main">
+      <article class="post history-season">
+        <header class="post__header history-season__hero">
+          <div class="history-season__hero-text">
+            <span class="history-season__eyebrow">Temporada</span>
+            <h1 class="post__title">{{ .Title }}</h1>
+            <div class="history-season__meta">
+              <span class="history-season__year">{{ .Date.Format "2006" }}</span>
+              <span class="history-season__badge">Miami Dolphins</span>
+            </div>
+          </div>
+          {{ if $image }}
+          <div class="history-season__logo-wrap">
+            <img class="history-season__logo"
+                 src="{{ $image.RelPermalink }}"
+                 width="{{ $image.Width }}"
+                 height="{{ $image.Height }}"
+                 alt="">
+          </div>
+          {{ end }}
+        </header>
+
+        {{/* ── Tabla de contenidos ── */}}
+        {{ if .Params.toc }}
+        <div class="toc">
+          <h2>Tabla de Contenidos</h2>
+          <div id="TableOfContents">
+            <ul>
+              <li><a href="#resumen">Resumen</a></li>
+              <li><a href="#roster">Roster</a></li>
+              <li><a href="#jugadores-seleccionados-en-el-draft">Jugadores seleccionados en el draft</a></li>
+              <li><a href="#estadísticas-de-la-temporada">Estadísticas de la temporada</a></li>
+              <li><a href="#partidos-de-la-temporada-regular">Partidos de la temporada regular</a></li>
+            </ul>
+          </div>
+        </div>
+        {{ end }}
+
+        <div class="content post__content history-season__content clearfix">
+
+          {{/* ── Sección Resumen ── */}}
+          {{ with index $sections "Resumen" }}
+            {{ partial "historia/season-summary.html" . }}
+          {{ end }}
+
+          {{/* ── Sección Roster ── */}}
+          {{ with index $sections "Roster" }}
+            {{ partial "historia/season-roster.html" . }}
+          {{ end }}
+
+          {{/* ── Sección Draft ── */}}
+          {{ with index $sections "Jugadores seleccionados en el draft" }}
+            {{ partial "historia/season-draft.html" . }}
+          {{ end }}
+
+          {{/* ── Sección Estadísticas (enlace) ── */}}
+          {{ with index $sections "Estadísticas de la temporada" }}
+            {{ partial "historia/season-link.html" . }}
+          {{ end }}
+
+          {{/* ── Sección Partidos ── */}}
+          {{ with index $sections "Partidos de la temporada regular" }}
+            {{ partial "historia/season-games.html" . }}
+          {{ end }}
+
+          {{/* ── Enlace de retorno ── */}}
+          <p><a href="/historia">Volver</a></p>
+
+        </div>
+      </article>
+    </main>
+    {{ partial "authorbox.html" . }}
+  {{ end }}
+{{ end }}

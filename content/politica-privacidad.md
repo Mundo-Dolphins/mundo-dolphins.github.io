@@ -11,9 +11,10 @@ POLÍTICA DE PRIVACIDAD
 Fecha de entrada en vigor: 19 de Marzo de 2025
 
 Esta Política de Privacidad describe cómo Mundo Dolphins (en adelante, “la Aplicación”) maneja la privacidad de sus usuarios. Al utilizar la Aplicación, aceptas las prácticas descritas en esta política.
+
 1. RESPONSABLE DEL TRATAMIENTO
 
-El responsable del tratamiento de los datos personales es Mundo Dolphins, con domicilio en [Dirección] y correo electrónico de contacto: me@javi.yt.
+El responsable del tratamiento de los datos personales es Mundo Dolphins, con domicilio en [Dirección] y correo electrónico de contacto: <me@javi.yt>.
 2. DATOS QUE RECOPILAMOS
 
 La Aplicación no recopila, almacena ni comparte ningún tipo de dato personal del usuario. No se recopila información identificable ni anónima sobre el uso de la Aplicación o del dispositivo.
@@ -37,6 +38,6 @@ Si bien la Aplicación no recopila datos, se han implementado medidas de segurid
 Nos reservamos el derecho de actualizar esta política en cualquier momento. Cualquier cambio será publicado dentro de la Aplicación.
 9. CONTACTO
 
-Si tienes dudas sobre esta Política de Privacidad, puedes contactarnos en: mundodolphins.podcast@gmail.com.
+Si tienes dudas sobre esta Política de Privacidad, puedes contactarnos en: <mundodolphins.podcast@gmail.com>.
 
 Al utilizar la Aplicación, aceptas esta Política de Privacidad.

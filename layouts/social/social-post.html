@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main class="main" role="main">
+  <article class="post">
+    {{- $stype := int .Params.stype -}}
+    <header class="post__header">
+      <h1 class="post__title">{{ .Title }}</h1>
+      <div class="post__meta">{{ partial "fecha-es.html" .Date }}</div>
+    </header>
+
+    <div class="content post__content clearfix">
+      {{- if eq $stype 0 -}}
+        <blockquote class="bluesky-embed"
+          {{ printf "data-bluesky-uri=%q" .Params.bskyURI | safeHTMLAttr }}
+          data-bluesky-cid="{{ .Params.bskyCID }}"
+          data-bluesky-embed-color-mode="system">
+          <p lang="es">{{ .Params.bskyDescription }}</p>
+          &mdash; (<a href="{{ .Params.bskyProfileURI }}">{{ .Params.bskyProfile }}</a>)
+          <a href="{{ .Params.bskyPost }}?ref_src=embed">{{ .Params.publishedOn }}</a>
+        </blockquote>
+        <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+      {{- else if eq $stype 1 -}}
+        {{ partial "social/ig-embed.html" (dict "igURL" .Params.igURL "igSvgPath" .Params.igSvgPath) }}
+        <script async src="//www.instagram.com/embed.js"></script>
+      {{- end -}}
+    </div>
+  </article>
+</main>
+{{ end }}

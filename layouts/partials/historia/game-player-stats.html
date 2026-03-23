@@ -1,0 +1,167 @@
+{{/*
+  Partial: historia/game-player-stats.html
+  Recibe: . = un equipo completo del dict sections["Equipos"][teamName]
+  Estructura: { Coach, Estadísticas, "Estadísticas por jugador", Puntos, Record }
+
+  "Estadísticas por jugador" tiene claves:
+    - Ofensiva: lista con campos de pase, carrera y recepción
+    - Defensiva: lista con campos de tackles, sacks, intercepciones
+    - "Equipos especiales": lista con campos de pateo/punting
+
+  Se crean sub-tablas filtrando por presencia de campos relevantes.
+*/}}
+{{ $playerStats := index . "Estadísticas por jugador" }}
+{{ $ofensiva    := index $playerStats "Ofensiva" }}
+{{ $defensiva   := index $playerStats "Defensiva" }}
+{{ $especiales  := index $playerStats "Equipos especiales" }}
+
+{{/* ── Pase ── */}}
+{{ $passers := slice }}
+{{ range $ofensiva }}{{ if .Intentos }}{{ $passers = $passers | append . }}{{ end }}{{ end }}
+{{ if $passers }}
+<h5>Pase</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Cmp</th><th>Att</th><th>Yds</th>
+      <th>TD</th><th>INT</th><th>Rating</th><th>Sacks</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $passers }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ .Comp }}</td>
+      <td>{{ .Intentos }}</td>
+      <td>{{ index . "Yds pase" }}</td>
+      <td>{{ index . "TD pase" }}</td>
+      <td>{{ .INT }}</td>
+      <td>{{ .Rating }}</td>
+      <td>{{ index . "Capturas recibidas" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{/* ── Carrera ── */}}
+{{ $rushers := slice }}
+{{ range $ofensiva }}{{ if .Acarreos }}{{ $rushers = $rushers | append . }}{{ end }}{{ end }}
+{{ if $rushers }}
+<h5>Carrera</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Att</th><th>Yds</th><th>TD</th><th>Largo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $rushers }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ .Acarreos }}</td>
+      <td>{{ index . "Yds carrera" }}</td>
+      <td>{{ index . "TD carrera" }}</td>
+      <td>{{ index . "Largo carrera" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{/* ── Recepción ── */}}
+{{ $receivers := slice }}
+{{ range $ofensiva }}
+  {{ if or .Rec .Objetivos }}{{ $receivers = $receivers | append . }}{{ end }}
+{{ end }}
+{{ if $receivers }}
+<h5>Recepción</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Rec</th><th>Obj</th><th>Yds</th><th>TD</th><th>Largo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $receivers }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ .Rec }}</td>
+      <td>{{ .Objetivos }}</td>
+      <td>{{ index . "Yds recepción" }}</td>
+      <td>{{ index . "TD recepción" }}</td>
+      <td>{{ index . "Largo recepción" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{/* ── Defensiva ── */}}
+{{ if $defensiva }}
+<h5>Defensiva</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Tk</th><th>Solo</th><th>Asist</th><th>TFL</th>
+      <th>Sacks</th><th>Golpes QB</th><th>INT</th><th>Yds INT</th>
+      <th>FF</th><th>FR</th><th>Pases def.</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $defensiva }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ .Tackles }}</td>
+      <td>{{ .Solo }}</td>
+      <td>{{ .Asist }}</td>
+      <td>{{ .TFL }}</td>
+      <td>{{ .Capturas }}</td>
+      <td>{{ index . "Golpes QB" }}</td>
+      <td>{{ .INT }}</td>
+      <td>{{ index . "Yds INT" }}</td>
+      <td>{{ .FF }}</td>
+      <td>{{ .FR }}</td>
+      <td>{{ index . "Pases defendidos" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{/* ── Equipos especiales ── */}}
+{{ if $especiales }}
+<h5>Equipos especiales</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>FGm</th><th>FGa</th><th>XPm</th><th>XPa</th>
+      <th>Punts</th><th>Yds punt</th><th>Prom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $especiales }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ .FGm }}</td>
+      <td>{{ .FGa }}</td>
+      <td>{{ .XPm }}</td>
+      <td>{{ .XPa }}</td>
+      <td>{{ .Punts }}</td>
+      <td>{{ index . "Yds punt" }}</td>
+      <td>{{ index . "Prom punt" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}

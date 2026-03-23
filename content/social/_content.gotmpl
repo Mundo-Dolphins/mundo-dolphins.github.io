@@ -1,0 +1,76 @@
+{{/*
+  Content adapter: genera una página por cada data/posts_N.json.
+  Cada página muestra el listado completo de posts sociales de ese archivo,
+  ordenados por fecha descendente.
+*/}}
+{{- $adapter := . -}}
+
+{{/* Recopilar todos los data files posts_N dinámicamente y ordenar por número */}}
+{{- $batches := slice -}}
+{{- range $key, $posts := site.Data -}}
+  {{- if hasPrefix $key "posts_" -}}
+    {{- $num := $key | strings.TrimPrefix "posts_" | int -}}
+    {{- $batches = $batches | append (dict "num" $num "posts" $posts) -}}
+  {{- end -}}
+{{- end -}}
+{{- $batches = sort $batches "num" -}}
+{{- $batchNums := slice -}}
+{{- range $batches -}}
+  {{- $batchNums = $batchNums | append .num -}}
+{{- end -}}
+
+{{- range $batches -}}
+  {{- $batchNum := .num -}}
+  {{- $posts := .posts -}}
+  {{- $itemsRaw := slice -}}
+  {{- $newerBatchNum := sub $batchNum 1 -}}
+  {{- $olderBatchNum := add $batchNum 1 -}}
+  {{- $hasNewer := in $batchNums $newerBatchNum -}}
+  {{- $hasOlder := in $batchNums $olderBatchNum -}}
+
+  {{- range $posts -}}
+    {{- $post := . -}}
+    {{- $stype := int $post.stype -}}
+    {{- $date := time $post.PublishedOn -}}
+
+    {{- $itemsRaw = $itemsRaw | append (dict
+      "date"            $date
+      "stype"           $stype
+      "publishedOn"     $post.PublishedOn
+      "bskyURI"         $post.BlueSkyPost.BskyURI
+      "bskyCID"         $post.BlueSkyPost.BskyCID
+      "bskyDescription" $post.BlueSkyPost.Description
+      "bskyProfileURI"  $post.BlueSkyPost.BskyProfileURI
+      "bskyProfile"     $post.BlueSkyPost.BskyProfile
+      "bskyPost"        $post.BlueSkyPost.BskyPost
+      "igURL"           $post.InstagramPost.URL
+      "igDescription"   $post.InstagramPost.Description
+      "igSvgPath"       $post.InstagramPost.SvgPath
+    ) -}}
+  {{- end -}}
+
+  {{- $items := sort $itemsRaw "date" "desc" -}}
+  {{- $batchDate := time "2000-01-01T00:00:00Z" -}}
+  {{- with index $items 0 -}}
+    {{- $batchDate = .date -}}
+  {{- end -}}
+
+  {{- if gt (len $items) 0 -}}
+    {{- $batchPage := dict
+      "path"   (printf "posts_%d" $batchNum)
+      "title"  "Redes Sociales"
+      "dates"  (dict "date" $batchDate)
+      "draft"  false
+      "layout" "social-batch"
+      "params" (dict
+        "items"         $items
+        "batchNum"      $batchNum
+        "hasNewer"      $hasNewer
+        "newerBatchNum" $newerBatchNum
+        "hasOlder"      $hasOlder
+        "olderBatchNum" $olderBatchNum
+      )
+    -}}
+    {{- $adapter.AddPage $batchPage -}}
+  {{- end -}}
+{{- end -}}

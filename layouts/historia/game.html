@@ -1,0 +1,96 @@
+{{/*
+  Layout: layouts/historia/game.html
+
+  Renderiza una página de partido histórico generada por el content adapter.
+  Los datos provienen de site.Data.historical.games[game_year][game_id].
+*/}}
+{{ define "main" }}
+{{ $gameId := .Params.game_id }}
+{{ $year   := .Params.game_year }}
+{{ $data   := index (index site.Data.historical.games $year) $gameId }}
+
+{{ if not $data }}
+  <main class="main" role="main">
+    <p>Error: no se encontraron datos para el partido {{ $gameId }} ({{ $year }})</p>
+  </main>
+{{ else }}
+  {{ $sections  := $data.sections }}
+  {{ $linescore := $sections.Anotaciones.linescore }}
+  {{ $team1     := index $linescore 0 }}
+  {{ $team2     := index $linescore 1 }}
+
+  <main class="main" role="main">
+    <article class="post history-season history-game">
+
+      <div class="game-back-nav">
+        <a href="{{ relURL (printf "historia/%s/" $year) }}" class="game-back-btn">
+          &larr; Temporada {{ $year }}
+        </a>
+      </div>
+
+      <header class="post__header history-season__hero">
+        <div class="history-season__hero-text">
+          <span class="history-season__eyebrow">Partido histórico</span>
+          <h1 class="post__title">{{ .Title }}</h1>
+          <div class="history-season__meta">
+            <span class="history-season__year">{{ .Date.Format "2006" }}</span>
+            <span class="history-season__badge">Miami Dolphins</span>
+          </div>
+        </div>
+      </header>
+
+      {{ if .Params.toc }}
+      <div class="toc">
+        <h2>Tabla de Contenidos</h2>
+        <div id="TableOfContents">
+          <ul>
+            <li><a href="#informacion-del-partido">Información del partido</a></li>
+            {{ if index $sections "Videos del partido" }}<li><a href="#videos-del-partido">Videos del partido</a></li>{{ end }}
+            {{ if index $sections "Anotaciones" }}<li><a href="#anotaciones">Anotaciones</a></li>{{ end }}
+            {{ if index $sections "Equipos" }}<li><a href="#equipos">Equipos</a></li>{{ end }}
+            {{ if index $sections "Series ofensivas" }}<li><a href="#series-ofensivas">Series ofensivas</a></li>{{ end }}
+            {{ if index $sections "Conteo de snaps" }}<li><a href="#conteo-de-snaps">Conteo de snaps</a></li>{{ end }}
+            {{ if index $sections "Estadísticas avanzadas" }}<li><a href="#estadisticas-avanzadas">Estadísticas avanzadas</a></li>{{ end }}
+            {{ if index $sections "Oficiales" }}<li><a href="#oficiales">Oficiales</a></li>{{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="content post__content history-season__content clearfix">
+
+        {{ partial "historia/game-info.html"     (index $sections "Información del partido") }}
+
+        {{ $videos := index $sections "Videos del partido" }}
+        {{ if $videos }}
+        <h2 id="videos-del-partido">Videos del partido</h2>
+          {{ range $videos }}
+          {{ $vid := . }}
+          <div class="game-video">
+            {{ with .youtube_id }}
+            <div class="game-video__embed">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/{{ . }}"
+                title="{{ $vid.title }}"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        {{ end }}
+
+        {{ partial "historia/game-scoring.html"  (index $sections "Anotaciones") }}
+        {{ partial "historia/game-teams.html"    $sections }}
+        {{ partial "historia/game-drives.html"   (index $sections "Series ofensivas") }}
+        {{ partial "historia/game-snaps.html"    (index $sections "Conteo de snaps") }}
+        {{ partial "historia/game-officials.html" (index $sections "Oficiales") }}
+
+      </div>
+    </article>
+  </main>
+  {{ partial "authorbox.html" . }}
+{{ end }}
+{{ end }}

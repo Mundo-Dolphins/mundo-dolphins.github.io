@@ -1,0 +1,54 @@
+{{/*
+  Partial: historia/stats-data-table.html
+  Recibe: dict "rows" (list of dicts)
+
+  Renderiza una tabla scrollable con columnas ordenadas:
+  - Primero: Nombre, PJ
+  - Medio: resto en orden alfabético
+  - Final: Premios, Edad, Titularidades, Posición, Equipo
+*/}}
+{{- $rows := .rows -}}
+{{- if $rows -}}
+{{- $first    := index $rows 0 -}}
+
+{{/* Obtener todas las claves del primer registro y ordenarlas */}}
+{{- $allKeys := slice -}}
+{{- range $k, $v := $first -}}{{- $allKeys = $allKeys | append $k -}}{{- end -}}
+{{- $allKeys = sort $allKeys -}}
+{{- $frontCols := slice "Nombre" "PJ" -}}
+{{- $backCols  := slice "Premios" "Edad" "Titularidades" "Posición" "Equipo" -}}
+
+{{- $headers := slice -}}
+{{/* Front */}}
+{{- range $frontCols -}}
+  {{- if in $allKeys . -}}{{- $headers = $headers | append . -}}{{- end -}}
+{{- end -}}
+{{/* Middle (alpha, excluding front and back) */}}
+{{- range $allKeys -}}
+  {{- if and (not (in $frontCols .)) (not (in $backCols .)) -}}
+    {{- $headers = $headers | append . -}}
+  {{- end -}}
+{{- end -}}
+{{/* Back */}}
+{{- range $backCols -}}
+  {{- if in $allKeys . -}}{{- $headers = $headers | append . -}}{{- end -}}
+{{- end -}}
+
+<div class="table-wrapper">
+<table>
+  <thead>
+    <tr>
+      {{- range $headers -}}<th>{{ . }}</th>{{- end -}}
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $rows -}}
+    {{- $row := . -}}
+    <tr>
+      {{- range $headers -}}<td>{{ index $row . }}</td>{{- end -}}
+    </tr>
+    {{- end -}}
+  </tbody>
+</table>
+</div>
+{{- end -}}

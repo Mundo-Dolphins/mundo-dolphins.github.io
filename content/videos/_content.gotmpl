@@ -1,0 +1,82 @@
+{{/*
+  Content adapter: genera páginas de video desde data/videos.json
+  Reglas heredadas del script convert_videos_to_md.go:
+    - Ignorar entradas con isPodcast=true
+    - path basado en timestamp unix
+    - slug desde título
+    - description truncada a 120
+    - embeddable=true por defecto si no viene en JSON
+*/}}
+{{- $adapter := . -}}
+{{- $videos := site.Data.videos -}}
+
+{{- range $videos -}}
+  {{- $video := . -}}
+  {{- if $video.isPodcast -}}
+    {{- continue -}}
+  {{- end -}}
+
+  {{- $date := time $video.published_at -}}
+  {{- $ts := $date.Unix -}}
+  {{- $path := printf "%d" $ts -}}
+
+  {{- $title := $video.title -}}
+  {{- $desc := $title -}}
+  {{- if gt (len $desc) 120 -}}
+    {{- $desc = substr $desc 0 120 -}}
+  {{- end -}}
+
+  {{/* Slug ASCII similar al script Go (gosimple/slug) */}}
+  {{- $slugSource := $title | lower -}}
+  {{- $slugSource = replace $slugSource "á" "a" -}}
+  {{- $slugSource = replace $slugSource "é" "e" -}}
+  {{- $slugSource = replace $slugSource "í" "i" -}}
+  {{- $slugSource = replace $slugSource "ó" "o" -}}
+  {{- $slugSource = replace $slugSource "ú" "u" -}}
+  {{- $slugSource = replace $slugSource "ü" "u" -}}
+  {{- $slugSource = replace $slugSource "ñ" "n" -}}
+  {{- $slugSource = replace $slugSource "¿" "" -}}
+  {{- $slugSource = replace $slugSource "¡" "" -}}
+  {{- $slug := replaceRE `[^a-z0-9]+` "-" $slugSource -}}
+  {{- $slug = replaceRE `(^-+|-+$)` "" $slug -}}
+  {{- $legacySlug := urlize $title -}}
+  {{- $aliases := slice -}}
+  {{- if ne $legacySlug $slug -}}
+    {{- $aliases = $aliases | append (printf "/videos/%s/" $legacySlug) -}}
+  {{- end -}}
+
+  {{- $videoId := "" -}}
+  {{- with $video.url -}}
+    {{- $matches := findRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` . -}}
+    {{- if $matches -}}
+      {{- $videoId = replaceRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` `$1` (index $matches 0) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $videoId -}}
+    {{- continue -}}
+  {{- end -}}
+
+  {{- $embeddable := true -}}
+  {{- if isset $video "embeddable" -}}
+    {{- $embeddable = $video.embeddable -}}
+  {{- end -}}
+
+  {{- $pageDict := dict
+    "path"   $path
+    "title"  $title
+    "dates"  (dict "date" $date)
+    "draft"  false
+    "slug"   $slug
+    "aliases" $aliases
+    "layout" "video-entry"
+    "params" (dict
+      "description" $desc
+      "length"      $video.duration
+      "videoId"     $videoId
+      "embeddable"  $embeddable
+      "categories"  (slice "Videos")
+      "showDate"    true
+    )
+  -}}
+  {{- $adapter.AddPage $pageDict -}}
+{{- end -}}

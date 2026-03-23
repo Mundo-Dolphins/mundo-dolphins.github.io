@@ -1,0 +1,19 @@
+{{/*
+  Content adapter: genera páginas de estadísticas de temporada
+  desde data/historical/season_stats/<year>.json
+*/}}
+{{- $adapter := . -}}
+{{- range $year, $data := site.Data.historical.season_stats -}}
+  {{- $page := $data.page -}}
+  {{- $yr   := printf "%v" $year -}}
+  {{- $date := time (printf "%s-01-01T00:00:00Z" $yr) -}}
+  {{- $pageDict := dict
+    "path"   $yr
+    "title"  $page.title
+    "dates"  (dict "date" $date)
+    "draft"  false
+    "layout" "season-stats"
+    "params" (dict "stats_year" $yr "toc" true)
+  -}}
+  {{- $adapter.AddPage $pageDict -}}
+{{- end -}}

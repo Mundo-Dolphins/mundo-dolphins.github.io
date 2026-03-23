@@ -1,0 +1,92 @@
+{{/*
+  Content adapter: genera páginas de episodios de podcast desde data/season_*.json
+  Campos del JSON por episodio:
+    title, description, dateAndTime, link (ivoox), audio, len, imgMain, video (opcional)
+  Cada episodio genera una página en /podcast/<timestamp-unix>/
+*/}}
+{{- $adapter := . -}}
+
+{{/* Recopilar todos los data files season_N dinámicamente y ordenar por número */}}
+{{- $seasons := slice -}}
+{{- range $key, $episodes := site.Data -}}
+  {{- if hasPrefix $key "season_" -}}
+    {{- $seasonNum := $key | strings.TrimPrefix "season_" | int -}}
+    {{- $seasons = $seasons | append (dict "num" $seasonNum "episodes" $episodes) -}}
+  {{- end -}}
+{{- end -}}
+{{- $seasons = sort $seasons "num" -}}
+
+{{- range $seasons -}}
+  {{- $seasonNum := .num -}}
+  {{- $episodes := .episodes -}}
+
+  {{- range $episodes -}}
+    {{- $ep := . -}}
+
+    {{/* Parsear fecha y calcular timestamp unix como path */}}
+    {{- $date := time $ep.dateAndTime -}}
+    {{- $ts   := $date.Unix -}}
+    {{- $path := printf "%d" $ts -}}
+
+    {{/* Extraer el ID de ivoox desde la URL del link: _rf_XXXXXXX_ */}}
+    {{- $ivooxId := "" -}}
+    {{- with $ep.link -}}
+      {{- $matches := findRE `_rf_(\d+)_` . -}}
+      {{- if $matches -}}
+        {{- $raw := index $matches 0 -}}
+        {{- $ivooxId = replaceRE `_rf_(\d+)_` `$1` $raw -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* Extraer YouTube ID del campo video (puede ser objeto o array) */}}
+    {{- $youtubeId := "" -}}
+    {{- with $ep.video -}}
+      {{- $videoUrl := "" -}}
+      {{- if reflect.IsSlice . -}}
+        {{- with index . 0 -}}
+          {{- $videoUrl = .url -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $videoUrl = .url -}}
+      {{- end -}}
+      {{- with $videoUrl -}}
+        {{- $ytMatches := findRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` . -}}
+        {{- if $ytMatches -}}
+          {{- $youtubeId = replaceRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` `$1` (index $ytMatches 0) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* Construir slug desde el título */}}
+    {{- $slug := urlize $ep.title -}}
+
+    {{/* Recortar descripción para el frontmatter */}}
+    {{- $descFull := $ep.description | htmlUnescape -}}
+    {{- $descShort := $descFull -}}
+    {{- if gt (len $descFull) 100 -}}
+      {{- $descShort = printf "%s..." (substr $descFull 0 100) -}}
+    {{- end -}}
+
+    {{- $pageDict := dict
+      "path"        $path
+      "title"       $ep.title
+      "dates"       (dict "date" $date)
+      "draft"       false
+      "slug"        $slug
+      "layout"      "podcast-episode"
+      "params"      (dict
+        "showDate"    true
+        "length"      $ep.len
+        "categories"  (slice (printf "Temporada %d" $seasonNum))
+        "description" $descShort
+        "ivooxId"     $ivooxId
+        "ivooxLink"   $ep.link
+        "audioUrl"    $ep.audio
+        "imageUrl"    $ep.imgMain
+        "youtubeId"   $youtubeId
+        "descFull"    $descFull
+      )
+    -}}
+    {{- $adapter.AddPage $pageDict -}}
+  {{- end -}}
+{{- end -}}

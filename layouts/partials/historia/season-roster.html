@@ -1,0 +1,41 @@
+{{/*
+  Partial: historia/season-roster.html
+  
+  Renderiza la tabla de jugadores (Roster) de la temporada.
+  
+  Recibe: . = slice de objetos de sections.Roster
+  
+  Columnas: Número, Posición, Nombre, Edad, Peso (Libras), Altura (Píes), Universidad.
+  Sólo estas columnas; el resto de campos del JSON se ignoran.
+*/}}
+{{ $players := . }}
+
+<h2 id="roster">Roster</h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+  <th>Número</th>
+  <th>Posición</th>
+  <th>Nombre</th>
+  <th>Edad</th>
+  <th>Peso (Libras)</th>
+  <th>Altura (Píes)</th>
+  <th>Universidad</th>
+</tr>
+</thead>
+<tbody>
+{{ range $players }}
+<tr>
+  <td>{{ index . "Número" }}</td>
+  <td>{{ index . "Posición" }}</td>
+  <td>{{ index . "Nombre" }}</td>
+  <td>{{ index . "Edad" }}</td>
+  <td>{{ index . "Peso" }}</td>
+  <td>{{ index . "Altura" }}</td>
+  <td>{{ index . "Universidad" }}</td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+</div>

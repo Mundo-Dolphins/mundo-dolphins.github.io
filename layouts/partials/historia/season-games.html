@@ -1,0 +1,44 @@
+{{/*
+  Partial: historia/season-games.html
+
+  Recibe: . = slice de objetos de sections["Partidos de la temporada regular"]
+  Cada objeto tiene: title, id, fecha, url.
+
+  Normalización del título:
+  Los nombres de equipo del JSON son fiables; solo el ORDEN puede estar mal.
+  El primer segmento del id indica qué equipo va primero:
+    - abr1 = "mia" -> Miami Dolphins es el local (va primero)
+    - abr1 != "mia" -> el oponente va primero
+  Esta estrategia evita un mapa de abreviaturas y resuelve la ambigüedad
+  de "new" (New England / New Orleans) usando el nombre real del título JSON.
+*/}}
+
+{{ $DOLPHINS := "Miami Dolphins" }}
+{{ $games := . }}
+
+<h2 id="partidos-de-la-temporada-regular">Partidos de la temporada regular</h2>
+
+{{ range $games }}
+  {{ $titleParts := split .title " vs " }}
+  {{ $parts := split .id "-" }}
+  {{ $abr1 := "" }}
+  {{ if ge (len $parts) 2 }}{{ $abr1 = index $parts 0 }}{{ end }}
+
+  {{ $display := .title }}
+  {{ if eq (len $titleParts) 2 }}
+    {{ $teamA := index $titleParts 0 }}
+    {{ $teamB := index $titleParts 1 }}
+    {{ $opponent := $teamA }}
+    {{ if eq $teamA $DOLPHINS }}{{ $opponent = $teamB }}
+    {{ else if eq $teamB $DOLPHINS }}{{ $opponent = $teamA }}{{ end }}
+
+    {{ if eq $abr1 "mia" }}
+      {{ $display = printf "%s vs %s" $DOLPHINS $opponent }}
+    {{ else }}
+      {{ $display = printf "%s vs %s" $opponent $DOLPHINS }}
+    {{ end }}
+  {{ end }}
+
+<div class="season-game"><a class="season-game__link" href="{{ .url }}">{{ $display }}</a><span class="season-game__date">{{ .fecha }}</span></div>
+{{ end }}
+
