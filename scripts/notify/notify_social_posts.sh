@@ -11,6 +11,10 @@ echo "📋 Checking for social posts pending notification..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/telegram_send.sh"
 
+# Calculate fallback cutoff date (15 minutes ago) for use if primary filters unavailable
+# Fallback is used when cache is missing AND last successful run date is unavailable
+FALLBACK_CUTOFF=$(date -u -d '15 minutes ago' '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null || date -u -v-15M '+%Y-%m-%dT%H:%M:%SZ')
+
 TEMP_NEW_POSTS=$(mktemp)
 TEMP_POSTS_FILES=$(mktemp)
 TEMP_KNOWN_URLS=$(mktemp)
@@ -39,29 +43,53 @@ collect_pending_posts_from_file() {
   local current_json temp_current pending_urls post
 
   current_json=$(cat "$posts_file")
-  temp_current=$(mktemp)
+  
+  # Check if we have previous state (URL cache) or should use date-based fallback
+  if [ -s "$TEMP_KNOWN_URLS" ]; then
+    # We have previous state: use URL-based deduplication
+    temp_current=$(mktemp)
+    printf '%s' "$current_json" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort -u > "$temp_current"
+    pending_urls=$(comm -23 "$temp_current" "$TEMP_KNOWN_URLS")
 
-  printf '%s' "$current_json" | jq -r '.[] | select(.stype == 0) | select(.BlueSkyPost.BskyPost != null) | .BlueSkyPost.BskyPost' | sort -u > "$temp_current"
+    if [ -n "$pending_urls" ]; then
+      while IFS= read -r url; do
+        [ -z "$url" ] && continue
+        post=$(printf '%s' "$current_json" | jq -c --arg url "$url" '
+          .[] |
+          select(.stype == 0) |
+          select(.PublishedOn != null) |
+          select(.BlueSkyPost.Description != null) |
+          select(.BlueSkyPost.BskyPost == $url)
+        ')
+        if [ -n "$post" ]; then
+          echo "$post" >> "$TEMP_NEW_POSTS"
+        fi
+      done <<< "$pending_urls"
+    fi
 
-  pending_urls=$(comm -23 "$temp_current" "$TEMP_KNOWN_URLS")
+    rm -f "$temp_current"
+  else
+    # No previous state: use date-based filtering
+    if [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
+      # Use the last successful workflow run date
+      cutoff_date="$LAST_SUCCESSFUL_RUN_DATE"
+      echo "   Using last successful run date: $cutoff_date"
+    else
+      # Fallback: use 15-minute window as safeguard
+      cutoff_date="$FALLBACK_CUTOFF"
+      echo "   ⚠️ No workflow history found. Using 15-minute fallback window: $cutoff_date"
+    fi
 
-  if [ -n "$pending_urls" ]; then
-    while IFS= read -r url; do
-      [ -z "$url" ] && continue
-      post=$(printf '%s' "$current_json" | jq -c --arg url "$url" '
-        .[] |
-        select(.stype == 0) |
-        select(.PublishedOn != null) |
-        select(.BlueSkyPost.Description != null) |
-        select(.BlueSkyPost.BskyPost == $url)
-      ')
-      if [ -n "$post" ]; then
-        echo "$post" >> "$TEMP_NEW_POSTS"
-      fi
-    done <<< "$pending_urls"
+    # Filter posts published after cutoff
+    printf '%s' "$current_json" | jq -c --arg cutoff "$cutoff_date" '
+      .[] |
+      select(.stype == 0) |
+      select(.PublishedOn != null) |
+      select(.BlueSkyPost.Description != null) |
+      select(.BlueSkyPost.BskyPost != null) |
+      select(.PublishedOn > $cutoff)
+    ' >> "$TEMP_NEW_POSTS"
   fi
-
-  rm -f "$temp_current"
 }
 
 while IFS= read -r posts_file; do

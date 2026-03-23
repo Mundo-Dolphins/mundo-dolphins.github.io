@@ -31,11 +31,30 @@ jobs:
           restore-keys: |
             notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-
 
-      - name: � Detect and send new posts to Telegram
+      - name: 📅 Get last successful run date
+        id: last_run
+        run: |
+          # Get the last successful workflow run and extract its timestamp
+          LAST_RUN=$(curl -s \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: token ${{ github.token }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/notify-social-posts.yml/runs?status=success&conclusion=success&per_page=1" \
+            | jq -r '.workflow_runs[0].updated_at // empty')
+          
+          if [ -n "$LAST_RUN" ]; then
+            echo "last_run_date=$LAST_RUN" >> "$GITHUB_OUTPUT"
+            echo "Using last successful run date: $LAST_RUN"
+          else
+            echo "No previous successful runs found (first run or all failed)"
+            echo "last_run_date=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 🚀 Detect and send new posts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SOCIAL_NOTIFY_STATE_DIR: .cache/notify-social
+          LAST_SUCCESSFUL_RUN_DATE: ${{ steps.last_run.outputs.last_run_date }}
         run: |
           chmod +x scripts/notify/notify_social_posts.sh
           ./scripts/notify/notify_social_posts.sh
