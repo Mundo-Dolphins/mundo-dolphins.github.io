@@ -14,16 +14,35 @@ concurrency:
 jobs:
   notify-social-posts:
     runs-on: ubuntu-latest
+    env:
+      SOCIAL_NOTIFY_STATE_VERSION: ${{ vars.SOCIAL_NOTIFY_STATE_VERSION || 'v1' }}
     steps:
       - name: 🔄 Checkout repository
         uses: actions/checkout@v6
         with:
           fetch-depth: 2
 
+      - name: Restore social notification state
+        id: social_state_restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/notify-social
+          key: notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-${{ github.run_id }}
+          restore-keys: |
+            notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-
+
       - name: � Detect and send new posts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SOCIAL_NOTIFY_STATE_DIR: .cache/notify-social
         run: |
           chmod +x scripts/notify/notify_social_posts.sh
           ./scripts/notify/notify_social_posts.sh
+
+      - name: Save social notification state
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/notify-social
+          key: notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-${{ github.run_id }}
