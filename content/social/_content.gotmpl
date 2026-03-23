@@ -60,6 +60,10 @@
       "path"   (printf "posts_%d" $batchNum)
       "title"  "Redes Sociales"
       "dates"  (dict "date" $batchDate)
+      "build"  (dict
+        "list"   "never"
+        "render" "always"
+      )
       "draft"  false
       "layout" "social-batch"
       "params" (dict
