@@ -39,6 +39,9 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Download Hugo modules
+        run: hugo mod get -u
+
       - name: Cache Node.js modules
         uses: actions/cache@v5
         with:
