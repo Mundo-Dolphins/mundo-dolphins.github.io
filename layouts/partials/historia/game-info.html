@@ -1,0 +1,15 @@
+{{/*
+  Partial: historia/game-info.html
+  Recibe: . = dict "Información del partido"
+  Campos: Semana, Fecha, Estadio, Tipo de estadio, Superficie de juego, Clima (opcional)
+*/}}
+<h2 id="informacion-del-partido">Información del partido</h2>
+
+<ul class="game-info">
+  {{ with .Semana }}<li><strong>Semana:</strong> {{ . }}</li>{{ end }}
+  {{ with .Fecha }}<li><strong>Fecha:</strong> {{ . }}</li>{{ end }}
+  {{ with .Estadio }}<li><strong>Estadio:</strong> {{ . }}</li>{{ end }}
+  {{ with (index . "Tipo de estadio") }}<li><strong>Tipo de estadio:</strong> {{ . }}</li>{{ end }}
+  {{ with (index . "Superficie de juego") }}<li><strong>Superficie de juego:</strong> {{ . }}</li>{{ end }}
+  {{ with .Clima }}<li><strong>Clima:</strong> {{ . }}</li>{{ end }}
+</ul>

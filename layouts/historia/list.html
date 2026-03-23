@@ -10,7 +10,11 @@
 		{{ partial "table-wrap.html" (dict "content" .) }}
 	</div>
 	{{- end }}
-	{{- $seasonPages := where .RegularPages "File.Dir" "eq" "historia/" }}
+	{{/*
+	  Mostrar solo las páginas de temporada generadas por el content adapter.
+	  Todas tienen Params.season_key; los partidos y stats no lo tienen.
+	*/}}
+	{{- $seasonPages := where .RegularPages "Params.season_key" "ne" nil }}
 	<section class="history-archive" aria-label="Temporadas de los Miami Dolphins">
 		<div class="history-grid">
 			{{- range $seasonPages.ByDate.Reverse }}

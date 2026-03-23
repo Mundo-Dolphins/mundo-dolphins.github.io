@@ -4,6 +4,6 @@ date: 2025-01-01
 draft: false
 ---
 
-## Estadisticas por temporada
+## Estadísticas por temporada
 
-Consulta las cifras clave de cada ano: ataque, defensa, equipos especiales y lideres por jugador.
+Consulta las cifras clave de cada año: ataque, defensa, equipos especiales y líderes por jugador.

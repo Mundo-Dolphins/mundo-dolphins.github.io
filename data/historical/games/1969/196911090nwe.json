@@ -1,0 +1,545 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-02-18T11:41:02Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Boston Patriots",
+    "date": "1969-11-09",
+    "slug": "mia-bos-19691109",
+    "path": "historia/partidos/mia-bos-19691109",
+    "params": {
+      "game_id": "196911090nwe"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [
+        {
+          "Equipo": "Miami Dolphins",
+          "1": "3",
+          "2": "7",
+          "3": "0",
+          "4": "7",
+          "Final": "17"
+        },
+        {
+          "Equipo": "Boston Patriots",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "16",
+          "Final": "16"
+        }
+      ],
+      "scoring_summary": [
+        {
+          "Cuarto": "1",
+          "Equipo": "Miami Dolphins",
+          "Descripción": "Karl Kremser field goal de 17 yardas",
+          "Marcador visitante": "3",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Miami Dolphins",
+          "Descripción": "Bill Stanfill 15 yardas retorno de interception (Karl Kremser kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Boston Patriots",
+          "Descripción": "Carl Garrett carrera de 80 yardas (Gino Cappelletti kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "7"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Boston Patriots",
+          "Descripción": "Gino Cappelletti field goal de 17 yardas",
+          "Marcador visitante": "10",
+          "Marcador local": "10"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Miami Dolphins",
+          "Descripción": "Larry Csonka carrera de 54 yardas (Karl Kremser kick)",
+          "Marcador visitante": "17",
+          "Marcador local": "10"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Boston Patriots",
+          "Descripción": "Bill Rademacher pase de 15 yardas de Mike Taliaferro (conversión fallida)",
+          "Marcador visitante": "17",
+          "Marcador local": "16"
+        }
+      ]
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Boston Patriots": {
+        "Coach": "Clive Rush",
+        "Estadísticas": {
+          "Acarreos-yardas-TD": "37-183-1",
+          "Capturas-yardas perdidas": "3-27",
+          "Comp-Int-Yds-TD-INT": "2-9-55-1-1",
+          "Fumbles-perdidos": "1-1",
+          "Penalizaciones-yardas": "2-20",
+          "Primeros downs": "7",
+          "Pérdidas de balón": "2",
+          "Yardas netas por pase": "28",
+          "Yardas totales": "211"
+        },
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [
+            {
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Gino Cappelletti",
+              "Punts": "",
+              "Largo punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "FGa": "",
+              "FGm": "",
+              "Nombre": "Tom Janik",
+              "Punts": "5",
+              "Largo punt": "",
+              "Yds punt": "178",
+              "Prom punt": "35.60",
+              "Equipo": "BOS",
+              "XPa": "",
+              "XPm": ""
+            },
+            {
+              "Retornos KO": "",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "",
+              "Prom KO": "",
+              "Nombre": "Tom Janik",
+              "Retornos punt": "1",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "23",
+              "Prom KO": "23",
+              "Nombre": "R.C. Gamble",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "42",
+              "Prom KO": "42",
+              "Nombre": "Carl Garrett",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "12",
+              "Prom KO": "12",
+              "Nombre": "Aaron Marsh",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "13",
+              "Prom KO": "13",
+              "Nombre": "Marty Schottenheimer",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "BOS"
+            }
+          ],
+          "Ofensiva": [
+            {
+              "Intentos": "9",
+              "Comp": "2",
+              "INT": "1",
+              "Largo pase": "40",
+              "Rating": "50",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "29",
+              "TD pase": "1",
+              "Yds pase": "55",
+              "Nombre": "Mike Taliaferro",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "7",
+              "Largo carrera": "",
+              "TD carrera": "",
+              "Yds carrera": "-19",
+              "Equipo": "BOS"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Jim Nance",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "17",
+              "Largo carrera": "23",
+              "TD carrera": "",
+              "Yds carrera": "109",
+              "Equipo": "BOS"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Carl Garrett",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "12",
+              "Largo carrera": "80",
+              "TD carrera": "1",
+              "Yds carrera": "92",
+              "Equipo": "BOS"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Sid Blanks",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "1",
+              "Largo carrera": "1",
+              "TD carrera": "",
+              "Yds carrera": "1",
+              "Equipo": "BOS"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Bill Rademacher",
+              "Rec": "2",
+              "Largo recepción": "40",
+              "TD recepción": "1",
+              "Yds recepción": "55",
+              "Acarreos": "",
+              "Largo carrera": "",
+              "TD carrera": "",
+              "Yds carrera": "",
+              "Equipo": "BOS"
+            }
+          ]
+        },
+        "Puntos": 16,
+        "Record": "1-8"
+      },
+      "Miami Dolphins": {
+        "Coach": "George Wilson",
+        "Estadísticas": {
+          "Acarreos-yardas-TD": "34-145-1",
+          "Capturas-yardas perdidas": "1-10",
+          "Comp-Int-Yds-TD-INT": "7-10-73-0-0",
+          "Fumbles-perdidos": "5-1",
+          "Penalizaciones-yardas": "4-30",
+          "Primeros downs": "8",
+          "Pérdidas de balón": "1",
+          "Yardas netas por pase": "63",
+          "Yardas totales": "208"
+        },
+        "Estadísticas por jugador": {
+          "Defensiva": [
+            {
+              "INT": "1",
+              "INT largo": "15",
+              "TD INT": "1",
+              "Yds INT": "15",
+              "FF": "",
+              "FR": "",
+              "TD FR": "",
+              "Yds FR": "",
+              "Nombre": "Bill Stanfill",
+              "Capturas": "",
+              "Asist": "",
+              "Tackles": "",
+              "Solo": "",
+              "Equipo": "MIA"
+            }
+          ],
+          "Equipos especiales": [
+            {
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Karl Kremser",
+              "Punts": "",
+              "Largo punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "FGa": "",
+              "FGm": "",
+              "Nombre": "Larry Seiple",
+              "Punts": "7",
+              "Largo punt": "",
+              "Yds punt": "259",
+              "Prom punt": "37",
+              "Equipo": "MIA",
+              "XPa": "",
+              "XPm": ""
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "77",
+              "Prom KO": "25.70",
+              "Nombre": "Mercury Morris",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "",
+              "TD KO": "",
+              "Yds KO": "",
+              "Prom KO": "",
+              "Nombre": "Jimmy Warren",
+              "Retornos punt": "",
+              "Largo retorno punt": "",
+              "TD punt": "",
+              "Yds punt": "",
+              "Prom punt": "",
+              "Equipo": "MIA"
+            }
+          ],
+          "Ofensiva": [
+            {
+              "Intentos": "9",
+              "Comp": "7",
+              "INT": "",
+              "Largo pase": "20",
+              "Rating": "100.50",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "73",
+              "Nombre": "Rick Norton",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "3",
+              "Largo carrera": "1",
+              "TD carrera": "",
+              "Yds carrera": "-10",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "39.60",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Bob Griese",
+              "Rec": "",
+              "Largo recepción": "",
+              "TD recepción": "",
+              "Yds recepción": "",
+              "Acarreos": "",
+              "Largo carrera": "",
+              "TD carrera": "",
+              "Yds carrera": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Larry Csonka",
+              "Rec": "1",
+              "Largo recepción": "3",
+              "TD recepción": "",
+              "Yds recepción": "3",
+              "Acarreos": "16",
+              "Largo carrera": "54",
+              "TD carrera": "1",
+              "Yds carrera": "121",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Jim Kiick",
+              "Rec": "3",
+              "Largo recepción": "9",
+              "TD recepción": "",
+              "Yds recepción": "18",
+              "Acarreos": "15",
+              "Largo carrera": "12",
+              "TD carrera": "",
+              "Yds carrera": "34",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Larry Seiple",
+              "Rec": "2",
+              "Largo recepción": "20",
+              "TD recepción": "",
+              "Yds recepción": "39",
+              "Acarreos": "",
+              "Largo carrera": "",
+              "TD carrera": "",
+              "Yds carrera": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "",
+              "Comp": "",
+              "INT": "",
+              "Largo pase": "",
+              "Rating": "",
+              "Capturas recibidas": "",
+              "Yds perdidas capturas": "",
+              "TD pase": "",
+              "Yds pase": "",
+              "Nombre": "Bill Darnall",
+              "Rec": "1",
+              "Largo recepción": "13",
+              "TD recepción": "",
+              "Yds recepción": "13",
+              "Acarreos": "",
+              "Largo carrera": "",
+              "TD carrera": "",
+              "Yds carrera": "",
+              "Equipo": "MIA"
+            }
+          ]
+        },
+        "Puntos": 17,
+        "Record": "2-6-1"
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "9",
+      "Fecha": "9 de noviembre de 1969",
+      "Estadio": "Alumni Stadium",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "51 grados, humedad relativa 97%, viento 22 mph"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": [
+      {
+        "youtube_id": "lno_WO7JPKs",
+        "title": "Legacy import",
+        "url": "https://www.youtube.com/watch?v=lno_WO7JPKs",
+        "duration_seconds": 2326
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{{/*
+  Partial: historia/game-officials.html
+  Recibe: . = sections["Oficiales"] (lista de dicts)
+  Official keys: Nombre, Posición
+*/}}
+{{ if . }}
+<h2 id="oficiales">Oficiales</h2>
+
+<ul class="game-officials">
+  {{ range . }}
+  <li><strong>{{ index . "Posición" }}:</strong> {{ .Nombre }}</li>
+  {{ end }}
+</ul>
+{{ end }}

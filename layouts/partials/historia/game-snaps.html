@@ -1,0 +1,48 @@
+{{/*
+  Partial: historia/game-snaps.html
+  Recibe: . = sections["Conteo de snaps"]
+  Estructura: dict con team names como claves, cada valor es una lista de jugadores.
+  Player keys: Nombre, Posición, Ofensiva, % ofensiva, Defensiva, % defensiva,
+               "Equipos especiales", "% EE"
+*/}}
+{{ if . }}
+<h2 id="conteo-de-snaps">Conteo de snaps</h2>
+
+{{ range $team, $players := . }}
+<h3>{{ $team }}</h3>
+{{ if $players }}
+<div class="table-responsive">
+<table class="game-snaps-table">
+  <thead>
+    <tr>
+      <th>Jugador</th>
+      <th>Pos.</th>
+      <th>Of.</th>
+      <th>% Of.</th>
+      <th>Def.</th>
+      <th>% Def.</th>
+      <th>EE</th>
+      <th>% EE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $players }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ index . "Posición" }}</td>
+      <td>{{ .Ofensiva }}</td>
+      <td>{{ index . "% ofensiva" }}</td>
+      <td>{{ .Defensiva }}</td>
+      <td>{{ index . "% defensiva" }}</td>
+      <td>{{ index . "Equipos especiales" }}</td>
+      <td>{{ index . "% EE" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ else }}
+<p>No disponible</p>
+{{ end }}
+{{ end }}
+{{ end }}

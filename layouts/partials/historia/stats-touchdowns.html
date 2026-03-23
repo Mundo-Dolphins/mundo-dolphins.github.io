@@ -1,0 +1,33 @@
+{{/*
+  Partial: historia/stats-touchdowns.html
+  Recibe: . = sections["Registros de touchdowns"]
+  Claves: Del equipo, Del rival
+  Columnas: En/Vs, Descripción, Distancia, Fecha, Resultado, Rival, Cuarto, Posición, Tipo
+*/}}
+{{ $tdData := . }}
+{{ $sections := slice "Del equipo" "Del rival" }}
+{{ $cols := slice "Fecha" "Rival" "En/Vs" "Cuarto" "Tipo" "Distancia" "Descripción" "Resultado" }}
+
+{{ range $sections }}
+{{- $subName := . -}}
+{{ with index $tdData $subName }}
+<h3>{{ $subName }}</h3>
+<div class="table-wrapper">
+<table>
+  <thead>
+    <tr>
+      {{ range $cols }}<th>{{ . }}</th>{{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range . }}
+    {{ $row := . }}
+    <tr>
+      {{ range $cols }}<td>{{ index $row . }}</td>{{ end }}
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+{{ end }}

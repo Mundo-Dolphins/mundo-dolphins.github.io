@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="main" role="main">
+  <div class="content post__content clearfix">
+    {{- range .Params.items -}}
+      {{- $stype := int .stype -}}
+      {{- if eq $stype 0 -}}
+        <blockquote class="bluesky-embed"
+          {{ printf "data-bluesky-uri=%q" .bskyURI | safeHTMLAttr }}
+          data-bluesky-cid="{{ .bskyCID }}"
+          data-bluesky-embed-color-mode="system">
+          <p lang="es">{{ .bskyDescription }}</p>
+          &mdash; (<a href="{{ .bskyProfileURI }}">{{ .bskyProfile }}</a>)
+          <a href="{{ .bskyPost }}?ref_src=embed">{{ .publishedOn }}</a>
+        </blockquote>
+      {{- else if eq $stype 1 -}}
+        {{ partial "social/ig-embed.html" (dict "igURL" .igURL "igSvgPath" .igSvgPath) }}
+      {{- end -}}
+    {{- end -}}
+  </div>
+
+  <nav class="pager social-pager">
+    {{- if .Params.hasNewer -}}
+      <a class="pager__item pager__item--prev" href="{{ printf "/social/posts_%d/" .Params.newerBatchNum | relURL }}">&larr; Anterior (mas reciente)</a>
+    {{- end -}}
+    {{- if .Params.hasOlder -}}
+      <a class="pager__item pager__item--next" href="{{ printf "/social/posts_%d/" .Params.olderBatchNum | relURL }}">Siguiente (mas antigua) &rarr;</a>
+    {{- end -}}
+  </nav>
+</main>
+
+<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+{{ end }}

@@ -1,0 +1,90 @@
+{{/*
+  Partial: historia/season-summary.html
+  
+  Renderiza la tabla "Resumen" de una temporada.
+  
+  Recibe: . = objeto sections.Resumen del JSON
+  
+  Las claves visibles están normalizadas (División -> Division,
+  Récord -> Record) para mantener coherencia con el markdown original.
+  Las claves opcionales se muestran sólo si tienen valor.
+*/}}
+{{ $r := . }}
+
+<h2 id="resumen">Resumen</h2>
+<div class="table-wrapper">
+<table>
+<tbody>
+
+{{/* División / Division */}}
+{{ with index $r "División" }}
+<tr><td>Division</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Récord / Record */}}
+{{ with index $r "Récord" }}
+<tr><td>Record</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Posición */}}
+{{ with index $r "Posición" }}
+<tr><td>Posición</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Puntos a favor */}}
+{{ with index $r "Puntos a favor" }}
+<tr><td>Puntos a favor</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Puntos en contra */}}
+{{ with index $r "Puntos en contra" }}
+<tr><td>Puntos en contra</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Head Coach */}}
+{{ with index $r "Head Coach" }}
+<tr><td>Head Coach</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* General Manager: campo opcional, fallback a "Chris Grier" si no existe */}}
+{{ $gm := index $r "General Manager" }}
+{{ if $gm }}
+<tr><td>General Manager</td><td>{{ $gm }}</td></tr>
+{{ else }}
+<tr><td>General Manager</td><td>Chris Grier</td></tr>
+{{ end }}
+
+{{/* Estadio */}}
+{{ with index $r "Estadio" }}
+<tr><td>Estadio</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Training Camp */}}
+{{ with index $r "Training Camp" }}
+<tr><td>Training Camp</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/*
+  Presidente: intentar varias claves posibles que distintos JSONs
+  pueden usar para el mismo dato.
+*/}}
+{{ $presidente := index $r "Presidente" }}
+{{ if not $presidente }}{{ $presidente = index $r "Chairman/Managing General Partner" }}{{ end }}
+{{ if not $presidente }}{{ $presidente = index $r "Owner/Chairman" }}{{ end }}
+{{ if $presidente }}
+<tr><td>Presidente</td><td>{{ $presidente }}</td></tr>
+{{ end }}
+
+{{/* Offensive Coordinator */}}
+{{ with index $r "Offensive Coordinator" }}
+<tr><td>Offensive Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Defensive Coordinator */}}
+{{ with index $r "Defensive Coordinator" }}
+<tr><td>Defensive Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+</tbody>
+</table>
+</div>

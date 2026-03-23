@@ -1,0 +1,27 @@
+    <div class="card">
+        <div class="card-header">
+            <h2><a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a></h2>
+            <p class="date">{{ partial "fecha-es.html" .Date }}</p>
+        </div>
+
+        <div class="description">
+            {{- if .Params.items -}}
+              <p>
+                Lote {{ .Params.batchNum }} con {{ len .Params.items }} publicaciones.
+                {{- with index .Params.items 0 -}}
+                  {{- $firstType := int .stype -}}
+                  {{- if eq $firstType 0 -}}
+                    {{ .bskyDescription | truncate 180 }}
+                  {{- else if eq $firstType 1 -}}
+                    {{ .igDescription | truncate 180 }}
+                  {{- end -}}
+                {{- end -}}
+              </p>
+            {{- end -}}
+        </div>
+        <div class="card-footer">
+            <a href="{{ .Permalink }}">
+                <button class="info-btn">Ver listado</button>
+            </a>
+        </div>
+    </div>

@@ -1,0 +1,156 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-02-18T11:41:04Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Rival",
+    "date": "1983-01-30",
+    "slug": "mia-riv-19830130",
+    "path": "historia/partidos/mia-riv-19830130",
+    "params": {
+      "game_id": "198301300mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [
+        {
+          "Equipo": "Miami Dolphins",
+          "1": "7",
+          "2": "10",
+          "3": "0",
+          "4": "0",
+          "Final": "17"
+        },
+        {
+          "Equipo": "Washington Redskins",
+          "1": "0",
+          "2": "10",
+          "3": "3",
+          "4": "14",
+          "Final": "27"
+        }
+      ],
+      "scoring_summary": [
+        {
+          "Cuarto": "1",
+          "Equipo": "Dolphins",
+          "Descripción": "Jimmy Cefalo pase de 76 yardas de David Woodley (Uwe von Schamann kick)",
+          "Marcador visitante": "7",
+          "Marcador local": "0"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Redskins",
+          "Descripción": "Mark Moseley field goal de 31 yardas",
+          "Marcador visitante": "7",
+          "Marcador local": "3"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Uwe von Schamann field goal de 20 yardas",
+          "Marcador visitante": "10",
+          "Marcador local": "3"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Redskins",
+          "Descripción": "Alvin Garrett pase de 4 yardas de Joe Theismann (Mark Moseley kick)",
+          "Marcador visitante": "10",
+          "Marcador local": "10"
+        },
+        {
+          "Cuarto": "2",
+          "Equipo": "Dolphins",
+          "Descripción": "Fulton Walker 98 yardas retorno de kickoff (Uwe von Schamann kick)",
+          "Marcador visitante": "17",
+          "Marcador local": "10"
+        },
+        {
+          "Cuarto": "3",
+          "Equipo": "Redskins",
+          "Descripción": "Mark Moseley field goal de 20 yardas",
+          "Marcador visitante": "17",
+          "Marcador local": "13"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Redskins",
+          "Descripción": "John Riggins carrera de 43 yardas (Mark Moseley kick)",
+          "Marcador visitante": "17",
+          "Marcador local": "20"
+        },
+        {
+          "Cuarto": "4",
+          "Equipo": "Redskins",
+          "Descripción": "Charlie Brown pase de 6 yardas de Joe Theismann (Mark Moseley kick)",
+          "Marcador visitante": "17",
+          "Marcador local": "27"
+        }
+      ]
+    },
+    "Conteo de snaps": {},
+    "Equipos": {},
+    "Estadísticas avanzadas": {
+      "Puntos esperados": [
+        {
+          "PE Def. Pase": "-1.48",
+          "PE Def. Carrera": "-10.61",
+          "PE Def. Pérdidas": "6.27",
+          "PE Def. Total": "-11.09",
+          "PE FG/XP": "-0.37",
+          "PE Kicker": "12.22",
+          "PE Ret. KO": "-1.65",
+          "PE Of. Pase": "-12.69",
+          "PE Of. Carrera": "-2.65",
+          "PE Of. Pérdidas": "-1.92",
+          "PE Of. Total": "-16.46",
+          "PE Punter": "0.51",
+          "PE Ret. Punt": "-1.60",
+          "PE Equipos Esp.": "9.11",
+          "PE Total": "-10",
+          "Equipo": "Dolphins"
+        },
+        {
+          "PE Def. Pase": "12.69",
+          "PE Def. Carrera": "2.65",
+          "PE Def. Pérdidas": "1.92",
+          "PE Def. Total": "16.46",
+          "PE FG/XP": "0.37",
+          "PE Kicker": "1.65",
+          "PE Ret. KO": "-12.22",
+          "PE Of. Pase": "1.48",
+          "PE Of. Carrera": "10.61",
+          "PE Of. Pérdidas": "-6.27",
+          "PE Of. Total": "11.09",
+          "PE Punter": "1.60",
+          "PE Ret. Punt": "-0.51",
+          "PE Equipos Esp.": "-9.11",
+          "PE Total": "10",
+          "Equipo": "Redskins"
+        }
+      ]
+    },
+    "Información del partido": {
+      "Semana": "Playoffs",
+      "Fecha": "30 de enero de 1983",
+      "Estadio": "Rose Bowl",
+      "Tipo de estadio": "Al aire libre",
+      "Clima": "54 grados, humedad relativa 65%, viento 9 mph"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": [
+      {
+        "youtube_id": "7Qo1Zo0_k-8",
+        "title": "Legacy import",
+        "url": "https://www.youtube.com/watch?v=7Qo1Zo0_k-8",
+        "duration_seconds": 7319
+      }
+    ]
+  }
+}

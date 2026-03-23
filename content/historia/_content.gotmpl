@@ -1,0 +1,52 @@
+{{/*
+  Content adapter para temporadas históricas de Miami Dolphins.
+  
+  Recorre todos los archivos en data/historical/seasons/*.json usando
+  site.Data.historical.seasons (Hugo mapea el árbol de directorios de data/
+  como un mapa anidado: site.Data.<dir>.<subdir>.<clave>).
+  
+  Por cada temporada se crea una página con .AddPage. El path debe ser
+  relativo a la sección donde vive este adapter (content/historia/),
+  por lo que basta con el año/slug como path. Hugo montará la URL en
+  /historia/<year>/.
+  
+  Sintaxis correcta de .AddPage (Hugo 0.126+):
+  - Los campos van DIRECTAMENTE en el dict (sin clave "frontmatter" envolvente).
+  - Los parámetros personalizados van en un sub-dict "params".
+  - "layout" es una clave de nivel raíz que selecciona la plantilla.
+  
+  El layout season.html (layouts/historia/season.html) se encarga del
+  renderizado completo usando los datos de site.Data.historical.seasons[key].
+*/}}
+
+{{- $adapter := . -}}
+
+{{ range $key, $data := site.Data.historical.seasons }}
+  {{/* $key es el nombre del fichero sin extensión, p.ej. "2017" */}}
+  {{/* $data es el objeto JSON parseado */}}
+
+  {{ $page := $data.page }}
+  {{ $year := $page.params.year | string }}
+
+  {{/*
+    Construir el dict de la página en el formato correcto de Hugo content adapters.
+    Los campos estándar (title, date, draft, layout) van a nivel raíz.
+    Los parámetros personalizados van dentro del sub-dict "params".
+  */}}
+  {{ $pageDict := dict
+    "path"    $key
+    "title"   $page.title
+    "dates"   (dict "date" (time (printf "%v-01-01T00:00:00Z" $page.params.year)))
+    "draft"   false
+    "layout"  "season"
+    "params"  (dict
+      "toc"         true
+      "logo"        (printf "logos/mia-%s.png" $year)
+      "year"        $year
+      "season_key"  $key
+    )
+  }}
+
+  {{/* Crear la página dinámica llamando al adapter */}}
+  {{- $adapter.AddPage $pageDict -}}
+{{ end }}

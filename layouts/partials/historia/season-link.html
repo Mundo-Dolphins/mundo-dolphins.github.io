@@ -1,0 +1,15 @@
+{{/*
+  Partial: historia/season-link.html
+  
+  Renderiza la sección "Estadísticas de la temporada" (enlace) y el
+  enlace final de retorno a /historia.
+  
+  Recibe: . = slice de objetos de sections["Estadísticas de la temporada"]
+  Cada objeto tiene: id, title, url.
+*/}}
+{{ $stats := . }}
+
+<h2 id="estadísticas-de-la-temporada">Estadísticas de la temporada</h2>
+{{ range $stats }}
+<p><a href="{{ .url }}">{{ .title }}</a></p>
+{{ end }}

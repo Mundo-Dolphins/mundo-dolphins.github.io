@@ -1,0 +1,16 @@
+    <div class="card">
+        
+        <div class="card-header">
+            <h2><a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a></h2>
+            <p class="date">{{ partial "fecha-es.html" .Date }}</p>
+        </div>
+
+        <div class="description">
+            <p>{{ .Params.descFull | safeHTML | truncate 200 }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{{ .Permalink }}">
+                <button class="info-btn">Más información</button>
+            </a>
+        </div>
+    </div>

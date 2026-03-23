@@ -1,0 +1,72 @@
+{{/*
+  Layout: layouts/podcast/podcast-episode.html
+  Renderiza un episodio de podcast generado por el content adapter.
+  Todos los datos vienen de .Params (ivooxId, youtubeId, descFull, etc.)
+*/}}
+{{ define "main" }}
+
+<main class="main" role="main">
+  <article class="post">
+
+    <header class="post__header">
+      <h1 class="post__title">{{ .Title }}</h1>
+      {{ with partial "fecha-es.html" .Date -}}
+        <div class="post__meta meta">{{ . }}</div>
+      {{- end }}
+      <div>Publicado: {{ partial "fecha-es.html" .Date }}</div>
+      {{- with .Params.length }}
+        <div>Duración: {{ . }}</div>
+      {{- end }}
+    </header>
+
+    <div class="content post__content clearfix">
+
+      <p>{{ .Params.descFull | htmlUnescape | safeHTML }}</p>
+
+      <!--more-->
+
+      {{- with .Params.youtubeId }}
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/{{ . }}"
+          width="100%" height="360"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+          title="{{ $.Title }}">
+        </iframe>
+      </div>
+      {{ end -}}
+
+      {{- with .Params.ivooxId }}
+      <iframe
+        src="https://www.ivoox.com/player_ej_{{ . }}_6_1.html?c1=14929b"
+        width="100%" height="200"
+        frameborder="0"
+        allowfullscreen=""
+        scrolling="no"
+        loading="lazy">
+      </iframe>
+      {{ end -}}
+
+      {{- with .Params.ivooxLink }}
+      <p><a href="{{ . }}" target="_blank" rel="noopener noreferrer">Escuchar en Ivoox</a></p>
+      {{- end }}
+
+    </div>
+
+    {{ partial "android-app-cta.html" . }}
+
+    <!-- Social Share Buttons -->
+    {{ partial "social-share.html" . }}
+
+  </article>
+</main>
+
+{{ partial "pager.html" . }}
+
+<!-- Script para funcionalidad de social share -->
+{{ partial "social-share-script.html" . }}
+
+{{ end }}

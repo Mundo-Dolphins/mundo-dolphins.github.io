@@ -1,0 +1,40 @@
+{{/*
+  Content adapter para partidos históricos de Miami Dolphins.
+
+  Recorre todos los archivos en data/historical/games/<year>/*.json usando
+  site.Data.historical.games (mapa anidado por año y luego por game_id).
+
+  Por cada partido se crea una página con .AddPage. El path es el slug del
+  partido (p.ej. "mia-new-20130930"), relativo a content/historia/partidos/.
+  Esto genera URLs directas /historia/partidos/<slug>/ sin subdirectorio de año.
+
+  La fecha se deriva de los primeros 8 caracteres del game_id
+  (formato YYYYMMDD) para garantizar que sea un time.Time válido.
+*/}}
+
+{{- $adapter := . -}}
+{{- range $year, $yearGames := site.Data.historical.games -}}
+  {{- range $gameId, $gameData := $yearGames -}}
+    {{- $page := $gameData.page -}}
+
+    {{/* Derivar fecha desde game_id (YYYYMMDD...) para garantizar parsing correcto */}}
+    {{- $yr  := substr $gameId 0 4 -}}
+    {{- $mo  := substr $gameId 4 2 -}}
+    {{- $dy  := substr $gameId 6 2 -}}
+    {{- $date := time (printf "%s-%s-%sT00:00:00Z" $yr $mo $dy) -}}
+
+    {{- $pageDict := dict
+      "path"   $page.slug
+      "title"  $page.title
+      "dates"  (dict "date" $date)
+      "draft"  false
+      "layout" "game"
+      "params" (dict
+        "game_id"   $gameId
+        "game_year" ($year | string)
+        "toc"       true
+      )
+    -}}
+    {{- $adapter.AddPage $pageDict -}}
+  {{- end -}}
+{{- end -}}

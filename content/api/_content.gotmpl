@@ -1,0 +1,124 @@
+{{/*
+  Genera endpoints JSON de /api en build-time con Hugo.
+  Reemplaza recursos antes generados por scripts externos.
+*/}}
+{{- $adapter := . -}}
+
+{{- $endpoints := slice -}}
+
+{{/* seasons.json y season_N.json */}}
+{{- $seasonNums := slice -}}
+{{- range $key, $episodes := site.Data -}}
+  {{- if hasPrefix $key "season_" -}}
+    {{- $num := $key | strings.TrimPrefix "season_" | int -}}
+    {{- $seasonNums = $seasonNums | append $num -}}
+    {{- $endpoints = $endpoints | append (dict
+      "name"    $key
+      "payload" $episodes
+    ) -}}
+  {{- end -}}
+{{- end -}}
+{{- $seasonNums = sort $seasonNums "value" "desc" -}}
+
+{{- $seasonFiles := slice -}}
+{{- range $seasonNums -}}
+  {{- $seasonFiles = $seasonFiles | append (printf "season_%d.json" .) -}}
+{{- end -}}
+{{- $endpoints = $endpoints | append (dict "name" "seasons" "payload" $seasonFiles) -}}
+
+{{/* feed.json: últimos 30 episodios siguiendo orden descendente de temporada */}}
+{{- $latest := slice -}}
+{{- range $seasonNums -}}
+  {{- $episodes := index site.Data (printf "season_%d" .) -}}
+  {{- range $episodes -}}
+    {{- if lt (len $latest) 30 -}}
+      {{- $latest = $latest | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $endpoints = $endpoints | append (dict "name" "feed" "payload" $latest) -}}
+
+{{/* social.json: mantiene el comportamiento actual del script (posts_1 + posts_2) */}}
+{{- $social := slice -}}
+{{- with index site.Data "posts_1" -}}
+  {{- $social = $social | append . -}}
+{{- end -}}
+{{- with index site.Data "posts_2" -}}
+  {{- $social = $social | append . -}}
+{{- end -}}
+{{- $socialFlat := slice -}}
+{{- range $social -}}
+  {{- range . -}}
+    {{- $socialFlat = $socialFlat | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $endpoints = $endpoints | append (dict "name" "social" "payload" $socialFlat) -}}
+
+{{/* videos*.json */}}
+{{- $videosRaw := site.Data.videos -}}
+{{- $videos := slice -}}
+{{- range $videosRaw -}}
+  {{- $videos = $videos | append (dict
+    "duration"     .duration
+    "isPodcast"    .isPodcast
+    "published_at" .published_at
+    "title"        .title
+    "url"          .url
+    "embeddable"   (.embeddable | default false)
+  ) -}}
+{{- end -}}
+{{- $videos = sort $videos "published_at" "desc" -}}
+{{- $lastUpdated := now.Format "2006-01-02T15:04:05Z07:00" -}}
+
+{{- $videosPayload := dict
+  "videos"      $videos
+  "totalCount"  (len $videos)
+  "lastUpdated" $lastUpdated
+-}}
+{{- $endpoints = $endpoints | append (dict "name" "videos" "payload" $videosPayload) -}}
+
+{{- $latestCount := 50 -}}
+{{- if lt (len $videos) 50 -}}
+  {{- $latestCount = len $videos -}}
+{{- end -}}
+{{- $videosLatest := first $latestCount $videos -}}
+{{- $endpoints = $endpoints | append (dict "name" "videos-latest" "payload" (dict
+  "videos"      $videosLatest
+  "totalCount"  $latestCount
+  "lastUpdated" $lastUpdated
+)) -}}
+
+{{- $videosPodcasts := where $videos "isPodcast" true -}}
+{{- $endpoints = $endpoints | append (dict "name" "videos-podcasts" "payload" (dict
+  "videos"      $videosPodcasts
+  "totalCount"  (len $videosPodcasts)
+  "lastUpdated" $lastUpdated
+)) -}}
+
+{{- $videosRegular := where $videos "isPodcast" false -}}
+{{- $endpoints = $endpoints | append (dict "name" "videos-regular" "payload" (dict
+  "videos"      $videosRegular
+  "totalCount"  (len $videosRegular)
+  "lastUpdated" $lastUpdated
+)) -}}
+
+{{- $videosEmbeddable := where $videos "embeddable" true -}}
+{{- $endpoints = $endpoints | append (dict "name" "videos-embeddable" "payload" (dict
+  "videos"      $videosEmbeddable
+  "totalCount"  (len $videosEmbeddable)
+  "lastUpdated" $lastUpdated
+)) -}}
+
+{{/* Crear páginas /api/<name>.json */}}
+{{- range $endpoints -}}
+  {{- $page := dict
+    "path"    .name
+    "title"   (printf "API %s" .name)
+    "draft"   false
+    "layout"  "api-endpoint"
+    "url"     (printf "/api/%s.json" .name)
+    "outputs" (slice "json")
+    "params"  (dict "payload" .payload)
+  -}}
+  {{- $adapter.AddPage $page -}}
+{{- end -}}

@@ -1,0 +1,52 @@
+{{/*
+  Partial: historia/game-scoring.html
+  Recibe: . = sections["Anotaciones"]
+  Contiene: linescore (list de 2 dicts), scoring_summary (list de dicts)
+
+  linescore keys: Equipo, 1, 2, 3, 4, Final
+  scoring_summary keys: Cuarto, Tiempo, Equipo, Descripción, Marcador visitante, Marcador local
+*/}}
+<h2 id="anotaciones">Anotaciones</h2>
+
+<div class="game-linescore-wrap">
+  <table class="game-linescore">
+    <thead>
+      <tr>
+        <th>Equipo</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>Final</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .linescore }}
+      <tr>
+        <td>{{ .Equipo }}</td>
+        <td>{{ index . "1" }}</td>
+        <td>{{ index . "2" }}</td>
+        <td>{{ index . "3" }}</td>
+        <td>{{ index . "4" }}</td>
+        <td><strong>{{ .Final }}</strong></td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+{{ with .scoring_summary }}
+<ul class="game-scoring-summary">
+  {{ range . }}
+  <li class="scoring-play">
+    <div class="scoring-play__header">
+      <span class="scoring-play__quarter">Q{{ .Cuarto }}</span>
+      <span class="scoring-play__time">{{ .Tiempo }}</span>
+      <span class="scoring-play__team">{{ .Equipo }}</span>
+      <span class="scoring-play__score">{{ index . "Marcador visitante" }} – {{ index . "Marcador local" }}</span>
+    </div>
+    <p class="scoring-play__desc">{{ index . "Descripción" }}</p>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

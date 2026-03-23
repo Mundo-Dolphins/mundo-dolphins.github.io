@@ -1,0 +1,47 @@
+{{/*
+  Partial: historia/game-drives.html
+  Recibe: . = sections["Series ofensivas"]
+  Estructura: dict con team names como claves, cada valor es una lista de drives.
+  Drive keys: #, Resultado, Yardas netas, Jugadas, Cuarto, Posición cancha, Inicio, Tiempo
+*/}}
+{{ if . }}
+<h2 id="series-ofensivas">Series ofensivas</h2>
+
+{{ range $team, $drives := . }}
+<h3>{{ $team }}</h3>
+{{ if $drives }}
+<div class="table-responsive">
+<table class="game-drives-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Resultado</th>
+      <th>Yds netas</th>
+      <th>Jugadas</th>
+      <th>Cuarto</th>
+      <th>Posición</th>
+      <th>Inicio</th>
+      <th>Tiempo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $drives }}
+    <tr>
+      <td>{{ index . "#" }}</td>
+      <td>{{ .Resultado }}</td>
+      <td>{{ index . "Yardas netas" }}</td>
+      <td>{{ .Jugadas }}</td>
+      <td>{{ .Cuarto }}</td>
+      <td>{{ index . "Posición cancha" }}</td>
+      <td>{{ .Inicio }}</td>
+      <td>{{ .Tiempo }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ else }}
+<p>No disponible</p>
+{{ end }}
+{{ end }}
+{{ end }}

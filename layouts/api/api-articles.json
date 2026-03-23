@@ -1,0 +1,14 @@
+{{- $articles := slice -}}
+{{- $newsPages := where site.RegularPages "Section" "noticias" -}}
+{{- $newsPages = $newsPages.ByDate.Reverse -}}
+{{- range $newsPages -}}
+  {{- $raw := .RawContent -}}
+  {{- $content := replaceRE `\{\{< youtube ([^ >]+) >\}\}` `https://www.youtube.com/watch?v=$1` $raw -}}
+  {{- $articles = $articles | append (dict
+    "title"         .Title
+    "author"        (.Params.author | default "")
+    "publishedDate" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "content"       $content
+  ) -}}
+{{- end -}}
+{{- $articles | jsonify (dict "indent" "  ") -}}
