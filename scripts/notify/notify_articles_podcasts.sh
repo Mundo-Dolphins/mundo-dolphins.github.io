@@ -3,8 +3,7 @@ set -euo pipefail
 
 # notify_articles_podcasts.sh
 # Detects new articles (content/noticias/*.md), podcasts (data/season_*.json),
-# and videos (data/videos.json or content/videos/*.md) added in the last commit.
-# added in the last commit and sends them to Telegram
+# and videos (data/videos.json) added in the last commit and sends them to Telegram.
 
 echo "📋 Checking for new articles, podcasts, and videos in last commit..."
 
@@ -146,21 +145,6 @@ print(int(dt.timestamp()*1000))')
     fi
     
     rm -f "$TEMP_PREV" "$TEMP_CURR"
-  fi
-done < "$TEMP_FILELIST"
-
-# Check for new videos in content/videos/
-while IFS= read -r file; do
-  [ -z "$file" ] && continue
-  if [[ "$file" =~ ^content/videos/.*\.md$ ]] && [ -f "$file" ]; then
-    TITLE=$(grep -m 1 "^title:" "$file" | sed 's/title: *//;s/\"//g;s/'"'"'//g' || echo "")
-    SLUG=$(grep -m 1 "^slug:" "$file" | sed 's/slug: *//;s/\"//g;s/'"'"'//g' || echo "")
-    if [ -z "$SLUG" ]; then
-      SLUG=$(basename "$file" .md)
-    fi
-    if [ -n "$TITLE" ]; then
-      echo "${TITLE}|${SLUG}" >> "$TEMP_VIDEOS"
-    fi
   fi
 done < "$TEMP_FILELIST"
 
