@@ -24,7 +24,7 @@ jobs:
 
       - name: Restore social notification state
         id: social_state_restore
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: .cache/notify-social
           key: notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-${{ github.run_id }}
@@ -61,7 +61,7 @@ jobs:
 
       - name: Save social notification state
         if: success()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: .cache/notify-social
           key: notify-social-state-${{ env.SOCIAL_NOTIFY_STATE_VERSION }}-${{ github.run_id }}
