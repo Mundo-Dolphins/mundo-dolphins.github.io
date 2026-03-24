@@ -6,11 +6,16 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 OUTPUT_FILE="${REPO_ROOT}/scripts/notify/notifications.json"
 TEMP_JSONL="$(mktemp)"
 TEMP_FILELIST="$(mktemp)"
+TEMP_NEW_ARTICLE_FILES="$(mktemp)"
 
 # Detect changed files in last commit
 # IMPORTANT: Do NOT assign to a variable - it loses NUL bytes. Write directly to file.
 git -c core.quotepath=false diff --name-only -z HEAD~1 HEAD 2>/dev/null | \
   tr '\0' '\n' > "$TEMP_FILELIST" || echo "" > "$TEMP_FILELIST"
+
+# Detect only newly added article files (git status A)
+git -c core.quotepath=false diff --name-only --diff-filter=A -z HEAD~1 HEAD 2>/dev/null | \
+  tr '\0' '\n' > "$TEMP_NEW_ARTICLE_FILES" || echo "" > "$TEMP_NEW_ARTICLE_FILES"
 
 # Check if file list is empty
 if [ ! -s "$TEMP_FILELIST" ]; then
@@ -20,7 +25,7 @@ if [ ! -s "$TEMP_FILELIST" ]; then
     echo "has_new_articles=false" >> "$GITHUB_OUTPUT"
     echo "notifications_count=0" >> "$GITHUB_OUTPUT"
   fi
-  rm -f "$TEMP_FILELIST"
+  rm -f "$TEMP_FILELIST" "$TEMP_NEW_ARTICLE_FILES"
   exit 0
 fi
 
@@ -86,7 +91,7 @@ print(int(dt.timestamp() * 1000))
 PY
 }
 
-# Detect new articles
+# Detect newly added articles only
 while IFS= read -r file; do
   [ -z "$file" ] && continue
   if [[ "$file" =~ ^content/noticias/.*\.md$ ]] && [ -f "$file" ]; then
@@ -98,7 +103,7 @@ while IFS= read -r file; do
       append_notification "Nuevo articulo publicado" "Pulsa para leerlo" "https://mundodolphins.es/noticias/${SLUG}/" "article" "article_published_timestamp" "$ARTICLE_TS"
     fi
   fi
-done < "$TEMP_FILELIST"
+done < "$TEMP_NEW_ARTICLE_FILES"
 
 # Detect new podcast episodes
 while IFS= read -r file; do
@@ -155,4 +160,4 @@ if [ -n "${GITHUB_OUTPUT:-}" ]; then
   echo "notifications_count=${NOTIFICATIONS_COUNT}" >> "$GITHUB_OUTPUT"
 fi
 
-rm -f "$TEMP_JSONL" "$TEMP_FILELIST"
+rm -f "$TEMP_JSONL" "$TEMP_FILELIST" "$TEMP_NEW_ARTICLE_FILES"

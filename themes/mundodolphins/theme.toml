@@ -1,0 +1,13 @@
+name = "Mundo Dolphins"
+license = "GPL-2.0-only"
+description = "Tema local de Mundo Dolphins para rediseño y personalización propia"
+homepage = "https://mundodolphins.es/"
+demosite = "https://mundodolphins.es/"
+tags = ["blog", "responsive", "customizable", "widgets", "rss"]
+features = ["blog", "responsive", "widgets", "rss", "wordpress"]
+min_version = "0.132"
+
+# If the theme has multiple authors
+authors = [
+  {name = "Mundo Dolphins", homepage = "https://mundodolphins.es/"}
+]

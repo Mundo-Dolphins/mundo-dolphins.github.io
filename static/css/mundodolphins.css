@@ -253,68 +253,260 @@
     height: auto;
 }
 
+/* Controles de tamaño de letra en artículos */
+.font-size-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0 0 0.9rem;
+    padding: 0.3rem;
+    border: 1px solid #d6e7ea;
+    border-radius: 999px;
+    background: #f7fcfc;
+}
+
+.font-size-controls__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    border: 1px solid #bfd8dd;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #0b6f76;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.font-size-controls__button:hover {
+    background: #eef8f9;
+    border-color: #0b6f76;
+    transform: translateY(-1px);
+}
+
+.font-size-controls__button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.font-size-controls__button:focus-visible {
+    outline: 2px solid #0b6f76;
+    outline-offset: 2px;
+}
+
+.font-size-controls__button--reading {
+    padding: 0 0.9rem;
+    min-width: auto;
+}
+
+.font-size-controls__value {
+    min-width: 3.2rem;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #0f5760;
+}
+
+body.reading-mode .container.wrapper.flex {
+    max-width: 1100px;
+}
+
+body.reading-mode .container.wrapper.flex > .primary {
+    flex: 0 1 100%;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+body.reading-mode .container.wrapper.flex > .sidebar,
+body.reading-mode .social-share,
+body.reading-mode .pager,
+body.reading-mode .comments,
+body.reading-mode .authorbox {
+    display: none;
+}
+
+body.reading-mode .post {
+    background: #fff;
+}
+
+body.reading-mode .post__content {
+    line-height: 1.9;
+    color: #142326;
+}
+
+body.reading-mode .post__content p,
+body.reading-mode .post__content li,
+body.reading-mode .post__content blockquote {
+    font-size: 1.06em;
+}
+
+body.reading-mode .post__content h2,
+body.reading-mode .post__content h3,
+body.reading-mode .post__content h4 {
+    line-height: 1.3;
+}
+
+@media (max-width: 640px) {
+    .font-size-controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .font-size-controls__button--reading {
+        width: 100%;
+    }
+}
+
 /* Header */
 .header {
     position: relative;
-    background: linear-gradient(110deg, #0b7b84 0%, #0a6c75 55%, #0b7b84 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    background: linear-gradient(120deg, #0b6f76 0%, #0e7e87 50%, #0b6f76 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.header::before,
+.header::after {
+    content: "";
+    position: absolute;
+    inset: auto;
+    pointer-events: none;
+}
+
+.header::before {
+    width: 520px;
+    height: 520px;
+    right: -150px;
+    top: -230px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.header::after {
+    width: 420px;
+    height: 420px;
+    left: -120px;
+    bottom: -260px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 72%);
 }
 
 .header .logo {
-    padding: 18px 0 56px;
+    position: relative;
+    z-index: 2;
+    padding: 14px 0 32px;
 }
 
 .header .logo__link {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 18px;
+    gap: 1.15rem;
+    text-decoration: none;
+}
+
+.header .logo__imagebox {
+    display: block;
+    width: 112px;
+    height: 112px;
+    min-width: 112px;
+    min-height: 112px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.08) url("/img/Mundo_Dolphins_small.png") center / 78% no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 0.45rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .header .logo__img {
-    max-height: 132px;
-    width: auto;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .header .logo__text {
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
 }
 
 .header .logo__title {
-    font-size: 2.2rem;
+    font-size: clamp(1.7rem, 4.2vw, 3.1rem);
     font-weight: 800;
-    color: #f6ffff;
-    text-shadow: none;
+    line-height: 1.04;
+    color: #f4feff;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+}
+
+.header .logo__tagline {
+    margin-top: 0.3rem;
+    font-size: 0.92rem;
+    letter-spacing: 0.12em;
+    color: rgba(232, 251, 253, 0.88);
 }
 
 .header + .menu {
-    margin-top: -52px;
-    background: rgba(11, 123, 132, 0.96);
+    margin-top: -22px;
+    background: rgba(9, 102, 110, 0.92);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1200;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
-}
-
-.header + .menu .container {
-    display: flex;
-    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
 .header + .menu,
 .header + .menu .menu__btn {
-    background: rgba(11, 123, 132, 0.96);
+    background: rgba(9, 102, 110, 0.92);
+}
+
+.header + .menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.header + .menu .menu__brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    padding: 0.14rem;
+    flex: 0 0 auto;
+}
+
+.header + .menu .menu__brand-img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #ffffff;
 }
 
 .header + .menu .menu__list {
+    display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: 0.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.62rem 0;
 }
 
 .header + .menu .menu__item {
-    padding: 0 0.2rem;
+    padding: 0;
 }
 
 .header + .menu .menu__item:hover {
@@ -322,63 +514,99 @@
 }
 
 .header + .menu .menu__link {
-    color: #f6ffff;
+    color: #ecfdff;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 0.8rem;
+    letter-spacing: 0.045em;
+    font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
+    border-radius: 999px;
+    padding: 0.58rem 0.9rem;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .header + .menu .menu__link::after {
-    border: 0;
-    width: 100%;
-    height: 3px;
-    background: #f07d00;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    opacity: 0;
+    display: none;
 }
 
-.header + .menu .menu__item--active .menu__link::after,
-.header + .menu .menu__item:hover .menu__link::after {
-    opacity: 1;
+.header + .menu .menu__item:hover .menu__link {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-1px);
+}
+
+.header + .menu .menu__item--active .menu__link {
+    background: #f6fdff;
+    color: #06636b;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .header + .menu .menu__btn-title {
-    color: #f6ffff;
+    color: #ecfdff;
 }
 
 @media (max-width: 768px) {
     .header .logo {
-        padding: 14px 0 20px;
+        padding: 12px 0 16px;
     }
 
     .header .logo__link {
-        gap: 12px;
+        gap: 0.8rem;
     }
 
     .header .logo__img {
-        max-height: 96px;
+        max-height: none;
+    }
+
+    .header .logo__imagebox {
+        width: 82px;
+        height: 82px;
+        min-width: 82px;
+        min-height: 82px;
+        padding: 0.32rem;
     }
 
     .header .logo__title {
-        font-size: 1.6rem;
-        letter-spacing: 0.06em;
+        font-size: clamp(1.25rem, 8vw, 1.95rem);
+        letter-spacing: 0.045em;
+    }
+
+    .header .logo__tagline {
+        font-size: 0.74rem;
+        letter-spacing: 0.08em;
     }
 
     .header + .menu {
         margin-top: 0;
-        background: #0b7b84;
+        background: #0a6c74;
+        backdrop-filter: none;
     }
 
     .header + .menu .menu__btn {
-        background: #0b7b84;
+        background: #0a6c74;
     }
 
-    .header + .menu .menu__list--active {
-        background: #0b7b84;
+    .header + .menu .container {
+        justify-content: space-between;
+        gap: 0.45rem;
+    }
+
+    .header + .menu .menu__brand {
+        margin-left: 0.2rem;
+    }
+
+    .header + .menu .menu__brand-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header + .menu .menu__list {
+        padding: 0.3rem 0.5rem 0.7rem;
+        gap: 0.2rem;
+    }
+
+    .header + .menu .menu__link {
+        font-size: 0.74rem;
+        padding: 0.52rem 0.72rem;
     }
 }
 
@@ -733,11 +961,46 @@
     border-bottom: 0;
 }
 
-.history-season__content table caption {
-    padding: 0.75rem 1rem;
+/* Bloque enlace artículo histórico */
+.season-article-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: linear-gradient(135deg, #f0fafb 0%, #e4f4f6 100%);
+    border: 1px solid #b3dfe4;
+    border-left: 4px solid #0b6f76;
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    margin: 1.5rem 0 1.8rem;
+}
+
+.season-article-link__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.season-article-link__label {
+    font-size: 0.78rem;
     font-weight: 600;
-    text-align: left;
-    color: #0f2f33;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0b6f76;
+    margin: 0 0 0.3rem;
+}
+
+.season-article-link__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-decoration: none;
+    line-height: 1.35;
+}
+
+.season-article-link__title:hover {
+    color: #0b6f76;
+    text-decoration: underline;
 }
 
 /* Historia game pages */
@@ -749,8 +1012,7 @@
     line-height: 1.55;
 }
 
-.history-game .history-season__content h2#informacion-del-partido + ul,
-.history-game .history-season__content h2#información-del-partido + ul {
+.history-game .history-season__content h2#informacion-del-partido + ul {
     list-style: none;
     margin: 0 0 1.25rem;
     padding: 0;
@@ -759,8 +1021,7 @@
     gap: 0.6rem;
 }
 
-.history-game .history-season__content h2#informacion-del-partido + ul > li,
-.history-game .history-season__content h2#información-del-partido + ul > li {
+.history-game .history-season__content h2#informacion-del-partido + ul > li {
     margin: 0;
     padding: 0.55rem 0.7rem;
     border: 1px solid #d7e5e8;
@@ -768,13 +1029,11 @@
     background: #fff;
 }
 
-.history-game .history-season__content h2#informacion-del-partido + ul > li > p,
-.history-game .history-season__content h2#información-del-partido + ul > li > p {
+.history-game .history-season__content h2#informacion-del-partido + ul > li > p {
     margin: 0;
 }
 
-.history-game .history-season__content h2#informacion-del-partido + ul > li > p > strong,
-.history-game .history-season__content h2#información-del-partido + ul > li > p > strong {
+.history-game .history-season__content h2#informacion-del-partido + ul > li > p > strong {
     display: block;
     margin-bottom: 0.22rem;
 }
@@ -864,16 +1123,14 @@
 }
 
 /* Keep nested TOC levels as plain lists (no "card" boxes). */
-.history-game .history-season__content h2#contenido + ul ul,
-.history-game .history-season__content h2#contents + ul ul {
+.history-game .history-season__content h2#contenido + ul ul {
     list-style: disc;
     margin: 0.35rem 0 0.65rem 1.1rem;
     padding-left: 0.95rem;
     display: block;
 }
 
-.history-game .history-season__content h2#contenido + ul ul > li,
-.history-game .history-season__content h2#contents + ul ul > li {
+.history-game .history-season__content h2#contenido + ul ul > li {
     margin: 0.28rem 0;
     padding: 0;
     border: 0;
@@ -881,15 +1138,14 @@
     background: transparent;
 }
 
-.history-game .history-season__content h2#contenido + ul ul > li > p,
-.history-game .history-season__content h2#contents + ul ul > li > p {
+.history-game .history-season__content h2#contenido + ul ul > li > p {
     margin: 0;
     font-weight: 400;
     color: inherit;
 }
 
 /* Team stats blocks: table-like layout for "Estadisticas <equipo>" sections. */
-.history-game .history-season__content h4[id^="estadísticas-"] + ul,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul {
     list-style: none;
     margin: 0 0 1.15rem;
@@ -900,19 +1156,19 @@
     overflow: hidden;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul > li,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul > li {
     margin: 0;
     padding: 0.62rem 0.95rem;
     border-bottom: 1px solid #e7eef0;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul > li:last-child,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul > li:last-child {
     border-bottom: 0;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p {
     margin: 0;
     display: flex;
@@ -923,7 +1179,7 @@
     color: #0f2f33;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p > strong,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p > strong {
     flex: 0 0 auto;
     min-width: 165px;
@@ -931,7 +1187,7 @@
 }
 
 /* Override generic "p + ul" card style inside team stats only. */
-.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul {
     list-style: none;
     margin: 0.55rem 0 0.15rem;
@@ -941,7 +1197,7 @@
     overflow: hidden;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li {
     margin: 0;
     padding: 0.55rem 0.75rem;
@@ -950,12 +1206,12 @@
     background: #fbfeff;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li:last-child,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li:last-child {
     border-bottom: 0;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p {
     margin: 0;
     display: flex;
@@ -966,7 +1222,7 @@
     color: #0f2f33;
 }
 
-.history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p > strong,
+
 .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p > strong {
     flex: 0 0 auto;
     min-width: 135px;
@@ -974,18 +1230,16 @@
 }
 
 @media (max-width: 760px) {
-    .history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p,
+    
     .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p,
-    .history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p,
     .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.2rem;
     }
 
-    .history-game .history-season__content h4[id^="estadísticas-"] + ul > li > p > strong,
+    
     .history-game .history-season__content h4[id^="estadisticas-"] + ul > li > p > strong,
-    .history-game .history-season__content h4[id^="estadísticas-"] + ul p + ul > li > p > strong,
     .history-game .history-season__content h4[id^="estadisticas-"] + ul p + ul > li > p > strong {
         min-width: 0;
     }
@@ -1225,8 +1479,7 @@
 }
 
 .table-wrapper > table {
-    width: max-content;
-    min-width: 100%;
+    width: 100%;
     border-collapse: collapse;
     min-width: 640px;
     background: #fff;
@@ -1393,30 +1646,6 @@
 }
 
 /* Estilos específicos para sidebar */
-.fcm-notifications--sidebar {
-    font-size: 0.88rem;
-}
-
-.fcm-notifications--sidebar .fcm-notifications__status {
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.fcm-notifications--sidebar .notification-status {
-    font-size: 0.78rem;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: #f3f7f8;
-    color: #3a5659;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-}
-
-.fcm-notifications--sidebar .notification-status--active {
-    background: #e1f4f0;
-    color: #0b5a4f;
-}
 
 .push-notifications--sidebar .push-notifications__content {
     display: grid;
@@ -1478,16 +1707,6 @@
 .push-notifications--sidebar .push-btn--test:hover {
     background: #0b2224;
     transform: translateY(-1px);
-}
-
-.fcm-notifications__note--compact {
-    font-size: 0.72rem;
-    color: #4b6063;
-    line-height: 1.4;
-    margin: 0;
-    text-align: left;
-    padding: 8px 0 0;
-    border-top: 1px solid #eef2f3;
 }
 
 /* Topic Subscriptions */
@@ -1675,27 +1894,45 @@
 
 /* ── Game back navigation ── */
 .game-back-nav {
-    padding: 1rem 0 0;
+    padding: 0.65rem 0 1.05rem;
 }
 
 .game-back-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.4rem 0.85rem;
-    border: 1px solid #d7e5e8;
+    gap: 0.6rem;
+    min-height: 52px;
+    padding: 0.6rem 1.9rem;
+    border: 2px solid #c7dfe3;
     border-radius: 999px;
-    background: #fff;
+    background: #f5fbfc;
     color: #0b6f76;
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: clamp(1.05rem, 2.2vw, 1.18rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
     text-decoration: none;
-    transition: background 0.15s, border-color 0.15s;
+    box-shadow: 0 2px 0 rgba(10, 60, 67, 0.04);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .game-back-btn:hover {
-    background: #edf7f8;
+    background: #eef8f9;
     border-color: #0b6f76;
+    transform: translateY(-1px);
+}
+
+.game-back-btn:focus-visible {
+    outline: 2px solid #0b6f76;
+    outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+    .game-back-btn {
+        width: 100%;
+        justify-content: center;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }
 
 /* ── Game linescore table ── */
@@ -1843,10 +2080,4 @@
     width: 100%;
     height: 100%;
     border: 0;
-}
-
-.game-video__title {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--color-text-muted, #666);
 }

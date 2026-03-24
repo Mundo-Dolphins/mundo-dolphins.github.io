@@ -5,7 +5,7 @@ date: 2026-03-23T11:59:00+01:00
 author: Javi Martín
 authorLink: https://bsky.app/profile/undolfan.mundodolphins.es
 categories:
-  - news
+  - noticias
 ---
 Si la primera semana de agencia libre ya había desmontado la idea de un marzo tranquilo en Miami, la segunda ha terminado de confirmar que el nuevo régimen no está haciendo simples retoques: está redibujando la plantilla. Este artículo funciona como [continuación del anterior](http://mundodolphins.es/noticias/20260316-resumen-de-la-primera-semana-de-una-agencia-libre-en-la-que-miami-en-teor%C3%ADa-iba-a-estar-poco-activo/),  lo ocurrido en los últimos días no cambia la tendencia de la primera semana, sino que la empuja todavía más lejos. Miami no solo sigue moviéndose; ahora además empieza a tocar piezas estructurales del ataque, a empujar dinero hacia el futuro y a asumir públicamente que el roster de 2026 se parecerá poco al de hace apenas unas semanas. 
 

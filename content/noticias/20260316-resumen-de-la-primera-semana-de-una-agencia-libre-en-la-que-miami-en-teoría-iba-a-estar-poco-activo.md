@@ -5,7 +5,7 @@ date: 2026-03-16T11:35:00+01:00
 author: Javi Martín
 authorLink: https://bsky.app/profile/undolfan.mundodolphins.es
 categories:
-  - news
+  - noticias
 ---
 Cuando el nuevo general manager de los Dolphins rebajó expectativas antes de abrirse el mercado, el mensaje parecía claro: no había que esperar una agencia libre especialmente agresiva. Y, sin embargo, la primera semana ha dejado justamente lo contrario. Entre fichajes, renovaciones, tender a Ethan Bonner, continuidad de A.J. Henning vía reserve/future y la reestructuración de Austin Jackson, el mapa de movimientos de Miami ya supera con holgura la veintena de nombres asociados al roster de 2026. Además, casi todos los acuerdos anunciados hasta ahora siguen el mismo patrón: contratos de un año, importes contenidos y, en varios casos, garantías muy bajas o todavía no publicadas. Un ejemplo claro es Zane Gonzalez, firmado por un año y 1,487,500 dólares con solo 100,000 garantizados; en otros casos, como Jamaree Salyer, OTC todavía no mostraba cifra cargada al cierre del 16 de marzo. 
 
