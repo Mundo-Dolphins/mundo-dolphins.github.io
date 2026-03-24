@@ -9,7 +9,7 @@
             <p>{{ .Params.descFull | safeHTML | truncate 200 }}</p>
         </div>
         <div class="card-footer">
-            <a href="{{ .Permalink }}">
+                <a href="{{ .RelPermalink }}">
                 <button class="info-btn">Más información</button>
             </a>
         </div>

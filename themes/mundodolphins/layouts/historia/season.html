@@ -18,6 +18,7 @@
   {{/* ── Resolver datos de la temporada ── */}}
   {{ $key  := .Params.season_key }}
   {{ $data := index site.Data.historical.seasons $key }}
+  {{ $articulo := site.GetPage (printf "/historia/articulos/%s" $key) }}
 
   {{ if not $data }}
     <main class="main" role="main">
@@ -34,6 +35,10 @@
 
     <main class="main" role="main">
       <article class="post history-season">
+        <div class="game-back-nav">
+          <a href="{{ relURL "historia/" }}" class="game-back-btn">&larr; Volver</a>
+        </div>
+
         <header class="post__header history-season__hero">
           <div class="history-season__hero-text">
             <span class="history-season__eyebrow">Temporada</span>
@@ -61,6 +66,7 @@
           <div id="TableOfContents">
             <ul>
               <li><a href="#resumen">Resumen</a></li>
+              {{ if $articulo }}<li><a href="{{ $articulo.RelPermalink }}">Artículo histórico</a></li>{{ end }}
               <li><a href="#roster">Roster</a></li>
               <li><a href="#jugadores-seleccionados-en-el-draft">Jugadores seleccionados en el draft</a></li>
               <li><a href="#estadísticas-de-la-temporada">Estadísticas de la temporada</a></li>
@@ -75,6 +81,17 @@
           {{/* ── Sección Resumen ── */}}
           {{ with index $sections "Resumen" }}
             {{ partial "historia/season-summary.html" . }}
+          {{ end }}
+
+          {{/* ── Artículo histórico (si existe) ── */}}
+          {{ if $articulo }}
+          <div class="season-article-link">
+            <span class="season-article-link__icon">📖</span>
+            <div class="season-article-link__body">
+              <p class="season-article-link__label">Artículo histórico</p>
+              <a class="season-article-link__title" href="{{ $articulo.RelPermalink }}">{{ $articulo.Title }}</a>
+            </div>
+          </div>
           {{ end }}
 
           {{/* ── Sección Roster ── */}}
@@ -96,9 +113,6 @@
           {{ with index $sections "Partidos de la temporada regular" }}
             {{ partial "historia/season-games.html" . }}
           {{ end }}
-
-          {{/* ── Enlace de retorno ── */}}
-          <p><a href="/historia">Volver</a></p>
 
         </div>
       </article>

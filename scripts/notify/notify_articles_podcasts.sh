@@ -50,13 +50,18 @@ fi
 # filenames with non-ASCII characters (git may escape them otherwise).
 # IMPORTANT: Do NOT assign to a variable - it loses NUL bytes. Write directly to file.
 TEMP_FILELIST=$(mktemp)
+TEMP_NEW_ARTICLE_FILES=$(mktemp)
 git -c core.quotepath=false diff --name-only -z "$BASE_SHA" "$TARGET_SHA" 2>/dev/null | \
   tr '\0' '\n' > "$TEMP_FILELIST" || echo "" > "$TEMP_FILELIST"
+
+# Detect only newly added article files (git status A)
+git -c core.quotepath=false diff --name-only --diff-filter=A -z "$BASE_SHA" "$TARGET_SHA" 2>/dev/null | \
+  tr '\0' '\n' > "$TEMP_NEW_ARTICLE_FILES" || echo "" > "$TEMP_NEW_ARTICLE_FILES"
 
 # Check if file list is empty or has content
 if [ ! -s "$TEMP_FILELIST" ]; then
   echo "✅ No files changed in last commit"
-  rm -f "$TEMP_FILELIST"
+  rm -f "$TEMP_FILELIST" "$TEMP_NEW_ARTICLE_FILES"
   exit 0
 fi
 
@@ -65,7 +70,7 @@ TEMP_ARTICLES=$(mktemp)
 TEMP_PODCASTS=$(mktemp)
 TEMP_VIDEOS=$(mktemp)
 
-# Check for new articles in content/noticias/
+# Check for newly added articles in content/noticias/
 while IFS= read -r file; do
   [ -z "$file" ] && continue
   if [[ "$file" =~ ^content/noticias/.*\.md$ ]] && [ -f "$file" ]; then
@@ -77,7 +82,7 @@ while IFS= read -r file; do
       echo "${TITLE}|${SLUG}" >> "$TEMP_ARTICLES"
     fi
   fi
-done < "$TEMP_FILELIST"
+done < "$TEMP_NEW_ARTICLE_FILES"
 
 # Check for new podcasts in data/season_*.json
 while IFS= read -r file; do
@@ -190,7 +195,7 @@ while IFS= read -r file; do
 done < "$TEMP_FILELIST"
 
 # Clean up temporary file list
-rm -f "$TEMP_FILELIST"
+rm -f "$TEMP_FILELIST" "$TEMP_NEW_ARTICLE_FILES"
 
 # Count total items
 ARTICLES_COUNT=$(wc -l < "$TEMP_ARTICLES" | tr -d ' ')
@@ -286,6 +291,6 @@ if [ "$VIDEOS_COUNT" -gt 0 ]; then
 fi
 
 # Clean up
-rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS" "$TEMP_FILELIST"
+rm -f "$TEMP_ARTICLES" "$TEMP_PODCASTS" "$TEMP_VIDEOS"
 
 echo "✅ Process completed"

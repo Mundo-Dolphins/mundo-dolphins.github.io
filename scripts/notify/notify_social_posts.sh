@@ -14,6 +14,7 @@ source "${SCRIPT_DIR}/telegram_send.sh"
 # Calculate fallback cutoff date (15 minutes ago) for use if primary filters unavailable
 # Fallback is used when cache is missing AND last successful run date is unavailable
 FALLBACK_CUTOFF=$(date -u -d '15 minutes ago' '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null || date -u -v-15M '+%Y-%m-%dT%H:%M:%SZ')
+FIFTEEN_MINUTES_SECONDS=900
 
 TEMP_NEW_POSTS=$(mktemp)
 TEMP_POSTS_FILES=$(mktemp)
@@ -29,6 +30,50 @@ touch "$STATE_FILE"
 sort -u "$STATE_FILE" > "${STATE_FILE}.sorted"
 mv "${STATE_FILE}.sorted" "$STATE_FILE"
 cp "$STATE_FILE" "$TEMP_KNOWN_URLS"
+
+to_epoch() {
+  local iso_date="$1"
+  date -u -d "$iso_date" '+%s' 2>/dev/null || date -j -u -f "%Y-%m-%dT%H:%M:%SZ" "$iso_date" '+%s' 2>/dev/null || echo ""
+}
+
+FILE_MTIME_EPOCH=$(stat -c %Y "$STATE_FILE" 2>/dev/null || stat -f %m "$STATE_FILE" 2>/dev/null || echo "")
+NOW_EPOCH=$(date -u '+%s')
+LAST_RUN_EPOCH=""
+
+if [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
+  LAST_RUN_EPOCH=$(to_epoch "$LAST_SUCCESSFUL_RUN_DATE")
+fi
+
+STALE_LAST_RUN=false
+STALE_CACHE_DATE=false
+
+if [ -n "$LAST_RUN_EPOCH" ] && [ "$LAST_RUN_EPOCH" -lt $((NOW_EPOCH - FIFTEEN_MINUTES_SECONDS)) ]; then
+  STALE_LAST_RUN=true
+fi
+
+if [ -n "$FILE_MTIME_EPOCH" ] && [ "$FILE_MTIME_EPOCH" -lt $((NOW_EPOCH - FIFTEEN_MINUTES_SECONDS)) ]; then
+  STALE_CACHE_DATE=true
+fi
+
+USE_SAFEGUARD_WINDOW=false
+GLOBAL_CUTOFF_DATE=""
+GLOBAL_CUTOFF_LOG=""
+
+if [ "$STALE_LAST_RUN" = true ] || [ "$STALE_CACHE_DATE" = true ]; then
+  USE_SAFEGUARD_WINDOW=true
+  GLOBAL_CUTOFF_DATE="$FALLBACK_CUTOFF"
+  GLOBAL_CUTOFF_LOG="   ⚠️ Safeguard enabled: cache or last successful run is older than 15 minutes. Using cutoff: $GLOBAL_CUTOFF_DATE"
+elif [ ! -s "$TEMP_KNOWN_URLS" ] && [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
+  GLOBAL_CUTOFF_DATE="$LAST_SUCCESSFUL_RUN_DATE"
+  GLOBAL_CUTOFF_LOG="   Using last successful run date: $GLOBAL_CUTOFF_DATE"
+elif [ ! -s "$TEMP_KNOWN_URLS" ]; then
+  GLOBAL_CUTOFF_DATE="$FALLBACK_CUTOFF"
+  GLOBAL_CUTOFF_LOG="   ⚠️ No workflow history found. Using 15-minute fallback window: $GLOBAL_CUTOFF_DATE"
+fi
+
+if [ -n "$GLOBAL_CUTOFF_LOG" ]; then
+  echo "$GLOBAL_CUTOFF_LOG"
+fi
 
 find data -maxdepth 1 -type f -name 'posts_*.json' | sort > "$TEMP_POSTS_FILES"
 
@@ -54,12 +99,17 @@ collect_pending_posts_from_file() {
     if [ -n "$pending_urls" ]; then
       while IFS= read -r url; do
         [ -z "$url" ] && continue
-        post=$(printf '%s' "$current_json" | jq -c --arg url "$url" '
+        post=$(printf '%s' "$current_json" | jq -c --arg url "$url" --arg cutoff "$GLOBAL_CUTOFF_DATE" --argjson use_cutoff "$USE_SAFEGUARD_WINDOW" '
           .[] |
           select(.stype == 0) |
           select(.PublishedOn != null) |
           select(.BlueSkyPost.Description != null) |
-          select(.BlueSkyPost.BskyPost == $url)
+          select(.BlueSkyPost.BskyPost == $url) |
+          if $use_cutoff then
+            select(.PublishedOn > $cutoff)
+          else
+            .
+          end
         ')
         if [ -n "$post" ]; then
           echo "$post" >> "$TEMP_NEW_POSTS"
@@ -70,14 +120,10 @@ collect_pending_posts_from_file() {
     rm -f "$temp_current"
   else
     # No previous state: use date-based filtering
-    if [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
-      # Use the last successful workflow run date
-      cutoff_date="$LAST_SUCCESSFUL_RUN_DATE"
-      echo "   Using last successful run date: $cutoff_date"
+    if [ -n "$GLOBAL_CUTOFF_DATE" ]; then
+      cutoff_date="$GLOBAL_CUTOFF_DATE"
     else
-      # Fallback: use 15-minute window as safeguard
       cutoff_date="$FALLBACK_CUTOFF"
-      echo "   ⚠️ No workflow history found. Using 15-minute fallback window: $cutoff_date"
     fi
 
     # Filter posts published after cutoff

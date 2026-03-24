@@ -84,7 +84,9 @@
           {{ end }}
 
           {{/* Enlace de retorno */}}
-          <p><a href="/historia">Volver</a></p>
+          <div class="game-back-nav">
+            <a href="{{ relURL "historia/" }}" class="game-back-btn">&larr; Volver</a>
+          </div>
 
         {{- else }}
           {{/* Página normal con fichero markdown (partidos, stats, contenido legacy) */}}

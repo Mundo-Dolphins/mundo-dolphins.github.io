@@ -1,6 +1,11 @@
 {{- if .Site.Menus.main }}
 <nav class="menu">
 	<div class="container">
+		{{- with .Site.Params.logo.image }}
+		<a class="menu__brand" href="{{ "" | relLangURL }}" aria-label="{{ $.Site.Title }}">
+			<img class="menu__brand-img" src="{{ . | relURL }}" alt="{{ $.Site.Params.logo.image_alt | default $.Site.Title }}">
+		</a>
+		{{- end }}
 		<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
 			<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
 		</button>
