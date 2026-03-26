@@ -7,11 +7,11 @@
 {{- $backLabel := default "Volver a la web" $appConfig.backButtonLabel -}}
 {{- $nonAndroidMessage := default "Esta pagina esta pensada para abrir episodios en la app Android de Mundo Dolphins." $appConfig.nonAndroidMessage -}}
 {{- $androidFallbackMessage := default "Intentando abrir la app de Mundo Dolphins. Si no se abre, te redirigiremos a Google Play." $appConfig.androidFallbackMessage -}}
-{{- $appLinkBase := strings.TrimSuffix "/" (default "https://mundodolphins.es/app/episode" $appConfig.appLinkBaseUrl) -}}
+{{- $episodePathPrefix := strings.TrimSuffix "/" (default "/app/episode" $appConfig.episodePathPrefix) -}}
 {{- $playStoreBase := default "https://play.google.com/store/apps/details" $appConfig.playStoreBaseUrl -}}
 {{- $playStorePackage := default "es.mundodolphins.app" $appConfig.playStorePackageName -}}
 {{- $openFallbackDelayMs := default 1500 $appConfig.openFallbackDelayMs -}}
-{{- $appLink := printf "%s/%s" $appLinkBase $episodeId -}}
+{{- $appPath := printf "%s/%s" $episodePathPrefix $episodeId -}}
 {{- $playStoreUrl := printf "%s?id=%s&referrer=%s" $playStoreBase $playStorePackage (urlquery (printf "episodeId=%s" $episodeId)) -}}
 
 <main class="main" role="main">
@@ -19,7 +19,7 @@
     class="app-episode-landing"
     data-non-android-message="{{ $nonAndroidMessage }}"
     data-android-fallback-message="{{ $androidFallbackMessage }}"
-    data-app-attempt-link="{{ printf "%s?appAttempt=1" $appLink }}"
+    data-app-path="{{ $appPath }}"
     data-play-store-url="{{ $playStoreUrl }}"
     data-fallback-delay="{{ $openFallbackDelayMs }}"
   >
@@ -29,7 +29,7 @@
         <p id="app-episode-message" class="app-episode-landing__message">{{ $nonAndroidMessage }}</p>
 
         <div class="app-episode-landing__actions">
-            <a id="open-in-app-btn" class="app-episode-landing__btn app-episode-landing__btn--primary" href="{{ $appLink }}">{{ $openLabel }}</a>
+          <a id="open-in-app-btn" class="app-episode-landing__btn app-episode-landing__btn--primary" href="{{ $appPath }}">{{ $openLabel }}</a>
             <a id="install-app-btn" class="app-episode-landing__btn app-episode-landing__btn--secondary" href="{{ $playStoreUrl }}" rel="noopener noreferrer">{{ $installLabel }}</a>
             <a class="app-episode-landing__btn app-episode-landing__btn--secondary" href="/">{{ $backLabel }}</a>
         </div>
@@ -52,9 +52,10 @@
       var messageNode = document.getElementById('app-episode-message');
       var nonAndroidMessage = landing.dataset.nonAndroidMessage || '';
       var androidFallbackMessage = landing.dataset.androidFallbackMessage || '';
-      var appAttemptLink = landing.dataset.appAttemptLink || '';
+      var appPath = landing.dataset.appPath || '';
       var playStoreUrl = landing.dataset.playStoreUrl || '';
       var fallbackDelay = Number(landing.dataset.fallbackDelay || '1500');
+      var appAttemptLink = appPath ? (appPath + '?appAttempt=1') : '';
 
       if (!isAndroid) {
         if (messageNode) {
@@ -76,7 +77,9 @@
       }, fallbackDelay);
 
       // A normal App Link navigation lets Android hand off to the app when installed.
-      window.location.replace(appAttemptLink);
+      if (appAttemptLink) {
+        window.location.replace(appAttemptLink);
+      }
 
       window.addEventListener('pagehide', function () {
         window.clearTimeout(fallbackTimer);

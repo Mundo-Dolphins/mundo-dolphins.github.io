@@ -119,10 +119,14 @@ while IFS= read -r file; do
         [ -z "$url" ] && continue
         # Get title from episode and generate slug
         TITLE=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .title')
+        LINK=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .link // empty' | head -n 1)
         
         if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
           # Generate slug from title using Python
-          SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          SLUG=$(printf '%s' "$LINK" | sed -nE 's#https?://(www\.)?ivoox\.com/([^/?#]+)-audios-mp3_rf_[0-9]+_[0-9]+\.html#\2#p')
+          if [ -z "$SLUG" ]; then
+            SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          fi
           PUBLISHED=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .dateAndTime // empty' | head -n 1)
           EPISODE_TS=$(printf '%s' "$PUBLISHED" | python3 -c 'import sys,datetime
 s=(sys.stdin.read() or "").strip()
@@ -243,9 +247,11 @@ if [ "$PODCASTS_COUNT" -gt 0 ]; then
   SENT_PODCASTS_COUNT=$(wc -l < "$TEMP_PODCASTS_SORTED" | tr -d ' ')
 
   while IFS='|' read -r title slug episode_ts; do
+    PODCAST_URL="https://mundodolphins.es/podcast/${slug}/"
+
     MESSAGE="🎙️ Nuevo capítulo del podcast publicado: ${title}
 
-🔗 https://mundodolphins.es/podcast/${slug}/"
+🔗 ${PODCAST_URL}"
     
     if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
       SEND_RESULT=$(send_to_telegram "$MESSAGE")

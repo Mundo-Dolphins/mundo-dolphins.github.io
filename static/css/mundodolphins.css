@@ -364,11 +364,18 @@ body.reading-mode .post__content h4 {
     }
 }
 
+/* Keep sticky menu stable on long mobile pages */
+body.body {
+    min-height: 100vh;
+    height: auto;
+}
+
 /* Header */
 .header {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(120deg, #0b6f76 0%, #0e7e87 50%, #0b6f76 100%);
+    min-height: clamp(150px, 24vw, 300px);
+    background: #0b6f76 url("/img/cabecera.png") center 38% / cover no-repeat;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -376,30 +383,24 @@ body.reading-mode .post__content h4 {
 .header::after {
     content: "";
     position: absolute;
-    inset: auto;
+    inset: 0;
     pointer-events: none;
 }
 
 .header::before {
-    width: 520px;
-    height: 520px;
-    right: -150px;
-    top: -230px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 70%);
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(4, 26, 31, 0.08) 0%, rgba(4, 26, 31, 0.5) 100%);
 }
 
 .header::after {
-    width: 420px;
-    height: 420px;
-    left: -120px;
-    bottom: -260px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 72%);
+    z-index: 1;
+    background: radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 36%);
 }
 
 .header .logo {
     position: relative;
-    z-index: 2;
-    padding: 14px 0 32px;
+    z-index: 3;
+    padding: clamp(10px, 2vw, 16px) 0 clamp(20px, 4.6vw, 40px);
 }
 
 .header .logo__link {
@@ -417,11 +418,11 @@ body.reading-mode .post__content h4 {
     min-width: 112px;
     min-height: 112px;
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.08) url("/img/Mundo_Dolphins_small.png") center / 78% no-repeat;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 14px;
     padding: 0.45rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
 }
 
 .header .logo__img {
@@ -444,14 +445,15 @@ body.reading-mode .post__content h4 {
     font-weight: 800;
     line-height: 1.04;
     color: #f4feff;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
 }
 
 .header .logo__tagline {
     margin-top: 0.3rem;
     font-size: 0.92rem;
     letter-spacing: 0.12em;
-    color: rgba(232, 251, 253, 0.88);
+    color: rgba(240, 252, 255, 0.95);
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
 }
 
 .header + .menu {
@@ -475,6 +477,7 @@ body.reading-mode .post__content h4 {
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+    position: relative;
 }
 
 .header + .menu .menu__brand {
@@ -497,12 +500,8 @@ body.reading-mode .post__content h4 {
 }
 
 .header + .menu .menu__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.62rem 0;
+    margin: 0;
+    padding: 0;
 }
 
 .header + .menu .menu__item {
@@ -544,9 +543,61 @@ body.reading-mode .post__content h4 {
     color: #ecfdff;
 }
 
-@media (max-width: 768px) {
+.js .header + .menu .menu__list {
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #0a6c74;
+}
+
+.js .header + .menu .menu__list--active {
+    padding: 0.3rem 0.5rem 0.7rem;
+}
+
+.header + .menu .menu__item {
+    display: block;
+}
+
+.header + .menu .menu__link {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 767px) {
+    .header + .menu .menu__list,
+    .js .header + .menu .menu__list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.62rem 0;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: auto;
+        background: transparent;
+    }
+
+    .header + .menu .menu__item {
+        display: block;
+    }
+
+    .header + .menu .menu__link {
+        width: auto;
+    }
+}
+
+@media (max-width: 766px) {
+    .header {
+        min-height: 132px;
+        background-position: 60% 34%;
+    }
+
     .header .logo {
-        padding: 12px 0 16px;
+        padding: 10px 0 18px;
     }
 
     .header .logo__link {
@@ -600,13 +651,12 @@ body.reading-mode .post__content h4 {
     }
 
     .header + .menu .menu__list {
-        padding: 0.3rem 0.5rem 0.7rem;
-        gap: 0.2rem;
+        gap: 0;
     }
 
     .header + .menu .menu__link {
-        font-size: 0.74rem;
-        padding: 0.52rem 0.72rem;
+        font-size: 0.82rem;
+        padding: 0.62rem 0.72rem;
     }
 }
 
