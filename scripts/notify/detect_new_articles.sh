@@ -126,12 +126,17 @@ while IFS= read -r file; do
       while IFS= read -r url; do
         [ -z "$url" ] && continue
         TITLE=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .title')
+        LINK=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .link // empty' | head -n 1)
         PUBLISHED=$(printf '%s' "$CURRENT_JSON" | jq -r --arg url "$url" '.[] | select(.audio == $url) | .dateAndTime // empty' | head -n 1)
         if [ -n "$TITLE" ] && [ "$TITLE" != "null" ]; then
-          SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          SLUG=$(printf '%s' "$LINK" | sed -nE 's#https?://(www\.)?ivoox\.com/([^/?#]+)-audios-mp3_rf_[0-9]+_[0-9]+\.html#\2#p')
+          if [ -z "$SLUG" ]; then
+            SLUG=$(printf '%s' "$TITLE" | python3 -c 'import sys,unicodedata,re; t=sys.stdin.read(); s=unicodedata.normalize("NFKD", t); s=s.encode("ascii","ignore").decode("ascii"); s=re.sub(r"[^a-zA-Z0-9]+","-", s).strip("-").lower(); print(s)')
+          fi
           if [ -n "$SLUG" ]; then
             EPISODE_TS=$(to_epoch_ms "$PUBLISHED")
-            append_notification "Nuevo episodio disponible" "Ya puedes escucharlo" "https://mundodolphins.es/podcast/${SLUG}/" "episode" "episode_id" "$EPISODE_TS"
+            PODCAST_URL="https://mundodolphins.es/podcast/${SLUG}/"
+            append_notification "Nuevo episodio disponible" "Ya puedes escucharlo" "$PODCAST_URL" "episode" "episode_id" "$EPISODE_TS"
           fi
         fi
       done < "$TEMP_URLS"

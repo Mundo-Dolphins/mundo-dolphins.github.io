@@ -23,10 +23,9 @@
   {{- range $episodes -}}
     {{- $ep := . -}}
 
-    {{/* Parsear fecha y calcular timestamp unix como path */}}
+    {{/* Parsear fecha y calcular timestamp unix para alias legacy */}}
     {{- $date := time $ep.dateAndTime -}}
     {{- $ts   := $date.Unix -}}
-    {{- $path := printf "%d" $ts -}}
 
     {{/* Extraer el ID de ivoox desde la URL del link: _rf_XXXXXXX_ */}}
     {{- $ivooxId := "" -}}
@@ -57,8 +56,38 @@
       {{- end -}}
     {{- end -}}
 
-    {{/* Construir slug desde el título */}}
-    {{- $slug := urlize $ep.title -}}
+    {{/* Construir slug ASCII canónico: preferir slug de Ivoox y fallback a titulo normalizado */}}
+    {{- $slug := "" -}}
+    {{- with $ep.link -}}
+      {{- $ivooxSlugMatches := findRE `https?://(?:www\.)?ivoox\.com/([^/?#]+)-audios-mp3_rf_[0-9]+_[0-9]+\.html` . -}}
+      {{- if $ivooxSlugMatches -}}
+        {{- $raw := index $ivooxSlugMatches 0 -}}
+        {{- $slug = replaceRE `https?://(?:www\.)?ivoox\.com/([^/?#]+)-audios-mp3_rf_[0-9]+_[0-9]+\.html` `$1` $raw -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if not $slug -}}
+      {{- $slug = lower $ep.title -}}
+      {{- $slug = replace $slug "á" "a" -}}
+      {{- $slug = replace $slug "é" "e" -}}
+      {{- $slug = replace $slug "í" "i" -}}
+      {{- $slug = replace $slug "ó" "o" -}}
+      {{- $slug = replace $slug "ú" "u" -}}
+      {{- $slug = replace $slug "ü" "u" -}}
+      {{- $slug = replace $slug "ñ" "n" -}}
+      {{- $slug = replace $slug "Á" "a" -}}
+      {{- $slug = replace $slug "É" "e" -}}
+      {{- $slug = replace $slug "Í" "i" -}}
+      {{- $slug = replace $slug "Ó" "o" -}}
+      {{- $slug = replace $slug "Ú" "u" -}}
+      {{- $slug = replace $slug "Ü" "u" -}}
+      {{- $slug = replace $slug "Ñ" "n" -}}
+      {{- $slug = replaceRE `[^a-z0-9]+` "-" $slug -}}
+      {{- $slug = strings.Trim $slug "-" -}}
+    {{- end -}}
+
+    {{- $path := $slug -}}
+    {{- $aliases := slice (printf "/podcast/%d/" $ts) -}}
 
     {{/* Recortar descripción para el frontmatter */}}
     {{- $descFull := $ep.description | htmlUnescape -}}
@@ -72,7 +101,7 @@
       "title"       $ep.title
       "dates"       (dict "date" $date)
       "draft"       false
-      "slug"        $slug
+      "aliases"     $aliases
       "layout"      "podcast-episode"
       "params"      (dict
         "showDate"    true
