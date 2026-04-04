@@ -15,6 +15,10 @@ source "${SCRIPT_DIR}/telegram_send.sh"
 TEMP_NEW_POSTS=$(mktemp)
 TEMP_POSTS_FILES=$(mktemp)
 
+# Ensure temp files are removed on any exit
+cleanup() { rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"; }
+trap cleanup EXIT
+
 STATE_DIR="${SOCIAL_NOTIFY_STATE_DIR:-.cache/notify-social}"
 LAST_SENT_DATE_FILE="${STATE_DIR}/last-sent-date.txt"
 
@@ -59,7 +63,6 @@ find data -maxdepth 1 -type f -name 'posts_*.json' | sort > "$TEMP_POSTS_FILES"
 
 if [ ! -s "$TEMP_POSTS_FILES" ]; then
   echo "❌ No social data files found in data/posts_*.json"
-  rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"
   exit 1
 fi
 
@@ -77,7 +80,6 @@ done < "$TEMP_POSTS_FILES"
 
 if [ ! -s "$TEMP_NEW_POSTS" ]; then
   echo "✅ No new posts found after $FETCH_SINCE"
-  rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"
   exit 0
 fi
 
@@ -90,7 +92,6 @@ echo "📊 Candidate posts found: $NEW_COUNT"
 
 if [ "$NEW_COUNT" -eq 0 ]; then
   echo "✅ No valid posts to send"
-  rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"
   exit 0
 fi
 
@@ -136,7 +137,6 @@ done < <(jq -c '.[]' "$TEMP_NEW_POSTS")
 
 if [ "$FAILED_COUNT" -gt 0 ]; then
   echo "❌ Notification run failed before completion. Cache not updated."
-  rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"
   exit 1
 fi
 
@@ -149,8 +149,5 @@ if [ -n "$LAST_SENT_DATE" ]; then
 else
   echo "ℹ️ No posts sent, cache not updated."
 fi
-
-# Clean up
-rm -f "$TEMP_NEW_POSTS" "$TEMP_POSTS_FILES"
 
 echo "✅ Process completed"
