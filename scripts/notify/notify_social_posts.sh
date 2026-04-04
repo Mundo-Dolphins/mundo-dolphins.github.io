@@ -11,11 +11,6 @@ echo "📋 Checking for social posts pending notification..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/telegram_send.sh"
 
-# Calculate fallback cutoff date (15 minutes ago) for use if primary filters unavailable
-# Fallback is used when cache is missing AND last successful run date is unavailable
-FALLBACK_CUTOFF=$(date -u -d '15 minutes ago' '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null || date -u -v-15M '+%Y-%m-%dT%H:%M:%SZ')
-FIFTEEN_MINUTES_SECONDS=900
-
 TEMP_NEW_POSTS=$(mktemp)
 TEMP_POSTS_FILES=$(mktemp)
 TEMP_KNOWN_URLS=$(mktemp)
@@ -23,6 +18,7 @@ TEMP_SENT_URLS=$(mktemp)
 
 STATE_DIR="${SOCIAL_NOTIFY_STATE_DIR:-.cache/notify-social}"
 STATE_FILE="${STATE_DIR}/sent-post-urls.txt"
+LAST_SENT_DATE_FILE="${STATE_DIR}/last-sent-date.txt"
 
 mkdir -p "$STATE_DIR"
 touch "$STATE_FILE"
@@ -36,43 +32,38 @@ to_epoch() {
   date -u -d "$iso_date" '+%s' 2>/dev/null || date -j -u -f "%Y-%m-%dT%H:%M:%SZ" "$iso_date" '+%s' 2>/dev/null || echo ""
 }
 
-FILE_MTIME_EPOCH=$(stat -c %Y "$STATE_FILE" 2>/dev/null || stat -f %m "$STATE_FILE" 2>/dev/null || echo "")
-NOW_EPOCH=$(date -u '+%s')
-LAST_RUN_EPOCH=""
+# Determine the fetch start time using the following priority order:
+# 1. Timestamp of the last post successfully sent to Telegram (from cache)
+# 2. Timestamp of the last successful workflow execution
+# 3. 24-hour fallback
+FETCH_SINCE=""
+FETCH_SINCE_SOURCE=""
 
-if [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
-  LAST_RUN_EPOCH=$(to_epoch "$LAST_SUCCESSFUL_RUN_DATE")
+# Priority 1: cached last sent post date
+if [ -f "$LAST_SENT_DATE_FILE" ] && [ -s "$LAST_SENT_DATE_FILE" ]; then
+  CACHED_DATE=$(tr -d '[:space:]' < "$LAST_SENT_DATE_FILE")
+  if [ -n "$CACHED_DATE" ]; then
+    CACHED_EPOCH=$(to_epoch "$CACHED_DATE")
+    if [[ "$CACHED_EPOCH" =~ ^[0-9]+$ ]] && [ "$CACHED_EPOCH" -gt 0 ]; then
+      FETCH_SINCE="$CACHED_DATE"
+      FETCH_SINCE_SOURCE="cache last sent post timestamp"
+      echo "📅 Using cache last sent post timestamp: $FETCH_SINCE"
+    fi
+  fi
 fi
 
-STALE_LAST_RUN=false
-STALE_CACHE_DATE=false
-
-if [ -n "$LAST_RUN_EPOCH" ] && [ "$LAST_RUN_EPOCH" -lt $((NOW_EPOCH - FIFTEEN_MINUTES_SECONDS)) ]; then
-  STALE_LAST_RUN=true
+# Priority 2: last successful workflow run date
+if [ -z "$FETCH_SINCE" ] && [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
+  FETCH_SINCE="$LAST_SUCCESSFUL_RUN_DATE"
+  FETCH_SINCE_SOURCE="last successful run timestamp"
+  echo "📅 Using last successful run timestamp: $FETCH_SINCE"
 fi
 
-if [ -n "$FILE_MTIME_EPOCH" ] && [ "$FILE_MTIME_EPOCH" -lt $((NOW_EPOCH - FIFTEEN_MINUTES_SECONDS)) ]; then
-  STALE_CACHE_DATE=true
-fi
-
-USE_SAFEGUARD_WINDOW=false
-GLOBAL_CUTOFF_DATE=""
-GLOBAL_CUTOFF_LOG=""
-
-if [ "$STALE_LAST_RUN" = true ] || [ "$STALE_CACHE_DATE" = true ]; then
-  USE_SAFEGUARD_WINDOW=true
-  GLOBAL_CUTOFF_DATE="$FALLBACK_CUTOFF"
-  GLOBAL_CUTOFF_LOG="   ⚠️ Safeguard enabled: cache or last successful run is older than 15 minutes. Using cutoff: $GLOBAL_CUTOFF_DATE"
-elif [ ! -s "$TEMP_KNOWN_URLS" ] && [ -n "${LAST_SUCCESSFUL_RUN_DATE:-}" ]; then
-  GLOBAL_CUTOFF_DATE="$LAST_SUCCESSFUL_RUN_DATE"
-  GLOBAL_CUTOFF_LOG="   Using last successful run date: $GLOBAL_CUTOFF_DATE"
-elif [ ! -s "$TEMP_KNOWN_URLS" ]; then
-  GLOBAL_CUTOFF_DATE="$FALLBACK_CUTOFF"
-  GLOBAL_CUTOFF_LOG="   ⚠️ No workflow history found. Using 15-minute fallback window: $GLOBAL_CUTOFF_DATE"
-fi
-
-if [ -n "$GLOBAL_CUTOFF_LOG" ]; then
-  echo "$GLOBAL_CUTOFF_LOG"
+# Priority 3: 24-hour fallback
+if [ -z "$FETCH_SINCE" ]; then
+  FETCH_SINCE=$(date -u -d '24 hours ago' '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null || date -u -v-24H '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null)
+  FETCH_SINCE_SOURCE="24-hour fallback"
+  echo "⚠️ No workflow history or cache found. Using 24-hour fallback window: $FETCH_SINCE"
 fi
 
 find data -maxdepth 1 -type f -name 'posts_*.json' | sort > "$TEMP_POSTS_FILES"
@@ -99,17 +90,12 @@ collect_pending_posts_from_file() {
     if [ -n "$pending_urls" ]; then
       while IFS= read -r url; do
         [ -z "$url" ] && continue
-        post=$(printf '%s' "$current_json" | jq -c --arg url "$url" --arg cutoff "$GLOBAL_CUTOFF_DATE" --argjson use_cutoff "$USE_SAFEGUARD_WINDOW" '
+        post=$(printf '%s' "$current_json" | jq -c --arg url "$url" '
           .[] |
           select(.stype == 0) |
           select(.PublishedOn != null) |
           select(.BlueSkyPost.Description != null) |
-          select(.BlueSkyPost.BskyPost == $url) |
-          if $use_cutoff then
-            select(.PublishedOn > $cutoff)
-          else
-            .
-          end
+          select(.BlueSkyPost.BskyPost == $url)
         ')
         if [ -n "$post" ]; then
           echo "$post" >> "$TEMP_NEW_POSTS"
@@ -119,15 +105,8 @@ collect_pending_posts_from_file() {
 
     rm -f "$temp_current"
   else
-    # No previous state: use date-based filtering
-    if [ -n "$GLOBAL_CUTOFF_DATE" ]; then
-      cutoff_date="$GLOBAL_CUTOFF_DATE"
-    else
-      cutoff_date="$FALLBACK_CUTOFF"
-    fi
-
-    # Filter posts published after cutoff
-    printf '%s' "$current_json" | jq -c --arg cutoff "$cutoff_date" '
+    # No previous state: use date-based filtering from FETCH_SINCE
+    printf '%s' "$current_json" | jq -c --arg cutoff "$FETCH_SINCE" '
       .[] |
       select(.stype == 0) |
       select(.PublishedOn != null) |
@@ -167,6 +146,7 @@ echo "📤 Sending $NEW_COUNT posts to Telegram..."
 
 SENT_COUNT=0
 FAILED_COUNT=0
+LAST_SENT_DATE=""
 
 while IFS= read -r post; do
   DESCRIPTION=$(echo "$post" | jq -r '.BlueSkyPost.Description')
@@ -186,6 +166,7 @@ while IFS= read -r post; do
       echo "✅ Sent: ${DESCRIPTION:0:50}... (${POST_DATE})"
       SENT_COUNT=$((SENT_COUNT + 1))
       printf '%s\n' "$URL" >> "$TEMP_SENT_URLS"
+      LAST_SENT_DATE="$POST_DATE"
       
       # Small pause between messages to avoid rate limits
       sleep 2
@@ -199,6 +180,7 @@ while IFS= read -r post; do
     echo "⚠️ DRY RUN: ${DESCRIPTION:0:50}... (${POST_DATE})"
     SENT_COUNT=$((SENT_COUNT + 1))
     printf '%s\n' "$URL" >> "$TEMP_SENT_URLS"
+    LAST_SENT_DATE="$POST_DATE"
   fi
 done < <(jq -c '.[]' "$TEMP_NEW_POSTS")
 
@@ -212,6 +194,11 @@ if [ -s "$TEMP_SENT_URLS" ]; then
   cat "$TEMP_SENT_URLS" >> "$STATE_FILE"
   sort -u "$STATE_FILE" > "${STATE_FILE}.sorted"
   mv "${STATE_FILE}.sorted" "$STATE_FILE"
+
+  # Save the last sent post date for future runs (used as primary fetch-since reference)
+  if [ -n "$LAST_SENT_DATE" ]; then
+    echo "$LAST_SENT_DATE" > "$LAST_SENT_DATE_FILE"
+  fi
 fi
 
 echo "📊 Posts sent: $SENT_COUNT of $NEW_COUNT"
