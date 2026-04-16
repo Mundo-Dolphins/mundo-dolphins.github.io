@@ -6,9 +6,28 @@
   const STATE_VERSION = 1;
   const USER_TEAM = "MIA";
 
-  const NEED_BONUSES = [60, 40, 25, 15, 8];
-  const AUTOPICK_RANDOM_MIN = 0;
-  const AUTOPICK_RANDOM_MAX = 15;
+  const CANDIDATE_POOL_SIZE = 20;
+  const FINALIST_COUNT = 5;
+  const NEED_BONUSES = [100, 70, 45, 20, 10];
+  const POSITION_VALUE_MAP = {
+    QB: 40,
+    OT: 30,
+    EDGE: 28,
+    CB: 24,
+    WR: 22,
+    DL: 20,
+    LB: 10,
+    S: 8,
+    IOL: 6,
+    TE: 4,
+    RB: -5
+  };
+  const RANDOMNESS_MIN = 0;
+  const RANDOMNESS_MAX = 20;
+  const REACH_PENALTY_MULTIPLIER = 3;
+  const REACH_OFFSET = 8;
+  const FINALIST_WEIGHTS = [40, 25, 18, 10, 7];
+  const AUTOPICK_DEBUG = false;
 
   const DATA_URLS = {
     players: "/data/draft/players.json",
@@ -140,6 +159,7 @@
     app.elements.btnStartDraft = document.getElementById("btn-start-draft");
     app.elements.btnSimNextMiami = document.getElementById("btn-sim-next-miami");
     app.elements.btnContinue = document.getElementById("btn-continue");
+    app.elements.btnExportCsv = document.getElementById("btn-export-csv");
     app.elements.btnReset = document.getElementById("btn-reset");
     app.elements.btnClear = document.getElementById("btn-clear");
   }
@@ -223,6 +243,10 @@
         await stepAutoPickOnce();
         renderAll();
       }
+    });
+
+    app.elements.btnExportCsv.addEventListener("click", function () {
+      exportMockDraftToCsv();
     });
 
     app.elements.btnReset.addEventListener("click", async function () {
@@ -613,7 +637,7 @@
       return null;
     }
 
-    const selected = selectAutoPick(teamCode, availablePlayers);
+    const selected = autoPickForTeam(teamCode, currentEntry, availablePlayers);
 
     applyPick(currentEntry, selected.player, true);
     setMessage(getTeamDisplayName(currentEntry.team) + " seleccionan a " + selected.player.name + " (" + selected.player.position + ").");
@@ -624,45 +648,72 @@
     };
   }
 
-  // Scoring y seleccion de mejor jugador disponible para un equipo CPU.
-  function selectAutoPick(teamCode, availablePlayers) {
-    const needs = app.needsMap[teamCode] || [];
+  // Scoring ponderado y seleccion final con weighted random para equipos CPU.
+  function autoPickForTeam(teamCode, draftEntry, availablePlayers) {
+    const teamNeeds = app.needsMap[teamCode] || [];
+    const candidatePool = getCandidatePool(availablePlayers);
 
-    let best = null;
-
-    availablePlayers.forEach(function (player) {
-      const scoreData = scorePlayerForTeam(player, needs);
-      if (!best || scoreData.finalScore > best.finalScore) {
-        best = {
-          player: player,
-          finalScore: scoreData.finalScore
-        };
-      }
+    const scoredCandidates = candidatePool.map(function (player) {
+      return {
+        player: player,
+        scoreData: scorePlayerForTeam(player, teamNeeds, draftEntry)
+      };
     });
 
-    return best;
-  }
+    const sortedCandidates = sortCandidatesByScore(scoredCandidates);
+    const finalists = sortedCandidates.slice(0, FINALIST_COUNT);
+    const selectedCandidate = pickWeightedRandom(finalists) || sortedCandidates[0] || null;
 
-  function scorePlayerForTeam(player, teamNeeds) {
-    const baseScore = getBaseScore(player);
-    const needBonus = getNeedBonus(teamNeeds, player.position);
-    const randomness = getRandomIntInclusive(AUTOPICK_RANDOM_MIN, AUTOPICK_RANDOM_MAX);
-    const finalScore = baseScore + needBonus + randomness;
+    if (!selectedCandidate) {
+      const fallbackPlayer = availablePlayers[0];
+      return {
+        player: fallbackPlayer,
+        finalScore: 0
+      };
+    }
+
+    if (AUTOPICK_DEBUG) {
+      logAutoPickDebug(teamCode, draftEntry, finalists, selectedCandidate);
+    }
 
     return {
-      baseScore: baseScore,
-      needBonus: needBonus,
-      randomness: randomness,
-      finalScore: finalScore
+      player: selectedCandidate.player,
+      finalScore: selectedCandidate.scoreData.finalScore
     };
   }
 
-  function getBaseScore(player) {
-    if (!player || typeof player.rank !== "number" || Number.isNaN(player.rank)) {
-      return 0;
+  function getCandidatePool(availablePlayers) {
+    if (!Array.isArray(availablePlayers) || availablePlayers.length === 0) {
+      return [];
     }
 
-    return 1000 - player.rank;
+    return availablePlayers
+      .slice()
+      .sort(function (a, b) {
+        const rankA = typeof a.rank === "number" && !Number.isNaN(a.rank) ? a.rank : Number.MAX_SAFE_INTEGER;
+        const rankB = typeof b.rank === "number" && !Number.isNaN(b.rank) ? b.rank : Number.MAX_SAFE_INTEGER;
+        return rankA - rankB;
+      })
+      .slice(0, CANDIDATE_POOL_SIZE);
+  }
+
+  function scorePlayerForTeam(player, teamNeeds, draftEntry) {
+    const playerRank = getPlayerRank(player);
+    const boardScore = playerRank > 0 ? 1200 - playerRank : 0;
+    const needScore = getNeedBonus(teamNeeds, player && player.position);
+    const positionalValueScore = getPositionalValue(player && player.position);
+    const randomness = getRandomIntInclusive(RANDOMNESS_MIN, RANDOMNESS_MAX);
+    const reachPenalty = getReachPenalty(playerRank, draftEntry);
+    const finalScore = boardScore + needScore + positionalValueScore + randomness - reachPenalty;
+
+    return {
+      boardScore: boardScore,
+      needScore: needScore,
+      positionalValueScore: positionalValueScore,
+      randomness: randomness,
+      reachPenalty: reachPenalty,
+      finalScore: finalScore
+    };
   }
 
   function getNeedBonus(teamNeeds, playerPosition) {
@@ -670,18 +721,97 @@
       return 0;
     }
 
-    if (!isValidPosition(playerPosition)) {
+    const normalizedPosition = normalizePositionCode(playerPosition);
+    if (!normalizedPosition) {
       return 0;
     }
 
     for (let index = 0; index < teamNeeds.length && index < NEED_BONUSES.length; index += 1) {
-      const need = teamNeeds[index];
-      if (matchesNeed(playerPosition, need)) {
+      const need = normalizePositionCode(teamNeeds[index]);
+      if (matchesNeed(normalizedPosition, need)) {
         return NEED_BONUSES[index];
       }
     }
 
     return 0;
+  }
+
+  function getPositionalValue(playerPosition) {
+    const normalizedPosition = normalizePositionCode(playerPosition);
+    if (!normalizedPosition) {
+      return 0;
+    }
+
+    return Object.prototype.hasOwnProperty.call(POSITION_VALUE_MAP, normalizedPosition)
+      ? POSITION_VALUE_MAP[normalizedPosition]
+      : 0;
+  }
+
+  function getExpectedRankForPick(draftEntry) {
+    const overallPick = getOverallPickNumber(draftEntry);
+    return overallPick + REACH_OFFSET;
+  }
+
+  function getReachPenalty(playerRank, draftEntry) {
+    if (typeof playerRank !== "number" || Number.isNaN(playerRank) || playerRank <= 0) {
+      return 0;
+    }
+
+    const expectedRankForPick = getExpectedRankForPick(draftEntry);
+    const delta = playerRank - expectedRankForPick;
+
+    if (delta <= 0) {
+      return 0;
+    }
+
+    return delta * REACH_PENALTY_MULTIPLIER;
+  }
+
+  function sortCandidatesByScore(candidates) {
+    if (!Array.isArray(candidates)) {
+      return [];
+    }
+
+    return candidates.slice().sort(function (a, b) {
+      return b.scoreData.finalScore - a.scoreData.finalScore;
+    });
+  }
+
+  function pickWeightedRandom(candidates) {
+    if (!Array.isArray(candidates) || candidates.length === 0) {
+      return null;
+    }
+
+    if (candidates.length === 1) {
+      return candidates[0];
+    }
+
+    const size = candidates.length;
+    const selectedWeights = FINALIST_WEIGHTS.slice(0, size);
+    const fallbackWeight = selectedWeights.length > 0 ? selectedWeights[selectedWeights.length - 1] : 1;
+
+    while (selectedWeights.length < size) {
+      selectedWeights.push(fallbackWeight);
+    }
+
+    const totalWeight = selectedWeights.reduce(function (sum, weight) {
+      return sum + Math.max(0, weight);
+    }, 0);
+
+    if (totalWeight <= 0) {
+      const randomIndex = getRandomIntInclusive(0, size - 1);
+      return candidates[randomIndex];
+    }
+
+    let roll = Math.random() * totalWeight;
+    for (let index = 0; index < size; index += 1) {
+      roll -= Math.max(0, selectedWeights[index]);
+      if (roll <= 0) {
+        return candidates[index];
+      }
+    }
+
+    return candidates[size - 1];
   }
 
   // Normalizacion de posiciones con reglas especiales OL/DB.
@@ -712,8 +842,61 @@
     return false;
   }
 
-  function isValidPosition(position) {
-    return Boolean(normalizePositionCode(position));
+  function getOverallPickNumber(draftEntry) {
+    if (draftEntry && typeof draftEntry.pick === "number" && !Number.isNaN(draftEntry.pick) && draftEntry.pick > 0) {
+      return draftEntry.pick;
+    }
+
+    if (app.state && typeof app.state.currentPickIndex === "number") {
+      return app.state.currentPickIndex + 1;
+    }
+
+    return 1;
+  }
+
+  function getPlayerRank(player) {
+    if (!player || typeof player.rank !== "number" || Number.isNaN(player.rank)) {
+      return 0;
+    }
+
+    return player.rank;
+  }
+
+  function logAutoPickDebug(teamCode, draftEntry, finalists, selectedCandidate) {
+    if (!Array.isArray(finalists) || finalists.length === 0) {
+      return;
+    }
+
+    const pickLabel = "R" + (draftEntry && draftEntry.round ? draftEntry.round : "?") + " P" + getOverallPickNumber(draftEntry);
+    const expectedRank = getExpectedRankForPick(draftEntry);
+
+    console.groupCollapsed(
+      "[Autopick Debug] " + pickLabel + " - " + getTeamDisplayName(teamCode) + " | expectedRank=" + expectedRank
+    );
+
+    finalists.forEach(function (candidate, index) {
+      const score = candidate.scoreData;
+      console.log(
+        "#" + (index + 1),
+        {
+          name: candidate.player.name,
+          rank: candidate.player.rank,
+          boardScore: score.boardScore,
+          needScore: score.needScore,
+          positionalValueScore: score.positionalValueScore,
+          randomness: score.randomness,
+          reachPenalty: score.reachPenalty,
+          finalScore: score.finalScore
+        }
+      );
+    });
+
+    console.log("selected", {
+      name: selectedCandidate.player.name,
+      rank: selectedCandidate.player.rank,
+      finalScore: selectedCandidate.scoreData.finalScore
+    });
+    console.groupEnd();
   }
 
   function normalizePositionCode(position) {
@@ -1126,10 +1309,12 @@
     const started = Boolean(app.state.started);
     const miamiOnClock = isMiamiOnClock();
     const autoRunActive = app.autoRun.active;
+    const hasPicks = Array.isArray(app.state.picks) && app.state.picks.length > 0;
 
     app.elements.btnStartDraft.disabled = started || completed || autoRunActive;
     app.elements.btnSimNextMiami.disabled = !started || completed || autoRunActive;
     app.elements.btnContinue.disabled = !started || completed || autoRunActive;
+    app.elements.btnExportCsv.disabled = !hasPicks;
     app.elements.autoPickSpeed.disabled = autoRunActive;
 
     if (!started && !completed) {
@@ -1223,6 +1408,52 @@
     }
 
     app.elements.autoPickSpeed.value = normalizeAutoPickSpeed(app.ui.autoPickSpeed);
+  }
+
+  function exportMockDraftToCsv() {
+    if (!app.state || !Array.isArray(app.state.picks) || app.state.picks.length === 0) {
+      setMessage("No hay picks para exportar todavia.");
+      return;
+    }
+
+    const headers = ["Ronda", "pick", "equipo", "jugador", "posición", "college"];
+    const rows = [headers].concat(
+      app.state.picks.map(function (entry) {
+        return [
+          entry.round,
+          entry.pick,
+          getTeamDisplayName(entry.team),
+          entry.player.name,
+          entry.player.position,
+          entry.player.college
+        ];
+      })
+    );
+
+    const csv = rows.map(function (row) {
+      return row.map(escapeCsvField).join(",");
+    }).join("\n");
+
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+
+    link.href = url;
+    link.download = "mock-draft-" + timestamp + ".csv";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    setMessage("Mock draft exportado a CSV.");
+  }
+
+  function escapeCsvField(value) {
+    const text = String(value == null ? "" : value);
+    return /[",\n]/.test(text)
+      ? "\"" + text.replace(/\"/g, "\"\"") + "\""
+      : text;
   }
 
   function escapeHtmlAttr(value) {
