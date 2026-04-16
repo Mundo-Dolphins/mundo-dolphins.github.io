@@ -228,10 +228,16 @@
 
 .draft-actions {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(220px, 260px);
+  grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(220px, 260px);
   gap: 0.6rem;
   margin-bottom: 0.75rem;
   align-items: stretch;
+}
+
+.draft-actions .primary-action {
+  background: linear-gradient(120deg, #00a7ff, #00d6c5);
+  color: #05131e;
+  border-color: transparent;
 }
 
 .draft-actions button {

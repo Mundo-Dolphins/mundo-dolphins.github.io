@@ -80,7 +80,7 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
-  // Flujo de arranque: cargar datos, restaurar estado y avanzar hasta turno de Miami.
+  // Flujo de arranque: cargar datos y restaurar estado sin iniciar automaticamente.
   async function init() {
     cacheElements();
     bindEvents();
@@ -101,12 +101,10 @@
       } else {
         app.state = createInitialState();
         persistState();
-        setMessage("Nueva simulacion iniciada.");
+        setMessage("Nueva simulacion preparada. Pulsa Iniciar draft.");
       }
 
       syncAutoPickSpeedControl();
-
-      await runAutoUntilMiamiOrComplete();
       renderAll();
     } catch (error) {
       showError(error.message || "Error inesperado al inicializar el simulador.");
@@ -139,6 +137,7 @@
     app.elements.miamiPickMeta = document.getElementById("miami-pick-meta");
     app.elements.miamiPickRank = document.getElementById("miami-pick-rank");
 
+    app.elements.btnStartDraft = document.getElementById("btn-start-draft");
     app.elements.btnSimNextMiami = document.getElementById("btn-sim-next-miami");
     app.elements.btnContinue = document.getElementById("btn-continue");
     app.elements.btnReset = document.getElementById("btn-reset");
@@ -179,6 +178,27 @@
       setCompletedPicksTeamFilter(USER_TEAM);
     });
 
+    app.elements.btnStartDraft.addEventListener("click", async function () {
+      if (!app.data || !app.state || app.state.completed) {
+        return;
+      }
+
+      if (app.state.started) {
+        setMessage("El draft ya fue iniciado.");
+        return;
+      }
+
+      app.state.started = true;
+      persistState();
+      setMessage("Draft iniciado.");
+      renderAll();
+
+      if (!isMiamiOnClock()) {
+        await runAutoUntilMiamiOrComplete();
+        renderAll();
+      }
+    });
+
     app.elements.btnSimNextMiami.addEventListener("click", async function () {
       if (ensureLoadedAndNotCompleted()) {
         if (isMiamiOnClock()) {
@@ -213,8 +233,7 @@
       cancelAutoRun();
       app.state = createInitialState();
       persistState();
-      setMessage("Draft reiniciado.");
-      await runAutoUntilMiamiOrComplete();
+      setMessage("Draft reiniciado. Pulsa Iniciar draft.");
       renderAll();
     });
 
@@ -234,8 +253,7 @@
 
       app.state = createInitialState();
       persistState();
-      setMessage("Progreso borrado. Nueva simulacion creada.");
-      await runAutoUntilMiamiOrComplete();
+      setMessage("Progreso borrado. Pulsa Iniciar draft para comenzar.");
       renderAll();
     });
 
@@ -407,6 +425,7 @@
   function createInitialState() {
     return {
       version: STATE_VERSION,
+      started: false,
       currentPickIndex: 0,
       completed: false,
       userTeam: USER_TEAM,
@@ -465,6 +484,7 @@
 
     return {
       version: STATE_VERSION,
+      started: typeof parsed.started === "boolean" ? parsed.started : parsed.currentPickIndex > 0,
       currentPickIndex: parsed.currentPickIndex,
       completed: parsed.completed,
       userTeam: USER_TEAM,
@@ -502,6 +522,11 @@
   function ensureLoadedAndNotCompleted() {
     if (!app.data || !app.state) {
       setMessage("Aun no se termino de cargar el simulador.");
+      return false;
+    }
+
+    if (!app.state.started) {
+      setMessage("Pulsa Iniciar draft para comenzar.");
       return false;
     }
 
@@ -798,6 +823,11 @@
   }
 
   function renderLatestMiamiPickCard() {
+    if (!app.state.started) {
+      app.elements.miamiPickCard.hidden = true;
+      return;
+    }
+
     const latestMiamiPick = getLatestPickForTeam(USER_TEAM);
 
     if (!latestMiamiPick) {
@@ -814,6 +844,15 @@
 
   function renderHeader() {
     const currentEntry = getCurrentDraftEntry();
+
+    if (!app.state.started) {
+      app.elements.currentRound.textContent = "-";
+      app.elements.currentPick.textContent = "-";
+      app.elements.currentTeam.textContent = "-";
+      app.elements.draftStateLabel.textContent = "Pendiente de iniciar";
+      app.elements.onClockIndicator.hidden = true;
+      return;
+    }
 
     if (!currentEntry) {
       app.elements.currentRound.textContent = "-";
@@ -1084,18 +1123,26 @@
 
   function renderActionsState() {
     const completed = app.state.completed;
+    const started = Boolean(app.state.started);
     const miamiOnClock = isMiamiOnClock();
     const autoRunActive = app.autoRun.active;
 
-    app.elements.btnSimNextMiami.disabled = completed || autoRunActive;
-    app.elements.btnContinue.disabled = completed || autoRunActive;
+    app.elements.btnStartDraft.disabled = started || completed || autoRunActive;
+    app.elements.btnSimNextMiami.disabled = !started || completed || autoRunActive;
+    app.elements.btnContinue.disabled = !started || completed || autoRunActive;
     app.elements.autoPickSpeed.disabled = autoRunActive;
 
-    if (autoRunActive) {
+    if (!started && !completed) {
+      app.elements.btnStartDraft.textContent = "Iniciar draft";
+      app.elements.btnContinue.textContent = "Continuar draft";
+    } else if (autoRunActive) {
+      app.elements.btnStartDraft.textContent = "Draft iniciado";
       app.elements.btnContinue.textContent = "Autopick en curso...";
     } else if (miamiOnClock && !completed) {
+      app.elements.btnStartDraft.textContent = "Draft iniciado";
       app.elements.btnContinue.textContent = "Continuar draft (esperando pick de Miami)";
     } else {
+      app.elements.btnStartDraft.textContent = started ? "Draft iniciado" : "Iniciar draft";
       app.elements.btnContinue.textContent = "Continuar draft";
     }
   }
