@@ -228,7 +228,7 @@
 
 .draft-actions {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(220px, 260px);
+  grid-template-columns: repeat(6, minmax(0, 1fr)) minmax(220px, 260px);
   gap: 0.6rem;
   margin-bottom: 0.75rem;
   align-items: stretch;
