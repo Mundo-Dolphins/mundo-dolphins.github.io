@@ -1,0 +1,130 @@
+{{ define "main" }}
+{{ $draftCSS := resources.Get "css/draft-simulator.css" | minify | fingerprint }}
+{{ $draftJS := resources.Get "js/draft-simulator.js" | minify | fingerprint }}
+
+<script>
+  document.body.classList.add("draft-simulator-page");
+</script>
+<link rel="stylesheet" href="{{ $draftCSS.RelPermalink }}" integrity="{{ $draftCSS.Data.Integrity }}">
+
+<main class="main draft-page" role="main">
+  <section class="draft-simulator" aria-live="polite">
+    <header class="draft-header">
+      <div>
+        <p class="draft-eyebrow">Mundo Dolphins</p>
+        <h1 class="draft-title">Simulador Draft NFL</h1>
+      </div>
+      <div id="on-clock-indicator" class="on-clock-indicator" hidden>
+        Miami Dolphins On The Clock
+      </div>
+    </header>
+
+    <section class="draft-status-grid" aria-label="Estado del draft actual">
+      <article class="status-card">
+        <h2>Ronda</h2>
+        <p id="current-round">-</p>
+      </article>
+      <article class="status-card">
+        <h2>Pick</h2>
+        <p id="current-pick">-</p>
+      </article>
+      <article class="status-card">
+        <h2>Equipo actual</h2>
+        <p id="current-team">-</p>
+      </article>
+      <article class="status-card">
+        <h2>Estado</h2>
+        <p id="draft-state-label">Cargando datos...</p>
+      </article>
+    </section>
+
+    <section class="draft-actions" aria-label="Acciones del simulador">
+      <button id="btn-sim-next-miami" type="button">Simular hasta el siguiente pick de Miami</button>
+      <button id="btn-continue" type="button">Continuar draft</button>
+      <button id="btn-reset" type="button">Reiniciar draft</button>
+      <button id="btn-clear" type="button" class="danger">Borrar progreso guardado</button>
+      <label class="draft-speed-control">
+        Velocidad automatica
+        <select id="auto-pick-speed">
+          <option value="very-fast">Muy rapida · 250 ms</option>
+          <option value="fast">Rapida · 1 s</option>
+          <option value="slow">Lenta · 2 s</option>
+          <option value="very-slow">Muy lenta · 5 s</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="draft-message" class="draft-message" role="status">Cargando datos...</p>
+    <p id="draft-error" class="draft-error" role="alert" hidden></p>
+
+    <section id="miami-pick-card" class="miami-pick-card" aria-label="Resumen del ultimo pick de Miami" hidden>
+      <div class="miami-pick-card__header">
+        <p class="draft-panel-eyebrow">Miami Dolphins</p>
+        <h2>Ultimo pick realizado</h2>
+      </div>
+      <div class="miami-pick-card__content">
+        <div>
+          <p id="miami-pick-slot" class="miami-pick-card__slot">-</p>
+          <h3 id="miami-pick-name">-</h3>
+          <p id="miami-pick-meta" class="miami-pick-card__meta">-</p>
+        </div>
+        <div class="miami-pick-card__rank-wrap">
+          <span class="miami-pick-card__rank-label">Big board</span>
+          <span id="miami-pick-rank" class="miami-pick-card__rank">-</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="draft-layout" aria-label="Zona principal del simulador">
+      <aside class="draft-picks" aria-label="Picks realizados">
+        <div class="draft-panel-header">
+          <div>
+            <p class="draft-panel-eyebrow">Seguimiento</p>
+            <h2>Picks realizados</h2>
+          </div>
+          <div class="draft-picks-toolbar">
+            <div class="draft-chip-group" role="group" aria-label="Filtro rapido de picks">
+              <button id="btn-picks-filter-all" class="draft-chip is-active" type="button">Todos</button>
+              <button id="btn-picks-filter-miami" class="draft-chip" type="button">Solo Miami</button>
+            </div>
+            <label class="draft-inline-filter">
+              Equipo
+              <select id="completed-picks-team-filter">
+                <option value="ALL">Todos los equipos</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <ol id="completed-picks-list"></ol>
+      </aside>
+
+      <section class="draft-players" aria-label="Jugadores disponibles">
+        <div class="draft-panel-header">
+          <div>
+            <p class="draft-panel-eyebrow">Board</p>
+            <h2>Jugadores disponibles</h2>
+          </div>
+        </div>
+        <div class="players-toolbar">
+          <label>
+            Buscar jugador
+            <input id="player-search" type="search" placeholder="Ej. Caleb Downs" autocomplete="off">
+          </label>
+          <label>
+            Filtrar por posicion
+            <select id="position-filter">
+              <option value="ALL">Todas</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="players-list-wrap">
+          <ul id="available-players-list" class="players-list"></ul>
+        </div>
+      </section>
+    </section>
+  </section>
+</main>
+
+<script src="{{ $draftJS.RelPermalink }}" integrity="{{ $draftJS.Data.Integrity }}" defer></script>
+{{ end }}
