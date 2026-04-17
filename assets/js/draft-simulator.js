@@ -6,28 +6,80 @@
   const STATE_VERSION = 1;
   const USER_TEAM = "MIA";
 
-  const CANDIDATE_POOL_SIZE = 20;
+  // Tamaño del pool de candidatos segun el numero de pick global.
+  const CANDIDATE_POOL_EARLY = 20;
+  const CANDIDATE_POOL_MID = 30;
+  const CANDIDATE_POOL_LATE = 40;
+
+  // Finalistas y pesos para weighted random (1º al 5º).
   const FINALIST_COUNT = 5;
-  const NEED_BONUSES = [100, 70, 45, 20, 10];
+  const FINALIST_WEIGHTS = [40, 25, 18, 10, 7];
+
+  // Pesos iniciales de need por orden de prioridad (primera need = maximo).
+  const INITIAL_NEED_WEIGHTS = [100, 70, 45, 20, 10];
+
+  // Decaimiento del peso de una need tras draftear esa posicion.
+  const NEED_WEIGHT_DECAY = 0.25;
+
+  // Valor posicional fijo para cada posicion.
   const POSITION_VALUE_MAP = {
-    QB: 40,
-    OT: 30,
-    EDGE: 28,
+    QB: 35,
+    OT: 28,
+    EDGE: 26,
     CB: 24,
     WR: 22,
-    DL: 20,
+    DL: 18,
     LB: 10,
     S: 8,
     IOL: 6,
     TE: 4,
     RB: -5
   };
+
+  // Aleatoridad controlada.
   const RANDOMNESS_MIN = 0;
   const RANDOMNESS_MAX = 20;
-  const REACH_PENALTY_MULTIPLIER = 3;
+
+  // Penalizacion por reach (rank peor que lo esperado para ese pick).
   const REACH_OFFSET = 8;
-  const FINALIST_WEIGHTS = [40, 25, 18, 10, 7];
-  const AUTOPICK_DEBUG = false;
+  const REACH_PENALTY_MULTIPLIER = 3;
+
+  // Limite maximo de jugadores por posicion por equipo.
+  const MAX_POSITION_COUNTS = {
+    QB: 2,
+    RB: 2,
+    WR: 3,
+    TE: 2,
+    OT: 3,
+    IOL: 3,
+    EDGE: 3,
+    DL: 3,
+    LB: 3,
+    CB: 3,
+    S: 3
+  };
+
+  // Penalizacion progresiva por repetir posicion (indice = picks previos en esa posicion).
+  const DUPLICATE_POSITION_PENALTIES = [0, 12, 28, 50];
+
+  // Bonus de escasez posicional: cuantos jugadores similares quedan en el pool.
+  const SCARCITY_RANK_WINDOW = 30;
+  const SCARCITY_THRESHOLD_HIGH = 2;
+  const SCARCITY_THRESHOLD_LOW = 5;
+  const SCARCITY_BONUS_HIGH = 15;
+  const SCARCITY_BONUS_LOW = 8;
+
+  const DEBUG_AUTOPICK = false;
+  const AUTOPICK_ENGINE_MODE = "pipeline";
+  const AUTOPICK_PIPELINE_CONFIG = {
+    featureFlags: {
+      usePipelineEngine: true,
+      includeConsensusSignals: true,
+      includeAvailabilityModel: true,
+      includeRandomness: true,
+      debug: DEBUG_AUTOPICK
+    }
+  };
 
   const DATA_URLS = {
     players: "/data/draft/players.json",
@@ -81,7 +133,8 @@
   const app = {
     data: null,
     state: null,
-    needsMap: {},
+    teamStates: {},
+    autopickEngine: null,
     playersByName: new Map(),
     autoRun: {
       active: false,
@@ -107,8 +160,9 @@
 
     try {
       app.data = await loadAllData();
-      app.needsMap = buildNeedsMap(app.data.teamNeeds);
       app.playersByName = buildPlayersByName(app.data.players);
+      app.autopickEngine = createAutopickEngine();
+      resetTeamStates();
       populatePositionFilter(app.data.players);
         populateCompletedPicksTeamFilter(app.data.draftOrder);
 
@@ -116,6 +170,7 @@
       if (savedState) {
         app.state = savedState;
         app.ui.autoPickSpeed = normalizeAutoPickSpeed(savedState.autoPickSpeed);
+        rebuildTeamStatesFromPicks(app.state.picks);
         setMessage("Simulacion restaurada desde localStorage.");
       } else {
         app.state = createInitialState();
@@ -160,6 +215,8 @@
     app.elements.btnSimNextMiami = document.getElementById("btn-sim-next-miami");
     app.elements.btnContinue = document.getElementById("btn-continue");
     app.elements.btnExportCsv = document.getElementById("btn-export-csv");
+    app.elements.btnImportCsv = document.getElementById("btn-import-csv");
+    app.elements.importCsvInput = document.getElementById("import-csv-input");
     app.elements.btnReset = document.getElementById("btn-reset");
     app.elements.btnClear = document.getElementById("btn-clear");
   }
@@ -249,13 +306,32 @@
       exportMockDraftToCsv();
     });
 
+    app.elements.btnImportCsv.addEventListener("click", function () {
+      if (app.elements.importCsvInput) {
+        app.elements.importCsvInput.click();
+      }
+    });
+
+    app.elements.importCsvInput.addEventListener("change", async function (event) {
+      const file = event.target && event.target.files ? event.target.files[0] : null;
+
+      if (!file) {
+        return;
+      }
+
+      await importMockDraftFromCsvFile(file);
+      event.target.value = "";
+    });
+
     app.elements.btnReset.addEventListener("click", async function () {
       if (!app.data) {
         return;
       }
 
       cancelAutoRun();
+      resetTeamStates();
       app.state = createInitialState();
+      clearLatestMiamiPickDisplay();
       persistState();
       setMessage("Draft reiniciado. Pulsa Iniciar draft.");
       renderAll();
@@ -275,7 +351,9 @@
         return;
       }
 
+      resetTeamStates();
       app.state = createInitialState();
+      clearLatestMiamiPickDisplay();
       persistState();
       setMessage("Progreso borrado. Pulsa Iniciar draft para comenzar.");
       renderAll();
@@ -426,17 +504,6 @@
     });
   }
 
-  function buildNeedsMap(teamNeeds) {
-    const map = {};
-
-    teamNeeds.forEach(function (entry) {
-      const teamCode = normalizeTeamCode(entry.team);
-      map[teamCode] = (entry.needs || []).slice(0, NEED_BONUSES.length).map(normalizePositionCode);
-    });
-
-    return map;
-  }
-
   function buildPlayersByName(players) {
     const map = new Map();
     players.forEach(function (player) {
@@ -455,7 +522,8 @@
       userTeam: USER_TEAM,
       autoPickSpeed: normalizeAutoPickSpeed(app.ui.autoPickSpeed),
       picks: [],
-      selectedPlayerNames: []
+      selectedPlayerNames: [],
+      pickExplanations: []
     };
   }
 
@@ -493,6 +561,10 @@
       return null;
     }
 
+    if (parsed.pickExplanations && !Array.isArray(parsed.pickExplanations)) {
+      return null;
+    }
+
     if (typeof parsed.currentPickIndex !== "number" || parsed.currentPickIndex < 0) {
       return null;
     }
@@ -514,7 +586,8 @@
       userTeam: USER_TEAM,
       autoPickSpeed: normalizeAutoPickSpeed(parsed.autoPickSpeed),
       picks: parsed.picks,
-      selectedPlayerNames: parsed.selectedPlayerNames
+      selectedPlayerNames: parsed.selectedPlayerNames,
+      pickExplanations: Array.isArray(parsed.pickExplanations) ? parsed.pickExplanations : []
     };
   }
 
@@ -640,6 +713,12 @@
     const selected = autoPickForTeam(teamCode, currentEntry, availablePlayers);
 
     applyPick(currentEntry, selected.player, true);
+    updateTeamStateAfterPick(teamCode, selected.player);
+
+    if (selected.explanation) {
+      app.state.pickExplanations.push(selected.explanation);
+    }
+
     setMessage(getTeamDisplayName(currentEntry.team) + " seleccionan a " + selected.player.name + " (" + selected.player.position + ").");
 
     return {
@@ -648,31 +727,54 @@
     };
   }
 
-  // Scoring ponderado y seleccion final con weighted random para equipos CPU.
+  // Algoritmo de autopick con compatibilidad: motor pipeline (nuevo) + fallback legado.
   function autoPickForTeam(teamCode, draftEntry, availablePlayers) {
-    const teamNeeds = app.needsMap[teamCode] || [];
-    const candidatePool = getCandidatePool(availablePlayers);
+    if (isPipelineEngineEnabled()) {
+      const teamState = ensureTeamState(teamCode);
+      const decision = app.autopickEngine.decidePick({
+        teamCode: teamCode,
+        pickInfo: {
+          round: draftEntry && draftEntry.round,
+          pick: draftEntry && draftEntry.pick
+        },
+        availablePlayers: availablePlayers,
+        teamState: teamState
+      });
 
-    const scoredCandidates = candidatePool.map(function (player) {
       return {
-        player: player,
-        scoreData: scorePlayerForTeam(player, teamNeeds, draftEntry)
-      };
-    });
-
-    const sortedCandidates = sortCandidatesByScore(scoredCandidates);
-    const finalists = sortedCandidates.slice(0, FINALIST_COUNT);
-    const selectedCandidate = pickWeightedRandom(finalists) || sortedCandidates[0] || null;
-
-    if (!selectedCandidate) {
-      const fallbackPlayer = availablePlayers[0];
-      return {
-        player: fallbackPlayer,
-        finalScore: 0
+        player: decision.selectedPlayer,
+        finalScore: decision.explanation ? decision.explanation.final_score : 0,
+        explanation: decision.explanation || null
       };
     }
 
-    if (AUTOPICK_DEBUG) {
+    return autoPickForTeamLegacy(teamCode, draftEntry, availablePlayers);
+  }
+
+  // Motor legado (score unico) mantenido para comparacion y backward compatibility.
+  function autoPickForTeamLegacy(teamCode, draftEntry, availablePlayers) {
+    const teamState = app.teamStates[teamCode] || createFreshTeamState(teamCode);
+    const candidatePool = getCandidatePool(availablePlayers, teamState, draftEntry);
+
+    // Si todos los jugadores superan el limite de posicion, usar pool sin restricciones.
+    const effectivePool = candidatePool.length > 0
+      ? candidatePool
+      : getCandidatePoolUnrestricted(availablePlayers, draftEntry);
+
+    if (effectivePool.length === 0) {
+      return { player: availablePlayers[0], finalScore: 0 };
+    }
+
+    const scoredCandidates = scoreCandidates(effectivePool, teamState, draftEntry);
+    const sortedCandidates = sortCandidatesByScore(scoredCandidates);
+    const finalists = getFinalists(sortedCandidates);
+    const selectedCandidate = pickWeightedRandom(finalists) || sortedCandidates[0] || null;
+
+    if (!selectedCandidate) {
+      return { player: availablePlayers[0], finalScore: 0 };
+    }
+
+    if (DEBUG_AUTOPICK) {
       logAutoPickDebug(teamCode, draftEntry, finalists, selectedCandidate);
     }
 
@@ -682,61 +784,243 @@
     };
   }
 
-  function getCandidatePool(availablePlayers) {
+  function createAutopickEngine() {
+    if (typeof window === "undefined" || !window.DraftAutopickEngine) {
+      return null;
+    }
+
+    return window.DraftAutopickEngine.createDraftAutopickEngine(AUTOPICK_PIPELINE_CONFIG);
+  }
+
+  function isPipelineEngineEnabled() {
+    return AUTOPICK_ENGINE_MODE === "pipeline" && Boolean(app.autopickEngine);
+  }
+
+  function ensureTeamState(teamCode) {
+    if (!app.teamStates[teamCode]) {
+      app.teamStates[teamCode] = isPipelineEngineEnabled()
+        ? app.autopickEngine.createTeamState(teamCode)
+        : createFreshTeamState(teamCode);
+    }
+
+    return app.teamStates[teamCode];
+  }
+
+  function resetTeamStates() {
+    if (!app.data) {
+      app.teamStates = {};
+      return;
+    }
+
+    if (isPipelineEngineEnabled()) {
+      app.teamStates = app.autopickEngine.initializeTeamStates(app.data.teamNeeds);
+      return;
+    }
+
+    app.teamStates = buildTeamStates(app.data.teamNeeds);
+  }
+
+  // Inicializa el estado interno (needWeights + contadores) de todos los equipos.
+  function buildTeamStates(teamNeeds) {
+    const states = {};
+
+    if (Array.isArray(teamNeeds)) {
+      teamNeeds.forEach(function (entry) {
+        const teamCode = normalizeTeamCode(entry.team);
+        states[teamCode] = {
+          teamCode: teamCode,
+          needWeights: buildInitialNeedWeights(entry.needs),
+          draftedCountByPosition: {}
+        };
+      });
+    }
+
+    return states;
+  }
+
+  function createFreshTeamState(teamCode) {
+    return {
+      teamCode: teamCode,
+      needWeights: {},
+      draftedCountByPosition: {}
+    };
+  }
+
+  // Reconstruye el teamState de cada equipo reproduciendo los picks ya guardados en localStorage.
+  function rebuildTeamStatesFromPicks(picks) {
+    if (isPipelineEngineEnabled()) {
+      app.autopickEngine.rebuildTeamStatesFromPicks(app.teamStates, picks);
+      return;
+    }
+
+    if (!Array.isArray(picks) || picks.length === 0) {
+      return;
+    }
+
+    picks.forEach(function (pickEntry) {
+      if (!pickEntry || !pickEntry.player) {
+        return;
+      }
+
+      const teamCode = normalizeTeamCode(pickEntry.team);
+      const teamState = app.teamStates[teamCode];
+
+      if (teamState) {
+        applyTeamStateUpdateLegacy(teamState, { position: pickEntry.player.position });
+      }
+    });
+  }
+
+  // Convierte el array de needs en un mapa de pesos numericos decrecientes.
+  function buildInitialNeedWeights(needsArray) {
+    if (!Array.isArray(needsArray) || needsArray.length === 0) {
+      return {};
+    }
+
+    const weights = {};
+
+    needsArray.forEach(function (need, index) {
+      const normalizedNeed = normalizePositionCode(need);
+      if (!normalizedNeed) {
+        return;
+      }
+
+      const bonus = index < INITIAL_NEED_WEIGHTS.length ? INITIAL_NEED_WEIGHTS[index] : 0;
+      weights[normalizedNeed] = bonus;
+    });
+
+    return weights;
+  }
+
+  // Tamano del pool segun el numero de pick global.
+  function getCandidatePoolSize(draftEntry) {
+    const overallPick = getOverallPickNumber(draftEntry);
+
+    if (overallPick <= 32) {
+      return CANDIDATE_POOL_EARLY;
+    }
+
+    if (overallPick <= 100) {
+      return CANDIDATE_POOL_MID;
+    }
+
+    return CANDIDATE_POOL_LATE;
+  }
+
+  // Pool top N por ranking, excluyendo posiciones que superan el limite del equipo.
+  function getCandidatePool(availablePlayers, teamState, draftEntry) {
     if (!Array.isArray(availablePlayers) || availablePlayers.length === 0) {
       return [];
     }
 
+    const poolSize = getCandidatePoolSize(draftEntry);
+
     return availablePlayers
       .slice()
       .sort(function (a, b) {
-        const rankA = typeof a.rank === "number" && !Number.isNaN(a.rank) ? a.rank : Number.MAX_SAFE_INTEGER;
-        const rankB = typeof b.rank === "number" && !Number.isNaN(b.rank) ? b.rank : Number.MAX_SAFE_INTEGER;
+        const rankA = getPlayerRank(a) || Number.MAX_SAFE_INTEGER;
+        const rankB = getPlayerRank(b) || Number.MAX_SAFE_INTEGER;
         return rankA - rankB;
       })
-      .slice(0, CANDIDATE_POOL_SIZE);
+      .filter(function (player) {
+        return !hasReachedPositionLimit(teamState, player.position);
+      })
+      .slice(0, poolSize);
   }
 
-  function scorePlayerForTeam(player, teamNeeds, draftEntry) {
+  // Pool sin restricciones de posicion, usado como fallback.
+  function getCandidatePoolUnrestricted(availablePlayers, draftEntry) {
+    if (!Array.isArray(availablePlayers) || availablePlayers.length === 0) {
+      return [];
+    }
+
+    const poolSize = getCandidatePoolSize(draftEntry);
+
+    return availablePlayers
+      .slice()
+      .sort(function (a, b) {
+        const rankA = getPlayerRank(a) || Number.MAX_SAFE_INTEGER;
+        const rankB = getPlayerRank(b) || Number.MAX_SAFE_INTEGER;
+        return rankA - rankB;
+      })
+      .slice(0, poolSize);
+  }
+
+  // Calcula el score de cada jugador del pool y devuelve array con scoreData.
+  function scoreCandidates(candidatePool, teamState, draftEntry) {
+    return candidatePool.map(function (player) {
+      return {
+        player: player,
+        scoreData: scorePlayerForTeam(player, teamState, draftEntry, candidatePool)
+      };
+    });
+  }
+
+  // Score ponderado final: board + need + posValue + scarcity + random - reach - duplicate.
+  function scorePlayerForTeam(player, teamState, draftEntry, candidatePool) {
     const playerRank = getPlayerRank(player);
-    const boardScore = playerRank > 0 ? 1200 - playerRank : 0;
-    const needScore = getNeedBonus(teamNeeds, player && player.position);
-    const positionalValueScore = getPositionalValue(player && player.position);
+    const boardScore = playerRank > 0 ? 1500 - playerRank : 0;
+    const needScore = getNeedScore(player && player.position, teamState.needWeights);
+    const positionalValueScore = getPositionalValueScore(player && player.position);
+    const scarcityScore = getScarcityScore(player, candidatePool || []);
     const randomness = getRandomIntInclusive(RANDOMNESS_MIN, RANDOMNESS_MAX);
     const reachPenalty = getReachPenalty(playerRank, draftEntry);
-    const finalScore = boardScore + needScore + positionalValueScore + randomness - reachPenalty;
+    const duplicatePositionPenalty = getDuplicatePositionPenalty(
+      player && player.position,
+      teamState.draftedCountByPosition
+    );
+    const finalScore =
+      boardScore + needScore + positionalValueScore + scarcityScore + randomness
+      - reachPenalty - duplicatePositionPenalty;
 
     return {
       boardScore: boardScore,
       needScore: needScore,
       positionalValueScore: positionalValueScore,
+      scarcityScore: scarcityScore,
       randomness: randomness,
       reachPenalty: reachPenalty,
+      duplicatePositionPenalty: duplicatePositionPenalty,
       finalScore: finalScore
     };
   }
 
-  function getNeedBonus(teamNeeds, playerPosition) {
-    if (!Array.isArray(teamNeeds) || teamNeeds.length === 0) {
-      return 0;
+  // Devuelve la need del equipo que mejor casa con la posicion del jugador.
+  function findMatchingNeed(playerPosition, needWeights) {
+    if (!needWeights || typeof needWeights !== "object") {
+      return null;
     }
 
     const normalizedPosition = normalizePositionCode(playerPosition);
     if (!normalizedPosition) {
+      return null;
+    }
+
+    let bestNeed = null;
+    let bestWeight = -1;
+
+    Object.keys(needWeights).forEach(function (need) {
+      if (matchesNeed(normalizedPosition, need) && needWeights[need] > bestWeight) {
+        bestWeight = needWeights[need];
+        bestNeed = need;
+      }
+    });
+
+    return bestNeed;
+  }
+
+  // Bonus por needs dinamicas: devuelve el peso de la need que coincida.
+  function getNeedScore(playerPosition, needWeights) {
+    const matchedNeed = findMatchingNeed(playerPosition, needWeights);
+    if (!matchedNeed) {
       return 0;
     }
 
-    for (let index = 0; index < teamNeeds.length && index < NEED_BONUSES.length; index += 1) {
-      const need = normalizePositionCode(teamNeeds[index]);
-      if (matchesNeed(normalizedPosition, need)) {
-        return NEED_BONUSES[index];
-      }
-    }
-
-    return 0;
+    return needWeights[matchedNeed] || 0;
   }
 
-  function getPositionalValue(playerPosition) {
+  // Valor posicional fijo desde la tabla POSITION_VALUE_MAP.
+  function getPositionalValueScore(playerPosition) {
     const normalizedPosition = normalizePositionCode(playerPosition);
     if (!normalizedPosition) {
       return 0;
@@ -747,24 +1031,98 @@
       : 0;
   }
 
-  function getExpectedRankForPick(draftEntry) {
-    const overallPick = getOverallPickNumber(draftEntry);
-    return overallPick + REACH_OFFSET;
+  // Penalizacion progresiva por draftear demasiadas veces la misma posicion.
+  function getDuplicatePositionPenalty(playerPosition, draftedCountByPosition) {
+    if (!draftedCountByPosition || typeof draftedCountByPosition !== "object") {
+      return 0;
+    }
+
+    const normalizedPosition = normalizePositionCode(playerPosition);
+    if (!normalizedPosition) {
+      return 0;
+    }
+
+    const count = draftedCountByPosition[normalizedPosition] || 0;
+
+    if (count <= 0) {
+      return 0;
+    }
+
+    if (count < DUPLICATE_POSITION_PENALTIES.length) {
+      return DUPLICATE_POSITION_PENALTIES[count];
+    }
+
+    return DUPLICATE_POSITION_PENALTIES[DUPLICATE_POSITION_PENALTIES.length - 1];
   }
 
+  // Devuelve true si el equipo ya llego al maximo de jugadores para esa posicion.
+  function hasReachedPositionLimit(teamState, playerPosition) {
+    if (!teamState || !teamState.draftedCountByPosition) {
+      return false;
+    }
+
+    const normalizedPosition = normalizePositionCode(playerPosition);
+    if (!normalizedPosition) {
+      return false;
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(MAX_POSITION_COUNTS, normalizedPosition)) {
+      return false;
+    }
+
+    const count = teamState.draftedCountByPosition[normalizedPosition] || 0;
+    return count >= MAX_POSITION_COUNTS[normalizedPosition];
+  }
+
+  // Penaliza reaches: jugadores con rank mucho peor que el esperado para ese pick.
   function getReachPenalty(playerRank, draftEntry) {
     if (typeof playerRank !== "number" || Number.isNaN(playerRank) || playerRank <= 0) {
       return 0;
     }
 
-    const expectedRankForPick = getExpectedRankForPick(draftEntry);
-    const delta = playerRank - expectedRankForPick;
+    const overallPick = getOverallPickNumber(draftEntry);
+    const expectedRank = overallPick + REACH_OFFSET;
+    const delta = playerRank - expectedRank;
 
     if (delta <= 0) {
       return 0;
     }
 
     return delta * REACH_PENALTY_MULTIPLIER;
+  }
+
+  // Bonus de escasez: pocas opciones de esa posicion equivalente quedan disponibles.
+  function getScarcityScore(player, candidatePool) {
+    if (!player || !player.position || !Array.isArray(candidatePool)) {
+      return 0;
+    }
+
+    const normalizedPosition = normalizePositionCode(player.position);
+    if (!normalizedPosition) {
+      return 0;
+    }
+
+    const playerRank = getPlayerRank(player);
+    const rankCeiling = playerRank + SCARCITY_RANK_WINDOW;
+
+    const countInWindow = candidatePool.filter(function (candidate) {
+      if (normalizePositionCode(candidate.position) !== normalizedPosition) {
+        return false;
+      }
+
+      const rank = getPlayerRank(candidate);
+      return rank > 0 && rank <= rankCeiling;
+    }).length;
+
+    if (countInWindow <= SCARCITY_THRESHOLD_HIGH) {
+      return SCARCITY_BONUS_HIGH;
+    }
+
+    if (countInWindow <= SCARCITY_THRESHOLD_LOW) {
+      return SCARCITY_BONUS_LOW;
+    }
+
+    return 0;
   }
 
   function sortCandidatesByScore(candidates) {
@@ -777,6 +1135,16 @@
     });
   }
 
+  // Devuelve los mejores FINALIST_COUNT candidatos.
+  function getFinalists(sortedCandidates) {
+    if (!Array.isArray(sortedCandidates)) {
+      return [];
+    }
+
+    return sortedCandidates.slice(0, FINALIST_COUNT);
+  }
+
+  // Seleccion aleatoria ponderada entre los finalistas usando FINALIST_WEIGHTS.
   function pickWeightedRandom(candidates) {
     if (!Array.isArray(candidates) || candidates.length === 0) {
       return null;
@@ -799,8 +1167,7 @@
     }, 0);
 
     if (totalWeight <= 0) {
-      const randomIndex = getRandomIntInclusive(0, size - 1);
-      return candidates[randomIndex];
+      return candidates[getRandomIntInclusive(0, size - 1)];
     }
 
     let roll = Math.random() * totalWeight;
@@ -812,6 +1179,36 @@
     }
 
     return candidates[size - 1];
+  }
+
+  // Actualiza el teamState tras cada pick: contador de posicion y decaimiento de needWeights.
+  function updateTeamStateAfterPick(teamCode, selectedPlayer) {
+    const normalizedTeamCode = normalizeTeamCode(teamCode);
+    const teamState = ensureTeamState(normalizedTeamCode);
+    if (!teamState || !selectedPlayer) {
+      return;
+    }
+
+    if (isPipelineEngineEnabled()) {
+      app.autopickEngine.updateTeamStateAfterPick(teamState, selectedPlayer);
+      return;
+    }
+
+    applyTeamStateUpdateLegacy(teamState, selectedPlayer);
+  }
+
+  function applyTeamStateUpdateLegacy(teamState, player) {
+    const position = normalizePositionCode(player && player.position);
+    if (!position) {
+      return;
+    }
+
+    teamState.draftedCountByPosition[position] = (teamState.draftedCountByPosition[position] || 0) + 1;
+
+    const matchedNeed = findMatchingNeed(position, teamState.needWeights);
+    if (matchedNeed !== null) {
+      teamState.needWeights[matchedNeed] = Math.max(0, teamState.needWeights[matchedNeed] * NEED_WEIGHT_DECAY);
+    }
   }
 
   // Normalizacion de posiciones con reglas especiales OL/DB.
@@ -867,8 +1264,9 @@
       return;
     }
 
-    const pickLabel = "R" + (draftEntry && draftEntry.round ? draftEntry.round : "?") + " P" + getOverallPickNumber(draftEntry);
-    const expectedRank = getExpectedRankForPick(draftEntry);
+    const overallPick = getOverallPickNumber(draftEntry);
+    const pickLabel = "R" + (draftEntry && draftEntry.round ? draftEntry.round : "?") + " P" + overallPick;
+    const expectedRank = overallPick + REACH_OFFSET;
 
     console.groupCollapsed(
       "[Autopick Debug] " + pickLabel + " - " + getTeamDisplayName(teamCode) + " | expectedRank=" + expectedRank
@@ -880,12 +1278,15 @@
         "#" + (index + 1),
         {
           name: candidate.player.name,
+          position: candidate.player.position,
           rank: candidate.player.rank,
           boardScore: score.boardScore,
           needScore: score.needScore,
           positionalValueScore: score.positionalValueScore,
+          scarcityScore: score.scarcityScore,
           randomness: score.randomness,
           reachPenalty: score.reachPenalty,
+          duplicatePositionPenalty: score.duplicatePositionPenalty,
           finalScore: score.finalScore
         }
       );
@@ -962,6 +1363,7 @@
     }
 
     applyPick(currentEntry, player, false);
+    updateTeamStateAfterPick(normalizeTeamCode(currentEntry.team), player);
     persistState();
     setMessage("Miami Dolphins selecciono a " + player.name + " (" + player.position + ").");
 
@@ -1008,6 +1410,7 @@
   function renderLatestMiamiPickCard() {
     if (!app.state.started) {
       app.elements.miamiPickCard.hidden = true;
+      clearLatestMiamiPickDisplay();
       return;
     }
 
@@ -1015,6 +1418,7 @@
 
     if (!latestMiamiPick) {
       app.elements.miamiPickCard.hidden = true;
+      clearLatestMiamiPickDisplay();
       return;
     }
 
@@ -1315,6 +1719,7 @@
     app.elements.btnSimNextMiami.disabled = !started || completed || autoRunActive;
     app.elements.btnContinue.disabled = !started || completed || autoRunActive;
     app.elements.btnExportCsv.disabled = !hasPicks;
+    app.elements.btnImportCsv.disabled = autoRunActive;
     app.elements.autoPickSpeed.disabled = autoRunActive;
 
     if (!started && !completed) {
@@ -1410,6 +1815,13 @@
     app.elements.autoPickSpeed.value = normalizeAutoPickSpeed(app.ui.autoPickSpeed);
   }
 
+  function clearLatestMiamiPickDisplay() {
+    app.elements.miamiPickSlot.textContent = "-";
+    app.elements.miamiPickName.textContent = "-";
+    app.elements.miamiPickMeta.textContent = "-";
+    app.elements.miamiPickRank.textContent = "-";
+  }
+
   function exportMockDraftToCsv() {
     if (!app.state || !Array.isArray(app.state.picks) || app.state.picks.length === 0) {
       setMessage("No hay picks para exportar todavia.");
@@ -1447,6 +1859,280 @@
     URL.revokeObjectURL(url);
 
     setMessage("Mock draft exportado a CSV.");
+  }
+
+  async function importMockDraftFromCsvFile(file) {
+    if (!app.data || !app.state) {
+      showError("El simulador aun no esta listo para importar.");
+      return;
+    }
+
+    cancelAutoRun();
+
+    try {
+      const csvText = await readFileAsText(file);
+      const importedPicks = parseMockDraftCsv(csvText);
+
+      if (importedPicks.length === 0) {
+        showError("El CSV no contiene picks para importar.");
+        return;
+      }
+
+      applyImportedMockDraft(importedPicks);
+      persistState();
+      renderAll();
+      setMessage("Mock draft importado: " + importedPicks.length + " picks cargados.");
+    } catch (error) {
+      showError(error && error.message ? error.message : "No se pudo importar el CSV.");
+    }
+  }
+
+  function readFileAsText(file) {
+    return new Promise(function (resolve, reject) {
+      const reader = new FileReader();
+
+      reader.onerror = function () {
+        reject(new Error("No se pudo leer el archivo CSV seleccionado."));
+      };
+
+      reader.onload = function () {
+        resolve(String(reader.result || ""));
+      };
+
+      reader.readAsText(file, "utf-8");
+    });
+  }
+
+  function parseMockDraftCsv(csvText) {
+    const rows = parseCsvRows(csvText || "");
+
+    if (rows.length <= 1) {
+      return [];
+    }
+
+    const header = rows[0].map(normalizeHeaderName);
+    const required = ["ronda", "pick", "equipo", "jugador", "posicion", "college"];
+
+    const missingHeader = required.some(function (name) {
+      return header.indexOf(name) === -1;
+    });
+
+    if (missingHeader) {
+      throw new Error("El CSV no tiene el formato esperado de exportacion.");
+    }
+
+    const headerIndex = {
+      round: header.indexOf("ronda"),
+      pick: header.indexOf("pick"),
+      team: header.indexOf("equipo"),
+      playerName: header.indexOf("jugador"),
+      position: header.indexOf("posicion"),
+      college: header.indexOf("college")
+    };
+
+    const imported = [];
+
+    for (let index = 1; index < rows.length; index += 1) {
+      const row = rows[index];
+      if (!row || row.every(function (value) { return !String(value || "").trim(); })) {
+        continue;
+      }
+
+      const round = parseInt(String(row[headerIndex.round] || "").trim(), 10);
+      const pick = parseInt(String(row[headerIndex.pick] || "").trim(), 10);
+      const teamCode = getTeamCodeFromCsvValue(row[headerIndex.team]);
+      const playerName = String(row[headerIndex.playerName] || "").trim();
+      const csvPosition = normalizePositionCode(row[headerIndex.position]);
+      const csvCollege = String(row[headerIndex.college] || "").trim();
+
+      if (!round || !pick || !teamCode || !playerName) {
+        throw new Error("El CSV contiene filas invalidas. Revisa ronda, pick, equipo y jugador.");
+      }
+
+      const playerFromBoard = app.playersByName.get(playerName);
+      const playerPosition = playerFromBoard ? playerFromBoard.position : csvPosition;
+      const playerCollege = playerFromBoard ? playerFromBoard.college : csvCollege;
+      const playerRank = playerFromBoard && typeof playerFromBoard.rank === "number"
+        ? playerFromBoard.rank
+        : findPlayerRankByName(playerName);
+
+      if (!playerPosition) {
+        throw new Error("No se pudo determinar la posicion de: " + playerName + ".");
+      }
+
+      imported.push({
+        round: round,
+        pick: pick,
+        team: teamCode,
+        player: {
+          name: playerName,
+          position: playerPosition,
+          college: playerCollege || "N/A",
+          rank: playerRank
+        },
+        isAutoPick: teamCode !== USER_TEAM
+      });
+    }
+
+    imported.sort(function (a, b) {
+      if (a.round !== b.round) {
+        return a.round - b.round;
+      }
+
+      return a.pick - b.pick;
+    });
+
+    validateImportedPicks(imported);
+    return imported;
+  }
+
+  function validateImportedPicks(importedPicks) {
+    const draftOrderBySlot = new Map(
+      app.data.draftOrder.map(function (entry) {
+        return [entry.round + "|" + entry.pick, normalizeTeamCode(entry.team)];
+      })
+    );
+
+    const seenPlayers = new Set();
+
+    importedPicks.forEach(function (entry) {
+      const slotKey = entry.round + "|" + entry.pick;
+      const expectedTeam = draftOrderBySlot.get(slotKey);
+
+      if (!expectedTeam) {
+        throw new Error("El CSV contiene picks fuera del orden oficial del draft.");
+      }
+
+      if (expectedTeam !== normalizeTeamCode(entry.team)) {
+        throw new Error("El CSV no coincide con el orden de equipos para R" + entry.round + " P" + entry.pick + ".");
+      }
+
+      const normalizedPlayerName = entry.player.name.toLowerCase();
+      if (seenPlayers.has(normalizedPlayerName)) {
+        throw new Error("El CSV contiene jugadores duplicados: " + entry.player.name + ".");
+      }
+
+      seenPlayers.add(normalizedPlayerName);
+    });
+
+    for (let index = 0; index < importedPicks.length; index += 1) {
+      const imported = importedPicks[index];
+      const expected = app.data.draftOrder[index];
+
+      if (!expected) {
+        throw new Error("El CSV tiene mas picks que el draft configurado.");
+      }
+
+      const expectedTeam = normalizeTeamCode(expected.team);
+      const expectedRound = expected.round;
+      const expectedPick = expected.pick;
+
+      if (
+        imported.round !== expectedRound ||
+        imported.pick !== expectedPick ||
+        normalizeTeamCode(imported.team) !== expectedTeam
+      ) {
+        throw new Error("El CSV debe contener picks consecutivos desde el inicio del draft.");
+      }
+    }
+  }
+
+  function applyImportedMockDraft(importedPicks) {
+    resetTeamStates();
+    app.state = createInitialState();
+    app.state.started = true;
+    app.state.picks = importedPicks;
+    app.state.selectedPlayerNames = importedPicks.map(function (entry) {
+      return entry.player.name;
+    });
+    app.state.pickExplanations = [];
+    app.state.currentPickIndex = importedPicks.length;
+    app.state.completed = app.state.currentPickIndex >= app.data.draftOrder.length;
+    app.ui.lastRenderedLatestPickKey = "";
+
+    rebuildTeamStatesFromPicks(importedPicks);
+  }
+
+  function parseCsvRows(csvText) {
+    const rows = [];
+    let currentField = "";
+    let currentRow = [];
+    let insideQuotes = false;
+
+    for (let index = 0; index < csvText.length; index += 1) {
+      const char = csvText[index];
+      const nextChar = csvText[index + 1];
+
+      if (char === '"') {
+        if (insideQuotes && nextChar === '"') {
+          currentField += '"';
+          index += 1;
+        } else {
+          insideQuotes = !insideQuotes;
+        }
+        continue;
+      }
+
+      if (!insideQuotes && char === ",") {
+        currentRow.push(currentField);
+        currentField = "";
+        continue;
+      }
+
+      if (!insideQuotes && (char === "\n" || char === "\r")) {
+        if (char === "\r" && nextChar === "\n") {
+          index += 1;
+        }
+
+        currentRow.push(currentField);
+        rows.push(currentRow);
+        currentField = "";
+        currentRow = [];
+        continue;
+      }
+
+      currentField += char;
+    }
+
+    currentRow.push(currentField);
+    rows.push(currentRow);
+
+    return rows;
+  }
+
+  function normalizeHeaderName(value) {
+    const normalized = String(value || "")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+    return normalized;
+  }
+
+  function getTeamCodeFromCsvValue(value) {
+    const raw = String(value || "").trim();
+    const normalizedRaw = normalizeTeamCode(raw);
+
+    if (TEAM_DISPLAY_NAMES[normalizedRaw]) {
+      return normalizedRaw;
+    }
+
+    const normalizedName = raw.toLowerCase();
+    const foundCode = Object.keys(TEAM_DISPLAY_NAMES).find(function (teamCode) {
+      return TEAM_DISPLAY_NAMES[teamCode].toLowerCase() === normalizedName;
+    });
+
+    return foundCode || "";
+  }
+
+  function findPlayerRankByName(name) {
+    const normalized = String(name || "").trim().toLowerCase();
+    const player = app.data.players.find(function (entry) {
+      return String(entry.name || "").trim().toLowerCase() === normalized;
+    });
+
+    return player && typeof player.rank === "number" ? player.rank : 999;
   }
 
   function escapeCsvField(value) {

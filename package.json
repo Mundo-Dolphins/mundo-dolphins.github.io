@@ -4,6 +4,9 @@
   "description": "Notification scripts for Mundo Dolphins",
   "version": "1.0.0",
   "type": "commonjs",
+  "scripts": {
+    "test:autopick": "node --test tests/draft-autopick-engine.test.js"
+  },
   "dependencies": {
     "firebase-admin": "^12.7.0"
   }
