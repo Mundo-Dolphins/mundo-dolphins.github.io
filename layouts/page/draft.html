@@ -1,6 +1,9 @@
 {{ define "main" }}
-{{ $draftCSS := resources.Get "css/draft-simulator.css" | minify | fingerprint }}
-{{ $draftJS := resources.Get "js/draft-simulator.js" | minify | fingerprint }}
+{{ $draftCSSResource := resources.Get "css/draft-simulator.css" }}
+{{ $draftCSS := cond hugo.IsProduction ($draftCSSResource | minify | fingerprint) ($draftCSSResource | fingerprint) }}
+{{ $draftEngineJS := resources.Get "js/draft-autopick-engine.js" }}
+{{ $draftJS := resources.Get "js/draft-simulator.js" }}
+{{ $draftBundle := cond hugo.IsProduction ((slice $draftEngineJS $draftJS) | resources.Concat "js/draft-simulator.bundle.js" | minify | fingerprint) ((slice $draftEngineJS $draftJS) | resources.Concat "js/draft-simulator.bundle.js" | fingerprint) }}
 
 <script>
   document.body.classList.add("draft-simulator-page");
@@ -43,6 +46,7 @@
       <button id="btn-sim-next-miami" type="button">Simular hasta el siguiente pick de Miami</button>
       <button id="btn-continue" type="button">Continuar draft</button>
       <button id="btn-export-csv" type="button">Exportar mock draft CSV</button>
+      <button id="btn-import-csv" type="button">Importar mock draft CSV</button>
       <button id="btn-reset" type="button">Reiniciar draft</button>
       <button id="btn-clear" type="button" class="danger">Borrar progreso guardado</button>
       <label class="draft-speed-control">
@@ -54,6 +58,7 @@
           <option value="very-slow">Muy lenta · 5 s</option>
         </select>
       </label>
+      <input id="import-csv-input" type="file" accept=".csv,text/csv" hidden>
     </section>
 
     <p id="draft-message" class="draft-message" role="status">Cargando datos...</p>
@@ -128,5 +133,5 @@
   </section>
 </main>
 
-<script src="{{ $draftJS.RelPermalink }}" integrity="{{ $draftJS.Data.Integrity }}" defer></script>
+<script src="{{ $draftBundle.RelPermalink }}" integrity="{{ $draftBundle.Data.Integrity }}" defer></script>
 {{ end }}
