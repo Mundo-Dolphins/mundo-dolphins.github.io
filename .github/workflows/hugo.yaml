@@ -43,16 +43,11 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version-file: go.mod
-
-      - name: Cache Go modules
-        uses: actions/cache@v5
-        with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('go.mod', 'go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
+          # Use setup-go built-in cache to avoid restoring the same paths twice.
+          cache: true
+          cache-dependency-path: |
+            go.mod
+            go.sum
 
       - name: Cache Node.js modules
         uses: actions/cache@v5
