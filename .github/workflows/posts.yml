@@ -2,8 +2,14 @@ name: Check for new social posts
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [social-check]
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
+
+concurrency:
+  group: check-new-social-posts
+  cancel-in-progress: false
 
 jobs:
   check-social:
