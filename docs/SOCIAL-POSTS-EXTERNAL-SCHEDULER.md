@@ -36,6 +36,9 @@ GITHUB_TOKEN=REEMPLAZAR_POR_TOKEN_REAL
 GITHUB_OWNER=Mundo-Dolphins
 GITHUB_REPO=mundo-dolphins.github.io
 EVENT_TYPE=social-check
+# Opcionales de robustez
+MAX_RETRIES=3
+LOCK_FILE=/tmp/md-social-dispatch.lock
 EOF
 chmod 600 ~/mundo-dolphins-scheduler/.env
 ```
@@ -44,9 +47,6 @@ chmod 600 ~/mundo-dolphins-scheduler/.env
 
 ```bash
 cd ~/mundo-dolphins-scheduler
-set -a
-source ./.env
-set +a
 ./trigger_posts_workflow.sh
 ```
 
@@ -55,8 +55,10 @@ Si todo va bien, debe responder `OK: workflow disparado...`.
 ### 1.4 Crear cron cada 10 minutos
 
 ```bash
-(crontab -l 2>/dev/null; echo '*/10 * * * * cd ~/mundo-dolphins-scheduler && set -a && source ./.env && set +a && ./trigger_posts_workflow.sh >> ~/mundo-dolphins-scheduler/cron.log 2>&1') | crontab -
+(crontab -l 2>/dev/null; echo '*/10 * * * * cd ~/mundo-dolphins-scheduler && ./trigger_posts_workflow.sh >> ~/mundo-dolphins-scheduler/cron.log 2>&1') | crontab -
 ```
+
+El script carga automaticamente `./.env` si existe en su misma carpeta, asi evitamos problemas de shell de cron (`/bin/sh` no entiende `source`).
 
 Verificar:
 
@@ -140,3 +142,5 @@ wrangler secret put GITHUB_REPO
 - HTTP `401/403`: token sin permisos o expirado.
 - HTTP `404`: owner/repo incorrectos o token sin acceso al repo.
 - Dispatch correcto pero workflow no corre: confirmar que `posts.yml` tiene `repository_dispatch` con `types: [social-check]`.
+- En cron no aparece nada: revisar permisos y ruta del script (`chmod +x`) y que el usuario correcto tenga el crontab instalado.
+- Error `source: not found`: usar el comando de cron de este documento (sin `source`) o ejecutar con `bash -lc`.
