@@ -2,10 +2,10 @@
   Genera la API histórica de temporadas y partidos de los Miami Dolphins.
 
   Endpoints generados:
-    /api/historical/seasons.json              — índice de temporadas
-    /api/historical/seasons/{year}.json       — datos de una temporada (draft, secciones)
-    /api/historical/seasons/{year}/stats.json — estadísticas de la temporada
-    /api/historical/seasons/{year}/games.json — todos los partidos de la temporada
+    /historical/seasons.json              — índice de temporadas
+    /historical/seasons/{year}.json       — datos de una temporada (draft, secciones)
+    /historical/seasons/{year}/stats.json — estadísticas de la temporada
+    /historical/seasons/{year}/games.json — todos los partidos de la temporada
 */}}
 {{- $adapter := . -}}
 
@@ -20,7 +20,7 @@
 {{- end -}}
 {{- $years = sort $years "value" "desc" -}}
 
-{{/* ── /api/historical/seasons.json ── */}}
+{{/* ── /historical/seasons.json ── */}}
 {{- $seasonsIndex := slice -}}
 {{- range $years -}}
   {{- $yrStr   := printf "%d" . -}}
@@ -29,9 +29,9 @@
     "year"  .
     "title" $season.page.title
     "urls"  (dict
-      "season" (printf "/api/historical/seasons/%d.json" .)
-      "stats"  (printf "/api/historical/seasons/%d/stats.json" .)
-      "games"  (printf "/api/historical/seasons/%d/games.json" .)
+      "season" (printf "/historical/seasons/%d.json" .)
+      "stats"  (printf "/historical/seasons/%d/stats.json" .)
+      "games"  (printf "/historical/seasons/%d/games.json" .)
     )
   ) -}}
 {{- end -}}
@@ -40,7 +40,7 @@
   "path"    "seasons"
   "title"   "API Historical Seasons Index"
   "layout"  "api-endpoint"
-  "url"     "/api/historical/seasons.json"
+  "url"     "/historical/seasons.json"
   "outputs" (slice "json")
   "params"  (dict "payload" (dict
     "seasons"    $seasonsIndex
@@ -53,13 +53,13 @@
   {{- $yr    := . -}}
   {{- $yrStr := printf "%d" $yr -}}
 
-  {{/* /api/historical/seasons/{year}.json */}}
+  {{/* /historical/seasons/{year}.json */}}
   {{- $season := index $allSeasons $yrStr -}}
   {{- $adapter.AddPage (dict
     "path"    (printf "season-%d" $yr)
     "title"   (printf "API Season %d" $yr)
     "layout"  "api-endpoint"
-    "url"     (printf "/api/historical/seasons/%d.json" $yr)
+    "url"     (printf "/historical/seasons/%d.json" $yr)
     "outputs" (slice "json")
     "params"  (dict "payload" (dict
       "year"     $yr
@@ -68,13 +68,13 @@
     ))
   ) -}}
 
-  {{/* /api/historical/seasons/{year}/stats.json */}}
+  {{/* /historical/seasons/{year}/stats.json */}}
   {{- $stats := index $allStats $yrStr -}}
   {{- $adapter.AddPage (dict
     "path"    (printf "season-%d-stats" $yr)
     "title"   (printf "API Season %d Stats" $yr)
     "layout"  "api-endpoint"
-    "url"     (printf "/api/historical/seasons/%d/stats.json" $yr)
+    "url"     (printf "/historical/seasons/%d/stats.json" $yr)
     "outputs" (slice "json")
     "params"  (dict "payload" (dict
       "year"     $yr
@@ -83,7 +83,7 @@
     ))
   ) -}}
 
-  {{/* /api/historical/seasons/{year}/games.json */}}
+  {{/* /historical/seasons/{year}/games.json */}}
   {{- $yearGames := index $allGames $yrStr -}}
   {{- $gamesList := slice -}}
   {{- range $gameId, $gameData := $yearGames -}}
@@ -101,7 +101,7 @@
     "path"    (printf "season-%d-games" $yr)
     "title"   (printf "API Season %d Games" $yr)
     "layout"  "api-endpoint"
-    "url"     (printf "/api/historical/seasons/%d/games.json" $yr)
+    "url"     (printf "/historical/seasons/%d/games.json" $yr)
     "outputs" (slice "json")
     "params"  (dict "payload" (dict
       "year"       $yr
