@@ -38,21 +38,25 @@
 {{- end -}}
 {{- $endpoints = $endpoints | append (dict "name" "feed" "payload" $latest) -}}
 
-{{/* social.json: mantiene el comportamiento actual del script (posts_1 + posts_2) */}}
-{{- $social := slice -}}
-{{- with index site.Data "posts_1" -}}
-  {{- $social = $social | append . -}}
-{{- end -}}
-{{- with index site.Data "posts_2" -}}
-  {{- $social = $social | append . -}}
-{{- end -}}
-{{- $socialFlat := slice -}}
-{{- range $social -}}
-  {{- range . -}}
-    {{- $socialFlat = $socialFlat | append . -}}
+{{/* social.json: últimos 100 posts sociales, manteniendo cada post como objeto */}}
+{{- $socialBatches := slice -}}
+{{- range $key, $posts := site.Data -}}
+  {{- if hasPrefix $key "posts_" -}}
+    {{- $num := $key | strings.TrimPrefix "posts_" | int -}}
+    {{- $socialBatches = $socialBatches | append (dict "num" $num "posts" $posts) -}}
   {{- end -}}
 {{- end -}}
-{{- $endpoints = $endpoints | append (dict "name" "social" "payload" $socialFlat) -}}
+{{- $socialBatches = sort $socialBatches "num" -}}
+
+{{- $social := slice -}}
+{{- range $socialBatches -}}
+  {{- range .posts -}}
+    {{- $social = $social | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $social = sort $social "PublishedOn" "desc" -}}
+{{- $social = first 100 $social -}}
+{{- $endpoints = $endpoints | append (dict "name" "social" "payload" $social) -}}
 
 {{/* videos*.json */}}
 {{- $videosRaw := site.Data.videos -}}
