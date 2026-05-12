@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Mundo-Dolphins/mundo-dolphins.github.io/internal/apicontracts"
+	"github.com/Mundo-Dolphins/mundo-dolphins.github.io/tools/validate-contracts/internal/apicontracts"
 )
 
 func main() {

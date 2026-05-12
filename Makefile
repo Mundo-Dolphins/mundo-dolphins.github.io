@@ -12,4 +12,4 @@ validate-contracts:
 ifndef SKIP_HUGO_BUILD
 	$(HUGO) --gc --buildFuture
 endif
-	$(GO) run ./cmd/validate-contracts --root $(ROOT_DIR) --config $(CONTRACTS_CONFIG)
+	cd tools/validate-contracts && $(GO) run ./cmd/validate-contracts --root ../.. --config ../../$(CONTRACTS_CONFIG)
