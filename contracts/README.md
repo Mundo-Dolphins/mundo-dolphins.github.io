@@ -1,8 +1,8 @@
 # Contratos de API
 
-Esta carpeta contiene copias versionadas de los JSON Schemas que definen el contrato que la app Android espera actualmente de la API JSON generada por este sitio Hugo.
+Esta carpeta contiene los JSON Schemas canónicos de la API JSON generada por este sitio Hugo.
 
-La fuente de verdad de esos schemas vive en el repositorio Android. Aquí se guardan copias sincronizadas para que este servicio web pueda validar en CI que los JSON reales que genera siguen cumpliendo el contrato.
+La app Android consume estos contratos y se sincroniza automáticamente desde este repositorio cuando cambian los schemas en `contracts/schemas/`.
 
 ## Qué se valida
 
@@ -22,13 +22,40 @@ Los contratos actuales se mapean en [`contracts/api-contracts.yaml`](api-contrac
 
 Los archivos HTML/XML de `public/api/` no forman parte del contrato JSON y no se validan con JSON Schema.
 
-## Cómo sincronizar los schemas
+## Sincronización con Android
 
-1. Cambia el contrato en el repositorio Android.
-2. Regenera o exporta los schemas en Android dentro de `contracts/schemas/`.
-3. Copia esos schemas a este repositorio.
-4. Ajusta [`contracts/api-contracts.yaml`](api-contracts.yaml) si cambian rutas o si aparece un nuevo endpoint.
-5. Ejecuta la validación localmente antes de subir cambios.
+Cuando hay cambios en `contracts/schemas/**` y se hace push a `main`, el workflow [notify-android-api-contracts.yml](../.github/workflows/notify-android-api-contracts.yml) dispara un `repository_dispatch` hacia `Mundo-Dolphins/androidapp` con el tipo `api-contracts-updated`.
+
+Ese workflow también se puede ejecutar manualmente con `workflow_dispatch`.
+
+Payload enviado a Android:
+
+- `source_repo`: `Mundo-Dolphins/mundo-dolphins.github.io`
+- `contracts_ref`: commit SHA que disparó la ejecución
+- `source_path`: `contracts/schemas`
+- `triggering_sha`: commit SHA que disparó la ejecución
+- `triggering_run_url`: URL de la ejecución en GitHub Actions
+
+El repositorio Android debe tener un workflow que escuche `repository_dispatch` con `type: api-contracts-updated` para sincronizar y abrir su PR automático con los schemas actualizados.
+
+## Secret requerido para notificación
+
+El workflow de notificación necesita el secret `ANDROID_REPO_DISPATCH_TOKEN` en este repositorio.
+
+Si usas fine-grained personal access token (recomendado):
+
+1. `Resource owner`: `Mundo-Dolphins`.
+2. `Repository access`: `Only select repositories` y seleccionar solo `androidapp`.
+3. `Repository permissions`: `Contents` con `Read and write`.
+
+Con esa configuración es suficiente para lanzar `repository_dispatch` en Android.
+
+Si usas un PAT clásico:
+
+- Si `Mundo-Dolphins/androidapp` es público: `public_repo`.
+- Si `Mundo-Dolphins/androidapp` es privado: `repo`.
+
+Si el secret no está configurado, el workflow falla de forma explícita.
 
 ## Cómo ejecutar la validación
 
@@ -60,13 +87,20 @@ go run ./cmd/validate-contracts --root . --config contracts/api-contracts.yaml
 4. Ejecuta `make validate-contracts`.
 5. Si pasa, actualiza la documentación del contrato Android si procede.
 
-## Proceso recomendado para cambios de contrato
+## Proceso ante breaking changes
 
-- Si el servicio web necesita añadir un campo nuevo opcional, puede hacerlo y el contrato debería seguir pasando.
-- Si necesita eliminar o cambiar un campo requerido, primero hay que actualizar la app Android.
-- Una vez la app Android soporte el nuevo contrato, actualizar los schemas.
-- Después actualizar el servicio web.
-- Nunca romper directamente un contrato consumido por una app publicada.
+- No eliminar campos requeridos usados por Android sin transición.
+- No cambiar tipos de campos sin crear versión nueva.
+- No cambiar formatos de fechas sin compatibilidad.
+
+Si hay que cambiar el contrato:
+
+1. Añadir un endpoint `v2`.
+2. Mantener `v1` durante un tiempo.
+3. Actualizar Android para soportar `v2`.
+4. Retirar `v1` solo cuando sea seguro.
+
+Si el PR automático de Android falla tras un cambio de schema, tratar el cambio como potencialmente incompatible y aplicar versionado o compatibilidad hacia atrás antes de desplegar.
 
 ## Errores comunes
 

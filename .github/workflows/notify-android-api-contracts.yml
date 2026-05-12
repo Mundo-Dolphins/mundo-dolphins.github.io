@@ -1,0 +1,48 @@
+name: Notify Android API Contracts Sync
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - contracts/schemas/**
+
+jobs:
+  notify-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify dispatch token is configured
+        env:
+          ANDROID_REPO_DISPATCH_TOKEN: ${{ secrets.ANDROID_REPO_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ANDROID_REPO_DISPATCH_TOKEN}" ]; then
+            echo "Missing required secret: ANDROID_REPO_DISPATCH_TOKEN" >&2
+            echo "Configure a PAT with minimum scope: public_repo (public Android repo) or repo (private Android repo)." >&2
+            exit 1
+          fi
+
+      - name: Resolve contracts reference
+        id: contracts_ref
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            echo "value=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger Android repository dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.ANDROID_REPO_DISPATCH_TOKEN }}
+          repository: Mundo-Dolphins/androidapp
+          event-type: api-contracts-updated
+          client-payload: >-
+            {
+              "source_repo": "Mundo-Dolphins/mundo-dolphins.github.io",
+              "contracts_ref": "${{ steps.contracts_ref.outputs.value }}",
+              "source_path": "contracts/schemas",
+              "triggering_sha": "${{ github.sha }}",
+              "triggering_run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            }
