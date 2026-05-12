@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/episodes.schema.json",
+  "title": "Podcast Episodes API",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["audio", "dateAndTime", "description", "imgMain", "len", "link", "title"],
+    "properties": {
+      "audio": { "type": "string", "format": "uri" },
+      "dateAndTime": { "type": "string", "format": "date-time" },
+      "description": { "type": "string" },
+      "imgMain": { "type": "string", "format": "uri" },
+      "len": { "type": "string" },
+      "link": { "type": "string", "format": "uri" },
+      "title": { "type": "string" }
+    },
+    "additionalProperties": true
+  }
+}

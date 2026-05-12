@@ -101,6 +101,15 @@ jobs:
           test -f ./public/.well-known/assetlinks.json
           echo "✅ Found ./public/.well-known/assetlinks.json"
 
+      - name: Run existing Node tests
+        run: npm run test:autopick
+
+      - name: Run Go tests
+        run: go test ./...
+
+      - name: Validate API contracts
+        run: SKIP_HUGO_BUILD=1 make validate-contracts
+
       # upload-pages-artifact excludes dot-directories (e.g. .well-known),
       # so package the Pages artifact manually to preserve Android App Links files.
       - name: Package Pages artifact (include dot-directories)

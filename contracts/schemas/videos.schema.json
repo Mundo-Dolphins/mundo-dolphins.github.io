@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/videos.schema.json",
+  "title": "Videos API",
+  "type": "object",
+  "required": ["lastupdated", "totalcount", "videos"],
+  "properties": {
+    "lastupdated": { "type": "string", "format": "date-time" },
+    "totalcount": { "type": "integer", "minimum": 0 },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["duration", "embeddable", "isPodcast", "published_at", "title", "url"],
+        "properties": {
+          "duration": { "type": "string" },
+          "embeddable": { "type": "boolean" },
+          "isPodcast": { "type": "boolean" },
+          "published_at": { "type": "string", "format": "date-time" },
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
