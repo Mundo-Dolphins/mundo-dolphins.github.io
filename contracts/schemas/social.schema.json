@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/social.schema.json",
+  "title": "Social API",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["BlueSkyPost", "InstagramPost", "PublishedOn", "id", "stype"],
+    "properties": {
+      "BlueSkyPost": {
+        "type": "object",
+        "required": ["BskyCID", "BskyPost", "BskyProfile", "BskyProfileURI", "BskyURI", "Description"],
+        "properties": {
+          "BskyCID": { "type": "string" },
+          "BskyPost": { "type": "string" },
+          "BskyProfile": { "type": "string" },
+          "BskyProfileURI": { "type": "string" },
+          "BskyURI": { "type": "string" },
+          "Description": { "type": "string" }
+        },
+        "additionalProperties": true
+      },
+      "InstagramPost": {
+        "type": "object",
+        "required": ["Description", "SvgPath", "URL"],
+        "properties": {
+          "Description": { "type": "string" },
+          "SvgPath": { "type": "string" },
+          "URL": { "type": "string" }
+        },
+        "additionalProperties": true
+      },
+      "PublishedOn": { "type": "string", "format": "date-time" },
+      "id": { "type": "string", "format": "uri" },
+      "stype": { "type": "integer" }
+    },
+    "additionalProperties": true
+  }
+}

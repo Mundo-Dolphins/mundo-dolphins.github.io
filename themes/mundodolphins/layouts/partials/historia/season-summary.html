@@ -10,6 +10,27 @@
   Las claves opcionales se muestran sólo si tienen valor.
 */}}
 {{ $r := . }}
+{{/* Claves ya cubiertas arriba; se usan para evitar duplicados en el bloque automático */}}
+{{ $knownKeys := slice
+  "División"
+  "Récord"
+  "Posición"
+  "Puntos a favor"
+  "Puntos en contra"
+  "Head Coach"
+  "General Manager"
+  "Estadio"
+  "Training Camp"
+  "Presidente"
+  "Chairman/Managing General Partner"
+  "Owner/Chairman"
+  "Offensive Coordinator"
+  "Defensive Coordinator"
+  "Def. Run Game Coordinator"
+  "Pass Game Coordinator"
+  "Special Teams Coordinator"
+}}
+{{ $knownKeysLower := apply $knownKeys "lower" "." }}
 
 <h2 id="resumen">Resumen</h2>
 <div class="table-wrapper">
@@ -83,6 +104,36 @@
 {{/* Defensive Coordinator */}}
 {{ with index $r "Defensive Coordinator" }}
 <tr><td>Defensive Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Def. Run Game Coordinator */}}
+{{ with index $r "Def. Run Game Coordinator" }}
+<tr><td>Def. Run Game Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Pass Game Coordinator */}}
+{{ with index $r "Pass Game Coordinator" }}
+<tr><td>Pass Game Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Special Teams Coordinator */}}
+{{ with index $r "Special Teams Coordinator" }}
+<tr><td>Special Teams Coordinator</td><td>{{ . }}</td></tr>
+{{ end }}
+
+{{/* Mostrar automáticamente campos nuevos del JSON que no estén en la lista prioritaria */}}
+{{ $extraKeys := slice }}
+{{ range $k, $_ := $r }}
+  {{ if not (in $knownKeysLower (lower $k)) }}
+    {{ $extraKeys = $extraKeys | append $k }}
+  {{ end }}
+{{ end }}
+{{ range sort $extraKeys }}
+  {{ $k := . }}
+  {{ $v := index $r $k }}
+  {{ with $v }}
+<tr><td>{{ title $k }}</td><td>{{ . }}</td></tr>
+  {{ end }}
 {{ end }}
 
 </tbody>

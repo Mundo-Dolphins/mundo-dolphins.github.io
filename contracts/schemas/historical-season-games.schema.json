@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/historical-season-games.schema.json",
+  "title": "Historical Season Games API",
+  "type": "object",
+  "required": ["games", "totalcount", "year"],
+  "properties": {
+    "games": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "totalcount": { "type": "integer", "minimum": 0 },
+    "year": { "type": "integer" }
+  },
+  "additionalProperties": true
+}

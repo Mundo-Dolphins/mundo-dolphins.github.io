@@ -24,6 +24,7 @@
 </thead>
 <tbody>
 {{ range $picks }}
+{{ if index . "Nombre" }}
 <tr>
   <td>{{ index . "Ronda" }}</td>
   <td>{{ index . "Pick" }}</td>
@@ -31,6 +32,7 @@
   <td>{{ index . "Nombre" }}</td>
   <td>{{ index . "Universidad" }}</td>
 </tr>
+{{ end }}
 {{ end }}
 </tbody>
 </table>

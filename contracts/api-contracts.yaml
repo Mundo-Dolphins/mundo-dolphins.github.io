@@ -1,0 +1,46 @@
+contracts:
+  - name: articles
+    schema: contracts/schemas/articles.schema.json
+    jsons:
+      - public/api/articles.json
+
+  - name: episodes
+    schema: contracts/schemas/episodes.schema.json
+    jsons:
+      - public/api/feed.json
+      - public/api/season_*.json
+
+  - name: videos
+    schema: contracts/schemas/videos.schema.json
+    jsons:
+      - public/api/videos*.json
+
+  - name: social
+    schema: contracts/schemas/social.schema.json
+    jsons:
+      - public/api/social.json
+
+  - name: season-index
+    schema: contracts/schemas/season-index.schema.json
+    jsons:
+      - public/api/seasons.json
+
+  - name: historical-season-index
+    schema: contracts/schemas/historical-season-index.schema.json
+    jsons:
+      - public/api/historical/seasons.json
+
+  - name: historical-season-detail
+    schema: contracts/schemas/historical-season-detail.schema.json
+    jsons:
+      - public/api/historical/seasons/*.json
+
+  - name: historical-season-stats
+    schema: contracts/schemas/historical-season-stats.schema.json
+    jsons:
+      - public/api/historical/seasons/*/stats.json
+
+  - name: historical-season-games
+    schema: contracts/schemas/historical-season-games.schema.json
+    jsons:
+      - public/api/historical/seasons/*/games.json

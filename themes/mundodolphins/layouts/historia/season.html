@@ -18,6 +18,10 @@
   {{/* ── Resolver datos de la temporada ── */}}
   {{ $key  := .Params.season_key }}
   {{ $data := index site.Data.historical.seasons $key }}
+  {{ $sections := .Params.sections }}
+  {{ if and (not $sections) $data }}
+    {{ $sections = $data.sections }}
+  {{ end }}
   {{ $articulo := site.GetPage (printf "/historia/articulos/%s" $key) }}
 
   {{ if not $data }}
@@ -25,8 +29,6 @@
       <p>Error: no se encontraron datos para la temporada {{ $key }}</p>
     </main>
   {{ else }}
-    {{ $sections := $data.sections }}
-
     {{/* ── Logo del equipo (igual que en el single.html original) ── */}}
     {{ $image := resources.Get .Params.logo }}
     {{ if $image }}
@@ -65,12 +67,22 @@
           <h2>Tabla de Contenidos</h2>
           <div id="TableOfContents">
             <ul>
-              <li><a href="#resumen">Resumen</a></li>
+              {{ with index $sections "Resumen" }}
+                <li><a href="#resumen">Resumen</a></li>
+              {{ end }}
               {{ if $articulo }}<li><a href="{{ $articulo.RelPermalink }}">Artículo histórico</a></li>{{ end }}
-              <li><a href="#roster">Roster</a></li>
-              <li><a href="#jugadores-seleccionados-en-el-draft">Jugadores seleccionados en el draft</a></li>
-              <li><a href="#estadísticas-de-la-temporada">Estadísticas de la temporada</a></li>
-              <li><a href="#partidos-de-la-temporada-regular">Partidos de la temporada regular</a></li>
+              {{ with index $sections "Roster" }}
+                <li><a href="#roster">Roster</a></li>
+              {{ end }}
+              {{ with index $sections "Jugadores seleccionados en el draft" }}
+                <li><a href="#jugadores-seleccionados-en-el-draft">Jugadores seleccionados en el draft</a></li>
+              {{ end }}
+              {{ with index $sections "Estadísticas de la temporada" }}
+                <li><a href="#estadísticas-de-la-temporada">Estadísticas de la temporada</a></li>
+              {{ end }}
+              {{ with index $sections "Partidos de la temporada regular" }}
+                <li><a href="#partidos-de-la-temporada-regular">Partidos de la temporada regular</a></li>
+              {{ end }}
             </ul>
           </div>
         </div>

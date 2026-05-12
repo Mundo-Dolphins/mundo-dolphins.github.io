@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/articles.schema.json",
+  "title": "Articles API",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["title", "author", "content", "publishedDate"],
+    "properties": {
+      "title": { "type": "string" },
+      "author": { "type": "string" },
+      "content": { "type": "string" },
+      "publishedDate": { "type": "string", "format": "date-time" }
+    },
+    "additionalProperties": true
+  }
+}

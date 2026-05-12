@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/historical-season-stats.schema.json",
+  "title": "Historical Season Stats API",
+  "type": "object",
+  "required": ["sections", "title", "year"],
+  "properties": {
+    "sections": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "title": { "type": "string" },
+    "year": { "type": "integer" }
+  },
+  "additionalProperties": true
+}
+        }
+      }
+    },
+    "title": { "type": "string" },
+    "year": { "type": "integer" }
+  },
+  "additionalProperties": true
+}

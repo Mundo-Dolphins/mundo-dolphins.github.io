@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mundodolphins.es/contracts/season-index.schema.json",
+  "title": "Season Index API",
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "^season_[0-9]+\\.json$"
+  }
+}
