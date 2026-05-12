@@ -6,6 +6,6 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "gomod"
-    directory: "/"
+    directory: "/tools/validate-contracts"
     schedule:
       interval: "daily"
