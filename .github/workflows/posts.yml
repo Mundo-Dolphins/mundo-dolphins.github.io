@@ -251,7 +251,7 @@ jobs:
           echo "committed=true" >> $GITHUB_OUTPUT
 
       - name: Create pull request
-        uses: devops-infra/action-pull-request@v1.0.2
+        uses: devops-infra/action-pull-request@v1.1.1
         if: steps.add_commit.outputs.committed == 'true'
         with:
           github_token: ${{ secrets.PUSH }}
