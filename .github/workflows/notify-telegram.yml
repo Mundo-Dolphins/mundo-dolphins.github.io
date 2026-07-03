@@ -30,7 +30,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 🔄 Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           # Use full history because we diff the deployed commit against its parent.
           fetch-depth: 0
