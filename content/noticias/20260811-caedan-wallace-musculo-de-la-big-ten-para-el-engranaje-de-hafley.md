@@ -1,7 +1,7 @@
 ---
 layout: noticias
 title: 'Caedan Wallace: músculo de la Big Ten para el engranaje de Hafley'
-date: 2026-08-11T10:53:00+02:00
+date: 2026-08-11T11:42:00+02:00
 author: Hugo Manero
 authorLink: https://bsky.app/profile/mundodolphins.es
 categories:
@@ -19,9 +19,7 @@ Desde una perspectiva strictly analítica, la llegada de Wallace a South Florida
 
 En su última campaña universitaria en la exigente conferencia Big Ten, Wallace registró métricas sobresalientes en protección de pase:
 
-
 _Eficiencia de pase_: Permitió únicamente un sack y ocho presiones totales en 359 repeticiones de protección (Pass Block Win Rate de primer nivel), concediendo una tasa de presión permitida de solo el 2,5 %.
-
 
 _Rendimiento ante la élite_: En enfrentamientos directos contra esquineros y edge rushers proyectados para la NFL, mostró un anclaje (anchor) sólido y gran efectividad para neutralizar el bull rush.
 
@@ -41,12 +39,12 @@ La llegada de Jeff Hafley al banquillo de Miami trae consigo una apuesta por la 
 
 Profundidad natural en el Tackle Derecho (RT): La posición natural de Wallace es el lado derecho de la línea, lo que le posiciona como un recambio directo y seguro tras Austin Jackson. En New England, las urgencias de la plantilla le obligaron a actuar esporádicamente como tackle izquierdo, una transición en la que sus métricas sufrieron debido a un trabajo de pies menos asentado en ese perfil. De vuelta a su hábitat natural, se espera que recupere la solvencia mostrada en la etapa universitaria.
 
-Potencia e imposición en el juego de carrera: Sus cualidades en combo blocks y bloqueos descendentes aportan esa dosis de agresividad y empuje directo que busca implantar el nuevo cuerpo técnico. Su capacidad para sellar los bordes en el juego terrestre ofrece garantías adicionales en el esquema de carrera.
+Potencia e imposición en el juego de carrera: Sus cualidades en combo blocks y down blocks aportan esa dosis de agresividad y empuje directo que busca implantar el nuevo cuerpo técnico. Su capacidad para sellar los bordes en el juego terrestre ofrece garantías adicionales en el esquema de carrera.
 
 Gestión inteligente de la plantilla: Con un contrato de novato muy asequible y un coste de adquisición mínimo (intercambio de una 6.ª ronda de 2028 por una 7.ª de 2029), la gerencia de los Dolphins añade un activo joven con margen de desarrollo sin comprometer el margen salarial del equipo.
 
 **Conclusión: soneto deportivo** 
 
-El éxito de una franquicia en la NFL rara vez se construye únicamente a base de grandes estrellas; se forja en la capacidad de identificar talento infravalorado y encajarlo en el lugar preciso. Conseguir que esas cinco fuerzas de la naturaleza compongan cada fin de semana un soneto deportivo perfectamente armonizado para ayudar a Achane y proteger al comandante Willis. Caedan Wallace no llega a Miami para asumir de inmediato los focos ni para acaparar titulares, sino para responder cuando la exigencia del calendario y el desgaste físico hagan mella en la trinchera.
+El éxito de una franquicia en la NFL rara vez se construye únicamente a base de grandes estrellas; se forja en la capacidad de identificar talento infravalorado y encajarlo en el lugar preciso. Conseguir que esas cinco fuerzas de la naturaleza compongan cada fin de semana un lirismo deportivo perfectamente armonizado para ayudar a Achane y proteger al comandante Willis. Caedan Wallace no llega a Miami para asumir de inmediato los focos ni para acaparar titulares, sino para responder cuando la exigencia del calendario y el desgaste físico hagan mella en la trinchera.
 
 En el inicio de esta nueva era bajo el mando de Jeff Hafley, contar con hombres capaces de sostener el muro cuando la embestida rival aprieta es la diferencia entre el colapso y la victoria. Si los Dolphins  logran pulir la técnica de Wallace y mantenerlo asentado en su perfil natural, esta operación silenciosa en los despachos puede convertirse, con el paso de los domingos, en uno de los aciertos tácticos más valiosos del año. Sieler lo demostró anteriormente en el lado defensivo y Wallace ansía trasladar ritmo y calidad de Boston a Miami para que el dramaturgo Hafley construya su mejor soneto deportivo .
