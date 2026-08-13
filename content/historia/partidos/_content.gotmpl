@@ -2,7 +2,7 @@
   Content adapter para partidos históricos de Miami Dolphins.
 
   Recorre todos los archivos en data/historical/games/<year>/*.json usando
-  site.Data.historical.games (mapa anidado por año y luego por game_id).
+  hugo.Data.historical.games (mapa anidado por año y luego por game_id).
 
   Por cada partido se crea una página con .AddPage. El path es el slug del
   partido (p.ej. "mia-new-20130930"), relativo a content/historia/partidos/.
@@ -13,7 +13,7 @@
 */}}
 
 {{- $adapter := . -}}
-{{- range $year, $yearGames := site.Data.historical.games -}}
+{{- range $year, $yearGames := hugo.Data.historical.games -}}
   {{- range $gameId, $gameData := $yearGames -}}
     {{- $page := $gameData.page -}}
 

@@ -8,7 +8,7 @@
     - embeddable=true por defecto si no viene en JSON
 */}}
 {{- $adapter := . -}}
-{{- $videos := site.Data.videos -}}
+{{- $videos := hugo.Data.videos -}}
 
 {{- range $videos -}}
   {{- $video := . -}}

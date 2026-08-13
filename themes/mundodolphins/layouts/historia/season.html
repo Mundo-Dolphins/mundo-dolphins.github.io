@@ -8,16 +8,16 @@
   ─────────────────────────
   El adapter pasa en .Params.season_key la clave del JSON (p.ej. "2017").
   Este layout recupera el dato completo desde:
-    site.Data.historical.seasons[key]
+    hugo.Data.historical.seasons[key]
   y delega cada sección a partials especializados.
   
-  Si por algún motivo la clave no existe en site.Data (no debería ocurrir
+  Si por algún motivo la clave no existe en hugo.Data (no debería ocurrir
   nunca en producción), se muestra un error claro.
 */}}
 {{ define "main" }}
   {{/* ── Resolver datos de la temporada ── */}}
   {{ $key  := .Params.season_key }}
-  {{ $data := index site.Data.historical.seasons $key }}
+  {{ $data := index hugo.Data.historical.seasons $key }}
   {{ $sections := .Params.sections }}
   {{ if and (not $sections) $data }}
     {{ $sections = $data.sections }}

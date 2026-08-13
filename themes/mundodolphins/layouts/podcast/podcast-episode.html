@@ -21,7 +21,7 @@
 
     <div class="content post__content clearfix">
 
-      <p>{{ .Params.descFull | htmlUnescape | safeHTML }}</p>
+      {{ partial "podcast-description.html" .Params.descFull }}
 
       <!--more-->
 

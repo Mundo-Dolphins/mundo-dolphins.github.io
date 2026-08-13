@@ -2,11 +2,11 @@
   Layout: layouts/historia/stats/season-stats.html
 
   Renderiza una página de estadísticas de temporada generada por el content adapter.
-  Los datos provienen de site.Data.historical.season_stats[stats_year].
+  Los datos provienen de hugo.Data.historical.season_stats[stats_year].
 */}}
 {{ define "main" }}
 {{ $year     := .Params.stats_year }}
-{{ $data     := index site.Data.historical.season_stats $year }}
+{{ $data     := index hugo.Data.historical.season_stats $year }}
 
 {{ if not $data }}
   <main class="main stats-page" role="main">

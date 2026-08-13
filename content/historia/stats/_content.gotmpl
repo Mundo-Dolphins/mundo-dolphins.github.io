@@ -3,7 +3,7 @@
   desde data/historical/season_stats/<year>.json
 */}}
 {{- $adapter := . -}}
-{{- range $year, $data := site.Data.historical.season_stats -}}
+{{- range $year, $data := hugo.Data.historical.season_stats -}}
   {{- $page := $data.page -}}
   {{- $yr   := printf "%v" $year -}}
   {{- $date := time (printf "%s-01-01T00:00:00Z" $yr) -}}

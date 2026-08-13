@@ -6,7 +6,7 @@
         </div>
 
         <div class="description">
-            <p>{{ .Params.descFull | safeHTML | truncate 200 }}</p>
+            <p>{{ .Params.descFull | htmlUnescape | markdownify | plainify | truncate 200 }}</p>
         </div>
         <div class="card-footer">
                 <a href="{{ .RelPermalink }}">
