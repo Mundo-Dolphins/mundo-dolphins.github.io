@@ -1,0 +1,6 @@
+{{- $description := . | default "" | htmlUnescape -}}
+{{- if findRE `<[a-zA-Z][^>]*>` $description -}}
+  {{- $description | safeHTML -}}
+{{- else -}}
+  {{- $description | markdownify -}}
+{{- end -}}
