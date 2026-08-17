@@ -91,9 +91,15 @@
 
     {{/* Recortar descripción para el frontmatter */}}
     {{- $descFull := $ep.description | htmlUnescape -}}
-    {{- $descShort := $descFull -}}
-    {{- if gt (len $descFull) 100 -}}
-      {{- $descShort = printf "%s..." (substr $descFull 0 100) -}}
+    {{- $descPlain := replaceRE `\[([^\]]+)\]\([^)]+\)` `$1` $descFull -}}
+    {{- $descPlain = replaceRE `<[^>]+>` `` $descPlain -}}
+    {{- $descPlain = replaceRE `(?m)^#{1,6}\s+` `` $descPlain -}}
+    {{- $descPlain = replace $descPlain "**" "" -}}
+    {{- $descPlain = replace $descPlain "__" "" -}}
+    {{- $descPlain = replace $descPlain "---" "" -}}
+    {{- $descShort := $descPlain -}}
+    {{- if gt (len $descPlain) 100 -}}
+      {{- $descShort = printf "%s..." (substr $descPlain 0 100) -}}
     {{- end -}}
 
     {{- $pageDict := dict
