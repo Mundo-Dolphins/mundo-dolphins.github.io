@@ -1,0 +1,193 @@
+{{/*
+  Layout: layouts/historia/rivals.html
+
+  Renderiza el resumen histórico de enfrentamientos de Miami contra equipos NFL
+  desde data/historical/rivals/index.json.
+*/}}
+{{ define "main" }}
+{{ $data := hugo.Data.historical.rivals.index }}
+
+{{ if not $data }}
+  <main class="main" role="main">
+    <p>Error: no se encontraron datos históricos de rivales.</p>
+  </main>
+{{ else }}
+  {{ $rivals := $data.data.rivals }}
+  {{ $totalGames := 0 }}
+  {{ $totalWins := 0 }}
+  {{ $totalLosses := 0 }}
+  {{ $totalTies := 0 }}
+  {{ $totalPF := 0 }}
+  {{ $totalPA := 0 }}
+  {{ range $rivals }}
+    {{ $totalGames = add $totalGames .summary.games }}
+    {{ $totalWins = add $totalWins .summary.wins }}
+    {{ $totalLosses = add $totalLosses .summary.losses }}
+    {{ $totalTies = add $totalTies .summary.ties }}
+    {{ $totalPF = add $totalPF .summary.points_for }}
+    {{ $totalPA = add $totalPA .summary.points_against }}
+  {{ end }}
+  {{ $totalDiff := sub $totalPF $totalPA }}
+
+  <main class="main" role="main">
+    <article class="post history-season history-rivals">
+      <div class="game-back-nav">
+        <a href="{{ relURL "historia/" }}" class="game-back-btn">&larr; Historia</a>
+      </div>
+
+      <header class="post__header history-season__hero">
+        <div class="history-season__hero-text">
+          <span class="history-season__eyebrow">Historia</span>
+          <h1 class="post__title">{{ .Title }}</h1>
+          <div class="history-season__meta">
+            <span class="history-season__year">{{ len $rivals }} rivales</span>
+            <span class="history-season__badge">Miami Dolphins</span>
+          </div>
+        </div>
+      </header>
+
+      {{ if .Params.toc }}
+      <div class="toc">
+        <h2>Tabla de Contenidos</h2>
+        <div id="TableOfContents">
+          <ul>
+            <li><a href="#resumen-general">Resumen general</a></li>
+            <li><a href="#tabla-de-rivales">Tabla de rivales</a></li>
+            <li><a href="#detalle-por-rival">Detalle por rival</a></li>
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="content post__content history-season__content clearfix">
+        <h2 id="resumen-general">Resumen general</h2>
+        <div class="rivals-summary-grid">
+          <div class="rivals-summary-card">
+            <span class="rivals-summary-card__label">Partidos</span>
+            <strong>{{ $totalGames }}</strong>
+          </div>
+          <div class="rivals-summary-card">
+            <span class="rivals-summary-card__label">Balance</span>
+            <strong>{{ $totalWins }}-{{ $totalLosses }}{{ if gt $totalTies 0 }}-{{ $totalTies }}{{ end }}</strong>
+          </div>
+          <div class="rivals-summary-card">
+            <span class="rivals-summary-card__label">Puntos</span>
+            <strong>{{ $totalPF }}-{{ $totalPA }}</strong>
+          </div>
+          <div class="rivals-summary-card">
+            <span class="rivals-summary-card__label">Diferencial</span>
+            <strong>{{ if gt $totalDiff 0 }}+{{ end }}{{ $totalDiff }}</strong>
+          </div>
+        </div>
+
+        <h2 id="tabla-de-rivales">Tabla de rivales</h2>
+        <div class="table-wrapper">
+          <table class="rivals-table">
+            <thead>
+              <tr>
+                <th>Rival</th>
+                <th>Partidos</th>
+                <th>Balance</th>
+                <th>Puntos</th>
+                <th>Dif.</th>
+                <th>Periodo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range sort $rivals "summary.games" "desc" }}
+              <tr>
+                <td><a href="#rival-{{ .opponent.id }}">{{ .opponent.name }}</a></td>
+                <td>{{ .summary.games }}</td>
+                <td>{{ .summary.wins }}-{{ .summary.losses }}{{ if gt .summary.ties 0 }}-{{ .summary.ties }}{{ end }}</td>
+                <td>{{ .summary.points_for }}-{{ .summary.points_against }}</td>
+                <td>{{ if gt .summary.point_differential 0 }}+{{ end }}{{ .summary.point_differential }}</td>
+                <td>{{ (time .summary.first_game).Format "2006" }}-{{ (time .summary.last_game).Format "2006" }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="detalle-por-rival">Detalle por rival</h2>
+        <div class="rivals-detail-list">
+          {{ range sort $rivals "opponent.name" "asc" }}
+          <details class="rival-detail" id="rival-{{ .opponent.id }}">
+            <summary>
+              <span class="rival-detail__name">{{ .opponent.name }}</span>
+              <span class="rival-detail__record">{{ .summary.wins }}-{{ .summary.losses }}{{ if gt .summary.ties 0 }}-{{ .summary.ties }}{{ end }}</span>
+            </summary>
+
+            <div class="rival-detail__body">
+              <div class="rival-detail__stats">
+                <span><strong>{{ .summary.games }}</strong> partidos</span>
+                <span><strong>{{ .summary.points_for }}-{{ .summary.points_against }}</strong> puntos</span>
+                <span><strong>{{ if gt .summary.point_differential 0 }}+{{ end }}{{ .summary.point_differential }}</strong> diferencial</span>
+                <span><strong>{{ .summary.regular_season_games }}</strong> temporada regular</span>
+                {{ if gt .summary.playoff_games 0 }}
+                <span><strong>{{ .summary.playoff_games }}</strong> playoffs</span>
+                {{ end }}
+              </div>
+
+              {{ if .latest_games }}
+              <h3>Últimos partidos</h3>
+              <div class="table-wrapper">
+                <table class="rival-latest-games-table">
+                  <thead>
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Resultado</th>
+                      <th>Sede</th>
+                      <th>Semana</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{ range .latest_games }}
+                    <tr>
+                      <td><a href="{{ relURL (printf "%s/" .path) }}">{{ (time .date).Format "02/01/2006" }}</a></td>
+                      <td>{{ .result }} {{ .points_for }}-{{ .points_against }}</td>
+                      <td>{{ if eq .home_away "home" }}Local{{ else }}Visitante{{ end }}</td>
+                      <td>{{ .week }}</td>
+                    </tr>
+                    {{ end }}
+                  </tbody>
+                </table>
+              </div>
+              {{ end }}
+
+              {{ if .by_season }}
+              <h3>Por temporada</h3>
+              <div class="table-wrapper">
+                <table class="rival-season-table">
+                  <thead>
+                    <tr>
+                      <th>Temporada</th>
+                      <th>Partidos</th>
+                      <th>Balance</th>
+                      <th>Puntos</th>
+                      <th>Dif.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{ range sort .by_season "season" "desc" }}
+                    <tr>
+                      <td><a href="{{ relURL (printf "historia/%v/" .season) }}">{{ .season }}</a></td>
+                      <td>{{ .games }}</td>
+                      <td>{{ .wins }}-{{ .losses }}{{ if gt .ties 0 }}-{{ .ties }}{{ end }}</td>
+                      <td>{{ .points_for }}-{{ .points_against }}</td>
+                      <td>{{ if gt .point_differential 0 }}+{{ end }}{{ .point_differential }}</td>
+                    </tr>
+                    {{ end }}
+                  </tbody>
+                </table>
+              </div>
+              {{ end }}
+            </div>
+          </details>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+  </main>
+  {{ partial "authorbox.html" . }}
+{{ end }}
+{{ end }}

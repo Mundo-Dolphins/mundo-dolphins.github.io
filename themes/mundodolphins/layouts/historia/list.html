@@ -17,6 +17,14 @@
 	{{- $seasonPages := where .RegularPages "Params.season_key" "ne" nil }}
 	<section class="history-archive" aria-label="Temporadas de los Miami Dolphins">
 		<div class="history-grid">
+			{{- $rivalsPage := site.GetPage "historia/rivales" }}
+			{{- with $rivalsPage }}
+			<a class="history-card history-card--rivals" href="{{ .RelPermalink }}">
+				<span class="history-card__year">NFL</span>
+				<span class="history-card__title">Rivales históricos</span>
+				<span class="history-card__cta">Ver rivales</span>
+			</a>
+			{{- end }}
 			{{- range $seasonPages.ByDate.Reverse }}
 			<a class="history-card" href="{{ .RelPermalink }}">
 				<span class="history-card__year">{{ .Date.Format "2006" }}</span>
