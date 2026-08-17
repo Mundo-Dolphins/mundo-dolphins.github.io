@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>{{ .Title }}</title>
+    {{- with site.Home.OutputFormats.Get "HeadlessCMSConfig" }}
+      <link href="{{ .RelPermalink }}" type="text/yaml" rel="cms-config-url" />
+    {{- end }}
+  </head>
+  <body>
+    {{ if eq site.Params.headless_cms.engine "decap" }}
+    {{ $urlDecap := "https://unpkg.com/decap-cms@latest/dist/decap-cms.js" }}
+    {{ with try (resources.GetRemote $urlDecap (dict "key" "decap-cms.css")) }}
+      {{ with .Err }}
+        {{ errorf "%s" . }}
+      {{ else with .Value }}
+        <script src="{{ .RelPermalink | absURL }}"></script>
+      {{ end }}
+    {{ else }}
+      {{ errorf "Unable to GetRemote %q" $urlDecap }}
+    {{ end }}
+    <script>
+      CMS.registerPreviewStyle("/css/site.css")
+    </script>
+
+    {{ else if eq site.Params.headless_cms.engine "sveltia" }}
+    {{ $urlSveltia := "https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" }}
+    {{ with try (resources.GetRemote $urlSveltia (dict "key" "sveltia-cms.css")) }}
+      {{ with .Err }}
+        {{ errorf "%s" . }}
+      {{ else with .Value }}
+        <script src="{{ .RelPermalink | absURL }}"></script>
+      {{ end }}
+    {{ else }}
+      {{ errorf "Unable to GetRemote %q" $urlSveltia }}
+    {{ end }}
+
+    {{ else }}
+    <h1>Error</h1>
+    <p>
+      You have configured your Hugo site to use an invalid Headless CMS.
+      Module only supports values: <code>decap</code> or <code>sveltia</code>.
+    </p>
+    {{ end }}
+  </body>
+</html>

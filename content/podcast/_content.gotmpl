@@ -8,7 +8,7 @@
 
 {{/* Recopilar todos los data files season_N dinámicamente y ordenar por número */}}
 {{- $seasons := slice -}}
-{{- range $key, $episodes := site.Data -}}
+{{- range $key, $episodes := hugo.Data -}}
   {{- if hasPrefix $key "season_" -}}
     {{- $seasonNum := $key | strings.TrimPrefix "season_" | int -}}
     {{- $seasons = $seasons | append (dict "num" $seasonNum "episodes" $episodes) -}}

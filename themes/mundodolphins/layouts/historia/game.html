@@ -2,12 +2,12 @@
   Layout: layouts/historia/game.html
 
   Renderiza una página de partido histórico generada por el content adapter.
-  Los datos provienen de site.Data.historical.games[game_year][game_id].
+  Los datos provienen de hugo.Data.historical.games[game_year][game_id].
 */}}
 {{ define "main" }}
 {{ $gameId := .Params.game_id }}
 {{ $year   := .Params.game_year }}
-{{ $data   := index (index site.Data.historical.games $year) $gameId }}
+{{ $data   := index (index hugo.Data.historical.games $year) $gameId }}
 
 {{ if not $data }}
   <main class="main" role="main">

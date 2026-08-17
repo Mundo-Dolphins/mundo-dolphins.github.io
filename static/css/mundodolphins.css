@@ -705,6 +705,22 @@ body.body {
     box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
 }
 
+.history-card--rivals {
+    background: linear-gradient(135deg, #0f2f33 0%, #0b6f76 100%);
+    color: #fff;
+    border-color: rgba(0, 142, 151, 0.42);
+}
+
+.history-card--rivals::before {
+    background: radial-gradient(circle at top right, rgba(252, 76, 2, 0.35), transparent 58%);
+}
+
+.history-card--rivals .history-card__year,
+.history-card--rivals .history-card__title,
+.history-card--rivals .history-card__cta {
+    color: #fff;
+}
+
 .history-card__year {
     font-size: 2rem;
     font-weight: 800;
@@ -1009,6 +1025,110 @@ body.body {
 
 .history-season__content table tbody tr:last-child td {
     border-bottom: 0;
+}
+
+/* Rivales historicos */
+.rivals-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.85rem;
+    margin: 0 0 1.5rem;
+}
+
+.rivals-summary-card {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.rivals-summary-card__label {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #607175;
+}
+
+.rivals-summary-card strong {
+    font-size: 1.45rem;
+    color: #0b6f76;
+}
+
+.rivals-table td,
+.rival-latest-games-table td,
+.rival-season-table td {
+    font-variant-numeric: tabular-nums;
+}
+
+.rivals-detail-list {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.rival-detail {
+    border: 1px solid #d7e5e8;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.rival-detail summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    color: #0f2f33;
+    background: #f6fbfb;
+}
+
+.rival-detail summary::marker {
+    color: #0b6f76;
+}
+
+.rival-detail__name {
+    font-weight: 800;
+}
+
+.rival-detail__record {
+    font-weight: 800;
+    color: #0b6f76;
+    white-space: nowrap;
+}
+
+.rival-detail__body {
+    padding: 1rem;
+}
+
+.rival-detail__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 1rem;
+}
+
+.rival-detail__stats span {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #d7e5e8;
+    border-radius: 999px;
+    background: #f9fcfc;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+    .rival-detail summary {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
 }
 
 /* Bloque enlace artículo histórico */

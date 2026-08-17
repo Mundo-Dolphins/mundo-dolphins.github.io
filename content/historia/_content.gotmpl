@@ -2,8 +2,8 @@
   Content adapter para temporadas históricas de Miami Dolphins.
   
   Recorre todos los archivos en data/historical/seasons/*.json usando
-  site.Data.historical.seasons (Hugo mapea el árbol de directorios de data/
-  como un mapa anidado: site.Data.<dir>.<subdir>.<clave>).
+  hugo.Data.historical.seasons (Hugo mapea el árbol de directorios de data/
+  como un mapa anidado: hugo.Data.<dir>.<subdir>.<clave>).
   
   Por cada temporada se crea una página con .AddPage. El path debe ser
   relativo a la sección donde vive este adapter (content/historia/),
@@ -16,12 +16,12 @@
   - "layout" es una clave de nivel raíz que selecciona la plantilla.
   
   El layout season.html (layouts/historia/season.html) se encarga del
-  renderizado completo usando los datos de site.Data.historical.seasons[key].
+  renderizado completo usando los datos de hugo.Data.historical.seasons[key].
 */}}
 
 {{- $adapter := . -}}
 
-{{ range $key, $data := site.Data.historical.seasons }}
+{{ range $key, $data := hugo.Data.historical.seasons }}
   {{/* $key es el nombre del fichero sin extensión, p.ej. "2017" */}}
   {{/* $data es el objeto JSON parseado */}}
 

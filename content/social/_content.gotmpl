@@ -7,7 +7,7 @@
 
 {{/* Recopilar todos los data files posts_N dinámicamente y ordenar por número */}}
 {{- $batches := slice -}}
-{{- range $key, $posts := site.Data -}}
+{{- range $key, $posts := hugo.Data -}}
   {{- if hasPrefix $key "posts_" -}}
     {{- $num := $key | strings.TrimPrefix "posts_" | int -}}
     {{- $batches = $batches | append (dict "num" $num "posts" $posts) -}}

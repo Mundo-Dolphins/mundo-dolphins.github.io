@@ -53,10 +53,10 @@
         {{- if $isSeason }}
           {{/*
             Página generada por el content adapter. Los datos vienen de
-            site.Data.historical.seasons[season_key], no de .Content.
+            hugo.Data.historical.seasons[season_key], no de .Content.
             Delegamos cada sección a partials especializados.
           */}}
-          {{ $sections := (index site.Data.historical.seasons $isSeason).sections }}
+          {{ $sections := (index hugo.Data.historical.seasons $isSeason).sections }}
 
           {{/* Sección Resumen */}}
           {{ with index $sections "Resumen" }}
