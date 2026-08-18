@@ -12,7 +12,16 @@
 	</div>
 	{{- end }}
 	{{- if .Site.Params.indexPager -}}
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+		{{ $pages = where $pages "Params.excludeFromHome" "!=" true }}
+		{{ $homePages := slice }}
+		{{ range $pages }}
+			{{ $isHistoriaNonArticle := and (eq .Section "historia") (not (and .File (in .File.Path "historia/articulos/"))) }}
+			{{ if not $isHistoriaNonArticle }}
+				{{ $homePages = $homePages | append . }}
+			{{ end }}
+		{{ end }}
+		{{ $paginator := .Paginate $homePages }}
 		{{- range $paginator.Pages }}
 			{{- .Render "summary" }}
 		{{- end }}

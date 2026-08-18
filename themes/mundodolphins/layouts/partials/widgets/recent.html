@@ -1,4 +1,12 @@
-{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{- $pages = where $pages "Params.excludeFromHome" "!=" true }}
+{{- $recent := slice }}
+{{- range $pages }}
+	{{- $isHistoriaNonArticle := and (eq .Section "historia") (not (and .File (in .File.Path "historia/articulos/"))) }}
+	{{- if not $isHistoriaNonArticle }}
+		{{- $recent = $recent | append . }}
+	{{- end }}
+{{- end }}
 {{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
 
 {{- if $recent }}
