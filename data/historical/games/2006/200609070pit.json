@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:35Z",
+  "generated_at": "2026-08-17T20:24:34Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Pittsburgh Steelers",
@@ -97,6 +97,157 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Nick Saban",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HOLLIDAY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. TILLMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. HILL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. SPRAGAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. TRAYLOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CROWDER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. GOODMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. CARTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ROTH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. WILKINSON",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "R. BROWN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "26"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. CULPEPPER",
+              "CMP%": "48.65",
+              "AVG": "7.08"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "D. JONES",
+              "IN 20": "3"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "W. WELKER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "YAC": "50"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "YAC": "17"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "30"
+            },
+            {
+              "PLAYER": "J. PEELLE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. HAGAN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. MCMICHAEL",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "2",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. CULPEPPER",
+              "AVG": "2.67",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "18-38-2",
           "Comp-Int-Yds-TD-INT": "18-37-262-0-2",
@@ -791,6 +942,163 @@
       },
       "Pittsburgh Steelers": {
         "Coach": "Bill Cowher",
+        "Estadisticas NFL.com": {
+          "PIT DEFENSE": [
+            {
+              "PLAYER": "T. POLAMALU",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "I. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. FARRIOR",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. CLARK",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. HAGGANS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. KEISEL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PORTER",
+              "QBP": "2",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "C. HAMPTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. HARRISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HAYNES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. KIRSCHKE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BAILEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. CARTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. COLCLOUGH",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "PIT FUMBLES": [
+            {
+              "PLAYER": "C. BATCH",
+              "FR": "0"
+            }
+          ],
+          "PIT KICKING": [
+            {
+              "PLAYER": "J. REED",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "PIT PASSING": [
+            {
+              "PLAYER": "C. BATCH",
+              "CMP%": "60",
+              "AVG": "8.36"
+            }
+          ],
+          "PIT PUNTING": [
+            {
+              "PLAYER": "C. GARDOCKI",
+              "IN 20": "0"
+            }
+          ],
+          "PIT RECEIVING": [
+            {
+              "PLAYER": "H. MILLER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "H. WARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "N. WASHINGTON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "W. PARKER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. HOLMES",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. KREIDER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "V. HAYNES",
+              "YAC": "0"
+            }
+          ],
+          "PIT RUSHING": [
+            {
+              "PLAYER": "W. PARKER",
+              "AVG": "4",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. BATCH",
+              "AVG": "2.86",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "N. WASHINGTON",
+              "AVG": "8",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "V. HAYNES",
+              "AVG": "3",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "38-146-0",
           "Comp-Int-Yds-TD-INT": "15-25-209-3-0",
@@ -1563,7 +1871,8 @@
       "Estadio": "Heinz Field",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "dessograss",
-      "Clima": "69 grados, humedad relativa 65%, viento 1 mph"
+      "Clima": "69 grados, humedad relativa 65%, viento 1 mph",
+      "Gamebook oficial": "assets/gamebooks/2006/200609070pit.pdf"
     },
     "Oficiales": [
       {

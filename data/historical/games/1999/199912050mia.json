@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:30Z",
   "page": {
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
@@ -145,6 +145,158 @@
     "Equipos": {
       "Indianapolis Colts": {
         "Coach": "Jim Mora",
+        "Estadisticas NFL.com": {
+          "IND DEFENSE": [
+            {
+              "PLAYER": "M. PETERSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. THOMAS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BURRIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BELSER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. COTA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. BENNETT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. BARBER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. ELIAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. JOHNSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. AUSTIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BLEVINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. BRATZKE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. CHESTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. WHITTINGTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. POOLE",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "IND FUMBLES": [
+            {
+              "PLAYER": "L. MOORE",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "P. MANNING",
+              "FR": "1"
+            }
+          ],
+          "IND KICKING": [
+            {
+              "PLAYER": "M. VANDERJAGT",
+              "50+": "0",
+              "LONG": "53"
+            }
+          ],
+          "IND PASSING": [
+            {
+              "PLAYER": "P. MANNING",
+              "CMP%": "79.30",
+              "AVG": "8.97"
+            }
+          ],
+          "IND PUNTING": [
+            {
+              "PLAYER": "H. SMITH",
+              "IN 20": "2"
+            }
+          ],
+          "IND RECEIVING": [
+            {
+              "PLAYER": "M. HARRISON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "K. DILGER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. WILKINS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. POLLARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "E. GREEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "E. JAMES",
+              "YAC": "0"
+            }
+          ],
+          "IND RUSHING": [
+            {
+              "PLAYER": "E. JAMES",
+              "AVG": "5.70",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. MOORE",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "P. MANNING",
+              "AVG": "-0.50",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-129-2",
           "Comp-Int-Yds-TD-INT": "23-29-260-1-2",
@@ -758,6 +910,162 @@
       },
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. OWENS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. WOODEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JACKSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GARDENER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. BROMELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BUCKLEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. GREEN",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "J. JOHNSON",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "32"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "63.20",
+              "AVG": "8.24"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "T. HUTTON",
+              "IN 20": "1"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "T. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "Y. GREEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. JOHNSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. DRAYTON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. KONRAD",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "J. JOHNSON",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "AVG": "7",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "22-69-0",
           "Comp-Int-Yds-TD-INT": "24-38-313-3-1",
@@ -1473,7 +1781,8 @@
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "75 grados, humedad relativa 76%, viento 10 mph, viento chill 0"
+      "Clima": "75 grados, humedad relativa 76%, viento 10 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/1999/199912050mia.pdf"
     },
     "Oficiales": [
       {

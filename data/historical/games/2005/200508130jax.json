@@ -1,0 +1,57 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:27Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Jacksonville Jaguars",
+    "date": "2005-08-13",
+    "slug": "mia-jac-20050813",
+    "path": "historia/partidos/mia-jac-20050813",
+    "params": {
+      "game_id": "200508130jax"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Jacksonville Jaguars": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 27,
+        "Record": ""
+      },
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 17,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason 1",
+      "Fecha": "13 de agosto de 2005",
+      "Gamebook oficial": "assets/gamebooks/2005/200508130jax.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

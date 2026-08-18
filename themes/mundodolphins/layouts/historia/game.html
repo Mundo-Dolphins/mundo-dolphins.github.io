@@ -18,6 +18,19 @@
   {{ $linescore := $sections.Anotaciones.linescore }}
   {{ $team1     := index $linescore 0 }}
   {{ $team2     := index $linescore 1 }}
+  {{ $gameInfo  := index $sections "Información del partido" }}
+  {{ $gamebook  := index $gameInfo "Gamebook oficial" }}
+  {{ $gamebookHref := "" }}
+  {{ with $gamebook }}
+    {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
+      {{ $gamebookHref = . }}
+    {{ else }}
+      {{ $assetPath := replaceRE "^/?assets/" "" . }}
+      {{ with resources.Get $assetPath }}
+        {{ $gamebookHref = .RelPermalink }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 
   <main class="main" role="main">
     <article class="post history-season history-game">
@@ -45,6 +58,7 @@
         <div id="TableOfContents">
           <ul>
             <li><a href="#informacion-del-partido">Información del partido</a></li>
+            {{ if $gamebookHref }}<li><a href="#gamebook-oficial">Gamebook oficial</a></li>{{ end }}
             {{ if index $sections "Videos del partido" }}<li><a href="#videos-del-partido">Videos del partido</a></li>{{ end }}
             {{ if index $sections "Anotaciones" }}<li><a href="#anotaciones">Anotaciones</a></li>{{ end }}
             {{ if index $sections "Equipos" }}<li><a href="#equipos">Equipos</a></li>{{ end }}
@@ -59,7 +73,8 @@
 
       <div class="content post__content history-season__content clearfix">
 
-        {{ partial "historia/game-info.html"     (index $sections "Información del partido") }}
+        {{ partial "historia/game-info.html"     $gameInfo }}
+        {{ partial "historia/game-gamebook.html" (dict "href" $gamebookHref) }}
 
         {{ $videos := index $sections "Videos del partido" }}
         {{ if $videos }}

@@ -1,0 +1,20 @@
+{{/*
+  Partial: historia/game-gamebook.html
+  Recibe: . = dict "href" URL del PDF
+*/}}
+{{ with .href }}
+  <section class="gamebook-viewer" aria-labelledby="gamebook-oficial">
+    <div class="gamebook-viewer__header">
+      <h2 id="gamebook-oficial">Gamebook oficial</h2>
+      <div class="gamebook-viewer__actions">
+        <a class="gamebook-viewer__button" href="{{ . }}" target="_blank" rel="noopener">Abrir PDF</a>
+        <a class="gamebook-viewer__button gamebook-viewer__button--primary" href="{{ . }}" download>Descargar</a>
+      </div>
+    </div>
+    <div class="gamebook-viewer__frame">
+      <object data="{{ . }}#view=FitH" type="application/pdf">
+        <p>Tu navegador no puede mostrar el PDF embebido. <a href="{{ . }}" download>Descarga el gamebook oficial</a>.</p>
+      </object>
+    </div>
+  </section>
+{{ end }}

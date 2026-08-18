@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:36Z",
+  "generated_at": "2026-08-17T20:24:35Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs New York Jets",
@@ -121,6 +121,148 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Cam Cameron",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "D. SPRAGAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. LEHAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CROWDER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. HILL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HOLLIDAY",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PORTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. TILLMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. DANIELS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. TRAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. GOODMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. PAGE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. POPE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ROTH",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "J. FEELY",
+              "50+": "0",
+              "LONG": "39"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "T. GREEN",
+              "CMP%": "63.90",
+              "AVG": "8.83"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "1"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "C. CHAMBERS",
+              "YAC": "31"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "103"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "YAC": "12"
+            },
+            {
+              "PLAYER": "D. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. GINN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. HAGAN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. PEELLE",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "4.87",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "23-112-2",
           "Comp-Int-Yds-TD-INT": "23-36-318-1-1",
@@ -758,6 +900,163 @@
       },
       "New York Jets": {
         "Coach": "Eric Mangini",
+        "Estadisticas NFL.com": {
+          "NYJ DEFENSE": [
+            {
+              "PLAYER": "D. REVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BARRETT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. COLEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HOBSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. COLEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. HARRIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. RHODES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. VILMA",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. BARTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. ELLIS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. MOSLEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. POUHA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. ROBERTSON",
+              "QBP": "1",
+              "INT TD": "0"
+            }
+          ],
+          "NYJ FUMBLES": [
+            {
+              "PLAYER": "C. BAKER",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "E. SMITH",
+              "FR": "1"
+            }
+          ],
+          "NYJ KICKING": [
+            {
+              "PLAYER": "M. NUGENT",
+              "50+": "0",
+              "LONG": "21"
+            }
+          ],
+          "NYJ PASSING": [
+            {
+              "PLAYER": "C. PENNINGTON",
+              "CMP%": "68.20",
+              "AVG": "5.64"
+            }
+          ],
+          "NYJ PUNTING": [
+            {
+              "PLAYER": "B. GRAHAM",
+              "IN 20": "1"
+            }
+          ],
+          "NYJ RECEIVING": [
+            {
+              "PLAYER": "J. COTCHERY",
+              "YAC": "18"
+            },
+            {
+              "PLAYER": "L. COLES",
+              "YAC": "7"
+            },
+            {
+              "PLAYER": "B. SMITH",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. MCCAREINS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "C. BAKER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. JONES",
+              "YAC": "0"
+            }
+          ],
+          "NYJ RUSHING": [
+            {
+              "PLAYER": "T. JONES",
+              "AVG": "4.40",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. WASHINGTON",
+              "AVG": "2.60",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. SMITH",
+              "AVG": "7",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. BAKER",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. PENNINGTON",
+              "AVG": "-0.20",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "38-141-1",
           "Comp-Int-Yds-TD-INT": "15-22-124-2-0",
@@ -1411,7 +1710,8 @@
       "Estadio": "Giants Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped artificial",
-      "Clima": "72 grados, humedad relativa 37%, viento 8 mph, viento chill 0"
+      "Clima": "72 grados, humedad relativa 37%, viento 8 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2007/200709230nyj.pdf"
     },
     "Oficiales": [
       {

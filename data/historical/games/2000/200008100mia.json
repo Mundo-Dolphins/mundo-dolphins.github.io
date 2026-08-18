@@ -1,0 +1,57 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:27Z",
+  "page": {
+    "kind": "game",
+    "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+    "date": "2000-08-10",
+    "slug": "tam-mia-20000810",
+    "path": "historia/partidos/tam-mia-20000810",
+    "params": {
+      "game_id": "200008100mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 15,
+        "Record": ""
+      },
+      "Tampa Bay Buccaneers": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 13,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason 2",
+      "Fecha": "10 de agosto de 2000",
+      "Gamebook oficial": "assets/gamebooks/2000/200008100mia.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

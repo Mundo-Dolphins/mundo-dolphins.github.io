@@ -1,0 +1,57 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:27Z",
+  "page": {
+    "kind": "game",
+    "title": "Chicago Bears vs Miami Dolphins",
+    "date": "2005-08-08",
+    "slug": "chi-mia-20050808",
+    "path": "historia/partidos/chi-mia-20050808",
+    "params": {
+      "game_id": "200508080mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Chicago Bears": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 27,
+        "Record": ""
+      },
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 24,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason ",
+      "Fecha": "8 de agosto de 2005",
+      "Gamebook oficial": "assets/gamebooks/2005/200508080mia.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

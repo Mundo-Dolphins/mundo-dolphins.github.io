@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:38Z",
+  "generated_at": "2026-08-17T20:24:38Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Dallas Cowboys",
@@ -113,6 +113,153 @@
     "Equipos": {
       "Dallas Cowboys": {
         "Coach": "Jason Garrett",
+        "Estadisticas NFL.com": {
+          "DAL DEFENSE": [
+            {
+              "PLAYER": "A. SPENCER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. SCANDRICK",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. LEE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. ELAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. JAMES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "G. SENSABAUGH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. BALL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. COLEMAN",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. LISSEMORE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "F. WALKER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. ALBRIGHT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. BROOKING",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. BUTLER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. RATLIFF",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. SPEARS",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "DAL FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "DAL KICKING": [
+            {
+              "PLAYER": "D. BAILEY",
+              "50+": "0",
+              "LONG": "32"
+            }
+          ],
+          "DAL PASSING": [
+            {
+              "PLAYER": "T. ROMO",
+              "CMP%": "64.70",
+              "AVG": "6.65"
+            }
+          ],
+          "DAL PUNTING": [
+            {
+              "PLAYER": "M. MCBRIAR",
+              "IN 20": "1"
+            }
+          ],
+          "DAL RECEIVING": [
+            {
+              "PLAYER": "L. ROBINSON",
+              "YAC": "9"
+            },
+            {
+              "PLAYER": "J. WITTEN",
+              "YAC": "29"
+            },
+            {
+              "PLAYER": "D. MURRAY",
+              "YAC": "39"
+            },
+            {
+              "PLAYER": "D. BRYANT",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "J. PHILLIPS",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "M. BENNETT",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "F. JONES",
+              "YAC": "2"
+            }
+          ],
+          "DAL RUSHING": [
+            {
+              "PLAYER": "D. MURRAY",
+              "AVG": "4",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. ROMO",
+              "AVG": "-2",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "23-85-0",
           "Comp-Int-Yds-TD-INT": "22-34-226-2-2",
@@ -759,6 +906,162 @@
       },
       "Miami Dolphins": {
         "Coach": "Tony Sparano",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "K. BURNETT",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CLEMONS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MISI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SOLIAI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. STARKS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. DANSBY",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. LANGFORD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. MERLING",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. MITCHELL",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TRUSNIK",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "M. MOORE",
+              "FR": "2"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "S. GRAHAM",
+              "50+": "0",
+              "LONG": "28"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "M. MOORE",
+              "CMP%": "59.40",
+              "AVG": "9"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "2"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "B. MARSHALL",
+              "YAC": "18"
+            },
+            {
+              "PLAYER": "B. HARTLINE",
+              "YAC": "6"
+            },
+            {
+              "PLAYER": "R. BUSH",
+              "YAC": "43"
+            },
+            {
+              "PLAYER": "A. FASANO",
+              "YAC": "6"
+            },
+            {
+              "PLAYER": "D. BESS",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "C. GATES",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. THOMAS",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "C. CLAY",
+              "YAC": "-1"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BUSH",
+              "AVG": "3.81",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. THOMAS",
+              "AVG": "4.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "M. MOORE",
+              "AVG": "1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-89-0",
           "Comp-Int-Yds-TD-INT": "19-32-288-1-0",
@@ -1459,7 +1762,8 @@
       "Fecha": "24 de noviembre de 2011",
       "Estadio": "Cowboys Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
-      "Superficie de juego": "matrixturf"
+      "Superficie de juego": "matrixturf",
+      "Gamebook oficial": "assets/gamebooks/2011/201111240dal.pdf"
     },
     "Oficiales": [
       {

@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:29Z",
   "page": {
     "kind": "game",
     "title": "New Orleans Saints vs Miami Dolphins",
@@ -99,6 +99,206 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "TFL": "3",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BUCKLEY",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. WALKER",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. BROMELL",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. IZZO",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MIXON",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. BRIGANCE",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. BURTON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GARDENER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "D. MARINO",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "K. DONNALLEY",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "34"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "57.50",
+              "AVG": "6.38"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "K. WILMSMEYER",
+              "IN 20": "3"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "O. MCDUFFIE",
+              "YAC": "85"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "77"
+            },
+            {
+              "PLAYER": "L. THOMAS",
+              "YAC": "37"
+            },
+            {
+              "PLAYER": "T. DRAYTON",
+              "YAC": "27"
+            },
+            {
+              "PLAYER": "N. JACQUET",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "A. AL-JABBAR",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "J. AVERY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "A. AL-JABBAR",
+              "AVG": "4",
+              "20+": "1"
+            },
+            {
+              "PLAYER": "J. AVERY",
+              "AVG": "2.79",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "AVG": "1.70",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. DOXZON",
+              "AVG": "3",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "38-120-0",
           "Comp-Int-Yds-TD-INT": "22-40-255-3-1",
@@ -688,6 +888,193 @@
       },
       "New Orleans Saints": {
         "Coach": "Mike Ditka",
+        "Estadisticas NFL.com": {
+          "NO DEFENSE": [
+            {
+              "PLAYER": "K. MITCHELL",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. JOHNSON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. KNIGHT",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "F. WEARY",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. GLOVER",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. KELLY",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "C. BORDANO",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. CHERRY",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. DRAKEFORD",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. FIELDS",
+              "TFL": "1",
+              "PD": "2",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. MOLDEN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. ROBBINS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. BECH",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. COTA",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. MARTIN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "NO FUMBLES": [
+            {
+              "PLAYER": "K. COLLINS",
+              "FR": "1"
+            }
+          ],
+          "NO KICKING": [
+            {
+              "PLAYER": "D. BRIEN",
+              "50+": "0",
+              "LONG": "43"
+            }
+          ],
+          "NO PASSING": [
+            {
+              "PLAYER": "K. COLLINS",
+              "CMP%": "37.50",
+              "AVG": "4.58"
+            }
+          ],
+          "NO PUNTING": [
+            {
+              "PLAYER": "M. ROYALS",
+              "IN 20": "2"
+            }
+          ],
+          "NO RECEIVING": [
+            {
+              "PLAYER": "C. CLEELAND",
+              "YAC": "29"
+            },
+            {
+              "PLAYER": "S. DAWKINS",
+              "YAC": "17"
+            },
+            {
+              "PLAYER": "A. HASTINGS",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "A. CRAVER",
+              "YAC": "18"
+            },
+            {
+              "PLAYER": "B. BECH",
+              "YAC": "17"
+            },
+            {
+              "PLAYER": "L. SMITH",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "W. PERRY",
+              "YAC": "0"
+            }
+          ],
+          "NO RUSHING": [
+            {
+              "PLAYER": "K. COLLINS",
+              "AVG": "7",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. CRAVER",
+              "AVG": "9",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "W. PERRY",
+              "AVG": "11",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. SMITH",
+              "AVG": "0.40",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "17-87-0",
           "Comp-Int-Yds-TD-INT": "9-24-110-0-3",
@@ -1276,7 +1663,8 @@
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "74 grados, humedad relativa 69%, viento 9 mph"
+      "Clima": "74 grados, humedad relativa 69%, viento 9 mph",
+      "Gamebook oficial": "assets/gamebooks/1998/199811290mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {

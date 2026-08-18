@@ -1,0 +1,57 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:27Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+    "date": "2006-08-19",
+    "slug": "mia-tam-20060819",
+    "path": "historia/partidos/mia-tam-20060819",
+    "params": {
+      "game_id": "200608190tam"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 13,
+        "Record": ""
+      },
+      "Tampa Bay Buccaneers": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 10,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason 2",
+      "Fecha": "19 de agosto de 2006",
+      "Gamebook oficial": "assets/gamebooks/2006/200608190tam.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

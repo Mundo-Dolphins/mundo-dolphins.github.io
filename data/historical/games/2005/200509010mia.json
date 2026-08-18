@@ -1,0 +1,57 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:27Z",
+  "page": {
+    "kind": "game",
+    "title": "Atlanta Falcons vs Miami Dolphins",
+    "date": "2005-09-01",
+    "slug": "atl-mia-20050901",
+    "path": "historia/partidos/atl-mia-20050901",
+    "params": {
+      "game_id": "200509010mia"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Atlanta Falcons": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 20,
+        "Record": ""
+      },
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 17,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason 4",
+      "Fecha": "1 de septiembre de 2005",
+      "Gamebook oficial": "assets/gamebooks/2005/200509010mia.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

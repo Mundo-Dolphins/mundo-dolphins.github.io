@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:29Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Atlanta Falcons",
@@ -113,6 +113,216 @@
     "Equipos": {
       "Atlanta Falcons": {
         "Coach": "Dan Reeves",
+        "Estadisticas NFL.com": {
+          "ATL DEFENSE": [
+            {
+              "PLAYER": "C. BENNETT",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. WHITE",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "H. CROCKETT",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. HALL",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. ROBINSON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. SMITH",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BRADFORD",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "D. BUSH",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SWAYDA",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. BROOKING",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BUCHANAN",
+              "TFL": "0",
+              "PD": "2",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BURROUGH",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "G. DOWNS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. DRONETT",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "ATL FUMBLES": [
+            {
+              "PLAYER": "M. BOOKER",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "H. GREEN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "O. SANTIAGO",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "C. SMITH",
+              "FR": "1"
+            }
+          ],
+          "ATL KICKING": [
+            {
+              "PLAYER": "M. ANDERSEN",
+              "50+": "0",
+              "LONG": "35"
+            }
+          ],
+          "ATL PASSING": [
+            {
+              "PLAYER": "C. CHANDLER",
+              "CMP%": "100",
+              "AVG": "39.33"
+            },
+            {
+              "PLAYER": "S. DEBERG",
+              "CMP%": "50",
+              "AVG": "8.50"
+            }
+          ],
+          "ATL PUNTING": [
+            {
+              "PLAYER": "D. STRYZINSKI",
+              "IN 20": "1"
+            }
+          ],
+          "ATL RECEIVING": [
+            {
+              "PLAYER": "T. MARTIN",
+              "YAC": "105"
+            },
+            {
+              "PLAYER": "O. SANTIAGO",
+              "YAC": "65"
+            },
+            {
+              "PLAYER": "R. HARRIS",
+              "YAC": "14"
+            },
+            {
+              "PLAYER": "T. MATHIS",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "B. KOZLOWSKI",
+              "YAC": "9"
+            },
+            {
+              "PLAYER": "J. ANDERSON",
+              "YAC": "0"
+            }
+          ],
+          "ATL RUSHING": [
+            {
+              "PLAYER": "J. ANDERSON",
+              "AVG": "5.72",
+              "20+": "1"
+            },
+            {
+              "PLAYER": "K. OXENDINE",
+              "AVG": "6.40",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "H. GREEN",
+              "AVG": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. CHANDLER",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. GRAZIANI",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "31-143-1",
           "Comp-Int-Yds-TD-INT": "8-13-203-3-0",
@@ -730,6 +940,214 @@
       },
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "B. MARION",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MIXON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. BROMELL",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JACKSON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. THOMAS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BUCKLEY",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. BURTON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GARDENER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. TANNER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "O. GADSDEN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "J. AVERY",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "R. MOORE",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "26"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "58.30",
+              "AVG": "8.89"
+            },
+            {
+              "PLAYER": "D. HUARD",
+              "CMP%": "66.67",
+              "AVG": "10.67"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "K. WILMSMEYER",
+              "IN 20": "0"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "153"
+            },
+            {
+              "PLAYER": "O. MCDUFFIE",
+              "YAC": "82"
+            },
+            {
+              "PLAYER": "L. THOMAS",
+              "YAC": "79"
+            },
+            {
+              "PLAYER": "T. DRAYTON",
+              "YAC": "61"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "8"
+            },
+            {
+              "PLAYER": "R. MOORE",
+              "YAC": "1"
+            },
+            {
+              "PLAYER": "T. DOXZON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "N. JACQUET",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "E. PERRY",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "J. AVERY",
+              "AVG": "1.64",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. MOORE",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "19-38-1",
           "Comp-Int-Yds-TD-INT": "25-42-384-1-2",
@@ -1367,7 +1785,8 @@
       "Fecha": "27 de diciembre de 1998",
       "Estadio": "Georgia Dome",
       "Tipo de estadio": "dome",
-      "Superficie de juego": "astroturf"
+      "Superficie de juego": "astroturf",
+      "Gamebook oficial": "assets/gamebooks/1998/199812270atl.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {
