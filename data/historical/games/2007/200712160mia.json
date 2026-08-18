@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:36Z",
+  "generated_at": "2026-08-17T20:24:36Z",
   "page": {
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
@@ -113,6 +113,172 @@
     "Equipos": {
       "Baltimore Ravens": {
         "Coach": "Brian Billick",
+        "Estadisticas NFL.com": {
+          "BAL DEFENSE": [
+            {
+              "PLAYER": "K. GREGG",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SCOTT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. GASTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. IVY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. LANDRY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. LEWIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. EDWARDS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. GREISEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. SUGGS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ANDERSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. BARNES",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. JONES",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "H. NGATA",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. REED",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WINBORNE",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "BAL FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "BAL KICKING": [
+            {
+              "PLAYER": "M. STOVER",
+              "50+": "0",
+              "LONG": "39"
+            }
+          ],
+          "BAL PASSING": [
+            {
+              "PLAYER": "K. BOLLER",
+              "CMP%": "52.63",
+              "AVG": "8.37"
+            },
+            {
+              "PLAYER": "T. SMITH",
+              "CMP%": "45.50",
+              "AVG": "4.45"
+            }
+          ],
+          "BAL PUNTING": [
+            {
+              "PLAYER": "S. KOCH",
+              "IN 20": "0"
+            }
+          ],
+          "BAL RECEIVING": [
+            {
+              "PLAYER": "D. DARLING",
+              "YAC": "1"
+            },
+            {
+              "PLAYER": "D. MASON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "Y. FIGURS",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "M. SMITH",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. CLAYTON",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "Q. SYPNIEWSKI",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. WILCOX",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "W. MCGAHEE",
+              "YAC": "0"
+            }
+          ],
+          "BAL RUSHING": [
+            {
+              "PLAYER": "W. MCGAHEE",
+              "AVG": "3.60",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "M. SMITH",
+              "AVG": "7.80",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "K. BOLLER",
+              "AVG": "11",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "M. ANDERSON",
+              "AVG": "9",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "36-163-0",
           "Comp-Int-Yds-TD-INT": "15-30-208-1-1",
@@ -803,6 +969,154 @@
       },
       "Miami Dolphins": {
         "Coach": "Cam Cameron",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "L. SCHULTERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. POPE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. WRIGHT",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. LEHAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. SPRAGAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. TRAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. GOODMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. MILES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Q. MOSES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PORTER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. FIFITA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HOLLIDAY",
+              "QBP": "1",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "C. LEMON",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "J. FEELY",
+              "50+": "0",
+              "LONG": "29"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "C. LEMON",
+              "CMP%": "59",
+              "AVG": "8.08"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "2"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "G. CAMARILLO",
+              "YAC": "72"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "YAC": "9"
+            },
+            {
+              "PLAYER": "L. BOOKER",
+              "YAC": "55"
+            },
+            {
+              "PLAYER": "D. HAGAN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. GINN",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "S. GADO",
+              "YAC": "12"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "S. GADO",
+              "AVG": "2.39",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. BOOKER",
+              "AVG": "2.13",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. LEMON",
+              "AVG": "4",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "29-72-1",
           "Comp-Int-Yds-TD-INT": "23-39-315-1-0",
@@ -1514,7 +1828,8 @@
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "79 grados, humedad relativa 84%, viento 20 mph, viento chill 0"
+      "Clima": "79 grados, humedad relativa 84%, viento 20 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2007/200712160mia.pdf"
     },
     "Oficiales": [
       {

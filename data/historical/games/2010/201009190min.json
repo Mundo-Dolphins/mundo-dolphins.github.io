@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:37Z",
+  "generated_at": "2026-08-17T20:24:37Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Minnesota Vikings",
@@ -73,6 +73,163 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Tony Sparano",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. DANSBY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CLEMONS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. LANGFORD",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Q. MOSES",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. DOBBINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. MCDANIEL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MISI",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SAPP",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SOLIAI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. STARKS",
+              "QBP": "1",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "R. BROWN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "D. CARPENTER",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "C. HENNE",
+              "CMP%": "60",
+              "AVG": "7.60"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "4"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "B. MARSHALL",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "B. HARTLINE",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "D. BESS",
+              "YAC": "8"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "A. FASANO",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "L. POLITE",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "6.15",
+              "20+": "1"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. POLITE",
+              "AVG": "2.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. HENNE",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "29-120-0",
           "Comp-Int-Yds-TD-INT": "9-15-114-1-0",
@@ -710,6 +867,176 @@
       },
       "Minnesota Vikings": {
         "Coach": "Brad Childress",
+        "Estadisticas NFL.com": {
+          "MIN DEFENSE": [
+            {
+              "PLAYER": "E. HENDERSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. WILLIAMS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. GREENWAY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. WINFIELD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ALLEN",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. EDWARDS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. LEBER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "H. ABDULLAH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. SHEPPARD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. BERRIAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "H. FARWELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. GUION",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIN FUMBLES": [
+            {
+              "PLAYER": "B. BERRIAN",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "B. FAVRE",
+              "FR": "0"
+            }
+          ],
+          "MIN KICKING": [
+            {
+              "PLAYER": "R. LONGWELL",
+              "50+": "0",
+              "LONG": "28"
+            }
+          ],
+          "MIN PASSING": [
+            {
+              "PLAYER": "B. FAVRE",
+              "CMP%": "61.11",
+              "AVG": "6.25"
+            }
+          ],
+          "MIN PUNTING": [
+            {
+              "PLAYER": "C. KLUWE",
+              "IN 20": "0"
+            }
+          ],
+          "MIN RECEIVING": [
+            {
+              "PLAYER": "V. SHIANCOE",
+              "YAC": "26"
+            },
+            {
+              "PLAYER": "A. PETERSON",
+              "YAC": "32"
+            },
+            {
+              "PLAYER": "P. HARVIN",
+              "YAC": "25"
+            },
+            {
+              "PLAYER": "B. BERRIAN",
+              "YAC": "6"
+            },
+            {
+              "PLAYER": "J. KLEINSASSER",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "G. LEWIS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. GERHART",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "G. CAMARILLO",
+              "YAC": "0"
+            }
+          ],
+          "MIN RUSHING": [
+            {
+              "PLAYER": "A. PETERSON",
+              "AVG": "5.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. GERHART",
+              "AVG": "2.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "N. TAHI",
+              "AVG": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. BERRIAN",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. FAVRE",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "33-156-1",
           "Comp-Int-Yds-TD-INT": "22-36-225-0-3",
@@ -1410,7 +1737,8 @@
       "Fecha": "19 de septiembre de 2010",
       "Estadio": "Mall of America Field",
       "Tipo de estadio": "dome",
-      "Superficie de juego": "sportturf"
+      "Superficie de juego": "sportturf",
+      "Gamebook oficial": "assets/gamebooks/2010/201009190min.pdf"
     },
     "Oficiales": [
       {

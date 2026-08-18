@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:40Z",
+  "generated_at": "2026-08-17T20:24:44Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Houston Texans",
@@ -1044,6 +1044,155 @@
     "Equipos": {
       "Houston Texans": {
         "Coach": "Bill O'Brien",
+        "Estadisticas NFL.com": {
+          "HOU DEFENSE": [
+            {
+              "PLAYER": "K. JACKSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. REID",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. MATHIEU",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MCKINNEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WATT",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. JAMERSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. KALAMBAYI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. KEYES",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. COVINGTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. CUNNINGHAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. DUNN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SCARLETT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. TYSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. BLACKSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. CLOWNEY",
+              "QBP": "1",
+              "INT TD": "0"
+            }
+          ],
+          "HOU FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "HOU KICKING": [
+            {
+              "PLAYER": "K. FAIRBAIRN",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "HOU PASSING": [
+            {
+              "PLAYER": "D. WATSON",
+              "CMP%": "80",
+              "AVG": "11.95"
+            }
+          ],
+          "HOU PUNTING": [
+            {
+              "PLAYER": "T. DANIEL",
+              "IN 20": "1"
+            }
+          ],
+          "HOU RECEIVING": [
+            {
+              "PLAYER": "W. FULLER",
+              "YAC": "63"
+            },
+            {
+              "PLAYER": "D. HOPKINS",
+              "YAC": "31"
+            },
+            {
+              "PLAYER": "J. THOMAS",
+              "YAC": "8"
+            },
+            {
+              "PLAYER": "T. ERVIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "L. MILLER",
+              "YAC": "0"
+            }
+          ],
+          "HOU RUSHING": [
+            {
+              "PLAYER": "L. MILLER",
+              "AVG": "7.40",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. BLUE",
+              "AVG": "2.80",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. WATSON",
+              "AVG": "14",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. WEEDEN",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "35-188-1",
           "Comp-Int-Yds-TD-INT": "16-20-239-5-0",
@@ -1662,6 +1811,163 @@
       },
       "Miami Dolphins": {
         "Coach": "Adam Gase",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "R. MCMILLAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. ALONSO",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MCCAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. MCDONALD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. SPENCE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. FITZPATRICK",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "X. HOWARD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BAKER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. BRANCH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GODCHAUX",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PITTMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. QUINN",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "J. SANDERS",
+              "50+": "0",
+              "LONG": "46"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "B. OSWEILER",
+              "CMP%": "56.80",
+              "AVG": "6.51"
+            },
+            {
+              "PLAYER": "D. AMENDOLA",
+              "CMP%": "100",
+              "AVG": "28"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "M. HAACK",
+              "IN 20": "3"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "D. PARKER",
+              "YAC": "47"
+            },
+            {
+              "PLAYER": "D. AMENDOLA",
+              "YAC": "16"
+            },
+            {
+              "PLAYER": "K. DRAKE",
+              "YAC": "12"
+            },
+            {
+              "PLAYER": "J. GRANT",
+              "YAC": "13"
+            },
+            {
+              "PLAYER": "M. GESICKI",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "F. GORE",
+              "YAC": "8"
+            },
+            {
+              "PLAYER": "D. SMYTHE",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "K. DRAKE",
+              "AVG": "4.83",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "F. GORE",
+              "AVG": "4.42",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "K. BALLAGE",
+              "AVG": "5",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-116-1",
           "Comp-Int-Yds-TD-INT": "22-38-269-1-1",
@@ -3469,7 +3775,8 @@
       "Fecha": "25 de octubre de 2018",
       "Estadio": "NRG Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
-      "Superficie de juego": "astroturf"
+      "Superficie de juego": "astroturf",
+      "Gamebook oficial": "assets/gamebooks/2018/201810250htx.pdf"
     },
     "Oficiales": [
       {

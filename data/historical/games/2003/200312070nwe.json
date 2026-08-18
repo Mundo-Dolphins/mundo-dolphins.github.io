@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:35Z",
+  "generated_at": "2026-08-17T20:24:33Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
@@ -65,6 +65,161 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Dave Wannstedt",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "S. KNIGHT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. OGUNLEYE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. SEAU",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. GREENWOOD",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. FREEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. CHESTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ZGONINA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. AYANBADEJO",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. HENDRICKS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JENKINS",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "J. FIEDLER",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. WADE",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "col_1": "TEAM",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "J. FIEDLER",
+              "CMP%": "41.94",
+              "AVG": "3.58"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "M. TURK",
+              "IN 20": "1"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "D. THOMPSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. KONRAD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. MCKNIGHT",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. MCMICHAEL",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. MINOR",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "2.70",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. FIEDLER",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-68-0",
           "Comp-Int-Yds-TD-INT": "13-31-111-0-2",
@@ -799,6 +954,171 @@
       },
       "New England Patriots": {
         "Coach": "Bill Belichick",
+        "Estadisticas NFL.com": {
+          "NE DEFENSE": [
+            {
+              "PLAYER": "R. HARRISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. WASHINGTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. VRABEL",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BRUSCHI",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "R. SEYMOUR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. WILSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. JOHNSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. LAW",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. PHIFER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. CHERRY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. GREEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. HAMILTON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. MCGINEST",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. POOLE",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "NE FUMBLES": [
+            {
+              "PLAYER": "K. FAULK",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "T. POOLE",
+              "FR": "0"
+            }
+          ],
+          "NE KICKING": [
+            {
+              "PLAYER": "A. VINATIERI",
+              "50+": "0",
+              "LONG": "29"
+            }
+          ],
+          "NE PASSING": [
+            {
+              "PLAYER": "T. BRADY",
+              "CMP%": "51.61",
+              "AVG": "5.26"
+            }
+          ],
+          "NE PUNTING": [
+            {
+              "PLAYER": "B. BARNARD",
+              "IN 20": "4"
+            },
+            {
+              "PLAYER": "T. BRADY",
+              "IN 20": "1"
+            }
+          ],
+          "NE RECEIVING": [
+            {
+              "PLAYER": "D. BRANCH",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "D. GRAHAM",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. GIVENS",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "K. FAULK",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "D. WARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "C. FAURIA",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "B. JOHNSON",
+              "YAC": "0"
+            }
+          ],
+          "NE RUSHING": [
+            {
+              "PLAYER": "A. SMITH",
+              "AVG": "2.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "K. FAULK",
+              "AVG": "4",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. POOLE",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. BRADY",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "34-78-0",
           "Comp-Int-Yds-TD-INT": "16-31-163-0-0",
@@ -1588,7 +1908,8 @@
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "28 grados, humedad relativa 69%, viento 15 mph, viento chill 17"
+      "Clima": "28 grados, humedad relativa 69%, viento 15 mph, viento chill 17",
+      "Gamebook oficial": "assets/gamebooks/2003/200312070nwe.pdf"
     },
     "Oficiales": [
       {

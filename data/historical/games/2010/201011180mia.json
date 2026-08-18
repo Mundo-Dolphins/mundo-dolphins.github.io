@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:37Z",
+  "generated_at": "2026-08-17T20:24:38Z",
   "page": {
     "kind": "game",
     "title": "Chicago Bears vs Miami Dolphins",
@@ -73,6 +73,158 @@
     "Equipos": {
       "Chicago Bears": {
         "Coach": "Lovie Smith",
+        "Estadisticas NFL.com": {
+          "CHI DEFENSE": [
+            {
+              "PLAYER": "L. BRIGGS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PEPPERS",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. TILLMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. URLACHER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "H. MELTON",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. HARRIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. WRIGHT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. ADAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. BOWMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. GRAHAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. HARRIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "I. IDONIJE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. JENNINGS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. MOORE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. ROACH",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "CHI FUMBLES": [
+            {
+              "PLAYER": "J. CUTLER",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "C. WILLIAMS",
+              "FR": "1"
+            }
+          ],
+          "CHI KICKING": [
+            {
+              "PLAYER": "R. GOULD",
+              "50+": "1",
+              "LONG": "50"
+            }
+          ],
+          "CHI PASSING": [
+            {
+              "PLAYER": "J. CUTLER",
+              "CMP%": "64",
+              "AVG": "6.24"
+            }
+          ],
+          "CHI PUNTING": [
+            {
+              "PLAYER": "B. MAYNARD",
+              "IN 20": "0"
+            }
+          ],
+          "CHI RECEIVING": [
+            {
+              "PLAYER": "J. KNOX",
+              "YAC": "17"
+            },
+            {
+              "PLAYER": "D. HESTER",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "G. OLSEN",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "E. BENNETT",
+              "YAC": "11"
+            },
+            {
+              "PLAYER": "M. FORTE",
+              "YAC": "13"
+            },
+            {
+              "PLAYER": "K. DAVIS",
+              "YAC": "0"
+            }
+          ],
+          "CHI RUSHING": [
+            {
+              "PLAYER": "M. FORTE",
+              "AVG": "3.88",
+              "20+": "1"
+            },
+            {
+              "PLAYER": "J. CUTLER",
+              "AVG": "7",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. TAYLOR",
+              "AVG": "0.90",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "40-135-1",
           "Comp-Int-Yds-TD-INT": "16-25-156-0-1",
@@ -724,6 +876,180 @@
       },
       "Miami Dolphins": {
         "Coach": "Tony Sparano",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "K. DANSBY",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CROWDER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. LANGFORD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. MCDANIEL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. DENNEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MISI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SAPP",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. STARKS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BAKER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BESS",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "R. INCOGNITO",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. THIGPEN",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "B. HARTLINE",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "col_1": "TEAM",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "T. THIGPEN",
+              "CMP%": "58.60",
+              "AVG": "6.45"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "3"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "B. HARTLINE",
+              "YAC": "21"
+            },
+            {
+              "PLAYER": "B. MARSHALL",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "M. MOORE",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "18"
+            },
+            {
+              "PLAYER": "A. FASANO",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. BESS",
+              "YAC": "11"
+            },
+            {
+              "PLAYER": "P. COBBS",
+              "YAC": "2"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "T. THIGPEN",
+              "AVG": "4.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "3.33",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "P. COBBS",
+              "AVG": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "0.30",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. INCOGNITO",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "13-39-0",
           "Comp-Int-Yds-TD-INT": "17-29-187-0-1",
@@ -1470,7 +1796,8 @@
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "75 grados, humedad relativa 77%, viento 8 mph, viento chill 0"
+      "Clima": "75 grados, humedad relativa 77%, viento 8 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2010/201011180mia.pdf"
     },
     "Oficiales": [
       {

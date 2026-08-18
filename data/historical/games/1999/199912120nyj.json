@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:30Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs New York Jets",
@@ -121,6 +121,162 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "R. OWENS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. WOODEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GARDENER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JACKSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. BRIGANCE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. BROMELL",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "33"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "47.50",
+              "AVG": "4.70"
+            },
+            {
+              "PLAYER": "D. HUARD",
+              "CMP%": "85.70",
+              "AVG": "10.71"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "T. HUTTON",
+              "IN 20": "1"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "Y. GREEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. DRAYTON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. KONRAD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "N. JACQUET",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "A. DENSON",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "S. PRITCHETT",
+              "AVG": "4",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. DENSON",
+              "AVG": "2.50",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "19-73-1",
           "Comp-Int-Yds-TD-INT": "25-47-263-1-2",
@@ -891,6 +1047,179 @@
       },
       "New York Jets": {
         "Coach": "Bill Parcells",
+        "Estadisticas NFL.com": {
+          "NYJ DEFENSE": [
+            {
+              "PLAYER": "D. GORDON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. LEWIS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. GREEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. FARRIOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. COLEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. PHIFER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "O. STOUTMIRE",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "S. ATWATER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. FARMER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. GLENN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. LYLE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. PLEASANT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BOOSE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. DAILEY",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "NYJ FUMBLES": [
+            {
+              "PLAYER": "D. STONE",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "D. WARD",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "F. BAXTER",
+              "FR": "1"
+            }
+          ],
+          "NYJ KICKING": [
+            {
+              "PLAYER": "J. HALL",
+              "50+": "0",
+              "LONG": "46"
+            }
+          ],
+          "NYJ PASSING": [
+            {
+              "PLAYER": "R. LUCAS",
+              "CMP%": "57.90",
+              "AVG": "6.05"
+            }
+          ],
+          "NYJ PUNTING": [
+            {
+              "PLAYER": "T. TUPA",
+              "IN 20": "3"
+            }
+          ],
+          "NYJ RECEIVING": [
+            {
+              "PLAYER": "K. JOHNSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "W. CHREBET",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. WARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. ANDERSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "E. GREEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "C. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "F. BAXTER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "Q. EARLY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "B. PARMALEE",
+              "YAC": "0"
+            }
+          ],
+          "NYJ RUSHING": [
+            {
+              "PLAYER": "C. MARTIN",
+              "AVG": "3.10",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. LUCAS",
+              "AVG": "5",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. STONE",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. WARD",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "28-95-0",
           "Comp-Int-Yds-TD-INT": "22-38-230-2-0",
@@ -1782,7 +2111,8 @@
       "Estadio": "Giants Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "astroturf",
-      "Clima": "46 grados, humedad relativa 38%, viento 12 mph, viento chill 0"
+      "Clima": "46 grados, humedad relativa 38%, viento 12 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/1999/199912120nyj.pdf"
     },
     "Oficiales": [
       {

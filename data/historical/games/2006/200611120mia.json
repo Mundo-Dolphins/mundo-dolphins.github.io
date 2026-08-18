@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:36Z",
+  "generated_at": "2026-08-17T20:24:35Z",
   "page": {
     "kind": "game",
     "title": "Kansas City Chiefs vs Miami Dolphins",
@@ -81,6 +81,154 @@
     "Equipos": {
       "Kansas City Chiefs": {
         "Coach": "Herm Edwards",
+        "Estadisticas NFL.com": {
+          "KC DEFENSE": [
+            {
+              "PLAYER": "K. MITCHELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ALLEN",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. FOX",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. LAW",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. PAGE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. WALLS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WILKERSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. HICKS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. REED",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. EDWARDS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. GARDNER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. GRIGSBY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. HALI",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "KC FUMBLES": [
+            {
+              "PLAYER": "D. HALL",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "K. GRIFFIN",
+              "FR": "1"
+            }
+          ],
+          "KC KICKING": [
+            {
+              "PLAYER": "L. TYNES",
+              "50+": "0",
+              "LONG": "27"
+            }
+          ],
+          "KC PASSING": [
+            {
+              "PLAYER": "D. HUARD",
+              "CMP%": "39.50",
+              "AVG": "5.29"
+            }
+          ],
+          "KC PUNTING": [
+            {
+              "PLAYER": "D. COLQUITT",
+              "IN 20": "1"
+            }
+          ],
+          "KC RECEIVING": [
+            {
+              "PLAYER": "T. GONZALEZ",
+              "YAC": "37"
+            },
+            {
+              "PLAYER": "E. KENNISON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. HALL",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "L. JOHNSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. PARKER",
+              "YAC": "0"
+            }
+          ],
+          "KC RUSHING": [
+            {
+              "PLAYER": "L. JOHNSON",
+              "AVG": "4.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. PARKER",
+              "AVG": "5",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. HALL",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "19-80-1",
           "Comp-Int-Yds-TD-INT": "15-38-201-0-0",
@@ -732,6 +880,185 @@
       },
       "Miami Dolphins": {
         "Coach": "Nick Saban",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. HILL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CROWDER",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "V. HOLLIDAY",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. SPRAGAN",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ZGONINA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. DANIELS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. GOODMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ALLEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ROTH",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. TRAYLOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. WILKINSON",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "R. BROWN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "W. WELKER",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "M. ROTH",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "40"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "J. HARRINGTON",
+              "CMP%": "54.30",
+              "AVG": "5.74"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "CMP%": "0",
+              "AVG": "0"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "D. JONES",
+              "IN 20": "2"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "C. CHAMBERS",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "W. WELKER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. MCMICHAEL",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. MORRIS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "J. PEELLE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. HAGAN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "3.56",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. MORRIS",
+              "AVG": "3.30",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. HARRINGTON",
+              "AVG": "1.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "AVG": "2",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "W. WELKER",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "36-117-1",
           "Comp-Int-Yds-TD-INT": "19-36-201-0-0",
@@ -1400,7 +1727,8 @@
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "81 grados, humedad relativa 50%, viento 9 mph, viento chill 0"
+      "Clima": "81 grados, humedad relativa 50%, viento 9 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2006/200611120mia.pdf"
     },
     "Oficiales": [
       {

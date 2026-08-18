@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:34Z",
+  "generated_at": "2026-08-17T20:24:32Z",
   "page": {
     "kind": "game",
     "title": "Buffalo Bills vs Miami Dolphins",
@@ -97,6 +97,158 @@
     "Equipos": {
       "Buffalo Bills": {
         "Coach": "Gregg Williams",
+        "Estadisticas NFL.com": {
+          "BUF DEFENSE": [
+            {
+              "PLAYER": "P. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. ROBINSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. CLEMENTS",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "L. FLETCHER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. EDWARDS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. JENKINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. PRIOLEAU",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WATSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WIRE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "G. IRONS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. NEWMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. SCHOBEL",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. AHANOTU",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BANNAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BOSTIC",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "BUF FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "BUF KICKING": [
+            {
+              "PLAYER": "M. HOLLIS",
+              "50+": "0",
+              "LONG": "46"
+            }
+          ],
+          "BUF PASSING": [
+            {
+              "PLAYER": "D. BLEDSOE",
+              "CMP%": "48.39",
+              "AVG": "5.87"
+            }
+          ],
+          "BUF PUNTING": [
+            {
+              "PLAYER": "B. MOORMAN",
+              "IN 20": "2"
+            }
+          ],
+          "BUF RECEIVING": [
+            {
+              "PLAYER": "E. MOULDS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "L. CENTERS",
+              "YAC": "35"
+            },
+            {
+              "PLAYER": "P. PRICE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. RIEMERSMA",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. REED",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. HENRY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "C. JOHNSON",
+              "YAC": "0"
+            }
+          ],
+          "BUF RUSHING": [
+            {
+              "PLAYER": "T. HENRY",
+              "AVG": "6",
+              "20+": "3"
+            },
+            {
+              "PLAYER": "D. BLEDSOE",
+              "AVG": "1.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. MOORMAN",
+              "AVG": "-6",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "27-132-0",
           "Comp-Int-Yds-TD-INT": "15-31-182-1-0",
@@ -777,6 +929,167 @@
       },
       "Miami Dolphins": {
         "Coach": "Dave Wannstedt",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. GREENWOOD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. FLETCHER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. FREEMAN",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WILLIAMS",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BURNETT",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. CHESTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. GALYON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. OGUNLEYE",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "R. LUCAS",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "42"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "R. LUCAS",
+              "CMP%": "39.40",
+              "AVG": "5"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "M. ROYALS",
+              "IN 20": "1"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "J. MCKNIGHT",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. MCMICHAEL",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. CLARK",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. WARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. KONRAD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. EDWARDS",
+              "YAC": "12"
+            },
+            {
+              "PLAYER": "R. BAKER",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "3.90",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. LUCAS",
+              "AVG": "3.60",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. EDWARDS",
+              "AVG": "4.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. MINOR",
+              "AVG": "4",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "34-132-0",
           "Comp-Int-Yds-TD-INT": "13-33-165-1-4",
@@ -1497,7 +1810,8 @@
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "85 grados, humedad relativa 69%, viento 9 mph, viento chill 0"
+      "Clima": "85 grados, humedad relativa 69%, viento 9 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2002/200210200mia.pdf"
     },
     "Oficiales": [
       {

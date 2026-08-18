@@ -1,0 +1,774 @@
+{
+  "schema": {
+    "name": "mundodolphins.hugo.sectioned-page",
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-08-18T11:01:28Z",
+  "page": {
+    "kind": "game",
+    "title": "Miami Dolphins vs Minnesota Vikings",
+    "date": "2017-08-31",
+    "slug": "mia-min-20170831",
+    "path": "historia/partidos/mia-min-20170831",
+    "params": {
+      "game_id": "201708310min"
+    }
+  },
+  "sections": {
+    "Anotaciones": {
+      "linescore": [],
+      "scoring_summary": []
+    },
+    "Conteo de snaps": {},
+    "Equipos": {
+      "Miami Dolphins": {
+        "Coach": "",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "C. ALLEN",
+              "TOT": "8",
+              "SOLO": "8",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "J. LUCAS",
+              "TOT": "8",
+              "SOLO": "4",
+              "SACKS": "1",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "1",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. REILLY",
+              "TOT": "5",
+              "SOLO": "5",
+              "SACKS": "1",
+              "TFL": "1",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "1",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "V. TAYLOR",
+              "TOT": "5",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. MCTYER",
+              "TOT": "3",
+              "SOLO": "3",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "2",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "M. THOMAS",
+              "TOT": "3",
+              "SOLO": "3",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. FEDE",
+              "TOT": "2",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "1",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "2",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. MCDONALD",
+              "TOT": "2",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "D. GODCHAUX",
+              "TOT": "1",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "J. PHILLIPS",
+              "TOT": "1",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "M. SMITH",
+              "TOT": "1",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "C. TANKERSLEY",
+              "TOT": "1",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "C. MALVEAUX",
+              "TOT": "0",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "1",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "K. DRAKE",
+              "FUM": "1",
+              "LOST": "0",
+              "FR": "1"
+            }
+          ],
+          "MIA INTERCEPTIONS": [
+            {
+              "col_1": "TEAM",
+              "INT": "0",
+              "INT YDS": "0",
+              "INT TD": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "col_1": "TEAM",
+              "FGM": "0",
+              "FGA": "0",
+              "XP": "0",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIA KICKOFF RETURNS": [
+            {
+              "PLAYER": "T. MCTYER",
+              "RET": "4",
+              "AVG": "19.50",
+              "TD": "0",
+              "LONG": "30"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. FALES",
+              "CMP": "12",
+              "ATT": "20",
+              "YDS": "193",
+              "CMP%": "60",
+              "AVG": "9.65",
+              "TD": "3",
+              "INT": "0",
+              "SACKS": "0",
+              "RATING": "131.88"
+            },
+            {
+              "PLAYER": "B. DOUGHTY",
+              "CMP": "8",
+              "ATT": "17",
+              "YDS": "106",
+              "CMP%": "47.06",
+              "AVG": "6.24",
+              "TD": "0",
+              "INT": "0",
+              "SACKS": "1",
+              "RATING": "67.28"
+            }
+          ],
+          "MIA PUNT RETURNS": [
+            {
+              "PLAYER": "D. MORGAN",
+              "RET": "1",
+              "AVG": "9",
+              "TD": "0",
+              "LONG": "9"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "M. HAACK",
+              "PUNTS": "3",
+              "AVG": "48.30",
+              "IN 20": "0",
+              "LONG": "49"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "J. GRANT",
+              "REC": "4",
+              "YDS": "141",
+              "TD": "1",
+              "TGTS": "6",
+              "LONG": "65",
+              "YAC": "44"
+            },
+            {
+              "PLAYER": "D. MORGAN",
+              "REC": "3",
+              "YDS": "47",
+              "TD": "0",
+              "TGTS": "6",
+              "LONG": "24",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "M. GRAY",
+              "REC": "4",
+              "YDS": "19",
+              "TD": "1",
+              "TGTS": "6",
+              "LONG": "6",
+              "YAC": "6"
+            },
+            {
+              "PLAYER": "L. CARROO",
+              "REC": "1",
+              "YDS": "12",
+              "TD": "0",
+              "TGTS": "3",
+              "LONG": "12",
+              "YAC": "8"
+            },
+            {
+              "PLAYER": "M. LEWIS",
+              "REC": "1",
+              "YDS": "4",
+              "TD": "0",
+              "TGTS": "1",
+              "LONG": "4",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. SMITH",
+              "REC": "1",
+              "YDS": "2",
+              "TD": "0",
+              "TGTS": "1",
+              "LONG": "2",
+              "YAC": "1"
+            },
+            {
+              "PLAYER": "K. DRAKE",
+              "REC": "0",
+              "YDS": "0",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "0",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "K. DRAKE",
+              "ATT": "8",
+              "YDS": "27",
+              "TD": "1",
+              "AVG": "3.38",
+              "LONG": "13",
+              "FUM": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. SMITH",
+              "ATT": "4",
+              "YDS": "19",
+              "TD": "0",
+              "AVG": "4.80",
+              "LONG": "12",
+              "FUM": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. FALES",
+              "ATT": "1",
+              "YDS": "-1",
+              "TD": "0",
+              "AVG": "-1",
+              "LONG": "-1",
+              "FUM": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. DOUGHTY",
+              "ATT": "2",
+              "YDS": "-2",
+              "TD": "0",
+              "AVG": "-1",
+              "LONG": "-1",
+              "FUM": "0",
+              "20+": "0"
+            }
+          ]
+        },
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 30,
+        "Record": ""
+      },
+      "Minnesota Vikings": {
+        "Coach": "",
+        "Estadisticas NFL.com": {
+          "MIN DEFENSE": [
+            {
+              "PLAYER": "J. JOHNSON",
+              "TOT": "4",
+              "SOLO": "3",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "K. BROTHERS",
+              "TOT": "3",
+              "SOLO": "3",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "E. WILSON",
+              "TOT": "3",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "2",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "T. BOWER",
+              "TOT": "2",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "1",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "2",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "A. EXUM",
+              "TOT": "2",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "J. KEARSE",
+              "TOT": "2",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "J. TOCHO",
+              "TOT": "2",
+              "SOLO": "2",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "M. ALEXANDER",
+              "TOT": "1",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "D. BRADLEY",
+              "TOT": "1",
+              "SOLO": "1",
+              "SACKS": "1",
+              "TFL": "1",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "1",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "B. GEDEON",
+              "TOT": "1",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "I. ODENIGBO",
+              "TOT": "1",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "2",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "H. RICHARDSON",
+              "TOT": "1",
+              "SOLO": "1",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "0",
+              "INT": "0",
+              "QBP": "0",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "S. WEATHERLY",
+              "TOT": "1",
+              "SOLO": "0",
+              "SACKS": "0",
+              "TFL": "0",
+              "PD": "1",
+              "INT": "0",
+              "QBP": "1",
+              "INT TD": "0",
+              "FF": "0",
+              "FR": "0"
+            }
+          ],
+          "MIN FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FUM": "0",
+              "LOST": "0",
+              "FR": "0"
+            }
+          ],
+          "MIN INTERCEPTIONS": [
+            {
+              "col_1": "TEAM",
+              "INT": "0",
+              "INT YDS": "0",
+              "INT TD": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIN KICKING": [
+            {
+              "PLAYER": "K. FORBATH",
+              "FGM": "1",
+              "FGA": "1",
+              "XP": "0",
+              "50+": "0",
+              "LONG": "24"
+            }
+          ],
+          "MIN KICKOFF RETURNS": [
+            {
+              "PLAYER": "R. ADAMS",
+              "RET": "1",
+              "AVG": "19",
+              "TD": "0",
+              "LONG": "19"
+            },
+            {
+              "PLAYER": "R. SHELTON",
+              "RET": "1",
+              "AVG": "30",
+              "TD": "0",
+              "LONG": "30"
+            }
+          ],
+          "MIN PASSING": [
+            {
+              "col_1": "TEAM",
+              "CMP": "0",
+              "ATT": "0",
+              "YDS": "0",
+              "CMP%": "0",
+              "AVG": "0",
+              "TD": "0",
+              "INT": "0",
+              "SACKS": "0",
+              "RATING": "0"
+            }
+          ],
+          "MIN PUNT RETURNS": [
+            {
+              "PLAYER": "R. ADAMS",
+              "RET": "2",
+              "AVG": "3.50",
+              "TD": "0",
+              "LONG": "6"
+            },
+            {
+              "PLAYER": "S. COLEY",
+              "RET": "1",
+              "AVG": "2",
+              "TD": "0",
+              "LONG": "2"
+            },
+            {
+              "PLAYER": "C. JONES",
+              "RET": "1",
+              "AVG": "0",
+              "TD": "0",
+              "LONG": "0"
+            }
+          ],
+          "MIN PUNTING": [
+            {
+              "PLAYER": "R. QUIGLEY",
+              "PUNTS": "6",
+              "AVG": "44.50",
+              "IN 20": "3",
+              "LONG": "54"
+            }
+          ],
+          "MIN RECEIVING": [
+            {
+              "PLAYER": "C. JONES",
+              "REC": "9",
+              "YDS": "127",
+              "TD": "1",
+              "TGTS": "10",
+              "LONG": "29",
+              "YAC": "25"
+            },
+            {
+              "PLAYER": "K. CARTER",
+              "REC": "3",
+              "YDS": "23",
+              "TD": "0",
+              "TGTS": "6",
+              "LONG": "13",
+              "YAC": "14"
+            },
+            {
+              "PLAYER": "B. HILL",
+              "REC": "2",
+              "YDS": "21",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "16",
+              "YAC": "28"
+            },
+            {
+              "PLAYER": "N. TRUESDELL",
+              "REC": "2",
+              "YDS": "14",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "9",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "L. TREADWELL",
+              "REC": "1",
+              "YDS": "9",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "9",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "S. COLEY",
+              "REC": "1",
+              "YDS": "5",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "5",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. HODGES",
+              "REC": "1",
+              "YDS": "5",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "5",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "R. ADAMS",
+              "REC": "0",
+              "YDS": "0",
+              "TD": "0",
+              "TGTS": "3",
+              "LONG": "0",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. FLOYD",
+              "REC": "0",
+              "YDS": "0",
+              "TD": "0",
+              "TGTS": "2",
+              "LONG": "0",
+              "YAC": "0"
+            }
+          ],
+          "MIN RUSHING": [
+            {
+              "PLAYER": "B. HILL",
+              "ATT": "13",
+              "YDS": "35",
+              "TD": "0",
+              "AVG": "2.70",
+              "LONG": "8",
+              "FUM": "0",
+              "20+": "0"
+            }
+          ]
+        },
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 9,
+        "Record": ""
+      }
+    },
+    "Estadísticas avanzadas": {},
+    "Información del partido": {
+      "Semana": "Preseason 4",
+      "Fecha": "31 de agosto de 2017",
+      "Gamebook oficial": "assets/gamebooks/2017/201708310min.pdf"
+    },
+    "Oficiales": [],
+    "Series ofensivas": {},
+    "Videos del partido": []
+  }
+}

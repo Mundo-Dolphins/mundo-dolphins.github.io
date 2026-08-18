@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:39Z",
+  "generated_at": "2026-08-17T20:24:41Z",
   "page": {
     "kind": "game",
     "title": "Buffalo Bills vs Miami Dolphins",
@@ -990,6 +990,167 @@
     "Equipos": {
       "Buffalo Bills": {
         "Coach": "Doug Marrone",
+        "Estadisticas NFL.com": {
+          "BUF DEFENSE": [
+            {
+              "PLAYER": "C. GRAHAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. SEARCY",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. WILLIAMS",
+              "QBP": "4",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. BRADHAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. BROWN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. HUGHES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. ROBEY-COLEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. GILMORE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. MCKELVIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SPIKES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. BRYANT",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. CHARLES",
+              "QBP": "1",
+              "INT TD": "0"
+            }
+          ],
+          "BUF FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "BUF KICKING": [
+            {
+              "PLAYER": "D. CARPENTER",
+              "50+": "0",
+              "LONG": "46"
+            }
+          ],
+          "BUF PASSING": [
+            {
+              "PLAYER": "K. ORTON",
+              "CMP%": "56.40",
+              "AVG": "4.95"
+            }
+          ],
+          "BUF PUNTING": [
+            {
+              "PLAYER": "C. SCHMIDT",
+              "IN 20": "0"
+            }
+          ],
+          "BUF RECEIVING": [
+            {
+              "PLAYER": "C. HOGAN",
+              "YAC": "35"
+            },
+            {
+              "PLAYER": "B. BROWN",
+              "YAC": "58"
+            },
+            {
+              "PLAYER": "S. WATKINS",
+              "YAC": "11"
+            },
+            {
+              "PLAYER": "R. WOODS",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "A. DIXON",
+              "YAC": "3"
+            },
+            {
+              "PLAYER": "C. GRAGG",
+              "YAC": "1"
+            },
+            {
+              "PLAYER": "S. CHANDLER",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. WILLIAMS",
+              "YAC": "0"
+            }
+          ],
+          "BUF RUSHING": [
+            {
+              "PLAYER": "A. DIXON",
+              "AVG": "3.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. BROWN",
+              "AVG": "2.33",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. WATKINS",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "K. ORTON",
+              "AVG": "1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "19-54-0",
           "Comp-Int-Yds-TD-INT": "22-39-193-0-0",
@@ -1627,6 +1788,179 @@
       },
       "Miami Dolphins": {
         "Coach": "Joe Philbin",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. DELMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. JENKINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MISI",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. GRIMES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. SHELBY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. STARKS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. WHEELER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WILSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. FREENY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. JAMES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. JORDAN",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "J. LANDRY",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "R. TANNEHILL",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "C. STURGIS",
+              "50+": "0",
+              "LONG": "38"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "R. TANNEHILL",
+              "CMP%": "76.50",
+              "AVG": "7.06"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "2"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "B. HARTLINE",
+              "YAC": "44"
+            },
+            {
+              "PLAYER": "J. LANDRY",
+              "YAC": "24"
+            },
+            {
+              "PLAYER": "M. WALLACE",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "D. WILLIAMS",
+              "YAC": "31"
+            },
+            {
+              "PLAYER": "C. CLAY",
+              "YAC": "10"
+            },
+            {
+              "PLAYER": "B. GIBSON",
+              "YAC": "2"
+            },
+            {
+              "PLAYER": "L. MILLER",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "D. SIMS",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "R. MATTHEWS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. TANNEHILL",
+              "YAC": "3"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "L. MILLER",
+              "AVG": "5.70",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. THOMAS",
+              "AVG": "4.60",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. TANNEHILL",
+              "AVG": "4",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. LANDRY",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "24-125-0",
           "Comp-Int-Yds-TD-INT": "26-34-240-2-0",
@@ -2343,7 +2677,8 @@
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "74 grados, humedad relativa 76%, viento 4 mph, viento chill 0"
+      "Clima": "74 grados, humedad relativa 76%, viento 4 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2014/201411130mia.pdf"
     },
     "Oficiales": [
       {

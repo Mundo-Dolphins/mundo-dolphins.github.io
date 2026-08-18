@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:29Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Oakland Raiders",
@@ -99,6 +99,211 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "J. TAYLOR",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Z. THOMAS",
+              "TFL": "0",
+              "PD": "2",
+              "QBP": "0",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "TFL": "2",
+              "PD": "4",
+              "QBP": "2",
+              "INT TD": "1"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BUCKLEY",
+              "TFL": "0",
+              "PD": "3",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "TFL": "1",
+              "PD": "4",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. BROMELL",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JACKSON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MIXON",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. TANNER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. WALKER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "D. MARINO",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "B. PARMALEE",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "47"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "66.70",
+              "AVG": "5.15"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "K. WILMSMEYER",
+              "IN 20": "3"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "O. MCDUFFIE",
+              "YAC": "45"
+            },
+            {
+              "PLAYER": "B. PARMALEE",
+              "YAC": "35"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "22"
+            },
+            {
+              "PLAYER": "A. AL-JABBAR",
+              "YAC": "21"
+            },
+            {
+              "PLAYER": "E. PERRY",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "L. THOMAS",
+              "YAC": "15"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "9"
+            },
+            {
+              "PLAYER": "J. AVERY",
+              "YAC": "4"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "A. AL-JABBAR",
+              "AVG": "4.95",
+              "20+": "2"
+            },
+            {
+              "PLAYER": "O. MCDUFFIE",
+              "AVG": "2",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "B. PARMALEE",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. AVERY",
+              "AVG": "-0.33",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "31-90-0",
           "Comp-Int-Yds-TD-INT": "22-33-170-1-0",
@@ -728,6 +933,221 @@
       },
       "Oakland Raiders": {
         "Coach": "Jon Gruden",
+        "Estadisticas NFL.com": {
+          "OAK DEFENSE": [
+            {
+              "PLAYER": "G. BIEKERT",
+              "TFL": "3",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. WOODEN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. LEWIS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. NEWMAN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WOODSON",
+              "TFL": "0",
+              "PD": "1",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. HARRIS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. BROOKS",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. HARVEY",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "G. JACKSON",
+              "TFL": "1",
+              "PD": "2",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. JOHNSTONE",
+              "TFL": "2",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. MARYLAND",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. WALKER",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. RIDDICK",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RUSSELL",
+              "TFL": "1",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BROWN",
+              "TFL": "0",
+              "PD": "0",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "OAK FUMBLES": [
+            {
+              "PLAYER": "D. HOLLAS",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "FR": "0"
+            }
+          ],
+          "OAK KICKING": [
+            {
+              "PLAYER": "G. DAVIS",
+              "50+": "0",
+              "LONG": "40"
+            }
+          ],
+          "OAK PASSING": [
+            {
+              "PLAYER": "D. HOLLAS",
+              "CMP%": "38.70",
+              "AVG": "4.90"
+            },
+            {
+              "PLAYER": "W. WILSON",
+              "CMP%": "66.70",
+              "AVG": "6.25"
+            },
+            {
+              "PLAYER": "H. WILLIAMS",
+              "CMP%": "100",
+              "AVG": "27"
+            }
+          ],
+          "OAK PUNTING": [
+            {
+              "PLAYER": "L. ARAGUZ",
+              "IN 20": "1"
+            }
+          ],
+          "OAK RECEIVING": [
+            {
+              "PLAYER": "T. BROWN",
+              "YAC": "104"
+            },
+            {
+              "PLAYER": "J. JETT",
+              "YAC": "49"
+            },
+            {
+              "PLAYER": "T. MICKENS",
+              "YAC": "29"
+            },
+            {
+              "PLAYER": "H. WILLIAMS",
+              "YAC": "28"
+            },
+            {
+              "PLAYER": "J. RITCHIE",
+              "YAC": "23"
+            },
+            {
+              "PLAYER": "K. SHEDD",
+              "YAC": "21"
+            },
+            {
+              "PLAYER": "R. DUDLEY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "N. KAUFMAN",
+              "YAC": "0"
+            }
+          ],
+          "OAK RUSHING": [
+            {
+              "PLAYER": "H. WILLIAMS",
+              "AVG": "9.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "N. KAUFMAN",
+              "AVG": "2.60",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. HOLLAS",
+              "AVG": "5",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. RITCHIE",
+              "AVG": "3",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "W. WILSON",
+              "AVG": "2.50",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "23-107-0",
           "Comp-Int-Yds-TD-INT": "21-44-254-2-6",
@@ -1348,7 +1768,8 @@
       "Estadio": "Network Associates Coliseum",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "51 grados, humedad relativa 51%, viento 18 mph"
+      "Clima": "51 grados, humedad relativa 51%, viento 18 mph",
+      "Gamebook oficial": "assets/gamebooks/1998/199812060rai.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {

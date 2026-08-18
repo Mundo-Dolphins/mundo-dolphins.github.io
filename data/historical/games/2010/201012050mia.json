@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:37Z",
+  "generated_at": "2026-08-17T20:24:38Z",
   "page": {
     "kind": "game",
     "title": "Cleveland Browns vs Miami Dolphins",
@@ -81,6 +81,150 @@
     "Equipos": {
       "Cleveland Browns": {
         "Coach": "Eric Mangini",
+        "Estadisticas NFL.com": {
+          "CLE DEFENSE": [
+            {
+              "PLAYER": "A. ELAM",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. HADEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ROTH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. ADAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. COLEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. ROGERS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. SCHAEFERING",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TRUSNIK",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. WARD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. BENARD",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. BROWN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. GOCONG",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. RUBIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. BARTON",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "CLE FUMBLES": [
+            {
+              "PLAYER": "J. CRIBBS",
+              "FR": "1"
+            }
+          ],
+          "CLE KICKING": [
+            {
+              "PLAYER": "P. DAWSON",
+              "50+": "0",
+              "LONG": "32"
+            }
+          ],
+          "CLE PASSING": [
+            {
+              "PLAYER": "J. DELHOMME",
+              "CMP%": "70.59",
+              "AVG": "6.38"
+            }
+          ],
+          "CLE PUNTING": [
+            {
+              "PLAYER": "R. HODGES",
+              "IN 20": "2"
+            }
+          ],
+          "CLE RECEIVING": [
+            {
+              "PLAYER": "B. WATSON",
+              "YAC": "27"
+            },
+            {
+              "PLAYER": "M. MASSAQUOI",
+              "YAC": "34"
+            },
+            {
+              "PLAYER": "P. HILLIS",
+              "YAC": "19"
+            },
+            {
+              "PLAYER": "B. ROBISKIE",
+              "YAC": "6"
+            },
+            {
+              "PLAYER": "C. STUCKEY",
+              "YAC": "0"
+            }
+          ],
+          "CLE RUSHING": [
+            {
+              "PLAYER": "P. HILLIS",
+              "AVG": "3.17",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. CRIBBS",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. DELHOMME",
+              "AVG": "-1.25",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "22-52-0",
           "Comp-Int-Yds-TD-INT": "24-34-217-1-0",
@@ -646,6 +790,176 @@
       },
       "Miami Dolphins": {
         "Coach": "Tony Sparano",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "V. DAVIS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. DOBBINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. MISI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SOLIAI",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. WAKE",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "Y. BELL",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CLEMONS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. DANSBY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. STARKS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. COBBS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. LANGFORD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. MCDANIEL",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "N. CARROLL",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "J. AMAYA",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "D. CARPENTER",
+              "50+": "1",
+              "LONG": "60"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "C. HENNE",
+              "CMP%": "50",
+              "AVG": "5.44"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "B. FIELDS",
+              "IN 20": "4"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "D. BESS",
+              "YAC": "29"
+            },
+            {
+              "PLAYER": "A. FASANO",
+              "YAC": "13"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "34"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "YAC": "13"
+            },
+            {
+              "PLAYER": "P. COBBS",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "R. WALLACE",
+              "YAC": "1"
+            },
+            {
+              "PLAYER": "B. HARTLINE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. MOORE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "L. POLITE",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "R. BROWN",
+              "AVG": "3.13",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. WILLIAMS",
+              "AVG": "4.80",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. HENNE",
+              "AVG": "3.40",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. AMAYA",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. POLITE",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "32-114-0",
           "Comp-Int-Yds-TD-INT": "16-32-174-1-3",
@@ -1385,7 +1699,8 @@
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "76 grados, humedad relativa 52%, viento 10 mph, viento chill 0"
+      "Clima": "76 grados, humedad relativa 52%, viento 10 mph, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2010/201012050mia.pdf"
     },
     "Oficiales": [
       {

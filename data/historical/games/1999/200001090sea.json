@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:33Z",
+  "generated_at": "2026-08-17T20:24:30Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Seattle Seahawks",
@@ -97,6 +97,167 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. MARION",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. ARMSTRONG",
+              "QBP": "3",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. OWENS",
+              "QBP": "2",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. WOODEN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BOWENS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. HOLLIER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JACKSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "R. JONES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WILSON",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. GARDENER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. RODGERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "T. BUCKLEY",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "col_1": "TEAM",
+              "FR": "0"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "50"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "D. MARINO",
+              "CMP%": "56.70",
+              "AVG": "6.53"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "T. HUTTON",
+              "IN 20": "6"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "O. MCDUFFIE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "O. GADSDEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. KONRAD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "H. GOODWIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. JOHNSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "E. PERRY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "J. JOHNSON",
+              "AVG": "3.20",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. DENSON",
+              "AVG": "2.71",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. PRITCHETT",
+              "AVG": "2",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "D. MARINO",
+              "AVG": "-1",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "37-108-1",
           "Comp-Int-Yds-TD-INT": "17-30-196-1-0",
@@ -720,6 +881,154 @@
       },
       "Seattle Seahawks": {
         "Coach": "Mike Holmgren",
+        "Estadisticas NFL.com": {
+          "SEA DEFENSE": [
+            {
+              "PLAYER": "D. SMITH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. BROWN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. SPRINGS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. BELLAMY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. ADAMS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "P. DANIELS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. JOSEPH",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. KENNEDY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. KING",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. SIMMONS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "F. BOWNES",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. CANTY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. SINCLAIR",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "SEA FUMBLES": [
+            {
+              "PLAYER": "C. ROGERS",
+              "FR": "1"
+            }
+          ],
+          "SEA KICKING": [
+            {
+              "PLAYER": "T. PETERSON",
+              "50+": "0",
+              "LONG": "50"
+            }
+          ],
+          "SEA PASSING": [
+            {
+              "PLAYER": "J. KITNA",
+              "CMP%": "46.70",
+              "AVG": "5.40"
+            }
+          ],
+          "SEA PUNTING": [
+            {
+              "PLAYER": "J. FEAGLES",
+              "IN 20": "2"
+            }
+          ],
+          "SEA RECEIVING": [
+            {
+              "PLAYER": "S. DAWKINS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. PRITCHARD",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "C. FAURIA",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. GALLOWAY",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. WATTERS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "R. BROWN",
+              "YAC": "0"
+            }
+          ],
+          "SEA RUSHING": [
+            {
+              "PLAYER": "R. WATTERS",
+              "AVG": "2.10",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "J. KITNA",
+              "AVG": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. ROGERS",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "20-41-0",
           "Comp-Int-Yds-TD-INT": "14-30-162-1-2",
@@ -1396,7 +1705,8 @@
       "Fecha": "9 de enero de 2000",
       "Estadio": "Seattle Kingdome",
       "Tipo de estadio": "dome",
-      "Superficie de juego": "astroturf"
+      "Superficie de juego": "astroturf",
+      "Gamebook oficial": "assets/gamebooks/1999/200001090sea.pdf"
     },
     "Oficiales": [
       {

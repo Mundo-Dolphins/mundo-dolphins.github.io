@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-17T09:50:35Z",
+  "generated_at": "2026-08-17T20:24:34Z",
   "page": {
     "kind": "game",
     "title": "Cleveland Browns vs Miami Dolphins",
@@ -65,6 +65,158 @@
     "Equipos": {
       "Cleveland Browns": {
         "Coach": "Terry Robiskie",
+        "Estadisticas NFL.com": {
+          "CLE DEFENSE": [
+            {
+              "PLAYER": "R. GRIFFITH",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. THOMPSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. GARDNER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. HENRY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "L. SANDERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. WESTMORELAND",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. HOLDMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. JAMESON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. LANG",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "E. LITTLE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "K. BENTLEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. CARTER",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. MCKINLEY",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. MYERS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "G. WARREN",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "CLE FUMBLES": [
+            {
+              "PLAYER": "L. SUGGS",
+              "FR": "1"
+            },
+            {
+              "PLAYER": "R. ALSTON",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "L. MCCOWN",
+              "FR": "0"
+            }
+          ],
+          "CLE KICKING": [
+            {
+              "PLAYER": "P. DAWSON",
+              "50+": "0",
+              "LONG": "0"
+            }
+          ],
+          "CLE PASSING": [
+            {
+              "PLAYER": "L. MCCOWN",
+              "CMP%": "56.30",
+              "AVG": "10.06"
+            }
+          ],
+          "CLE PUNTING": [
+            {
+              "PLAYER": "D. FROST",
+              "IN 20": "2"
+            }
+          ],
+          "CLE RECEIVING": [
+            {
+              "PLAYER": "D. NORTHCUTT",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. HEIDEN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "A. BRYANT",
+              "YAC": "4"
+            },
+            {
+              "PLAYER": "L. SUGGS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "K. HEINRICH",
+              "YAC": "0"
+            }
+          ],
+          "CLE RUSHING": [
+            {
+              "PLAYER": "L. SUGGS",
+              "AVG": "3.80",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "R. ALSTON",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "L. MCCOWN",
+              "AVG": "-0.50",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "40-142-0",
           "Comp-Int-Yds-TD-INT": "9-16-161-1-2",
@@ -687,6 +839,207 @@
       },
       "Miami Dolphins": {
         "Coach": "Jim Bates",
+        "Estadisticas NFL.com": {
+          "MIA DEFENSE": [
+            {
+              "PLAYER": "Z. THOMAS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. TAYLOR",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. GREENWOOD",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. ZGONINA",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "J. WILLIAMS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. AYANBADEJO",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. BOWENS",
+              "QBP": "1",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "A. FREEMAN",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "C. JENKINS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "S. KNIGHT",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "M. MONDS",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "W. POOLE",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "B. ROBINSON",
+              "QBP": "0",
+              "INT TD": "0"
+            },
+            {
+              "PLAYER": "D. ROMERO",
+              "QBP": "0",
+              "INT TD": "0"
+            }
+          ],
+          "MIA FUMBLES": [
+            {
+              "PLAYER": "A. FEELEY",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "A. FREEMAN",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "FR": "0"
+            },
+            {
+              "PLAYER": "P. SURTAIN",
+              "FR": "1"
+            }
+          ],
+          "MIA KICKING": [
+            {
+              "PLAYER": "O. MARE",
+              "50+": "0",
+              "LONG": "51"
+            }
+          ],
+          "MIA PASSING": [
+            {
+              "PLAYER": "A. FEELEY",
+              "CMP%": "58.14",
+              "AVG": "4.09"
+            },
+            {
+              "PLAYER": "S. ROSENFELS",
+              "CMP%": "0",
+              "AVG": "0"
+            }
+          ],
+          "MIA PUNTING": [
+            {
+              "PLAYER": "M. TURK",
+              "IN 20": "2"
+            },
+            {
+              "PLAYER": "O. MARE",
+              "IN 20": "0"
+            }
+          ],
+          "MIA RECEIVING": [
+            {
+              "PLAYER": "R. MCMICHAEL",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. THOMPSON",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "M. BOOKER",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "YAC": "5"
+            },
+            {
+              "PLAYER": "B. GILMORE",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "J. MARTIN",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "S. MORRIS",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "T. MINOR",
+              "YAC": "0"
+            },
+            {
+              "PLAYER": "D. LEE",
+              "YAC": "0"
+            }
+          ],
+          "MIA RUSHING": [
+            {
+              "PLAYER": "S. MORRIS",
+              "AVG": "4.10",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "T. MINOR",
+              "AVG": "5",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "C. CHAMBERS",
+              "AVG": "16",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "V. KING",
+              "AVG": "1",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. FEELEY",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "A. FREEMAN",
+              "AVG": "0",
+              "20+": "0"
+            },
+            {
+              "PLAYER": "S. MADISON",
+              "AVG": "0",
+              "20+": "0"
+            }
+          ]
+        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-116-0",
           "Comp-Int-Yds-TD-INT": "25-44-176-1-0",
@@ -1446,7 +1799,8 @@
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",
       "Superficie de juego": "Césped",
-      "Clima": "55 grados, humedad relativa 77%, no viento, viento chill 0"
+      "Clima": "55 grados, humedad relativa 77%, no viento, viento chill 0",
+      "Gamebook oficial": "assets/gamebooks/2004/200412260mia.pdf"
     },
     "Oficiales": [
       {

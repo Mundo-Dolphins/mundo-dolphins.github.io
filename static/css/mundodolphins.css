@@ -2251,3 +2251,98 @@ body.body {
     height: 100%;
     border: 0;
 }
+
+/* -- Official gamebook PDF -- */
+.gamebook-viewer {
+    margin: 1.75rem 0;
+}
+
+.gamebook-viewer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.gamebook-viewer__header h2 {
+    margin: 0;
+}
+
+.gamebook-viewer__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.gamebook-viewer__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid #0b6f76;
+    border-radius: 6px;
+    color: #0b6f76;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    background: #fff;
+}
+
+.gamebook-viewer__button:hover,
+.gamebook-viewer__button:focus-visible {
+    color: #fff;
+    text-decoration: none;
+    background: #0b6f76;
+}
+
+.gamebook-viewer__button--primary {
+    color: #fff;
+    background: #0b6f76;
+}
+
+.gamebook-viewer__button--primary:hover,
+.gamebook-viewer__button--primary:focus-visible {
+    color: #fff;
+    background: #084f54;
+}
+
+.gamebook-viewer__frame {
+    height: min(78vh, 760px);
+    min-height: 520px;
+    overflow: hidden;
+    border: 1px solid #d7e5e8;
+    border-radius: 8px;
+    background: #f4fafb;
+}
+
+.gamebook-viewer__frame object {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.gamebook-viewer__frame p {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 620px) {
+    .gamebook-viewer__header {
+        display: block;
+    }
+
+    .gamebook-viewer__actions {
+        margin-top: 0.75rem;
+    }
+
+    .gamebook-viewer__button {
+        flex: 1 1 8rem;
+    }
+
+    .gamebook-viewer__frame {
+        height: 70vh;
+        min-height: 420px;
+    }
+}
