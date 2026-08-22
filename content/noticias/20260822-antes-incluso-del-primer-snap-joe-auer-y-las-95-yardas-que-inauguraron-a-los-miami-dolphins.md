@@ -267,4 +267,4 @@ Ese ya pertenecía a Joe Auer.
 **Resultado de Miami en 1966:** 3-11
 **MVP de los Dolphins en 1966:** Joe Auer
 
-{{ <youtube vOBAkS6M5Vk> }}
+{{< youtube vOBAkS6M5Vk >}}
