@@ -1173,6 +1173,22 @@ body.body {
     text-decoration: underline;
 }
 
+.season-video-link__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 2rem;
+    padding: 0.3rem 0.55rem;
+    border-radius: 999px;
+    background: #0b6f76;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
 /* Historia game pages */
 .history-game .history-season__hero {
     background: linear-gradient(145deg, #f5fbfc 0%, #e9f4f6 100%);
@@ -2250,6 +2266,112 @@ body.body {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* -- Season video archive -- */
+.history-season-videos .history-season__content {
+    display: block;
+}
+
+.season-video-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.season-video-card {
+    border: 1px solid rgba(0, 142, 151, 0.16);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.season-video-card__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.15rem 0;
+}
+
+.season-video-card__date {
+    margin: 0 0 0.25rem;
+    color: #0b6f76;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.season-video-card__title {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+}
+
+.season-video-card__game {
+    color: #0f2f33;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.season-video-card__game:hover {
+    color: #00727a;
+    text-decoration: underline;
+}
+
+.season-video-card__embed {
+    max-width: none;
+    margin: 1rem 1.15rem 1.15rem;
+}
+
+.season-video-fallback {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: #0f2f33;
+}
+
+.season-video-fallback__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.season-video-fallback__body {
+    position: absolute;
+    inset: auto 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    background: linear-gradient(180deg, rgba(15, 47, 51, 0), rgba(15, 47, 51, 0.92));
+}
+
+.season-video-fallback__label {
+    font-weight: 700;
+}
+
+.season-video-fallback__cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #0b6f76;
+    font-size: 0.86rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .season-video-fallback__body {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.45rem;
+    }
 }
 
 /* -- Official gamebook PDF -- */

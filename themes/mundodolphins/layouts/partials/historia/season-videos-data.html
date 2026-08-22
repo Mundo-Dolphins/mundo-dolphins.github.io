@@ -1,0 +1,83 @@
+{{/*
+  Devuelve un slice normalizado con los vídeos de los partidos de una temporada.
+
+  Recibe:
+    dict "year" <string|int>
+
+  Cada item devuelto incluye: anchor, sort_key, date, game_title, game_url,
+  video_title, youtube_id, video_url, embeddable.
+*/}}
+{{- $year := .year | string -}}
+{{- $items := slice -}}
+{{- $yearGames := index hugo.Data.historical.games $year -}}
+
+{{- with $yearGames -}}
+  {{- range $gameId, $gameData := . -}}
+    {{- $gameDateRaw := $gameData.page.date | default "" -}}
+    {{- $gameDate := "" -}}
+    {{- $gameSortDate := "" -}}
+    {{- if $gameDateRaw -}}
+      {{- $parsedDate := time $gameDateRaw -}}
+      {{- $gameDate = $parsedDate.Format "02-01-2006" -}}
+      {{- $gameSortDate = $parsedDate.Format "2006-01-02" -}}
+    {{- else if ge (len $gameId) 8 -}}
+      {{- $yr := substr $gameId 0 4 -}}
+      {{- $mo := substr $gameId 4 2 -}}
+      {{- $dy := substr $gameId 6 2 -}}
+      {{- $parsedDate := time (printf "%s-%s-%sT00:00:00Z" $yr $mo $dy) -}}
+      {{- $gameDate = $parsedDate.Format "02-01-2006" -}}
+      {{- $gameSortDate = $parsedDate.Format "2006-01-02" -}}
+    {{- end -}}
+
+    {{- $gameURL := "" -}}
+    {{- with $gameData.page.path -}}
+      {{- $gameURL = relURL (printf "%s/" .) -}}
+    {{- else -}}
+      {{- with $gameData.page.slug -}}
+        {{- $gameURL = relURL (printf "historia/partidos/%s/" .) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $videos := index $gameData.sections "Videos del partido" -}}
+    {{- range $idx, $video := $videos -}}
+      {{- $youtubeID := "" -}}
+      {{- with index $video "youtube_id" -}}
+        {{- $youtubeID = . -}}
+      {{- end -}}
+
+      {{- if not $youtubeID -}}
+        {{- $videoURL := "" -}}
+        {{- with index $video "url" -}}{{- $videoURL = . -}}{{- end -}}
+        {{- with index $video "URL" -}}{{- $videoURL = . -}}{{- end -}}
+        {{- with $videoURL -}}
+          {{- $matches := findRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` . -}}
+          {{- if $matches -}}
+            {{- $youtubeID = replaceRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` `$1` (index $matches 0) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- if $youtubeID -}}
+        {{- $videoTitle := (index $video "title") | default $gameData.page.title -}}
+        {{- $videoURL := (index $video "url") | default (printf "https://www.youtube.com/watch?v=%s" $youtubeID) -}}
+        {{- $embeddable := true -}}
+        {{- if eq (index $video "embeddable") false -}}
+          {{- $embeddable = false -}}
+        {{- end -}}
+        {{- $items = $items | append (dict
+          "anchor"      (printf "video-%s-%02d-%s" $gameSortDate $idx $youtubeID)
+          "sort_key"    (printf "%s-%02d" $gameSortDate $idx)
+          "date"        $gameDate
+          "game_title"  $gameData.page.title
+          "game_url"    $gameURL
+          "video_title" $videoTitle
+          "youtube_id"  $youtubeID
+          "video_url"   $videoURL
+          "embeddable"  $embeddable
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (sort $items "sort_key") -}}

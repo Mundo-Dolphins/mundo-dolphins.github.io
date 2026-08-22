@@ -50,4 +50,25 @@
 
   {{/* Crear la página dinámica llamando al adapter */}}
   {{- $adapter.AddPage $pageDict -}}
+
+  {{/*
+    Página derivada con todos los vídeos de partidos de la temporada.
+    Se genera aunque todavía no haya vídeos en los JSON para que la URL sea
+    estable: /historia/<year>/videos/.
+  */}}
+  {{ $videosPageDict := dict
+    "path"    (printf "%s/videos" $key)
+    "title"   (printf "Vídeos de la temporada %s" $year)
+    "dates"   (dict "date" (time (printf "%v-01-01T00:00:00Z" $page.params.year)))
+    "draft"   false
+    "layout"  "season-videos"
+    "params"  (dict
+      "toc"                true
+      "excludeFromHome"    true
+      "logo"               (printf "logos/mia-%s.png" $year)
+      "season_videos_year" $year
+    )
+  }}
+
+  {{- $adapter.AddPage $videosPageDict -}}
 {{ end }}

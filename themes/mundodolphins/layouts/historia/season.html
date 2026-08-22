@@ -23,6 +23,9 @@
     {{ $sections = $data.sections }}
   {{ end }}
   {{ $articulo := site.GetPage (printf "/historia/articulos/%s" $key) }}
+  {{ $seasonVideos := partial "historia/season-videos-data.html" (dict "year" $key) }}
+  {{ $seasonVideosCountLabel := cond (eq (len $seasonVideos) 1) "1 vídeo" (printf "%d vídeos" (len $seasonVideos)) }}
+  {{ $seasonVideosPageURL := relURL (printf "historia/%s/videos/" $key) }}
 
   {{ if not $data }}
     <main class="main" role="main">
@@ -71,6 +74,7 @@
                 <li><a href="#resumen">Resumen</a></li>
               {{ end }}
               {{ if $articulo }}<li><a href="{{ $articulo.RelPermalink }}">Artículo histórico</a></li>{{ end }}
+              <li><a href="{{ $seasonVideosPageURL }}">Vídeos de la temporada</a></li>
               {{ with index $sections "Roster" }}
                 <li><a href="#roster">Roster</a></li>
               {{ end }}
@@ -105,6 +109,16 @@
             </div>
           </div>
           {{ end }}
+
+          <div class="season-article-link season-video-link">
+            <span class="season-article-link__icon season-video-link__icon">Vídeo</span>
+            <div class="season-article-link__body">
+              <p class="season-article-link__label">Vídeos de la temporada</p>
+              <a class="season-article-link__title" href="{{ $seasonVideosPageURL }}">
+                Ver recopilación de vídeos de {{ $key }} ({{ $seasonVideosCountLabel }})
+              </a>
+            </div>
+          </div>
 
           {{/* ── Sección Roster ── */}}
           {{ with index $sections "Roster" }}
