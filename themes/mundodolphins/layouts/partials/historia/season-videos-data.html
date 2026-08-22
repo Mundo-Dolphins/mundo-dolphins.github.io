@@ -4,8 +4,8 @@
   Recibe:
     dict "year" <string|int>
 
-  Cada item devuelto incluye: anchor, sort_key, date, game_title, game_url,
-  video_title, youtube_id, video_url, embeddable.
+  Cada item devuelto incluye: anchor, game_anchor, sort_key, date, game_title,
+  game_url, video_title, youtube_id, video_url, embeddable.
 */}}
 {{- $year := .year | string -}}
 {{- $items := slice -}}
@@ -66,7 +66,8 @@
         {{- end -}}
         {{- $items = $items | append (dict
           "anchor"      (printf "video-%s-%02d-%s" $gameSortDate $idx $youtubeID)
-          "sort_key"    (printf "%s-%02d" $gameSortDate $idx)
+          "game_anchor" (printf "partido-%s" $gameId)
+          "sort_key"    (printf "%s-%s-%02d" $gameSortDate $gameId $idx)
           "date"        $gameDate
           "game_title"  $gameData.page.title
           "game_url"    $gameURL
