@@ -1,0 +1,104 @@
+{{/*
+  Layout: layouts/historia/season-videos.html
+
+  Renderiza la recopilación de vídeos de partidos de una temporada.
+  Los datos salen de data/historical/games/<year>/*.json, campo
+  sections["Videos del partido"].
+*/}}
+{{ define "main" }}
+{{ $year := .Params.season_videos_year | string }}
+{{ $videos := partial "historia/season-videos-data.html" (dict "year" $year) }}
+{{ $videoCountLabel := cond (eq (len $videos) 1) "1 vídeo" (printf "%d vídeos" (len $videos)) }}
+{{ $image := resources.Get .Params.logo }}
+{{ if $image }}
+  {{ $image = $image.Resize "150x" }}
+{{ end }}
+
+<main class="main" role="main">
+  <article class="post history-season history-season-videos">
+    <div class="game-back-nav">
+      <a href="{{ relURL (printf "historia/%s/" $year) }}" class="game-back-btn">
+        &larr; Temporada {{ $year }}
+      </a>
+    </div>
+
+    <header class="post__header history-season__hero">
+      <div class="history-season__hero-text">
+        <span class="history-season__eyebrow">Vídeos históricos</span>
+        <h1 class="post__title">{{ .Title }}</h1>
+        <div class="history-season__meta">
+          <span class="history-season__year">{{ $year }}</span>
+          <span class="history-season__badge">{{ $videoCountLabel }}</span>
+        </div>
+      </div>
+      {{ if $image }}
+      <div class="history-season__logo-wrap">
+        <img class="history-season__logo"
+             src="{{ $image.RelPermalink }}"
+             width="{{ $image.Width }}"
+             height="{{ $image.Height }}"
+             alt="">
+      </div>
+      {{ end }}
+    </header>
+
+    {{ if and .Params.toc (gt (len $videos) 0) }}
+    <div class="toc">
+      <h2>Tabla de Contenidos</h2>
+      <div id="TableOfContents">
+        <ul>
+          {{ range $videos }}
+            <li><a href="#{{ .anchor }}">{{ .date }} - {{ .game_title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="content post__content history-season__content clearfix">
+      {{ if gt (len $videos) 0 }}
+        <div class="season-video-list">
+          {{ range $videos }}
+          <section class="season-video-card" id="{{ .anchor }}">
+            <div class="season-video-card__header">
+              <div>
+                <p class="season-video-card__date">{{ .date }}</p>
+                <h2 class="season-video-card__title">{{ .video_title }}</h2>
+                <a class="season-video-card__game" href="{{ .game_url }}">{{ .game_title }}</a>
+              </div>
+            </div>
+            <div class="game-video season-video-card__embed">
+              {{ if .embeddable }}
+                <div class="game-video__embed">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/{{ .youtube_id }}"
+                    title="{{ .video_title }}"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin">
+                  </iframe>
+                </div>
+              {{ else }}
+                <a class="season-video-fallback" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">
+                  <img class="season-video-fallback__img"
+                       src="https://img.youtube.com/vi/{{ .youtube_id }}/hqdefault.jpg"
+                       alt=""
+                       loading="lazy">
+                  <span class="season-video-fallback__body">
+                    <span class="season-video-fallback__label">No incrustable</span>
+                    <span class="season-video-fallback__cta">Abrir en YouTube</span>
+                  </span>
+                </a>
+              {{ end }}
+            </div>
+          </section>
+          {{ end }}
+        </div>
+      {{ else }}
+        <p>No hay vídeos registrados para la temporada {{ $year }}.</p>
+      {{ end }}
+    </div>
+  </article>
+</main>
+{{ partial "authorbox.html" . }}
+{{ end }}

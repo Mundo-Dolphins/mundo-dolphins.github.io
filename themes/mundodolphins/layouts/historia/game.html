@@ -83,15 +83,32 @@
           {{ $vid := . }}
           <div class="game-video">
             {{ with .youtube_id }}
-            <div class="game-video__embed">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/{{ . }}"
-                title="{{ $vid.title }}"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="strict-origin-when-cross-origin">
-              </iframe>
-            </div>
+              {{ $youtubeID := . }}
+              {{ $videoURL := $vid.url | default (printf "https://www.youtube.com/watch?v=%s" $youtubeID) }}
+              {{ $embeddable := true }}
+              {{ if eq $vid.embeddable false }}{{ $embeddable = false }}{{ end }}
+              {{ if $embeddable }}
+              <div class="game-video__embed">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/{{ $youtubeID }}"
+                  title="{{ $vid.title }}"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+              </div>
+              {{ else }}
+              <a class="season-video-fallback" href="{{ $videoURL }}" target="_blank" rel="noopener noreferrer">
+                <img class="season-video-fallback__img"
+                     src="https://img.youtube.com/vi/{{ $youtubeID }}/hqdefault.jpg"
+                     alt=""
+                     loading="lazy">
+                <span class="season-video-fallback__body">
+                  <span class="season-video-fallback__label">No incrustable</span>
+                  <span class="season-video-fallback__cta">Abrir en YouTube</span>
+                </span>
+              </a>
+              {{ end }}
             {{ end }}
           </div>
           {{ end }}
