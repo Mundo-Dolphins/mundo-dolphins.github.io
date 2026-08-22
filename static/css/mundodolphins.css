@@ -2287,25 +2287,30 @@ body.body {
 }
 
 .season-video-card__header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 1rem;
-    padding: 1rem 1.15rem 0;
+    align-items: start;
+    padding: 1rem 1.15rem;
+    border-bottom: 1px solid rgba(0, 142, 151, 0.12);
+    background: #f8fcfc;
 }
 
 .season-video-card__date {
-    margin: 0 0 0.25rem;
+    grid-column: 1 / -1;
+    margin: 0 0 -0.55rem;
     color: #0b6f76;
     font-size: 0.86rem;
     font-weight: 700;
 }
 
 .season-video-card__title {
-    margin: 0 0 0.35rem;
+    margin: 0;
     font-size: 1.15rem;
 }
 
 .season-video-card__game {
+    grid-column: 1;
     color: #0f2f33;
     font-weight: 600;
     text-decoration: none;
@@ -2316,9 +2321,41 @@ body.body {
     text-decoration: underline;
 }
 
+.season-video-card__count {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(0, 142, 151, 0.12);
+    color: #0b6f76;
+    font-size: 0.86rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.season-video-card__videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 1.15rem;
+}
+
+.season-video-item {
+    min-width: 0;
+}
+
+.season-video-item__title {
+    margin: 0 0 0.7rem;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
 .season-video-card__embed {
     max-width: none;
-    margin: 1rem 1.15rem 1.15rem;
+    margin: 0;
 }
 
 .season-video-fallback {
@@ -2367,6 +2404,20 @@ body.body {
 }
 
 @media (max-width: 640px) {
+    .season-video-card__header {
+        grid-template-columns: 1fr;
+    }
+
+    .season-video-card__count {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: start;
+    }
+
+    .season-video-card__videos {
+        grid-template-columns: 1fr;
+    }
+
     .season-video-fallback__body {
         align-items: flex-start;
         flex-direction: column;

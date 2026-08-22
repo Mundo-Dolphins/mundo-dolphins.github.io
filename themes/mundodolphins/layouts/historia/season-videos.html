@@ -47,8 +47,14 @@
       <h2>Tabla de Contenidos</h2>
       <div id="TableOfContents">
         <ul>
+          {{ $tocLastGame := "" }}
           {{ range $videos }}
-            <li><a href="#{{ .anchor }}">{{ .date }} - {{ .game_title }}</a></li>
+            {{ if ne .game_url $tocLastGame }}
+              {{ $gameVideos := where $videos "game_url" .game_url }}
+              {{ $gameVideoCountLabel := cond (eq (len $gameVideos) 1) "1 vídeo" (printf "%d vídeos" (len $gameVideos)) }}
+              <li><a href="#{{ .game_anchor }}">{{ .date }} - {{ .game_title }} ({{ $gameVideoCountLabel }})</a></li>
+              {{ $tocLastGame = .game_url }}
+            {{ end }}
           {{ end }}
         </ul>
       </div>
@@ -58,16 +64,29 @@
     <div class="content post__content history-season__content clearfix">
       {{ if gt (len $videos) 0 }}
         <div class="season-video-list">
-          {{ range $videos }}
-          <section class="season-video-card" id="{{ .anchor }}">
-            <div class="season-video-card__header">
-              <div>
-                <p class="season-video-card__date">{{ .date }}</p>
-                <h2 class="season-video-card__title">{{ .video_title }}</h2>
-                <a class="season-video-card__game" href="{{ .game_url }}">{{ .game_title }}</a>
+          {{ $lastGame := "" }}
+          {{ range $idx, $video := $videos }}
+            {{ if ne .game_url $lastGame }}
+              {{ if gt $idx 0 }}
               </div>
-            </div>
-            <div class="game-video season-video-card__embed">
+            </section>
+              {{ end }}
+              {{ $gameVideos := where $videos "game_url" .game_url }}
+              {{ $gameVideoCountLabel := cond (eq (len $gameVideos) 1) "1 vídeo" (printf "%d vídeos" (len $gameVideos)) }}
+          <section class="season-video-card" id="{{ .game_anchor }}">
+            <header class="season-video-card__header">
+              <p class="season-video-card__date">{{ .date }}</p>
+              <h2 class="season-video-card__title">{{ .game_title }}</h2>
+              <a class="season-video-card__game" href="{{ .game_url }}">Ficha del partido</a>
+              <span class="season-video-card__count">{{ $gameVideoCountLabel }}</span>
+            </header>
+            <div class="season-video-card__videos">
+              {{ $lastGame = .game_url }}
+            {{ end }}
+
+            <article class="season-video-item" id="{{ .anchor }}">
+              <h3 class="season-video-item__title">{{ .video_title }}</h3>
+              <div class="game-video season-video-card__embed">
               {{ if .embeddable }}
                 <div class="game-video__embed">
                   <iframe
@@ -90,6 +109,10 @@
                   </span>
                 </a>
               {{ end }}
+              </div>
+            </article>
+          {{ end }}
+          {{ if gt (len $videos) 0 }}
             </div>
           </section>
           {{ end }}
