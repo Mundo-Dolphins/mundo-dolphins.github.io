@@ -256,7 +256,7 @@ Ese ya pertenecía a Joe Auer.
 
 ### Ficha del partido
 
-**Oakland Raiders 23 - Miami Dolphins 14**
+**[Oakland Raiders 23 - Miami Dolphins 14](/historia/partidos/oak-mia-19660902/)**
 **Fecha:** 2 de septiembre de 1966
 **Estadio:** Miami Orange Bowl
 **Competición:** American Football League, temporada regular
@@ -266,3 +266,5 @@ Ese ya pertenecía a Joe Auer.
 **Primer touchdown ofensivo de Miami:** Rick Casares, recepción de 2 yardas de Rick Norton
 **Resultado de Miami en 1966:** 3-11
 **MVP de los Dolphins en 1966:** Joe Auer
+
+{{ <youtube vOBAkS6M5Vk> }}
