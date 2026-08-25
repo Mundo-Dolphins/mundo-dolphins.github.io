@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-22T13:20:48Z",
+  "generated_at": "2026-08-25T14:14:35Z",
   "data": {
     "team": {
       "id": "mia",
@@ -15,16 +15,16 @@
     },
     "totals": {
       "opponents": 43,
-      "games": 1071,
+      "games": 1072,
       "wins": 580,
-      "losses": 486,
+      "losses": 487,
       "ties": 5,
-      "points_for": 22557,
-      "points_against": 21629,
-      "point_differential": 928,
+      "points_for": 22560,
+      "points_against": 21655,
+      "point_differential": 905,
       "regular_season_games": 931,
       "playoff_games": 41,
-      "unknown_games": 99
+      "unknown_games": 100
     },
     "rivals": [
       {
@@ -9896,18 +9896,18 @@
           "name": "New York Giants"
         },
         "summary": {
-          "games": 12,
+          "games": 13,
           "wins": 5,
-          "losses": 7,
+          "losses": 8,
           "ties": 0,
-          "points_for": 219,
-          "points_against": 214,
-          "point_differential": 5,
+          "points_for": 222,
+          "points_against": 240,
+          "point_differential": -18,
           "regular_season_games": 11,
           "playoff_games": 0,
-          "unknown_games": 1,
+          "unknown_games": 2,
           "first_game": "1972-12-10",
-          "last_game": "2023-10-08"
+          "last_game": "2026-08-22"
         },
         "by_season": [
           {
@@ -10054,9 +10054,37 @@
             "point_differential": 15,
             "regular_season_games": 1,
             "playoff_games": 0
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 3,
+            "points_against": 26,
+            "point_differential": -23,
+            "regular_season_games": 0,
+            "playoff_games": 0,
+            "unknown_games": 1
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202608220mia",
+            "season": 2026,
+            "date": "2026-08-22",
+            "week": "Preseason 2",
+            "game_type": "unknown",
+            "home_away": "home",
+            "opponent_id": "nyg",
+            "opponent_name": "New York Giants",
+            "points_for": 3,
+            "points_against": 26,
+            "result": "L",
+            "margin": -23,
+            "path": "historia/partidos/nyg-mia-20260822"
+          },
           {
             "game_id": "202310080mia",
             "season": 2023,
@@ -10116,21 +10144,6 @@
             "result": "W",
             "margin": 17,
             "path": "historia/partidos/mia-nyg-20160812"
-          },
-          {
-            "game_id": "201512140mia",
-            "season": 2015,
-            "date": "2015-12-14",
-            "week": "14",
-            "game_type": "regular_season",
-            "home_away": "home",
-            "opponent_id": "nyg",
-            "opponent_name": "New York Giants",
-            "points_for": 24,
-            "points_against": 31,
-            "result": "L",
-            "margin": -7,
-            "path": "historia/partidos/nyg-mia-20151214"
           }
         ]
       },
