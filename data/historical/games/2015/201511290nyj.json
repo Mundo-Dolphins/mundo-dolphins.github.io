@@ -2825,6 +2825,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de noviembre de 2015",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3138,6 +3140,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "BcXBjg0kaNw",
+        "title": "2015 – Week 12 – Dolphins 20 @ Jets 38",
+        "url": "https://www.youtube.com/watch?v=BcXBjg0kaNw\u0026pp=ygUqTmV3IFlvcmsgSmV0cyB2cyBNaWFtaSBEb2xwaGlucyAyMDE1LTEwLTA0",
+        "duration_seconds": 9450,
+        "embeddable": false
+      }
+    ]
   }
 }

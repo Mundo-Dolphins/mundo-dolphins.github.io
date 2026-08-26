@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1980-10-12",
-    "slug": "mia-new-19801012",
-    "path": "historia/partidos/mia-new-19801012",
+    "slug": "mia-nwe-19801012",
+    "path": "historia/partidos/mia-nwe-19801012",
     "params": {
       "game_id": "198010120nwe"
     }
@@ -998,6 +998,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de octubre de 1980",
       "Estadio": "Schaefer Stadium",
       "Tipo de estadio": "Al aire libre",

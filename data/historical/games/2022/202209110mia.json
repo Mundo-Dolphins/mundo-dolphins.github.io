@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2022-09-11",
-    "slug": "new-mia-20220911",
-    "path": "historia/partidos/new-mia-20220911",
+    "slug": "nwe-mia-20220911",
+    "path": "historia/partidos/nwe-mia-20220911",
     "params": {
       "game_id": "202209110mia"
     }
@@ -4172,6 +4172,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de septiembre de 2022",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",

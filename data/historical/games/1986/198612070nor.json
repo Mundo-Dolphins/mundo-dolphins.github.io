@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "1986-12-07",
-    "slug": "mia-new-19861207",
-    "path": "historia/partidos/mia-new-19861207",
+    "slug": "mia-nor-19861207",
+    "path": "historia/partidos/mia-nor-19861207",
     "params": {
       "game_id": "198612070nor"
     }
@@ -911,6 +911,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "7 de diciembre de 1986",
       "Estadio": "Louisiana Superdome",
       "Tipo de estadio": "dome",

@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:06Z",
+  "generated_at": "2026-08-26T10:11:32Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2022",
@@ -3838,116 +3838,478 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20220911",
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-20220813",
+        "game_id": "202208130tam",
+        "fecha": "13-08-2022",
+        "date": "2022-08-13",
+        "url": "/historia/partidos/mia-tam-20220813/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Las Vegas Raiders vs Miami Dolphins",
+        "id": "rai-mia-20220820",
+        "game_id": "202208200mia",
+        "fecha": "20-08-2022",
+        "date": "2022-08-20",
+        "url": "/historia/partidos/rai-mia-20220820/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-20220827",
+        "game_id": "202208270mia",
+        "fecha": "27-08-2022",
+        "date": "2022-08-27",
+        "url": "/historia/partidos/phi-mia-20220827/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20220911",
+        "game_id": "202209110mia",
         "fecha": "11-09-2022",
-        "url": "/historia/partidos/new-mia-20220911/"
+        "date": "2022-09-11",
+        "url": "/historia/partidos/nwe-mia-20220911/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "mia-bal-20220918",
+        "id": "mia-rav-20220918",
+        "game_id": "202209180rav",
         "fecha": "18-09-2022",
-        "url": "/historia/partidos/mia-bal-20220918/"
+        "date": "2022-09-18",
+        "url": "/historia/partidos/mia-rav-20220918/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20220925",
+        "game_id": "202209250mia",
         "fecha": "25-09-2022",
-        "url": "/historia/partidos/buf-mia-20220925/"
+        "date": "2022-09-25",
+        "url": "/historia/partidos/buf-mia-20220925/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-20220929",
+        "game_id": "202209290cin",
         "fecha": "29-09-2022",
-        "url": "/historia/partidos/mia-cin-20220929/"
+        "date": "2022-09-29",
+        "url": "/historia/partidos/mia-cin-20220929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20221009",
+        "game_id": "202210090nyj",
         "fecha": "09-10-2022",
-        "url": "/historia/partidos/mia-nyj-20221009/"
+        "date": "2022-10-09",
+        "url": "/historia/partidos/mia-nyj-20221009/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Minnesota Vikings",
+        "title": "Minnesota Vikings vs Miami Dolphins",
         "id": "min-mia-20221016",
+        "game_id": "202210160mia",
         "fecha": "16-10-2022",
-        "url": "/historia/partidos/min-mia-20221016/"
+        "date": "2022-10-16",
+        "url": "/historia/partidos/min-mia-20221016/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-20221023",
+        "game_id": "202210230mia",
         "fecha": "23-10-2022",
-        "url": "/historia/partidos/pit-mia-20221023/"
+        "date": "2022-10-23",
+        "url": "/historia/partidos/pit-mia-20221023/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Detroit Lions",
         "id": "mia-det-20221030",
+        "game_id": "202210300det",
         "fecha": "30-10-2022",
-        "url": "/historia/partidos/mia-det-20221030/"
+        "date": "2022-10-30",
+        "url": "/historia/partidos/mia-det-20221030/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Chicago Bears",
         "id": "mia-chi-20221106",
+        "game_id": "202211060chi",
         "fecha": "06-11-2022",
-        "url": "/historia/partidos/mia-chi-20221106/"
+        "date": "2022-11-06",
+        "url": "/historia/partidos/mia-chi-20221106/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-20221113",
+        "game_id": "202211130mia",
         "fecha": "13-11-2022",
-        "url": "/historia/partidos/cle-mia-20221113/"
+        "date": "2022-11-13",
+        "url": "/historia/partidos/cle-mia-20221113/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Texans",
-        "id": "hou-mia-20221127",
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20221127",
+        "game_id": "202211270mia",
         "fecha": "27-11-2022",
-        "url": "/historia/partidos/hou-mia-20221127/"
+        "date": "2022-11-27",
+        "url": "/historia/partidos/htx-mia-20221127/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "mia-san-20221204",
+        "id": "mia-sfo-20221204",
+        "game_id": "202212040sfo",
         "fecha": "04-12-2022",
-        "url": "/historia/partidos/mia-san-20221204/"
+        "date": "2022-12-04",
+        "url": "/historia/partidos/mia-sfo-20221204/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Chargers",
-        "id": "mia-los-20221211",
+        "id": "mia-sdg-20221211",
+        "game_id": "202212110sdg",
         "fecha": "11-12-2022",
-        "url": "/historia/partidos/mia-los-20221211/"
+        "date": "2022-12-11",
+        "url": "/historia/partidos/mia-sdg-20221211/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20221217",
+        "game_id": "202212170buf",
         "fecha": "17-12-2022",
-        "url": "/historia/partidos/mia-buf-20221217/"
+        "date": "2022-12-17",
+        "url": "/historia/partidos/mia-buf-20221217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-20221225",
+        "game_id": "202212250mia",
         "fecha": "25-12-2022",
-        "url": "/historia/partidos/gnb-mia-20221225/"
+        "date": "2022-12-25",
+        "url": "/historia/partidos/gnb-mia-20221225/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20230101",
+        "id": "mia-nwe-20230101",
+        "game_id": "202301010nwe",
         "fecha": "01-01-2023",
-        "url": "/historia/partidos/mia-new-20230101/"
+        "date": "2023-01-01",
+        "url": "/historia/partidos/mia-nwe-20230101/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20230108",
+        "game_id": "202301080mia",
+        "fecha": "08-01-2023",
+        "date": "2023-01-08",
+        "url": "/historia/partidos/nyj-mia-20230108/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20230115",
+        "game_id": "202301150buf",
+        "fecha": "15-01-2023",
+        "date": "2023-01-15",
+        "url": "/historia/partidos/mia-buf-20230115/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20220911",
+        "game_id": "202209110mia",
+        "fecha": "11-09-2022",
+        "date": "2022-09-11",
+        "url": "/historia/partidos/nwe-mia-20220911/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Ravens",
+        "id": "mia-rav-20220918",
+        "game_id": "202209180rav",
+        "fecha": "18-09-2022",
+        "date": "2022-09-18",
+        "url": "/historia/partidos/mia-rav-20220918/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20220925",
+        "game_id": "202209250mia",
+        "fecha": "25-09-2022",
+        "date": "2022-09-25",
+        "url": "/historia/partidos/buf-mia-20220925/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-20220929",
+        "game_id": "202209290cin",
+        "fecha": "29-09-2022",
+        "date": "2022-09-29",
+        "url": "/historia/partidos/mia-cin-20220929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20221009",
+        "game_id": "202210090nyj",
+        "fecha": "09-10-2022",
+        "date": "2022-10-09",
+        "url": "/historia/partidos/mia-nyj-20221009/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Minnesota Vikings vs Miami Dolphins",
+        "id": "min-mia-20221016",
+        "game_id": "202210160mia",
+        "fecha": "16-10-2022",
+        "date": "2022-10-16",
+        "url": "/historia/partidos/min-mia-20221016/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-20221023",
+        "game_id": "202210230mia",
+        "fecha": "23-10-2022",
+        "date": "2022-10-23",
+        "url": "/historia/partidos/pit-mia-20221023/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-20221030",
+        "game_id": "202210300det",
+        "fecha": "30-10-2022",
+        "date": "2022-10-30",
+        "url": "/historia/partidos/mia-det-20221030/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-20221106",
+        "game_id": "202211060chi",
+        "fecha": "06-11-2022",
+        "date": "2022-11-06",
+        "url": "/historia/partidos/mia-chi-20221106/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-20221113",
+        "game_id": "202211130mia",
+        "fecha": "13-11-2022",
+        "date": "2022-11-13",
+        "url": "/historia/partidos/cle-mia-20221113/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20221127",
+        "game_id": "202211270mia",
+        "fecha": "27-11-2022",
+        "date": "2022-11-27",
+        "url": "/historia/partidos/htx-mia-20221127/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Francisco 49ers",
+        "id": "mia-sfo-20221204",
+        "game_id": "202212040sfo",
+        "fecha": "04-12-2022",
+        "date": "2022-12-04",
+        "url": "/historia/partidos/mia-sfo-20221204/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Chargers",
+        "id": "mia-sdg-20221211",
+        "game_id": "202212110sdg",
+        "fecha": "11-12-2022",
+        "date": "2022-12-11",
+        "url": "/historia/partidos/mia-sdg-20221211/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20221217",
+        "game_id": "202212170buf",
+        "fecha": "17-12-2022",
+        "date": "2022-12-17",
+        "url": "/historia/partidos/mia-buf-20221217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-20221225",
+        "game_id": "202212250mia",
+        "fecha": "25-12-2022",
+        "date": "2022-12-25",
+        "url": "/historia/partidos/gnb-mia-20221225/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20230101",
+        "game_id": "202301010nwe",
+        "fecha": "01-01-2023",
+        "date": "2023-01-01",
+        "url": "/historia/partidos/mia-nwe-20230101/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20230108",
+        "game_id": "202301080mia",
         "fecha": "08-01-2023",
-        "url": "/historia/partidos/nyj-mia-20230108/"
+        "date": "2023-01-08",
+        "url": "/historia/partidos/nyj-mia-20230108/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20230115",
+        "game_id": "202301150buf",
         "fecha": "15-01-2023",
-        "url": "/historia/partidos/mia-buf-20230115/"
+        "date": "2023-01-15",
+        "url": "/historia/partidos/mia-buf-20230115/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3957,6 +4319,7 @@
       "Puntos a favor": "397 puntos. 11º de 32 equipos",
       "Puntos en contra": "399 puntos. 24º de 32 equipos",
       "Head Coach": "Mike McDaniel (9-8-0)",
+      "General Manager": "Chris Grier",
       "Estadio": "Hard Rock Stadium",
       "Training Camp": "Baptist Health Training Facility (Davie, Florida)",
       "Alineación defensiva": "3-4",

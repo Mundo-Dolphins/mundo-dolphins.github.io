@@ -2743,6 +2743,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de noviembre de 2014",
       "Estadio": "Sports Authority Field at Mile High",
       "Tipo de estadio": "Al aire libre",
@@ -2976,6 +2978,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "6HrBtGv5XOE",
+        "title": "2014 week 12 Miami Dolphins at Denver Broncos",
+        "url": "https://www.youtube.com/watch?v=6HrBtGv5XOE\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgRGVudmVyIEJyb25jb3MgMjAxNC0xMS0yMw%3D%3D",
+        "duration_seconds": 8351,
+        "embeddable": false
+      }
+    ]
   }
 }

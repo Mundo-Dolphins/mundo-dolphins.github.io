@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1992",
@@ -2447,116 +2447,442 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-19920914",
+        "game_id": "199209140cle",
         "fecha": "14-09-1992",
-        "url": "/historia/partidos/mia-cle-19920914/"
+        "date": "1992-09-14",
+        "url": "/historia/partidos/mia-cle-19920914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Rams",
-        "id": "los-mia-19920920",
+        "title": "Los Angeles Rams vs Miami Dolphins",
+        "id": "ram-mia-19920920",
+        "game_id": "199209200mia",
         "fecha": "20-09-1992",
-        "url": "/historia/partidos/los-mia-19920920/"
+        "date": "1992-09-20",
+        "url": "/historia/partidos/ram-mia-19920920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Seattle Seahawks",
         "id": "mia-sea-19920927",
+        "game_id": "199209270sea",
         "fecha": "27-09-1992",
-        "url": "/historia/partidos/mia-sea-19920927/"
+        "date": "1992-09-27",
+        "url": "/historia/partidos/mia-sea-19920927/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19921004",
+        "game_id": "199210040buf",
         "fecha": "04-10-1992",
-        "url": "/historia/partidos/mia-buf-19921004/"
+        "date": "1992-10-04",
+        "url": "/historia/partidos/mia-buf-19921004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Atlanta Falcons",
+        "title": "Atlanta Falcons vs Miami Dolphins",
         "id": "atl-mia-19921011",
+        "game_id": "199210110mia",
         "fecha": "11-10-1992",
-        "url": "/historia/partidos/atl-mia-19921011/"
+        "date": "1992-10-11",
+        "url": "/historia/partidos/atl-mia-19921011/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19921018",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19921018",
+        "game_id": "199210180mia",
         "fecha": "18-10-1992",
-        "url": "/historia/partidos/new-mia-19921018/"
+        "date": "1992-10-18",
+        "url": "/historia/partidos/nwe-mia-19921018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19921025",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19921025",
+        "game_id": "199210250mia",
         "fecha": "25-10-1992",
-        "url": "/historia/partidos/ind-mia-19921025/"
+        "date": "1992-10-25",
+        "url": "/historia/partidos/clt-mia-19921025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19921101",
+        "game_id": "199211010nyj",
         "fecha": "01-11-1992",
-        "url": "/historia/partidos/mia-nyj-19921101/"
+        "date": "1992-11-01",
+        "url": "/historia/partidos/mia-nyj-19921101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19921108",
+        "id": "mia-clt-19921108",
+        "game_id": "199211080clt",
         "fecha": "08-11-1992",
-        "url": "/historia/partidos/mia-ind-19921108/"
+        "date": "1992-11-08",
+        "url": "/historia/partidos/mia-clt-19921108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19921116",
+        "game_id": "199211160mia",
         "fecha": "16-11-1992",
-        "url": "/historia/partidos/buf-mia-19921116/"
+        "date": "1992-11-16",
+        "url": "/historia/partidos/buf-mia-19921116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19921122",
+        "game_id": "199211220mia",
         "fecha": "22-11-1992",
-        "url": "/historia/partidos/oti-mia-19921122/"
+        "date": "1992-11-22",
+        "url": "/historia/partidos/oti-mia-19921122/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "mia-new-19921129",
+        "id": "mia-nor-19921129",
+        "game_id": "199211290nor",
         "fecha": "29-11-1992",
-        "url": "/historia/partidos/mia-new-19921129/"
+        "date": "1992-11-29",
+        "url": "/historia/partidos/mia-nor-19921129/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "mia-san-19921206",
+        "id": "mia-sfo-19921206",
+        "game_id": "199212060sfo",
         "fecha": "06-12-1992",
-        "url": "/historia/partidos/mia-san-19921206/"
+        "date": "1992-12-06",
+        "url": "/historia/partidos/mia-sfo-19921206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Raiders",
+        "title": "Los Angeles Raiders vs Miami Dolphins",
         "id": "los-mia-19921214",
+        "game_id": "199212140mia",
         "fecha": "14-12-1992",
-        "url": "/historia/partidos/los-mia-19921214/"
+        "date": "1992-12-14",
+        "url": "/historia/partidos/los-mia-19921214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19921220",
+        "game_id": "199212200mia",
         "fecha": "20-12-1992",
-        "url": "/historia/partidos/nyj-mia-19921220/"
+        "date": "1992-12-20",
+        "url": "/historia/partidos/nyj-mia-19921220/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19921227",
+        "id": "mia-nwe-19921227",
+        "game_id": "199212270nwe",
         "fecha": "27-12-1992",
-        "url": "/historia/partidos/mia-new-19921227/"
+        "date": "1992-12-27",
+        "url": "/historia/partidos/mia-nwe-19921227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19930110",
+        "game_id": "199301100mia",
+        "fecha": "10-01-1993",
+        "date": "1993-01-10",
+        "url": "/historia/partidos/sdg-mia-19930110/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19930117",
+        "game_id": "199301170mia",
+        "fecha": "17-01-1993",
+        "date": "1993-01-17",
+        "url": "/historia/partidos/buf-mia-19930117/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-19920914",
+        "game_id": "199209140cle",
+        "fecha": "14-09-1992",
+        "date": "1992-09-14",
+        "url": "/historia/partidos/mia-cle-19920914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Rams vs Miami Dolphins",
+        "id": "ram-mia-19920920",
+        "game_id": "199209200mia",
+        "fecha": "20-09-1992",
+        "date": "1992-09-20",
+        "url": "/historia/partidos/ram-mia-19920920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Seattle Seahawks",
+        "id": "mia-sea-19920927",
+        "game_id": "199209270sea",
+        "fecha": "27-09-1992",
+        "date": "1992-09-27",
+        "url": "/historia/partidos/mia-sea-19920927/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19921004",
+        "game_id": "199210040buf",
+        "fecha": "04-10-1992",
+        "date": "1992-10-04",
+        "url": "/historia/partidos/mia-buf-19921004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-19921011",
+        "game_id": "199210110mia",
+        "fecha": "11-10-1992",
+        "date": "1992-10-11",
+        "url": "/historia/partidos/atl-mia-19921011/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19921018",
+        "game_id": "199210180mia",
+        "fecha": "18-10-1992",
+        "date": "1992-10-18",
+        "url": "/historia/partidos/nwe-mia-19921018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19921025",
+        "game_id": "199210250mia",
+        "fecha": "25-10-1992",
+        "date": "1992-10-25",
+        "url": "/historia/partidos/clt-mia-19921025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19921101",
+        "game_id": "199211010nyj",
+        "fecha": "01-11-1992",
+        "date": "1992-11-01",
+        "url": "/historia/partidos/mia-nyj-19921101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19921108",
+        "game_id": "199211080clt",
+        "fecha": "08-11-1992",
+        "date": "1992-11-08",
+        "url": "/historia/partidos/mia-clt-19921108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19921116",
+        "game_id": "199211160mia",
+        "fecha": "16-11-1992",
+        "date": "1992-11-16",
+        "url": "/historia/partidos/buf-mia-19921116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19921122",
+        "game_id": "199211220mia",
+        "fecha": "22-11-1992",
+        "date": "1992-11-22",
+        "url": "/historia/partidos/oti-mia-19921122/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-19921129",
+        "game_id": "199211290nor",
+        "fecha": "29-11-1992",
+        "date": "1992-11-29",
+        "url": "/historia/partidos/mia-nor-19921129/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Francisco 49ers",
+        "id": "mia-sfo-19921206",
+        "game_id": "199212060sfo",
+        "fecha": "06-12-1992",
+        "date": "1992-12-06",
+        "url": "/historia/partidos/mia-sfo-19921206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Raiders vs Miami Dolphins",
+        "id": "los-mia-19921214",
+        "game_id": "199212140mia",
+        "fecha": "14-12-1992",
+        "date": "1992-12-14",
+        "url": "/historia/partidos/los-mia-19921214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19921220",
+        "game_id": "199212200mia",
+        "fecha": "20-12-1992",
+        "date": "1992-12-20",
+        "url": "/historia/partidos/nyj-mia-19921220/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19921227",
+        "game_id": "199212270nwe",
+        "fecha": "27-12-1992",
+        "date": "1992-12-27",
+        "url": "/historia/partidos/mia-nwe-19921227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19930110",
+        "game_id": "199301100mia",
         "fecha": "10-01-1993",
-        "url": "/historia/partidos/sdg-mia-19930110/"
+        "date": "1993-01-10",
+        "url": "/historia/partidos/sdg-mia-19930110/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19930117",
+        "game_id": "199301170mia",
         "fecha": "17-01-1993",
-        "url": "/historia/partidos/buf-mia-19930117/"
+        "date": "1993-01-17",
+        "url": "/historia/partidos/buf-mia-19930117/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2566,6 +2892,7 @@
       "Puntos a favor": "340 puntos. 8º de 28 equipos",
       "Puntos en contra": "281 puntos. 11º de 28 equipos",
       "Head Coach": "Don Shula (11-5-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

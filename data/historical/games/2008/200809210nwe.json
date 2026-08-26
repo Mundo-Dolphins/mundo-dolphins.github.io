@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2008-09-21",
-    "slug": "mia-new-20080921",
-    "path": "historia/partidos/mia-new-20080921",
+    "slug": "mia-nwe-20080921",
+    "path": "historia/partidos/mia-nwe-20080921",
     "params": {
       "game_id": "200809210nwe"
     }
@@ -1946,6 +1946,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de septiembre de 2008",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

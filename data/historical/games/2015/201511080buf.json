@@ -2581,6 +2581,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de noviembre de 2015",
       "Estadio": "Ralph Wilson Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2804,6 +2806,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "c9oZmUmbjHY",
+        "title": "2015 week 9 Miami Dolphins at Buffalo Bills",
+        "url": "https://www.youtube.com/watch?v=c9oZmUmbjHY\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDE1LTA5LTI3",
+        "duration_seconds": 7979,
+        "embeddable": false
+      }
+    ]
   }
 }

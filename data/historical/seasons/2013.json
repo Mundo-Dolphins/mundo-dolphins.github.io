@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:05Z",
+  "generated_at": "2026-08-26T10:11:31Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2013",
@@ -3450,102 +3450,452 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20130804",
+        "game_id": "201308040dal",
+        "fecha": "04-08-2013",
+        "date": "2013-08-04",
+        "url": "/historia/partidos/mia-dal-20130804/",
+        "stage": "Pretemporada",
+        "week": "Preseason",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20130809",
+        "game_id": "201308090jax",
+        "fecha": "09-08-2013",
+        "date": "2013-08-09",
+        "url": "/historia/partidos/mia-jax-20130809/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Texans",
+        "id": "mia-htx-20130817",
+        "game_id": "201308170htx",
+        "fecha": "17-08-2013",
+        "date": "2013-08-17",
+        "url": "/historia/partidos/mia-htx-20130817/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20130824",
+        "game_id": "201308240mia",
+        "fecha": "24-08-2013",
+        "date": "2013-08-24",
+        "url": "/historia/partidos/tam-mia-20130824/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-20130829",
+        "game_id": "201308290mia",
+        "fecha": "29-08-2013",
+        "date": "2013-08-29",
+        "url": "/historia/partidos/nor-mia-20130829/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-20130908",
+        "game_id": "201309080cle",
         "fecha": "08-09-2013",
-        "url": "/historia/partidos/mia-cle-20130908/"
+        "date": "2013-09-08",
+        "url": "/historia/partidos/mia-cle-20130908/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20130915",
+        "id": "mia-clt-20130915",
+        "game_id": "201309150clt",
         "fecha": "15-09-2013",
-        "url": "/historia/partidos/mia-ind-20130915/"
+        "date": "2013-09-15",
+        "url": "/historia/partidos/mia-clt-20130915/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Atlanta Falcons",
+        "title": "Atlanta Falcons vs Miami Dolphins",
         "id": "atl-mia-20130922",
+        "game_id": "201309220mia",
         "fecha": "22-09-2013",
-        "url": "/historia/partidos/atl-mia-20130922/"
+        "date": "2013-09-22",
+        "url": "/historia/partidos/atl-mia-20130922/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "mia-new-20130930",
+        "id": "mia-nor-20130930",
+        "game_id": "201309300nor",
         "fecha": "30-09-2013",
-        "url": "/historia/partidos/mia-new-20130930/"
+        "date": "2013-09-30",
+        "url": "/historia/partidos/mia-nor-20130930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20131006",
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20131006",
+        "game_id": "201310060mia",
         "fecha": "06-10-2013",
-        "url": "/historia/partidos/bal-mia-20131006/"
+        "date": "2013-10-06",
+        "url": "/historia/partidos/rav-mia-20131006/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20131020",
+        "game_id": "201310200mia",
         "fecha": "20-10-2013",
-        "url": "/historia/partidos/buf-mia-20131020/"
+        "date": "2013-10-20",
+        "url": "/historia/partidos/buf-mia-20131020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20131027",
+        "id": "mia-nwe-20131027",
+        "game_id": "201310270nwe",
         "fecha": "27-10-2013",
-        "url": "/historia/partidos/mia-new-20131027/"
+        "date": "2013-10-27",
+        "url": "/historia/partidos/mia-nwe-20131027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-20131031",
+        "game_id": "201310310mia",
         "fecha": "31-10-2013",
-        "url": "/historia/partidos/cin-mia-20131031/"
+        "date": "2013-10-31",
+        "url": "/historia/partidos/cin-mia-20131031/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tampa Bay Buccaneers",
         "id": "mia-tam-20131111",
+        "game_id": "201311110tam",
         "fecha": "11-11-2013",
-        "url": "/historia/partidos/mia-tam-20131111/"
+        "date": "2013-11-11",
+        "url": "/historia/partidos/mia-tam-20131111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-20131117",
+        "game_id": "201311170mia",
         "fecha": "17-11-2013",
-        "url": "/historia/partidos/sdg-mia-20131117/"
+        "date": "2013-11-17",
+        "url": "/historia/partidos/sdg-mia-20131117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Carolina Panthers",
+        "title": "Carolina Panthers vs Miami Dolphins",
         "id": "car-mia-20131124",
+        "game_id": "201311240mia",
         "fecha": "24-11-2013",
-        "url": "/historia/partidos/car-mia-20131124/"
+        "date": "2013-11-24",
+        "url": "/historia/partidos/car-mia-20131124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20131201",
+        "game_id": "201312010nyj",
         "fecha": "01-12-2013",
-        "url": "/historia/partidos/mia-nyj-20131201/"
+        "date": "2013-12-01",
+        "url": "/historia/partidos/mia-nyj-20131201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-20131208",
+        "game_id": "201312080pit",
         "fecha": "08-12-2013",
-        "url": "/historia/partidos/mia-pit-20131208/"
+        "date": "2013-12-08",
+        "url": "/historia/partidos/mia-pit-20131208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20131215",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20131215",
+        "game_id": "201312150mia",
         "fecha": "15-12-2013",
-        "url": "/historia/partidos/new-mia-20131215/"
+        "date": "2013-12-15",
+        "url": "/historia/partidos/nwe-mia-20131215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20131222",
+        "game_id": "201312220buf",
         "fecha": "22-12-2013",
-        "url": "/historia/partidos/mia-buf-20131222/"
+        "date": "2013-12-22",
+        "url": "/historia/partidos/mia-buf-20131222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20131229",
+        "game_id": "201312290mia",
+        "fecha": "29-12-2013",
+        "date": "2013-12-29",
+        "url": "/historia/partidos/nyj-mia-20131229/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-20130908",
+        "game_id": "201309080cle",
+        "fecha": "08-09-2013",
+        "date": "2013-09-08",
+        "url": "/historia/partidos/mia-cle-20130908/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20130915",
+        "game_id": "201309150clt",
+        "fecha": "15-09-2013",
+        "date": "2013-09-15",
+        "url": "/historia/partidos/mia-clt-20130915/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20130922",
+        "game_id": "201309220mia",
+        "fecha": "22-09-2013",
+        "date": "2013-09-22",
+        "url": "/historia/partidos/atl-mia-20130922/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-20130930",
+        "game_id": "201309300nor",
+        "fecha": "30-09-2013",
+        "date": "2013-09-30",
+        "url": "/historia/partidos/mia-nor-20130930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20131006",
+        "game_id": "201310060mia",
+        "fecha": "06-10-2013",
+        "date": "2013-10-06",
+        "url": "/historia/partidos/rav-mia-20131006/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20131020",
+        "game_id": "201310200mia",
+        "fecha": "20-10-2013",
+        "date": "2013-10-20",
+        "url": "/historia/partidos/buf-mia-20131020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20131027",
+        "game_id": "201310270nwe",
+        "fecha": "27-10-2013",
+        "date": "2013-10-27",
+        "url": "/historia/partidos/mia-nwe-20131027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-20131031",
+        "game_id": "201310310mia",
+        "fecha": "31-10-2013",
+        "date": "2013-10-31",
+        "url": "/historia/partidos/cin-mia-20131031/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-20131111",
+        "game_id": "201311110tam",
+        "fecha": "11-11-2013",
+        "date": "2013-11-11",
+        "url": "/historia/partidos/mia-tam-20131111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-20131117",
+        "game_id": "201311170mia",
+        "fecha": "17-11-2013",
+        "date": "2013-11-17",
+        "url": "/historia/partidos/sdg-mia-20131117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Carolina Panthers vs Miami Dolphins",
+        "id": "car-mia-20131124",
+        "game_id": "201311240mia",
+        "fecha": "24-11-2013",
+        "date": "2013-11-24",
+        "url": "/historia/partidos/car-mia-20131124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20131201",
+        "game_id": "201312010nyj",
+        "fecha": "01-12-2013",
+        "date": "2013-12-01",
+        "url": "/historia/partidos/mia-nyj-20131201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20131208",
+        "game_id": "201312080pit",
+        "fecha": "08-12-2013",
+        "date": "2013-12-08",
+        "url": "/historia/partidos/mia-pit-20131208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20131215",
+        "game_id": "201312150mia",
+        "fecha": "15-12-2013",
+        "date": "2013-12-15",
+        "url": "/historia/partidos/nwe-mia-20131215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20131222",
+        "game_id": "201312220buf",
+        "fecha": "22-12-2013",
+        "date": "2013-12-22",
+        "url": "/historia/partidos/mia-buf-20131222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20131229",
+        "game_id": "201312290mia",
         "fecha": "29-12-2013",
-        "url": "/historia/partidos/nyj-mia-20131229/"
+        "date": "2013-12-29",
+        "url": "/historia/partidos/nyj-mia-20131229/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3555,6 +3905,7 @@
       "Puntos a favor": "317 puntos. 26º de 32 equipos",
       "Puntos en contra": "335 puntos. 8º de 32 equipos",
       "Head Coach": "Joe Philbin (8-8-0)",
+      "General Manager": "Jeff Ireland",
       "Estadio": "Sun Life Stadium",
       "Training Camp": "Doctors Hospital Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

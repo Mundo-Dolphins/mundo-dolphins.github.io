@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1997",
@@ -2555,110 +2555,418 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19970831",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19970831",
+        "game_id": "199708310mia",
         "fecha": "31-08-1997",
-        "url": "/historia/partidos/ind-mia-19970831/"
+        "date": "1997-08-31",
+        "url": "/historia/partidos/clt-mia-19970831/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Oilers",
+        "title": "Tennessee Oilers vs Miami Dolphins",
         "id": "ten-mia-19970907",
+        "game_id": "199709070mia",
         "fecha": "07-09-1997",
-        "url": "/historia/partidos/ten-mia-19970907/"
+        "date": "1997-09-07",
+        "url": "/historia/partidos/ten-mia-19970907/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Green Bay Packers",
         "id": "mia-gnb-19970914",
+        "game_id": "199709140gnb",
         "fecha": "14-09-1997",
-        "url": "/historia/partidos/mia-gnb-19970914/"
+        "date": "1997-09-14",
+        "url": "/historia/partidos/mia-gnb-19970914/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tampa Bay Buccaneers",
         "id": "mia-tam-19970921",
+        "game_id": "199709210tam",
         "fecha": "21-09-1997",
-        "url": "/historia/partidos/mia-tam-19970921/"
+        "date": "1997-09-21",
+        "url": "/historia/partidos/mia-tam-19970921/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19971005",
+        "game_id": "199710050mia",
         "fecha": "05-10-1997",
-        "url": "/historia/partidos/kan-mia-19971005/"
+        "date": "1997-10-05",
+        "url": "/historia/partidos/kan-mia-19971005/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19971012",
+        "game_id": "199710120nyj",
         "fecha": "12-10-1997",
-        "url": "/historia/partidos/mia-nyj-19971012/"
+        "date": "1997-10-12",
+        "url": "/historia/partidos/mia-nyj-19971012/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "mia-bal-19971019",
+        "id": "mia-rav-19971019",
+        "game_id": "199710190rav",
         "fecha": "19-10-1997",
-        "url": "/historia/partidos/mia-bal-19971019/"
+        "date": "1997-10-19",
+        "url": "/historia/partidos/mia-rav-19971019/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Chicago Bears",
+        "title": "Chicago Bears vs Miami Dolphins",
         "id": "chi-mia-19971027",
+        "game_id": "199710270mia",
         "fecha": "27-10-1997",
-        "url": "/historia/partidos/chi-mia-19971027/"
+        "date": "1997-10-27",
+        "url": "/historia/partidos/chi-mia-19971027/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19971102",
+        "game_id": "199711020buf",
         "fecha": "02-11-1997",
-        "url": "/historia/partidos/mia-buf-19971102/"
+        "date": "1997-11-02",
+        "url": "/historia/partidos/mia-buf-19971102/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19971109",
+        "game_id": "199711090mia",
         "fecha": "09-11-1997",
-        "url": "/historia/partidos/nyj-mia-19971109/"
+        "date": "1997-11-09",
+        "url": "/historia/partidos/nyj-mia-19971109/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19971117",
+        "game_id": "199711170mia",
         "fecha": "17-11-1997",
-        "url": "/historia/partidos/buf-mia-19971117/"
+        "date": "1997-11-17",
+        "url": "/historia/partidos/buf-mia-19971117/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19971123",
+        "id": "mia-nwe-19971123",
+        "game_id": "199711230nwe",
         "fecha": "23-11-1997",
-        "url": "/historia/partidos/mia-new-19971123/"
+        "date": "1997-11-23",
+        "url": "/historia/partidos/mia-nwe-19971123/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19971130",
+        "game_id": "199711300rai",
         "fecha": "30-11-1997",
-        "url": "/historia/partidos/mia-oak-19971130/"
+        "date": "1997-11-30",
+        "url": "/historia/partidos/mia-oak-19971130/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Detroit Lions",
+        "title": "Detroit Lions vs Miami Dolphins",
         "id": "det-mia-19971207",
+        "game_id": "199712070mia",
         "fecha": "07-12-1997",
-        "url": "/historia/partidos/det-mia-19971207/"
+        "date": "1997-12-07",
+        "url": "/historia/partidos/det-mia-19971207/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19971214",
+        "id": "mia-clt-19971214",
+        "game_id": "199712140clt",
         "fecha": "14-12-1997",
-        "url": "/historia/partidos/mia-ind-19971214/"
+        "date": "1997-12-14",
+        "url": "/historia/partidos/mia-clt-19971214/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19971222",
+        "game_id": "199712220mia",
+        "fecha": "22-12-1997",
+        "date": "1997-12-22",
+        "url": "/historia/partidos/nwe-mia-19971222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19971222",
+        "id": "mia-nwe-19971228",
+        "game_id": "199712280nwe",
+        "fecha": "28-12-1997",
+        "date": "1997-12-28",
+        "url": "/historia/partidos/mia-nwe-19971228/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19970831",
+        "game_id": "199708310mia",
+        "fecha": "31-08-1997",
+        "date": "1997-08-31",
+        "url": "/historia/partidos/clt-mia-19970831/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Oilers vs Miami Dolphins",
+        "id": "ten-mia-19970907",
+        "game_id": "199709070mia",
+        "fecha": "07-09-1997",
+        "date": "1997-09-07",
+        "url": "/historia/partidos/ten-mia-19970907/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Green Bay Packers",
+        "id": "mia-gnb-19970914",
+        "game_id": "199709140gnb",
+        "fecha": "14-09-1997",
+        "date": "1997-09-14",
+        "url": "/historia/partidos/mia-gnb-19970914/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-19970921",
+        "game_id": "199709210tam",
+        "fecha": "21-09-1997",
+        "date": "1997-09-21",
+        "url": "/historia/partidos/mia-tam-19970921/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19971005",
+        "game_id": "199710050mia",
+        "fecha": "05-10-1997",
+        "date": "1997-10-05",
+        "url": "/historia/partidos/kan-mia-19971005/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19971012",
+        "game_id": "199710120nyj",
+        "fecha": "12-10-1997",
+        "date": "1997-10-12",
+        "url": "/historia/partidos/mia-nyj-19971012/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Ravens",
+        "id": "mia-rav-19971019",
+        "game_id": "199710190rav",
+        "fecha": "19-10-1997",
+        "date": "1997-10-19",
+        "url": "/historia/partidos/mia-rav-19971019/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Chicago Bears vs Miami Dolphins",
+        "id": "chi-mia-19971027",
+        "game_id": "199710270mia",
+        "fecha": "27-10-1997",
+        "date": "1997-10-27",
+        "url": "/historia/partidos/chi-mia-19971027/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19971102",
+        "game_id": "199711020buf",
+        "fecha": "02-11-1997",
+        "date": "1997-11-02",
+        "url": "/historia/partidos/mia-buf-19971102/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19971109",
+        "game_id": "199711090mia",
+        "fecha": "09-11-1997",
+        "date": "1997-11-09",
+        "url": "/historia/partidos/nyj-mia-19971109/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19971117",
+        "game_id": "199711170mia",
+        "fecha": "17-11-1997",
+        "date": "1997-11-17",
+        "url": "/historia/partidos/buf-mia-19971117/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19971123",
+        "game_id": "199711230nwe",
+        "fecha": "23-11-1997",
+        "date": "1997-11-23",
+        "url": "/historia/partidos/mia-nwe-19971123/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19971130",
+        "game_id": "199711300rai",
+        "fecha": "30-11-1997",
+        "date": "1997-11-30",
+        "url": "/historia/partidos/mia-oak-19971130/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Detroit Lions vs Miami Dolphins",
+        "id": "det-mia-19971207",
+        "game_id": "199712070mia",
+        "fecha": "07-12-1997",
+        "date": "1997-12-07",
+        "url": "/historia/partidos/det-mia-19971207/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19971214",
+        "game_id": "199712140clt",
+        "fecha": "14-12-1997",
+        "date": "1997-12-14",
+        "url": "/historia/partidos/mia-clt-19971214/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19971222",
+        "game_id": "199712220mia",
         "fecha": "22-12-1997",
-        "url": "/historia/partidos/new-mia-19971222/"
+        "date": "1997-12-22",
+        "url": "/historia/partidos/nwe-mia-19971222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19971228",
+        "id": "mia-nwe-19971228",
+        "game_id": "199712280nwe",
         "fecha": "28-12-1997",
-        "url": "/historia/partidos/mia-new-19971228/"
+        "date": "1997-12-28",
+        "url": "/historia/partidos/mia-nwe-19971228/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2668,6 +2976,7 @@
       "Puntos a favor": "339 puntos. 13º de 30 equipos",
       "Puntos en contra": "327 puntos. 16º de 30 equipos",
       "Head Coach": "Jimmy Johnson (9-7-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

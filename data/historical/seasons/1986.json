@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1986",
@@ -2410,102 +2410,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19860907",
+        "game_id": "198609070sdg",
         "fecha": "07-09-1986",
-        "url": "/historia/partidos/mia-sdg-19860907/"
+        "date": "1986-09-07",
+        "url": "/historia/partidos/mia-sdg-19860907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19860914",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19860914",
+        "game_id": "198609140mia",
         "fecha": "14-09-1986",
-        "url": "/historia/partidos/ind-mia-19860914/"
+        "date": "1986-09-14",
+        "url": "/historia/partidos/clt-mia-19860914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19860921",
+        "game_id": "198609210nyj",
         "fecha": "21-09-1986",
-        "url": "/historia/partidos/mia-nyj-19860921/"
+        "date": "1986-09-21",
+        "url": "/historia/partidos/mia-nyj-19860921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "san-mia-19860928",
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-19860928",
+        "game_id": "198609280mia",
         "fecha": "28-09-1986",
-        "url": "/historia/partidos/san-mia-19860928/"
+        "date": "1986-09-28",
+        "url": "/historia/partidos/sfo-mia-19860928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19861005",
+        "id": "mia-nwe-19861005",
+        "game_id": "198610050nwe",
         "fecha": "05-10-1986",
-        "url": "/historia/partidos/mia-new-19861005/"
+        "date": "1986-10-05",
+        "url": "/historia/partidos/mia-nwe-19861005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19861012",
+        "game_id": "198610120mia",
         "fecha": "12-10-1986",
-        "url": "/historia/partidos/buf-mia-19861012/"
+        "date": "1986-10-12",
+        "url": "/historia/partidos/buf-mia-19861012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Raiders",
+        "title": "Los Angeles Raiders vs Miami Dolphins",
         "id": "los-mia-19861019",
+        "game_id": "198610190mia",
         "fecha": "19-10-1986",
-        "url": "/historia/partidos/los-mia-19861019/"
+        "date": "1986-10-19",
+        "url": "/historia/partidos/los-mia-19861019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19861026",
+        "id": "mia-clt-19861026",
+        "game_id": "198610260clt",
         "fecha": "26-10-1986",
-        "url": "/historia/partidos/mia-ind-19861026/"
+        "date": "1986-10-26",
+        "url": "/historia/partidos/mia-clt-19861026/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19861102",
+        "game_id": "198611020mia",
         "fecha": "02-11-1986",
-        "url": "/historia/partidos/oti-mia-19861102/"
+        "date": "1986-11-02",
+        "url": "/historia/partidos/oti-mia-19861102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-19861110",
+        "game_id": "198611100cle",
         "fecha": "10-11-1986",
-        "url": "/historia/partidos/mia-cle-19861110/"
+        "date": "1986-11-10",
+        "url": "/historia/partidos/mia-cle-19861110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19861116",
+        "game_id": "198611160buf",
         "fecha": "16-11-1986",
-        "url": "/historia/partidos/mia-buf-19861116/"
+        "date": "1986-11-16",
+        "url": "/historia/partidos/mia-buf-19861116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19861124",
+        "game_id": "198611240mia",
         "fecha": "24-11-1986",
-        "url": "/historia/partidos/nyj-mia-19861124/"
+        "date": "1986-11-24",
+        "url": "/historia/partidos/nyj-mia-19861124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Atlanta Falcons",
+        "title": "Atlanta Falcons vs Miami Dolphins",
         "id": "atl-mia-19861130",
+        "game_id": "198611300mia",
         "fecha": "30-11-1986",
-        "url": "/historia/partidos/atl-mia-19861130/"
+        "date": "1986-11-30",
+        "url": "/historia/partidos/atl-mia-19861130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "mia-new-19861207",
+        "id": "mia-nor-19861207",
+        "game_id": "198612070nor",
         "fecha": "07-12-1986",
-        "url": "/historia/partidos/mia-new-19861207/"
+        "date": "1986-12-07",
+        "url": "/historia/partidos/mia-nor-19861207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Rams",
-        "id": "mia-los-19861214",
+        "id": "mia-ram-19861214",
+        "game_id": "198612140ram",
         "fecha": "14-12-1986",
-        "url": "/historia/partidos/mia-los-19861214/"
+        "date": "1986-12-14",
+        "url": "/historia/partidos/mia-ram-19861214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19861222",
+        "game_id": "198612220mia",
+        "fecha": "22-12-1986",
+        "date": "1986-12-22",
+        "url": "/historia/partidos/nwe-mia-19861222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19860907",
+        "game_id": "198609070sdg",
+        "fecha": "07-09-1986",
+        "date": "1986-09-07",
+        "url": "/historia/partidos/mia-sdg-19860907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19860914",
+        "game_id": "198609140mia",
+        "fecha": "14-09-1986",
+        "date": "1986-09-14",
+        "url": "/historia/partidos/clt-mia-19860914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19860921",
+        "game_id": "198609210nyj",
+        "fecha": "21-09-1986",
+        "date": "1986-09-21",
+        "url": "/historia/partidos/mia-nyj-19860921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-19860928",
+        "game_id": "198609280mia",
+        "fecha": "28-09-1986",
+        "date": "1986-09-28",
+        "url": "/historia/partidos/sfo-mia-19860928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19861222",
+        "id": "mia-nwe-19861005",
+        "game_id": "198610050nwe",
+        "fecha": "05-10-1986",
+        "date": "1986-10-05",
+        "url": "/historia/partidos/mia-nwe-19861005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19861012",
+        "game_id": "198610120mia",
+        "fecha": "12-10-1986",
+        "date": "1986-10-12",
+        "url": "/historia/partidos/buf-mia-19861012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Raiders vs Miami Dolphins",
+        "id": "los-mia-19861019",
+        "game_id": "198610190mia",
+        "fecha": "19-10-1986",
+        "date": "1986-10-19",
+        "url": "/historia/partidos/los-mia-19861019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19861026",
+        "game_id": "198610260clt",
+        "fecha": "26-10-1986",
+        "date": "1986-10-26",
+        "url": "/historia/partidos/mia-clt-19861026/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19861102",
+        "game_id": "198611020mia",
+        "fecha": "02-11-1986",
+        "date": "1986-11-02",
+        "url": "/historia/partidos/oti-mia-19861102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-19861110",
+        "game_id": "198611100cle",
+        "fecha": "10-11-1986",
+        "date": "1986-11-10",
+        "url": "/historia/partidos/mia-cle-19861110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19861116",
+        "game_id": "198611160buf",
+        "fecha": "16-11-1986",
+        "date": "1986-11-16",
+        "url": "/historia/partidos/mia-buf-19861116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19861124",
+        "game_id": "198611240mia",
+        "fecha": "24-11-1986",
+        "date": "1986-11-24",
+        "url": "/historia/partidos/nyj-mia-19861124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-19861130",
+        "game_id": "198611300mia",
+        "fecha": "30-11-1986",
+        "date": "1986-11-30",
+        "url": "/historia/partidos/atl-mia-19861130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-19861207",
+        "game_id": "198612070nor",
+        "fecha": "07-12-1986",
+        "date": "1986-12-07",
+        "url": "/historia/partidos/mia-nor-19861207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Rams",
+        "id": "mia-ram-19861214",
+        "game_id": "198612140ram",
+        "fecha": "14-12-1986",
+        "date": "1986-12-14",
+        "url": "/historia/partidos/mia-ram-19861214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19861222",
+        "game_id": "198612220mia",
         "fecha": "22-12-1986",
-        "url": "/historia/partidos/new-mia-19861222/"
+        "date": "1986-12-22",
+        "url": "/historia/partidos/nwe-mia-19861222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2515,6 +2805,7 @@
       "Puntos a favor": "430 puntos. 1º de 28 equipos",
       "Puntos en contra": "405 puntos. 26º de 28 equipos",
       "Head Coach": "Don Shula (8-8-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1992-10-25",
-    "slug": "ind-mia-19921025",
-    "path": "historia/partidos/ind-mia-19921025",
+    "slug": "clt-mia-19921025",
+    "path": "historia/partidos/clt-mia-19921025",
     "params": {
       "game_id": "199210250mia"
     }
@@ -856,6 +856,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "25 de octubre de 1992",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

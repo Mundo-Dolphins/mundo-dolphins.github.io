@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1995-11-12",
-    "slug": "new-mia-19951112",
-    "path": "historia/partidos/new-mia-19951112",
+    "slug": "nwe-mia-19951112",
+    "path": "historia/partidos/nwe-mia-19951112",
     "params": {
       "game_id": "199511120mia"
     }
@@ -1167,6 +1167,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de noviembre de 1995",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

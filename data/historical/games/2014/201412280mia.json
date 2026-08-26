@@ -2837,6 +2837,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de diciembre de 2014",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3140,6 +3142,21 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "zbVO9jMcC8E",
+        "title": "2014 week 17 New York Jets at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=zbVO9jMcC8E\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDE0LTEyLTAx",
+        "duration_seconds": 8199,
+        "embeddable": false
+      },
+      {
+        "youtube_id": "e6-aSC1SxMQ",
+        "title": "A Perfect Game Out of Nowhere! (Jets vs. Dolphins 2014, Week 17)",
+        "url": "https://www.youtube.com/watch?v=e6-aSC1SxMQ\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDE0LTEyLTAx",
+        "duration_seconds": 1007,
+        "embeddable": false
+      }
+    ]
   }
 }

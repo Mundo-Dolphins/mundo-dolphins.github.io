@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1982-12-12",
-    "slug": "mia-new-19821212",
-    "path": "historia/partidos/mia-new-19821212",
+    "slug": "mia-nwe-19821212",
+    "path": "historia/partidos/mia-nwe-19821212",
     "params": {
       "game_id": "198212120nwe"
     }
@@ -729,6 +729,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de diciembre de 1982",
       "Estadio": "Schaefer Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -1868,6 +1868,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de diciembre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2241,6 +2243,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "G841nta_2ew",
+        "title": "Philadelphia Eagles @ Miami Dolphins - WEEK 14 (12/11/2011)",
+        "url": "https://www.youtube.com/watch?v=G841nta_2ew\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGhpbGFkZWxwaGlhIEVhZ2xlcyAyMDA3LTExLTE4",
+        "duration_seconds": 9587,
+        "embeddable": false
+      }
+    ]
   }
 }

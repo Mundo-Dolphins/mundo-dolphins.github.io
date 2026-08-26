@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2011-01-02",
-    "slug": "mia-new-20110102",
-    "path": "historia/partidos/mia-new-20110102",
+    "slug": "mia-nwe-20110102",
+    "path": "historia/partidos/mia-nwe-20110102",
     "params": {
       "game_id": "201101020nwe"
     }
@@ -1870,6 +1870,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de enero de 2011",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

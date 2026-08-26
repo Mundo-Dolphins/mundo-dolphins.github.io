@@ -2728,6 +2728,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "8 de enero de 2017",
       "Estadio": "Heinz Field",
       "Tipo de estadio": "Al aire libre",
@@ -2981,6 +2983,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Y1hUb9VB7gs",
+        "title": "Pittsburgh Steelers VS Miami Dolphins AFC Wild Card Game 1/8/17",
+        "url": "https://www.youtube.com/watch?v=Y1hUb9VB7gs\u0026pp=ygU-TWlhbWkgRG9scGhpbnMgdnMgUGl0dHNidXJnaCBTdGVlbGVycyAyMDE2IHBsYXlvZmZzIDIwMTctMDEtMDg%3D",
+        "duration_seconds": 6828,
+        "embeddable": true
+      }
+    ]
   }
 }

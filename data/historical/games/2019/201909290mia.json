@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Los Angeles Chargers vs Miami Dolphins",
     "date": "2019-09-29",
-    "slug": "los-mia-20190929",
-    "path": "historia/partidos/los-mia-20190929",
+    "slug": "sdg-mia-20190929",
+    "path": "historia/partidos/sdg-mia-20190929",
     "params": {
       "game_id": "201909290mia"
     }
@@ -3982,6 +3982,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de septiembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4185,6 +4187,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "-G64-ylWkr4",
+        "title": "2019 – Week 4 – Chargers 30 @ Dolphins 10",
+        "url": "https://www.youtube.com/watch?v=-G64-ylWkr4\u0026pp=ygUxTG9zIEFuZ2VsZXMgQ2hhcmdlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxOS0wOS0yOQ%3D%3D",
+        "duration_seconds": 7152,
+        "embeddable": false
+      }
+    ]
   }
 }

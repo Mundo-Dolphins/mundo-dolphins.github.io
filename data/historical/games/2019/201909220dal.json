@@ -4083,6 +4083,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de septiembre de 2019",
       "Estadio": "AT\u0026T Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -4355,6 +4357,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "4YjC0t-_MEM",
+        "title": "2019 – Week 3 – Dolphins 6 @ Cowboys 31",
+        "url": "https://www.youtube.com/watch?v=4YjC0t-_MEM\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgRGFsbGFzIENvd2JveXMgMjAxOS0wOS0yMg%3D%3D",
+        "duration_seconds": 8061,
+        "embeddable": false
+      }
+    ]
   }
 }

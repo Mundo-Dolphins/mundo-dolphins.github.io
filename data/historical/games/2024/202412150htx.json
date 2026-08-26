@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Houston Texans",
     "date": "2024-12-15",
-    "slug": "mia-hou-20241215",
-    "path": "historia/partidos/mia-hou-20241215",
+    "slug": "mia-htx-20241215",
+    "path": "historia/partidos/mia-htx-20241215",
     "params": {
       "game_id": "202412150htx"
     }
@@ -3791,6 +3791,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de diciembre de 2024",
       "Estadio": "NRG Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",

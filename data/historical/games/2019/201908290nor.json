@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "2019-08-29",
-    "slug": "mia-new-20190829",
-    "path": "historia/partidos/mia-new-20190829",
+    "slug": "mia-nor-20190829",
+    "path": "historia/partidos/mia-nor-20190829",
     "params": {
       "game_id": "201908290nor"
     }
@@ -607,11 +607,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 4",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "29 de agosto de 2019",
       "Gamebook oficial": "assets/gamebooks/2019/201908290nor.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "SlC6yjSjTic",
+        "title": "2019 – Preseason Week 4 – Dolphins 16 @ Saints 13",
+        "url": "https://www.youtube.com/watch?v=SlC6yjSjTic\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgTmV3IE9ybGVhbnMgU2FpbnRzIDIwMTktMDgtMjk%3D",
+        "duration_seconds": 6816,
+        "embeddable": true
+      }
+    ]
   }
 }

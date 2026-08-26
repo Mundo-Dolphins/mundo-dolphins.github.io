@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2008-11-23",
-    "slug": "new-mia-20081123",
-    "path": "historia/partidos/new-mia-20081123",
+    "slug": "nwe-mia-20081123",
+    "path": "historia/partidos/nwe-mia-20081123",
     "params": {
       "game_id": "200811230mia"
     }
@@ -1790,6 +1790,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de noviembre de 2008",
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",

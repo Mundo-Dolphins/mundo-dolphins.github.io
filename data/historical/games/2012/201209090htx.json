@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Houston Texans",
     "date": "2012-09-09",
-    "slug": "mia-hou-20120909",
-    "path": "historia/partidos/mia-hou-20120909",
+    "slug": "mia-htx-20120909",
+    "path": "historia/partidos/mia-htx-20120909",
     "params": {
       "game_id": "201209090htx"
     }
@@ -2739,6 +2739,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de septiembre de 2012",
       "Estadio": "Reliant Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -3027,6 +3029,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "1i5K4ZpK8iE",
+        "title": "2012 week 1 Miami Dolphins at Houston Texans",
+        "url": "https://www.youtube.com/watch?v=1i5K4ZpK8iE\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgSG91c3RvbiBUZXhhbnMgMjAwOC0xMC0xMg%3D%3D",
+        "duration_seconds": 8038,
+        "embeddable": false
+      }
+    ]
   }
 }

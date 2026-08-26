@@ -2704,6 +2704,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "20 de diciembre de 2015",
       "Estadio": "Qualcomm Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2977,6 +2979,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "UyPl2S6tnvI",
+        "title": "2015 week 15 Miami Dolphins at San Diego Chargers",
+        "url": "https://www.youtube.com/watch?v=UyPl2S6tnvI\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgU2FuIERpZWdvIENoYXJnZXJzIDE5OTEtMTItMTU%3D",
+        "duration_seconds": 8545,
+        "embeddable": false
+      }
+    ]
   }
 }

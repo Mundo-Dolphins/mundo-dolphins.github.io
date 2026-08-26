@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2023-01-01",
-    "slug": "mia-new-20230101",
-    "path": "historia/partidos/mia-new-20230101",
+    "slug": "mia-nwe-20230101",
+    "path": "historia/partidos/mia-nwe-20230101",
     "params": {
       "game_id": "202301010nwe"
     }
@@ -3980,6 +3980,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de enero de 2023",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

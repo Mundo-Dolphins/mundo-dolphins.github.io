@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Tennessee Titans",
     "date": "2003-11-09",
-    "slug": "mia-ten-20031109",
-    "path": "historia/partidos/mia-ten-20031109",
+    "slug": "mia-oti-20031109",
+    "path": "historia/partidos/mia-oti-20031109",
     "params": {
       "game_id": "200311090oti"
     }
@@ -2034,6 +2034,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de noviembre de 2003",
       "Estadio": "The Coliseum",
       "Tipo de estadio": "Al aire libre",

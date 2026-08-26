@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2024-10-06",
-    "slug": "mia-new-20241006",
-    "path": "historia/partidos/mia-new-20241006",
+    "slug": "mia-nwe-20241006",
+    "path": "historia/partidos/mia-nwe-20241006",
     "params": {
       "game_id": "202410060nwe"
     }
@@ -4003,6 +4003,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de octubre de 2024",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

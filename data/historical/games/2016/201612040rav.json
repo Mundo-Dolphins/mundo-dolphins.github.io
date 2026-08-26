@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Baltimore Ravens",
     "date": "2016-12-04",
-    "slug": "mia-bal-20161204",
-    "path": "historia/partidos/mia-bal-20161204",
+    "slug": "mia-rav-20161204",
+    "path": "historia/partidos/mia-rav-20161204",
     "params": {
       "game_id": "201612040rav"
     }
@@ -2794,6 +2794,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de diciembre de 2016",
       "Estadio": "M\u0026T Bank Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3067,6 +3069,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "2WvxIOHTNoo",
+        "title": "2016 week 13 Miami Dolphins at Baltimore Ravens",
+        "url": "https://www.youtube.com/watch?v=2WvxIOHTNoo\u0026pp=ygUtTWlhbWkgRG9scGhpbnMgdnMgQmFsdGltb3JlIFJhdmVucyAyMDE2LTEyLTA0",
+        "duration_seconds": 7755,
+        "embeddable": false
+      }
+    ]
   }
 }

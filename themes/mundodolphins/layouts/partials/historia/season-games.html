@@ -1,8 +1,8 @@
 {{/*
   Partial: historia/season-games.html
 
-  Recibe: . = slice de objetos de sections["Partidos de la temporada regular"]
-  Cada objeto tiene: title, id, fecha, url.
+  Recibe: . = slice de objetos de partidos de temporada.
+  Cada objeto tiene: title, id, fecha, url y, opcionalmente, stage.
 
   Normalización del título:
   Los nombres de equipo del JSON son fiables; solo el ORDEN puede estar mal.
@@ -16,7 +16,7 @@
 {{ $DOLPHINS := "Miami Dolphins" }}
 {{ $games := . }}
 
-<h2 id="partidos-de-la-temporada-regular">Partidos de la temporada regular</h2>
+<h2 id="partidos-de-la-temporada-regular">Partidos de la temporada</h2>
 
 {{ range $games }}
   {{ $titleParts := split .title " vs " }}
@@ -39,6 +39,5 @@
     {{ end }}
   {{ end }}
 
-<div class="season-game"><a class="season-game__link" href="{{ .url }}">{{ $display }}</a><span class="season-game__date">{{ .fecha }}</span></div>
+<div class="season-game"><a class="season-game__link" href="{{ .url }}">{{ $display }}</a>{{ with .stage }}<span class="season-game__stage">{{ . }}</span>{{ end }}<span class="season-game__date">{{ .fecha }}</span></div>
 {{ end }}
-

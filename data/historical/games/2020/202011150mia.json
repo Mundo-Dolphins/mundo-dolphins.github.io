@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Los Angeles Chargers vs Miami Dolphins",
     "date": "2020-11-15",
-    "slug": "los-mia-20201115",
-    "path": "historia/partidos/los-mia-20201115",
+    "slug": "sdg-mia-20201115",
+    "path": "historia/partidos/sdg-mia-20201115",
     "params": {
       "game_id": "202011150mia"
     }
@@ -3829,6 +3829,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de noviembre de 2020",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4092,6 +4094,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "iUUdQcaps00",
+        "title": "Chargers vs. Dolphins Week 10 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=iUUdQcaps00\u0026pp=ygUxTG9zIEFuZ2VsZXMgQ2hhcmdlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxOS0wOS0yOQ%3D%3D",
+        "duration_seconds": 639,
+        "embeddable": false
+      }
+    ]
   }
 }

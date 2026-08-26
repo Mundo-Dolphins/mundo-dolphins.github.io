@@ -1759,6 +1759,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de noviembre de 2011",
       "Estadio": "Cowboys Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -2021,6 +2023,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "hBsXbliTSn4",
+        "title": "Miami Dolphins @ Dallas Cowboys - WEEK 12 (11/24/2011)",
+        "url": "https://www.youtube.com/watch?v=hBsXbliTSn4\u0026pp=ygUrRGFsbGFzIENvd2JveXMgdnMgTWlhbWkgRG9scGhpbnMgMTk4NC0xMi0xNw%3D%3D",
+        "duration_seconds": 7574,
+        "embeddable": false
+      }
+    ]
   }
 }

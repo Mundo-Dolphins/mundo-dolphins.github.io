@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2005-11-13",
-    "slug": "new-mia-20051113",
-    "path": "historia/partidos/new-mia-20051113",
+    "slug": "nwe-mia-20051113",
+    "path": "historia/partidos/nwe-mia-20051113",
     "params": {
       "game_id": "200511130mia"
     }
@@ -1818,6 +1818,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de noviembre de 2005",
       "Estadio": "Dolphins Stadium",
       "Tipo de estadio": "Al aire libre",

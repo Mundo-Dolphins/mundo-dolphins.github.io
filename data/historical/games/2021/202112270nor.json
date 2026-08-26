@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "2021-12-27",
-    "slug": "mia-new-20211227",
-    "path": "historia/partidos/mia-new-20211227",
+    "slug": "mia-nor-20211227",
+    "path": "historia/partidos/mia-nor-20211227",
     "params": {
       "game_id": "202112270nor"
     }
@@ -3780,6 +3780,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "27 de diciembre de 2021",
       "Estadio": "Caesars Superdome",
       "Tipo de estadio": "dome",

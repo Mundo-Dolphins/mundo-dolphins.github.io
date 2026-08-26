@@ -2650,6 +2650,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "31 de octubre de 2013",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2973,6 +2975,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "_ljasG7Z9J8",
+        "title": "2013 week 9 Cincinnati Bengals at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=_ljasG7Z9J8\u0026pp=ygUvQ2luY2lubmF0aSBCZW5nYWxzIHZzIE1pYW1pIERvbHBoaW5zIDE5NzgtMTAtMDk%3D",
+        "duration_seconds": 9621,
+        "embeddable": false
+      }
+    ]
   }
 }

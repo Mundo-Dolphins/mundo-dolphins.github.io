@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "2015-12-27",
-    "slug": "ind-mia-20151227",
-    "path": "historia/partidos/ind-mia-20151227",
+    "slug": "clt-mia-20151227",
+    "path": "historia/partidos/clt-mia-20151227",
     "params": {
       "game_id": "201512270mia"
     }
@@ -2654,6 +2654,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "27 de diciembre de 2015",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2887,6 +2889,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "gFi0VQ3m9jQ",
+        "title": "2015 week 16 Indianapolis Colts at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=gFi0VQ3m9jQ\u0026pp=ygUvSW5kaWFuYXBvbGlzIENvbHRzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTUtMTItMjc%3D",
+        "duration_seconds": 7768,
+        "embeddable": false
+      }
+    ]
   }
 }

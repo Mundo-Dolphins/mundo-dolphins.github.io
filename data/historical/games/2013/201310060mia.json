@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2013-10-06",
-    "slug": "bal-mia-20131006",
-    "path": "historia/partidos/bal-mia-20131006",
+    "slug": "rav-mia-20131006",
+    "path": "historia/partidos/rav-mia-20131006",
     "params": {
       "game_id": "201310060mia"
     }
@@ -2724,6 +2724,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de octubre de 2013",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3047,6 +3049,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "mcakI_VjlBk",
+        "title": "2013 week 5 Baltimore Ravens at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=mcakI_VjlBk\u0026pp=ygUtQmFsdGltb3JlIFJhdmVucyB2cyBNaWFtaSBEb2xwaGlucyAyMDEzLTEwLTA2",
+        "duration_seconds": 8693,
+        "embeddable": false
+      }
+    ]
   }
 }

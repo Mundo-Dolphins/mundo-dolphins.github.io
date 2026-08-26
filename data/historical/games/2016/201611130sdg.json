@@ -2716,6 +2716,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de noviembre de 2016",
       "Estadio": "Qualcomm Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2989,6 +2991,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "2vVZoxvXkPI",
+        "title": "2016 – Week 10 – Dolphins 31 @ Chargers 24",
+        "url": "https://www.youtube.com/watch?v=2vVZoxvXkPI\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgU2FuIERpZWdvIENoYXJnZXJzIDIwMTYtMTEtMTM%3D",
+        "duration_seconds": 8365,
+        "embeddable": false
+      }
+    ]
   }
 }

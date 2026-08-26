@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "2005-10-30",
-    "slug": "mia-new-20051030",
-    "path": "historia/partidos/mia-new-20051030",
+    "slug": "mia-nor-20051030",
+    "path": "historia/partidos/mia-nor-20051030",
     "params": {
       "game_id": "200510300nor"
     }
@@ -1750,6 +1750,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de octubre de 2005",
       "Estadio": "Tiger Stadium (LSU)",
       "Tipo de estadio": "Al aire libre",

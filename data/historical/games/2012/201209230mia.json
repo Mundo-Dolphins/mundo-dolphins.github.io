@@ -2808,6 +2808,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de septiembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3111,6 +3113,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "6z_rwmB1CS8",
+        "title": "New York Jets @ Miami Dolphins - WEEK 3 (9/23/2012)",
+        "url": "https://www.youtube.com/watch?v=6z_rwmB1CS8\u0026pp=ygUqTmV3IFlvcmsgSmV0cyB2cyBNaWFtaSBEb2xwaGlucyAyMDA5LTEwLTEy",
+        "duration_seconds": 11139,
+        "embeddable": false
+      }
+    ]
   }
 }

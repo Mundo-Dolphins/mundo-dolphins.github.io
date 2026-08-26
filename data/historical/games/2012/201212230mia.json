@@ -2557,6 +2557,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de diciembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2820,6 +2822,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "aVXEZz8EFtw",
+        "title": "2012 Week 16 – Bills 10 @ Dolphins 24",
+        "url": "https://www.youtube.com/watch?v=aVXEZz8EFtw\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDEyLTEyLTIz",
+        "duration_seconds": 8224,
+        "embeddable": true
+      }
+    ]
   }
 }

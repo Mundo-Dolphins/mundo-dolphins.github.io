@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2012-12-30",
-    "slug": "mia-new-20121230",
-    "path": "historia/partidos/mia-new-20121230",
+    "slug": "mia-nwe-20121230",
+    "path": "historia/partidos/mia-nwe-20121230",
     "params": {
       "game_id": "201212300nwe"
     }
@@ -2593,6 +2593,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de diciembre de 2012",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2846,6 +2848,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "voAfOP0mVFo",
+        "title": "2012 week 17 Miami Dolphins at New England Patriots",
+        "url": "https://www.youtube.com/watch?v=voAfOP0mVFo\u0026pp=ygUxTmV3IEVuZ2xhbmQgUGF0cmlvdHMgdnMgTWlhbWkgRG9scGhpbnMgMjAxMi0xMi0wMg%3D%3D",
+        "duration_seconds": 7564,
+        "embeddable": false
+      }
+    ]
   }
 }

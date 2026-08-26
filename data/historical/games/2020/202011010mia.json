@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Los Angeles Rams vs Miami Dolphins",
     "date": "2020-11-01",
-    "slug": "los-mia-20201101",
-    "path": "historia/partidos/los-mia-20201101",
+    "slug": "ram-mia-20201101",
+    "path": "historia/partidos/ram-mia-20201101",
     "params": {
       "game_id": "202011010mia"
     }
@@ -4027,6 +4027,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de noviembre de 2020",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4370,6 +4372,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "OnRQEHWY0DU",
+        "title": "Rams vs. Dolphins Week 8 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=OnRQEHWY0DU\u0026pp=ygUtTG9zIEFuZ2VsZXMgUmFtcyB2cyBNaWFtaSBEb2xwaGlucyAyMDE0LTA4LTI4",
+        "duration_seconds": 545,
+        "embeddable": false
+      }
+    ]
   }
 }

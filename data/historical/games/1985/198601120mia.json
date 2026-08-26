@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1986-01-12",
-    "slug": "new-mia-19860112",
-    "path": "historia/partidos/new-mia-19860112",
+    "slug": "nwe-mia-19860112",
+    "path": "historia/partidos/nwe-mia-19860112",
     "params": {
       "game_id": "198601120mia"
     }
@@ -925,6 +925,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "12 de enero de 1986",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

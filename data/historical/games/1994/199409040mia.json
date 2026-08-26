@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1994-09-04",
-    "slug": "new-mia-19940904",
-    "path": "historia/partidos/new-mia-19940904",
+    "slug": "nwe-mia-19940904",
+    "path": "historia/partidos/nwe-mia-19940904",
     "params": {
       "game_id": "199409040mia"
     }
@@ -1219,6 +1219,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de septiembre de 1994",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

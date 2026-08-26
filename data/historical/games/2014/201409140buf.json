@@ -2942,6 +2942,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de septiembre de 2014",
       "Estadio": "Ralph Wilson Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3235,6 +3237,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "wt5ILONYsNU",
+        "title": "2014 week 2 Miami Dolphins at Buffalo Bills",
+        "url": "https://www.youtube.com/watch?v=wt5ILONYsNU\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDE0LTA5LTE0",
+        "duration_seconds": 8760,
+        "embeddable": false
+      }
+    ]
   }
 }

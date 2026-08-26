@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:05Z",
+  "generated_at": "2026-08-26T10:11:31Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2012",
@@ -3399,102 +3399,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20120810",
+        "game_id": "201208100mia",
+        "fecha": "10-08-2012",
+        "date": "2012-08-10",
+        "url": "/historia/partidos/tam-mia-20120810/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-20120817",
+        "game_id": "201208170car",
+        "fecha": "17-08-2012",
+        "date": "2012-08-17",
+        "url": "/historia/partidos/mia-car-20120817/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20120824",
+        "game_id": "201208240mia",
+        "fecha": "24-08-2012",
+        "date": "2012-08-24",
+        "url": "/historia/partidos/atl-mia-20120824/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20120829",
+        "game_id": "201208290dal",
+        "fecha": "29-08-2012",
+        "date": "2012-08-29",
+        "url": "/historia/partidos/mia-dal-20120829/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Houston Texans",
-        "id": "mia-hou-20120909",
+        "id": "mia-htx-20120909",
+        "game_id": "201209090htx",
         "fecha": "09-09-2012",
-        "url": "/historia/partidos/mia-hou-20120909/"
+        "date": "2012-09-09",
+        "url": "/historia/partidos/mia-htx-20120909/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-20120916",
+        "game_id": "201209160mia",
         "fecha": "16-09-2012",
-        "url": "/historia/partidos/oak-mia-20120916/"
+        "date": "2012-09-16",
+        "url": "/historia/partidos/oak-mia-20120916/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20120923",
+        "game_id": "201209230mia",
         "fecha": "23-09-2012",
-        "url": "/historia/partidos/nyj-mia-20120923/"
+        "date": "2012-09-23",
+        "url": "/historia/partidos/nyj-mia-20120923/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Arizona Cardinals",
-        "id": "mia-ari-20120930",
+        "id": "mia-crd-20120930",
+        "game_id": "201209300crd",
         "fecha": "30-09-2012",
-        "url": "/historia/partidos/mia-ari-20120930/"
+        "date": "2012-09-30",
+        "url": "/historia/partidos/mia-crd-20120930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-20121007",
+        "game_id": "201210070cin",
         "fecha": "07-10-2012",
-        "url": "/historia/partidos/mia-cin-20121007/"
+        "date": "2012-10-07",
+        "url": "/historia/partidos/mia-cin-20121007/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs St. Louis Rams",
-        "id": "stl-mia-20121014",
+        "title": "St. Louis Rams vs Miami Dolphins",
+        "id": "ram-mia-20121014",
+        "game_id": "201210140mia",
         "fecha": "14-10-2012",
-        "url": "/historia/partidos/stl-mia-20121014/"
+        "date": "2012-10-14",
+        "url": "/historia/partidos/ram-mia-20121014/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20121028",
+        "game_id": "201210280nyj",
         "fecha": "28-10-2012",
-        "url": "/historia/partidos/mia-nyj-20121028/"
+        "date": "2012-10-28",
+        "url": "/historia/partidos/mia-nyj-20121028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20121104",
+        "id": "mia-clt-20121104",
+        "game_id": "201211040clt",
         "fecha": "04-11-2012",
-        "url": "/historia/partidos/mia-ind-20121104/"
+        "date": "2012-11-04",
+        "url": "/historia/partidos/mia-clt-20121104/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "ten-mia-20121111",
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20121111",
+        "game_id": "201211110mia",
         "fecha": "11-11-2012",
-        "url": "/historia/partidos/ten-mia-20121111/"
+        "date": "2012-11-11",
+        "url": "/historia/partidos/oti-mia-20121111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20121115",
+        "game_id": "201211150buf",
         "fecha": "15-11-2012",
-        "url": "/historia/partidos/mia-buf-20121115/"
+        "date": "2012-11-15",
+        "url": "/historia/partidos/mia-buf-20121115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Seattle Seahawks",
+        "title": "Seattle Seahawks vs Miami Dolphins",
         "id": "sea-mia-20121125",
+        "game_id": "201211250mia",
         "fecha": "25-11-2012",
-        "url": "/historia/partidos/sea-mia-20121125/"
+        "date": "2012-11-25",
+        "url": "/historia/partidos/sea-mia-20121125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20121202",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20121202",
+        "game_id": "201212020mia",
         "fecha": "02-12-2012",
-        "url": "/historia/partidos/new-mia-20121202/"
+        "date": "2012-12-02",
+        "url": "/historia/partidos/nwe-mia-20121202/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "mia-san-20121209",
+        "id": "mia-sfo-20121209",
+        "game_id": "201212090sfo",
         "fecha": "09-12-2012",
-        "url": "/historia/partidos/mia-san-20121209/"
+        "date": "2012-12-09",
+        "url": "/historia/partidos/mia-sfo-20121209/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "jac-mia-20121216",
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20121216",
+        "game_id": "201212160mia",
         "fecha": "16-12-2012",
-        "url": "/historia/partidos/jac-mia-20121216/"
+        "date": "2012-12-16",
+        "url": "/historia/partidos/jax-mia-20121216/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20121223",
+        "game_id": "201212230mia",
         "fecha": "23-12-2012",
-        "url": "/historia/partidos/buf-mia-20121223/"
+        "date": "2012-12-23",
+        "url": "/historia/partidos/buf-mia-20121223/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20121230",
+        "id": "mia-nwe-20121230",
+        "game_id": "201212300nwe",
         "fecha": "30-12-2012",
-        "url": "/historia/partidos/mia-new-20121230/"
+        "date": "2012-12-30",
+        "url": "/historia/partidos/mia-nwe-20121230/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Houston Texans",
+        "id": "mia-htx-20120909",
+        "game_id": "201209090htx",
+        "fecha": "09-09-2012",
+        "date": "2012-09-09",
+        "url": "/historia/partidos/mia-htx-20120909/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-20120916",
+        "game_id": "201209160mia",
+        "fecha": "16-09-2012",
+        "date": "2012-09-16",
+        "url": "/historia/partidos/oak-mia-20120916/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20120923",
+        "game_id": "201209230mia",
+        "fecha": "23-09-2012",
+        "date": "2012-09-23",
+        "url": "/historia/partidos/nyj-mia-20120923/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Arizona Cardinals",
+        "id": "mia-crd-20120930",
+        "game_id": "201209300crd",
+        "fecha": "30-09-2012",
+        "date": "2012-09-30",
+        "url": "/historia/partidos/mia-crd-20120930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-20121007",
+        "game_id": "201210070cin",
+        "fecha": "07-10-2012",
+        "date": "2012-10-07",
+        "url": "/historia/partidos/mia-cin-20121007/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "St. Louis Rams vs Miami Dolphins",
+        "id": "ram-mia-20121014",
+        "game_id": "201210140mia",
+        "fecha": "14-10-2012",
+        "date": "2012-10-14",
+        "url": "/historia/partidos/ram-mia-20121014/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20121028",
+        "game_id": "201210280nyj",
+        "fecha": "28-10-2012",
+        "date": "2012-10-28",
+        "url": "/historia/partidos/mia-nyj-20121028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20121104",
+        "game_id": "201211040clt",
+        "fecha": "04-11-2012",
+        "date": "2012-11-04",
+        "url": "/historia/partidos/mia-clt-20121104/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20121111",
+        "game_id": "201211110mia",
+        "fecha": "11-11-2012",
+        "date": "2012-11-11",
+        "url": "/historia/partidos/oti-mia-20121111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20121115",
+        "game_id": "201211150buf",
+        "fecha": "15-11-2012",
+        "date": "2012-11-15",
+        "url": "/historia/partidos/mia-buf-20121115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
+        "id": "sea-mia-20121125",
+        "game_id": "201211250mia",
+        "fecha": "25-11-2012",
+        "date": "2012-11-25",
+        "url": "/historia/partidos/sea-mia-20121125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20121202",
+        "game_id": "201212020mia",
+        "fecha": "02-12-2012",
+        "date": "2012-12-02",
+        "url": "/historia/partidos/nwe-mia-20121202/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Francisco 49ers",
+        "id": "mia-sfo-20121209",
+        "game_id": "201212090sfo",
+        "fecha": "09-12-2012",
+        "date": "2012-12-09",
+        "url": "/historia/partidos/mia-sfo-20121209/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20121216",
+        "game_id": "201212160mia",
+        "fecha": "16-12-2012",
+        "date": "2012-12-16",
+        "url": "/historia/partidos/jax-mia-20121216/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20121223",
+        "game_id": "201212230mia",
+        "fecha": "23-12-2012",
+        "date": "2012-12-23",
+        "url": "/historia/partidos/buf-mia-20121223/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20121230",
+        "game_id": "201212300nwe",
+        "fecha": "30-12-2012",
+        "date": "2012-12-30",
+        "url": "/historia/partidos/mia-nwe-20121230/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3504,6 +3842,7 @@
       "Puntos a favor": "288 puntos. 27º de 32 equipos",
       "Puntos en contra": "317 puntos. 7º de 32 equipos",
       "Head Coach": "Joe Philbin (7-9-0)",
+      "General Manager": "Jeff Ireland",
       "Estadio": "Sun Life Stadium",
       "Training Camp": "Doctors Hospital Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

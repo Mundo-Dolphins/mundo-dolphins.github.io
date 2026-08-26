@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Arizona Cardinals vs Miami Dolphins",
     "date": "2016-12-11",
-    "slug": "ari-mia-20161211",
-    "path": "historia/partidos/ari-mia-20161211",
+    "slug": "crd-mia-20161211",
+    "path": "historia/partidos/crd-mia-20161211",
     "params": {
       "game_id": "201612110mia"
     }
@@ -2825,6 +2825,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de diciembre de 2016",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3158,6 +3160,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "PAaq9It54e8",
+        "title": "2016 week 14 Arizona Cardinals at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=PAaq9It54e8\u0026pp=ygUuQXJpem9uYSBDYXJkaW5hbHMgdnMgTWlhbWkgRG9scGhpbnMgMjAxNi0xMi0xMQ%3D%3D",
+        "duration_seconds": 9474,
+        "embeddable": false
+      }
+    ]
   }
 }

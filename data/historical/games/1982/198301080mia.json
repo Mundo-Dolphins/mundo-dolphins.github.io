@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1983-01-08",
-    "slug": "new-mia-19830108",
-    "path": "historia/partidos/new-mia-19830108",
+    "slug": "nwe-mia-19830108",
+    "path": "historia/partidos/nwe-mia-19830108",
     "params": {
       "game_id": "198301080mia"
     }
@@ -997,6 +997,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "8 de enero de 1983",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

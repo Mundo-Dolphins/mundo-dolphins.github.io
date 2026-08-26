@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2024-11-24",
-    "slug": "new-mia-20241124",
-    "path": "historia/partidos/new-mia-20241124",
+    "slug": "nwe-mia-20241124",
+    "path": "historia/partidos/nwe-mia-20241124",
     "params": {
       "game_id": "202411240mia"
     }
@@ -4171,6 +4171,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de noviembre de 2024",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",

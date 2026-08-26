@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:05Z",
+  "generated_at": "2026-08-26T10:11:31Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2015",
@@ -3499,102 +3499,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-20150813",
+        "game_id": "201508130chi",
+        "fecha": "13-08-2015",
+        "date": "2015-08-13",
+        "url": "/historia/partidos/mia-chi-20150813/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-20150822",
+        "game_id": "201508220car",
+        "fecha": "22-08-2015",
+        "date": "2015-08-22",
+        "url": "/historia/partidos/mia-car-20150822/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20150829",
+        "game_id": "201508290mia",
+        "fecha": "29-08-2015",
+        "date": "2015-08-29",
+        "url": "/historia/partidos/atl-mia-20150829/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20150903",
+        "game_id": "201509030mia",
+        "fecha": "03-09-2015",
+        "date": "2015-09-03",
+        "url": "/historia/partidos/tam-mia-20150903/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Washington Redskins",
         "id": "mia-was-20150913",
+        "game_id": "201509130was",
         "fecha": "13-09-2015",
-        "url": "/historia/partidos/mia-was-20150913/"
+        "date": "2015-09-13",
+        "url": "/historia/partidos/mia-was-20150913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "mia-jac-20150920",
+        "id": "mia-jax-20150920",
+        "game_id": "201509200jax",
         "fecha": "20-09-2015",
-        "url": "/historia/partidos/mia-jac-20150920/"
+        "date": "2015-09-20",
+        "url": "/historia/partidos/mia-jax-20150920/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20150927",
+        "game_id": "201509270mia",
         "fecha": "27-09-2015",
-        "url": "/historia/partidos/buf-mia-20150927/"
+        "date": "2015-09-27",
+        "url": "/historia/partidos/buf-mia-20150927/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20151004",
+        "game_id": "201510040mia",
         "fecha": "04-10-2015",
-        "url": "/historia/partidos/nyj-mia-20151004/"
+        "date": "2015-10-04",
+        "url": "/historia/partidos/nyj-mia-20151004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "mia-ten-20151018",
+        "id": "mia-oti-20151018",
+        "game_id": "201510180oti",
         "fecha": "18-10-2015",
-        "url": "/historia/partidos/mia-ten-20151018/"
+        "date": "2015-10-18",
+        "url": "/historia/partidos/mia-oti-20151018/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Texans",
-        "id": "hou-mia-20151025",
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20151025",
+        "game_id": "201510250mia",
         "fecha": "25-10-2015",
-        "url": "/historia/partidos/hou-mia-20151025/"
+        "date": "2015-10-25",
+        "url": "/historia/partidos/htx-mia-20151025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20151029",
+        "id": "mia-nwe-20151029",
+        "game_id": "201510290nwe",
         "fecha": "29-10-2015",
-        "url": "/historia/partidos/mia-new-20151029/"
+        "date": "2015-10-29",
+        "url": "/historia/partidos/mia-nwe-20151029/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20151108",
+        "game_id": "201511080buf",
         "fecha": "08-11-2015",
-        "url": "/historia/partidos/mia-buf-20151108/"
+        "date": "2015-11-08",
+        "url": "/historia/partidos/mia-buf-20151108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-20151115",
+        "game_id": "201511150phi",
         "fecha": "15-11-2015",
-        "url": "/historia/partidos/mia-phi-20151115/"
+        "date": "2015-11-15",
+        "url": "/historia/partidos/mia-phi-20151115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Dallas Cowboys",
+        "title": "Dallas Cowboys vs Miami Dolphins",
         "id": "dal-mia-20151122",
+        "game_id": "201511220mia",
         "fecha": "22-11-2015",
-        "url": "/historia/partidos/dal-mia-20151122/"
+        "date": "2015-11-22",
+        "url": "/historia/partidos/dal-mia-20151122/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20151129",
+        "game_id": "201511290nyj",
         "fecha": "29-11-2015",
-        "url": "/historia/partidos/mia-nyj-20151129/"
+        "date": "2015-11-29",
+        "url": "/historia/partidos/mia-nyj-20151129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20151206",
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20151206",
+        "game_id": "201512060mia",
         "fecha": "06-12-2015",
-        "url": "/historia/partidos/bal-mia-20151206/"
+        "date": "2015-12-06",
+        "url": "/historia/partidos/rav-mia-20151206/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Giants",
+        "title": "New York Giants vs Miami Dolphins",
         "id": "nyg-mia-20151214",
+        "game_id": "201512140mia",
         "fecha": "14-12-2015",
-        "url": "/historia/partidos/nyg-mia-20151214/"
+        "date": "2015-12-14",
+        "url": "/historia/partidos/nyg-mia-20151214/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-20151220",
+        "game_id": "201512200sdg",
         "fecha": "20-12-2015",
-        "url": "/historia/partidos/mia-sdg-20151220/"
+        "date": "2015-12-20",
+        "url": "/historia/partidos/mia-sdg-20151220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-20151227",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20151227",
+        "game_id": "201512270mia",
         "fecha": "27-12-2015",
-        "url": "/historia/partidos/ind-mia-20151227/"
+        "date": "2015-12-27",
+        "url": "/historia/partidos/clt-mia-20151227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20160103",
+        "game_id": "201601030mia",
+        "fecha": "03-01-2016",
+        "date": "2016-01-03",
+        "url": "/historia/partidos/nwe-mia-20160103/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Washington Redskins",
+        "id": "mia-was-20150913",
+        "game_id": "201509130was",
+        "fecha": "13-09-2015",
+        "date": "2015-09-13",
+        "url": "/historia/partidos/mia-was-20150913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20150920",
+        "game_id": "201509200jax",
+        "fecha": "20-09-2015",
+        "date": "2015-09-20",
+        "url": "/historia/partidos/mia-jax-20150920/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20150927",
+        "game_id": "201509270mia",
+        "fecha": "27-09-2015",
+        "date": "2015-09-27",
+        "url": "/historia/partidos/buf-mia-20150927/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20151004",
+        "game_id": "201510040mia",
+        "fecha": "04-10-2015",
+        "date": "2015-10-04",
+        "url": "/historia/partidos/nyj-mia-20151004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tennessee Titans",
+        "id": "mia-oti-20151018",
+        "game_id": "201510180oti",
+        "fecha": "18-10-2015",
+        "date": "2015-10-18",
+        "url": "/historia/partidos/mia-oti-20151018/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20151025",
+        "game_id": "201510250mia",
+        "fecha": "25-10-2015",
+        "date": "2015-10-25",
+        "url": "/historia/partidos/htx-mia-20151025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20160103",
+        "id": "mia-nwe-20151029",
+        "game_id": "201510290nwe",
+        "fecha": "29-10-2015",
+        "date": "2015-10-29",
+        "url": "/historia/partidos/mia-nwe-20151029/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20151108",
+        "game_id": "201511080buf",
+        "fecha": "08-11-2015",
+        "date": "2015-11-08",
+        "url": "/historia/partidos/mia-buf-20151108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-20151115",
+        "game_id": "201511150phi",
+        "fecha": "15-11-2015",
+        "date": "2015-11-15",
+        "url": "/historia/partidos/mia-phi-20151115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Dallas Cowboys vs Miami Dolphins",
+        "id": "dal-mia-20151122",
+        "game_id": "201511220mia",
+        "fecha": "22-11-2015",
+        "date": "2015-11-22",
+        "url": "/historia/partidos/dal-mia-20151122/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20151129",
+        "game_id": "201511290nyj",
+        "fecha": "29-11-2015",
+        "date": "2015-11-29",
+        "url": "/historia/partidos/mia-nyj-20151129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20151206",
+        "game_id": "201512060mia",
+        "fecha": "06-12-2015",
+        "date": "2015-12-06",
+        "url": "/historia/partidos/rav-mia-20151206/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Giants vs Miami Dolphins",
+        "id": "nyg-mia-20151214",
+        "game_id": "201512140mia",
+        "fecha": "14-12-2015",
+        "date": "2015-12-14",
+        "url": "/historia/partidos/nyg-mia-20151214/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-20151220",
+        "game_id": "201512200sdg",
+        "fecha": "20-12-2015",
+        "date": "2015-12-20",
+        "url": "/historia/partidos/mia-sdg-20151220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20151227",
+        "game_id": "201512270mia",
+        "fecha": "27-12-2015",
+        "date": "2015-12-27",
+        "url": "/historia/partidos/clt-mia-20151227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20160103",
+        "game_id": "201601030mia",
         "fecha": "03-01-2016",
-        "url": "/historia/partidos/new-mia-20160103/"
+        "date": "2016-01-03",
+        "url": "/historia/partidos/nwe-mia-20160103/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3604,6 +3942,7 @@
       "Puntos a favor": "310 puntos. 27º de 32 equipos",
       "Puntos en contra": "389 puntos. 19º de 32 equipos",
       "Head Coach": "Joe Philbin (1-3-0) and Dan Campbell (5-7-0)",
+      "General Manager": "Dennis Hickey",
       "Estadio": "Sun Life Stadium",
       "Training Camp": "Doctors Hospital Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

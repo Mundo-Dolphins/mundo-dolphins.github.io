@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2016-01-03",
-    "slug": "new-mia-20160103",
-    "path": "historia/partidos/new-mia-20160103",
+    "slug": "nwe-mia-20160103",
+    "path": "historia/partidos/nwe-mia-20160103",
     "params": {
       "game_id": "201601030mia"
     }
@@ -2692,6 +2692,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "3 de enero de 2016",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2975,6 +2977,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "yo8aQPaUedk",
+        "title": "2015 week 17 New England Patriots at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=yo8aQPaUedk\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxNS0xMC0yOQ%3D%3D",
+        "duration_seconds": 8219,
+        "embeddable": false
+      }
+    ]
   }
 }

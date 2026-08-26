@@ -2657,6 +2657,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de noviembre de 2012",
       "Estadio": "Ralph Wilson Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2940,6 +2942,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "eP0rVUErbdY",
+        "title": "2012 week 11 Miami Dolphins at Buffalo Bills",
+        "url": "https://www.youtube.com/watch?v=eP0rVUErbdY\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDEyLTExLTE1",
+        "duration_seconds": 7843,
+        "embeddable": false
+      }
+    ]
   }
 }

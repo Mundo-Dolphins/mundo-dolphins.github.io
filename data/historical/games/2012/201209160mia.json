@@ -2731,6 +2731,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "16 de septiembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3044,6 +3046,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "EsaMeDW-NdU",
+        "title": "2012 week 2 Oakland Raiders at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=EsaMeDW-NdU\u0026pp=ygUsT2FrbGFuZCBSYWlkZXJzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTEtMTItMDQ%3D",
+        "duration_seconds": 8856,
+        "embeddable": false
+      }
+    ]
   }
 }

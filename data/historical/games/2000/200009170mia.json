@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2000-09-17",
-    "slug": "bal-mia-20000917",
-    "path": "historia/partidos/bal-mia-20000917",
+    "slug": "rav-mia-20000917",
+    "path": "historia/partidos/rav-mia-20000917",
     "params": {
       "game_id": "200009170mia"
     }
@@ -1739,6 +1739,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de septiembre de 2000",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

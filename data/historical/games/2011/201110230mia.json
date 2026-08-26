@@ -1805,6 +1805,8 @@
     },
     "Información del partido": {
       "Semana": "7",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de octubre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2148,6 +2150,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "IFkAo1ozzsM",
+        "title": "Denver Broncos @ Miami Dolphins - WEEK 7 (10/23/2011)",
+        "url": "https://www.youtube.com/watch?v=IFkAo1ozzsM\u0026pp=ygUrRGVudmVyIEJyb25jb3MgdnMgTWlhbWkgRG9scGhpbnMgMjAxMS0xMC0yMw%3D%3D",
+        "duration_seconds": 9075,
+        "embeddable": true
+      }
+    ]
   }
 }

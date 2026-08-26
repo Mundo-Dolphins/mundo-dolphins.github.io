@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1978",
@@ -2450,110 +2450,418 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19780903",
+        "game_id": "197809030nyj",
         "fecha": "03-09-1978",
-        "url": "/historia/partidos/mia-nyj-19780903/"
+        "date": "1978-09-03",
+        "url": "/historia/partidos/mia-nyj-19780903/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19780910",
+        "game_id": "197809100clt",
         "fecha": "10-09-1978",
-        "url": "/historia/partidos/mia-bal-19780910/"
+        "date": "1978-09-10",
+        "url": "/historia/partidos/mia-bal-19780910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19780917",
+        "game_id": "197809170mia",
         "fecha": "17-09-1978",
-        "url": "/historia/partidos/buf-mia-19780917/"
+        "date": "1978-09-17",
+        "url": "/historia/partidos/buf-mia-19780917/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-19780924",
+        "game_id": "197809240phi",
         "fecha": "24-09-1978",
-        "url": "/historia/partidos/mia-phi-19780924/"
+        "date": "1978-09-24",
+        "url": "/historia/partidos/mia-phi-19780924/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs St. Louis Cardinals",
+        "title": "St. Louis Cardinals vs Miami Dolphins",
         "id": "stl-mia-19781001",
+        "game_id": "197810010mia",
         "fecha": "01-10-1978",
-        "url": "/historia/partidos/stl-mia-19781001/"
+        "date": "1978-10-01",
+        "url": "/historia/partidos/stl-mia-19781001/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-19781009",
+        "game_id": "197810090mia",
         "fecha": "09-10-1978",
-        "url": "/historia/partidos/cin-mia-19781009/"
+        "date": "1978-10-09",
+        "url": "/historia/partidos/cin-mia-19781009/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19781015",
+        "game_id": "197810150sdg",
         "fecha": "15-10-1978",
-        "url": "/historia/partidos/mia-sdg-19781015/"
+        "date": "1978-10-15",
+        "url": "/historia/partidos/mia-sdg-19781015/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19781022",
+        "id": "mia-nwe-19781022",
+        "game_id": "197810220nwe",
         "fecha": "22-10-1978",
-        "url": "/historia/partidos/mia-new-19781022/"
+        "date": "1978-10-22",
+        "url": "/historia/partidos/mia-nwe-19781022/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19781029",
+        "game_id": "197810290mia",
         "fecha": "29-10-1978",
-        "url": "/historia/partidos/bal-mia-19781029/"
+        "date": "1978-10-29",
+        "url": "/historia/partidos/bal-mia-19781029/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Dallas Cowboys",
+        "title": "Dallas Cowboys vs Miami Dolphins",
         "id": "dal-mia-19781105",
+        "game_id": "197811050mia",
         "fecha": "05-11-1978",
-        "url": "/historia/partidos/dal-mia-19781105/"
+        "date": "1978-11-05",
+        "url": "/historia/partidos/dal-mia-19781105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19781112",
+        "game_id": "197811120buf",
         "fecha": "12-11-1978",
-        "url": "/historia/partidos/mia-buf-19781112/"
+        "date": "1978-11-12",
+        "url": "/historia/partidos/mia-buf-19781112/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19781120",
+        "game_id": "197811200oti",
         "fecha": "20-11-1978",
-        "url": "/historia/partidos/mia-oti-19781120/"
+        "date": "1978-11-20",
+        "url": "/historia/partidos/mia-oti-19781120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19781126",
+        "game_id": "197811260mia",
         "fecha": "26-11-1978",
-        "url": "/historia/partidos/nyj-mia-19781126/"
+        "date": "1978-11-26",
+        "url": "/historia/partidos/nyj-mia-19781126/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Washington Redskins",
         "id": "mia-was-19781203",
+        "game_id": "197812030was",
         "fecha": "03-12-1978",
-        "url": "/historia/partidos/mia-was-19781203/"
+        "date": "1978-12-03",
+        "url": "/historia/partidos/mia-was-19781203/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-19781210",
+        "game_id": "197812100mia",
         "fecha": "10-12-1978",
-        "url": "/historia/partidos/oak-mia-19781210/"
+        "date": "1978-12-10",
+        "url": "/historia/partidos/oak-mia-19781210/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19781218",
+        "game_id": "197812180mia",
+        "fecha": "18-12-1978",
+        "date": "1978-12-18",
+        "url": "/historia/partidos/nwe-mia-19781218/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19781224",
+        "game_id": "197812240mia",
+        "fecha": "24-12-1978",
+        "date": "1978-12-24",
+        "url": "/historia/partidos/oti-mia-19781224/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19780903",
+        "game_id": "197809030nyj",
+        "fecha": "03-09-1978",
+        "date": "1978-09-03",
+        "url": "/historia/partidos/mia-nyj-19780903/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19780910",
+        "game_id": "197809100clt",
+        "fecha": "10-09-1978",
+        "date": "1978-09-10",
+        "url": "/historia/partidos/mia-bal-19780910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19780917",
+        "game_id": "197809170mia",
+        "fecha": "17-09-1978",
+        "date": "1978-09-17",
+        "url": "/historia/partidos/buf-mia-19780917/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-19780924",
+        "game_id": "197809240phi",
+        "fecha": "24-09-1978",
+        "date": "1978-09-24",
+        "url": "/historia/partidos/mia-phi-19780924/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "St. Louis Cardinals vs Miami Dolphins",
+        "id": "stl-mia-19781001",
+        "game_id": "197810010mia",
+        "fecha": "01-10-1978",
+        "date": "1978-10-01",
+        "url": "/historia/partidos/stl-mia-19781001/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-19781009",
+        "game_id": "197810090mia",
+        "fecha": "09-10-1978",
+        "date": "1978-10-09",
+        "url": "/historia/partidos/cin-mia-19781009/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19781015",
+        "game_id": "197810150sdg",
+        "fecha": "15-10-1978",
+        "date": "1978-10-15",
+        "url": "/historia/partidos/mia-sdg-19781015/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19781218",
+        "id": "mia-nwe-19781022",
+        "game_id": "197810220nwe",
+        "fecha": "22-10-1978",
+        "date": "1978-10-22",
+        "url": "/historia/partidos/mia-nwe-19781022/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19781029",
+        "game_id": "197810290mia",
+        "fecha": "29-10-1978",
+        "date": "1978-10-29",
+        "url": "/historia/partidos/bal-mia-19781029/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Dallas Cowboys vs Miami Dolphins",
+        "id": "dal-mia-19781105",
+        "game_id": "197811050mia",
+        "fecha": "05-11-1978",
+        "date": "1978-11-05",
+        "url": "/historia/partidos/dal-mia-19781105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19781112",
+        "game_id": "197811120buf",
+        "fecha": "12-11-1978",
+        "date": "1978-11-12",
+        "url": "/historia/partidos/mia-buf-19781112/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19781120",
+        "game_id": "197811200oti",
+        "fecha": "20-11-1978",
+        "date": "1978-11-20",
+        "url": "/historia/partidos/mia-oti-19781120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19781126",
+        "game_id": "197811260mia",
+        "fecha": "26-11-1978",
+        "date": "1978-11-26",
+        "url": "/historia/partidos/nyj-mia-19781126/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Washington Redskins",
+        "id": "mia-was-19781203",
+        "game_id": "197812030was",
+        "fecha": "03-12-1978",
+        "date": "1978-12-03",
+        "url": "/historia/partidos/mia-was-19781203/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-19781210",
+        "game_id": "197812100mia",
+        "fecha": "10-12-1978",
+        "date": "1978-12-10",
+        "url": "/historia/partidos/oak-mia-19781210/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19781218",
+        "game_id": "197812180mia",
         "fecha": "18-12-1978",
-        "url": "/historia/partidos/new-mia-19781218/"
+        "date": "1978-12-18",
+        "url": "/historia/partidos/nwe-mia-19781218/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19781224",
+        "game_id": "197812240mia",
         "fecha": "24-12-1978",
-        "url": "/historia/partidos/oti-mia-19781224/"
+        "date": "1978-12-24",
+        "url": "/historia/partidos/oti-mia-19781224/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2563,6 +2871,7 @@
       "Puntos a favor": "372 puntos. 2º de 28 equipos",
       "Puntos en contra": "254 puntos. 6º de 28 equipos",
       "Head Coach": "Don Shula (11-5-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

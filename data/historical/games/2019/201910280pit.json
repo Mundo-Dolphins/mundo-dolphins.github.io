@@ -3998,6 +3998,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de octubre de 2019",
       "Estadio": "Heinz Field",
       "Tipo de estadio": "Al aire libre",
@@ -4271,6 +4273,21 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "fbnGvorFjxs",
+        "title": "Dolphins vs. Steelers Week 8 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=fbnGvorFjxs\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGl0dHNidXJnaCBTdGVlbGVycyAyMDA1LTA4LTIw",
+        "duration_seconds": 711,
+        "embeddable": false
+      },
+      {
+        "youtube_id": "lVy4MiJFhSI",
+        "title": "The Last Time the Steelers Played the Dolphins... 2019 (GIVEAWAY)",
+        "url": "https://www.youtube.com/watch?v=lVy4MiJFhSI\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGl0dHNidXJnaCBTdGVlbGVycyAyMDE5LTEwLTI4",
+        "duration_seconds": 408,
+        "embeddable": false
+      }
+    ]
   }
 }

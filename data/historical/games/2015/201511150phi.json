@@ -2817,6 +2817,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de noviembre de 2015",
       "Estadio": "Lincoln Financial Field",
       "Tipo de estadio": "Al aire libre",
@@ -3140,6 +3142,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "E4o59Pp8VpM",
+        "title": "2015 week 10 Miami Dolphins at Philadelphia Eagles",
+        "url": "https://www.youtube.com/watch?v=E4o59Pp8VpM\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGhpbGFkZWxwaGlhIEVhZ2xlcyAyMDA3LTExLTE4",
+        "duration_seconds": 8924,
+        "embeddable": false
+      }
+    ]
   }
 }

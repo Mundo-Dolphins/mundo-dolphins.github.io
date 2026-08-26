@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Baltimore Ravens",
     "date": "1997-10-19",
-    "slug": "mia-bal-19971019",
-    "path": "historia/partidos/mia-bal-19971019",
+    "slug": "mia-rav-19971019",
+    "path": "historia/partidos/mia-rav-19971019",
     "params": {
       "game_id": "199710190rav"
     }
@@ -1231,6 +1231,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "19 de octubre de 1997",
       "Estadio": "Memorial Stadium (Baltimore)",
       "Tipo de estadio": "Al aire libre",

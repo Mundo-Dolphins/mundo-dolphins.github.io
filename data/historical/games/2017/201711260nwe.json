@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2017-11-26",
-    "slug": "mia-new-20171126",
-    "path": "historia/partidos/mia-new-20171126",
+    "slug": "mia-nwe-20171126",
+    "path": "historia/partidos/mia-nwe-20171126",
     "params": {
       "game_id": "201711260nwe"
     }
@@ -2727,6 +2727,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "26 de noviembre de 2017",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3010,6 +3012,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "JGWHCR-_U54",
+        "title": "Dolphins vs. Patriots | NFL Week 12 Game Highlights",
+        "url": "https://www.youtube.com/watch?v=JGWHCR-_U54\u0026pp=ygUxTmV3IEVuZ2xhbmQgUGF0cmlvdHMgdnMgTWlhbWkgRG9scGhpbnMgMjAxNy0wMS0wMQ%3D%3D",
+        "duration_seconds": 483,
+        "embeddable": false
+      }
+    ]
   }
 }

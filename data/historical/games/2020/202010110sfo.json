@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs San Francisco 49ers",
     "date": "2020-10-11",
-    "slug": "mia-san-20201011",
-    "path": "historia/partidos/mia-san-20201011",
+    "slug": "mia-sfo-20201011",
+    "path": "historia/partidos/mia-sfo-20201011",
     "params": {
       "game_id": "202010110sfo"
     }
@@ -4139,6 +4139,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de octubre de 2020",
       "Estadio": "Levi's Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4412,6 +4414,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "V5HqqFu4sfA",
+        "title": "Dolphins vs. 49ers Week 5 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=V5HqqFu4sfA\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgU2FuIEZyYW5jaXNjbyA0OWVycyAyMDIwLTEwLTEx",
+        "duration_seconds": 589,
+        "embeddable": false
+      }
+    ]
   }
 }

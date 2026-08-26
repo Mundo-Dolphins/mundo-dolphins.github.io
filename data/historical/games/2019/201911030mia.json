@@ -3734,6 +3734,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "3 de noviembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3997,6 +3999,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "mpIDQR8XFtk",
+        "title": "Jets vs. Dolphins | NFL Week 9 Game Highlights",
+        "url": "https://www.youtube.com/watch?v=mpIDQR8XFtk\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDE3LTA5LTI0",
+        "duration_seconds": 336,
+        "embeddable": false
+      }
+    ]
   }
 }

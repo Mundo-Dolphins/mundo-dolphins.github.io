@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2011-12-24",
-    "slug": "mia-new-20111224",
-    "path": "historia/partidos/mia-new-20111224",
+    "slug": "mia-nwe-20111224",
+    "path": "historia/partidos/mia-nwe-20111224",
     "params": {
       "game_id": "201112240nwe"
     }
@@ -1936,6 +1936,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de diciembre de 2011",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2239,6 +2241,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "OehnKPo1USM",
+        "title": "2011 week 16 Miami Dolphins at New England Patriots",
+        "url": "https://www.youtube.com/watch?v=OehnKPo1USM\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxMS0wMS0wMg%3D%3D",
+        "duration_seconds": 8727,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Los Angeles Chargers",
     "date": "2017-09-17",
-    "slug": "mia-los-20170917",
-    "path": "historia/partidos/mia-los-20170917",
+    "slug": "mia-sdg-20170917",
+    "path": "historia/partidos/mia-sdg-20170917",
     "params": {
       "game_id": "201709170sdg"
     }
@@ -2749,6 +2749,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de septiembre de 2017",
       "Estadio": "StubHub Center",
       "Tipo de estadio": "Al aire libre",
@@ -2982,6 +2984,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "kbmcnXyGsKQ",
+        "title": "Chargers First Game in LA since 1960! Miami Dolphins vs Los Angeles Chargers Week 2 2017 FULL GAME",
+        "url": "https://www.youtube.com/watch?v=kbmcnXyGsKQ\u0026pp=ygUxTG9zIEFuZ2VsZXMgQ2hhcmdlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAwMS0wOC0xOA%3D%3D",
+        "duration_seconds": 7283,
+        "embeddable": false
+      }
+    ]
   }
 }

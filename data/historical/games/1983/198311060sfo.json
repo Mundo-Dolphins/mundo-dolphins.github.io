@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs San Francisco 49ers",
     "date": "1983-11-06",
-    "slug": "mia-san-19831106",
-    "path": "historia/partidos/mia-san-19831106",
+    "slug": "mia-sfo-19831106",
+    "path": "historia/partidos/mia-sfo-19831106",
     "params": {
       "game_id": "198311060sfo"
     }
@@ -869,6 +869,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de noviembre de 1983",
       "Estadio": "Candlestick Park",
       "Tipo de estadio": "Al aire libre",

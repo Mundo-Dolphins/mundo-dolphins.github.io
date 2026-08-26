@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1979",
@@ -2164,110 +2164,418 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19790902",
+        "game_id": "197909020buf",
         "fecha": "02-09-1979",
-        "url": "/historia/partidos/mia-buf-19790902/"
+        "date": "1979-09-02",
+        "url": "/historia/partidos/mia-buf-19790902/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Seattle Seahawks",
+        "title": "Seattle Seahawks vs Miami Dolphins",
         "id": "sea-mia-19790909",
+        "game_id": "197909090mia",
         "fecha": "09-09-1979",
-        "url": "/historia/partidos/sea-mia-19790909/"
+        "date": "1979-09-09",
+        "url": "/historia/partidos/sea-mia-19790909/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Minnesota Vikings",
         "id": "mia-min-19790916",
+        "game_id": "197909160min",
         "fecha": "16-09-1979",
-        "url": "/historia/partidos/mia-min-19790916/"
+        "date": "1979-09-16",
+        "url": "/historia/partidos/mia-min-19790916/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Chicago Bears",
+        "title": "Chicago Bears vs Miami Dolphins",
         "id": "chi-mia-19790923",
+        "game_id": "197909230mia",
         "fecha": "23-09-1979",
-        "url": "/historia/partidos/chi-mia-19790923/"
+        "date": "1979-09-23",
+        "url": "/historia/partidos/chi-mia-19790923/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19790930",
+        "game_id": "197909300nyj",
         "fecha": "30-09-1979",
-        "url": "/historia/partidos/mia-nyj-19790930/"
+        "date": "1979-09-30",
+        "url": "/historia/partidos/mia-nyj-19790930/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19791008",
+        "game_id": "197910080rai",
         "fecha": "08-10-1979",
-        "url": "/historia/partidos/mia-oak-19791008/"
+        "date": "1979-10-08",
+        "url": "/historia/partidos/mia-oak-19791008/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19791014",
+        "game_id": "197910140mia",
         "fecha": "14-10-1979",
-        "url": "/historia/partidos/buf-mia-19791014/"
+        "date": "1979-10-14",
+        "url": "/historia/partidos/buf-mia-19791014/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19791021",
+        "id": "mia-nwe-19791021",
+        "game_id": "197910210nwe",
         "fecha": "21-10-1979",
-        "url": "/historia/partidos/mia-new-19791021/"
+        "date": "1979-10-21",
+        "url": "/historia/partidos/mia-nwe-19791021/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-19791028",
+        "game_id": "197910280mia",
         "fecha": "28-10-1979",
-        "url": "/historia/partidos/gnb-mia-19791028/"
+        "date": "1979-10-28",
+        "url": "/historia/partidos/gnb-mia-19791028/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19791105",
+        "game_id": "197911050mia",
         "fecha": "05-11-1979",
-        "url": "/historia/partidos/oti-mia-19791105/"
+        "date": "1979-11-05",
+        "url": "/historia/partidos/oti-mia-19791105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19791111",
+        "game_id": "197911110mia",
         "fecha": "11-11-1979",
-        "url": "/historia/partidos/bal-mia-19791111/"
+        "date": "1979-11-11",
+        "url": "/historia/partidos/bal-mia-19791111/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-19791118",
+        "game_id": "197911180cle",
         "fecha": "18-11-1979",
-        "url": "/historia/partidos/mia-cle-19791118/"
+        "date": "1979-11-18",
+        "url": "/historia/partidos/mia-cle-19791118/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19791125",
+        "game_id": "197911250clt",
         "fecha": "25-11-1979",
-        "url": "/historia/partidos/mia-bal-19791125/"
+        "date": "1979-11-25",
+        "url": "/historia/partidos/mia-bal-19791125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19791129",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19791129",
+        "game_id": "197911290mia",
         "fecha": "29-11-1979",
-        "url": "/historia/partidos/new-mia-19791129/"
+        "date": "1979-11-29",
+        "url": "/historia/partidos/nwe-mia-19791129/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Detroit Lions",
         "id": "mia-det-19791209",
+        "game_id": "197912090det",
         "fecha": "09-12-1979",
-        "url": "/historia/partidos/mia-det-19791209/"
+        "date": "1979-12-09",
+        "url": "/historia/partidos/mia-det-19791209/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19791215",
+        "game_id": "197912150mia",
+        "fecha": "15-12-1979",
+        "date": "1979-12-15",
+        "url": "/historia/partidos/nyj-mia-19791215/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-19791230",
+        "game_id": "197912300pit",
+        "fecha": "30-12-1979",
+        "date": "1979-12-30",
+        "url": "/historia/partidos/mia-pit-19791230/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19790902",
+        "game_id": "197909020buf",
+        "fecha": "02-09-1979",
+        "date": "1979-09-02",
+        "url": "/historia/partidos/mia-buf-19790902/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
+        "id": "sea-mia-19790909",
+        "game_id": "197909090mia",
+        "fecha": "09-09-1979",
+        "date": "1979-09-09",
+        "url": "/historia/partidos/sea-mia-19790909/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Minnesota Vikings",
+        "id": "mia-min-19790916",
+        "game_id": "197909160min",
+        "fecha": "16-09-1979",
+        "date": "1979-09-16",
+        "url": "/historia/partidos/mia-min-19790916/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Chicago Bears vs Miami Dolphins",
+        "id": "chi-mia-19790923",
+        "game_id": "197909230mia",
+        "fecha": "23-09-1979",
+        "date": "1979-09-23",
+        "url": "/historia/partidos/chi-mia-19790923/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19790930",
+        "game_id": "197909300nyj",
+        "fecha": "30-09-1979",
+        "date": "1979-09-30",
+        "url": "/historia/partidos/mia-nyj-19790930/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19791008",
+        "game_id": "197910080rai",
+        "fecha": "08-10-1979",
+        "date": "1979-10-08",
+        "url": "/historia/partidos/mia-oak-19791008/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19791014",
+        "game_id": "197910140mia",
+        "fecha": "14-10-1979",
+        "date": "1979-10-14",
+        "url": "/historia/partidos/buf-mia-19791014/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19791021",
+        "game_id": "197910210nwe",
+        "fecha": "21-10-1979",
+        "date": "1979-10-21",
+        "url": "/historia/partidos/mia-nwe-19791021/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-19791028",
+        "game_id": "197910280mia",
+        "fecha": "28-10-1979",
+        "date": "1979-10-28",
+        "url": "/historia/partidos/gnb-mia-19791028/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19791105",
+        "game_id": "197911050mia",
+        "fecha": "05-11-1979",
+        "date": "1979-11-05",
+        "url": "/historia/partidos/oti-mia-19791105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19791111",
+        "game_id": "197911110mia",
+        "fecha": "11-11-1979",
+        "date": "1979-11-11",
+        "url": "/historia/partidos/bal-mia-19791111/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-19791118",
+        "game_id": "197911180cle",
+        "fecha": "18-11-1979",
+        "date": "1979-11-18",
+        "url": "/historia/partidos/mia-cle-19791118/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19791125",
+        "game_id": "197911250clt",
+        "fecha": "25-11-1979",
+        "date": "1979-11-25",
+        "url": "/historia/partidos/mia-bal-19791125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19791129",
+        "game_id": "197911290mia",
+        "fecha": "29-11-1979",
+        "date": "1979-11-29",
+        "url": "/historia/partidos/nwe-mia-19791129/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-19791209",
+        "game_id": "197912090det",
+        "fecha": "09-12-1979",
+        "date": "1979-12-09",
+        "url": "/historia/partidos/mia-det-19791209/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19791215",
+        "game_id": "197912150mia",
         "fecha": "15-12-1979",
-        "url": "/historia/partidos/nyj-mia-19791215/"
+        "date": "1979-12-15",
+        "url": "/historia/partidos/nyj-mia-19791215/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-19791230",
+        "game_id": "197912300pit",
         "fecha": "30-12-1979",
-        "url": "/historia/partidos/mia-pit-19791230/"
+        "date": "1979-12-30",
+        "url": "/historia/partidos/mia-pit-19791230/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2277,6 +2585,7 @@
       "Puntos a favor": "341 puntos. 11º de 28 equipos",
       "Puntos en contra": "257 puntos. 4º de 28 equipos",
       "Head Coach": "Don Shula (10-6-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

@@ -921,12 +921,22 @@
     },
     "Estadísticas avanzadas": {},
     "Información del partido": {
-      "Semana": "Preseason ",
+      "Semana": "Preseason",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "4 de agosto de 2013",
       "Gamebook oficial": "assets/gamebooks/2013/201308040dal.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "MXCjgaU8Hrc",
+        "title": "2013 Hall Of Fame Game Dolphins 20 @ Cowboys 24",
+        "url": "https://www.youtube.com/watch?v=MXCjgaU8Hrc\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgRGFsbGFzIENvd2JveXMgMjAxMy0wOC0wNA%3D%3D",
+        "duration_seconds": 8222,
+        "embeddable": false
+      }
+    ]
   }
 }

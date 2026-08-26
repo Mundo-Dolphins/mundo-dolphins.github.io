@@ -2789,6 +2789,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de noviembre de 2014",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3052,6 +3054,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "4xrsYR5-mYQ",
+        "title": "2014 week 9 San Diego Chargers at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=4xrsYR5-mYQ\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgU2FuIERpZWdvIENoYXJnZXJzIDIwMDktMDktMjc%3D",
+        "duration_seconds": 7160,
+        "embeddable": true
+      }
+    ]
   }
 }

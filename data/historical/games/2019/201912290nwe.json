@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2019-12-29",
-    "slug": "mia-new-20191229",
-    "path": "historia/partidos/mia-new-20191229",
+    "slug": "mia-nwe-20191229",
+    "path": "historia/partidos/mia-nwe-20191229",
     "params": {
       "game_id": "201912290nwe"
     }
@@ -4005,6 +4005,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de diciembre de 2019",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4248,6 +4250,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "QShZYwHnlW8",
+        "title": "Dolphins vs. Patriots Week 17 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=QShZYwHnlW8\u0026pp=ygUxTmV3IEVuZ2xhbmQgUGF0cmlvdHMgdnMgTWlhbWkgRG9scGhpbnMgMjAxOS0wOS0xNQ%3D%3D",
+        "duration_seconds": 616,
+        "embeddable": false
+      }
+    ]
   }
 }

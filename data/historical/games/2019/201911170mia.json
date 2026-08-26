@@ -3845,6 +3845,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de noviembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4148,6 +4150,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "xyK9zmFBSsM",
+        "title": "Bills vs. Dolphins Week 11 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=xyK9zmFBSsM\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDE5LTEwLTIw",
+        "duration_seconds": 540,
+        "embeddable": false
+      }
+    ]
   }
 }

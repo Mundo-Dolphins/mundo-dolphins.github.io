@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2002-01-13",
-    "slug": "bal-mia-20020113",
-    "path": "historia/partidos/bal-mia-20020113",
+    "slug": "rav-mia-20020113",
+    "path": "historia/partidos/rav-mia-20020113",
     "params": {
       "game_id": "200201130mia"
     }
@@ -1801,6 +1801,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "13 de enero de 2002",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

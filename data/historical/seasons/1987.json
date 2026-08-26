@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1987",
@@ -3384,96 +3384,368 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19870913",
+        "id": "mia-nwe-19870913",
+        "game_id": "198709130nwe",
         "fecha": "13-09-1987",
-        "url": "/historia/partidos/mia-new-19870913/"
+        "date": "1987-09-13",
+        "url": "/historia/partidos/mia-nwe-19870913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19870920",
+        "id": "mia-clt-19870920",
+        "game_id": "198709200clt",
         "fecha": "20-09-1987",
-        "url": "/historia/partidos/mia-ind-19870920/"
+        "date": "1987-09-20",
+        "url": "/historia/partidos/mia-clt-19870920/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Seattle Seahawks",
         "id": "mia-sea-19871004",
+        "game_id": "198710040sea",
         "fecha": "04-10-1987",
-        "url": "/historia/partidos/mia-sea-19871004/"
+        "date": "1987-10-04",
+        "url": "/historia/partidos/mia-sea-19871004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19871011",
+        "game_id": "198710110mia",
         "fecha": "11-10-1987",
-        "url": "/historia/partidos/kan-mia-19871011/"
+        "date": "1987-10-11",
+        "url": "/historia/partidos/kan-mia-19871011/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19871018",
+        "game_id": "198710180nyj",
         "fecha": "18-10-1987",
-        "url": "/historia/partidos/mia-nyj-19871018/"
+        "date": "1987-10-18",
+        "url": "/historia/partidos/mia-nyj-19871018/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19871025",
+        "game_id": "198710250mia",
         "fecha": "25-10-1987",
-        "url": "/historia/partidos/buf-mia-19871025/"
+        "date": "1987-10-25",
+        "url": "/historia/partidos/buf-mia-19871025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19871101",
+        "game_id": "198711010mia",
         "fecha": "01-11-1987",
-        "url": "/historia/partidos/pit-mia-19871101/"
+        "date": "1987-11-01",
+        "url": "/historia/partidos/pit-mia-19871101/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-19871108",
+        "game_id": "198711080cin",
         "fecha": "08-11-1987",
-        "url": "/historia/partidos/mia-cin-19871108/"
+        "date": "1987-11-08",
+        "url": "/historia/partidos/mia-cin-19871108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19871115",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19871115",
+        "game_id": "198711150mia",
         "fecha": "15-11-1987",
-        "url": "/historia/partidos/ind-mia-19871115/"
+        "date": "1987-11-15",
+        "url": "/historia/partidos/clt-mia-19871115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-19871122",
+        "game_id": "198711220dal",
         "fecha": "22-11-1987",
-        "url": "/historia/partidos/mia-dal-19871122/"
+        "date": "1987-11-22",
+        "url": "/historia/partidos/mia-dal-19871122/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19871129",
+        "game_id": "198711290buf",
         "fecha": "29-11-1987",
-        "url": "/historia/partidos/mia-buf-19871129/"
+        "date": "1987-11-29",
+        "url": "/historia/partidos/mia-buf-19871129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19871207",
+        "game_id": "198712070mia",
         "fecha": "07-12-1987",
-        "url": "/historia/partidos/nyj-mia-19871207/"
+        "date": "1987-12-07",
+        "url": "/historia/partidos/nyj-mia-19871207/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-19871213",
+        "game_id": "198712130phi",
         "fecha": "13-12-1987",
-        "url": "/historia/partidos/mia-phi-19871213/"
+        "date": "1987-12-13",
+        "url": "/historia/partidos/mia-phi-19871213/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
+        "title": "Washington Redskins vs Miami Dolphins",
         "id": "was-mia-19871220",
+        "game_id": "198712200mia",
         "fecha": "20-12-1987",
-        "url": "/historia/partidos/was-mia-19871220/"
+        "date": "1987-12-20",
+        "url": "/historia/partidos/was-mia-19871220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19871228",
+        "game_id": "198712280mia",
+        "fecha": "28-12-1987",
+        "date": "1987-12-28",
+        "url": "/historia/partidos/nwe-mia-19871228/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19871228",
+        "id": "mia-nwe-19870913",
+        "game_id": "198709130nwe",
+        "fecha": "13-09-1987",
+        "date": "1987-09-13",
+        "url": "/historia/partidos/mia-nwe-19870913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19870920",
+        "game_id": "198709200clt",
+        "fecha": "20-09-1987",
+        "date": "1987-09-20",
+        "url": "/historia/partidos/mia-clt-19870920/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Seattle Seahawks",
+        "id": "mia-sea-19871004",
+        "game_id": "198710040sea",
+        "fecha": "04-10-1987",
+        "date": "1987-10-04",
+        "url": "/historia/partidos/mia-sea-19871004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19871011",
+        "game_id": "198710110mia",
+        "fecha": "11-10-1987",
+        "date": "1987-10-11",
+        "url": "/historia/partidos/kan-mia-19871011/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19871018",
+        "game_id": "198710180nyj",
+        "fecha": "18-10-1987",
+        "date": "1987-10-18",
+        "url": "/historia/partidos/mia-nyj-19871018/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19871025",
+        "game_id": "198710250mia",
+        "fecha": "25-10-1987",
+        "date": "1987-10-25",
+        "url": "/historia/partidos/buf-mia-19871025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19871101",
+        "game_id": "198711010mia",
+        "fecha": "01-11-1987",
+        "date": "1987-11-01",
+        "url": "/historia/partidos/pit-mia-19871101/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-19871108",
+        "game_id": "198711080cin",
+        "fecha": "08-11-1987",
+        "date": "1987-11-08",
+        "url": "/historia/partidos/mia-cin-19871108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19871115",
+        "game_id": "198711150mia",
+        "fecha": "15-11-1987",
+        "date": "1987-11-15",
+        "url": "/historia/partidos/clt-mia-19871115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-19871122",
+        "game_id": "198711220dal",
+        "fecha": "22-11-1987",
+        "date": "1987-11-22",
+        "url": "/historia/partidos/mia-dal-19871122/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19871129",
+        "game_id": "198711290buf",
+        "fecha": "29-11-1987",
+        "date": "1987-11-29",
+        "url": "/historia/partidos/mia-buf-19871129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19871207",
+        "game_id": "198712070mia",
+        "fecha": "07-12-1987",
+        "date": "1987-12-07",
+        "url": "/historia/partidos/nyj-mia-19871207/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-19871213",
+        "game_id": "198712130phi",
+        "fecha": "13-12-1987",
+        "date": "1987-12-13",
+        "url": "/historia/partidos/mia-phi-19871213/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Redskins vs Miami Dolphins",
+        "id": "was-mia-19871220",
+        "game_id": "198712200mia",
+        "fecha": "20-12-1987",
+        "date": "1987-12-20",
+        "url": "/historia/partidos/was-mia-19871220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19871228",
+        "game_id": "198712280mia",
         "fecha": "28-12-1987",
-        "url": "/historia/partidos/new-mia-19871228/"
+        "date": "1987-12-28",
+        "url": "/historia/partidos/nwe-mia-19871228/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3483,6 +3755,7 @@
       "Puntos a favor": "362 puntos. 7º de 28 equipos",
       "Puntos en contra": "335 puntos. 16º de 28 equipos",
       "Head Coach": "Don Shula (8-7-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

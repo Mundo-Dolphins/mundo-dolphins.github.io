@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1968",
@@ -2313,90 +2313,346 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19680914",
+        "game_id": "196809140mia",
         "fecha": "14-09-1968",
-        "url": "/historia/partidos/oti-mia-19680914/"
+        "date": "1968-09-14",
+        "url": "/historia/partidos/oti-mia-19680914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-19680921",
+        "game_id": "196809210mia",
         "fecha": "21-09-1968",
-        "url": "/historia/partidos/oak-mia-19680921/"
+        "date": "1968-09-21",
+        "url": "/historia/partidos/oak-mia-19680921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19680928",
+        "game_id": "196809280mia",
         "fecha": "28-09-1968",
-        "url": "/historia/partidos/kan-mia-19680928/"
+        "date": "1968-09-28",
+        "url": "/historia/partidos/kan-mia-19680928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19681006",
+        "game_id": "196810060oti",
         "fecha": "06-10-1968",
-        "url": "/historia/partidos/mia-oti-19681006/"
+        "date": "1968-10-06",
+        "url": "/historia/partidos/mia-oti-19681006/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19681012",
+        "game_id": "196810120mia",
         "fecha": "12-10-1968",
-        "url": "/historia/partidos/buf-mia-19681012/"
+        "date": "1968-10-12",
+        "url": "/historia/partidos/buf-mia-19681012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-19681020",
+        "game_id": "196810200cin",
         "fecha": "20-10-1968",
-        "url": "/historia/partidos/mia-cin-19681020/"
+        "date": "1968-10-20",
+        "url": "/historia/partidos/mia-cin-19681020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Denver Broncos",
         "id": "mia-den-19681027",
+        "game_id": "196810270den",
         "fecha": "27-10-1968",
-        "url": "/historia/partidos/mia-den-19681027/"
+        "date": "1968-10-27",
+        "url": "/historia/partidos/mia-den-19681027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19681103",
+        "game_id": "196811030sdg",
         "fecha": "03-11-1968",
-        "url": "/historia/partidos/mia-sdg-19681103/"
+        "date": "1968-11-03",
+        "url": "/historia/partidos/mia-sdg-19681103/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19681110",
+        "game_id": "196811100buf",
         "fecha": "10-11-1968",
-        "url": "/historia/partidos/mia-buf-19681110/"
+        "date": "1968-11-10",
+        "url": "/historia/partidos/mia-buf-19681110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-19681117",
+        "game_id": "196811170mia",
         "fecha": "17-11-1968",
-        "url": "/historia/partidos/cin-mia-19681117/"
+        "date": "1968-11-17",
+        "url": "/historia/partidos/cin-mia-19681117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Boston Patriots",
         "id": "mia-bos-19681124",
+        "game_id": "196811240nwe",
         "fecha": "24-11-1968",
-        "url": "/historia/partidos/mia-bos-19681124/"
+        "date": "1968-11-24",
+        "url": "/historia/partidos/mia-bos-19681124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19681201",
+        "game_id": "196812010nyj",
         "fecha": "01-12-1968",
-        "url": "/historia/partidos/mia-nyj-19681201/"
+        "date": "1968-12-01",
+        "url": "/historia/partidos/mia-nyj-19681201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Boston Patriots vs Miami Dolphins",
+        "id": "bos-mia-19681208",
+        "game_id": "196812080mia",
+        "fecha": "08-12-1968",
+        "date": "1968-12-08",
+        "url": "/historia/partidos/bos-mia-19681208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19681215",
+        "game_id": "196812150mia",
+        "fecha": "15-12-1968",
+        "date": "1968-12-15",
+        "url": "/historia/partidos/nyj-mia-19681215/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19680914",
+        "game_id": "196809140mia",
+        "fecha": "14-09-1968",
+        "date": "1968-09-14",
+        "url": "/historia/partidos/oti-mia-19680914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-19680921",
+        "game_id": "196809210mia",
+        "fecha": "21-09-1968",
+        "date": "1968-09-21",
+        "url": "/historia/partidos/oak-mia-19680921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19680928",
+        "game_id": "196809280mia",
+        "fecha": "28-09-1968",
+        "date": "1968-09-28",
+        "url": "/historia/partidos/kan-mia-19680928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19681006",
+        "game_id": "196810060oti",
+        "fecha": "06-10-1968",
+        "date": "1968-10-06",
+        "url": "/historia/partidos/mia-oti-19681006/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19681012",
+        "game_id": "196810120mia",
+        "fecha": "12-10-1968",
+        "date": "1968-10-12",
+        "url": "/historia/partidos/buf-mia-19681012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-19681020",
+        "game_id": "196810200cin",
+        "fecha": "20-10-1968",
+        "date": "1968-10-20",
+        "url": "/historia/partidos/mia-cin-19681020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Denver Broncos",
+        "id": "mia-den-19681027",
+        "game_id": "196810270den",
+        "fecha": "27-10-1968",
+        "date": "1968-10-27",
+        "url": "/historia/partidos/mia-den-19681027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19681103",
+        "game_id": "196811030sdg",
+        "fecha": "03-11-1968",
+        "date": "1968-11-03",
+        "url": "/historia/partidos/mia-sdg-19681103/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19681110",
+        "game_id": "196811100buf",
+        "fecha": "10-11-1968",
+        "date": "1968-11-10",
+        "url": "/historia/partidos/mia-buf-19681110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-19681117",
+        "game_id": "196811170mia",
+        "fecha": "17-11-1968",
+        "date": "1968-11-17",
+        "url": "/historia/partidos/cin-mia-19681117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Boston Patriots",
-        "id": "bos-mia-19681208",
-        "fecha": "08-12-1968",
-        "url": "/historia/partidos/bos-mia-19681208/"
+        "id": "mia-bos-19681124",
+        "game_id": "196811240nwe",
+        "fecha": "24-11-1968",
+        "date": "1968-11-24",
+        "url": "/historia/partidos/mia-bos-19681124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19681201",
+        "game_id": "196812010nyj",
+        "fecha": "01-12-1968",
+        "date": "1968-12-01",
+        "url": "/historia/partidos/mia-nyj-19681201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Boston Patriots vs Miami Dolphins",
+        "id": "bos-mia-19681208",
+        "game_id": "196812080mia",
+        "fecha": "08-12-1968",
+        "date": "1968-12-08",
+        "url": "/historia/partidos/bos-mia-19681208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Playoffs": [
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19681215",
+        "game_id": "196812150mia",
         "fecha": "15-12-1968",
-        "url": "/historia/partidos/nyj-mia-19681215/"
+        "date": "1968-12-15",
+        "url": "/historia/partidos/nyj-mia-19681215/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {

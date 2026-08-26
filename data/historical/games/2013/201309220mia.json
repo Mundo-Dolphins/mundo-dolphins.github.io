@@ -2600,6 +2600,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de septiembre de 2013",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2843,6 +2845,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "ZJvYNI5XyJI",
+        "title": "2013 week 3 Atlanta Falcons at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=ZJvYNI5XyJI\u0026pp=ygUsQXRsYW50YSBGYWxjb25zIHZzIE1pYW1pIERvbHBoaW5zIDE5NzQtMTEtMDM%3D",
+        "duration_seconds": 8604,
+        "embeddable": false
+      }
+    ]
   }
 }

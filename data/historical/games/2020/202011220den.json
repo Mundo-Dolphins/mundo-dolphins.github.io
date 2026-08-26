@@ -3833,6 +3833,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de noviembre de 2020",
       "Estadio": "Empower Field at Mile High",
       "Tipo de estadio": "Al aire libre",
@@ -4086,6 +4088,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "_TEIPlnxMdw",
+        "title": "Dolphins vs. Broncos Week 11 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=_TEIPlnxMdw\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgRGVudmVyIEJyb25jb3MgMjAwOC0xMS0wMtIHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 685,
+        "embeddable": false
+      }
+    ]
   }
 }

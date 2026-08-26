@@ -2861,6 +2861,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "3 de diciembre de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3214,6 +3216,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "tadjJAblaY8",
+        "title": "2017 – Week 13 – Broncos 9 @ Dolphins 35",
+        "url": "https://www.youtube.com/watch?v=tadjJAblaY8\u0026pp=ygUrRGVudmVyIEJyb25jb3MgdnMgTWlhbWkgRG9scGhpbnMgMjAxNy0xMi0wM9IHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 8778,
+        "embeddable": true
+      }
+    ]
   }
 }

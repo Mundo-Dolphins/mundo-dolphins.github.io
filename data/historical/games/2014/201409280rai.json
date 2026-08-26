@@ -3041,6 +3041,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de septiembre de 2014",
       "Estadio": "Wembley Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3334,6 +3336,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "I4BSDHXE8AE",
+        "title": "2014 week 4 Miami Dolphins at Oakland Raiders in London",
+        "url": "https://www.youtube.com/watch?v=I4BSDHXE8AE\u0026pp=ygUsT2FrbGFuZCBSYWlkZXJzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTEtMTItMDQ%3D",
+        "duration_seconds": 8372,
+        "embeddable": false
+      }
+    ]
   }
 }

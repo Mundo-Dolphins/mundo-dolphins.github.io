@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2017-08-17",
-    "slug": "bal-mia-20170817",
-    "path": "historia/partidos/bal-mia-20170817",
+    "slug": "rav-mia-20170817",
+    "path": "historia/partidos/rav-mia-20170817",
     "params": {
       "game_id": "201708170mia"
     }
@@ -1117,11 +1117,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 2",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "17 de agosto de 2017",
       "Gamebook oficial": "assets/gamebooks/2017/201708170mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "dnRf_KWN9tw",
+        "title": "Baltimore Ravens vs. Miami Dolphins 08/17/17",
+        "url": "https://www.youtube.com/watch?v=dnRf_KWN9tw\u0026pp=ygUtQmFsdGltb3JlIFJhdmVucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE3LTA4LTE3",
+        "duration_seconds": 8794,
+        "embeddable": false
+      }
+    ]
   }
 }

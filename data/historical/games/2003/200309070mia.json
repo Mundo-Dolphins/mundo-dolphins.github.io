@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Houston Texans vs Miami Dolphins",
     "date": "2003-09-07",
-    "slug": "hou-mia-20030907",
-    "path": "historia/partidos/hou-mia-20030907",
+    "slug": "htx-mia-20030907",
+    "path": "historia/partidos/htx-mia-20030907",
     "params": {
       "game_id": "200309070mia"
     }
@@ -1939,6 +1939,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "7 de septiembre de 2003",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

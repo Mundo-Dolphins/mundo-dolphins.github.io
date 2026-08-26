@@ -3810,6 +3810,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de diciembre de 2018",
       "Estadio": "New Era Field",
       "Tipo de estadio": "Al aire libre",
@@ -4103,6 +4105,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "RQVqViCqBYA",
+        "title": "Dolphins vs. Bills Week 17 Highlights | NFL 2018",
+        "url": "https://www.youtube.com/watch?v=RQVqViCqBYA\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDE4LTEyLTAy",
+        "duration_seconds": 431,
+        "embeddable": false
+      }
+    ]
   }
 }

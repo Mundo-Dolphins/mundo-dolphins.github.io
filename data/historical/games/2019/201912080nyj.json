@@ -4178,6 +4178,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de diciembre de 2019",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4431,6 +4433,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "6WJ0Cg3W-94",
+        "title": "Dolphins vs. Jets Week 14 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=6WJ0Cg3W-94\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDAxLTEwLTE0",
+        "duration_seconds": 788,
+        "embeddable": false
+      }
+    ]
   }
 }

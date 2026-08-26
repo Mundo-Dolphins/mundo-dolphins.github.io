@@ -2575,6 +2575,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de septiembre de 2013",
       "Estadio": "FirstEnergy Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2868,6 +2870,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "psr3GzcLPjA",
+        "title": "2013 Week 1 Dolphins 23 @ Browns 10",
+        "url": "https://www.youtube.com/watch?v=psr3GzcLPjA\u0026pp=ygUtTWlhbWkgRG9scGhpbnMgdnMgQ2xldmVsYW5kIEJyb3ducyAxOTkzLTEwLTEw",
+        "duration_seconds": 8927,
+        "embeddable": true
+      }
+    ]
   }
 }

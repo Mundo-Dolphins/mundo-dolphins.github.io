@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1994-11-06",
-    "slug": "ind-mia-19941106",
-    "path": "historia/partidos/ind-mia-19941106",
+    "slug": "clt-mia-19941106",
+    "path": "historia/partidos/clt-mia-19941106",
     "params": {
       "game_id": "199411060mia"
     }
@@ -1215,6 +1215,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de noviembre de 1994",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

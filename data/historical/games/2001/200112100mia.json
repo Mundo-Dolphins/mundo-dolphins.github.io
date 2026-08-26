@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "2001-12-10",
-    "slug": "ind-mia-20011210",
-    "path": "historia/partidos/ind-mia-20011210",
+    "slug": "clt-mia-20011210",
+    "path": "historia/partidos/clt-mia-20011210",
     "params": {
       "game_id": "200112100mia"
     }
@@ -1653,6 +1653,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de diciembre de 2001",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

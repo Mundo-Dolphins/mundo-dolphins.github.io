@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1970",
@@ -1880,98 +1880,370 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Boston Patriots",
         "id": "mia-bos-19700920",
+        "game_id": "197009200nwe",
         "fecha": "20-09-1970",
-        "url": "/historia/partidos/mia-bos-19700920/"
+        "date": "1970-09-20",
+        "url": "/historia/partidos/mia-bos-19700920/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19700927",
+        "game_id": "197009270oti",
         "fecha": "27-09-1970",
-        "url": "/historia/partidos/mia-oti-19700927/"
+        "date": "1970-09-27",
+        "url": "/historia/partidos/mia-oti-19700927/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-19701003",
+        "game_id": "197010030mia",
         "fecha": "03-10-1970",
-        "url": "/historia/partidos/oak-mia-19701003/"
+        "date": "1970-10-03",
+        "url": "/historia/partidos/oak-mia-19701003/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19701010",
+        "game_id": "197010100nyj",
         "fecha": "10-10-1970",
-        "url": "/historia/partidos/mia-nyj-19701010/"
+        "date": "1970-10-10",
+        "url": "/historia/partidos/mia-nyj-19701010/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19701018",
+        "game_id": "197010180buf",
         "fecha": "18-10-1970",
-        "url": "/historia/partidos/mia-buf-19701018/"
+        "date": "1970-10-18",
+        "url": "/historia/partidos/mia-buf-19701018/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-19701025",
+        "game_id": "197010250mia",
         "fecha": "25-10-1970",
-        "url": "/historia/partidos/cle-mia-19701025/"
+        "date": "1970-10-25",
+        "url": "/historia/partidos/cle-mia-19701025/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19701101",
+        "game_id": "197011010clt",
         "fecha": "01-11-1970",
-        "url": "/historia/partidos/mia-bal-19701101/"
+        "date": "1970-11-01",
+        "url": "/historia/partidos/mia-bal-19701101/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-19701108",
+        "game_id": "197011080phi",
         "fecha": "08-11-1970",
-        "url": "/historia/partidos/mia-phi-19701108/"
+        "date": "1970-11-08",
+        "url": "/historia/partidos/mia-phi-19701108/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "new-mia-19701115",
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19701115",
+        "game_id": "197011150mia",
         "fecha": "15-11-1970",
-        "url": "/historia/partidos/new-mia-19701115/"
+        "date": "1970-11-15",
+        "url": "/historia/partidos/nor-mia-19701115/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19701122",
+        "game_id": "197011220mia",
         "fecha": "22-11-1970",
-        "url": "/historia/partidos/bal-mia-19701122/"
+        "date": "1970-11-22",
+        "url": "/historia/partidos/bal-mia-19701122/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Atlanta Falcons",
         "id": "mia-atl-19701130",
+        "game_id": "197011300atl",
         "fecha": "30-11-1970",
-        "url": "/historia/partidos/mia-atl-19701130/"
+        "date": "1970-11-30",
+        "url": "/historia/partidos/mia-atl-19701130/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Boston Patriots",
+        "title": "Boston Patriots vs Miami Dolphins",
         "id": "bos-mia-19701206",
+        "game_id": "197012060mia",
         "fecha": "06-12-1970",
-        "url": "/historia/partidos/bos-mia-19701206/"
+        "date": "1970-12-06",
+        "url": "/historia/partidos/bos-mia-19701206/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19701213",
+        "game_id": "197012130mia",
+        "fecha": "13-12-1970",
+        "date": "1970-12-13",
+        "url": "/historia/partidos/nyj-mia-19701213/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19701220",
+        "game_id": "197012200mia",
+        "fecha": "20-12-1970",
+        "date": "1970-12-20",
+        "url": "/historia/partidos/buf-mia-19701220/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19701227",
+        "game_id": "197012270rai",
+        "fecha": "27-12-1970",
+        "date": "1970-12-27",
+        "url": "/historia/partidos/mia-oak-19701227/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Boston Patriots",
+        "id": "mia-bos-19700920",
+        "game_id": "197009200nwe",
+        "fecha": "20-09-1970",
+        "date": "1970-09-20",
+        "url": "/historia/partidos/mia-bos-19700920/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19700927",
+        "game_id": "197009270oti",
+        "fecha": "27-09-1970",
+        "date": "1970-09-27",
+        "url": "/historia/partidos/mia-oti-19700927/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-19701003",
+        "game_id": "197010030mia",
+        "fecha": "03-10-1970",
+        "date": "1970-10-03",
+        "url": "/historia/partidos/oak-mia-19701003/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
-        "id": "nyj-mia-19701213",
-        "fecha": "13-12-1970",
-        "url": "/historia/partidos/nyj-mia-19701213/"
+        "id": "mia-nyj-19701010",
+        "game_id": "197010100nyj",
+        "fecha": "10-10-1970",
+        "date": "1970-10-10",
+        "url": "/historia/partidos/mia-nyj-19701010/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19701018",
+        "game_id": "197010180buf",
+        "fecha": "18-10-1970",
+        "date": "1970-10-18",
+        "url": "/historia/partidos/mia-buf-19701018/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-19701025",
+        "game_id": "197010250mia",
+        "fecha": "25-10-1970",
+        "date": "1970-10-25",
+        "url": "/historia/partidos/cle-mia-19701025/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19701101",
+        "game_id": "197011010clt",
+        "fecha": "01-11-1970",
+        "date": "1970-11-01",
+        "url": "/historia/partidos/mia-bal-19701101/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-19701108",
+        "game_id": "197011080phi",
+        "fecha": "08-11-1970",
+        "date": "1970-11-08",
+        "url": "/historia/partidos/mia-phi-19701108/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19701115",
+        "game_id": "197011150mia",
+        "fecha": "15-11-1970",
+        "date": "1970-11-15",
+        "url": "/historia/partidos/nor-mia-19701115/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19701122",
+        "game_id": "197011220mia",
+        "fecha": "22-11-1970",
+        "date": "1970-11-22",
+        "url": "/historia/partidos/bal-mia-19701122/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Atlanta Falcons",
+        "id": "mia-atl-19701130",
+        "game_id": "197011300atl",
+        "fecha": "30-11-1970",
+        "date": "1970-11-30",
+        "url": "/historia/partidos/mia-atl-19701130/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Boston Patriots vs Miami Dolphins",
+        "id": "bos-mia-19701206",
+        "game_id": "197012060mia",
+        "fecha": "06-12-1970",
+        "date": "1970-12-06",
+        "url": "/historia/partidos/bos-mia-19701206/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19701213",
+        "game_id": "197012130mia",
+        "fecha": "13-12-1970",
+        "date": "1970-12-13",
+        "url": "/historia/partidos/nyj-mia-19701213/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19701220",
+        "game_id": "197012200mia",
         "fecha": "20-12-1970",
-        "url": "/historia/partidos/buf-mia-19701220/"
+        "date": "1970-12-20",
+        "url": "/historia/partidos/buf-mia-19701220/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19701227",
+        "game_id": "197012270rai",
         "fecha": "27-12-1970",
-        "url": "/historia/partidos/mia-oak-19701227/"
+        "date": "1970-12-27",
+        "url": "/historia/partidos/mia-oak-19701227/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1983-11-13",
-    "slug": "mia-new-19831113",
-    "path": "historia/partidos/mia-new-19831113",
+    "slug": "mia-nwe-19831113",
+    "path": "historia/partidos/mia-nwe-19831113",
     "params": {
       "game_id": "198311130nwe"
     }
@@ -889,6 +889,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de noviembre de 1983",
       "Estadio": "Sullivan Stadium",
       "Tipo de estadio": "Al aire libre",

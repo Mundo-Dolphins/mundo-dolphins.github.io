@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Jacksonville Jaguars vs Miami Dolphins",
     "date": "2018-12-23",
-    "slug": "jac-mia-20181223",
-    "path": "historia/partidos/jac-mia-20181223",
+    "slug": "jax-mia-20181223",
+    "path": "historia/partidos/jax-mia-20181223",
     "params": {
       "game_id": "201812230mia"
     }
@@ -3857,6 +3857,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de diciembre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4100,6 +4102,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "o9tfxOIjVN0",
+        "title": "Jaguars vs. Dolphins Week 16 Highlights | NFL 2018",
+        "url": "https://www.youtube.com/watch?v=o9tfxOIjVN0\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgSmFja3NvbnZpbGxlIEphZ3VhcnMgMjAwOC0wOC0xNg%3D%3D",
+        "duration_seconds": 491,
+        "embeddable": false
+      }
+    ]
   }
 }

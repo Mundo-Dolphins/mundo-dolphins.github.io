@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2021-09-12",
-    "slug": "mia-new-20210912",
-    "path": "historia/partidos/mia-new-20210912",
+    "slug": "mia-nwe-20210912",
+    "path": "historia/partidos/mia-nwe-20210912",
     "params": {
       "game_id": "202109120nwe"
     }
@@ -4030,6 +4030,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de septiembre de 2021",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

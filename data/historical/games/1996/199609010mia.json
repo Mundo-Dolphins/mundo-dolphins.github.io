@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1996-09-01",
-    "slug": "new-mia-19960901",
-    "path": "historia/partidos/new-mia-19960901",
+    "slug": "nwe-mia-19960901",
+    "path": "historia/partidos/nwe-mia-19960901",
     "params": {
       "game_id": "199609010mia"
     }
@@ -1291,6 +1291,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de septiembre de 1996",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

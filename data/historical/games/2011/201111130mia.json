@@ -1417,6 +1417,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de noviembre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -1659,6 +1661,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "lXUIMEd_Hqg",
+        "title": "2011 week 10 Washington Redskins at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=lXUIMEd_Hqg\u0026pp=ygUwV2FzaGluZ3RvbiBSZWRza2lucyB2cyBNaWFtaSBEb2xwaGlucyAyMDExLTExLTEz",
+        "duration_seconds": 7329,
+        "embeddable": true
+      }
+    ]
   }
 }

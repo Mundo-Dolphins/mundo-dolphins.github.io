@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Los Angeles Rams",
     "date": "2024-11-11",
-    "slug": "mia-los-20241111",
-    "path": "historia/partidos/mia-los-20241111",
+    "slug": "mia-ram-20241111",
+    "path": "historia/partidos/mia-ram-20241111",
     "params": {
       "game_id": "202411110ram"
     }
@@ -3971,6 +3971,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de noviembre de 2024",
       "Estadio": "SoFi Stadium",
       "Tipo de estadio": "dome",

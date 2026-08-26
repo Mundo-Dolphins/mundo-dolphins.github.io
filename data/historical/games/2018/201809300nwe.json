@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2018-09-30",
-    "slug": "mia-new-20180930",
-    "path": "historia/partidos/mia-new-20180930",
+    "slug": "mia-nwe-20180930",
+    "path": "historia/partidos/mia-nwe-20180930",
     "params": {
       "game_id": "201809300nwe"
     }
@@ -4204,6 +4204,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de septiembre de 2018",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4467,6 +4469,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "tiuz6LrhGg4",
+        "title": "Dolphins vs. Patriots Week 4 Highlights | NFL 2018",
+        "url": "https://www.youtube.com/watch?v=tiuz6LrhGg4\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxOC0wOS0zMA%3D%3D",
+        "duration_seconds": 413,
+        "embeddable": false
+      }
+    ]
   }
 }

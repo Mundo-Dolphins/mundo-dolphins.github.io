@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Jacksonville Jaguars",
     "date": "2000-01-15",
-    "slug": "mia-jac-20000115",
-    "path": "historia/partidos/mia-jac-20000115",
+    "slug": "mia-jax-20000115",
+    "path": "historia/partidos/mia-jax-20000115",
     "params": {
       "game_id": "200001150jax"
     }
@@ -2107,6 +2107,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "15 de enero de 2000",
       "Estadio": "Alltel Stadium",
       "Tipo de estadio": "Al aire libre",

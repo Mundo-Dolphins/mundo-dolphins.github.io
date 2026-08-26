@@ -2603,6 +2603,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de noviembre de 2013",
       "Estadio": "Raymond James Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2876,6 +2878,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "lgfoO03e4SE",
+        "title": "Tampa Bay Buccaneers vs. Miami Dolphins - November 11, 2013 - Buccaneers Radio Network",
+        "url": "https://www.youtube.com/watch?v=lgfoO03e4SE\u0026pp=ygUxVGFtcGEgQmF5IEJ1Y2NhbmVlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxMy0wOC0yNA%3D%3D",
+        "duration_seconds": 11277,
+        "embeddable": true
+      }
+    ]
   }
 }

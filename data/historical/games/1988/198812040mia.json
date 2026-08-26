@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1988-12-04",
-    "slug": "ind-mia-19881204",
-    "path": "historia/partidos/ind-mia-19881204",
+    "slug": "clt-mia-19881204",
+    "path": "historia/partidos/clt-mia-19881204",
     "params": {
       "game_id": "198812040mia"
     }
@@ -831,6 +831,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de diciembre de 1988",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

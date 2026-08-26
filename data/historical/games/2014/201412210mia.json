@@ -2825,6 +2825,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de diciembre de 2014",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3098,6 +3100,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Pb9ozIU3Iqo",
+        "title": "2014 week 16 Minnesota Vikings at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=Pb9ozIU3Iqo\u0026pp=ygUuTWlubmVzb3RhIFZpa2luZ3MgdnMgTWlhbWkgRG9scGhpbnMgMjAxNC0xMi0yMQ%3D%3D",
+        "duration_seconds": 9368,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -2775,6 +2775,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de noviembre de 2017",
       "Estadio": "Bank of America Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3018,6 +3020,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "E9j78OzljJE",
+        "title": "2017 – Week 10 – Dolphins 21 @ Panthers 45",
+        "url": "https://www.youtube.com/watch?v=E9j78OzljJE\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgQ2Fyb2xpbmEgUGFudGhlcnMgMjAxNy0xMS0xMw%3D%3D",
+        "duration_seconds": 2123,
+        "embeddable": false
+      }
+    ]
   }
 }

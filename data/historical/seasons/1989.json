@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1989",
@@ -2496,102 +2496,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19890910",
+        "game_id": "198909100mia",
         "fecha": "10-09-1989",
-        "url": "/historia/partidos/buf-mia-19890910/"
+        "date": "1989-09-10",
+        "url": "/historia/partidos/buf-mia-19890910/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19890917",
+        "id": "mia-nwe-19890917",
+        "game_id": "198909170nwe",
         "fecha": "17-09-1989",
-        "url": "/historia/partidos/mia-new-19890917/"
+        "date": "1989-09-17",
+        "url": "/historia/partidos/mia-nwe-19890917/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19890924",
+        "game_id": "198909240mia",
         "fecha": "24-09-1989",
-        "url": "/historia/partidos/nyj-mia-19890924/"
+        "date": "1989-09-24",
+        "url": "/historia/partidos/nyj-mia-19890924/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19891001",
+        "game_id": "198910010oti",
         "fecha": "01-10-1989",
-        "url": "/historia/partidos/mia-oti-19891001/"
+        "date": "1989-10-01",
+        "url": "/historia/partidos/mia-oti-19891001/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-19891008",
+        "game_id": "198910080mia",
         "fecha": "08-10-1989",
-        "url": "/historia/partidos/cle-mia-19891008/"
+        "date": "1989-10-08",
+        "url": "/historia/partidos/cle-mia-19891008/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-19891015",
+        "game_id": "198910150cin",
         "fecha": "15-10-1989",
-        "url": "/historia/partidos/mia-cin-19891015/"
+        "date": "1989-10-15",
+        "url": "/historia/partidos/mia-cin-19891015/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-19891022",
+        "game_id": "198910220mia",
         "fecha": "22-10-1989",
-        "url": "/historia/partidos/gnb-mia-19891022/"
+        "date": "1989-10-22",
+        "url": "/historia/partidos/gnb-mia-19891022/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19891029",
+        "game_id": "198910290buf",
         "fecha": "29-10-1989",
-        "url": "/historia/partidos/mia-buf-19891029/"
+        "date": "1989-10-29",
+        "url": "/historia/partidos/mia-buf-19891029/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19891105",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19891105",
+        "game_id": "198911050mia",
         "fecha": "05-11-1989",
-        "url": "/historia/partidos/ind-mia-19891105/"
+        "date": "1989-11-05",
+        "url": "/historia/partidos/clt-mia-19891105/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19891112",
+        "game_id": "198911120nyj",
         "fecha": "12-11-1989",
-        "url": "/historia/partidos/mia-nyj-19891112/"
+        "date": "1989-11-12",
+        "url": "/historia/partidos/mia-nyj-19891112/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-19891119",
+        "game_id": "198911190dal",
         "fecha": "19-11-1989",
-        "url": "/historia/partidos/mia-dal-19891119/"
+        "date": "1989-11-19",
+        "url": "/historia/partidos/mia-dal-19891119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19891126",
+        "game_id": "198911260mia",
         "fecha": "26-11-1989",
-        "url": "/historia/partidos/pit-mia-19891126/"
+        "date": "1989-11-26",
+        "url": "/historia/partidos/pit-mia-19891126/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
         "id": "mia-kan-19891203",
+        "game_id": "198912030kan",
         "fecha": "03-12-1989",
-        "url": "/historia/partidos/mia-kan-19891203/"
+        "date": "1989-12-03",
+        "url": "/historia/partidos/mia-kan-19891203/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19891210",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19891210",
+        "game_id": "198912100mia",
         "fecha": "10-12-1989",
-        "url": "/historia/partidos/new-mia-19891210/"
+        "date": "1989-12-10",
+        "url": "/historia/partidos/nwe-mia-19891210/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19891217",
+        "id": "mia-clt-19891217",
+        "game_id": "198912170clt",
         "fecha": "17-12-1989",
-        "url": "/historia/partidos/mia-ind-19891217/"
+        "date": "1989-12-17",
+        "url": "/historia/partidos/mia-clt-19891217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19891224",
+        "game_id": "198912240mia",
+        "fecha": "24-12-1989",
+        "date": "1989-12-24",
+        "url": "/historia/partidos/kan-mia-19891224/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19890910",
+        "game_id": "198909100mia",
+        "fecha": "10-09-1989",
+        "date": "1989-09-10",
+        "url": "/historia/partidos/buf-mia-19890910/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19890917",
+        "game_id": "198909170nwe",
+        "fecha": "17-09-1989",
+        "date": "1989-09-17",
+        "url": "/historia/partidos/mia-nwe-19890917/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19890924",
+        "game_id": "198909240mia",
+        "fecha": "24-09-1989",
+        "date": "1989-09-24",
+        "url": "/historia/partidos/nyj-mia-19890924/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19891001",
+        "game_id": "198910010oti",
+        "fecha": "01-10-1989",
+        "date": "1989-10-01",
+        "url": "/historia/partidos/mia-oti-19891001/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-19891008",
+        "game_id": "198910080mia",
+        "fecha": "08-10-1989",
+        "date": "1989-10-08",
+        "url": "/historia/partidos/cle-mia-19891008/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-19891015",
+        "game_id": "198910150cin",
+        "fecha": "15-10-1989",
+        "date": "1989-10-15",
+        "url": "/historia/partidos/mia-cin-19891015/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-19891022",
+        "game_id": "198910220mia",
+        "fecha": "22-10-1989",
+        "date": "1989-10-22",
+        "url": "/historia/partidos/gnb-mia-19891022/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19891029",
+        "game_id": "198910290buf",
+        "fecha": "29-10-1989",
+        "date": "1989-10-29",
+        "url": "/historia/partidos/mia-buf-19891029/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19891105",
+        "game_id": "198911050mia",
+        "fecha": "05-11-1989",
+        "date": "1989-11-05",
+        "url": "/historia/partidos/clt-mia-19891105/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19891112",
+        "game_id": "198911120nyj",
+        "fecha": "12-11-1989",
+        "date": "1989-11-12",
+        "url": "/historia/partidos/mia-nyj-19891112/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-19891119",
+        "game_id": "198911190dal",
+        "fecha": "19-11-1989",
+        "date": "1989-11-19",
+        "url": "/historia/partidos/mia-dal-19891119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19891126",
+        "game_id": "198911260mia",
+        "fecha": "26-11-1989",
+        "date": "1989-11-26",
+        "url": "/historia/partidos/pit-mia-19891126/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
+        "id": "mia-kan-19891203",
+        "game_id": "198912030kan",
+        "fecha": "03-12-1989",
+        "date": "1989-12-03",
+        "url": "/historia/partidos/mia-kan-19891203/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19891210",
+        "game_id": "198912100mia",
+        "fecha": "10-12-1989",
+        "date": "1989-12-10",
+        "url": "/historia/partidos/nwe-mia-19891210/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19891217",
+        "game_id": "198912170clt",
+        "fecha": "17-12-1989",
+        "date": "1989-12-17",
+        "url": "/historia/partidos/mia-clt-19891217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19891224",
+        "game_id": "198912240mia",
         "fecha": "24-12-1989",
-        "url": "/historia/partidos/kan-mia-19891224/"
+        "date": "1989-12-24",
+        "url": "/historia/partidos/kan-mia-19891224/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2601,6 +2891,7 @@
       "Puntos a favor": "331 puntos. 15º de 28 equipos",
       "Puntos en contra": "379 puntos. 22º de 28 equipos",
       "Head Coach": "Don Shula (8-8-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

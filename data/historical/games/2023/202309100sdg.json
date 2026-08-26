@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Los Angeles Chargers",
     "date": "2023-09-10",
-    "slug": "mia-los-20230910",
-    "path": "historia/partidos/mia-los-20230910",
+    "slug": "mia-sdg-20230910",
+    "path": "historia/partidos/mia-sdg-20230910",
     "params": {
       "game_id": "202309100sdg"
     }
@@ -3876,6 +3876,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de septiembre de 2023",
       "Estadio": "SoFi Stadium",
       "Tipo de estadio": "dome",

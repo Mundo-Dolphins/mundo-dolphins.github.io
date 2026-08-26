@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2009-11-08",
-    "slug": "mia-new-20091108",
-    "path": "historia/partidos/mia-new-20091108",
+    "slug": "mia-nwe-20091108",
+    "path": "historia/partidos/mia-nwe-20091108",
     "params": {
       "game_id": "200911080nwe"
     }
@@ -1866,6 +1866,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de noviembre de 2009",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

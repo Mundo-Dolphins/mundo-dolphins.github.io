@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1991",
@@ -2284,102 +2284,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19910901",
+        "game_id": "199109010buf",
         "fecha": "01-09-1991",
-        "url": "/historia/partidos/mia-buf-19910901/"
+        "date": "1991-09-01",
+        "url": "/historia/partidos/mia-buf-19910901/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19910908",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19910908",
+        "game_id": "199109080mia",
         "fecha": "08-09-1991",
-        "url": "/historia/partidos/ind-mia-19910908/"
+        "date": "1991-09-08",
+        "url": "/historia/partidos/clt-mia-19910908/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Detroit Lions",
         "id": "mia-det-19910915",
+        "game_id": "199109150det",
         "fecha": "15-09-1991",
-        "url": "/historia/partidos/mia-det-19910915/"
+        "date": "1991-09-15",
+        "url": "/historia/partidos/mia-det-19910915/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-19910922",
+        "game_id": "199109220mia",
         "fecha": "22-09-1991",
-        "url": "/historia/partidos/gnb-mia-19910922/"
+        "date": "1991-09-22",
+        "url": "/historia/partidos/gnb-mia-19910922/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19910929",
+        "game_id": "199109290nyj",
         "fecha": "29-09-1991",
-        "url": "/historia/partidos/mia-nyj-19910929/"
+        "date": "1991-09-29",
+        "url": "/historia/partidos/mia-nyj-19910929/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19911006",
+        "id": "mia-nwe-19911006",
+        "game_id": "199110060nwe",
         "fecha": "06-10-1991",
-        "url": "/historia/partidos/mia-new-19911006/"
+        "date": "1991-10-06",
+        "url": "/historia/partidos/mia-nwe-19911006/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
         "id": "mia-kan-19911013",
+        "game_id": "199110130kan",
         "fecha": "13-10-1991",
-        "url": "/historia/partidos/mia-kan-19911013/"
+        "date": "1991-10-13",
+        "url": "/historia/partidos/mia-kan-19911013/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19911020",
+        "game_id": "199110200mia",
         "fecha": "20-10-1991",
-        "url": "/historia/partidos/oti-mia-19911020/"
+        "date": "1991-10-20",
+        "url": "/historia/partidos/oti-mia-19911020/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19911103",
+        "id": "mia-clt-19911103",
+        "game_id": "199111030clt",
         "fecha": "03-11-1991",
-        "url": "/historia/partidos/mia-ind-19911103/"
+        "date": "1991-11-03",
+        "url": "/historia/partidos/mia-clt-19911103/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19911110",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19911110",
+        "game_id": "199111100mia",
         "fecha": "10-11-1991",
-        "url": "/historia/partidos/new-mia-19911110/"
+        "date": "1991-11-10",
+        "url": "/historia/partidos/nwe-mia-19911110/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19911118",
+        "game_id": "199111180mia",
         "fecha": "18-11-1991",
-        "url": "/historia/partidos/buf-mia-19911118/"
+        "date": "1991-11-18",
+        "url": "/historia/partidos/buf-mia-19911118/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Chicago Bears",
         "id": "mia-chi-19911124",
+        "game_id": "199111240chi",
         "fecha": "24-11-1991",
-        "url": "/historia/partidos/mia-chi-19911124/"
+        "date": "1991-11-24",
+        "url": "/historia/partidos/mia-chi-19911124/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
         "id": "tam-mia-19911201",
+        "game_id": "199112010mia",
         "fecha": "01-12-1991",
-        "url": "/historia/partidos/tam-mia-19911201/"
+        "date": "1991-12-01",
+        "url": "/historia/partidos/tam-mia-19911201/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-19911209",
+        "game_id": "199112090mia",
         "fecha": "09-12-1991",
-        "url": "/historia/partidos/cin-mia-19911209/"
+        "date": "1991-12-09",
+        "url": "/historia/partidos/cin-mia-19911209/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19911215",
+        "game_id": "199112150sdg",
         "fecha": "15-12-1991",
-        "url": "/historia/partidos/mia-sdg-19911215/"
+        "date": "1991-12-15",
+        "url": "/historia/partidos/mia-sdg-19911215/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19911222",
+        "game_id": "199112220mia",
+        "fecha": "22-12-1991",
+        "date": "1991-12-22",
+        "url": "/historia/partidos/nyj-mia-19911222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19910901",
+        "game_id": "199109010buf",
+        "fecha": "01-09-1991",
+        "date": "1991-09-01",
+        "url": "/historia/partidos/mia-buf-19910901/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19910908",
+        "game_id": "199109080mia",
+        "fecha": "08-09-1991",
+        "date": "1991-09-08",
+        "url": "/historia/partidos/clt-mia-19910908/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-19910915",
+        "game_id": "199109150det",
+        "fecha": "15-09-1991",
+        "date": "1991-09-15",
+        "url": "/historia/partidos/mia-det-19910915/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-19910922",
+        "game_id": "199109220mia",
+        "fecha": "22-09-1991",
+        "date": "1991-09-22",
+        "url": "/historia/partidos/gnb-mia-19910922/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19910929",
+        "game_id": "199109290nyj",
+        "fecha": "29-09-1991",
+        "date": "1991-09-29",
+        "url": "/historia/partidos/mia-nyj-19910929/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19911006",
+        "game_id": "199110060nwe",
+        "fecha": "06-10-1991",
+        "date": "1991-10-06",
+        "url": "/historia/partidos/mia-nwe-19911006/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "id": "mia-kan-19911013",
+        "game_id": "199110130kan",
+        "fecha": "13-10-1991",
+        "date": "1991-10-13",
+        "url": "/historia/partidos/mia-kan-19911013/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19911020",
+        "game_id": "199110200mia",
+        "fecha": "20-10-1991",
+        "date": "1991-10-20",
+        "url": "/historia/partidos/oti-mia-19911020/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19911103",
+        "game_id": "199111030clt",
+        "fecha": "03-11-1991",
+        "date": "1991-11-03",
+        "url": "/historia/partidos/mia-clt-19911103/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19911110",
+        "game_id": "199111100mia",
+        "fecha": "10-11-1991",
+        "date": "1991-11-10",
+        "url": "/historia/partidos/nwe-mia-19911110/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19911118",
+        "game_id": "199111180mia",
+        "fecha": "18-11-1991",
+        "date": "1991-11-18",
+        "url": "/historia/partidos/buf-mia-19911118/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-19911124",
+        "game_id": "199111240chi",
+        "fecha": "24-11-1991",
+        "date": "1991-11-24",
+        "url": "/historia/partidos/mia-chi-19911124/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-19911201",
+        "game_id": "199112010mia",
+        "fecha": "01-12-1991",
+        "date": "1991-12-01",
+        "url": "/historia/partidos/tam-mia-19911201/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-19911209",
+        "game_id": "199112090mia",
+        "fecha": "09-12-1991",
+        "date": "1991-12-09",
+        "url": "/historia/partidos/cin-mia-19911209/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19911215",
+        "game_id": "199112150sdg",
+        "fecha": "15-12-1991",
+        "date": "1991-12-15",
+        "url": "/historia/partidos/mia-sdg-19911215/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19911222",
+        "game_id": "199112220mia",
         "fecha": "22-12-1991",
-        "url": "/historia/partidos/nyj-mia-19911222/"
+        "date": "1991-12-22",
+        "url": "/historia/partidos/nyj-mia-19911222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2389,6 +2679,7 @@
       "Puntos a favor": "343 puntos. 6º de 28 equipos",
       "Puntos en contra": "349 puntos. 24º de 28 equipos",
       "Head Coach": "Don Shula (8-8-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

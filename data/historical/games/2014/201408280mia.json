@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Los Angeles Rams vs Miami Dolphins",
     "date": "2014-08-28",
-    "slug": "los-mia-20140828",
-    "path": "historia/partidos/los-mia-20140828",
+    "slug": "ram-mia-20140828",
+    "path": "historia/partidos/ram-mia-20140828",
     "params": {
       "game_id": "201408280mia"
     }
@@ -823,11 +823,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 4",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "28 de agosto de 2014",
       "Gamebook oficial": "assets/gamebooks/2014/201408280mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "W3n5TuPyX6c",
+        "title": "2014 – Preseason Week 4 – Rams 13 @ Dolphins 14",
+        "url": "https://www.youtube.com/watch?v=W3n5TuPyX6c\u0026pp=ygUtTG9zIEFuZ2VsZXMgUmFtcyB2cyBNaWFtaSBEb2xwaGlucyAyMDE0LTA4LTI4",
+        "duration_seconds": 7937,
+        "embeddable": true
+      }
+    ]
   }
 }

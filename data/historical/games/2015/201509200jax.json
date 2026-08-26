@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Jacksonville Jaguars",
     "date": "2015-09-20",
-    "slug": "mia-jac-20150920",
-    "path": "historia/partidos/mia-jac-20150920",
+    "slug": "mia-jax-20150920",
+    "path": "historia/partidos/mia-jax-20150920",
     "params": {
       "game_id": "201509200jax"
     }
@@ -2745,6 +2745,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "20 de septiembre de 2015",
       "Estadio": "EverBank Field",
       "Tipo de estadio": "Al aire libre",
@@ -3038,6 +3040,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "pn1sO-qhlzU",
+        "title": "2015 week 2 Miami Dolphins at Jacksonville Jaguars",
+        "url": "https://www.youtube.com/watch?v=pn1sO-qhlzU\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgSmFja3NvbnZpbGxlIEphZ3VhcnMgMjAxNS0wOS0yMA%3D%3D",
+        "duration_seconds": 8891,
+        "embeddable": false
+      }
+    ]
   }
 }

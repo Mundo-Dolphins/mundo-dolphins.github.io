@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2018-12-09",
-    "slug": "new-mia-20181209",
-    "path": "historia/partidos/new-mia-20181209",
+    "slug": "nwe-mia-20181209",
+    "path": "historia/partidos/nwe-mia-20181209",
     "params": {
       "game_id": "201812090mia"
     }
@@ -3985,6 +3985,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de diciembre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4248,6 +4250,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "1fg1LfX9If0",
+        "title": "New England Patriots vs. Miami Dolphins Week 14, 2018 FULL Game: The Miami Miracle!",
+        "url": "https://www.youtube.com/watch?v=1fg1LfX9If0\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxOC0wOS0zMA%3D%3D",
+        "duration_seconds": 8260,
+        "embeddable": false
+      }
+    ]
   }
 }

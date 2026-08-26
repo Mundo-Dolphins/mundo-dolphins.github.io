@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1986-10-05",
-    "slug": "mia-new-19861005",
-    "path": "historia/partidos/mia-new-19861005",
+    "slug": "mia-nwe-19861005",
+    "path": "historia/partidos/mia-nwe-19861005",
     "params": {
       "game_id": "198610050nwe"
     }
@@ -841,6 +841,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "5 de octubre de 1986",
       "Estadio": "Sullivan Stadium",
       "Tipo de estadio": "Al aire libre",

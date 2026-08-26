@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Indianapolis Colts",
     "date": "2001-11-11",
-    "slug": "mia-ind-20011111",
-    "path": "historia/partidos/mia-ind-20011111",
+    "slug": "mia-clt-20011111",
+    "path": "historia/partidos/mia-clt-20011111",
     "params": {
       "game_id": "200111110clt"
     }
@@ -1940,6 +1940,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de noviembre de 2001",
       "Estadio": "RCA Dome",
       "Tipo de estadio": "dome",

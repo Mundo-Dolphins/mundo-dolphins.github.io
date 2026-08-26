@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1972",
@@ -2039,110 +2039,394 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
         "id": "mia-kan-19720917",
+        "game_id": "197209170kan",
         "fecha": "17-09-1972",
-        "url": "/historia/partidos/mia-kan-19720917/"
+        "date": "1972-09-17",
+        "url": "/historia/partidos/mia-kan-19720917/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Oilers",
+        "title": "Houston Oilers vs Miami Dolphins",
         "id": "oti-mia-19720924",
+        "game_id": "197209240mia",
         "fecha": "24-09-1972",
-        "url": "/historia/partidos/oti-mia-19720924/"
+        "date": "1972-09-24",
+        "url": "/historia/partidos/oti-mia-19720924/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Minnesota Vikings",
         "id": "mia-min-19721001",
+        "game_id": "197210010min",
         "fecha": "01-10-1972",
-        "url": "/historia/partidos/mia-min-19721001/"
+        "date": "1972-10-01",
+        "url": "/historia/partidos/mia-min-19721001/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19721008",
+        "game_id": "197210080nyj",
         "fecha": "08-10-1972",
-        "url": "/historia/partidos/mia-nyj-19721008/"
+        "date": "1972-10-08",
+        "url": "/historia/partidos/mia-nyj-19721008/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19721015",
+        "game_id": "197210150mia",
         "fecha": "15-10-1972",
-        "url": "/historia/partidos/sdg-mia-19721015/"
+        "date": "1972-10-15",
+        "url": "/historia/partidos/sdg-mia-19721015/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19721022",
+        "game_id": "197210220mia",
         "fecha": "22-10-1972",
-        "url": "/historia/partidos/buf-mia-19721022/"
+        "date": "1972-10-22",
+        "url": "/historia/partidos/buf-mia-19721022/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19721029",
+        "game_id": "197210290clt",
         "fecha": "29-10-1972",
-        "url": "/historia/partidos/mia-bal-19721029/"
+        "date": "1972-10-29",
+        "url": "/historia/partidos/mia-bal-19721029/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19721105",
+        "game_id": "197211050buf",
         "fecha": "05-11-1972",
-        "url": "/historia/partidos/mia-buf-19721105/"
+        "date": "1972-11-05",
+        "url": "/historia/partidos/mia-buf-19721105/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19721112",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19721112",
+        "game_id": "197211120mia",
         "fecha": "12-11-1972",
-        "url": "/historia/partidos/new-mia-19721112/"
+        "date": "1972-11-12",
+        "url": "/historia/partidos/nwe-mia-19721112/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19721119",
+        "game_id": "197211190mia",
         "fecha": "19-11-1972",
-        "url": "/historia/partidos/nyj-mia-19721119/"
+        "date": "1972-11-19",
+        "url": "/historia/partidos/nyj-mia-19721119/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs St. Louis Cardinals",
+        "title": "St. Louis Cardinals vs Miami Dolphins",
         "id": "stl-mia-19721127",
+        "game_id": "197211270mia",
         "fecha": "27-11-1972",
-        "url": "/historia/partidos/stl-mia-19721127/"
+        "date": "1972-11-27",
+        "url": "/historia/partidos/stl-mia-19721127/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19721203",
+        "id": "mia-nwe-19721203",
+        "game_id": "197212030nwe",
         "fecha": "03-12-1972",
-        "url": "/historia/partidos/mia-new-19721203/"
+        "date": "1972-12-03",
+        "url": "/historia/partidos/mia-nwe-19721203/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Giants",
         "id": "mia-nyg-19721210",
+        "game_id": "197212100nyg",
         "fecha": "10-12-1972",
-        "url": "/historia/partidos/mia-nyg-19721210/"
+        "date": "1972-12-10",
+        "url": "/historia/partidos/mia-nyg-19721210/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19721216",
+        "game_id": "197212160mia",
         "fecha": "16-12-1972",
-        "url": "/historia/partidos/bal-mia-19721216/"
-      }
-    ],
-    "Playoffs": [
+        "date": "1972-12-16",
+        "url": "/historia/partidos/bal-mia-19721216/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-19721224",
+        "game_id": "197212240mia",
         "fecha": "24-12-1972",
-        "url": "/historia/partidos/cle-mia-19721224/"
+        "date": "1972-12-24",
+        "url": "/historia/partidos/cle-mia-19721224/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-19721231",
+        "game_id": "197212310pit",
         "fecha": "31-12-1972",
-        "url": "/historia/partidos/mia-pit-19721231/"
+        "date": "1972-12-31",
+        "url": "/historia/partidos/mia-pit-19721231/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "id": "mia-kan-19720917",
+        "game_id": "197209170kan",
+        "fecha": "17-09-1972",
+        "date": "1972-09-17",
+        "url": "/historia/partidos/mia-kan-19720917/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
-        "id": "was-mia-19730114",
-        "fecha": "14-01-1973",
-        "url": "/historia/partidos/was-mia-19730114/"
+        "title": "Houston Oilers vs Miami Dolphins",
+        "id": "oti-mia-19720924",
+        "game_id": "197209240mia",
+        "fecha": "24-09-1972",
+        "date": "1972-09-24",
+        "url": "/historia/partidos/oti-mia-19720924/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Minnesota Vikings",
+        "id": "mia-min-19721001",
+        "game_id": "197210010min",
+        "fecha": "01-10-1972",
+        "date": "1972-10-01",
+        "url": "/historia/partidos/mia-min-19721001/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19721008",
+        "game_id": "197210080nyj",
+        "fecha": "08-10-1972",
+        "date": "1972-10-08",
+        "url": "/historia/partidos/mia-nyj-19721008/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19721015",
+        "game_id": "197210150mia",
+        "fecha": "15-10-1972",
+        "date": "1972-10-15",
+        "url": "/historia/partidos/sdg-mia-19721015/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19721022",
+        "game_id": "197210220mia",
+        "fecha": "22-10-1972",
+        "date": "1972-10-22",
+        "url": "/historia/partidos/buf-mia-19721022/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19721029",
+        "game_id": "197210290clt",
+        "fecha": "29-10-1972",
+        "date": "1972-10-29",
+        "url": "/historia/partidos/mia-bal-19721029/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19721105",
+        "game_id": "197211050buf",
+        "fecha": "05-11-1972",
+        "date": "1972-11-05",
+        "url": "/historia/partidos/mia-buf-19721105/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19721112",
+        "game_id": "197211120mia",
+        "fecha": "12-11-1972",
+        "date": "1972-11-12",
+        "url": "/historia/partidos/nwe-mia-19721112/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19721119",
+        "game_id": "197211190mia",
+        "fecha": "19-11-1972",
+        "date": "1972-11-19",
+        "url": "/historia/partidos/nyj-mia-19721119/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "St. Louis Cardinals vs Miami Dolphins",
+        "id": "stl-mia-19721127",
+        "game_id": "197211270mia",
+        "fecha": "27-11-1972",
+        "date": "1972-11-27",
+        "url": "/historia/partidos/stl-mia-19721127/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19721203",
+        "game_id": "197212030nwe",
+        "fecha": "03-12-1972",
+        "date": "1972-12-03",
+        "url": "/historia/partidos/mia-nwe-19721203/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Giants",
+        "id": "mia-nyg-19721210",
+        "game_id": "197212100nyg",
+        "fecha": "10-12-1972",
+        "date": "1972-12-10",
+        "url": "/historia/partidos/mia-nyg-19721210/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19721216",
+        "game_id": "197212160mia",
+        "fecha": "16-12-1972",
+        "date": "1972-12-16",
+        "url": "/historia/partidos/bal-mia-19721216/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Playoffs": [
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-19721224",
+        "game_id": "197212240mia",
+        "fecha": "24-12-1972",
+        "date": "1972-12-24",
+        "url": "/historia/partidos/cle-mia-19721224/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-19721231",
+        "game_id": "197212310pit",
+        "fecha": "31-12-1972",
+        "date": "1972-12-31",
+        "url": "/historia/partidos/mia-pit-19721231/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {

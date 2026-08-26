@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1985-12-16",
-    "slug": "new-mia-19851216",
-    "path": "historia/partidos/new-mia-19851216",
+    "slug": "nwe-mia-19851216",
+    "path": "historia/partidos/nwe-mia-19851216",
     "params": {
       "game_id": "198512160mia"
     }
@@ -1095,6 +1095,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "16 de diciembre de 1985",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

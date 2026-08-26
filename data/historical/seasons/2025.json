@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:06Z",
+  "generated_at": "2026-08-26T10:11:32Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2025",
@@ -3630,108 +3630,452 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20250907",
-        "fecha": "07-09-2025",
-        "url": "/historia/partidos/mia-ind-20250907/"
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-20250810",
+        "game_id": "202508100chi",
+        "fecha": "10-08-2025",
+        "date": "2025-08-10",
+        "url": "/historia/partidos/mia-chi-20250810/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20250914",
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-20250816",
+        "game_id": "202508160det",
+        "fecha": "16-08-2025",
+        "date": "2025-08-16",
+        "url": "/historia/partidos/mia-det-20250816/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20250823",
+        "game_id": "202508230mia",
+        "fecha": "23-08-2025",
+        "date": "2025-08-23",
+        "url": "/historia/partidos/jax-mia-20250823/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20250907",
+        "game_id": "202509070clt",
+        "fecha": "07-09-2025",
+        "date": "2025-09-07",
+        "url": "/historia/partidos/mia-clt-20250907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20250914",
+        "game_id": "202509140mia",
         "fecha": "14-09-2025",
-        "url": "/historia/partidos/new-mia-20250914/"
+        "date": "2025-09-14",
+        "url": "/historia/partidos/nwe-mia-20250914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20250918",
+        "game_id": "202509180buf",
         "fecha": "18-09-2025",
-        "url": "/historia/partidos/mia-buf-20250918/"
+        "date": "2025-09-18",
+        "url": "/historia/partidos/mia-buf-20250918/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20250929",
+        "game_id": "202509290mia",
         "fecha": "29-09-2025",
-        "url": "/historia/partidos/nyj-mia-20250929/"
+        "date": "2025-09-29",
+        "url": "/historia/partidos/nyj-mia-20250929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Carolina Panthers",
         "id": "mia-car-20251005",
+        "game_id": "202510050car",
         "fecha": "05-10-2025",
-        "url": "/historia/partidos/mia-car-20251005/"
+        "date": "2025-10-05",
+        "url": "/historia/partidos/mia-car-20251005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Chargers",
-        "id": "los-mia-20251012",
+        "title": "Los Angeles Chargers vs Miami Dolphins",
+        "id": "sdg-mia-20251012",
+        "game_id": "202510120mia",
         "fecha": "12-10-2025",
-        "url": "/historia/partidos/los-mia-20251012/"
+        "date": "2025-10-12",
+        "url": "/historia/partidos/sdg-mia-20251012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-20251019",
+        "game_id": "202510190cle",
         "fecha": "19-10-2025",
-        "url": "/historia/partidos/mia-cle-20251019/"
+        "date": "2025-10-19",
+        "url": "/historia/partidos/mia-cle-20251019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Atlanta Falcons",
         "id": "mia-atl-20251026",
+        "game_id": "202510260atl",
         "fecha": "26-10-2025",
-        "url": "/historia/partidos/mia-atl-20251026/"
+        "date": "2025-10-26",
+        "url": "/historia/partidos/mia-atl-20251026/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20251030",
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20251030",
+        "game_id": "202510300mia",
         "fecha": "30-10-2025",
-        "url": "/historia/partidos/bal-mia-20251030/"
+        "date": "2025-10-30",
+        "url": "/historia/partidos/rav-mia-20251030/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20251109",
+        "game_id": "202511090mia",
         "fecha": "09-11-2025",
-        "url": "/historia/partidos/buf-mia-20251109/"
+        "date": "2025-11-09",
+        "url": "/historia/partidos/buf-mia-20251109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Commanders",
+        "title": "Washington Commanders vs Miami Dolphins",
         "id": "was-mia-20251116",
+        "game_id": "202511160mia",
         "fecha": "16-11-2025",
-        "url": "/historia/partidos/was-mia-20251116/"
+        "date": "2025-11-16",
+        "url": "/historia/partidos/was-mia-20251116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "new-mia-20251130",
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-20251130",
+        "game_id": "202511300mia",
         "fecha": "30-11-2025",
-        "url": "/historia/partidos/new-mia-20251130/"
+        "date": "2025-11-30",
+        "url": "/historia/partidos/nor-mia-20251130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20251207",
+        "game_id": "202512070nyj",
         "fecha": "07-12-2025",
-        "url": "/historia/partidos/mia-nyj-20251207/"
+        "date": "2025-12-07",
+        "url": "/historia/partidos/mia-nyj-20251207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-20251215",
+        "game_id": "202512150pit",
         "fecha": "15-12-2025",
-        "url": "/historia/partidos/mia-pit-20251215/"
+        "date": "2025-12-15",
+        "url": "/historia/partidos/mia-pit-20251215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-20251221",
+        "game_id": "202512210mia",
         "fecha": "21-12-2025",
-        "url": "/historia/partidos/cin-mia-20251221/"
+        "date": "2025-12-21",
+        "url": "/historia/partidos/cin-mia-20251221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
         "id": "tam-mia-20251228",
+        "game_id": "202512280mia",
         "fecha": "28-12-2025",
-        "url": "/historia/partidos/tam-mia-20251228/"
+        "date": "2025-12-28",
+        "url": "/historia/partidos/tam-mia-20251228/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20260104",
+        "id": "mia-nwe-20260104",
+        "game_id": "202601040nwe",
         "fecha": "04-01-2026",
-        "url": "/historia/partidos/mia-new-20260104/"
+        "date": "2026-01-04",
+        "url": "/historia/partidos/mia-nwe-20260104/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20250907",
+        "game_id": "202509070clt",
+        "fecha": "07-09-2025",
+        "date": "2025-09-07",
+        "url": "/historia/partidos/mia-clt-20250907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20250914",
+        "game_id": "202509140mia",
+        "fecha": "14-09-2025",
+        "date": "2025-09-14",
+        "url": "/historia/partidos/nwe-mia-20250914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20250918",
+        "game_id": "202509180buf",
+        "fecha": "18-09-2025",
+        "date": "2025-09-18",
+        "url": "/historia/partidos/mia-buf-20250918/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20250929",
+        "game_id": "202509290mia",
+        "fecha": "29-09-2025",
+        "date": "2025-09-29",
+        "url": "/historia/partidos/nyj-mia-20250929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-20251005",
+        "game_id": "202510050car",
+        "fecha": "05-10-2025",
+        "date": "2025-10-05",
+        "url": "/historia/partidos/mia-car-20251005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Chargers vs Miami Dolphins",
+        "id": "sdg-mia-20251012",
+        "game_id": "202510120mia",
+        "fecha": "12-10-2025",
+        "date": "2025-10-12",
+        "url": "/historia/partidos/sdg-mia-20251012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-20251019",
+        "game_id": "202510190cle",
+        "fecha": "19-10-2025",
+        "date": "2025-10-19",
+        "url": "/historia/partidos/mia-cle-20251019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Atlanta Falcons",
+        "id": "mia-atl-20251026",
+        "game_id": "202510260atl",
+        "fecha": "26-10-2025",
+        "date": "2025-10-26",
+        "url": "/historia/partidos/mia-atl-20251026/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20251030",
+        "game_id": "202510300mia",
+        "fecha": "30-10-2025",
+        "date": "2025-10-30",
+        "url": "/historia/partidos/rav-mia-20251030/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20251109",
+        "game_id": "202511090mia",
+        "fecha": "09-11-2025",
+        "date": "2025-11-09",
+        "url": "/historia/partidos/buf-mia-20251109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Commanders vs Miami Dolphins",
+        "id": "was-mia-20251116",
+        "game_id": "202511160mia",
+        "fecha": "16-11-2025",
+        "date": "2025-11-16",
+        "url": "/historia/partidos/was-mia-20251116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-20251130",
+        "game_id": "202511300mia",
+        "fecha": "30-11-2025",
+        "date": "2025-11-30",
+        "url": "/historia/partidos/nor-mia-20251130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20251207",
+        "game_id": "202512070nyj",
+        "fecha": "07-12-2025",
+        "date": "2025-12-07",
+        "url": "/historia/partidos/mia-nyj-20251207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20251215",
+        "game_id": "202512150pit",
+        "fecha": "15-12-2025",
+        "date": "2025-12-15",
+        "url": "/historia/partidos/mia-pit-20251215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-20251221",
+        "game_id": "202512210mia",
+        "fecha": "21-12-2025",
+        "date": "2025-12-21",
+        "url": "/historia/partidos/cin-mia-20251221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20251228",
+        "game_id": "202512280mia",
+        "fecha": "28-12-2025",
+        "date": "2025-12-28",
+        "url": "/historia/partidos/tam-mia-20251228/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20260104",
+        "game_id": "202601040nwe",
+        "fecha": "04-01-2026",
+        "date": "2026-01-04",
+        "url": "/historia/partidos/mia-nwe-20260104/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3741,6 +4085,8 @@
       "Puntos a favor": "347 puntos. 25º de 32 equipos",
       "Puntos en contra": "424 puntos. 24º de 32 equipos",
       "Head Coach": "Mike McDaniel (7-10-0)",
+      "General Manager": "Chris Grier (Fired 10/31/25)",
+      "Interim General Manager": "Champ Kelly (Named interim GM on 10/31/25)",
       "Estadio": "Hard Rock Stadium",
       "Training Camp": "Baptist Health Training Facility (Davie, Florida)",
       "Alineación defensiva": "3-4",

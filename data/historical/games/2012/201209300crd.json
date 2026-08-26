@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Arizona Cardinals",
     "date": "2012-09-30",
-    "slug": "mia-ari-20120930",
-    "path": "historia/partidos/mia-ari-20120930",
+    "slug": "mia-crd-20120930",
+    "path": "historia/partidos/mia-crd-20120930",
     "params": {
       "game_id": "201209300crd"
     }
@@ -2683,6 +2683,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de septiembre de 2012",
       "Estadio": "University of Phoenix Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -3035,6 +3037,21 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Tsg6l0bbh5s",
+        "title": "2012 week 4 Miami Dolphins at Arizona Cardinals",
+        "url": "https://www.youtube.com/watch?v=Tsg6l0bbh5s\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgQXJpem9uYSBDYXJkaW5hbHMgMjAxMi0wOS0zMA%3D%3D",
+        "duration_seconds": 9131,
+        "embeddable": false
+      },
+      {
+        "youtube_id": "ugIUGj8QRq8",
+        "title": "Arizona Cardinals crazy overtime win vs the Dolphins back in 2012 🔥🔥🔥🔥",
+        "url": "https://www.youtube.com/watch?v=ugIUGj8QRq8\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgQXJpem9uYSBDYXJkaW5hbHMgMjAxMi0wOS0zMA%3D%3D",
+        "duration_seconds": 497,
+        "embeddable": true
+      }
+    ]
   }
 }

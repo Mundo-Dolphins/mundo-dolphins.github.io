@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1991-09-08",
-    "slug": "ind-mia-19910908",
-    "path": "historia/partidos/ind-mia-19910908",
+    "slug": "clt-mia-19910908",
+    "path": "historia/partidos/clt-mia-19910908",
     "params": {
       "game_id": "199109080mia"
     }
@@ -771,6 +771,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de septiembre de 1991",
       "Estadio": "Joe Robbie Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1994-01-02",
-    "slug": "mia-new-19940102",
-    "path": "historia/partidos/mia-new-19940102",
+    "slug": "mia-nwe-19940102",
+    "path": "historia/partidos/mia-nwe-19940102",
     "params": {
       "game_id": "199401020nwe"
     }
@@ -933,6 +933,8 @@
     },
     "Información del partido": {
       "Semana": "18",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de enero de 1994",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

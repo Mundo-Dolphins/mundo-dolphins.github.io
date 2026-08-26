@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New Orleans Saints vs Miami Dolphins",
     "date": "2017-10-01",
-    "slug": "new-mia-20171001",
-    "path": "historia/partidos/new-mia-20171001",
+    "slug": "nor-mia-20171001",
+    "path": "historia/partidos/nor-mia-20171001",
     "params": {
       "game_id": "201710010mia"
     }
@@ -2626,6 +2626,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de octubre de 2017",
       "Estadio": "Wembley Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2849,6 +2851,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "4xhURmgAzZs",
+        "title": "2017 – Week 4 – Saints 20 @ Dolphins 0",
+        "url": "https://www.youtube.com/watch?v=4xhURmgAzZs\u0026pp=ygUvTmV3IE9ybGVhbnMgU2FpbnRzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTctMTAtMDE%3D",
+        "duration_seconds": 2085,
+        "embeddable": false
+      }
+    ]
   }
 }

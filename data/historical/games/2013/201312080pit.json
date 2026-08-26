@@ -2804,6 +2804,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de diciembre de 2013",
       "Estadio": "Heinz Field",
       "Tipo de estadio": "Al aire libre",
@@ -3097,6 +3099,21 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "1SfQkCxoyJo",
+        "title": "A thriller in the snow! Miami Dolphins vs Pittsburgh Steelers Week 14 2013 FULL GAME",
+        "url": "https://www.youtube.com/watch?v=1SfQkCxoyJo\u0026pp=ygUuQ2Fyb2xpbmEgUGFudGhlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxMy0xMS0yNA%3D%3D",
+        "duration_seconds": 9050,
+        "embeddable": true
+      },
+      {
+        "youtube_id": "PcHBS78mtUE",
+        "title": "A Blizzard Bowl Decided by INCHES! (Dolphins vs. Steelers 2013, Week 14)",
+        "url": "https://www.youtube.com/watch?v=PcHBS78mtUE\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGl0dHNidXJnaCBTdGVlbGVycyAyMDEzLTEyLTA4",
+        "duration_seconds": 1157,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -4091,6 +4091,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de septiembre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4354,6 +4356,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "BDX8FZ01sPQ",
+        "title": "Raiders vs. Dolphins Week 3 Highlights | NFL 2018",
+        "url": "https://www.youtube.com/watch?v=BDX8FZ01sPQ\u0026pp=ygUsT2FrbGFuZCBSYWlkZXJzIHZzIE1pYW1pIERvbHBoaW5zIDIwMDEtMDktMjM%3D",
+        "duration_seconds": 577,
+        "embeddable": false
+      }
+    ]
   }
 }

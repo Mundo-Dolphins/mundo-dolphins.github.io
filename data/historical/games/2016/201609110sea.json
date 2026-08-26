@@ -2683,6 +2683,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de septiembre de 2016",
       "Estadio": "CenturyLink Field",
       "Tipo de estadio": "Al aire libre",
@@ -2966,6 +2968,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "7oFeIAAERjE",
+        "title": "2016 week 1 Miami Dolphins at Seattle Seahawks",
+        "url": "https://www.youtube.com/watch?v=7oFeIAAERjE\u0026pp=ygUtTWlhbWkgRG9scGhpbnMgdnMgU2VhdHRsZSBTZWFoYXdrcyAyMDE2LTA5LTEx",
+        "duration_seconds": 8079,
+        "embeddable": false
+      }
+    ]
   }
 }

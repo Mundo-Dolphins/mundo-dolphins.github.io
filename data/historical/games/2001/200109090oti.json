@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Tennessee Titans",
     "date": "2001-09-09",
-    "slug": "mia-ten-20010909",
-    "path": "historia/partidos/mia-ten-20010909",
+    "slug": "mia-oti-20010909",
+    "path": "historia/partidos/mia-oti-20010909",
     "params": {
       "game_id": "200109090oti"
     }
@@ -1765,6 +1765,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de septiembre de 2001",
       "Estadio": "Adelphia Coliseum",
       "Tipo de estadio": "Al aire libre",

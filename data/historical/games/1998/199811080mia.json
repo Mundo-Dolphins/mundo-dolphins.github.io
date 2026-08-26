@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1998-11-08",
-    "slug": "ind-mia-19981108",
-    "path": "historia/partidos/ind-mia-19981108",
+    "slug": "clt-mia-19981108",
+    "path": "historia/partidos/clt-mia-19981108",
     "params": {
       "game_id": "199811080mia"
     }
@@ -1266,6 +1266,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de noviembre de 1998",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

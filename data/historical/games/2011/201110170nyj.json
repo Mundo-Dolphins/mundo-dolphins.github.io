@@ -1930,6 +1930,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de octubre de 2011",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2223,6 +2225,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "uAgmPU7wyTE",
+        "title": "2011 week 6 Miami Dolphins at New York Jets",
+        "url": "https://www.youtube.com/watch?v=uAgmPU7wyTE\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDA2LTEwLTE1",
+        "duration_seconds": 7816,
+        "embeddable": false
+      }
+    ]
   }
 }

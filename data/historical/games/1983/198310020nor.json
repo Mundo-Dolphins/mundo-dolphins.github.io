@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "1983-10-02",
-    "slug": "mia-new-19831002",
-    "path": "historia/partidos/mia-new-19831002",
+    "slug": "mia-nor-19831002",
+    "path": "historia/partidos/mia-nor-19831002",
     "params": {
       "game_id": "198310020nor"
     }
@@ -850,6 +850,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de octubre de 1983",
       "Estadio": "Louisiana Superdome",
       "Tipo de estadio": "dome",
