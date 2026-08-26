@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Indianapolis Colts",
     "date": "2018-11-25",
-    "slug": "mia-ind-20181125",
-    "path": "historia/partidos/mia-ind-20181125",
+    "slug": "mia-clt-20181125",
+    "path": "historia/partidos/mia-clt-20181125",
     "params": {
       "game_id": "201811250clt"
     }
@@ -3960,6 +3960,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "25 de noviembre de 2018",
       "Estadio": "Lucas Oil Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -4242,6 +4244,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "gpDC8b-_alY",
+        "title": "2018 – Week 12 – Dolphins 24 @ Colts 27",
+        "url": "https://www.youtube.com/watch?v=gpDC8b-_alY\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgSW5kaWFuYXBvbGlzIENvbHRzIDIwMTgtMTEtMjU%3D",
+        "duration_seconds": 7414,
+        "embeddable": true
+      }
+    ]
   }
 }

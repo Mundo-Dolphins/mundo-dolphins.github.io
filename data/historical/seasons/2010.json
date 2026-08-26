@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2010",
@@ -3289,102 +3289,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20100814",
+        "game_id": "201008140mia",
+        "fecha": "14-08-2010",
+        "date": "2010-08-14",
+        "url": "/historia/partidos/tam-mia-20100814/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20100821",
+        "game_id": "201008210jax",
+        "fecha": "21-08-2010",
+        "date": "2010-08-21",
+        "url": "/historia/partidos/mia-jax-20100821/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20100827",
+        "game_id": "201008270mia",
+        "fecha": "27-08-2010",
+        "date": "2010-08-27",
+        "url": "/historia/partidos/atl-mia-20100827/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20100902",
+        "game_id": "201009020dal",
+        "fecha": "02-09-2010",
+        "date": "2010-09-02",
+        "url": "/historia/partidos/mia-dal-20100902/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20100912",
+        "game_id": "201009120buf",
         "fecha": "12-09-2010",
-        "url": "/historia/partidos/mia-buf-20100912/"
+        "date": "2010-09-12",
+        "url": "/historia/partidos/mia-buf-20100912/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Minnesota Vikings",
         "id": "mia-min-20100919",
+        "game_id": "201009190min",
         "fecha": "19-09-2010",
-        "url": "/historia/partidos/mia-min-20100919/"
+        "date": "2010-09-19",
+        "url": "/historia/partidos/mia-min-20100919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20100926",
+        "game_id": "201009260mia",
         "fecha": "26-09-2010",
-        "url": "/historia/partidos/nyj-mia-20100926/"
+        "date": "2010-09-26",
+        "url": "/historia/partidos/nyj-mia-20100926/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20101004",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20101004",
+        "game_id": "201010040mia",
         "fecha": "04-10-2010",
-        "url": "/historia/partidos/new-mia-20101004/"
+        "date": "2010-10-04",
+        "url": "/historia/partidos/nwe-mia-20101004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Green Bay Packers",
         "id": "mia-gnb-20101017",
+        "game_id": "201010170gnb",
         "fecha": "17-10-2010",
-        "url": "/historia/partidos/mia-gnb-20101017/"
+        "date": "2010-10-17",
+        "url": "/historia/partidos/mia-gnb-20101017/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-20101024",
+        "game_id": "201010240mia",
         "fecha": "24-10-2010",
-        "url": "/historia/partidos/pit-mia-20101024/"
+        "date": "2010-10-24",
+        "url": "/historia/partidos/pit-mia-20101024/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-20101031",
+        "game_id": "201010310cin",
         "fecha": "31-10-2010",
-        "url": "/historia/partidos/mia-cin-20101031/"
+        "date": "2010-10-31",
+        "url": "/historia/partidos/mia-cin-20101031/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "mia-bal-20101107",
+        "id": "mia-rav-20101107",
+        "game_id": "201011070rav",
         "fecha": "07-11-2010",
-        "url": "/historia/partidos/mia-bal-20101107/"
+        "date": "2010-11-07",
+        "url": "/historia/partidos/mia-rav-20101107/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "ten-mia-20101114",
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20101114",
+        "game_id": "201011140mia",
         "fecha": "14-11-2010",
-        "url": "/historia/partidos/ten-mia-20101114/"
+        "date": "2010-11-14",
+        "url": "/historia/partidos/oti-mia-20101114/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Chicago Bears",
+        "title": "Chicago Bears vs Miami Dolphins",
         "id": "chi-mia-20101118",
+        "game_id": "201011180mia",
         "fecha": "18-11-2010",
-        "url": "/historia/partidos/chi-mia-20101118/"
+        "date": "2010-11-18",
+        "url": "/historia/partidos/chi-mia-20101118/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-20101128",
+        "game_id": "201011280rai",
         "fecha": "28-11-2010",
-        "url": "/historia/partidos/mia-oak-20101128/"
+        "date": "2010-11-28",
+        "url": "/historia/partidos/mia-oak-20101128/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-20101205",
+        "game_id": "201012050mia",
         "fecha": "05-12-2010",
-        "url": "/historia/partidos/cle-mia-20101205/"
+        "date": "2010-12-05",
+        "url": "/historia/partidos/cle-mia-20101205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20101212",
+        "game_id": "201012120nyj",
         "fecha": "12-12-2010",
-        "url": "/historia/partidos/mia-nyj-20101212/"
+        "date": "2010-12-12",
+        "url": "/historia/partidos/mia-nyj-20101212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20101219",
+        "game_id": "201012190mia",
         "fecha": "19-12-2010",
-        "url": "/historia/partidos/buf-mia-20101219/"
+        "date": "2010-12-19",
+        "url": "/historia/partidos/buf-mia-20101219/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Detroit Lions",
+        "title": "Detroit Lions vs Miami Dolphins",
         "id": "det-mia-20101226",
+        "game_id": "201012260mia",
         "fecha": "26-12-2010",
-        "url": "/historia/partidos/det-mia-20101226/"
+        "date": "2010-12-26",
+        "url": "/historia/partidos/det-mia-20101226/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20110102",
+        "id": "mia-nwe-20110102",
+        "game_id": "201101020nwe",
         "fecha": "02-01-2011",
-        "url": "/historia/partidos/mia-new-20110102/"
+        "date": "2011-01-02",
+        "url": "/historia/partidos/mia-nwe-20110102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20100912",
+        "game_id": "201009120buf",
+        "fecha": "12-09-2010",
+        "date": "2010-09-12",
+        "url": "/historia/partidos/mia-buf-20100912/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Minnesota Vikings",
+        "id": "mia-min-20100919",
+        "game_id": "201009190min",
+        "fecha": "19-09-2010",
+        "date": "2010-09-19",
+        "url": "/historia/partidos/mia-min-20100919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20100926",
+        "game_id": "201009260mia",
+        "fecha": "26-09-2010",
+        "date": "2010-09-26",
+        "url": "/historia/partidos/nyj-mia-20100926/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20101004",
+        "game_id": "201010040mia",
+        "fecha": "04-10-2010",
+        "date": "2010-10-04",
+        "url": "/historia/partidos/nwe-mia-20101004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Green Bay Packers",
+        "id": "mia-gnb-20101017",
+        "game_id": "201010170gnb",
+        "fecha": "17-10-2010",
+        "date": "2010-10-17",
+        "url": "/historia/partidos/mia-gnb-20101017/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-20101024",
+        "game_id": "201010240mia",
+        "fecha": "24-10-2010",
+        "date": "2010-10-24",
+        "url": "/historia/partidos/pit-mia-20101024/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-20101031",
+        "game_id": "201010310cin",
+        "fecha": "31-10-2010",
+        "date": "2010-10-31",
+        "url": "/historia/partidos/mia-cin-20101031/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Ravens",
+        "id": "mia-rav-20101107",
+        "game_id": "201011070rav",
+        "fecha": "07-11-2010",
+        "date": "2010-11-07",
+        "url": "/historia/partidos/mia-rav-20101107/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20101114",
+        "game_id": "201011140mia",
+        "fecha": "14-11-2010",
+        "date": "2010-11-14",
+        "url": "/historia/partidos/oti-mia-20101114/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Chicago Bears vs Miami Dolphins",
+        "id": "chi-mia-20101118",
+        "game_id": "201011180mia",
+        "fecha": "18-11-2010",
+        "date": "2010-11-18",
+        "url": "/historia/partidos/chi-mia-20101118/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-20101128",
+        "game_id": "201011280rai",
+        "fecha": "28-11-2010",
+        "date": "2010-11-28",
+        "url": "/historia/partidos/mia-oak-20101128/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-20101205",
+        "game_id": "201012050mia",
+        "fecha": "05-12-2010",
+        "date": "2010-12-05",
+        "url": "/historia/partidos/cle-mia-20101205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20101212",
+        "game_id": "201012120nyj",
+        "fecha": "12-12-2010",
+        "date": "2010-12-12",
+        "url": "/historia/partidos/mia-nyj-20101212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20101219",
+        "game_id": "201012190mia",
+        "fecha": "19-12-2010",
+        "date": "2010-12-19",
+        "url": "/historia/partidos/buf-mia-20101219/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Detroit Lions vs Miami Dolphins",
+        "id": "det-mia-20101226",
+        "game_id": "201012260mia",
+        "fecha": "26-12-2010",
+        "date": "2010-12-26",
+        "url": "/historia/partidos/det-mia-20101226/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20110102",
+        "game_id": "201101020nwe",
+        "fecha": "02-01-2011",
+        "date": "2011-01-02",
+        "url": "/historia/partidos/mia-nwe-20110102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3394,6 +3732,7 @@
       "Puntos a favor": "273 puntos. 30º de 32 equipos",
       "Puntos en contra": "333 puntos. 14º de 32 equipos",
       "Head Coach": "Tony Sparano (7-9-0)",
+      "General Manager": "Jeff Ireland",
       "Estadio": "Sun Life Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "3-4",

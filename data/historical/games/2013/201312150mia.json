@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2013-12-15",
-    "slug": "new-mia-20131215",
-    "path": "historia/partidos/new-mia-20131215",
+    "slug": "nwe-mia-20131215",
+    "path": "historia/partidos/nwe-mia-20131215",
     "params": {
       "game_id": "201312150mia"
     }
@@ -2709,6 +2709,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de diciembre de 2013",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2952,6 +2954,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "E3JFrOP0yIE",
+        "title": "2013 week 15 New England Patriots at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=E3JFrOP0yIE\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxMy0xMC0yNw%3D%3D",
+        "duration_seconds": 7823,
+        "embeddable": false
+      }
+    ]
   }
 }

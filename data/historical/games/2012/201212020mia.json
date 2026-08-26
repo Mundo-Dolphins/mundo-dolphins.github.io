@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2012-12-02",
-    "slug": "new-mia-20121202",
-    "path": "historia/partidos/new-mia-20121202",
+    "slug": "nwe-mia-20121202",
+    "path": "historia/partidos/nwe-mia-20121202",
     "params": {
       "game_id": "201212020mia"
     }
@@ -2701,6 +2701,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de diciembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2974,6 +2976,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "40a5HeoE7U4",
+        "title": "New England Patriots @ Miami Dolphins - WEEK 13 (12/02/2012)",
+        "url": "https://www.youtube.com/watch?v=40a5HeoE7U4\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxMS0wMS0wMg%3D%3D",
+        "duration_seconds": 7967,
+        "embeddable": true
+      }
+    ]
   }
 }

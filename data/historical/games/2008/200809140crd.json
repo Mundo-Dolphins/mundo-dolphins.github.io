@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Arizona Cardinals",
     "date": "2008-09-14",
-    "slug": "mia-ari-20080914",
-    "path": "historia/partidos/mia-ari-20080914",
+    "slug": "mia-crd-20080914",
+    "path": "historia/partidos/mia-crd-20080914",
     "params": {
       "game_id": "200809140crd"
     }
@@ -1930,6 +1930,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de septiembre de 2008",
       "Estadio": "University of Phoenix Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",

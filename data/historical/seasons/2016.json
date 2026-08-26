@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:05Z",
+  "generated_at": "2026-08-26T10:11:31Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2016",
@@ -3414,110 +3414,466 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Miami Dolphins vs New York Giants",
+        "id": "mia-nyg-20160812",
+        "game_id": "201608120nyg",
+        "fecha": "12-08-2016",
+        "date": "2016-08-12",
+        "url": "/historia/partidos/mia-nyg-20160812/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20160819",
+        "game_id": "201608190dal",
+        "fecha": "19-08-2016",
+        "date": "2016-08-19",
+        "url": "/historia/partidos/mia-dal-20160819/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20160825",
+        "game_id": "201608250mia",
+        "fecha": "25-08-2016",
+        "date": "2016-08-25",
+        "url": "/historia/partidos/atl-mia-20160825/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20160901",
+        "game_id": "201609010mia",
+        "fecha": "01-09-2016",
+        "date": "2016-09-01",
+        "url": "/historia/partidos/oti-mia-20160901/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Seattle Seahawks",
         "id": "mia-sea-20160911",
+        "game_id": "201609110sea",
         "fecha": "11-09-2016",
-        "url": "/historia/partidos/mia-sea-20160911/"
+        "date": "2016-09-11",
+        "url": "/historia/partidos/mia-sea-20160911/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20160918",
+        "id": "mia-nwe-20160918",
+        "game_id": "201609180nwe",
         "fecha": "18-09-2016",
-        "url": "/historia/partidos/mia-new-20160918/"
+        "date": "2016-09-18",
+        "url": "/historia/partidos/mia-nwe-20160918/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-20160925",
+        "game_id": "201609250mia",
         "fecha": "25-09-2016",
-        "url": "/historia/partidos/cle-mia-20160925/"
+        "date": "2016-09-25",
+        "url": "/historia/partidos/cle-mia-20160925/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-20160929",
+        "game_id": "201609290cin",
         "fecha": "29-09-2016",
-        "url": "/historia/partidos/mia-cin-20160929/"
+        "date": "2016-09-29",
+        "url": "/historia/partidos/mia-cin-20160929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "ten-mia-20161009",
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20161009",
+        "game_id": "201610090mia",
         "fecha": "09-10-2016",
-        "url": "/historia/partidos/ten-mia-20161009/"
+        "date": "2016-10-09",
+        "url": "/historia/partidos/oti-mia-20161009/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-20161016",
+        "game_id": "201610160mia",
         "fecha": "16-10-2016",
-        "url": "/historia/partidos/pit-mia-20161016/"
+        "date": "2016-10-16",
+        "url": "/historia/partidos/pit-mia-20161016/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20161023",
+        "game_id": "201610230mia",
         "fecha": "23-10-2016",
-        "url": "/historia/partidos/buf-mia-20161023/"
+        "date": "2016-10-23",
+        "url": "/historia/partidos/buf-mia-20161023/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20161106",
+        "game_id": "201611060mia",
         "fecha": "06-11-2016",
-        "url": "/historia/partidos/nyj-mia-20161106/"
+        "date": "2016-11-06",
+        "url": "/historia/partidos/nyj-mia-20161106/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-20161113",
+        "game_id": "201611130sdg",
         "fecha": "13-11-2016",
-        "url": "/historia/partidos/mia-sdg-20161113/"
+        "date": "2016-11-13",
+        "url": "/historia/partidos/mia-sdg-20161113/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Rams",
-        "id": "mia-los-20161120",
+        "id": "mia-ram-20161120",
+        "game_id": "201611200ram",
         "fecha": "20-11-2016",
-        "url": "/historia/partidos/mia-los-20161120/"
+        "date": "2016-11-20",
+        "url": "/historia/partidos/mia-ram-20161120/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "san-mia-20161127",
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-20161127",
+        "game_id": "201611270mia",
         "fecha": "27-11-2016",
-        "url": "/historia/partidos/san-mia-20161127/"
+        "date": "2016-11-27",
+        "url": "/historia/partidos/sfo-mia-20161127/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "mia-bal-20161204",
+        "id": "mia-rav-20161204",
+        "game_id": "201612040rav",
         "fecha": "04-12-2016",
-        "url": "/historia/partidos/mia-bal-20161204/"
+        "date": "2016-12-04",
+        "url": "/historia/partidos/mia-rav-20161204/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Arizona Cardinals",
-        "id": "ari-mia-20161211",
+        "title": "Arizona Cardinals vs Miami Dolphins",
+        "id": "crd-mia-20161211",
+        "game_id": "201612110mia",
         "fecha": "11-12-2016",
-        "url": "/historia/partidos/ari-mia-20161211/"
+        "date": "2016-12-11",
+        "url": "/historia/partidos/crd-mia-20161211/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20161217",
+        "game_id": "201612170nyj",
         "fecha": "17-12-2016",
-        "url": "/historia/partidos/mia-nyj-20161217/"
+        "date": "2016-12-17",
+        "url": "/historia/partidos/mia-nyj-20161217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20161224",
+        "game_id": "201612240buf",
         "fecha": "24-12-2016",
-        "url": "/historia/partidos/mia-buf-20161224/"
+        "date": "2016-12-24",
+        "url": "/historia/partidos/mia-buf-20161224/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20170101",
+        "game_id": "201701010mia",
+        "fecha": "01-01-2017",
+        "date": "2017-01-01",
+        "url": "/historia/partidos/nwe-mia-20170101/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20170108",
+        "game_id": "201701080pit",
+        "fecha": "08-01-2017",
+        "date": "2017-01-08",
+        "url": "/historia/partidos/mia-pit-20170108/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Seattle Seahawks",
+        "id": "mia-sea-20160911",
+        "game_id": "201609110sea",
+        "fecha": "11-09-2016",
+        "date": "2016-09-11",
+        "url": "/historia/partidos/mia-sea-20160911/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20170101",
+        "id": "mia-nwe-20160918",
+        "game_id": "201609180nwe",
+        "fecha": "18-09-2016",
+        "date": "2016-09-18",
+        "url": "/historia/partidos/mia-nwe-20160918/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-20160925",
+        "game_id": "201609250mia",
+        "fecha": "25-09-2016",
+        "date": "2016-09-25",
+        "url": "/historia/partidos/cle-mia-20160925/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-20160929",
+        "game_id": "201609290cin",
+        "fecha": "29-09-2016",
+        "date": "2016-09-29",
+        "url": "/historia/partidos/mia-cin-20160929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20161009",
+        "game_id": "201610090mia",
+        "fecha": "09-10-2016",
+        "date": "2016-10-09",
+        "url": "/historia/partidos/oti-mia-20161009/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-20161016",
+        "game_id": "201610160mia",
+        "fecha": "16-10-2016",
+        "date": "2016-10-16",
+        "url": "/historia/partidos/pit-mia-20161016/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20161023",
+        "game_id": "201610230mia",
+        "fecha": "23-10-2016",
+        "date": "2016-10-23",
+        "url": "/historia/partidos/buf-mia-20161023/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20161106",
+        "game_id": "201611060mia",
+        "fecha": "06-11-2016",
+        "date": "2016-11-06",
+        "url": "/historia/partidos/nyj-mia-20161106/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-20161113",
+        "game_id": "201611130sdg",
+        "fecha": "13-11-2016",
+        "date": "2016-11-13",
+        "url": "/historia/partidos/mia-sdg-20161113/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Rams",
+        "id": "mia-ram-20161120",
+        "game_id": "201611200ram",
+        "fecha": "20-11-2016",
+        "date": "2016-11-20",
+        "url": "/historia/partidos/mia-ram-20161120/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-20161127",
+        "game_id": "201611270mia",
+        "fecha": "27-11-2016",
+        "date": "2016-11-27",
+        "url": "/historia/partidos/sfo-mia-20161127/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Ravens",
+        "id": "mia-rav-20161204",
+        "game_id": "201612040rav",
+        "fecha": "04-12-2016",
+        "date": "2016-12-04",
+        "url": "/historia/partidos/mia-rav-20161204/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Arizona Cardinals vs Miami Dolphins",
+        "id": "crd-mia-20161211",
+        "game_id": "201612110mia",
+        "fecha": "11-12-2016",
+        "date": "2016-12-11",
+        "url": "/historia/partidos/crd-mia-20161211/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20161217",
+        "game_id": "201612170nyj",
+        "fecha": "17-12-2016",
+        "date": "2016-12-17",
+        "url": "/historia/partidos/mia-nyj-20161217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20161224",
+        "game_id": "201612240buf",
+        "fecha": "24-12-2016",
+        "date": "2016-12-24",
+        "url": "/historia/partidos/mia-buf-20161224/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20170101",
+        "game_id": "201701010mia",
         "fecha": "01-01-2017",
-        "url": "/historia/partidos/new-mia-20170101/"
+        "date": "2017-01-01",
+        "url": "/historia/partidos/nwe-mia-20170101/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-20170108",
+        "game_id": "201701080pit",
         "fecha": "08-01-2017",
-        "url": "/historia/partidos/mia-pit-20170108/"
+        "date": "2017-01-08",
+        "url": "/historia/partidos/mia-pit-20170108/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3527,6 +3883,7 @@
       "Puntos a favor": "363 puntos. 17º de 32 equipos",
       "Puntos en contra": "380 puntos. 18º de 32 equipos",
       "Head Coach": "Adam Gase (10-6-0)",
+      "General Manager": "Chris Grier",
       "Estadio": "Hard Rock Stadium",
       "Training Camp": "Baptist Health Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "2021-10-03",
-    "slug": "ind-mia-20211003",
-    "path": "historia/partidos/ind-mia-20211003",
+    "slug": "clt-mia-20211003",
+    "path": "historia/partidos/clt-mia-20211003",
     "params": {
       "game_id": "202110030mia"
     }
@@ -4060,6 +4060,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "3 de octubre de 2021",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",

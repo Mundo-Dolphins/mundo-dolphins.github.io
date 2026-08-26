@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2009-12-06",
-    "slug": "new-mia-20091206",
-    "path": "historia/partidos/new-mia-20091206",
+    "slug": "nwe-mia-20091206",
+    "path": "historia/partidos/nwe-mia-20091206",
     "params": {
       "game_id": "200912060mia"
     }
@@ -2025,6 +2025,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de diciembre de 2009",
       "Estadio": "Land Shark Stadium",
       "Tipo de estadio": "Al aire libre",

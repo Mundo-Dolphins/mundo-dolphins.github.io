@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "2003-11-02",
-    "slug": "ind-mia-20031102",
-    "path": "historia/partidos/ind-mia-20031102",
+    "slug": "clt-mia-20031102",
+    "path": "historia/partidos/clt-mia-20031102",
     "params": {
       "game_id": "200311020mia"
     }
@@ -1779,6 +1779,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de noviembre de 2003",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

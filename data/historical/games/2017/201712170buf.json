@@ -2700,6 +2700,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de diciembre de 2017",
       "Estadio": "New Era Field",
       "Tipo de estadio": "Al aire libre",
@@ -2973,6 +2975,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "YUy2NmuG_Gw",
+        "title": "2017 – Week 15 – Dolphins 16 @ Bills 24",
+        "url": "https://www.youtube.com/watch?v=YUy2NmuG_Gw\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDE3LTEyLTE3",
+        "duration_seconds": 7922,
+        "embeddable": false
+      }
+    ]
   }
 }

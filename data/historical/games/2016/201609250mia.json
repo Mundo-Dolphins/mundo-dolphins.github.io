@@ -2792,6 +2792,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "25 de septiembre de 2016",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3115,6 +3117,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "5FEhJseUbQ0",
+        "title": "2016 – Week 3 – Browns 24 @ Dolphins 30",
+        "url": "https://www.youtube.com/watch?v=5FEhJseUbQ0\u0026pp=ygUtQ2xldmVsYW5kIEJyb3ducyB2cyBNaWFtaSBEb2xwaGlucyAyMDE2LTA5LTI1",
+        "duration_seconds": 9690,
+        "embeddable": false
+      }
+    ]
   }
 }

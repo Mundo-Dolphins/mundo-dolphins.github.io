@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1990",
@@ -2360,116 +2360,442 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19900909",
+        "id": "mia-nwe-19900909",
+        "game_id": "199009090nwe",
         "fecha": "09-09-1990",
-        "url": "/historia/partidos/mia-new-19900909/"
+        "date": "1990-09-09",
+        "url": "/historia/partidos/mia-nwe-19900909/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19900916",
+        "game_id": "199009160mia",
         "fecha": "16-09-1990",
-        "url": "/historia/partidos/buf-mia-19900916/"
+        "date": "1990-09-16",
+        "url": "/historia/partidos/buf-mia-19900916/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Giants",
         "id": "mia-nyg-19900923",
+        "game_id": "199009230nyg",
         "fecha": "23-09-1990",
-        "url": "/historia/partidos/mia-nyg-19900923/"
+        "date": "1990-09-23",
+        "url": "/historia/partidos/mia-nyg-19900923/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-19900930",
+        "game_id": "199009300pit",
         "fecha": "30-09-1990",
-        "url": "/historia/partidos/mia-pit-19900930/"
+        "date": "1990-09-30",
+        "url": "/historia/partidos/mia-pit-19900930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19901007",
+        "game_id": "199010070mia",
         "fecha": "07-10-1990",
-        "url": "/historia/partidos/nyj-mia-19901007/"
+        "date": "1990-10-07",
+        "url": "/historia/partidos/nyj-mia-19901007/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19901018",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19901018",
+        "game_id": "199010180mia",
         "fecha": "18-10-1990",
-        "url": "/historia/partidos/new-mia-19901018/"
+        "date": "1990-10-18",
+        "url": "/historia/partidos/nwe-mia-19901018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19901028",
+        "id": "mia-clt-19901028",
+        "game_id": "199010280clt",
         "fecha": "28-10-1990",
-        "url": "/historia/partidos/mia-ind-19901028/"
+        "date": "1990-10-28",
+        "url": "/historia/partidos/mia-clt-19901028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Phoenix Cardinals",
+        "title": "Phoenix Cardinals vs Miami Dolphins",
         "id": "pho-mia-19901104",
+        "game_id": "199011040mia",
         "fecha": "04-11-1990",
-        "url": "/historia/partidos/pho-mia-19901104/"
+        "date": "1990-11-04",
+        "url": "/historia/partidos/pho-mia-19901104/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19901111",
+        "game_id": "199011110nyj",
         "fecha": "11-11-1990",
-        "url": "/historia/partidos/mia-nyj-19901111/"
+        "date": "1990-11-11",
+        "url": "/historia/partidos/mia-nyj-19901111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Raiders",
+        "title": "Los Angeles Raiders vs Miami Dolphins",
         "id": "los-mia-19901119",
+        "game_id": "199011190mia",
         "fecha": "19-11-1990",
-        "url": "/historia/partidos/los-mia-19901119/"
+        "date": "1990-11-19",
+        "url": "/historia/partidos/los-mia-19901119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-19901125",
+        "game_id": "199011250cle",
         "fecha": "25-11-1990",
-        "url": "/historia/partidos/mia-cle-19901125/"
+        "date": "1990-11-25",
+        "url": "/historia/partidos/mia-cle-19901125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Washington Redskins",
         "id": "mia-was-19901202",
+        "game_id": "199012020was",
         "fecha": "02-12-1990",
-        "url": "/historia/partidos/mia-was-19901202/"
+        "date": "1990-12-02",
+        "url": "/historia/partidos/mia-was-19901202/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-19901209",
+        "game_id": "199012090mia",
         "fecha": "09-12-1990",
-        "url": "/historia/partidos/phi-mia-19901209/"
+        "date": "1990-12-09",
+        "url": "/historia/partidos/phi-mia-19901209/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Seattle Seahawks",
+        "title": "Seattle Seahawks vs Miami Dolphins",
         "id": "sea-mia-19901216",
+        "game_id": "199012160mia",
         "fecha": "16-12-1990",
-        "url": "/historia/partidos/sea-mia-19901216/"
+        "date": "1990-12-16",
+        "url": "/historia/partidos/sea-mia-19901216/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19901223",
+        "game_id": "199012230buf",
         "fecha": "23-12-1990",
-        "url": "/historia/partidos/mia-buf-19901223/"
+        "date": "1990-12-23",
+        "url": "/historia/partidos/mia-buf-19901223/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19901230",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19901230",
+        "game_id": "199012300mia",
         "fecha": "30-12-1990",
-        "url": "/historia/partidos/ind-mia-19901230/"
-      }
-    ],
-    "Playoffs": [
+        "date": "1990-12-30",
+        "url": "/historia/partidos/clt-mia-19901230/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19910105",
+        "game_id": "199101050mia",
         "fecha": "05-01-1991",
-        "url": "/historia/partidos/kan-mia-19910105/"
+        "date": "1991-01-05",
+        "url": "/historia/partidos/kan-mia-19910105/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19910112",
+        "game_id": "199101120buf",
         "fecha": "12-01-1991",
-        "url": "/historia/partidos/mia-buf-19910112/"
+        "date": "1991-01-12",
+        "url": "/historia/partidos/mia-buf-19910112/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19900909",
+        "game_id": "199009090nwe",
+        "fecha": "09-09-1990",
+        "date": "1990-09-09",
+        "url": "/historia/partidos/mia-nwe-19900909/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19900916",
+        "game_id": "199009160mia",
+        "fecha": "16-09-1990",
+        "date": "1990-09-16",
+        "url": "/historia/partidos/buf-mia-19900916/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Giants",
+        "id": "mia-nyg-19900923",
+        "game_id": "199009230nyg",
+        "fecha": "23-09-1990",
+        "date": "1990-09-23",
+        "url": "/historia/partidos/mia-nyg-19900923/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-19900930",
+        "game_id": "199009300pit",
+        "fecha": "30-09-1990",
+        "date": "1990-09-30",
+        "url": "/historia/partidos/mia-pit-19900930/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19901007",
+        "game_id": "199010070mia",
+        "fecha": "07-10-1990",
+        "date": "1990-10-07",
+        "url": "/historia/partidos/nyj-mia-19901007/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19901018",
+        "game_id": "199010180mia",
+        "fecha": "18-10-1990",
+        "date": "1990-10-18",
+        "url": "/historia/partidos/nwe-mia-19901018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19901028",
+        "game_id": "199010280clt",
+        "fecha": "28-10-1990",
+        "date": "1990-10-28",
+        "url": "/historia/partidos/mia-clt-19901028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Phoenix Cardinals vs Miami Dolphins",
+        "id": "pho-mia-19901104",
+        "game_id": "199011040mia",
+        "fecha": "04-11-1990",
+        "date": "1990-11-04",
+        "url": "/historia/partidos/pho-mia-19901104/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19901111",
+        "game_id": "199011110nyj",
+        "fecha": "11-11-1990",
+        "date": "1990-11-11",
+        "url": "/historia/partidos/mia-nyj-19901111/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Raiders vs Miami Dolphins",
+        "id": "los-mia-19901119",
+        "game_id": "199011190mia",
+        "fecha": "19-11-1990",
+        "date": "1990-11-19",
+        "url": "/historia/partidos/los-mia-19901119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-19901125",
+        "game_id": "199011250cle",
+        "fecha": "25-11-1990",
+        "date": "1990-11-25",
+        "url": "/historia/partidos/mia-cle-19901125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Washington Redskins",
+        "id": "mia-was-19901202",
+        "game_id": "199012020was",
+        "fecha": "02-12-1990",
+        "date": "1990-12-02",
+        "url": "/historia/partidos/mia-was-19901202/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-19901209",
+        "game_id": "199012090mia",
+        "fecha": "09-12-1990",
+        "date": "1990-12-09",
+        "url": "/historia/partidos/phi-mia-19901209/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
+        "id": "sea-mia-19901216",
+        "game_id": "199012160mia",
+        "fecha": "16-12-1990",
+        "date": "1990-12-16",
+        "url": "/historia/partidos/sea-mia-19901216/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19901223",
+        "game_id": "199012230buf",
+        "fecha": "23-12-1990",
+        "date": "1990-12-23",
+        "url": "/historia/partidos/mia-buf-19901223/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19901230",
+        "game_id": "199012300mia",
+        "fecha": "30-12-1990",
+        "date": "1990-12-30",
+        "url": "/historia/partidos/clt-mia-19901230/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Playoffs": [
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19910105",
+        "game_id": "199101050mia",
+        "fecha": "05-01-1991",
+        "date": "1991-01-05",
+        "url": "/historia/partidos/kan-mia-19910105/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19910112",
+        "game_id": "199101120buf",
+        "fecha": "12-01-1991",
+        "date": "1991-01-12",
+        "url": "/historia/partidos/mia-buf-19910112/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2479,6 +2805,7 @@
       "Puntos a favor": "336 puntos. 14º de 28 equipos",
       "Puntos en contra": "242 puntos. 4º de 28 equipos",
       "Head Coach": "Don Shula (12-4-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

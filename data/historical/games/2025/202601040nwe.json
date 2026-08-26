@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2026-01-04",
-    "slug": "mia-new-20260104",
-    "path": "historia/partidos/mia-new-20260104",
+    "slug": "mia-nwe-20260104",
+    "path": "historia/partidos/mia-nwe-20260104",
     "params": {
       "game_id": "202601040nwe"
     }
@@ -4313,6 +4313,8 @@
     },
     "Información del partido": {
       "Semana": "18",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de enero de 2026",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

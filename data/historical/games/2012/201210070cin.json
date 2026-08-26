@@ -2669,6 +2669,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "7 de octubre de 2012",
       "Estadio": "Paul Brown Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2972,6 +2974,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "CpJLKxcYcJU",
+        "title": "2012 Week 5 Dolphins 17 @ Bengals 13",
+        "url": "https://www.youtube.com/watch?v=CpJLKxcYcJU\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgQ2luY2lubmF0aSBCZW5nYWxzIDIwMTItMTAtMDc%3D",
+        "duration_seconds": 7885,
+        "embeddable": true
+      }
+    ]
   }
 }

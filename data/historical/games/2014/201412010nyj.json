@@ -2730,6 +2730,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de diciembre de 2014",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2983,6 +2985,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "cGNWg4ntrkk",
+        "title": "2014 week 13 Miami Dolphins at New York Jets",
+        "url": "https://www.youtube.com/watch?v=cGNWg4ntrkk\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDE0LTEyLTAx",
+        "duration_seconds": 7775,
+        "embeddable": false
+      }
+    ]
   }
 }

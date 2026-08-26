@@ -2704,6 +2704,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "16 de octubre de 2016",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2967,6 +2969,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "LjeQUj6MeBA",
+        "title": "2016 - Steelers @ Dolphins Week 6",
+        "url": "https://www.youtube.com/watch?v=LjeQUj6MeBA\u0026pp=ygUwUGl0dHNidXJnaCBTdGVlbGVycyB2cyBNaWFtaSBEb2xwaGlucyAyMDE2LTEwLTE2",
+        "duration_seconds": 8115,
+        "embeddable": false
+      }
+    ]
   }
 }

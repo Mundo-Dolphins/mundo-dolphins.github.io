@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New Orleans Saints vs Miami Dolphins",
     "date": "2013-08-29",
-    "slug": "new-mia-20130829",
-    "path": "historia/partidos/new-mia-20130829",
+    "slug": "nor-mia-20130829",
+    "path": "historia/partidos/nor-mia-20130829",
     "params": {
       "game_id": "201308290mia"
     }
@@ -861,11 +861,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 4",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "29 de agosto de 2013",
       "Gamebook oficial": "assets/gamebooks/2013/201308290mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "yFghRzzVq9g",
+        "title": "2013 – Preseason Week 4 – Saints 21 @ Dolphins 24",
+        "url": "https://www.youtube.com/watch?v=yFghRzzVq9g\u0026pp=ygUvTmV3IE9ybGVhbnMgU2FpbnRzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTMtMDgtMjk%3D",
+        "duration_seconds": 8791,
+        "embeddable": true
+      }
+    ]
   }
 }

@@ -3919,6 +3919,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de noviembre de 2020",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4182,6 +4184,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "mx1oLtRiDAQ",
+        "title": "Dolphins vs. Jets Week 12 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=mx1oLtRiDAQ\u0026pp=ygUqTmV3IFlvcmsgSmV0cyB2cyBNaWFtaSBEb2xwaGlucyAyMDIwLTEwLTE4",
+        "duration_seconds": 557,
+        "embeddable": false
+      }
+    ]
   }
 }

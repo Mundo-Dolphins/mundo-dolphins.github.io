@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2006-12-10",
-    "slug": "new-mia-20061210",
-    "path": "historia/partidos/new-mia-20061210",
+    "slug": "nwe-mia-20061210",
+    "path": "historia/partidos/nwe-mia-20061210",
     "params": {
       "game_id": "200612100mia"
     }
@@ -1770,6 +1770,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de diciembre de 2006",
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",

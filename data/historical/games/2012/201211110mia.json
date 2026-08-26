@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Tennessee Titans vs Miami Dolphins",
     "date": "2012-11-11",
-    "slug": "ten-mia-20121111",
-    "path": "historia/partidos/ten-mia-20121111",
+    "slug": "oti-mia-20121111",
+    "path": "historia/partidos/oti-mia-20121111",
     "params": {
       "game_id": "201211110mia"
     }
@@ -2869,6 +2869,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de noviembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3142,6 +3144,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "P4mCD599ryo",
+        "title": "2012 week 10 Tennessee Titans at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=P4mCD599ryo\u0026pp=ygUtVGVubmVzc2VlIFRpdGFucyB2cyBNaWFtaSBEb2xwaGlucyAyMDEyLTExLTEx",
+        "duration_seconds": 7300,
+        "embeddable": false
+      }
+    ]
   }
 }

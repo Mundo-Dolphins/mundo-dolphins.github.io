@@ -2492,6 +2492,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "25 de noviembre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2745,6 +2747,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "epNedY5cgbI",
+        "title": "2012 week 12 Seattle Seahawks at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=epNedY5cgbI\u0026pp=ygUtU2VhdHRsZSBTZWFoYXdrcyB2cyBNaWFtaSBEb2xwaGlucyAyMDEyLTExLTI1",
+        "duration_seconds": 7129,
+        "embeddable": false
+      }
+    ]
   }
 }

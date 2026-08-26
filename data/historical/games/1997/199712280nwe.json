@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1997-12-28",
-    "slug": "mia-new-19971228",
-    "path": "historia/partidos/mia-new-19971228",
+    "slug": "mia-nwe-19971228",
+    "path": "historia/partidos/mia-nwe-19971228",
     "params": {
       "game_id": "199712280nwe"
     }
@@ -1400,6 +1400,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "28 de diciembre de 1997",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

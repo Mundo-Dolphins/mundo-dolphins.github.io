@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2013-10-27",
-    "slug": "mia-new-20131027",
-    "path": "historia/partidos/mia-new-20131027",
+    "slug": "mia-nwe-20131027",
+    "path": "historia/partidos/mia-nwe-20131027",
     "params": {
       "game_id": "201310270nwe"
     }
@@ -2696,6 +2696,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "27 de octubre de 2013",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2989,6 +2991,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "UUQKUvri0Uw",
+        "title": "2013 week 8 Miami Dolphins at New England Patriots",
+        "url": "https://www.youtube.com/watch?v=UUQKUvri0Uw\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMTk4Ny0wOS0xM9IHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 8205,
+        "embeddable": false
+      }
+    ]
   }
 }

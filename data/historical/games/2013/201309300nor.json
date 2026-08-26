@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New Orleans Saints",
     "date": "2013-09-30",
-    "slug": "mia-new-20130930",
-    "path": "historia/partidos/mia-new-20130930",
+    "slug": "mia-nor-20130930",
+    "path": "historia/partidos/mia-nor-20130930",
     "params": {
       "game_id": "201309300nor"
     }
@@ -2769,6 +2769,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "30 de septiembre de 2013",
       "Estadio": "Mercedes-Benz Superdome",
       "Tipo de estadio": "dome",
@@ -3051,6 +3053,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "G0CM6vgD0qI",
+        "title": "2013 Dolphins @ Saints",
+        "url": "https://www.youtube.com/watch?v=G0CM6vgD0qI\u0026pp=ygUvTmV3IE9ybGVhbnMgU2FpbnRzIHZzIE1pYW1pIERvbHBoaW5zIDIwMDItMDgtMTU%3D",
+        "duration_seconds": 8413,
+        "embeddable": false
+      }
+    ]
   }
 }

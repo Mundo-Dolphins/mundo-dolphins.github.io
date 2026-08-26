@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1979-10-21",
-    "slug": "mia-new-19791021",
-    "path": "historia/partidos/mia-new-19791021",
+    "slug": "mia-nwe-19791021",
+    "path": "historia/partidos/mia-nwe-19791021",
     "params": {
       "game_id": "197910210nwe"
     }
@@ -887,6 +887,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de octubre de 1979",
       "Estadio": "Schaefer Stadium",
       "Tipo de estadio": "Al aire libre",

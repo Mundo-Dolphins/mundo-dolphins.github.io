@@ -3937,6 +3937,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de diciembre de 2019",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4240,6 +4242,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "MNW8MN2HmeM",
+        "title": "Dolphins vs. Giants Week 15 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=MNW8MN2HmeM\u0026pp=ygUsTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgR2lhbnRzIDIwMTktMTItMTU%3D",
+        "duration_seconds": 776,
+        "embeddable": false
+      }
+    ]
   }
 }

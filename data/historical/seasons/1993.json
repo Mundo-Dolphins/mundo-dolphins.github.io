@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1993",
@@ -2272,102 +2272,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19930905",
+        "id": "mia-clt-19930905",
+        "game_id": "199309050clt",
         "fecha": "05-09-1993",
-        "url": "/historia/partidos/mia-ind-19930905/"
+        "date": "1993-09-05",
+        "url": "/historia/partidos/mia-clt-19930905/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19930912",
+        "game_id": "199309120mia",
         "fecha": "12-09-1993",
-        "url": "/historia/partidos/nyj-mia-19930912/"
+        "date": "1993-09-12",
+        "url": "/historia/partidos/nyj-mia-19930912/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19930926",
+        "game_id": "199309260buf",
         "fecha": "26-09-1993",
-        "url": "/historia/partidos/mia-buf-19930926/"
+        "date": "1993-09-26",
+        "url": "/historia/partidos/mia-buf-19930926/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
+        "title": "Washington Redskins vs Miami Dolphins",
         "id": "was-mia-19931004",
+        "game_id": "199310040mia",
         "fecha": "04-10-1993",
-        "url": "/historia/partidos/was-mia-19931004/"
+        "date": "1993-10-04",
+        "url": "/historia/partidos/was-mia-19931004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-19931010",
+        "game_id": "199310100cle",
         "fecha": "10-10-1993",
-        "url": "/historia/partidos/mia-cle-19931010/"
+        "date": "1993-10-10",
+        "url": "/historia/partidos/mia-cle-19931010/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19931024",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19931024",
+        "game_id": "199310240mia",
         "fecha": "24-10-1993",
-        "url": "/historia/partidos/ind-mia-19931024/"
+        "date": "1993-10-24",
+        "url": "/historia/partidos/clt-mia-19931024/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19931031",
+        "game_id": "199310310mia",
         "fecha": "31-10-1993",
-        "url": "/historia/partidos/kan-mia-19931031/"
+        "date": "1993-10-31",
+        "url": "/historia/partidos/kan-mia-19931031/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19931107",
+        "game_id": "199311070nyj",
         "fecha": "07-11-1993",
-        "url": "/historia/partidos/mia-nyj-19931107/"
+        "date": "1993-11-07",
+        "url": "/historia/partidos/mia-nyj-19931107/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-19931114",
+        "game_id": "199311140phi",
         "fecha": "14-11-1993",
-        "url": "/historia/partidos/mia-phi-19931114/"
+        "date": "1993-11-14",
+        "url": "/historia/partidos/mia-phi-19931114/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19931121",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19931121",
+        "game_id": "199311210mia",
         "fecha": "21-11-1993",
-        "url": "/historia/partidos/new-mia-19931121/"
+        "date": "1993-11-21",
+        "url": "/historia/partidos/nwe-mia-19931121/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-19931125",
+        "game_id": "199311250dal",
         "fecha": "25-11-1993",
-        "url": "/historia/partidos/mia-dal-19931125/"
+        "date": "1993-11-25",
+        "url": "/historia/partidos/mia-dal-19931125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Giants",
+        "title": "New York Giants vs Miami Dolphins",
         "id": "nyg-mia-19931205",
+        "game_id": "199312050mia",
         "fecha": "05-12-1993",
-        "url": "/historia/partidos/nyg-mia-19931205/"
+        "date": "1993-12-05",
+        "url": "/historia/partidos/nyg-mia-19931205/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19931213",
+        "game_id": "199312130mia",
         "fecha": "13-12-1993",
-        "url": "/historia/partidos/pit-mia-19931213/"
+        "date": "1993-12-13",
+        "url": "/historia/partidos/pit-mia-19931213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19931219",
+        "game_id": "199312190mia",
         "fecha": "19-12-1993",
-        "url": "/historia/partidos/buf-mia-19931219/"
+        "date": "1993-12-19",
+        "url": "/historia/partidos/buf-mia-19931219/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19931227",
+        "game_id": "199312270sdg",
         "fecha": "27-12-1993",
-        "url": "/historia/partidos/mia-sdg-19931227/"
+        "date": "1993-12-27",
+        "url": "/historia/partidos/mia-sdg-19931227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19940102",
+        "id": "mia-nwe-19940102",
+        "game_id": "199401020nwe",
         "fecha": "02-01-1994",
-        "url": "/historia/partidos/mia-new-19940102/"
+        "date": "1994-01-02",
+        "url": "/historia/partidos/mia-nwe-19940102/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19930905",
+        "game_id": "199309050clt",
+        "fecha": "05-09-1993",
+        "date": "1993-09-05",
+        "url": "/historia/partidos/mia-clt-19930905/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19930912",
+        "game_id": "199309120mia",
+        "fecha": "12-09-1993",
+        "date": "1993-09-12",
+        "url": "/historia/partidos/nyj-mia-19930912/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19930926",
+        "game_id": "199309260buf",
+        "fecha": "26-09-1993",
+        "date": "1993-09-26",
+        "url": "/historia/partidos/mia-buf-19930926/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Redskins vs Miami Dolphins",
+        "id": "was-mia-19931004",
+        "game_id": "199310040mia",
+        "fecha": "04-10-1993",
+        "date": "1993-10-04",
+        "url": "/historia/partidos/was-mia-19931004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-19931010",
+        "game_id": "199310100cle",
+        "fecha": "10-10-1993",
+        "date": "1993-10-10",
+        "url": "/historia/partidos/mia-cle-19931010/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19931024",
+        "game_id": "199310240mia",
+        "fecha": "24-10-1993",
+        "date": "1993-10-24",
+        "url": "/historia/partidos/clt-mia-19931024/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19931031",
+        "game_id": "199310310mia",
+        "fecha": "31-10-1993",
+        "date": "1993-10-31",
+        "url": "/historia/partidos/kan-mia-19931031/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19931107",
+        "game_id": "199311070nyj",
+        "fecha": "07-11-1993",
+        "date": "1993-11-07",
+        "url": "/historia/partidos/mia-nyj-19931107/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-19931114",
+        "game_id": "199311140phi",
+        "fecha": "14-11-1993",
+        "date": "1993-11-14",
+        "url": "/historia/partidos/mia-phi-19931114/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19931121",
+        "game_id": "199311210mia",
+        "fecha": "21-11-1993",
+        "date": "1993-11-21",
+        "url": "/historia/partidos/nwe-mia-19931121/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-19931125",
+        "game_id": "199311250dal",
+        "fecha": "25-11-1993",
+        "date": "1993-11-25",
+        "url": "/historia/partidos/mia-dal-19931125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Giants vs Miami Dolphins",
+        "id": "nyg-mia-19931205",
+        "game_id": "199312050mia",
+        "fecha": "05-12-1993",
+        "date": "1993-12-05",
+        "url": "/historia/partidos/nyg-mia-19931205/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19931213",
+        "game_id": "199312130mia",
+        "fecha": "13-12-1993",
+        "date": "1993-12-13",
+        "url": "/historia/partidos/pit-mia-19931213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19931219",
+        "game_id": "199312190mia",
+        "fecha": "19-12-1993",
+        "date": "1993-12-19",
+        "url": "/historia/partidos/buf-mia-19931219/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19931227",
+        "game_id": "199312270sdg",
+        "fecha": "27-12-1993",
+        "date": "1993-12-27",
+        "url": "/historia/partidos/mia-sdg-19931227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19940102",
+        "game_id": "199401020nwe",
+        "fecha": "02-01-1994",
+        "date": "1994-01-02",
+        "url": "/historia/partidos/mia-nwe-19940102/",
+        "stage": "Semana 18",
+        "week": "18",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2377,6 +2667,7 @@
       "Puntos a favor": "349 puntos. 5º de 28 equipos",
       "Puntos en contra": "351 puntos. 24º de 28 equipos",
       "Head Coach": "Don Shula (9-7-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

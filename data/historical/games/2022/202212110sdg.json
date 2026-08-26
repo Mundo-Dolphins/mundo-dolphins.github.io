@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Los Angeles Chargers",
     "date": "2022-12-11",
-    "slug": "mia-los-20221211",
-    "path": "historia/partidos/mia-los-20221211",
+    "slug": "mia-sdg-20221211",
+    "path": "historia/partidos/mia-sdg-20221211",
     "params": {
       "game_id": "202212110sdg"
     }
@@ -3784,6 +3784,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de diciembre de 2022",
       "Estadio": "SoFi Stadium",
       "Tipo de estadio": "dome",

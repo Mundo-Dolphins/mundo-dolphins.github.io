@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1988",
@@ -2037,102 +2037,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Chicago Bears",
         "id": "mia-chi-19880904",
+        "game_id": "198809040chi",
         "fecha": "04-09-1988",
-        "url": "/historia/partidos/mia-chi-19880904/"
+        "date": "1988-09-04",
+        "url": "/historia/partidos/mia-chi-19880904/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19880911",
+        "game_id": "198809110buf",
         "fecha": "11-09-1988",
-        "url": "/historia/partidos/mia-buf-19880911/"
+        "date": "1988-09-11",
+        "url": "/historia/partidos/mia-buf-19880911/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-19880918",
+        "game_id": "198809180mia",
         "fecha": "18-09-1988",
-        "url": "/historia/partidos/gnb-mia-19880918/"
+        "date": "1988-09-18",
+        "url": "/historia/partidos/gnb-mia-19880918/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19880925",
+        "id": "mia-clt-19880925",
+        "game_id": "198809250clt",
         "fecha": "25-09-1988",
-        "url": "/historia/partidos/mia-ind-19880925/"
+        "date": "1988-09-25",
+        "url": "/historia/partidos/mia-clt-19880925/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Minnesota Vikings",
+        "title": "Minnesota Vikings vs Miami Dolphins",
         "id": "min-mia-19881002",
+        "game_id": "198810020mia",
         "fecha": "02-10-1988",
-        "url": "/historia/partidos/min-mia-19881002/"
+        "date": "1988-10-02",
+        "url": "/historia/partidos/min-mia-19881002/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Raiders",
         "id": "mia-los-19881009",
+        "game_id": "198810090rai",
         "fecha": "09-10-1988",
-        "url": "/historia/partidos/mia-los-19881009/"
+        "date": "1988-10-09",
+        "url": "/historia/partidos/mia-los-19881009/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19881016",
+        "game_id": "198810160mia",
         "fecha": "16-10-1988",
-        "url": "/historia/partidos/sdg-mia-19881016/"
+        "date": "1988-10-16",
+        "url": "/historia/partidos/sdg-mia-19881016/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19881023",
+        "game_id": "198810230mia",
         "fecha": "23-10-1988",
-        "url": "/historia/partidos/nyj-mia-19881023/"
+        "date": "1988-10-23",
+        "url": "/historia/partidos/nyj-mia-19881023/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tampa Bay Buccaneers",
         "id": "mia-tam-19881030",
+        "game_id": "198810300tam",
         "fecha": "30-10-1988",
-        "url": "/historia/partidos/mia-tam-19881030/"
+        "date": "1988-10-30",
+        "url": "/historia/partidos/mia-tam-19881030/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19881106",
+        "id": "mia-nwe-19881106",
+        "game_id": "198811060nwe",
         "fecha": "06-11-1988",
-        "url": "/historia/partidos/mia-new-19881106/"
+        "date": "1988-11-06",
+        "url": "/historia/partidos/mia-nwe-19881106/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19881114",
+        "game_id": "198811140mia",
         "fecha": "14-11-1988",
-        "url": "/historia/partidos/buf-mia-19881114/"
+        "date": "1988-11-14",
+        "url": "/historia/partidos/buf-mia-19881114/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19881120",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19881120",
+        "game_id": "198811200mia",
         "fecha": "20-11-1988",
-        "url": "/historia/partidos/new-mia-19881120/"
+        "date": "1988-11-20",
+        "url": "/historia/partidos/nwe-mia-19881120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19881127",
+        "game_id": "198811270nyj",
         "fecha": "27-11-1988",
-        "url": "/historia/partidos/mia-nyj-19881127/"
+        "date": "1988-11-27",
+        "url": "/historia/partidos/mia-nyj-19881127/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19881204",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19881204",
+        "game_id": "198812040mia",
         "fecha": "04-12-1988",
-        "url": "/historia/partidos/ind-mia-19881204/"
+        "date": "1988-12-04",
+        "url": "/historia/partidos/clt-mia-19881204/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cleveland Browns",
+        "title": "Cleveland Browns vs Miami Dolphins",
         "id": "cle-mia-19881212",
+        "game_id": "198812120mia",
         "fecha": "12-12-1988",
-        "url": "/historia/partidos/cle-mia-19881212/"
+        "date": "1988-12-12",
+        "url": "/historia/partidos/cle-mia-19881212/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-19881218",
+        "game_id": "198812180pit",
         "fecha": "18-12-1988",
-        "url": "/historia/partidos/mia-pit-19881218/"
+        "date": "1988-12-18",
+        "url": "/historia/partidos/mia-pit-19881218/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-19880904",
+        "game_id": "198809040chi",
+        "fecha": "04-09-1988",
+        "date": "1988-09-04",
+        "url": "/historia/partidos/mia-chi-19880904/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19880911",
+        "game_id": "198809110buf",
+        "fecha": "11-09-1988",
+        "date": "1988-09-11",
+        "url": "/historia/partidos/mia-buf-19880911/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-19880918",
+        "game_id": "198809180mia",
+        "fecha": "18-09-1988",
+        "date": "1988-09-18",
+        "url": "/historia/partidos/gnb-mia-19880918/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19880925",
+        "game_id": "198809250clt",
+        "fecha": "25-09-1988",
+        "date": "1988-09-25",
+        "url": "/historia/partidos/mia-clt-19880925/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Minnesota Vikings vs Miami Dolphins",
+        "id": "min-mia-19881002",
+        "game_id": "198810020mia",
+        "fecha": "02-10-1988",
+        "date": "1988-10-02",
+        "url": "/historia/partidos/min-mia-19881002/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Raiders",
+        "id": "mia-los-19881009",
+        "game_id": "198810090rai",
+        "fecha": "09-10-1988",
+        "date": "1988-10-09",
+        "url": "/historia/partidos/mia-los-19881009/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19881016",
+        "game_id": "198810160mia",
+        "fecha": "16-10-1988",
+        "date": "1988-10-16",
+        "url": "/historia/partidos/sdg-mia-19881016/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19881023",
+        "game_id": "198810230mia",
+        "fecha": "23-10-1988",
+        "date": "1988-10-23",
+        "url": "/historia/partidos/nyj-mia-19881023/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-19881030",
+        "game_id": "198810300tam",
+        "fecha": "30-10-1988",
+        "date": "1988-10-30",
+        "url": "/historia/partidos/mia-tam-19881030/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19881106",
+        "game_id": "198811060nwe",
+        "fecha": "06-11-1988",
+        "date": "1988-11-06",
+        "url": "/historia/partidos/mia-nwe-19881106/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19881114",
+        "game_id": "198811140mia",
+        "fecha": "14-11-1988",
+        "date": "1988-11-14",
+        "url": "/historia/partidos/buf-mia-19881114/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19881120",
+        "game_id": "198811200mia",
+        "fecha": "20-11-1988",
+        "date": "1988-11-20",
+        "url": "/historia/partidos/nwe-mia-19881120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19881127",
+        "game_id": "198811270nyj",
+        "fecha": "27-11-1988",
+        "date": "1988-11-27",
+        "url": "/historia/partidos/mia-nyj-19881127/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19881204",
+        "game_id": "198812040mia",
+        "fecha": "04-12-1988",
+        "date": "1988-12-04",
+        "url": "/historia/partidos/clt-mia-19881204/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cleveland Browns vs Miami Dolphins",
+        "id": "cle-mia-19881212",
+        "game_id": "198812120mia",
+        "fecha": "12-12-1988",
+        "date": "1988-12-12",
+        "url": "/historia/partidos/cle-mia-19881212/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-19881218",
+        "game_id": "198812180pit",
+        "fecha": "18-12-1988",
+        "date": "1988-12-18",
+        "url": "/historia/partidos/mia-pit-19881218/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2142,6 +2432,7 @@
       "Puntos a favor": "319 puntos. 17º de 28 equipos",
       "Puntos en contra": "380 puntos. 24º de 28 equipos",
       "Head Coach": "Don Shula (6-10-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Joe Robbie Stadium",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

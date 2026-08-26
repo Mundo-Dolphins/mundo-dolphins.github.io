@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1999",
@@ -2365,116 +2365,442 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Denver Broncos",
         "id": "mia-den-19990913",
+        "game_id": "199909130den",
         "fecha": "13-09-1999",
-        "url": "/historia/partidos/mia-den-19990913/"
+        "date": "1999-09-13",
+        "url": "/historia/partidos/mia-den-19990913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Arizona Cardinals",
-        "id": "ari-mia-19990919",
+        "title": "Arizona Cardinals vs Miami Dolphins",
+        "id": "crd-mia-19990919",
+        "game_id": "199909190mia",
         "fecha": "19-09-1999",
-        "url": "/historia/partidos/ari-mia-19990919/"
+        "date": "1999-09-19",
+        "url": "/historia/partidos/crd-mia-19990919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19991004",
+        "game_id": "199910040mia",
         "fecha": "04-10-1999",
-        "url": "/historia/partidos/buf-mia-19991004/"
+        "date": "1999-10-04",
+        "url": "/historia/partidos/buf-mia-19991004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19991010",
+        "id": "mia-clt-19991010",
+        "game_id": "199910100clt",
         "fecha": "10-10-1999",
-        "url": "/historia/partidos/mia-ind-19991010/"
+        "date": "1999-10-10",
+        "url": "/historia/partidos/mia-clt-19991010/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19991017",
+        "id": "mia-nwe-19991017",
+        "game_id": "199910170nwe",
         "fecha": "17-10-1999",
-        "url": "/historia/partidos/mia-new-19991017/"
+        "date": "1999-10-17",
+        "url": "/historia/partidos/mia-nwe-19991017/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-19991024",
+        "game_id": "199910240mia",
         "fecha": "24-10-1999",
-        "url": "/historia/partidos/phi-mia-19991024/"
+        "date": "1999-10-24",
+        "url": "/historia/partidos/phi-mia-19991024/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19991031",
+        "game_id": "199910310rai",
         "fecha": "31-10-1999",
-        "url": "/historia/partidos/mia-oak-19991031/"
+        "date": "1999-10-31",
+        "url": "/historia/partidos/mia-oak-19991031/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "ten-mia-19991107",
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-19991107",
+        "game_id": "199911070mia",
         "fecha": "07-11-1999",
-        "url": "/historia/partidos/ten-mia-19991107/"
+        "date": "1999-11-07",
+        "url": "/historia/partidos/oti-mia-19991107/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19991114",
+        "game_id": "199911140buf",
         "fecha": "14-11-1999",
-        "url": "/historia/partidos/mia-buf-19991114/"
+        "date": "1999-11-14",
+        "url": "/historia/partidos/mia-buf-19991114/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19991121",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19991121",
+        "game_id": "199911210mia",
         "fecha": "21-11-1999",
-        "url": "/historia/partidos/new-mia-19991121/"
+        "date": "1999-11-21",
+        "url": "/historia/partidos/nwe-mia-19991121/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-19991125",
+        "game_id": "199911250dal",
         "fecha": "25-11-1999",
-        "url": "/historia/partidos/mia-dal-19991125/"
+        "date": "1999-11-25",
+        "url": "/historia/partidos/mia-dal-19991125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19991205",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19991205",
+        "game_id": "199912050mia",
         "fecha": "05-12-1999",
-        "url": "/historia/partidos/ind-mia-19991205/"
+        "date": "1999-12-05",
+        "url": "/historia/partidos/clt-mia-19991205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19991212",
+        "game_id": "199912120nyj",
         "fecha": "12-12-1999",
-        "url": "/historia/partidos/mia-nyj-19991212/"
+        "date": "1999-12-12",
+        "url": "/historia/partidos/mia-nyj-19991212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19991219",
+        "game_id": "199912190mia",
         "fecha": "19-12-1999",
-        "url": "/historia/partidos/sdg-mia-19991219/"
+        "date": "1999-12-19",
+        "url": "/historia/partidos/sdg-mia-19991219/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19991227",
+        "game_id": "199912270mia",
         "fecha": "27-12-1999",
-        "url": "/historia/partidos/nyj-mia-19991227/"
+        "date": "1999-12-27",
+        "url": "/historia/partidos/nyj-mia-19991227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Washington Redskins",
         "id": "mia-was-20000102",
+        "game_id": "200001020was",
         "fecha": "02-01-2000",
-        "url": "/historia/partidos/mia-was-20000102/"
+        "date": "2000-01-02",
+        "url": "/historia/partidos/mia-was-20000102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Seattle Seahawks",
+        "id": "mia-sea-20000109",
+        "game_id": "200001090sea",
+        "fecha": "09-01-2000",
+        "date": "2000-01-09",
+        "url": "/historia/partidos/mia-sea-20000109/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20000115",
+        "game_id": "200001150jax",
+        "fecha": "15-01-2000",
+        "date": "2000-01-15",
+        "url": "/historia/partidos/mia-jax-20000115/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Denver Broncos",
+        "id": "mia-den-19990913",
+        "game_id": "199909130den",
+        "fecha": "13-09-1999",
+        "date": "1999-09-13",
+        "url": "/historia/partidos/mia-den-19990913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Arizona Cardinals vs Miami Dolphins",
+        "id": "crd-mia-19990919",
+        "game_id": "199909190mia",
+        "fecha": "19-09-1999",
+        "date": "1999-09-19",
+        "url": "/historia/partidos/crd-mia-19990919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19991004",
+        "game_id": "199910040mia",
+        "fecha": "04-10-1999",
+        "date": "1999-10-04",
+        "url": "/historia/partidos/buf-mia-19991004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19991010",
+        "game_id": "199910100clt",
+        "fecha": "10-10-1999",
+        "date": "1999-10-10",
+        "url": "/historia/partidos/mia-clt-19991010/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19991017",
+        "game_id": "199910170nwe",
+        "fecha": "17-10-1999",
+        "date": "1999-10-17",
+        "url": "/historia/partidos/mia-nwe-19991017/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-19991024",
+        "game_id": "199910240mia",
+        "fecha": "24-10-1999",
+        "date": "1999-10-24",
+        "url": "/historia/partidos/phi-mia-19991024/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19991031",
+        "game_id": "199910310rai",
+        "fecha": "31-10-1999",
+        "date": "1999-10-31",
+        "url": "/historia/partidos/mia-oak-19991031/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-19991107",
+        "game_id": "199911070mia",
+        "fecha": "07-11-1999",
+        "date": "1999-11-07",
+        "url": "/historia/partidos/oti-mia-19991107/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19991114",
+        "game_id": "199911140buf",
+        "fecha": "14-11-1999",
+        "date": "1999-11-14",
+        "url": "/historia/partidos/mia-buf-19991114/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19991121",
+        "game_id": "199911210mia",
+        "fecha": "21-11-1999",
+        "date": "1999-11-21",
+        "url": "/historia/partidos/nwe-mia-19991121/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-19991125",
+        "game_id": "199911250dal",
+        "fecha": "25-11-1999",
+        "date": "1999-11-25",
+        "url": "/historia/partidos/mia-dal-19991125/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19991205",
+        "game_id": "199912050mia",
+        "fecha": "05-12-1999",
+        "date": "1999-12-05",
+        "url": "/historia/partidos/clt-mia-19991205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19991212",
+        "game_id": "199912120nyj",
+        "fecha": "12-12-1999",
+        "date": "1999-12-12",
+        "url": "/historia/partidos/mia-nyj-19991212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19991219",
+        "game_id": "199912190mia",
+        "fecha": "19-12-1999",
+        "date": "1999-12-19",
+        "url": "/historia/partidos/sdg-mia-19991219/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19991227",
+        "game_id": "199912270mia",
+        "fecha": "27-12-1999",
+        "date": "1999-12-27",
+        "url": "/historia/partidos/nyj-mia-19991227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Washington Redskins",
+        "id": "mia-was-20000102",
+        "game_id": "200001020was",
+        "fecha": "02-01-2000",
+        "date": "2000-01-02",
+        "url": "/historia/partidos/mia-was-20000102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Seattle Seahawks",
         "id": "mia-sea-20000109",
+        "game_id": "200001090sea",
         "fecha": "09-01-2000",
-        "url": "/historia/partidos/mia-sea-20000109/"
+        "date": "2000-01-09",
+        "url": "/historia/partidos/mia-sea-20000109/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "mia-jac-20000115",
+        "id": "mia-jax-20000115",
+        "game_id": "200001150jax",
         "fecha": "15-01-2000",
-        "url": "/historia/partidos/mia-jac-20000115/"
+        "date": "2000-01-15",
+        "url": "/historia/partidos/mia-jax-20000115/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2484,6 +2810,7 @@
       "Puntos a favor": "326 puntos. 13º de 31 equipos",
       "Puntos en contra": "336 puntos. 19º de 31 equipos",
       "Head Coach": "Jimmy Johnson (9-7-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

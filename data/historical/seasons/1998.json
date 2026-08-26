@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1998",
@@ -2178,116 +2178,442 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19980906",
+        "id": "mia-clt-19980906",
+        "game_id": "199809060clt",
         "fecha": "06-09-1998",
-        "url": "/historia/partidos/mia-ind-19980906/"
+        "date": "1998-09-06",
+        "url": "/historia/partidos/mia-clt-19980906/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19980913",
+        "game_id": "199809130mia",
         "fecha": "13-09-1998",
-        "url": "/historia/partidos/buf-mia-19980913/"
+        "date": "1998-09-13",
+        "url": "/historia/partidos/buf-mia-19980913/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19980920",
+        "game_id": "199809200mia",
         "fecha": "20-09-1998",
-        "url": "/historia/partidos/pit-mia-19980920/"
+        "date": "1998-09-20",
+        "url": "/historia/partidos/pit-mia-19980920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19981004",
+        "game_id": "199810040nyj",
         "fecha": "04-10-1998",
-        "url": "/historia/partidos/mia-nyj-19981004/"
+        "date": "1998-10-04",
+        "url": "/historia/partidos/mia-nyj-19981004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "mia-jac-19981012",
+        "id": "mia-jax-19981012",
+        "game_id": "199810120jax",
         "fecha": "12-10-1998",
-        "url": "/historia/partidos/mia-jac-19981012/"
+        "date": "1998-10-12",
+        "url": "/historia/partidos/mia-jax-19981012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs St. Louis Rams",
-        "id": "stl-mia-19981018",
+        "title": "St. Louis Rams vs Miami Dolphins",
+        "id": "ram-mia-19981018",
+        "game_id": "199810180mia",
         "fecha": "18-10-1998",
-        "url": "/historia/partidos/stl-mia-19981018/"
+        "date": "1998-10-18",
+        "url": "/historia/partidos/ram-mia-19981018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19981025",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19981025",
+        "game_id": "199810250mia",
         "fecha": "25-10-1998",
-        "url": "/historia/partidos/new-mia-19981025/"
+        "date": "1998-10-25",
+        "url": "/historia/partidos/nwe-mia-19981025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19981101",
+        "game_id": "199811010buf",
         "fecha": "01-11-1998",
-        "url": "/historia/partidos/mia-buf-19981101/"
+        "date": "1998-11-01",
+        "url": "/historia/partidos/mia-buf-19981101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19981108",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19981108",
+        "game_id": "199811080mia",
         "fecha": "08-11-1998",
-        "url": "/historia/partidos/ind-mia-19981108/"
+        "date": "1998-11-08",
+        "url": "/historia/partidos/clt-mia-19981108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Carolina Panthers",
         "id": "mia-car-19981115",
+        "game_id": "199811150car",
         "fecha": "15-11-1998",
-        "url": "/historia/partidos/mia-car-19981115/"
+        "date": "1998-11-15",
+        "url": "/historia/partidos/mia-car-19981115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19981123",
+        "id": "mia-nwe-19981123",
+        "game_id": "199811230nwe",
         "fecha": "23-11-1998",
-        "url": "/historia/partidos/mia-new-19981123/"
+        "date": "1998-11-23",
+        "url": "/historia/partidos/mia-nwe-19981123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "new-mia-19981129",
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19981129",
+        "game_id": "199811290mia",
         "fecha": "29-11-1998",
-        "url": "/historia/partidos/new-mia-19981129/"
+        "date": "1998-11-29",
+        "url": "/historia/partidos/nor-mia-19981129/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19981206",
+        "game_id": "199812060rai",
         "fecha": "06-12-1998",
-        "url": "/historia/partidos/mia-oak-19981206/"
+        "date": "1998-12-06",
+        "url": "/historia/partidos/mia-oak-19981206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19981213",
+        "game_id": "199812130mia",
         "fecha": "13-12-1998",
-        "url": "/historia/partidos/nyj-mia-19981213/"
+        "date": "1998-12-13",
+        "url": "/historia/partidos/nyj-mia-19981213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Denver Broncos",
+        "title": "Denver Broncos vs Miami Dolphins",
         "id": "den-mia-19981221",
+        "game_id": "199812210mia",
         "fecha": "21-12-1998",
-        "url": "/historia/partidos/den-mia-19981221/"
+        "date": "1998-12-21",
+        "url": "/historia/partidos/den-mia-19981221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Atlanta Falcons",
         "id": "mia-atl-19981227",
+        "game_id": "199812270atl",
         "fecha": "27-12-1998",
-        "url": "/historia/partidos/mia-atl-19981227/"
-      }
-    ],
-    "Playoffs": [
+        "date": "1998-12-27",
+        "url": "/historia/partidos/mia-atl-19981227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19990102",
+        "game_id": "199901020mia",
         "fecha": "02-01-1999",
-        "url": "/historia/partidos/buf-mia-19990102/"
+        "date": "1999-01-02",
+        "url": "/historia/partidos/buf-mia-19990102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Denver Broncos",
         "id": "mia-den-19990109",
+        "game_id": "199901090den",
         "fecha": "09-01-1999",
-        "url": "/historia/partidos/mia-den-19990109/"
+        "date": "1999-01-09",
+        "url": "/historia/partidos/mia-den-19990109/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19980906",
+        "game_id": "199809060clt",
+        "fecha": "06-09-1998",
+        "date": "1998-09-06",
+        "url": "/historia/partidos/mia-clt-19980906/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19980913",
+        "game_id": "199809130mia",
+        "fecha": "13-09-1998",
+        "date": "1998-09-13",
+        "url": "/historia/partidos/buf-mia-19980913/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19980920",
+        "game_id": "199809200mia",
+        "fecha": "20-09-1998",
+        "date": "1998-09-20",
+        "url": "/historia/partidos/pit-mia-19980920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19981004",
+        "game_id": "199810040nyj",
+        "fecha": "04-10-1998",
+        "date": "1998-10-04",
+        "url": "/historia/partidos/mia-nyj-19981004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-19981012",
+        "game_id": "199810120jax",
+        "fecha": "12-10-1998",
+        "date": "1998-10-12",
+        "url": "/historia/partidos/mia-jax-19981012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "St. Louis Rams vs Miami Dolphins",
+        "id": "ram-mia-19981018",
+        "game_id": "199810180mia",
+        "fecha": "18-10-1998",
+        "date": "1998-10-18",
+        "url": "/historia/partidos/ram-mia-19981018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19981025",
+        "game_id": "199810250mia",
+        "fecha": "25-10-1998",
+        "date": "1998-10-25",
+        "url": "/historia/partidos/nwe-mia-19981025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19981101",
+        "game_id": "199811010buf",
+        "fecha": "01-11-1998",
+        "date": "1998-11-01",
+        "url": "/historia/partidos/mia-buf-19981101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19981108",
+        "game_id": "199811080mia",
+        "fecha": "08-11-1998",
+        "date": "1998-11-08",
+        "url": "/historia/partidos/clt-mia-19981108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-19981115",
+        "game_id": "199811150car",
+        "fecha": "15-11-1998",
+        "date": "1998-11-15",
+        "url": "/historia/partidos/mia-car-19981115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19981123",
+        "game_id": "199811230nwe",
+        "fecha": "23-11-1998",
+        "date": "1998-11-23",
+        "url": "/historia/partidos/mia-nwe-19981123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19981129",
+        "game_id": "199811290mia",
+        "fecha": "29-11-1998",
+        "date": "1998-11-29",
+        "url": "/historia/partidos/nor-mia-19981129/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19981206",
+        "game_id": "199812060rai",
+        "fecha": "06-12-1998",
+        "date": "1998-12-06",
+        "url": "/historia/partidos/mia-oak-19981206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19981213",
+        "game_id": "199812130mia",
+        "fecha": "13-12-1998",
+        "date": "1998-12-13",
+        "url": "/historia/partidos/nyj-mia-19981213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Denver Broncos vs Miami Dolphins",
+        "id": "den-mia-19981221",
+        "game_id": "199812210mia",
+        "fecha": "21-12-1998",
+        "date": "1998-12-21",
+        "url": "/historia/partidos/den-mia-19981221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Atlanta Falcons",
+        "id": "mia-atl-19981227",
+        "game_id": "199812270atl",
+        "fecha": "27-12-1998",
+        "date": "1998-12-27",
+        "url": "/historia/partidos/mia-atl-19981227/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Playoffs": [
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19990102",
+        "game_id": "199901020mia",
+        "fecha": "02-01-1999",
+        "date": "1999-01-02",
+        "url": "/historia/partidos/buf-mia-19990102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Denver Broncos",
+        "id": "mia-den-19990109",
+        "game_id": "199901090den",
+        "fecha": "09-01-1999",
+        "date": "1999-01-09",
+        "url": "/historia/partidos/mia-den-19990109/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2297,6 +2623,7 @@
       "Puntos a favor": "321 puntos. 16º de 30 equipos",
       "Puntos en contra": "265 puntos. 1º de 30 equipos",
       "Head Coach": "Jimmy Johnson (10-6-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

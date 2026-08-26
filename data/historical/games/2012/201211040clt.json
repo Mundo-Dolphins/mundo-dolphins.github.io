@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Indianapolis Colts",
     "date": "2012-11-04",
-    "slug": "mia-ind-20121104",
-    "path": "historia/partidos/mia-ind-20121104",
+    "slug": "mia-clt-20121104",
+    "path": "historia/partidos/mia-clt-20121104",
     "params": {
       "game_id": "201211040clt"
     }
@@ -2828,6 +2828,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de noviembre de 2012",
       "Estadio": "Lucas Oil Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -3070,6 +3072,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Uhz5XQsENW0",
+        "title": "2012 week 9 Miami Dolphins at Indianapolis Colts",
+        "url": "https://www.youtube.com/watch?v=Uhz5XQsENW0\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgRGFsbGFzIENvd2JveXMgMjAxMi0wOC0yOdIHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 9066,
+        "embeddable": false
+      }
+    ]
   }
 }

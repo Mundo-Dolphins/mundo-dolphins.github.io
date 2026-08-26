@@ -3916,6 +3916,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "16 de diciembre de 2018",
       "Estadio": "U.S. Bank Stadium",
       "Tipo de estadio": "dome",
@@ -4198,6 +4200,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "4RlP0lnZZlI",
+        "title": "2018 – Week 15 – Dolphins 17 @ Vikings 41",
+        "url": "https://www.youtube.com/watch?v=4RlP0lnZZlI\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgTWlubmVzb3RhIFZpa2luZ3MgMjAxOC0xMi0xNg%3D%3D",
+        "duration_seconds": 7817,
+        "embeddable": false
+      }
+    ]
   }
 }

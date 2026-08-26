@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1987-09-13",
-    "slug": "mia-new-19870913",
-    "path": "historia/partidos/mia-new-19870913",
+    "slug": "mia-nwe-19870913",
+    "path": "historia/partidos/mia-nwe-19870913",
     "params": {
       "game_id": "198709130nwe"
     }
@@ -1003,6 +1003,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de septiembre de 1987",
       "Estadio": "Sullivan Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -2813,6 +2813,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "31 de diciembre de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3066,6 +3068,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "I1uzeFm2-eU",
+        "title": "2017 – Week 17 – Bills 22 @ Dolphins 16",
+        "url": "https://www.youtube.com/watch?v=I1uzeFm2-eU\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDE3LTEyLTE3",
+        "duration_seconds": 8447,
+        "embeddable": false
+      }
+    ]
   }
 }

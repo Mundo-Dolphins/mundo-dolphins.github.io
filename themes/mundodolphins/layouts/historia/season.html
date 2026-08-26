@@ -26,6 +26,34 @@
   {{ $seasonVideos := partial "historia/season-videos-data.html" (dict "year" $key) }}
   {{ $seasonVideosCountLabel := cond (eq (len $seasonVideos) 1) "1 vídeo" (printf "%d vídeos" (len $seasonVideos)) }}
   {{ $seasonVideosPageURL := relURL (printf "historia/%s/videos/" $key) }}
+  {{ $seasonGames := slice }}
+  {{ with index hugo.Data.historical.games $key }}
+    {{ range $gameId, $gameData := . }}
+      {{ $info := index $gameData.sections "Información del partido" }}
+      {{ with index $info "Semana" }}
+        {{ $week := . | string }}
+        {{ $stage := $week }}
+        {{ if in (lower $week) "preseason" }}
+          {{ $stage = replace $week "Preseason" "Pretemporada" }}
+        {{ else if gt (len $week) 0 }}
+          {{ if not (eq $week "Playoffs") }}
+            {{ $stage = printf "Semana %s" $week }}
+          {{ end }}
+        {{ end }}
+        {{ $page := $gameData.page }}
+        {{ $gameDate := time $page.date }}
+        {{ $seasonGames = $seasonGames | append (dict
+          "title" $page.title
+          "id" $page.slug
+          "fecha" ($gameDate.Format "02-01-2006")
+          "date" $page.date
+          "url" (relURL (printf "%s/" $page.path))
+          "stage" $stage
+        ) }}
+      {{ end }}
+    {{ end }}
+    {{ $seasonGames = sort $seasonGames "date" }}
+  {{ end }}
 
   {{ if not $data }}
     <main class="main" role="main">
@@ -84,8 +112,8 @@
               {{ with index $sections "Estadísticas de la temporada" }}
                 <li><a href="#estadísticas-de-la-temporada">Estadísticas de la temporada</a></li>
               {{ end }}
-              {{ with index $sections "Partidos de la temporada regular" }}
-                <li><a href="#partidos-de-la-temporada-regular">Partidos de la temporada regular</a></li>
+              {{ if or $seasonGames (index $sections "Partidos de la temporada regular") }}
+                <li><a href="#partidos-de-la-temporada-regular">Partidos de la temporada</a></li>
               {{ end }}
             </ul>
           </div>
@@ -136,8 +164,12 @@
           {{ end }}
 
           {{/* ── Sección Partidos ── */}}
-          {{ with index $sections "Partidos de la temporada regular" }}
-            {{ partial "historia/season-games.html" . }}
+          {{ if $seasonGames }}
+            {{ partial "historia/season-games.html" $seasonGames }}
+          {{ else }}
+            {{ with index $sections "Partidos de la temporada regular" }}
+              {{ partial "historia/season-games.html" . }}
+            {{ end }}
           {{ end }}
 
         </div>

@@ -2879,6 +2879,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de noviembre de 2014",
       "Estadio": "Ford Field",
       "Tipo de estadio": "dome",
@@ -3141,6 +3143,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "oKlrpeVQLXo",
+        "title": "2014 Dolphins @ Lions",
+        "url": "https://www.youtube.com/watch?v=oKlrpeVQLXo\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgRGV0cm9pdCBMaW9ucyAxOTc5LTEyLTA5",
+        "duration_seconds": 8132,
+        "embeddable": false
+      }
+    ]
   }
 }

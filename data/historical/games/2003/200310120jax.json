@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Jacksonville Jaguars",
     "date": "2003-10-12",
-    "slug": "mia-jac-20031012",
-    "path": "historia/partidos/mia-jac-20031012",
+    "slug": "mia-jax-20031012",
+    "path": "historia/partidos/mia-jax-20031012",
     "params": {
       "game_id": "200310120jax"
     }
@@ -1815,6 +1815,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de octubre de 2003",
       "Estadio": "Alltel Stadium",
       "Tipo de estadio": "Al aire libre",

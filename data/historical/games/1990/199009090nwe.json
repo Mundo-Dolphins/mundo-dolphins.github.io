@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1990-09-09",
-    "slug": "mia-new-19900909",
-    "path": "historia/partidos/mia-new-19900909",
+    "slug": "mia-nwe-19900909",
+    "path": "historia/partidos/mia-nwe-19900909",
     "params": {
       "game_id": "199009090nwe"
     }
@@ -927,6 +927,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de septiembre de 1990",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

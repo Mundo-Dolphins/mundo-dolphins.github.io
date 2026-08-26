@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:05Z",
+  "generated_at": "2026-08-26T10:11:31Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2019",
@@ -4263,102 +4263,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20190908",
-        "fecha": "08-09-2019",
-        "url": "/historia/partidos/bal-mia-20190908/"
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20190808",
+        "game_id": "201908080mia",
+        "fecha": "08-08-2019",
+        "date": "2019-08-08",
+        "url": "/historia/partidos/atl-mia-20190808/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20190915",
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-20190816",
+        "game_id": "201908160tam",
+        "fecha": "16-08-2019",
+        "date": "2019-08-16",
+        "url": "/historia/partidos/mia-tam-20190816/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20190822",
+        "game_id": "201908220mia",
+        "fecha": "22-08-2019",
+        "date": "2019-08-22",
+        "url": "/historia/partidos/jax-mia-20190822/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-20190829",
+        "game_id": "201908290nor",
+        "fecha": "29-08-2019",
+        "date": "2019-08-29",
+        "url": "/historia/partidos/mia-nor-20190829/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20190908",
+        "game_id": "201909080mia",
+        "fecha": "08-09-2019",
+        "date": "2019-09-08",
+        "url": "/historia/partidos/rav-mia-20190908/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20190915",
+        "game_id": "201909150mia",
         "fecha": "15-09-2019",
-        "url": "/historia/partidos/new-mia-20190915/"
+        "date": "2019-09-15",
+        "url": "/historia/partidos/nwe-mia-20190915/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-20190922",
+        "game_id": "201909220dal",
         "fecha": "22-09-2019",
-        "url": "/historia/partidos/mia-dal-20190922/"
+        "date": "2019-09-22",
+        "url": "/historia/partidos/mia-dal-20190922/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Los Angeles Chargers",
-        "id": "los-mia-20190929",
+        "title": "Los Angeles Chargers vs Miami Dolphins",
+        "id": "sdg-mia-20190929",
+        "game_id": "201909290mia",
         "fecha": "29-09-2019",
-        "url": "/historia/partidos/los-mia-20190929/"
+        "date": "2019-09-29",
+        "url": "/historia/partidos/sdg-mia-20190929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
+        "title": "Washington Redskins vs Miami Dolphins",
         "id": "was-mia-20191013",
+        "game_id": "201910130mia",
         "fecha": "13-10-2019",
-        "url": "/historia/partidos/was-mia-20191013/"
+        "date": "2019-10-13",
+        "url": "/historia/partidos/was-mia-20191013/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20191020",
+        "game_id": "201910200buf",
         "fecha": "20-10-2019",
-        "url": "/historia/partidos/mia-buf-20191020/"
+        "date": "2019-10-20",
+        "url": "/historia/partidos/mia-buf-20191020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-20191028",
+        "game_id": "201910280pit",
         "fecha": "28-10-2019",
-        "url": "/historia/partidos/mia-pit-20191028/"
+        "date": "2019-10-28",
+        "url": "/historia/partidos/mia-pit-20191028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20191103",
+        "game_id": "201911030mia",
         "fecha": "03-11-2019",
-        "url": "/historia/partidos/nyj-mia-20191103/"
+        "date": "2019-11-03",
+        "url": "/historia/partidos/nyj-mia-20191103/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20191110",
+        "id": "mia-clt-20191110",
+        "game_id": "201911100clt",
         "fecha": "10-11-2019",
-        "url": "/historia/partidos/mia-ind-20191110/"
+        "date": "2019-11-10",
+        "url": "/historia/partidos/mia-clt-20191110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20191117",
+        "game_id": "201911170mia",
         "fecha": "17-11-2019",
-        "url": "/historia/partidos/buf-mia-20191117/"
+        "date": "2019-11-17",
+        "url": "/historia/partidos/buf-mia-20191117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cleveland Browns",
         "id": "mia-cle-20191124",
+        "game_id": "201911240cle",
         "fecha": "24-11-2019",
-        "url": "/historia/partidos/mia-cle-20191124/"
+        "date": "2019-11-24",
+        "url": "/historia/partidos/mia-cle-20191124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-20191201",
+        "game_id": "201912010mia",
         "fecha": "01-12-2019",
-        "url": "/historia/partidos/phi-mia-20191201/"
+        "date": "2019-12-01",
+        "url": "/historia/partidos/phi-mia-20191201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20191208",
+        "game_id": "201912080nyj",
         "fecha": "08-12-2019",
-        "url": "/historia/partidos/mia-nyj-20191208/"
+        "date": "2019-12-08",
+        "url": "/historia/partidos/mia-nyj-20191208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Giants",
         "id": "mia-nyg-20191215",
+        "game_id": "201912150nyg",
         "fecha": "15-12-2019",
-        "url": "/historia/partidos/mia-nyg-20191215/"
+        "date": "2019-12-15",
+        "url": "/historia/partidos/mia-nyg-20191215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-20191222",
+        "game_id": "201912220mia",
         "fecha": "22-12-2019",
-        "url": "/historia/partidos/cin-mia-20191222/"
+        "date": "2019-12-22",
+        "url": "/historia/partidos/cin-mia-20191222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20191229",
+        "id": "mia-nwe-20191229",
+        "game_id": "201912290nwe",
         "fecha": "29-12-2019",
-        "url": "/historia/partidos/mia-new-20191229/"
+        "date": "2019-12-29",
+        "url": "/historia/partidos/mia-nwe-20191229/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20190908",
+        "game_id": "201909080mia",
+        "fecha": "08-09-2019",
+        "date": "2019-09-08",
+        "url": "/historia/partidos/rav-mia-20190908/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20190915",
+        "game_id": "201909150mia",
+        "fecha": "15-09-2019",
+        "date": "2019-09-15",
+        "url": "/historia/partidos/nwe-mia-20190915/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20190922",
+        "game_id": "201909220dal",
+        "fecha": "22-09-2019",
+        "date": "2019-09-22",
+        "url": "/historia/partidos/mia-dal-20190922/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Chargers vs Miami Dolphins",
+        "id": "sdg-mia-20190929",
+        "game_id": "201909290mia",
+        "fecha": "29-09-2019",
+        "date": "2019-09-29",
+        "url": "/historia/partidos/sdg-mia-20190929/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Redskins vs Miami Dolphins",
+        "id": "was-mia-20191013",
+        "game_id": "201910130mia",
+        "fecha": "13-10-2019",
+        "date": "2019-10-13",
+        "url": "/historia/partidos/was-mia-20191013/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20191020",
+        "game_id": "201910200buf",
+        "fecha": "20-10-2019",
+        "date": "2019-10-20",
+        "url": "/historia/partidos/mia-buf-20191020/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20191028",
+        "game_id": "201910280pit",
+        "fecha": "28-10-2019",
+        "date": "2019-10-28",
+        "url": "/historia/partidos/mia-pit-20191028/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20191103",
+        "game_id": "201911030mia",
+        "fecha": "03-11-2019",
+        "date": "2019-11-03",
+        "url": "/historia/partidos/nyj-mia-20191103/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20191110",
+        "game_id": "201911100clt",
+        "fecha": "10-11-2019",
+        "date": "2019-11-10",
+        "url": "/historia/partidos/mia-clt-20191110/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20191117",
+        "game_id": "201911170mia",
+        "fecha": "17-11-2019",
+        "date": "2019-11-17",
+        "url": "/historia/partidos/buf-mia-20191117/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cleveland Browns",
+        "id": "mia-cle-20191124",
+        "game_id": "201911240cle",
+        "fecha": "24-11-2019",
+        "date": "2019-11-24",
+        "url": "/historia/partidos/mia-cle-20191124/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-20191201",
+        "game_id": "201912010mia",
+        "fecha": "01-12-2019",
+        "date": "2019-12-01",
+        "url": "/historia/partidos/phi-mia-20191201/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20191208",
+        "game_id": "201912080nyj",
+        "fecha": "08-12-2019",
+        "date": "2019-12-08",
+        "url": "/historia/partidos/mia-nyj-20191208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Giants",
+        "id": "mia-nyg-20191215",
+        "game_id": "201912150nyg",
+        "fecha": "15-12-2019",
+        "date": "2019-12-15",
+        "url": "/historia/partidos/mia-nyg-20191215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-20191222",
+        "game_id": "201912220mia",
+        "fecha": "22-12-2019",
+        "date": "2019-12-22",
+        "url": "/historia/partidos/cin-mia-20191222/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20191229",
+        "game_id": "201912290nwe",
+        "fecha": "29-12-2019",
+        "date": "2019-12-29",
+        "url": "/historia/partidos/mia-nwe-20191229/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -4368,6 +4706,7 @@
       "Puntos a favor": "306 puntos. 25º de 32 equipos",
       "Puntos en contra": "494 puntos. 32º de 32 equipos",
       "Head Coach": "Brian Flores (5-11-0)",
+      "General Manager": "Chris Grier",
       "Estadio": "Hard Rock Stadium",
       "Training Camp": "Baptist Health Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

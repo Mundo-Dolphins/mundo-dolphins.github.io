@@ -1890,6 +1890,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "18 de diciembre de 2011",
       "Estadio": "Ralph Wilson Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2253,6 +2255,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "okYFXWFPF4k",
+        "title": "2011 week 15 Miami Dolphins at Buffalo Bills",
+        "url": "https://www.youtube.com/watch?v=okYFXWFPF4k\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDExLTExLTIw",
+        "duration_seconds": 8999,
+        "embeddable": false
+      }
+    ]
   }
 }

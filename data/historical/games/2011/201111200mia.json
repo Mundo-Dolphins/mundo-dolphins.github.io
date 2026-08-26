@@ -2021,6 +2021,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "20 de noviembre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2324,6 +2326,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "pcGyNtm13Dk",
+        "title": "2011 week 11 Buffalo Bills at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=pcGyNtm13Dk\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDExLTExLTIw",
+        "duration_seconds": 8669,
+        "embeddable": false
+      }
+    ]
   }
 }

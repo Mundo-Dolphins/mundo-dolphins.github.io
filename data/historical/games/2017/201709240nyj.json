@@ -2604,6 +2604,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de septiembre de 2017",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2887,6 +2889,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "A5pU5B_cGrk",
+        "title": "Miami Dolphins vs New York Jets Week 3 Highlights 2017",
+        "url": "https://www.youtube.com/watch?v=A5pU5B_cGrk\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDE3LTA5LTI0",
+        "duration_seconds": 546,
+        "embeddable": false
+      }
+    ]
   }
 }

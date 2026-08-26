@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2023-10-29",
-    "slug": "new-mia-20231029",
-    "path": "historia/partidos/new-mia-20231029",
+    "slug": "nwe-mia-20231029",
+    "path": "historia/partidos/nwe-mia-20231029",
     "params": {
       "game_id": "202310290mia"
     }
@@ -3966,6 +3966,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de octubre de 2023",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",

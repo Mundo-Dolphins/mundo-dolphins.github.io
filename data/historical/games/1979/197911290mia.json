@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1979-11-29",
-    "slug": "new-mia-19791129",
-    "path": "historia/partidos/new-mia-19791129",
+    "slug": "nwe-mia-19791129",
+    "path": "historia/partidos/nwe-mia-19791129",
     "params": {
       "game_id": "197911290mia"
     }
@@ -940,6 +940,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de noviembre de 1979",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

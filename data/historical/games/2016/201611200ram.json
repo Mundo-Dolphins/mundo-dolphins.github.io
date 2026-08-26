@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Los Angeles Rams",
     "date": "2016-11-20",
-    "slug": "mia-los-20161120",
-    "path": "historia/partidos/mia-los-20161120",
+    "slug": "mia-ram-20161120",
+    "path": "historia/partidos/mia-ram-20161120",
     "params": {
       "game_id": "201611200ram"
     }
@@ -2653,6 +2653,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "20 de noviembre de 2016",
       "Estadio": "Los Angeles Memorial Coliseum",
       "Tipo de estadio": "Al aire libre",
@@ -2966,6 +2968,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "zzGpfjTLQ00",
+        "title": "2016 week 11 Miami Dolphins at Los Angeles Rams",
+        "url": "https://www.youtube.com/watch?v=zzGpfjTLQ00\u0026pp=ygUtTWlhbWkgRG9scGhpbnMgdnMgTG9zIEFuZ2VsZXMgUmFtcyAyMDE2LTExLTIw0gcJCRMMAYcqIYzv",
+        "duration_seconds": 8918,
+        "embeddable": false
+      }
+    ]
   }
 }

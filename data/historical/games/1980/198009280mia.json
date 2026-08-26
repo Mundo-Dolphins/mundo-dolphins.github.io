@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New Orleans Saints vs Miami Dolphins",
     "date": "1980-09-28",
-    "slug": "new-mia-19800928",
-    "path": "historia/partidos/new-mia-19800928",
+    "slug": "nor-mia-19800928",
+    "path": "historia/partidos/nor-mia-19800928",
     "params": {
       "game_id": "198009280mia"
     }
@@ -897,6 +897,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de septiembre de 1980",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

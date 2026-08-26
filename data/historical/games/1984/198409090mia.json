@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1984-09-09",
-    "slug": "new-mia-19840909",
-    "path": "historia/partidos/new-mia-19840909",
+    "slug": "nwe-mia-19840909",
+    "path": "historia/partidos/nwe-mia-19840909",
     "params": {
       "game_id": "198409090mia"
     }
@@ -893,6 +893,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de septiembre de 1984",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1974",
@@ -2315,98 +2315,370 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19740915",
+        "id": "mia-nwe-19740915",
+        "game_id": "197409150nwe",
         "fecha": "15-09-1974",
-        "url": "/historia/partidos/mia-new-19740915/"
+        "date": "1974-09-15",
+        "url": "/historia/partidos/mia-nwe-19740915/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19740922",
+        "game_id": "197409220buf",
         "fecha": "22-09-1974",
-        "url": "/historia/partidos/mia-buf-19740922/"
+        "date": "1974-09-22",
+        "url": "/historia/partidos/mia-buf-19740922/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-19740929",
+        "game_id": "197409290sdg",
         "fecha": "29-09-1974",
-        "url": "/historia/partidos/mia-sdg-19740929/"
+        "date": "1974-09-29",
+        "url": "/historia/partidos/mia-sdg-19740929/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19741007",
+        "game_id": "197410070mia",
         "fecha": "07-10-1974",
-        "url": "/historia/partidos/nyj-mia-19741007/"
+        "date": "1974-10-07",
+        "url": "/historia/partidos/nyj-mia-19741007/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Washington Redskins",
         "id": "mia-was-19741013",
+        "game_id": "197410130was",
         "fecha": "13-10-1974",
-        "url": "/historia/partidos/mia-was-19741013/"
+        "date": "1974-10-13",
+        "url": "/historia/partidos/mia-was-19741013/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-19741020",
+        "game_id": "197410200mia",
         "fecha": "20-10-1974",
-        "url": "/historia/partidos/kan-mia-19741020/"
+        "date": "1974-10-20",
+        "url": "/historia/partidos/kan-mia-19741020/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19741027",
+        "game_id": "197410270mia",
         "fecha": "27-10-1974",
-        "url": "/historia/partidos/bal-mia-19741027/"
+        "date": "1974-10-27",
+        "url": "/historia/partidos/bal-mia-19741027/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Atlanta Falcons",
+        "title": "Atlanta Falcons vs Miami Dolphins",
         "id": "atl-mia-19741103",
+        "game_id": "197411030mia",
         "fecha": "03-11-1974",
-        "url": "/historia/partidos/atl-mia-19741103/"
+        "date": "1974-11-03",
+        "url": "/historia/partidos/atl-mia-19741103/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "mia-new-19741110",
+        "id": "mia-nor-19741110",
+        "game_id": "197411100nor",
         "fecha": "10-11-1974",
-        "url": "/historia/partidos/mia-new-19741110/"
+        "date": "1974-11-10",
+        "url": "/historia/partidos/mia-nor-19741110/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19741117",
+        "game_id": "197411170mia",
         "fecha": "17-11-1974",
-        "url": "/historia/partidos/buf-mia-19741117/"
+        "date": "1974-11-17",
+        "url": "/historia/partidos/buf-mia-19741117/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19741124",
+        "game_id": "197411240nyj",
         "fecha": "24-11-1974",
-        "url": "/historia/partidos/mia-nyj-19741124/"
+        "date": "1974-11-24",
+        "url": "/historia/partidos/mia-nyj-19741124/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-19741202",
+        "game_id": "197412020mia",
         "fecha": "02-12-1974",
-        "url": "/historia/partidos/cin-mia-19741202/"
+        "date": "1974-12-02",
+        "url": "/historia/partidos/cin-mia-19741202/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19741208",
+        "game_id": "197412080clt",
         "fecha": "08-12-1974",
-        "url": "/historia/partidos/mia-bal-19741208/"
+        "date": "1974-12-08",
+        "url": "/historia/partidos/mia-bal-19741208/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19741215",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19741215",
+        "game_id": "197412150mia",
         "fecha": "15-12-1974",
-        "url": "/historia/partidos/new-mia-19741215/"
+        "date": "1974-12-15",
+        "url": "/historia/partidos/nwe-mia-19741215/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19741221",
+        "game_id": "197412210rai",
+        "fecha": "21-12-1974",
+        "date": "1974-12-21",
+        "url": "/historia/partidos/mia-oak-19741221/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19740915",
+        "game_id": "197409150nwe",
+        "fecha": "15-09-1974",
+        "date": "1974-09-15",
+        "url": "/historia/partidos/mia-nwe-19740915/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19740922",
+        "game_id": "197409220buf",
+        "fecha": "22-09-1974",
+        "date": "1974-09-22",
+        "url": "/historia/partidos/mia-buf-19740922/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-19740929",
+        "game_id": "197409290sdg",
+        "fecha": "29-09-1974",
+        "date": "1974-09-29",
+        "url": "/historia/partidos/mia-sdg-19740929/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19741007",
+        "game_id": "197410070mia",
+        "fecha": "07-10-1974",
+        "date": "1974-10-07",
+        "url": "/historia/partidos/nyj-mia-19741007/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Washington Redskins",
+        "id": "mia-was-19741013",
+        "game_id": "197410130was",
+        "fecha": "13-10-1974",
+        "date": "1974-10-13",
+        "url": "/historia/partidos/mia-was-19741013/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-19741020",
+        "game_id": "197410200mia",
+        "fecha": "20-10-1974",
+        "date": "1974-10-20",
+        "url": "/historia/partidos/kan-mia-19741020/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19741027",
+        "game_id": "197410270mia",
+        "fecha": "27-10-1974",
+        "date": "1974-10-27",
+        "url": "/historia/partidos/bal-mia-19741027/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-19741103",
+        "game_id": "197411030mia",
+        "fecha": "03-11-1974",
+        "date": "1974-11-03",
+        "url": "/historia/partidos/atl-mia-19741103/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-19741110",
+        "game_id": "197411100nor",
+        "fecha": "10-11-1974",
+        "date": "1974-11-10",
+        "url": "/historia/partidos/mia-nor-19741110/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19741117",
+        "game_id": "197411170mia",
+        "fecha": "17-11-1974",
+        "date": "1974-11-17",
+        "url": "/historia/partidos/buf-mia-19741117/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19741124",
+        "game_id": "197411240nyj",
+        "fecha": "24-11-1974",
+        "date": "1974-11-24",
+        "url": "/historia/partidos/mia-nyj-19741124/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-19741202",
+        "game_id": "197412020mia",
+        "fecha": "02-12-1974",
+        "date": "1974-12-02",
+        "url": "/historia/partidos/cin-mia-19741202/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19741208",
+        "game_id": "197412080clt",
+        "fecha": "08-12-1974",
+        "date": "1974-12-08",
+        "url": "/historia/partidos/mia-bal-19741208/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19741215",
+        "game_id": "197412150mia",
+        "fecha": "15-12-1974",
+        "date": "1974-12-15",
+        "url": "/historia/partidos/nwe-mia-19741215/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19741221",
+        "game_id": "197412210rai",
         "fecha": "21-12-1974",
-        "url": "/historia/partidos/mia-oak-19741221/"
+        "date": "1974-12-21",
+        "url": "/historia/partidos/mia-oak-19741221/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {

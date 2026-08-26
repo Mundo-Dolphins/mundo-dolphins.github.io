@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1971",
@@ -1650,110 +1650,394 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Denver Broncos",
         "id": "mia-den-19710919",
+        "game_id": "197109190den",
         "fecha": "19-09-1971",
-        "url": "/historia/partidos/mia-den-19710919/"
+        "date": "1971-09-19",
+        "url": "/historia/partidos/mia-den-19710919/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19710926",
+        "game_id": "197109260buf",
         "fecha": "26-09-1971",
-        "url": "/historia/partidos/mia-buf-19710926/"
+        "date": "1971-09-26",
+        "url": "/historia/partidos/mia-buf-19710926/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19711003",
+        "game_id": "197110030mia",
         "fecha": "03-10-1971",
-        "url": "/historia/partidos/nyj-mia-19711003/"
+        "date": "1971-10-03",
+        "url": "/historia/partidos/nyj-mia-19711003/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-19711010",
+        "game_id": "197110100cin",
         "fecha": "10-10-1971",
-        "url": "/historia/partidos/mia-cin-19711010/"
+        "date": "1971-10-10",
+        "url": "/historia/partidos/mia-cin-19711010/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19711017",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19711017",
+        "game_id": "197110170mia",
         "fecha": "17-10-1971",
-        "url": "/historia/partidos/new-mia-19711017/"
+        "date": "1971-10-17",
+        "url": "/historia/partidos/nwe-mia-19711017/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19711024",
+        "game_id": "197110240nyj",
         "fecha": "24-10-1971",
-        "url": "/historia/partidos/mia-nyj-19711024/"
+        "date": "1971-10-24",
+        "url": "/historia/partidos/mia-nyj-19711024/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Rams",
-        "id": "mia-los-19711031",
+        "id": "mia-ram-19711031",
+        "game_id": "197110310ram",
         "fecha": "31-10-1971",
-        "url": "/historia/partidos/mia-los-19711031/"
+        "date": "1971-10-31",
+        "url": "/historia/partidos/mia-ram-19711031/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19711107",
+        "game_id": "197111070mia",
         "fecha": "07-11-1971",
-        "url": "/historia/partidos/buf-mia-19711107/"
+        "date": "1971-11-07",
+        "url": "/historia/partidos/buf-mia-19711107/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19711114",
+        "game_id": "197111140mia",
         "fecha": "14-11-1971",
-        "url": "/historia/partidos/pit-mia-19711114/"
+        "date": "1971-11-14",
+        "url": "/historia/partidos/pit-mia-19711114/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19711121",
+        "game_id": "197111210mia",
         "fecha": "21-11-1971",
-        "url": "/historia/partidos/bal-mia-19711121/"
+        "date": "1971-11-21",
+        "url": "/historia/partidos/bal-mia-19711121/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Chicago Bears",
+        "title": "Chicago Bears vs Miami Dolphins",
         "id": "chi-mia-19711129",
+        "game_id": "197111290mia",
         "fecha": "29-11-1971",
-        "url": "/historia/partidos/chi-mia-19711129/"
+        "date": "1971-11-29",
+        "url": "/historia/partidos/chi-mia-19711129/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19711205",
+        "id": "mia-nwe-19711205",
+        "game_id": "197112050nwe",
         "fecha": "05-12-1971",
-        "url": "/historia/partidos/mia-new-19711205/"
+        "date": "1971-12-05",
+        "url": "/historia/partidos/mia-nwe-19711205/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19711211",
+        "game_id": "197112110clt",
         "fecha": "11-12-1971",
-        "url": "/historia/partidos/mia-bal-19711211/"
+        "date": "1971-12-11",
+        "url": "/historia/partidos/mia-bal-19711211/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-19711219",
+        "game_id": "197112190mia",
         "fecha": "19-12-1971",
-        "url": "/historia/partidos/gnb-mia-19711219/"
+        "date": "1971-12-19",
+        "url": "/historia/partidos/gnb-mia-19711219/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "id": "mia-kan-19711225",
+        "game_id": "197112250kan",
+        "fecha": "25-12-1971",
+        "date": "1971-12-25",
+        "url": "/historia/partidos/mia-kan-19711225/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19720102",
+        "game_id": "197201020mia",
+        "fecha": "02-01-1972",
+        "date": "1972-01-02",
+        "url": "/historia/partidos/bal-mia-19720102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Denver Broncos",
+        "id": "mia-den-19710919",
+        "game_id": "197109190den",
+        "fecha": "19-09-1971",
+        "date": "1971-09-19",
+        "url": "/historia/partidos/mia-den-19710919/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19710926",
+        "game_id": "197109260buf",
+        "fecha": "26-09-1971",
+        "date": "1971-09-26",
+        "url": "/historia/partidos/mia-buf-19710926/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19711003",
+        "game_id": "197110030mia",
+        "fecha": "03-10-1971",
+        "date": "1971-10-03",
+        "url": "/historia/partidos/nyj-mia-19711003/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-19711010",
+        "game_id": "197110100cin",
+        "fecha": "10-10-1971",
+        "date": "1971-10-10",
+        "url": "/historia/partidos/mia-cin-19711010/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19711017",
+        "game_id": "197110170mia",
+        "fecha": "17-10-1971",
+        "date": "1971-10-17",
+        "url": "/historia/partidos/nwe-mia-19711017/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19711024",
+        "game_id": "197110240nyj",
+        "fecha": "24-10-1971",
+        "date": "1971-10-24",
+        "url": "/historia/partidos/mia-nyj-19711024/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Rams",
+        "id": "mia-ram-19711031",
+        "game_id": "197110310ram",
+        "fecha": "31-10-1971",
+        "date": "1971-10-31",
+        "url": "/historia/partidos/mia-ram-19711031/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19711107",
+        "game_id": "197111070mia",
+        "fecha": "07-11-1971",
+        "date": "1971-11-07",
+        "url": "/historia/partidos/buf-mia-19711107/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19711114",
+        "game_id": "197111140mia",
+        "fecha": "14-11-1971",
+        "date": "1971-11-14",
+        "url": "/historia/partidos/pit-mia-19711114/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19711121",
+        "game_id": "197111210mia",
+        "fecha": "21-11-1971",
+        "date": "1971-11-21",
+        "url": "/historia/partidos/bal-mia-19711121/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Chicago Bears vs Miami Dolphins",
+        "id": "chi-mia-19711129",
+        "game_id": "197111290mia",
+        "fecha": "29-11-1971",
+        "date": "1971-11-29",
+        "url": "/historia/partidos/chi-mia-19711129/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19711205",
+        "game_id": "197112050nwe",
+        "fecha": "05-12-1971",
+        "date": "1971-12-05",
+        "url": "/historia/partidos/mia-nwe-19711205/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19711211",
+        "game_id": "197112110clt",
+        "fecha": "11-12-1971",
+        "date": "1971-12-11",
+        "url": "/historia/partidos/mia-bal-19711211/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-19711219",
+        "game_id": "197112190mia",
+        "fecha": "19-12-1971",
+        "date": "1971-12-19",
+        "url": "/historia/partidos/gnb-mia-19711219/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
         "id": "mia-kan-19711225",
+        "game_id": "197112250kan",
         "fecha": "25-12-1971",
-        "url": "/historia/partidos/mia-kan-19711225/"
+        "date": "1971-12-25",
+        "url": "/historia/partidos/mia-kan-19711225/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19720102",
+        "game_id": "197201020mia",
         "fecha": "02-01-1972",
-        "url": "/historia/partidos/bal-mia-19720102/"
-      },
-      {
-        "title": "Miami Dolphins vs Dallas Cowboys",
-        "id": "dal-mia-19720116",
-        "fecha": "16-01-1972",
-        "url": "/historia/partidos/dal-mia-19720116/"
+        "date": "1972-01-02",
+        "url": "/historia/partidos/bal-mia-19720102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {

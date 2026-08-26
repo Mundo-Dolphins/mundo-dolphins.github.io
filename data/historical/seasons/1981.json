@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1981",
@@ -2265,110 +2265,418 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs St. Louis Cardinals",
         "id": "mia-stl-19810906",
+        "game_id": "198109060crd",
         "fecha": "06-09-1981",
-        "url": "/historia/partidos/mia-stl-19810906/"
+        "date": "1981-09-06",
+        "url": "/historia/partidos/mia-stl-19810906/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19810910",
+        "game_id": "198109100mia",
         "fecha": "10-09-1981",
-        "url": "/historia/partidos/pit-mia-19810910/"
+        "date": "1981-09-10",
+        "url": "/historia/partidos/pit-mia-19810910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19810920",
+        "game_id": "198109200oti",
         "fecha": "20-09-1981",
-        "url": "/historia/partidos/mia-oti-19810920/"
+        "date": "1981-09-20",
+        "url": "/historia/partidos/mia-oti-19810920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19810927",
+        "game_id": "198109270clt",
         "fecha": "27-09-1981",
-        "url": "/historia/partidos/mia-bal-19810927/"
+        "date": "1981-09-27",
+        "url": "/historia/partidos/mia-bal-19810927/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19811004",
+        "game_id": "198110040mia",
         "fecha": "04-10-1981",
-        "url": "/historia/partidos/nyj-mia-19811004/"
+        "date": "1981-10-04",
+        "url": "/historia/partidos/nyj-mia-19811004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19811012",
+        "game_id": "198110120buf",
         "fecha": "12-10-1981",
-        "url": "/historia/partidos/mia-buf-19811012/"
+        "date": "1981-10-12",
+        "url": "/historia/partidos/mia-buf-19811012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
+        "title": "Washington Redskins vs Miami Dolphins",
         "id": "was-mia-19811018",
+        "game_id": "198110180mia",
         "fecha": "18-10-1981",
-        "url": "/historia/partidos/was-mia-19811018/"
+        "date": "1981-10-18",
+        "url": "/historia/partidos/was-mia-19811018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-19811025",
+        "game_id": "198110250dal",
         "fecha": "25-10-1981",
-        "url": "/historia/partidos/mia-dal-19811025/"
+        "date": "1981-10-25",
+        "url": "/historia/partidos/mia-dal-19811025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19811101",
+        "game_id": "198111010mia",
         "fecha": "01-11-1981",
-        "url": "/historia/partidos/bal-mia-19811101/"
+        "date": "1981-11-01",
+        "url": "/historia/partidos/bal-mia-19811101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19811108",
+        "id": "mia-nwe-19811108",
+        "game_id": "198111080nwe",
         "fecha": "08-11-1981",
-        "url": "/historia/partidos/mia-new-19811108/"
+        "date": "1981-11-08",
+        "url": "/historia/partidos/mia-nwe-19811108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-19811115",
+        "game_id": "198111150mia",
         "fecha": "15-11-1981",
-        "url": "/historia/partidos/oak-mia-19811115/"
+        "date": "1981-11-15",
+        "url": "/historia/partidos/oak-mia-19811115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19811122",
+        "game_id": "198111220nyj",
         "fecha": "22-11-1981",
-        "url": "/historia/partidos/mia-nyj-19811122/"
+        "date": "1981-11-22",
+        "url": "/historia/partidos/mia-nyj-19811122/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-19811130",
+        "game_id": "198111300mia",
         "fecha": "30-11-1981",
-        "url": "/historia/partidos/phi-mia-19811130/"
+        "date": "1981-11-30",
+        "url": "/historia/partidos/phi-mia-19811130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19811206",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19811206",
+        "game_id": "198112060mia",
         "fecha": "06-12-1981",
-        "url": "/historia/partidos/new-mia-19811206/"
+        "date": "1981-12-06",
+        "url": "/historia/partidos/nwe-mia-19811206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Kansas City Chiefs",
         "id": "mia-kan-19811213",
+        "game_id": "198112130kan",
         "fecha": "13-12-1981",
-        "url": "/historia/partidos/mia-kan-19811213/"
+        "date": "1981-12-13",
+        "url": "/historia/partidos/mia-kan-19811213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19811219",
+        "game_id": "198112190mia",
+        "fecha": "19-12-1981",
+        "date": "1981-12-19",
+        "url": "/historia/partidos/buf-mia-19811219/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19820102",
+        "game_id": "198201020mia",
+        "fecha": "02-01-1982",
+        "date": "1982-01-02",
+        "url": "/historia/partidos/sdg-mia-19820102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs St. Louis Cardinals",
+        "id": "mia-stl-19810906",
+        "game_id": "198109060crd",
+        "fecha": "06-09-1981",
+        "date": "1981-09-06",
+        "url": "/historia/partidos/mia-stl-19810906/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19810910",
+        "game_id": "198109100mia",
+        "fecha": "10-09-1981",
+        "date": "1981-09-10",
+        "url": "/historia/partidos/pit-mia-19810910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19810920",
+        "game_id": "198109200oti",
+        "fecha": "20-09-1981",
+        "date": "1981-09-20",
+        "url": "/historia/partidos/mia-oti-19810920/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19810927",
+        "game_id": "198109270clt",
+        "fecha": "27-09-1981",
+        "date": "1981-09-27",
+        "url": "/historia/partidos/mia-bal-19810927/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19811004",
+        "game_id": "198110040mia",
+        "fecha": "04-10-1981",
+        "date": "1981-10-04",
+        "url": "/historia/partidos/nyj-mia-19811004/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19811012",
+        "game_id": "198110120buf",
+        "fecha": "12-10-1981",
+        "date": "1981-10-12",
+        "url": "/historia/partidos/mia-buf-19811012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Redskins vs Miami Dolphins",
+        "id": "was-mia-19811018",
+        "game_id": "198110180mia",
+        "fecha": "18-10-1981",
+        "date": "1981-10-18",
+        "url": "/historia/partidos/was-mia-19811018/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-19811025",
+        "game_id": "198110250dal",
+        "fecha": "25-10-1981",
+        "date": "1981-10-25",
+        "url": "/historia/partidos/mia-dal-19811025/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19811101",
+        "game_id": "198111010mia",
+        "fecha": "01-11-1981",
+        "date": "1981-11-01",
+        "url": "/historia/partidos/bal-mia-19811101/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19811108",
+        "game_id": "198111080nwe",
+        "fecha": "08-11-1981",
+        "date": "1981-11-08",
+        "url": "/historia/partidos/mia-nwe-19811108/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-19811115",
+        "game_id": "198111150mia",
+        "fecha": "15-11-1981",
+        "date": "1981-11-15",
+        "url": "/historia/partidos/oak-mia-19811115/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19811122",
+        "game_id": "198111220nyj",
+        "fecha": "22-11-1981",
+        "date": "1981-11-22",
+        "url": "/historia/partidos/mia-nyj-19811122/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-19811130",
+        "game_id": "198111300mia",
+        "fecha": "30-11-1981",
+        "date": "1981-11-30",
+        "url": "/historia/partidos/phi-mia-19811130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19811206",
+        "game_id": "198112060mia",
+        "fecha": "06-12-1981",
+        "date": "1981-12-06",
+        "url": "/historia/partidos/nwe-mia-19811206/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "id": "mia-kan-19811213",
+        "game_id": "198112130kan",
+        "fecha": "13-12-1981",
+        "date": "1981-12-13",
+        "url": "/historia/partidos/mia-kan-19811213/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19811219",
+        "game_id": "198112190mia",
         "fecha": "19-12-1981",
-        "url": "/historia/partidos/buf-mia-19811219/"
+        "date": "1981-12-19",
+        "url": "/historia/partidos/buf-mia-19811219/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19820102",
+        "game_id": "198201020mia",
         "fecha": "02-01-1982",
-        "url": "/historia/partidos/sdg-mia-19820102/"
+        "date": "1982-01-02",
+        "url": "/historia/partidos/sdg-mia-19820102/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2378,6 +2686,7 @@
       "Puntos a favor": "345 puntos. 11º de 28 equipos",
       "Puntos en contra": "275 puntos. 5º de 28 equipos",
       "Head Coach": "Don Shula (11-4-1)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

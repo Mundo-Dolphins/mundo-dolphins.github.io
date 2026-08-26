@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Jacksonville Jaguars vs Miami Dolphins",
     "date": "2019-08-22",
-    "slug": "jac-mia-20190822",
-    "path": "historia/partidos/jac-mia-20190822",
+    "slug": "jax-mia-20190822",
+    "path": "historia/partidos/jax-mia-20190822",
     "params": {
       "game_id": "201908220mia"
     }
@@ -860,11 +860,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 3",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "22 de agosto de 2019",
       "Gamebook oficial": "assets/gamebooks/2019/201908220mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "61QPBzHF4p8",
+        "title": "Jaguars vs. Dolphins Preseason Week 3 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=61QPBzHF4p8\u0026pp=ygUxSmFja3NvbnZpbGxlIEphZ3VhcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxOS0wOC0yMtIHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 536,
+        "embeddable": false
+      }
+    ]
   }
 }

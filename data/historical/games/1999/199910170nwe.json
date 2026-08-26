@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1999-10-17",
-    "slug": "mia-new-19991017",
-    "path": "historia/partidos/mia-new-19991017",
+    "slug": "mia-nwe-19991017",
+    "path": "historia/partidos/mia-nwe-19991017",
     "params": {
       "game_id": "199910170nwe"
     }
@@ -2028,6 +2028,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "17 de octubre de 1999",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1985-09-15",
-    "slug": "ind-mia-19850915",
-    "path": "historia/partidos/ind-mia-19850915",
+    "slug": "clt-mia-19850915",
+    "path": "historia/partidos/clt-mia-19850915",
     "params": {
       "game_id": "198509150mia"
     }
@@ -842,6 +842,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de septiembre de 1985",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

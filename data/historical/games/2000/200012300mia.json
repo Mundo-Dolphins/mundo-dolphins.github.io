@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "2000-12-30",
-    "slug": "ind-mia-20001230",
-    "path": "historia/partidos/ind-mia-20001230",
+    "slug": "clt-mia-20001230",
+    "path": "historia/partidos/clt-mia-20001230",
     "params": {
       "game_id": "200012300mia"
     }
@@ -1785,6 +1785,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "30 de diciembre de 2000",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

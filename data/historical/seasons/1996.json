@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:03Z",
+  "generated_at": "2026-08-26T10:11:29Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1996",
@@ -2687,102 +2687,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19960901",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19960901",
+        "game_id": "199609010mia",
         "fecha": "01-09-1996",
-        "url": "/historia/partidos/new-mia-19960901/"
+        "date": "1996-09-01",
+        "url": "/historia/partidos/nwe-mia-19960901/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Arizona Cardinals",
-        "id": "mia-ari-19960908",
+        "id": "mia-crd-19960908",
+        "game_id": "199609080crd",
         "fecha": "08-09-1996",
-        "url": "/historia/partidos/mia-ari-19960908/"
+        "date": "1996-09-08",
+        "url": "/historia/partidos/mia-crd-19960908/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19960915",
+        "game_id": "199609150mia",
         "fecha": "15-09-1996",
-        "url": "/historia/partidos/nyj-mia-19960915/"
+        "date": "1996-09-15",
+        "url": "/historia/partidos/nyj-mia-19960915/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-19960923",
+        "id": "mia-clt-19960923",
+        "game_id": "199609230clt",
         "fecha": "23-09-1996",
-        "url": "/historia/partidos/mia-ind-19960923/"
+        "date": "1996-09-23",
+        "url": "/historia/partidos/mia-clt-19960923/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Seattle Seahawks",
+        "title": "Seattle Seahawks vs Miami Dolphins",
         "id": "sea-mia-19961006",
+        "game_id": "199610060mia",
         "fecha": "06-10-1996",
-        "url": "/historia/partidos/sea-mia-19961006/"
+        "date": "1996-10-06",
+        "url": "/historia/partidos/sea-mia-19961006/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19961013",
+        "game_id": "199610130buf",
         "fecha": "13-10-1996",
-        "url": "/historia/partidos/mia-buf-19961013/"
+        "date": "1996-10-13",
+        "url": "/historia/partidos/mia-buf-19961013/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Philadelphia Eagles",
         "id": "mia-phi-19961020",
+        "game_id": "199610200phi",
         "fecha": "20-10-1996",
-        "url": "/historia/partidos/mia-phi-19961020/"
+        "date": "1996-10-20",
+        "url": "/historia/partidos/mia-phi-19961020/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Dallas Cowboys",
+        "title": "Dallas Cowboys vs Miami Dolphins",
         "id": "dal-mia-19961027",
+        "game_id": "199610270mia",
         "fecha": "27-10-1996",
-        "url": "/historia/partidos/dal-mia-19961027/"
+        "date": "1996-10-27",
+        "url": "/historia/partidos/dal-mia-19961027/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19961103",
+        "id": "mia-nwe-19961103",
+        "game_id": "199611030nwe",
         "fecha": "03-11-1996",
-        "url": "/historia/partidos/mia-new-19961103/"
+        "date": "1996-11-03",
+        "url": "/historia/partidos/mia-nwe-19961103/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-19961110",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19961110",
+        "game_id": "199611100mia",
         "fecha": "10-11-1996",
-        "url": "/historia/partidos/ind-mia-19961110/"
+        "date": "1996-11-10",
+        "url": "/historia/partidos/clt-mia-19961110/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19961117",
+        "game_id": "199611170oti",
         "fecha": "17-11-1996",
-        "url": "/historia/partidos/mia-oti-19961117/"
+        "date": "1996-11-17",
+        "url": "/historia/partidos/mia-oti-19961117/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-19961125",
+        "game_id": "199611250mia",
         "fecha": "25-11-1996",
-        "url": "/historia/partidos/pit-mia-19961125/"
+        "date": "1996-11-25",
+        "url": "/historia/partidos/pit-mia-19961125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19961201",
+        "game_id": "199612010rai",
         "fecha": "01-12-1996",
-        "url": "/historia/partidos/mia-oak-19961201/"
+        "date": "1996-12-01",
+        "url": "/historia/partidos/mia-oak-19961201/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Giants",
+        "title": "New York Giants vs Miami Dolphins",
         "id": "nyg-mia-19961208",
+        "game_id": "199612080mia",
         "fecha": "08-12-1996",
-        "url": "/historia/partidos/nyg-mia-19961208/"
+        "date": "1996-12-08",
+        "url": "/historia/partidos/nyg-mia-19961208/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19961216",
+        "game_id": "199612160mia",
         "fecha": "16-12-1996",
-        "url": "/historia/partidos/buf-mia-19961216/"
+        "date": "1996-12-16",
+        "url": "/historia/partidos/buf-mia-19961216/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19961222",
+        "game_id": "199612220nyj",
         "fecha": "22-12-1996",
-        "url": "/historia/partidos/mia-nyj-19961222/"
+        "date": "1996-12-22",
+        "url": "/historia/partidos/mia-nyj-19961222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19960901",
+        "game_id": "199609010mia",
+        "fecha": "01-09-1996",
+        "date": "1996-09-01",
+        "url": "/historia/partidos/nwe-mia-19960901/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Arizona Cardinals",
+        "id": "mia-crd-19960908",
+        "game_id": "199609080crd",
+        "fecha": "08-09-1996",
+        "date": "1996-09-08",
+        "url": "/historia/partidos/mia-crd-19960908/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19960915",
+        "game_id": "199609150mia",
+        "fecha": "15-09-1996",
+        "date": "1996-09-15",
+        "url": "/historia/partidos/nyj-mia-19960915/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-19960923",
+        "game_id": "199609230clt",
+        "fecha": "23-09-1996",
+        "date": "1996-09-23",
+        "url": "/historia/partidos/mia-clt-19960923/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
+        "id": "sea-mia-19961006",
+        "game_id": "199610060mia",
+        "fecha": "06-10-1996",
+        "date": "1996-10-06",
+        "url": "/historia/partidos/sea-mia-19961006/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19961013",
+        "game_id": "199610130buf",
+        "fecha": "13-10-1996",
+        "date": "1996-10-13",
+        "url": "/historia/partidos/mia-buf-19961013/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "id": "mia-phi-19961020",
+        "game_id": "199610200phi",
+        "fecha": "20-10-1996",
+        "date": "1996-10-20",
+        "url": "/historia/partidos/mia-phi-19961020/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Dallas Cowboys vs Miami Dolphins",
+        "id": "dal-mia-19961027",
+        "game_id": "199610270mia",
+        "fecha": "27-10-1996",
+        "date": "1996-10-27",
+        "url": "/historia/partidos/dal-mia-19961027/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19961103",
+        "game_id": "199611030nwe",
+        "fecha": "03-11-1996",
+        "date": "1996-11-03",
+        "url": "/historia/partidos/mia-nwe-19961103/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-19961110",
+        "game_id": "199611100mia",
+        "fecha": "10-11-1996",
+        "date": "1996-11-10",
+        "url": "/historia/partidos/clt-mia-19961110/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19961117",
+        "game_id": "199611170oti",
+        "fecha": "17-11-1996",
+        "date": "1996-11-17",
+        "url": "/historia/partidos/mia-oti-19961117/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-19961125",
+        "game_id": "199611250mia",
+        "fecha": "25-11-1996",
+        "date": "1996-11-25",
+        "url": "/historia/partidos/pit-mia-19961125/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19961201",
+        "game_id": "199612010rai",
+        "fecha": "01-12-1996",
+        "date": "1996-12-01",
+        "url": "/historia/partidos/mia-oak-19961201/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Giants vs Miami Dolphins",
+        "id": "nyg-mia-19961208",
+        "game_id": "199612080mia",
+        "fecha": "08-12-1996",
+        "date": "1996-12-08",
+        "url": "/historia/partidos/nyg-mia-19961208/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19961216",
+        "game_id": "199612160mia",
+        "fecha": "16-12-1996",
+        "date": "1996-12-16",
+        "url": "/historia/partidos/buf-mia-19961216/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19961222",
+        "game_id": "199612220nyj",
+        "fecha": "22-12-1996",
+        "date": "1996-12-22",
+        "url": "/historia/partidos/mia-nyj-19961222/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2792,6 +3082,7 @@
       "Puntos a favor": "339 puntos. 13º de 30 equipos",
       "Puntos en contra": "325 puntos. 17º de 30 equipos",
       "Head Coach": "Jimmy Johnson (8-8-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

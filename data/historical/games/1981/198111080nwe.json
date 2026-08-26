@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1981-11-08",
-    "slug": "mia-new-19811108",
-    "path": "historia/partidos/mia-new-19811108",
+    "slug": "mia-nwe-19811108",
+    "path": "historia/partidos/mia-nwe-19811108",
     "params": {
       "game_id": "198111080nwe"
     }
@@ -937,6 +937,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de noviembre de 1981",
       "Estadio": "Schaefer Stadium",
       "Tipo de estadio": "Al aire libre",

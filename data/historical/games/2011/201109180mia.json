@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Houston Texans vs Miami Dolphins",
     "date": "2011-09-18",
-    "slug": "hou-mia-20110918",
-    "path": "historia/partidos/hou-mia-20110918",
+    "slug": "htx-mia-20110918",
+    "path": "historia/partidos/htx-mia-20110918",
     "params": {
       "game_id": "201109180mia"
     }
@@ -1738,6 +1738,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "18 de septiembre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",

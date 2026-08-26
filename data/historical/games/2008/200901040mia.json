@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2009-01-04",
-    "slug": "bal-mia-20090104",
-    "path": "historia/partidos/bal-mia-20090104",
+    "slug": "rav-mia-20090104",
+    "path": "historia/partidos/rav-mia-20090104",
     "params": {
       "game_id": "200901040mia"
     }
@@ -1816,6 +1816,8 @@
     },
     "Información del partido": {
       "Semana": "Playoffs",
+      "Tipo de partido": "postseason",
+      "Estado": "final",
       "Fecha": "4 de enero de 2009",
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Jacksonville Jaguars",
     "date": "2014-10-26",
-    "slug": "mia-jac-20141026",
-    "path": "historia/partidos/mia-jac-20141026",
+    "slug": "mia-jax-20141026",
+    "path": "historia/partidos/mia-jax-20141026",
     "params": {
       "game_id": "201410260jax"
     }
@@ -2822,6 +2822,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "26 de octubre de 2014",
       "Estadio": "EverBank Field",
       "Tipo de estadio": "Al aire libre",
@@ -3085,6 +3087,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "jWu-bAzJ5AY",
+        "title": "2014 week 8 Miami Dolphins at Jacksonville Jaguars",
+        "url": "https://www.youtube.com/watch?v=jWu-bAzJ5AY\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgSmFja3NvbnZpbGxlIEphZ3VhcnMgMjAwNS0wOC0xMw%3D%3D",
+        "duration_seconds": 7970,
+        "embeddable": false
+      }
+    ]
   }
 }

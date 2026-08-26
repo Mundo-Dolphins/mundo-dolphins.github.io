@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1985-11-03",
-    "slug": "mia-new-19851103",
-    "path": "historia/partidos/mia-new-19851103",
+    "slug": "mia-nwe-19851103",
+    "path": "historia/partidos/mia-nwe-19851103",
     "params": {
       "game_id": "198511030nwe"
     }
@@ -1084,6 +1084,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "3 de noviembre de 1985",
       "Estadio": "Sullivan Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -3809,6 +3809,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "16 de septiembre de 2018",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4092,6 +4094,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "hrblN5spLMI",
+        "title": "Dolphins vs. Jets Week 2 Highlights | NFL 2018",
+        "url": "https://www.youtube.com/watch?v=hrblN5spLMI\u0026pp=ygUqTmV3IFlvcmsgSmV0cyB2cyBNaWFtaSBEb2xwaGlucyAyMDA1LTEyLTE4",
+        "duration_seconds": 756,
+        "embeddable": false
+      }
+    ]
   }
 }

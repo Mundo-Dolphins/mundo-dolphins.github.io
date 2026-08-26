@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2000",
@@ -2373,116 +2373,490 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Seattle Seahawks",
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20000805",
+        "game_id": "200008050pit",
+        "fecha": "05-08-2000",
+        "date": "2000-08-05",
+        "url": "/historia/partidos/mia-pit-20000805/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20000810",
+        "game_id": "200008100mia",
+        "fecha": "10-08-2000",
+        "date": "2000-08-10",
+        "url": "/historia/partidos/tam-mia-20000810/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-20000821",
+        "game_id": "200008210mia",
+        "fecha": "21-08-2000",
+        "date": "2000-08-21",
+        "url": "/historia/partidos/gnb-mia-20000821/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-20000825",
+        "game_id": "200008250nor",
+        "fecha": "25-08-2000",
+        "date": "2000-08-25",
+        "url": "/historia/partidos/mia-nor-20000825/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
         "id": "sea-mia-20000903",
+        "game_id": "200009030mia",
         "fecha": "03-09-2000",
-        "url": "/historia/partidos/sea-mia-20000903/"
+        "date": "2000-09-03",
+        "url": "/historia/partidos/sea-mia-20000903/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Minnesota Vikings",
         "id": "mia-min-20000910",
+        "game_id": "200009100min",
         "fecha": "10-09-2000",
-        "url": "/historia/partidos/mia-min-20000910/"
+        "date": "2000-09-10",
+        "url": "/historia/partidos/mia-min-20000910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20000917",
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20000917",
+        "game_id": "200009170mia",
         "fecha": "17-09-2000",
-        "url": "/historia/partidos/bal-mia-20000917/"
+        "date": "2000-09-17",
+        "url": "/historia/partidos/rav-mia-20000917/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20000924",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20000924",
+        "game_id": "200009240mia",
         "fecha": "24-09-2000",
-        "url": "/historia/partidos/new-mia-20000924/"
+        "date": "2000-09-24",
+        "url": "/historia/partidos/nwe-mia-20000924/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Cincinnati Bengals",
         "id": "mia-cin-20001001",
+        "game_id": "200010010cin",
         "fecha": "01-10-2000",
-        "url": "/historia/partidos/mia-cin-20001001/"
+        "date": "2000-10-01",
+        "url": "/historia/partidos/mia-cin-20001001/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20001008",
+        "game_id": "200010080mia",
         "fecha": "08-10-2000",
-        "url": "/historia/partidos/buf-mia-20001008/"
+        "date": "2000-10-08",
+        "url": "/historia/partidos/buf-mia-20001008/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20001023",
+        "game_id": "200010230nyj",
         "fecha": "23-10-2000",
-        "url": "/historia/partidos/mia-nyj-20001023/"
+        "date": "2000-10-23",
+        "url": "/historia/partidos/mia-nyj-20001023/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-20001029",
+        "game_id": "200010290mia",
         "fecha": "29-10-2000",
-        "url": "/historia/partidos/gnb-mia-20001029/"
+        "date": "2000-10-29",
+        "url": "/historia/partidos/gnb-mia-20001029/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Detroit Lions",
         "id": "mia-det-20001105",
+        "game_id": "200011050det",
         "fecha": "05-11-2000",
-        "url": "/historia/partidos/mia-det-20001105/"
+        "date": "2000-11-05",
+        "url": "/historia/partidos/mia-det-20001105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-20001112",
+        "game_id": "200011120sdg",
         "fecha": "12-11-2000",
-        "url": "/historia/partidos/mia-sdg-20001112/"
+        "date": "2000-11-12",
+        "url": "/historia/partidos/mia-sdg-20001112/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20001119",
+        "game_id": "200011190mia",
         "fecha": "19-11-2000",
-        "url": "/historia/partidos/nyj-mia-20001119/"
+        "date": "2000-11-19",
+        "url": "/historia/partidos/nyj-mia-20001119/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20001126",
+        "id": "mia-clt-20001126",
+        "game_id": "200011260clt",
         "fecha": "26-11-2000",
-        "url": "/historia/partidos/mia-ind-20001126/"
+        "date": "2000-11-26",
+        "url": "/historia/partidos/mia-clt-20001126/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20001203",
+        "game_id": "200012030buf",
         "fecha": "03-12-2000",
-        "url": "/historia/partidos/mia-buf-20001203/"
+        "date": "2000-12-03",
+        "url": "/historia/partidos/mia-buf-20001203/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
         "id": "tam-mia-20001210",
+        "game_id": "200012100mia",
         "fecha": "10-12-2000",
-        "url": "/historia/partidos/tam-mia-20001210/"
+        "date": "2000-12-10",
+        "url": "/historia/partidos/tam-mia-20001210/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-20001217",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20001217",
+        "game_id": "200012170mia",
         "fecha": "17-12-2000",
-        "url": "/historia/partidos/ind-mia-20001217/"
+        "date": "2000-12-17",
+        "url": "/historia/partidos/clt-mia-20001217/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20001224",
+        "id": "mia-nwe-20001224",
+        "game_id": "200012240nwe",
         "fecha": "24-12-2000",
-        "url": "/historia/partidos/mia-new-20001224/"
-      }
-    ],
-    "Playoffs": [
+        "date": "2000-12-24",
+        "url": "/historia/partidos/mia-nwe-20001224/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-20001230",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20001230",
+        "game_id": "200012300mia",
         "fecha": "30-12-2000",
-        "url": "/historia/partidos/ind-mia-20001230/"
+        "date": "2000-12-30",
+        "url": "/historia/partidos/clt-mia-20001230/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-20010106",
+        "game_id": "200101060rai",
         "fecha": "06-01-2001",
-        "url": "/historia/partidos/mia-oak-20010106/"
+        "date": "2001-01-06",
+        "url": "/historia/partidos/mia-oak-20010106/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Seattle Seahawks vs Miami Dolphins",
+        "id": "sea-mia-20000903",
+        "game_id": "200009030mia",
+        "fecha": "03-09-2000",
+        "date": "2000-09-03",
+        "url": "/historia/partidos/sea-mia-20000903/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Minnesota Vikings",
+        "id": "mia-min-20000910",
+        "game_id": "200009100min",
+        "fecha": "10-09-2000",
+        "date": "2000-09-10",
+        "url": "/historia/partidos/mia-min-20000910/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20000917",
+        "game_id": "200009170mia",
+        "fecha": "17-09-2000",
+        "date": "2000-09-17",
+        "url": "/historia/partidos/rav-mia-20000917/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20000924",
+        "game_id": "200009240mia",
+        "fecha": "24-09-2000",
+        "date": "2000-09-24",
+        "url": "/historia/partidos/nwe-mia-20000924/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "id": "mia-cin-20001001",
+        "game_id": "200010010cin",
+        "fecha": "01-10-2000",
+        "date": "2000-10-01",
+        "url": "/historia/partidos/mia-cin-20001001/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20001008",
+        "game_id": "200010080mia",
+        "fecha": "08-10-2000",
+        "date": "2000-10-08",
+        "url": "/historia/partidos/buf-mia-20001008/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20001023",
+        "game_id": "200010230nyj",
+        "fecha": "23-10-2000",
+        "date": "2000-10-23",
+        "url": "/historia/partidos/mia-nyj-20001023/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-20001029",
+        "game_id": "200010290mia",
+        "fecha": "29-10-2000",
+        "date": "2000-10-29",
+        "url": "/historia/partidos/gnb-mia-20001029/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-20001105",
+        "game_id": "200011050det",
+        "fecha": "05-11-2000",
+        "date": "2000-11-05",
+        "url": "/historia/partidos/mia-det-20001105/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-20001112",
+        "game_id": "200011120sdg",
+        "fecha": "12-11-2000",
+        "date": "2000-11-12",
+        "url": "/historia/partidos/mia-sdg-20001112/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20001119",
+        "game_id": "200011190mia",
+        "fecha": "19-11-2000",
+        "date": "2000-11-19",
+        "url": "/historia/partidos/nyj-mia-20001119/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20001126",
+        "game_id": "200011260clt",
+        "fecha": "26-11-2000",
+        "date": "2000-11-26",
+        "url": "/historia/partidos/mia-clt-20001126/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20001203",
+        "game_id": "200012030buf",
+        "fecha": "03-12-2000",
+        "date": "2000-12-03",
+        "url": "/historia/partidos/mia-buf-20001203/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20001210",
+        "game_id": "200012100mia",
+        "fecha": "10-12-2000",
+        "date": "2000-12-10",
+        "url": "/historia/partidos/tam-mia-20001210/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20001217",
+        "game_id": "200012170mia",
+        "fecha": "17-12-2000",
+        "date": "2000-12-17",
+        "url": "/historia/partidos/clt-mia-20001217/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20001224",
+        "game_id": "200012240nwe",
+        "fecha": "24-12-2000",
+        "date": "2000-12-24",
+        "url": "/historia/partidos/mia-nwe-20001224/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Playoffs": [
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20001230",
+        "game_id": "200012300mia",
+        "fecha": "30-12-2000",
+        "date": "2000-12-30",
+        "url": "/historia/partidos/clt-mia-20001230/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-20010106",
+        "game_id": "200101060rai",
+        "fecha": "06-01-2001",
+        "date": "2001-01-06",
+        "url": "/historia/partidos/mia-oak-20010106/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2492,6 +2866,7 @@
       "Puntos a favor": "323 puntos. 16º de 31 equipos",
       "Puntos en contra": "226 puntos. 3º de 31 equipos",
       "Head Coach": "Dave Wannstedt (11-5-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

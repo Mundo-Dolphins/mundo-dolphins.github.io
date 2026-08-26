@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2015-10-29",
-    "slug": "mia-new-20151029",
-    "path": "historia/partidos/mia-new-20151029",
+    "slug": "mia-nwe-20151029",
+    "path": "historia/partidos/mia-nwe-20151029",
     "params": {
       "game_id": "201510290nwe"
     }
@@ -2705,6 +2705,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "29 de octubre de 2015",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2998,6 +3000,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "_-MTiIuvWeE",
+        "title": "2015 week 8 Miami Dolphins at New England Patriots",
+        "url": "https://www.youtube.com/watch?v=_-MTiIuvWeE\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxNS0xMC0yOQ%3D%3D",
+        "duration_seconds": 8208,
+        "embeddable": false
+      }
+    ]
   }
 }

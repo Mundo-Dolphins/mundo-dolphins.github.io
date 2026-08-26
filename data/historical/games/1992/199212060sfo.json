@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs San Francisco 49ers",
     "date": "1992-12-06",
-    "slug": "mia-san-19921206",
-    "path": "historia/partidos/mia-san-19921206",
+    "slug": "mia-sfo-19921206",
+    "path": "historia/partidos/mia-sfo-19921206",
     "params": {
       "game_id": "199212060sfo"
     }
@@ -907,6 +907,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "6 de diciembre de 1992",
       "Estadio": "Candlestick Park",
       "Tipo de estadio": "Al aire libre",

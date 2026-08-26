@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2017-01-01",
-    "slug": "new-mia-20170101",
-    "path": "historia/partidos/new-mia-20170101",
+    "slug": "nwe-mia-20170101",
+    "path": "historia/partidos/nwe-mia-20170101",
     "params": {
       "game_id": "201701010mia"
     }
@@ -2753,6 +2753,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de enero de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2996,6 +2998,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "NlCzRW8sur0",
+        "title": "2016 week 17 New England Patriots at Miami Dolphins",
+        "url": "https://www.youtube.com/watch?v=NlCzRW8sur0\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxNi0wOS0xONIHCQkTDAGHKiGM7w%3D%3D",
+        "duration_seconds": 7615,
+        "embeddable": false
+      }
+    ]
   }
 }

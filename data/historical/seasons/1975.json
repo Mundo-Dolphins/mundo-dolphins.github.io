@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1975",
@@ -1990,90 +1990,344 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Oakland Raiders",
+        "title": "Oakland Raiders vs Miami Dolphins",
         "id": "oak-mia-19750922",
+        "game_id": "197509220mia",
         "fecha": "22-09-1975",
-        "url": "/historia/partidos/oak-mia-19750922/"
+        "date": "1975-09-22",
+        "url": "/historia/partidos/oak-mia-19750922/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19750928",
+        "id": "mia-nwe-19750928",
+        "game_id": "197509280nwe",
         "fecha": "28-09-1975",
-        "url": "/historia/partidos/mia-new-19750928/"
+        "date": "1975-09-28",
+        "url": "/historia/partidos/mia-nwe-19750928/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Green Bay Packers",
         "id": "mia-gnb-19751005",
+        "game_id": "197510050gnb",
         "fecha": "05-10-1975",
-        "url": "/historia/partidos/mia-gnb-19751005/"
+        "date": "1975-10-05",
+        "url": "/historia/partidos/mia-gnb-19751005/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-19751012",
+        "game_id": "197510120mia",
         "fecha": "12-10-1975",
-        "url": "/historia/partidos/phi-mia-19751012/"
+        "date": "1975-10-12",
+        "url": "/historia/partidos/phi-mia-19751012/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19751019",
+        "game_id": "197510190nyj",
         "fecha": "19-10-1975",
-        "url": "/historia/partidos/mia-nyj-19751019/"
+        "date": "1975-10-19",
+        "url": "/historia/partidos/mia-nyj-19751019/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19751026",
+        "game_id": "197510260buf",
         "fecha": "26-10-1975",
-        "url": "/historia/partidos/mia-buf-19751026/"
+        "date": "1975-10-26",
+        "url": "/historia/partidos/mia-buf-19751026/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Chicago Bears",
         "id": "mia-chi-19751102",
+        "game_id": "197511020chi",
         "fecha": "02-11-1975",
-        "url": "/historia/partidos/mia-chi-19751102/"
+        "date": "1975-11-02",
+        "url": "/historia/partidos/mia-chi-19751102/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19751109",
+        "game_id": "197511090mia",
         "fecha": "09-11-1975",
-        "url": "/historia/partidos/nyj-mia-19751109/"
+        "date": "1975-11-09",
+        "url": "/historia/partidos/nyj-mia-19751109/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Oilers",
         "id": "mia-oti-19751116",
+        "game_id": "197511160oti",
         "fecha": "16-11-1975",
-        "url": "/historia/partidos/mia-oti-19751116/"
+        "date": "1975-11-16",
+        "url": "/historia/partidos/mia-oti-19751116/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19751123",
+        "game_id": "197511230mia",
         "fecha": "23-11-1975",
-        "url": "/historia/partidos/bal-mia-19751123/"
+        "date": "1975-11-23",
+        "url": "/historia/partidos/bal-mia-19751123/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19751201",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19751201",
+        "game_id": "197512010mia",
         "fecha": "01-12-1975",
-        "url": "/historia/partidos/new-mia-19751201/"
+        "date": "1975-12-01",
+        "url": "/historia/partidos/nwe-mia-19751201/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19751207",
+        "game_id": "197512070mia",
         "fecha": "07-12-1975",
-        "url": "/historia/partidos/buf-mia-19751207/"
+        "date": "1975-12-07",
+        "url": "/historia/partidos/buf-mia-19751207/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19751214",
+        "game_id": "197512140clt",
         "fecha": "14-12-1975",
-        "url": "/historia/partidos/mia-bal-19751214/"
+        "date": "1975-12-14",
+        "url": "/historia/partidos/mia-bal-19751214/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Denver Broncos",
+        "title": "Denver Broncos vs Miami Dolphins",
         "id": "den-mia-19751220",
+        "game_id": "197512200mia",
         "fecha": "20-12-1975",
-        "url": "/historia/partidos/den-mia-19751220/"
+        "date": "1975-12-20",
+        "url": "/historia/partidos/den-mia-19751220/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Oakland Raiders vs Miami Dolphins",
+        "id": "oak-mia-19750922",
+        "game_id": "197509220mia",
+        "fecha": "22-09-1975",
+        "date": "1975-09-22",
+        "url": "/historia/partidos/oak-mia-19750922/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19750928",
+        "game_id": "197509280nwe",
+        "fecha": "28-09-1975",
+        "date": "1975-09-28",
+        "url": "/historia/partidos/mia-nwe-19750928/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Green Bay Packers",
+        "id": "mia-gnb-19751005",
+        "game_id": "197510050gnb",
+        "fecha": "05-10-1975",
+        "date": "1975-10-05",
+        "url": "/historia/partidos/mia-gnb-19751005/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-19751012",
+        "game_id": "197510120mia",
+        "fecha": "12-10-1975",
+        "date": "1975-10-12",
+        "url": "/historia/partidos/phi-mia-19751012/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19751019",
+        "game_id": "197510190nyj",
+        "fecha": "19-10-1975",
+        "date": "1975-10-19",
+        "url": "/historia/partidos/mia-nyj-19751019/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19751026",
+        "game_id": "197510260buf",
+        "fecha": "26-10-1975",
+        "date": "1975-10-26",
+        "url": "/historia/partidos/mia-buf-19751026/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-19751102",
+        "game_id": "197511020chi",
+        "fecha": "02-11-1975",
+        "date": "1975-11-02",
+        "url": "/historia/partidos/mia-chi-19751102/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19751109",
+        "game_id": "197511090mia",
+        "fecha": "09-11-1975",
+        "date": "1975-11-09",
+        "url": "/historia/partidos/nyj-mia-19751109/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Oilers",
+        "id": "mia-oti-19751116",
+        "game_id": "197511160oti",
+        "fecha": "16-11-1975",
+        "date": "1975-11-16",
+        "url": "/historia/partidos/mia-oti-19751116/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19751123",
+        "game_id": "197511230mia",
+        "fecha": "23-11-1975",
+        "date": "1975-11-23",
+        "url": "/historia/partidos/bal-mia-19751123/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19751201",
+        "game_id": "197512010mia",
+        "fecha": "01-12-1975",
+        "date": "1975-12-01",
+        "url": "/historia/partidos/nwe-mia-19751201/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19751207",
+        "game_id": "197512070mia",
+        "fecha": "07-12-1975",
+        "date": "1975-12-07",
+        "url": "/historia/partidos/buf-mia-19751207/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19751214",
+        "game_id": "197512140clt",
+        "fecha": "14-12-1975",
+        "date": "1975-12-14",
+        "url": "/historia/partidos/mia-bal-19751214/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Denver Broncos vs Miami Dolphins",
+        "id": "den-mia-19751220",
+        "game_id": "197512200mia",
+        "fecha": "20-12-1975",
+        "date": "1975-12-20",
+        "url": "/historia/partidos/den-mia-19751220/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {

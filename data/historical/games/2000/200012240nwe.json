@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2000-12-24",
-    "slug": "mia-new-20001224",
-    "path": "historia/partidos/mia-new-20001224",
+    "slug": "mia-nwe-20001224",
+    "path": "historia/partidos/mia-nwe-20001224",
     "params": {
       "game_id": "200012240nwe"
     }
@@ -1855,6 +1855,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de diciembre de 2000",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

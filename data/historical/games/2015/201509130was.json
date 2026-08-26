@@ -2392,6 +2392,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "13 de septiembre de 2015",
       "Estadio": "FedExField",
       "Tipo de estadio": "Al aire libre",
@@ -2624,6 +2626,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "4VUgR89kksg",
+        "title": "2015 week 1 Miami Dolphins at Washington Redskins",
+        "url": "https://www.youtube.com/watch?v=4VUgR89kksg\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgV2FzaGluZ3RvbiBSZWRza2lucyAyMDAwLTAxLTAy",
+        "duration_seconds": 7981,
+        "embeddable": false
+      }
+    ]
   }
 }

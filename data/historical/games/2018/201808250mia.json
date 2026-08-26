@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2018-08-25",
-    "slug": "bal-mia-20180825",
-    "path": "historia/partidos/bal-mia-20180825",
+    "slug": "rav-mia-20180825",
+    "path": "historia/partidos/rav-mia-20180825",
     "params": {
       "game_id": "201808250mia"
     }
@@ -979,11 +979,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 3",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "25 de agosto de 2018",
       "Gamebook oficial": "assets/gamebooks/2018/201808250mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "m3WmSq_iPqg",
+        "title": "2018 🁢 BAL Ravens vs MIA Dolphins 🁢 Preseason Week 3 🁢 Lamar Jackson",
+        "url": "https://www.youtube.com/watch?v=m3WmSq_iPqg\u0026pp=ygUtQmFsdGltb3JlIFJhdmVucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE4LTA4LTI1",
+        "duration_seconds": 7778,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1980",
@@ -2330,102 +2330,392 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19800907",
+        "game_id": "198009070buf",
         "fecha": "07-09-1980",
-        "url": "/historia/partidos/mia-buf-19800907/"
+        "date": "1980-09-07",
+        "url": "/historia/partidos/mia-buf-19800907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Cincinnati Bengals",
+        "title": "Cincinnati Bengals vs Miami Dolphins",
         "id": "cin-mia-19800914",
+        "game_id": "198009140mia",
         "fecha": "14-09-1980",
-        "url": "/historia/partidos/cin-mia-19800914/"
+        "date": "1980-09-14",
+        "url": "/historia/partidos/cin-mia-19800914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Atlanta Falcons",
         "id": "mia-atl-19800921",
+        "game_id": "198009210atl",
         "fecha": "21-09-1980",
-        "url": "/historia/partidos/mia-atl-19800921/"
+        "date": "1980-09-21",
+        "url": "/historia/partidos/mia-atl-19800921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "new-mia-19800928",
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19800928",
+        "game_id": "198009280mia",
         "fecha": "28-09-1980",
-        "url": "/historia/partidos/new-mia-19800928/"
+        "date": "1980-09-28",
+        "url": "/historia/partidos/nor-mia-19800928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19801005",
+        "game_id": "198010050mia",
         "fecha": "05-10-1980",
-        "url": "/historia/partidos/bal-mia-19801005/"
+        "date": "1980-10-05",
+        "url": "/historia/partidos/bal-mia-19801005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19801012",
+        "id": "mia-nwe-19801012",
+        "game_id": "198010120nwe",
         "fecha": "12-10-1980",
-        "url": "/historia/partidos/mia-new-19801012/"
+        "date": "1980-10-12",
+        "url": "/historia/partidos/mia-nwe-19801012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19801019",
+        "game_id": "198010190mia",
         "fecha": "19-10-1980",
-        "url": "/historia/partidos/buf-mia-19801019/"
+        "date": "1980-10-19",
+        "url": "/historia/partidos/buf-mia-19801019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19801027",
+        "game_id": "198010270nyj",
         "fecha": "27-10-1980",
-        "url": "/historia/partidos/mia-nyj-19801027/"
+        "date": "1980-10-27",
+        "url": "/historia/partidos/mia-nyj-19801027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Oakland Raiders",
         "id": "mia-oak-19801102",
+        "game_id": "198011020rai",
         "fecha": "02-11-1980",
-        "url": "/historia/partidos/mia-oak-19801102/"
+        "date": "1980-11-02",
+        "url": "/historia/partidos/mia-oak-19801102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Los Angeles Rams",
-        "id": "mia-los-19801109",
+        "id": "mia-ram-19801109",
+        "game_id": "198011090ram",
         "fecha": "09-11-1980",
-        "url": "/historia/partidos/mia-los-19801109/"
+        "date": "1980-11-09",
+        "url": "/historia/partidos/mia-ram-19801109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Francisco 49ers",
-        "id": "san-mia-19801116",
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-19801116",
+        "game_id": "198011160mia",
         "fecha": "16-11-1980",
-        "url": "/historia/partidos/san-mia-19801116/"
+        "date": "1980-11-16",
+        "url": "/historia/partidos/sfo-mia-19801116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19801120",
+        "game_id": "198011200mia",
         "fecha": "20-11-1980",
-        "url": "/historia/partidos/sdg-mia-19801120/"
+        "date": "1980-11-20",
+        "url": "/historia/partidos/sdg-mia-19801120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-19801130",
+        "game_id": "198011300pit",
         "fecha": "30-11-1980",
-        "url": "/historia/partidos/mia-pit-19801130/"
+        "date": "1980-11-30",
+        "url": "/historia/partidos/mia-pit-19801130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19801208",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19801208",
+        "game_id": "198012080mia",
         "fecha": "08-12-1980",
-        "url": "/historia/partidos/new-mia-19801208/"
+        "date": "1980-12-08",
+        "url": "/historia/partidos/nwe-mia-19801208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19801214",
+        "game_id": "198012140clt",
         "fecha": "14-12-1980",
-        "url": "/historia/partidos/mia-bal-19801214/"
+        "date": "1980-12-14",
+        "url": "/historia/partidos/mia-bal-19801214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19801220",
+        "game_id": "198012200mia",
+        "fecha": "20-12-1980",
+        "date": "1980-12-20",
+        "url": "/historia/partidos/nyj-mia-19801220/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19800907",
+        "game_id": "198009070buf",
+        "fecha": "07-09-1980",
+        "date": "1980-09-07",
+        "url": "/historia/partidos/mia-buf-19800907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Cincinnati Bengals vs Miami Dolphins",
+        "id": "cin-mia-19800914",
+        "game_id": "198009140mia",
+        "fecha": "14-09-1980",
+        "date": "1980-09-14",
+        "url": "/historia/partidos/cin-mia-19800914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Atlanta Falcons",
+        "id": "mia-atl-19800921",
+        "game_id": "198009210atl",
+        "fecha": "21-09-1980",
+        "date": "1980-09-21",
+        "url": "/historia/partidos/mia-atl-19800921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-19800928",
+        "game_id": "198009280mia",
+        "fecha": "28-09-1980",
+        "date": "1980-09-28",
+        "url": "/historia/partidos/nor-mia-19800928/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19801005",
+        "game_id": "198010050mia",
+        "fecha": "05-10-1980",
+        "date": "1980-10-05",
+        "url": "/historia/partidos/bal-mia-19801005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19801012",
+        "game_id": "198010120nwe",
+        "fecha": "12-10-1980",
+        "date": "1980-10-12",
+        "url": "/historia/partidos/mia-nwe-19801012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19801019",
+        "game_id": "198010190mia",
+        "fecha": "19-10-1980",
+        "date": "1980-10-19",
+        "url": "/historia/partidos/buf-mia-19801019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19801027",
+        "game_id": "198010270nyj",
+        "fecha": "27-10-1980",
+        "date": "1980-10-27",
+        "url": "/historia/partidos/mia-nyj-19801027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Oakland Raiders",
+        "id": "mia-oak-19801102",
+        "game_id": "198011020rai",
+        "fecha": "02-11-1980",
+        "date": "1980-11-02",
+        "url": "/historia/partidos/mia-oak-19801102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Los Angeles Rams",
+        "id": "mia-ram-19801109",
+        "game_id": "198011090ram",
+        "fecha": "09-11-1980",
+        "date": "1980-11-09",
+        "url": "/historia/partidos/mia-ram-19801109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Francisco 49ers vs Miami Dolphins",
+        "id": "sfo-mia-19801116",
+        "game_id": "198011160mia",
+        "fecha": "16-11-1980",
+        "date": "1980-11-16",
+        "url": "/historia/partidos/sfo-mia-19801116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19801120",
+        "game_id": "198011200mia",
+        "fecha": "20-11-1980",
+        "date": "1980-11-20",
+        "url": "/historia/partidos/sdg-mia-19801120/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-19801130",
+        "game_id": "198011300pit",
+        "fecha": "30-11-1980",
+        "date": "1980-11-30",
+        "url": "/historia/partidos/mia-pit-19801130/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19801208",
+        "game_id": "198012080mia",
+        "fecha": "08-12-1980",
+        "date": "1980-12-08",
+        "url": "/historia/partidos/nwe-mia-19801208/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19801214",
+        "game_id": "198012140clt",
+        "fecha": "14-12-1980",
+        "date": "1980-12-14",
+        "url": "/historia/partidos/mia-bal-19801214/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19801220",
+        "game_id": "198012200mia",
         "fecha": "20-12-1980",
-        "url": "/historia/partidos/nyj-mia-19801220/"
+        "date": "1980-12-20",
+        "url": "/historia/partidos/nyj-mia-19801220/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2435,6 +2725,7 @@
       "Puntos a favor": "266 puntos. 24º de 28 equipos",
       "Puntos en contra": "305 puntos. 9º de 28 equipos",
       "Head Coach": "Don Shula (8-8-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

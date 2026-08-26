@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2003",
@@ -2387,102 +2387,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
-        "title": "Miami Dolphins vs Houston Texans",
-        "id": "hou-mia-20030907",
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20030808",
+        "game_id": "200308080mia",
+        "fecha": "08-08-2003",
+        "date": "2003-08-08",
+        "url": "/historia/partidos/tam-mia-20030808/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20030815",
+        "game_id": "200308150jax",
+        "fecha": "15-08-2003",
+        "date": "2003-08-15",
+        "url": "/historia/partidos/mia-jax-20030815/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20030822",
+        "game_id": "200308220mia",
+        "fecha": "22-08-2003",
+        "date": "2003-08-22",
+        "url": "/historia/partidos/atl-mia-20030822/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-20030828",
+        "game_id": "200308280nor",
+        "fecha": "28-08-2003",
+        "date": "2003-08-28",
+        "url": "/historia/partidos/mia-nor-20030828/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20030907",
+        "game_id": "200309070mia",
         "fecha": "07-09-2003",
-        "url": "/historia/partidos/hou-mia-20030907/"
+        "date": "2003-09-07",
+        "url": "/historia/partidos/htx-mia-20030907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20030914",
+        "game_id": "200309140nyj",
         "fecha": "14-09-2003",
-        "url": "/historia/partidos/mia-nyj-20030914/"
+        "date": "2003-09-14",
+        "url": "/historia/partidos/mia-nyj-20030914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20030921",
+        "game_id": "200309210mia",
         "fecha": "21-09-2003",
-        "url": "/historia/partidos/buf-mia-20030921/"
+        "date": "2003-09-21",
+        "url": "/historia/partidos/buf-mia-20030921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Giants",
         "id": "mia-nyg-20031005",
+        "game_id": "200310050nyg",
         "fecha": "05-10-2003",
-        "url": "/historia/partidos/mia-nyg-20031005/"
+        "date": "2003-10-05",
+        "url": "/historia/partidos/mia-nyg-20031005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "mia-jac-20031012",
+        "id": "mia-jax-20031012",
+        "game_id": "200310120jax",
         "fecha": "12-10-2003",
-        "url": "/historia/partidos/mia-jac-20031012/"
+        "date": "2003-10-12",
+        "url": "/historia/partidos/mia-jax-20031012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20031019",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20031019",
+        "game_id": "200310190mia",
         "fecha": "19-10-2003",
-        "url": "/historia/partidos/new-mia-20031019/"
+        "date": "2003-10-19",
+        "url": "/historia/partidos/nwe-mia-20031019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-20031027",
+        "game_id": "200310270sdg",
         "fecha": "27-10-2003",
-        "url": "/historia/partidos/mia-sdg-20031027/"
+        "date": "2003-10-27",
+        "url": "/historia/partidos/mia-sdg-20031027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-20031102",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20031102",
+        "game_id": "200311020mia",
         "fecha": "02-11-2003",
-        "url": "/historia/partidos/ind-mia-20031102/"
+        "date": "2003-11-02",
+        "url": "/historia/partidos/clt-mia-20031102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "mia-ten-20031109",
+        "id": "mia-oti-20031109",
+        "game_id": "200311090oti",
         "fecha": "09-11-2003",
-        "url": "/historia/partidos/mia-ten-20031109/"
+        "date": "2003-11-09",
+        "url": "/historia/partidos/mia-oti-20031109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Ravens",
-        "id": "bal-mia-20031116",
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20031116",
+        "game_id": "200311160mia",
         "fecha": "16-11-2003",
-        "url": "/historia/partidos/bal-mia-20031116/"
+        "date": "2003-11-16",
+        "url": "/historia/partidos/rav-mia-20031116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Washington Redskins",
+        "title": "Washington Redskins vs Miami Dolphins",
         "id": "was-mia-20031123",
+        "game_id": "200311230mia",
         "fecha": "23-11-2003",
-        "url": "/historia/partidos/was-mia-20031123/"
+        "date": "2003-11-23",
+        "url": "/historia/partidos/was-mia-20031123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Dallas Cowboys",
         "id": "mia-dal-20031127",
+        "game_id": "200311270dal",
         "fecha": "27-11-2003",
-        "url": "/historia/partidos/mia-dal-20031127/"
+        "date": "2003-11-27",
+        "url": "/historia/partidos/mia-dal-20031127/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20031207",
+        "id": "mia-nwe-20031207",
+        "game_id": "200312070nwe",
         "fecha": "07-12-2003",
-        "url": "/historia/partidos/mia-new-20031207/"
+        "date": "2003-12-07",
+        "url": "/historia/partidos/mia-nwe-20031207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Philadelphia Eagles",
+        "title": "Philadelphia Eagles vs Miami Dolphins",
         "id": "phi-mia-20031215",
+        "game_id": "200312150mia",
         "fecha": "15-12-2003",
-        "url": "/historia/partidos/phi-mia-20031215/"
+        "date": "2003-12-15",
+        "url": "/historia/partidos/phi-mia-20031215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20031221",
+        "game_id": "200312210buf",
         "fecha": "21-12-2003",
-        "url": "/historia/partidos/mia-buf-20031221/"
+        "date": "2003-12-21",
+        "url": "/historia/partidos/mia-buf-20031221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20031228",
+        "game_id": "200312280mia",
+        "fecha": "28-12-2003",
+        "date": "2003-12-28",
+        "url": "/historia/partidos/nyj-mia-20031228/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20030907",
+        "game_id": "200309070mia",
+        "fecha": "07-09-2003",
+        "date": "2003-09-07",
+        "url": "/historia/partidos/htx-mia-20030907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20030914",
+        "game_id": "200309140nyj",
+        "fecha": "14-09-2003",
+        "date": "2003-09-14",
+        "url": "/historia/partidos/mia-nyj-20030914/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20030921",
+        "game_id": "200309210mia",
+        "fecha": "21-09-2003",
+        "date": "2003-09-21",
+        "url": "/historia/partidos/buf-mia-20030921/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Giants",
+        "id": "mia-nyg-20031005",
+        "game_id": "200310050nyg",
+        "fecha": "05-10-2003",
+        "date": "2003-10-05",
+        "url": "/historia/partidos/mia-nyg-20031005/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20031012",
+        "game_id": "200310120jax",
+        "fecha": "12-10-2003",
+        "date": "2003-10-12",
+        "url": "/historia/partidos/mia-jax-20031012/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20031019",
+        "game_id": "200310190mia",
+        "fecha": "19-10-2003",
+        "date": "2003-10-19",
+        "url": "/historia/partidos/nwe-mia-20031019/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-20031027",
+        "game_id": "200310270sdg",
+        "fecha": "27-10-2003",
+        "date": "2003-10-27",
+        "url": "/historia/partidos/mia-sdg-20031027/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20031102",
+        "game_id": "200311020mia",
+        "fecha": "02-11-2003",
+        "date": "2003-11-02",
+        "url": "/historia/partidos/clt-mia-20031102/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tennessee Titans",
+        "id": "mia-oti-20031109",
+        "game_id": "200311090oti",
+        "fecha": "09-11-2003",
+        "date": "2003-11-09",
+        "url": "/historia/partidos/mia-oti-20031109/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Ravens vs Miami Dolphins",
+        "id": "rav-mia-20031116",
+        "game_id": "200311160mia",
+        "fecha": "16-11-2003",
+        "date": "2003-11-16",
+        "url": "/historia/partidos/rav-mia-20031116/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Washington Redskins vs Miami Dolphins",
+        "id": "was-mia-20031123",
+        "game_id": "200311230mia",
+        "fecha": "23-11-2003",
+        "date": "2003-11-23",
+        "url": "/historia/partidos/was-mia-20031123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Dallas Cowboys",
+        "id": "mia-dal-20031127",
+        "game_id": "200311270dal",
+        "fecha": "27-11-2003",
+        "date": "2003-11-27",
+        "url": "/historia/partidos/mia-dal-20031127/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20031207",
+        "game_id": "200312070nwe",
+        "fecha": "07-12-2003",
+        "date": "2003-12-07",
+        "url": "/historia/partidos/mia-nwe-20031207/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Philadelphia Eagles vs Miami Dolphins",
+        "id": "phi-mia-20031215",
+        "game_id": "200312150mia",
+        "fecha": "15-12-2003",
+        "date": "2003-12-15",
+        "url": "/historia/partidos/phi-mia-20031215/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20031221",
+        "game_id": "200312210buf",
+        "fecha": "21-12-2003",
+        "date": "2003-12-21",
+        "url": "/historia/partidos/mia-buf-20031221/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20031228",
+        "game_id": "200312280mia",
         "fecha": "28-12-2003",
-        "url": "/historia/partidos/nyj-mia-20031228/"
+        "date": "2003-12-28",
+        "url": "/historia/partidos/nyj-mia-20031228/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2492,6 +2830,7 @@
       "Puntos a favor": "311 puntos. 17º de 32 equipos",
       "Puntos en contra": "261 puntos. 3º de 32 equipos",
       "Head Coach": "Dave Wannstedt (10-6-0)",
+      "General Manager": "Eddie Jones",
       "Estadio": "Pro Player Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

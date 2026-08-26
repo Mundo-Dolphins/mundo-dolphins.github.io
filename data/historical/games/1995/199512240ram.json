@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs St. Louis Rams",
     "date": "1995-12-24",
-    "slug": "mia-stl-19951224",
-    "path": "historia/partidos/mia-stl-19951224",
+    "slug": "mia-ram-19951224",
+    "path": "historia/partidos/mia-ram-19951224",
     "params": {
       "game_id": "199512240ram"
     }
@@ -1502,6 +1502,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de diciembre de 1995",
       "Estadio": "TWA Dome",
       "Tipo de estadio": "dome",

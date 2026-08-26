@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2014-12-14",
-    "slug": "mia-new-20141214",
-    "path": "historia/partidos/mia-new-20141214",
+    "slug": "mia-nwe-20141214",
+    "path": "historia/partidos/mia-nwe-20141214",
     "params": {
       "game_id": "201412140nwe"
     }
@@ -2916,6 +2916,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de diciembre de 2014",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3199,6 +3201,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "6QrWSeNm-6A",
+        "title": "2014 week 15 Miami Dolphins at New England Patriots",
+        "url": "https://www.youtube.com/watch?v=6QrWSeNm-6A\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxNC0xMi0xNA%3D%3D",
+        "duration_seconds": 8360,
+        "embeddable": false
+      }
+    ]
   }
 }

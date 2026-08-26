@@ -4001,6 +4001,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "20 de septiembre de 2020",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4264,6 +4266,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "17JpOLg3FbY",
+        "title": "Bills vs. Dolphins Week 2 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=17JpOLg3FbY\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDIwLTA5LTIw",
+        "duration_seconds": 761,
+        "embeddable": false
+      }
+    ]
   }
 }

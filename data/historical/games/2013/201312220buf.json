@@ -2811,6 +2811,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de diciembre de 2013",
       "Estadio": "Ralph Wilson Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3124,6 +3126,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "ZRgIAVQb93c",
+        "title": "2013 week 16 Miami Dolphins at Buffalo Bills",
+        "url": "https://www.youtube.com/watch?v=ZRgIAVQb93c\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgQnVmZmFsbyBCaWxscyAyMDEzLTEyLTIy",
+        "duration_seconds": 8004,
+        "embeddable": true
+      }
+    ]
   }
 }

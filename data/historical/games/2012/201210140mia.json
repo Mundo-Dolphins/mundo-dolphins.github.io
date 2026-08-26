@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "St. Louis Rams vs Miami Dolphins",
     "date": "2012-10-14",
-    "slug": "stl-mia-20121014",
-    "path": "historia/partidos/stl-mia-20121014",
+    "slug": "ram-mia-20121014",
+    "path": "historia/partidos/ram-mia-20121014",
     "params": {
       "game_id": "201210140mia"
     }
@@ -2596,6 +2596,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de octubre de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2839,6 +2841,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "VEQYIsoetKI",
+        "title": "St. Louis Rams @ Miami Dolphins - WEEK 6 (10/14/2012)",
+        "url": "https://www.youtube.com/watch?v=VEQYIsoetKI\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgU3QuIExvdWlzIFJhbXMgMjAwOC0xMS0zMA%3D%3D",
+        "duration_seconds": 8036,
+        "embeddable": false
+      }
+    ]
   }
 }

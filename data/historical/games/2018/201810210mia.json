@@ -3749,6 +3749,8 @@
     },
     "Información del partido": {
       "Semana": "7",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de octubre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3972,6 +3974,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "vyMCtv6RdGs",
+        "title": "2018 – Week 7 – Lions 32 @ Dolphins 21",
+        "url": "https://www.youtube.com/watch?v=vyMCtv6RdGs\u0026pp=ygUqRGV0cm9pdCBMaW9ucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE4LTEwLTIx",
+        "duration_seconds": 7295,
+        "embeddable": false
+      }
+    ]
   }
 }

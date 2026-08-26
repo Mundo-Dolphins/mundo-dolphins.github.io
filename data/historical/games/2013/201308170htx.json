@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Houston Texans",
     "date": "2013-08-17",
-    "slug": "mia-hou-20130817",
-    "path": "historia/partidos/mia-hou-20130817",
+    "slug": "mia-htx-20130817",
+    "path": "historia/partidos/mia-htx-20130817",
     "params": {
       "game_id": "201308170htx"
     }
@@ -975,11 +975,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 2",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "17 de agosto de 2013",
       "Gamebook oficial": "assets/gamebooks/2013/201308170htx.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "rPk2_pTIF-A",
+        "title": "2013 – Preseason Week 2 – Dolphins 17 @ Texans 24",
+        "url": "https://www.youtube.com/watch?v=rPk2_pTIF-A\u0026pp=ygUrTWlhbWkgRG9scGhpbnMgdnMgSG91c3RvbiBUZXhhbnMgMjAwMi0wOC0yNA%3D%3D",
+        "duration_seconds": 8759,
+        "embeddable": true
+      }
+    ]
   }
 }

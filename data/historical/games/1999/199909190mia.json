@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Arizona Cardinals vs Miami Dolphins",
     "date": "1999-09-19",
-    "slug": "ari-mia-19990919",
-    "path": "historia/partidos/ari-mia-19990919",
+    "slug": "crd-mia-19990919",
+    "path": "historia/partidos/crd-mia-19990919",
     "params": {
       "game_id": "199909190mia"
     }
@@ -1849,6 +1849,8 @@
     },
     "Información del partido": {
       "Semana": "2",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "19 de septiembre de 1999",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1984-09-23",
-    "slug": "ind-mia-19840923",
-    "path": "historia/partidos/ind-mia-19840923",
+    "slug": "clt-mia-19840923",
+    "path": "historia/partidos/clt-mia-19840923",
     "params": {
       "game_id": "198409230mia"
     }
@@ -902,6 +902,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de septiembre de 1984",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

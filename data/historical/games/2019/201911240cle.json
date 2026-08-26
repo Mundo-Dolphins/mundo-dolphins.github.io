@@ -4177,6 +4177,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de noviembre de 2019",
       "Estadio": "FirstEnergy Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4440,6 +4442,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "8JdxmTEcVaw",
+        "title": "Dolphins vs. Browns Week 12 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=8JdxmTEcVaw\u0026pp=ygUtQ2xldmVsYW5kIEJyb3ducyB2cyBNaWFtaSBEb2xwaGlucyAyMDEwLTEyLTA1",
+        "duration_seconds": 681,
+        "embeddable": false
+      }
+    ]
   }
 }

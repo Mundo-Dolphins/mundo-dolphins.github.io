@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Baltimore Ravens",
     "date": "2023-12-31",
-    "slug": "mia-bal-20231231",
-    "path": "historia/partidos/mia-bal-20231231",
+    "slug": "mia-rav-20231231",
+    "path": "historia/partidos/mia-rav-20231231",
     "params": {
       "game_id": "202312310rav"
     }
@@ -4309,6 +4309,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "31 de diciembre de 2023",
       "Estadio": "M\u0026T Bank Stadium",
       "Tipo de estadio": "Al aire libre",

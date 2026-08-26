@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1997-11-23",
-    "slug": "mia-new-19971123",
-    "path": "historia/partidos/mia-new-19971123",
+    "slug": "mia-nwe-19971123",
+    "path": "historia/partidos/mia-nwe-19971123",
     "params": {
       "game_id": "199711230nwe"
     }
@@ -1261,6 +1261,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "23 de noviembre de 1997",
       "Estadio": "Foxboro Stadium",
       "Tipo de estadio": "Al aire libre",

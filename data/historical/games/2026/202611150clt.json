@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:06Z",
+  "generated_at": "2026-08-26T07:50:46Z",
   "page": {
     "kind": "game",
-    "title": "Miami Dolphins vs Rival",
+    "title": "Partido 202611150clt",
     "date": "2026-11-15",
-    "slug": "mia-riv-20261115",
-    "path": "historia/partidos/mia-riv-20261115",
+    "slug": "202611150clt",
+    "path": "historia/partidos/202611150clt",
     "params": {
       "game_id": "202611150clt"
     }
@@ -22,7 +22,10 @@
     "Conteo de snaps": {},
     "Equipos": {},
     "Estadísticas avanzadas": {},
-    "Información del partido": {},
+    "Información del partido": {
+      "Estado": "scheduled",
+      "Fecha": "15 de noviembre de 2026"
+    },
     "Oficiales": [],
     "Series ofensivas": {},
     "Videos del partido": []

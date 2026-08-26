@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Arizona Cardinals",
     "date": "2020-11-08",
-    "slug": "mia-ari-20201108",
-    "path": "historia/partidos/mia-ari-20201108",
+    "slug": "mia-crd-20201108",
+    "path": "historia/partidos/mia-crd-20201108",
     "params": {
       "game_id": "202011080crd"
     }
@@ -4094,6 +4094,8 @@
     },
     "Información del partido": {
       "Semana": "9",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de noviembre de 2020",
       "Estadio": "State Farm Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -4316,6 +4318,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "HknlyJVc7AQ",
+        "title": "Dolphins vs. Cardinals Week 9 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=HknlyJVc7AQ\u0026pp=ygUtU2VhdHRsZSBTZWFoYXdrcyB2cyBNaWFtaSBEb2xwaGlucyAyMDIwLTEwLTA0",
+        "duration_seconds": 726,
+        "embeddable": false
+      }
+    ]
   }
 }

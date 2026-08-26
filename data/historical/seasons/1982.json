@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:02Z",
+  "generated_at": "2026-08-26T10:11:28Z",
   "page": {
     "kind": "season",
     "title": "Temporada 1982",
@@ -2137,86 +2137,298 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-19820912",
+        "game_id": "198209120nyj",
         "fecha": "12-09-1982",
-        "url": "/historia/partidos/mia-nyj-19820912/"
+        "date": "1982-09-12",
+        "url": "/historia/partidos/mia-nyj-19820912/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Baltimore Colts",
+        "title": "Baltimore Colts vs Miami Dolphins",
         "id": "bal-mia-19820919",
+        "game_id": "198209190mia",
         "fecha": "19-09-1982",
-        "url": "/historia/partidos/bal-mia-19820919/"
+        "date": "1982-09-19",
+        "url": "/historia/partidos/bal-mia-19820919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-19821121",
+        "game_id": "198211210buf",
         "fecha": "21-11-1982",
-        "url": "/historia/partidos/mia-buf-19821121/"
+        "date": "1982-11-21",
+        "url": "/historia/partidos/mia-buf-19821121/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tampa Bay Buccaneers",
         "id": "mia-tam-19821129",
+        "game_id": "198211290tam",
         "fecha": "29-11-1982",
-        "url": "/historia/partidos/mia-tam-19821129/"
+        "date": "1982-11-29",
+        "url": "/historia/partidos/mia-tam-19821129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Minnesota Vikings",
+        "title": "Minnesota Vikings vs Miami Dolphins",
         "id": "min-mia-19821205",
+        "game_id": "198212050mia",
         "fecha": "05-12-1982",
-        "url": "/historia/partidos/min-mia-19821205/"
+        "date": "1982-12-05",
+        "url": "/historia/partidos/min-mia-19821205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-19821212",
+        "id": "mia-nwe-19821212",
+        "game_id": "198212120nwe",
         "fecha": "12-12-1982",
-        "url": "/historia/partidos/mia-new-19821212/"
+        "date": "1982-12-12",
+        "url": "/historia/partidos/mia-nwe-19821212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19821218",
+        "game_id": "198212180mia",
         "fecha": "18-12-1982",
-        "url": "/historia/partidos/nyj-mia-19821218/"
+        "date": "1982-12-18",
+        "url": "/historia/partidos/nyj-mia-19821218/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-19821227",
+        "game_id": "198212270mia",
         "fecha": "27-12-1982",
-        "url": "/historia/partidos/buf-mia-19821227/"
+        "date": "1982-12-27",
+        "url": "/historia/partidos/buf-mia-19821227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Baltimore Colts",
         "id": "mia-bal-19830102",
+        "game_id": "198301020clt",
         "fecha": "02-01-1983",
-        "url": "/historia/partidos/mia-bal-19830102/"
+        "date": "1983-01-02",
+        "url": "/historia/partidos/mia-bal-19830102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19830108",
+        "game_id": "198301080mia",
+        "fecha": "08-01-1983",
+        "date": "1983-01-08",
+        "url": "/historia/partidos/nwe-mia-19830108/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "San Diego Chargers vs Miami Dolphins",
+        "id": "sdg-mia-19830116",
+        "game_id": "198301160mia",
+        "fecha": "16-01-1983",
+        "date": "1983-01-16",
+        "url": "/historia/partidos/sdg-mia-19830116/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19830123",
+        "game_id": "198301230mia",
+        "fecha": "23-01-1983",
+        "date": "1983-01-23",
+        "url": "/historia/partidos/nyj-mia-19830123/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-19820912",
+        "game_id": "198209120nyj",
+        "fecha": "12-09-1982",
+        "date": "1982-09-12",
+        "url": "/historia/partidos/mia-nyj-19820912/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Baltimore Colts vs Miami Dolphins",
+        "id": "bal-mia-19820919",
+        "game_id": "198209190mia",
+        "fecha": "19-09-1982",
+        "date": "1982-09-19",
+        "url": "/historia/partidos/bal-mia-19820919/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-19821121",
+        "game_id": "198211210buf",
+        "fecha": "21-11-1982",
+        "date": "1982-11-21",
+        "url": "/historia/partidos/mia-buf-19821121/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-19821129",
+        "game_id": "198211290tam",
+        "fecha": "29-11-1982",
+        "date": "1982-11-29",
+        "url": "/historia/partidos/mia-tam-19821129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Minnesota Vikings vs Miami Dolphins",
+        "id": "min-mia-19821205",
+        "game_id": "198212050mia",
+        "fecha": "05-12-1982",
+        "date": "1982-12-05",
+        "url": "/historia/partidos/min-mia-19821205/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-19821212",
+        "game_id": "198212120nwe",
+        "fecha": "12-12-1982",
+        "date": "1982-12-12",
+        "url": "/historia/partidos/mia-nwe-19821212/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-19821218",
+        "game_id": "198212180mia",
+        "fecha": "18-12-1982",
+        "date": "1982-12-18",
+        "url": "/historia/partidos/nyj-mia-19821218/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-19821227",
+        "game_id": "198212270mia",
+        "fecha": "27-12-1982",
+        "date": "1982-12-27",
+        "url": "/historia/partidos/buf-mia-19821227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Baltimore Colts",
+        "id": "mia-bal-19830102",
+        "game_id": "198301020clt",
+        "fecha": "02-01-1983",
+        "date": "1983-01-02",
+        "url": "/historia/partidos/mia-bal-19830102/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Playoffs": [
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-19830108",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-19830108",
+        "game_id": "198301080mia",
         "fecha": "08-01-1983",
-        "url": "/historia/partidos/new-mia-19830108/"
+        "date": "1983-01-08",
+        "url": "/historia/partidos/nwe-mia-19830108/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs San Diego Chargers",
+        "title": "San Diego Chargers vs Miami Dolphins",
         "id": "sdg-mia-19830116",
+        "game_id": "198301160mia",
         "fecha": "16-01-1983",
-        "url": "/historia/partidos/sdg-mia-19830116/"
+        "date": "1983-01-16",
+        "url": "/historia/partidos/sdg-mia-19830116/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-19830123",
+        "game_id": "198301230mia",
         "fecha": "23-01-1983",
-        "url": "/historia/partidos/nyj-mia-19830123/"
-      },
-      {
-        "title": "Miami Dolphins vs Washington Redskins",
-        "id": "was-mia-19830130",
-        "fecha": "30-01-1983",
-        "url": "/historia/partidos/was-mia-19830130/"
+        "date": "1983-01-23",
+        "url": "/historia/partidos/nyj-mia-19830123/",
+        "stage": "Playoffs",
+        "week": "Playoffs",
+        "game_type": "postseason",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2226,6 +2438,7 @@
       "Puntos a favor": "198 puntos. 10º de 28 equipos",
       "Puntos en contra": "131 puntos. 2º de 28 equipos",
       "Head Coach": "Don Shula (7-2-0)",
+      "General Manager": "Mike Robbie",
       "Estadio": "Orange Bowl",
       "Training Camp": "St. Thomas University (Miami Gardens, Florida)",
       "Alineación defensiva": "3-4",

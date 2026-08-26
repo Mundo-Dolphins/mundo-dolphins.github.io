@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "1978-10-22",
-    "slug": "mia-new-19781022",
-    "path": "historia/partidos/mia-new-19781022",
+    "slug": "mia-nwe-19781022",
+    "path": "historia/partidos/mia-nwe-19781022",
     "params": {
       "game_id": "197810220nwe"
     }
@@ -760,6 +760,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de octubre de 1978",
       "Estadio": "Schaefer Stadium",
       "Tipo de estadio": "Al aire libre",

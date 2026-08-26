@@ -2751,6 +2751,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de diciembre de 2015",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3034,6 +3036,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "7TVngD6KS8A",
+        "title": "Giants at Dolphins Week 14 2015 | Full Game 720p60fps",
+        "url": "https://www.youtube.com/watch?v=7TVngD6KS8A\u0026pp=ygUsTmV3IFlvcmsgR2lhbnRzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTUtMTItMTQ%3D",
+        "duration_seconds": 8513,
+        "embeddable": false
+      }
+    ]
   }
 }

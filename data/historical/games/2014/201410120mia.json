@@ -2647,6 +2647,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "12 de octubre de 2014",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2910,6 +2912,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Qm8DFlY9pP0",
+        "title": "2014 Packers @ Dolphins",
+        "url": "https://www.youtube.com/watch?v=Qm8DFlY9pP0\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgR3JlZW4gQmF5IFBhY2tlcnMgMjAwMS0wOC0yNQ%3D%3D",
+        "duration_seconds": 8537,
+        "embeddable": false
+      }
+    ]
   }
 }

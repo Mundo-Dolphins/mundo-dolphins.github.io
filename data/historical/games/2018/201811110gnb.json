@@ -4110,6 +4110,8 @@
     },
     "Información del partido": {
       "Semana": "10",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de noviembre de 2018",
       "Estadio": "Lambeau Field",
       "Tipo de estadio": "Al aire libre",
@@ -4343,6 +4345,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "u8w5plPO0UU",
+        "title": "2018 – Week 10 – Dolphins 12 @ Packers 31",
+        "url": "https://www.youtube.com/watch?v=u8w5plPO0UU\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgR3JlZW4gQmF5IFBhY2tlcnMgMjAxMC0xMC0xNw%3D%3D",
+        "duration_seconds": 7379,
+        "embeddable": false
+      }
+    ]
   }
 }

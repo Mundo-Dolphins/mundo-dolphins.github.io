@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1978-12-18",
-    "slug": "new-mia-19781218",
-    "path": "historia/partidos/new-mia-19781218",
+    "slug": "nwe-mia-19781218",
+    "path": "historia/partidos/nwe-mia-19781218",
     "params": {
       "game_id": "197812180mia"
     }
@@ -929,6 +929,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "18 de diciembre de 1978",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

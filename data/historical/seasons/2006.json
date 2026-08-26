@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2006",
@@ -2279,102 +2279,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20060812",
+        "game_id": "200608120mia",
+        "fecha": "12-08-2006",
+        "date": "2006-08-12",
+        "url": "/historia/partidos/jax-mia-20060812/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-20060819",
+        "game_id": "200608190tam",
+        "fecha": "19-08-2006",
+        "date": "2006-08-19",
+        "url": "/historia/partidos/mia-tam-20060819/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-20060824",
+        "game_id": "200608240car",
+        "fecha": "24-08-2006",
+        "date": "2006-08-24",
+        "url": "/historia/partidos/mia-car-20060824/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Los Angeles Rams vs Miami Dolphins",
+        "id": "ram-mia-20060831",
+        "game_id": "200608310mia",
+        "fecha": "31-08-2006",
+        "date": "2006-08-31",
+        "url": "/historia/partidos/ram-mia-20060831/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Pittsburgh Steelers",
         "id": "mia-pit-20060907",
+        "game_id": "200609070pit",
         "fecha": "07-09-2006",
-        "url": "/historia/partidos/mia-pit-20060907/"
+        "date": "2006-09-07",
+        "url": "/historia/partidos/mia-pit-20060907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20060917",
+        "game_id": "200609170mia",
         "fecha": "17-09-2006",
-        "url": "/historia/partidos/buf-mia-20060917/"
+        "date": "2006-09-17",
+        "url": "/historia/partidos/buf-mia-20060917/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "ten-mia-20060924",
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20060924",
+        "game_id": "200609240mia",
         "fecha": "24-09-2006",
-        "url": "/historia/partidos/ten-mia-20060924/"
+        "date": "2006-09-24",
+        "url": "/historia/partidos/oti-mia-20060924/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Houston Texans",
-        "id": "mia-hou-20061001",
+        "id": "mia-htx-20061001",
+        "game_id": "200610010htx",
         "fecha": "01-10-2006",
-        "url": "/historia/partidos/mia-hou-20061001/"
+        "date": "2006-10-01",
+        "url": "/historia/partidos/mia-htx-20061001/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20061008",
+        "id": "mia-nwe-20061008",
+        "game_id": "200610080nwe",
         "fecha": "08-10-2006",
-        "url": "/historia/partidos/mia-new-20061008/"
+        "date": "2006-10-08",
+        "url": "/historia/partidos/mia-nwe-20061008/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20061015",
+        "game_id": "200610150nyj",
         "fecha": "15-10-2006",
-        "url": "/historia/partidos/mia-nyj-20061015/"
+        "date": "2006-10-15",
+        "url": "/historia/partidos/mia-nyj-20061015/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Green Bay Packers",
+        "title": "Green Bay Packers vs Miami Dolphins",
         "id": "gnb-mia-20061022",
+        "game_id": "200610220mia",
         "fecha": "22-10-2006",
-        "url": "/historia/partidos/gnb-mia-20061022/"
+        "date": "2006-10-22",
+        "url": "/historia/partidos/gnb-mia-20061022/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Chicago Bears",
         "id": "mia-chi-20061105",
+        "game_id": "200611050chi",
         "fecha": "05-11-2006",
-        "url": "/historia/partidos/mia-chi-20061105/"
+        "date": "2006-11-05",
+        "url": "/historia/partidos/mia-chi-20061105/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Kansas City Chiefs",
+        "title": "Kansas City Chiefs vs Miami Dolphins",
         "id": "kan-mia-20061112",
+        "game_id": "200611120mia",
         "fecha": "12-11-2006",
-        "url": "/historia/partidos/kan-mia-20061112/"
+        "date": "2006-11-12",
+        "url": "/historia/partidos/kan-mia-20061112/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Minnesota Vikings",
+        "title": "Minnesota Vikings vs Miami Dolphins",
         "id": "min-mia-20061119",
+        "game_id": "200611190mia",
         "fecha": "19-11-2006",
-        "url": "/historia/partidos/min-mia-20061119/"
+        "date": "2006-11-19",
+        "url": "/historia/partidos/min-mia-20061119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Detroit Lions",
         "id": "mia-det-20061123",
+        "game_id": "200611230det",
         "fecha": "23-11-2006",
-        "url": "/historia/partidos/mia-det-20061123/"
+        "date": "2006-11-23",
+        "url": "/historia/partidos/mia-det-20061123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "jac-mia-20061203",
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20061203",
+        "game_id": "200612030mia",
         "fecha": "03-12-2006",
-        "url": "/historia/partidos/jac-mia-20061203/"
+        "date": "2006-12-03",
+        "url": "/historia/partidos/jax-mia-20061203/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20061210",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20061210",
+        "game_id": "200612100mia",
         "fecha": "10-12-2006",
-        "url": "/historia/partidos/new-mia-20061210/"
+        "date": "2006-12-10",
+        "url": "/historia/partidos/nwe-mia-20061210/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20061217",
+        "game_id": "200612170buf",
         "fecha": "17-12-2006",
-        "url": "/historia/partidos/mia-buf-20061217/"
+        "date": "2006-12-17",
+        "url": "/historia/partidos/mia-buf-20061217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20061225",
+        "game_id": "200612250mia",
         "fecha": "25-12-2006",
-        "url": "/historia/partidos/nyj-mia-20061225/"
+        "date": "2006-12-25",
+        "url": "/historia/partidos/nyj-mia-20061225/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "mia-ind-20061231",
+        "id": "mia-clt-20061231",
+        "game_id": "200612310clt",
         "fecha": "31-12-2006",
-        "url": "/historia/partidos/mia-ind-20061231/"
+        "date": "2006-12-31",
+        "url": "/historia/partidos/mia-clt-20061231/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "id": "mia-pit-20060907",
+        "game_id": "200609070pit",
+        "fecha": "07-09-2006",
+        "date": "2006-09-07",
+        "url": "/historia/partidos/mia-pit-20060907/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20060917",
+        "game_id": "200609170mia",
+        "fecha": "17-09-2006",
+        "date": "2006-09-17",
+        "url": "/historia/partidos/buf-mia-20060917/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tennessee Titans vs Miami Dolphins",
+        "id": "oti-mia-20060924",
+        "game_id": "200609240mia",
+        "fecha": "24-09-2006",
+        "date": "2006-09-24",
+        "url": "/historia/partidos/oti-mia-20060924/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Houston Texans",
+        "id": "mia-htx-20061001",
+        "game_id": "200610010htx",
+        "fecha": "01-10-2006",
+        "date": "2006-10-01",
+        "url": "/historia/partidos/mia-htx-20061001/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20061008",
+        "game_id": "200610080nwe",
+        "fecha": "08-10-2006",
+        "date": "2006-10-08",
+        "url": "/historia/partidos/mia-nwe-20061008/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20061015",
+        "game_id": "200610150nyj",
+        "fecha": "15-10-2006",
+        "date": "2006-10-15",
+        "url": "/historia/partidos/mia-nyj-20061015/",
+        "stage": "Semana 6",
+        "week": "6",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Green Bay Packers vs Miami Dolphins",
+        "id": "gnb-mia-20061022",
+        "game_id": "200610220mia",
+        "fecha": "22-10-2006",
+        "date": "2006-10-22",
+        "url": "/historia/partidos/gnb-mia-20061022/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Chicago Bears",
+        "id": "mia-chi-20061105",
+        "game_id": "200611050chi",
+        "fecha": "05-11-2006",
+        "date": "2006-11-05",
+        "url": "/historia/partidos/mia-chi-20061105/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Kansas City Chiefs vs Miami Dolphins",
+        "id": "kan-mia-20061112",
+        "game_id": "200611120mia",
+        "fecha": "12-11-2006",
+        "date": "2006-11-12",
+        "url": "/historia/partidos/kan-mia-20061112/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Minnesota Vikings vs Miami Dolphins",
+        "id": "min-mia-20061119",
+        "game_id": "200611190mia",
+        "fecha": "19-11-2006",
+        "date": "2006-11-19",
+        "url": "/historia/partidos/min-mia-20061119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Detroit Lions",
+        "id": "mia-det-20061123",
+        "game_id": "200611230det",
+        "fecha": "23-11-2006",
+        "date": "2006-11-23",
+        "url": "/historia/partidos/mia-det-20061123/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20061203",
+        "game_id": "200612030mia",
+        "fecha": "03-12-2006",
+        "date": "2006-12-03",
+        "url": "/historia/partidos/jax-mia-20061203/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20061210",
+        "game_id": "200612100mia",
+        "fecha": "10-12-2006",
+        "date": "2006-12-10",
+        "url": "/historia/partidos/nwe-mia-20061210/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20061217",
+        "game_id": "200612170buf",
+        "fecha": "17-12-2006",
+        "date": "2006-12-17",
+        "url": "/historia/partidos/mia-buf-20061217/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20061225",
+        "game_id": "200612250mia",
+        "fecha": "25-12-2006",
+        "date": "2006-12-25",
+        "url": "/historia/partidos/nyj-mia-20061225/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Indianapolis Colts",
+        "id": "mia-clt-20061231",
+        "game_id": "200612310clt",
+        "fecha": "31-12-2006",
+        "date": "2006-12-31",
+        "url": "/historia/partidos/mia-clt-20061231/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -2384,6 +2722,7 @@
       "Puntos a favor": "260 puntos. 29º de 32 equipos",
       "Puntos en contra": "283 puntos. 5º de 32 equipos",
       "Head Coach": "Nick Saban (6-10-0)",
+      "General Manager": "Randy Mueller",
       "Estadio": "Dolphin Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "4-3",

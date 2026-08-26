@@ -3884,6 +3884,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de octubre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4187,6 +4189,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "vBPUp8CHwQs",
+        "title": "2018 – Week 6 – Bears 28 @ Dolphins 31",
+        "url": "https://www.youtube.com/watch?v=vBPUp8CHwQs\u0026pp=ygUqQ2hpY2FnbyBCZWFycyB2cyBNaWFtaSBEb2xwaGlucyAyMDE4LTEwLTE0",
+        "duration_seconds": 9449,
+        "embeddable": true
+      }
+    ]
   }
 }

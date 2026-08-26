@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Indianapolis Colts vs Miami Dolphins",
     "date": "1996-11-10",
-    "slug": "ind-mia-19961110",
-    "path": "historia/partidos/ind-mia-19961110",
+    "slug": "clt-mia-19961110",
+    "path": "historia/partidos/clt-mia-19961110",
     "params": {
       "game_id": "199611100mia"
     }
@@ -1339,6 +1339,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de noviembre de 1996",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

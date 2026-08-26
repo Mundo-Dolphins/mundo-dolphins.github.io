@@ -937,11 +937,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 1",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "10 de agosto de 2017",
       "Gamebook oficial": "assets/gamebooks/2017/201708100mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "y26kn1yI9Xc",
+        "title": "Miami Dolphins vs Atlanta Falcons | 08/10/2017 | Preseason 2017",
+        "url": "https://www.youtube.com/watch?v=y26kn1yI9Xc\u0026pp=ygUsQXRsYW50YSBGYWxjb25zIHZzIE1pYW1pIERvbHBoaW5zIDIwMTctMDgtMTA%3D",
+        "duration_seconds": 1491,
+        "embeddable": true
+      }
+    ]
   }
 }

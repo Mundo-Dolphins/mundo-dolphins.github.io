@@ -2934,6 +2934,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de septiembre de 2014",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3247,6 +3249,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "LBPHgySD3DQ",
+        "title": "2014 – Week 3 – Chiefs 34 @ Dolphins 15",
+        "url": "https://www.youtube.com/watch?v=LBPHgySD3DQ\u0026pp=ygUvS2Fuc2FzIENpdHkgQ2hpZWZzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTQtMDktMjE%3D",
+        "duration_seconds": 7648,
+        "embeddable": false
+      }
+    ]
   }
 }

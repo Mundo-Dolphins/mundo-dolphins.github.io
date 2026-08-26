@@ -4136,6 +4136,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de octubre de 2020",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4369,6 +4371,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "hY4A_VRuyag",
+        "title": "Seahawks vs. Dolphins Week 4 Highlights | NFL 2020",
+        "url": "https://www.youtube.com/watch?v=hY4A_VRuyag\u0026pp=ygUtU2VhdHRsZSBTZWFoYXdrcyB2cyBNaWFtaSBEb2xwaGlucyAyMDIwLTEwLTA0",
+        "duration_seconds": 709,
+        "embeddable": false
+      }
+    ]
   }
 }

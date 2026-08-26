@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs San Francisco 49ers",
     "date": "2012-12-09",
-    "slug": "mia-san-20121209",
-    "path": "historia/partidos/mia-san-20121209",
+    "slug": "mia-sfo-20121209",
+    "path": "historia/partidos/mia-sfo-20121209",
     "params": {
       "game_id": "201212090sfo"
     }
@@ -2750,6 +2750,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "9 de diciembre de 2012",
       "Estadio": "Candlestick Park",
       "Tipo de estadio": "Al aire libre",
@@ -2973,6 +2975,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "sqeIlvqY5po",
+        "title": "2012 Week 14 – Dolphins 13 @ 49ers 27",
+        "url": "https://www.youtube.com/watch?v=sqeIlvqY5po\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgU2FuIEZyYW5jaXNjbyA0OWVycyAyMDEyLTEyLTA5",
+        "duration_seconds": 7226,
+        "embeddable": true
+      }
+    ]
   }
 }

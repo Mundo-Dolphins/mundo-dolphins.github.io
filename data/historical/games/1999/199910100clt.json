@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Indianapolis Colts",
     "date": "1999-10-10",
-    "slug": "mia-ind-19991010",
-    "path": "historia/partidos/mia-ind-19991010",
+    "slug": "mia-clt-19991010",
+    "path": "historia/partidos/mia-clt-19991010",
     "params": {
       "game_id": "199910100clt"
     }
@@ -1955,6 +1955,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de octubre de 1999",
       "Estadio": "RCA Dome",
       "Tipo de estadio": "dome",

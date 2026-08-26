@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1999-11-21",
-    "slug": "new-mia-19991121",
-    "path": "historia/partidos/new-mia-19991121",
+    "slug": "nwe-mia-19991121",
+    "path": "historia/partidos/nwe-mia-19991121",
     "params": {
       "game_id": "199911210mia"
     }
@@ -1883,6 +1883,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "21 de noviembre de 1999",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

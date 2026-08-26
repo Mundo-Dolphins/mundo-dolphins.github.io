@@ -2540,6 +2540,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de noviembre de 2015",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2793,6 +2795,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "EmfEUbNeI7k",
+        "title": "Tony Romo's last complete start - Full Game - 11/22/2015",
+        "url": "https://www.youtube.com/watch?v=EmfEUbNeI7k\u0026pp=ygUrRGFsbGFzIENvd2JveXMgdnMgTWlhbWkgRG9scGhpbnMgMjAxNS0xMS0yMg%3D%3D",
+        "duration_seconds": 7809,
+        "embeddable": false
+      }
+    ]
   }
 }

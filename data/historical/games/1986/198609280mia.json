@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "San Francisco 49ers vs Miami Dolphins",
     "date": "1986-09-28",
-    "slug": "san-mia-19860928",
-    "path": "historia/partidos/san-mia-19860928",
+    "slug": "sfo-mia-19860928",
+    "path": "historia/partidos/sfo-mia-19860928",
     "params": {
       "game_id": "198609280mia"
     }
@@ -1026,6 +1026,8 @@
     },
     "Información del partido": {
       "Semana": "4",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de septiembre de 1986",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

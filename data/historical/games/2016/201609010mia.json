@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Tennessee Titans vs Miami Dolphins",
     "date": "2016-09-01",
-    "slug": "ten-mia-20160901",
-    "path": "historia/partidos/ten-mia-20160901",
+    "slug": "oti-mia-20160901",
+    "path": "historia/partidos/oti-mia-20160901",
     "params": {
       "game_id": "201609010mia"
     }
@@ -854,11 +854,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 4",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "1 de septiembre de 2016",
       "Gamebook oficial": "assets/gamebooks/2016/201609010mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "tQ7r_B00nKI",
+        "title": "2016 – Preseason Week 4 – Titans 21 @ Dolphins 10",
+        "url": "https://www.youtube.com/watch?v=tQ7r_B00nKI\u0026pp=ygUtVGVubmVzc2VlIFRpdGFucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE2LTA5LTAx",
+        "duration_seconds": 7033,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Tennessee Titans",
     "date": "2022-01-02",
-    "slug": "mia-ten-20220102",
-    "path": "historia/partidos/mia-ten-20220102",
+    "slug": "mia-oti-20220102",
+    "path": "historia/partidos/mia-oti-20220102",
     "params": {
       "game_id": "202201020oti"
     }
@@ -4043,6 +4043,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de enero de 2022",
       "Estadio": "Nissan Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -2649,6 +2649,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "15 de octubre de 2017",
       "Estadio": "Mercedes-Benz Stadium",
       "Tipo de estadio": "Techo retráctil (cerrado)",
@@ -2871,6 +2873,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "0iAf1V_B8S4",
+        "title": "2017 – Week 6 – Dolphins 20 @ Falcons 17",
+        "url": "https://www.youtube.com/watch?v=0iAf1V_B8S4\u0026pp=ygUsQXRsYW50YSBGYWxjb25zIHZzIE1pYW1pIERvbHBoaW5zIDIwMTctMDgtMTA%3D",
+        "duration_seconds": 1927,
+        "embeddable": false
+      }
+    ]
   }
 }

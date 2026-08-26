@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Baltimore Ravens vs Miami Dolphins",
     "date": "2019-09-08",
-    "slug": "bal-mia-20190908",
-    "path": "historia/partidos/bal-mia-20190908",
+    "slug": "rav-mia-20190908",
+    "path": "historia/partidos/rav-mia-20190908",
     "params": {
       "game_id": "201909080mia"
     }
@@ -4313,6 +4313,8 @@
     },
     "Información del partido": {
       "Semana": "1",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de septiembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4576,6 +4578,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "NMFUWfoWV_k",
+        "title": "2019 – Week 1 – Ravens 59 @ Dolphins 10",
+        "url": "https://www.youtube.com/watch?v=NMFUWfoWV_k\u0026pp=ygUtQmFsdGltb3JlIFJhdmVucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE5LTA5LTA4",
+        "duration_seconds": 7804,
+        "embeddable": false
+      }
+    ]
   }
 }

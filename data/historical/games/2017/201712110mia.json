@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "2017-12-11",
-    "slug": "new-mia-20171211",
-    "path": "historia/partidos/new-mia-20171211",
+    "slug": "nwe-mia-20171211",
+    "path": "historia/partidos/nwe-mia-20171211",
     "params": {
       "game_id": "201712110mia"
     }
@@ -2786,6 +2786,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "11 de diciembre de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3099,6 +3101,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "j7RZy2B73hw",
+        "title": "Patriots vs. Dolphins | NFL Week 14 Game Highlights",
+        "url": "https://www.youtube.com/watch?v=j7RZy2B73hw\u0026pp=ygUxTWlhbWkgRG9scGhpbnMgdnMgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgMjAxNy0xMS0yNg%3D%3D",
+        "duration_seconds": 610,
+        "embeddable": false
+      }
+    ]
   }
 }

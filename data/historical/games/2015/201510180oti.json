@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs Tennessee Titans",
     "date": "2015-10-18",
-    "slug": "mia-ten-20151018",
-    "path": "historia/partidos/mia-ten-20151018",
+    "slug": "mia-oti-20151018",
+    "path": "historia/partidos/mia-oti-20151018",
     "params": {
       "game_id": "201510180oti"
     }
@@ -2767,6 +2767,8 @@
     },
     "Información del partido": {
       "Semana": "6",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "18 de octubre de 2015",
       "Estadio": "Nissan Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3030,6 +3032,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "lmpMmlqPgWo",
+        "title": "2015 week 6 Miami Dolphins at Tennessee Titans",
+        "url": "https://www.youtube.com/watch?v=lmpMmlqPgWo\u0026pp=ygUtVGVubmVzc2VlIFRpdGFucyB2cyBNaWFtaSBEb2xwaGlucyAyMDA2LTA5LTI0",
+        "duration_seconds": 8148,
+        "embeddable": false
+      }
+    ]
   }
 }

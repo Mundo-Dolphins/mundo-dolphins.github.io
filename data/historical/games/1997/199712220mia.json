@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1997-12-22",
-    "slug": "new-mia-19971222",
-    "path": "historia/partidos/new-mia-19971222",
+    "slug": "nwe-mia-19971222",
+    "path": "historia/partidos/nwe-mia-19971222",
     "params": {
       "game_id": "199712220mia"
     }
@@ -1335,6 +1335,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de diciembre de 1997",
       "Estadio": "Pro Player Stadium",
       "Tipo de estadio": "Al aire libre",

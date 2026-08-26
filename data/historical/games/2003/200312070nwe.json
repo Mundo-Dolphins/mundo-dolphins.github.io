@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2003-12-07",
-    "slug": "mia-new-20031207",
-    "path": "historia/partidos/mia-new-20031207",
+    "slug": "mia-nwe-20031207",
+    "path": "historia/partidos/mia-nwe-20031207",
     "params": {
       "game_id": "200312070nwe"
     }
@@ -1904,6 +1904,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "7 de diciembre de 2003",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

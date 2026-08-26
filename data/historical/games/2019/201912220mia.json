@@ -4082,6 +4082,8 @@
     },
     "Información del partido": {
       "Semana": "16",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "22 de diciembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4425,6 +4427,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "B7EKfgqr1Is",
+        "title": "Bengals vs. Dolphins Week 16 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=B7EKfgqr1Is\u0026pp=ygUvTWlhbWkgRG9scGhpbnMgdnMgQ2luY2lubmF0aSBCZW5nYWxzIDIwMDQtMDktMTnSBwkJEwwBhyohjO8%3D",
+        "duration_seconds": 652,
+        "embeddable": false
+      }
+    ]
   }
 }

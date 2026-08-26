@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2006-01-01",
-    "slug": "mia-new-20060101",
-    "path": "historia/partidos/mia-new-20060101",
+    "slug": "mia-nwe-20060101",
+    "path": "historia/partidos/mia-nwe-20060101",
     "params": {
       "game_id": "200601010nwe"
     }
@@ -1951,6 +1951,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de enero de 2006",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

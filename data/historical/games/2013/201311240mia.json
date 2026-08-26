@@ -2689,6 +2689,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "24 de noviembre de 2013",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2992,6 +2994,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "2mWsFAI9GQk",
+        "title": "2013 Panthers @ Dolphins",
+        "url": "https://www.youtube.com/watch?v=2mWsFAI9GQk\u0026pp=ygUuTWlhbWkgRG9scGhpbnMgdnMgQ2Fyb2xpbmEgUGFudGhlcnMgMjAxMi0wOC0xNw%3D%3D",
+        "duration_seconds": 8316,
+        "embeddable": false
+      }
+    ]
   }
 }

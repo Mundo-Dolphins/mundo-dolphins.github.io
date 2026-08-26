@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs New England Patriots",
     "date": "2004-10-10",
-    "slug": "mia-new-20041010",
-    "path": "historia/partidos/mia-new-20041010",
+    "slug": "mia-nwe-20041010",
+    "path": "historia/partidos/mia-nwe-20041010",
     "params": {
       "game_id": "200410100nwe"
     }
@@ -1977,6 +1977,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "10 de octubre de 2004",
       "Estadio": "Gillette Stadium",
       "Tipo de estadio": "Al aire libre",

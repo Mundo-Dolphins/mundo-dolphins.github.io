@@ -4111,6 +4111,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de diciembre de 2019",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4373,6 +4375,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "2GhZEQyS4P8",
+        "title": "Eagles vs. Dolphins Week 13 Highlights | NFL 2019",
+        "url": "https://www.youtube.com/watch?v=2GhZEQyS4P8\u0026pp=ygUwTWlhbWkgRG9scGhpbnMgdnMgUGhpbGFkZWxwaGlhIEVhZ2xlcyAxOTg3LTEyLTEz",
+        "duration_seconds": 870,
+        "embeddable": false
+      }
+    ]
   }
 }

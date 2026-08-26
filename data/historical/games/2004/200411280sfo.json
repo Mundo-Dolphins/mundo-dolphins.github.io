@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Miami Dolphins vs San Francisco 49ers",
     "date": "2004-11-28",
-    "slug": "mia-san-20041128",
-    "path": "historia/partidos/mia-san-20041128",
+    "slug": "mia-sfo-20041128",
+    "path": "historia/partidos/mia-sfo-20041128",
     "params": {
       "game_id": "200411280sfo"
     }
@@ -1846,6 +1846,8 @@
     },
     "Información del partido": {
       "Semana": "12",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de noviembre de 2004",
       "Estadio": "3Com Park",
       "Tipo de estadio": "Al aire libre",

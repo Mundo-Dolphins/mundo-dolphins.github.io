@@ -1727,6 +1727,8 @@
     },
     "Información del partido": {
       "Semana": "17",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "1 de enero de 2012",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -2000,6 +2002,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "Bfz7Z42yrAA",
+        "title": "2011 Week 17 Jets 17 @ Dolphins 19",
+        "url": "https://www.youtube.com/watch?v=Bfz7Z42yrAA\u0026pp=ygUqTWlhbWkgRG9scGhpbnMgdnMgTmV3IFlvcmsgSmV0cyAyMDExLTEwLTE3",
+        "duration_seconds": 7725,
+        "embeddable": false
+      }
+    ]
   }
 }

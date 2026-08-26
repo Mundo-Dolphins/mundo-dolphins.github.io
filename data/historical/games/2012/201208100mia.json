@@ -919,11 +919,21 @@
     "Estadísticas avanzadas": {},
     "Información del partido": {
       "Semana": "Preseason 1",
+      "Tipo de partido": "preseason",
+      "Estado": "final",
       "Fecha": "10 de agosto de 2012",
       "Gamebook oficial": "assets/gamebooks/2012/201208100mia.pdf"
     },
     "Oficiales": [],
     "Series ofensivas": {},
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "2lXUmK265kE",
+        "title": "2012 Preseason Week 1 Bucs 20 @ Dolphins 7",
+        "url": "https://www.youtube.com/watch?v=2lXUmK265kE\u0026pp=ygUxVGFtcGEgQmF5IEJ1Y2NhbmVlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxMi0wOC0xMA%3D%3D",
+        "duration_seconds": 7612,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "Tennessee Titans vs Miami Dolphins",
     "date": "2017-10-08",
-    "slug": "ten-mia-20171008",
-    "path": "historia/partidos/ten-mia-20171008",
+    "slug": "oti-mia-20171008",
+    "path": "historia/partidos/oti-mia-20171008",
     "params": {
       "game_id": "201710080mia"
     }
@@ -2808,6 +2808,8 @@
     },
     "Información del partido": {
       "Semana": "5",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de octubre de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3141,6 +3143,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "6i1h8sJX6sY",
+        "title": "Tennessee Titans vs Miami Dolphins 2017 Full Game (Week 5)",
+        "url": "https://www.youtube.com/watch?v=6i1h8sJX6sY\u0026pp=ygUtVGVubmVzc2VlIFRpdGFucyB2cyBNaWFtaSBEb2xwaGlucyAyMDE3LTEwLTA4",
+        "duration_seconds": 2388,
+        "embeddable": false
+      }
+    ]
   }
 }

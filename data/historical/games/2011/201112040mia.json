@@ -1725,6 +1725,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "4 de diciembre de 2011",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -1988,6 +1990,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "JP7XzTO0DdU",
+        "title": "2011 Raiders @ Dolphins",
+        "url": "https://www.youtube.com/watch?v=JP7XzTO0DdU\u0026pp=ygUsT2FrbGFuZCBSYWlkZXJzIHZzIE1pYW1pIERvbHBoaW5zIDIwMTEtMTItMDTSBwkJEwwBhyohjO8%3D",
+        "duration_seconds": 7831,
+        "embeddable": true
+      }
+    ]
   }
 }

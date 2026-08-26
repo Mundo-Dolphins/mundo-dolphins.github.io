@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "New England Patriots vs Miami Dolphins",
     "date": "1980-12-08",
-    "slug": "new-mia-19801208",
-    "path": "historia/partidos/new-mia-19801208",
+    "slug": "nwe-mia-19801208",
+    "path": "historia/partidos/nwe-mia-19801208",
     "params": {
       "game_id": "198012080mia"
     }
@@ -779,6 +779,8 @@
     },
     "Información del partido": {
       "Semana": "14",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "8 de diciembre de 1980",
       "Estadio": "Orange Bowl",
       "Tipo de estadio": "Al aire libre",

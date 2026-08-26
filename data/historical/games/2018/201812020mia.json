@@ -4016,6 +4016,8 @@
     },
     "Información del partido": {
       "Semana": "13",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "2 de diciembre de 2018",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -4289,6 +4291,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "ei8fn0FJn7k",
+        "title": "2018 – Week 13 – Bills 17 @ Dolphins 21",
+        "url": "https://www.youtube.com/watch?v=ei8fn0FJn7k\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDE4LTEyLTAy",
+        "duration_seconds": 8301,
+        "embeddable": false
+      }
+    ]
   }
 }

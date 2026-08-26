@@ -2791,6 +2791,8 @@
     },
     "Información del partido": {
       "Semana": "11",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "19 de noviembre de 2017",
       "Estadio": "Hard Rock Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3084,6 +3086,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "LgQnBjVFi9A",
+        "title": "2017 – Week 11 – Bucs 30 @ Dolphins 20",
+        "url": "https://www.youtube.com/watch?v=LgQnBjVFi9A\u0026pp=ygUxVGFtcGEgQmF5IEJ1Y2NhbmVlcnMgdnMgTWlhbWkgRG9scGhpbnMgMjAxNy0xMS0xOQ%3D%3D",
+        "duration_seconds": 2374,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -2861,6 +2861,8 @@
     },
     "Información del partido": {
       "Semana": "8",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "28 de octubre de 2012",
       "Estadio": "MetLife Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3174,6 +3176,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "kC6DMURKGJQ",
+        "title": "2012 Week 8 – Dolphins 30 @ Jets 8",
+        "url": "https://www.youtube.com/watch?v=kC6DMURKGJQ\u0026pp=ygUqTmV3IFlvcmsgSmV0cyB2cyBNaWFtaSBEb2xwaGlucyAyMDEyLTAxLTAx0gcJCRMMAYcqIYzv",
+        "duration_seconds": 8000,
+        "embeddable": false
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-25T14:13:04Z",
+  "generated_at": "2026-08-26T10:11:30Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2009",
@@ -3397,102 +3397,440 @@
         }
       ]
     },
-    "Partidos de la temporada regular": [
+    "Partidos de la temporada": [
+      {
+        "title": "Jacksonville Jaguars vs Miami Dolphins",
+        "id": "jax-mia-20090817",
+        "game_id": "200908170mia",
+        "fecha": "17-08-2009",
+        "date": "2009-08-17",
+        "url": "/historia/partidos/jax-mia-20090817/",
+        "stage": "Pretemporada 1",
+        "week": "Preseason 1",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Carolina Panthers vs Miami Dolphins",
+        "id": "car-mia-20090822",
+        "game_id": "200908220mia",
+        "fecha": "22-08-2009",
+        "date": "2009-08-22",
+        "url": "/historia/partidos/car-mia-20090822/",
+        "stage": "Pretemporada 2",
+        "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "id": "mia-tam-20090827",
+        "game_id": "200908270tam",
+        "fecha": "27-08-2009",
+        "date": "2009-08-27",
+        "url": "/historia/partidos/mia-tam-20090827/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New Orleans Saints",
+        "id": "mia-nor-20090903",
+        "game_id": "200909030nor",
+        "fecha": "03-09-2009",
+        "date": "2009-09-03",
+        "url": "/historia/partidos/mia-nor-20090903/",
+        "stage": "Pretemporada 4",
+        "week": "Preseason 4",
+        "game_type": "preseason",
+        "status": "final"
+      },
       {
         "title": "Miami Dolphins vs Atlanta Falcons",
         "id": "mia-atl-20090913",
+        "game_id": "200909130atl",
         "fecha": "13-09-2009",
-        "url": "/historia/partidos/mia-atl-20090913/"
+        "date": "2009-09-13",
+        "url": "/historia/partidos/mia-atl-20090913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Indianapolis Colts",
-        "id": "ind-mia-20090921",
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20090921",
+        "game_id": "200909210mia",
         "fecha": "21-09-2009",
-        "url": "/historia/partidos/ind-mia-20090921/"
+        "date": "2009-09-21",
+        "url": "/historia/partidos/clt-mia-20090921/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs San Diego Chargers",
         "id": "mia-sdg-20090927",
+        "game_id": "200909270sdg",
         "fecha": "27-09-2009",
-        "url": "/historia/partidos/mia-sdg-20090927/"
+        "date": "2009-09-27",
+        "url": "/historia/partidos/mia-sdg-20090927/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Buffalo Bills",
+        "title": "Buffalo Bills vs Miami Dolphins",
         "id": "buf-mia-20091004",
+        "game_id": "200910040mia",
         "fecha": "04-10-2009",
-        "url": "/historia/partidos/buf-mia-20091004/"
+        "date": "2009-10-04",
+        "url": "/historia/partidos/buf-mia-20091004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New York Jets",
+        "title": "New York Jets vs Miami Dolphins",
         "id": "nyj-mia-20091012",
+        "game_id": "200910120mia",
         "fecha": "12-10-2009",
-        "url": "/historia/partidos/nyj-mia-20091012/"
+        "date": "2009-10-12",
+        "url": "/historia/partidos/nyj-mia-20091012/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New Orleans Saints",
-        "id": "new-mia-20091025",
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-20091025",
+        "game_id": "200910250mia",
         "fecha": "25-10-2009",
-        "url": "/historia/partidos/new-mia-20091025/"
+        "date": "2009-10-25",
+        "url": "/historia/partidos/nor-mia-20091025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New York Jets",
         "id": "mia-nyj-20091101",
+        "game_id": "200911010nyj",
         "fecha": "01-11-2009",
-        "url": "/historia/partidos/mia-nyj-20091101/"
+        "date": "2009-11-01",
+        "url": "/historia/partidos/mia-nyj-20091101/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs New England Patriots",
-        "id": "mia-new-20091108",
+        "id": "mia-nwe-20091108",
+        "game_id": "200911080nwe",
         "fecha": "08-11-2009",
-        "url": "/historia/partidos/mia-new-20091108/"
+        "date": "2009-11-08",
+        "url": "/historia/partidos/mia-nwe-20091108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Tampa Bay Buccaneers",
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
         "id": "tam-mia-20091115",
+        "game_id": "200911150mia",
         "fecha": "15-11-2009",
-        "url": "/historia/partidos/tam-mia-20091115/"
+        "date": "2009-11-15",
+        "url": "/historia/partidos/tam-mia-20091115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Carolina Panthers",
         "id": "mia-car-20091119",
+        "game_id": "200911190car",
         "fecha": "19-11-2009",
-        "url": "/historia/partidos/mia-car-20091119/"
+        "date": "2009-11-19",
+        "url": "/historia/partidos/mia-car-20091119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Buffalo Bills",
         "id": "mia-buf-20091129",
+        "game_id": "200911290buf",
         "fecha": "29-11-2009",
-        "url": "/historia/partidos/mia-buf-20091129/"
+        "date": "2009-11-29",
+        "url": "/historia/partidos/mia-buf-20091129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs New England Patriots",
-        "id": "new-mia-20091206",
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20091206",
+        "game_id": "200912060mia",
         "fecha": "06-12-2009",
-        "url": "/historia/partidos/new-mia-20091206/"
+        "date": "2009-12-06",
+        "url": "/historia/partidos/nwe-mia-20091206/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Jacksonville Jaguars",
-        "id": "mia-jac-20091213",
+        "id": "mia-jax-20091213",
+        "game_id": "200912130jax",
         "fecha": "13-12-2009",
-        "url": "/historia/partidos/mia-jac-20091213/"
+        "date": "2009-12-13",
+        "url": "/historia/partidos/mia-jax-20091213/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
         "title": "Miami Dolphins vs Tennessee Titans",
-        "id": "mia-ten-20091220",
+        "id": "mia-oti-20091220",
+        "game_id": "200912200oti",
         "fecha": "20-12-2009",
-        "url": "/historia/partidos/mia-ten-20091220/"
+        "date": "2009-12-20",
+        "url": "/historia/partidos/mia-oti-20091220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Houston Texans",
-        "id": "hou-mia-20091227",
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20091227",
+        "game_id": "200912270mia",
         "fecha": "27-12-2009",
-        "url": "/historia/partidos/hou-mia-20091227/"
+        "date": "2009-12-27",
+        "url": "/historia/partidos/htx-mia-20091227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
       },
       {
-        "title": "Miami Dolphins vs Pittsburgh Steelers",
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
         "id": "pit-mia-20100103",
+        "game_id": "201001030mia",
         "fecha": "03-01-2010",
-        "url": "/historia/partidos/pit-mia-20100103/"
+        "date": "2010-01-03",
+        "url": "/historia/partidos/pit-mia-20100103/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
+      }
+    ],
+    "Partidos de la temporada regular": [
+      {
+        "title": "Miami Dolphins vs Atlanta Falcons",
+        "id": "mia-atl-20090913",
+        "game_id": "200909130atl",
+        "fecha": "13-09-2009",
+        "date": "2009-09-13",
+        "url": "/historia/partidos/mia-atl-20090913/",
+        "stage": "Semana 1",
+        "week": "1",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Indianapolis Colts vs Miami Dolphins",
+        "id": "clt-mia-20090921",
+        "game_id": "200909210mia",
+        "fecha": "21-09-2009",
+        "date": "2009-09-21",
+        "url": "/historia/partidos/clt-mia-20090921/",
+        "stage": "Semana 2",
+        "week": "2",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs San Diego Chargers",
+        "id": "mia-sdg-20090927",
+        "game_id": "200909270sdg",
+        "fecha": "27-09-2009",
+        "date": "2009-09-27",
+        "url": "/historia/partidos/mia-sdg-20090927/",
+        "stage": "Semana 3",
+        "week": "3",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Buffalo Bills vs Miami Dolphins",
+        "id": "buf-mia-20091004",
+        "game_id": "200910040mia",
+        "fecha": "04-10-2009",
+        "date": "2009-10-04",
+        "url": "/historia/partidos/buf-mia-20091004/",
+        "stage": "Semana 4",
+        "week": "4",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New York Jets vs Miami Dolphins",
+        "id": "nyj-mia-20091012",
+        "game_id": "200910120mia",
+        "fecha": "12-10-2009",
+        "date": "2009-10-12",
+        "url": "/historia/partidos/nyj-mia-20091012/",
+        "stage": "Semana 5",
+        "week": "5",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New Orleans Saints vs Miami Dolphins",
+        "id": "nor-mia-20091025",
+        "game_id": "200910250mia",
+        "fecha": "25-10-2009",
+        "date": "2009-10-25",
+        "url": "/historia/partidos/nor-mia-20091025/",
+        "stage": "Semana 7",
+        "week": "7",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New York Jets",
+        "id": "mia-nyj-20091101",
+        "game_id": "200911010nyj",
+        "fecha": "01-11-2009",
+        "date": "2009-11-01",
+        "url": "/historia/partidos/mia-nyj-20091101/",
+        "stage": "Semana 8",
+        "week": "8",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs New England Patriots",
+        "id": "mia-nwe-20091108",
+        "game_id": "200911080nwe",
+        "fecha": "08-11-2009",
+        "date": "2009-11-08",
+        "url": "/historia/partidos/mia-nwe-20091108/",
+        "stage": "Semana 9",
+        "week": "9",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Miami Dolphins",
+        "id": "tam-mia-20091115",
+        "game_id": "200911150mia",
+        "fecha": "15-11-2009",
+        "date": "2009-11-15",
+        "url": "/historia/partidos/tam-mia-20091115/",
+        "stage": "Semana 10",
+        "week": "10",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Carolina Panthers",
+        "id": "mia-car-20091119",
+        "game_id": "200911190car",
+        "fecha": "19-11-2009",
+        "date": "2009-11-19",
+        "url": "/historia/partidos/mia-car-20091119/",
+        "stage": "Semana 11",
+        "week": "11",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Buffalo Bills",
+        "id": "mia-buf-20091129",
+        "game_id": "200911290buf",
+        "fecha": "29-11-2009",
+        "date": "2009-11-29",
+        "url": "/historia/partidos/mia-buf-20091129/",
+        "stage": "Semana 12",
+        "week": "12",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "New England Patriots vs Miami Dolphins",
+        "id": "nwe-mia-20091206",
+        "game_id": "200912060mia",
+        "fecha": "06-12-2009",
+        "date": "2009-12-06",
+        "url": "/historia/partidos/nwe-mia-20091206/",
+        "stage": "Semana 13",
+        "week": "13",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Jacksonville Jaguars",
+        "id": "mia-jax-20091213",
+        "game_id": "200912130jax",
+        "fecha": "13-12-2009",
+        "date": "2009-12-13",
+        "url": "/historia/partidos/mia-jax-20091213/",
+        "stage": "Semana 14",
+        "week": "14",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Miami Dolphins vs Tennessee Titans",
+        "id": "mia-oti-20091220",
+        "game_id": "200912200oti",
+        "fecha": "20-12-2009",
+        "date": "2009-12-20",
+        "url": "/historia/partidos/mia-oti-20091220/",
+        "stage": "Semana 15",
+        "week": "15",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Houston Texans vs Miami Dolphins",
+        "id": "htx-mia-20091227",
+        "game_id": "200912270mia",
+        "fecha": "27-12-2009",
+        "date": "2009-12-27",
+        "url": "/historia/partidos/htx-mia-20091227/",
+        "stage": "Semana 16",
+        "week": "16",
+        "game_type": "regular_season",
+        "status": "final"
+      },
+      {
+        "title": "Pittsburgh Steelers vs Miami Dolphins",
+        "id": "pit-mia-20100103",
+        "game_id": "201001030mia",
+        "fecha": "03-01-2010",
+        "date": "2010-01-03",
+        "url": "/historia/partidos/pit-mia-20100103/",
+        "stage": "Semana 17",
+        "week": "17",
+        "game_type": "regular_season",
+        "status": "final"
       }
     ],
     "Resumen": {
@@ -3502,6 +3840,7 @@
       "Puntos a favor": "360 puntos. 15º de 32 equipos",
       "Puntos en contra": "390 puntos. 25º de 32 equipos",
       "Head Coach": "Tony Sparano (7-9-0)",
+      "General Manager": "Jeff Ireland",
       "Estadio": "Land Shark Stadium",
       "Training Camp": "Miami Dolphins Training Facility (Davie, Florida)",
       "Alineación defensiva": "3-4",

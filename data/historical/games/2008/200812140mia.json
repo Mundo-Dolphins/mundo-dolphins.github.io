@@ -8,8 +8,8 @@
     "kind": "game",
     "title": "San Francisco 49ers vs Miami Dolphins",
     "date": "2008-12-14",
-    "slug": "san-mia-20081214",
-    "path": "historia/partidos/san-mia-20081214",
+    "slug": "sfo-mia-20081214",
+    "path": "historia/partidos/sfo-mia-20081214",
     "params": {
       "game_id": "200812140mia"
     }
@@ -1695,6 +1695,8 @@
     },
     "Información del partido": {
       "Semana": "15",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "14 de diciembre de 2008",
       "Estadio": "Dolphin Stadium",
       "Tipo de estadio": "Al aire libre",

@@ -2771,6 +2771,8 @@
     },
     "Información del partido": {
       "Semana": "3",
+      "Tipo de partido": "regular_season",
+      "Estado": "final",
       "Fecha": "27 de septiembre de 2015",
       "Estadio": "Sun Life Stadium",
       "Tipo de estadio": "Al aire libre",
@@ -3044,6 +3046,14 @@
         }
       ]
     },
-    "Videos del partido": []
+    "Videos del partido": [
+      {
+        "youtube_id": "aN04HoE8MSs",
+        "title": "2015 BILLS AT DOLPHINS PART 1",
+        "url": "https://www.youtube.com/watch?v=aN04HoE8MSs\u0026pp=ygUqQnVmZmFsbyBCaWxscyB2cyBNaWFtaSBEb2xwaGlucyAyMDE1LTA5LTI3",
+        "duration_seconds": 7819,
+        "embeddable": false
+      }
+    ]
   }
 }

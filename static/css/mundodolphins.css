@@ -1451,7 +1451,7 @@ body.body {
 
 .season-game {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     gap: 1rem;
     align-items: center;
     padding: 0.9rem 1.1rem;
