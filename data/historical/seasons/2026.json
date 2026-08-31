@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-26T10:11:32Z",
+  "generated_at": "2026-08-31T11:16:32Z",
   "page": {
     "kind": "season",
     "title": "Temporada 2026",
@@ -384,6 +384,18 @@
         "url": "/historia/partidos/nyg-mia-20260822/",
         "stage": "Pretemporada 2",
         "week": "Preseason 2",
+        "game_type": "preseason",
+        "status": "final"
+      },
+      {
+        "title": "Atlanta Falcons vs Miami Dolphins",
+        "id": "atl-mia-20260828",
+        "game_id": "202608280mia",
+        "fecha": "28-08-2026",
+        "date": "2026-08-28",
+        "url": "/historia/partidos/atl-mia-20260828/",
+        "stage": "Pretemporada 3",
+        "week": "Preseason 3",
         "game_type": "preseason",
         "status": "final"
       },
@@ -859,36 +871,6 @@
         "Peso": "206"
       },
       {
-        "Edad": "27",
-        "Av": "",
-        "Birth Date Mod": "10/7/1999",
-        "Universidad": "Louisville",
-        "Draft Info": "Los Angeles Rams / 2nd / 57th pick / 2021",
-        "Experiencia": "5",
-        "G": "",
-        "Gs": "",
-        "Altura": "5-9",
-        "Nombre": "Tutu Atwell",
-        "Posición": "WR",
-        "Número": "4",
-        "Peso": "165"
-      },
-      {
-        "Edad": "25",
-        "Av": "",
-        "Birth Date Mod": "5/22/2001",
-        "Universidad": "Oregon St.",
-        "Draft Info": "Buffalo Bills / 7th / 252nd pick / 2023",
-        "Experiencia": "3",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-1",
-        "Nombre": "Alex Austin",
-        "Posición": "CB",
-        "Número": "26",
-        "Peso": "191"
-      },
-      {
         "Edad": "26",
         "Av": "",
         "Birth Date Mod": "4/10/2000",
@@ -1069,21 +1051,6 @@
         "Peso": "321"
       },
       {
-        "Edad": "",
-        "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "Boston College",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-6",
-        "Nombre": "Kevin Cline",
-        "Posición": "OT",
-        "Número": "79",
-        "Peso": "320"
-      },
-      {
         "Edad": "23",
         "Av": "",
         "Birth Date Mod": "9/10/2003",
@@ -1097,36 +1064,6 @@
         "Posición": "",
         "Número": "83",
         "Peso": "180"
-      },
-      {
-        "Edad": "26",
-        "Av": "",
-        "Birth Date Mod": "12/7/2000",
-        "Universidad": "Illinois",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-3",
-        "Nombre": "Seth Coleman",
-        "Posición": "DE",
-        "Número": "90",
-        "Peso": "246"
-      },
-      {
-        "Edad": "",
-        "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "Troy",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-4",
-        "Nombre": "Ethan Conner",
-        "Posición": "",
-        "Número": "",
-        "Peso": "245"
       },
       {
         "Edad": "23",
@@ -1157,21 +1094,6 @@
         "Posición": "OT",
         "Número": "70",
         "Peso": "315"
-      },
-      {
-        "Edad": "",
-        "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "Arkansas",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-1",
-        "Nombre": "Stephen Dix",
-        "Posición": "LB",
-        "Número": "34",
-        "Peso": "234"
       },
       {
         "Edad": "28",
@@ -1217,36 +1139,6 @@
         "Posición": "TE",
         "Número": "85",
         "Peso": "245"
-      },
-      {
-        "Edad": "23",
-        "Av": "",
-        "Birth Date Mod": "2/25/2003",
-        "Universidad": "Michigan",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-1",
-        "Nombre": "Donovan Edwards",
-        "Posición": "RB",
-        "Número": "36",
-        "Peso": "209"
-      },
-      {
-        "Edad": "23",
-        "Av": "",
-        "Birth Date Mod": "3/15/2003",
-        "Universidad": "Ohio St.,Texas",
-        "Draft Info": "Miami Dolphins / 7th / 231st pick / 2025",
-        "Experiencia": "1",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-2",
-        "Nombre": "Quinn Ewers",
-        "Posición": "QB",
-        "Número": "14",
-        "Peso": "211"
       },
       {
         "Edad": "29",
@@ -1429,19 +1321,19 @@
         "Peso": "242"
       },
       {
-        "Edad": "",
+        "Edad": "24",
         "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "South Carolina",
-        "Draft Info": "",
-        "Experiencia": "Rook",
+        "Birth Date Mod": "12/29/2002",
+        "Universidad": "Auburn",
+        "Draft Info": "Los Angeles Rams / 4th / 117th pick / 2025",
+        "Experiencia": "1",
         "G": "",
         "Gs": "",
-        "Altura": "6-4",
-        "Nombre": "Alex Huntley",
-        "Posición": "DT",
-        "Número": "96",
-        "Peso": "294"
+        "Altura": "5-10",
+        "Nombre": "Jarquez Hunter",
+        "Posición": "RB",
+        "Número": "31",
+        "Peso": "211"
       },
       {
         "Edad": "27",
@@ -1639,19 +1531,19 @@
         "Peso": "210"
       },
       {
-        "Edad": "25",
+        "Edad": "26",
         "Av": "",
-        "Birth Date Mod": "1/29/2001",
-        "Universidad": "Indiana",
+        "Birth Date Mod": "2/20/2000",
+        "Universidad": "Furman",
         "Draft Info": "",
-        "Experiencia": "Rook",
+        "Experiencia": "3",
         "G": "",
         "Gs": "",
-        "Altura": "5-11",
-        "Nombre": "Louis Moore",
-        "Posición": "S",
-        "Número": "41",
-        "Peso": "199"
+        "Altura": "6-2",
+        "Nombre": "Ryan Miller",
+        "Posición": "WR",
+        "Número": "84",
+        "Peso": "221"
       },
       {
         "Edad": "23",
@@ -1804,21 +1696,6 @@
         "Peso": "200"
       },
       {
-        "Edad": "",
-        "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "Maryland",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-2",
-        "Nombre": "Cam Rice",
-        "Posición": "DL",
-        "Número": "",
-        "Peso": "303"
-      },
-      {
         "Edad": "24",
         "Av": "",
         "Birth Date Mod": "3/29/2002",
@@ -1924,21 +1801,6 @@
         "Peso": "190"
       },
       {
-        "Edad": "",
-        "Av": "",
-        "Birth Date Mod": "",
-        "Universidad": "",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-4",
-        "Nombre": "Jaheim Thomas",
-        "Posición": "LB",
-        "Número": "",
-        "Peso": "245"
-      },
-      {
         "Edad": "27",
         "Av": "",
         "Birth Date Mod": "2/27/1999",
@@ -1982,21 +1844,6 @@
         "Posición": "",
         "Número": "49",
         "Peso": "242"
-      },
-      {
-        "Edad": "26",
-        "Av": "",
-        "Birth Date Mod": "3/16/2000",
-        "Universidad": "Nevada",
-        "Draft Info": "Washington Commanders / 5th / 149th pick / 2022",
-        "Experiencia": "4",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-6",
-        "Nombre": "Cole Turner",
-        "Posición": "TE",
-        "Número": "87",
-        "Peso": "261"
       },
       {
         "Edad": "28",
@@ -2057,36 +1904,6 @@
         "Posición": "WR",
         "Número": "6",
         "Peso": "192"
-      },
-      {
-        "Edad": "25",
-        "Av": "",
-        "Birth Date Mod": "5/16/2001",
-        "Universidad": "Memphis,USC",
-        "Draft Info": "Miami Dolphins / 7th / 241st pick / 2024",
-        "Experiencia": "1",
-        "G": "",
-        "Gs": "",
-        "Altura": "5-10",
-        "Nombre": "Tahj Washington",
-        "Posición": "WR",
-        "Número": "84",
-        "Peso": "174"
-      },
-      {
-        "Edad": "25",
-        "Av": "",
-        "Birth Date Mod": "6/25/2001",
-        "Universidad": "Oklahoma,Missouri",
-        "Draft Info": "",
-        "Experiencia": "1",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-2",
-        "Nombre": "Theo Wease",
-        "Posición": "WR",
-        "Número": "81",
-        "Peso": "208"
       },
       {
         "Edad": "27",
@@ -2179,49 +1996,19 @@
         "Peso": "195"
       },
       {
-        "Edad": "25",
-        "Av": "",
-        "Birth Date Mod": "8/30/2001",
-        "Universidad": "Northern Illinois",
-        "Draft Info": "",
-        "Experiencia": "Rook",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-3",
-        "Nombre": "James Ester (IR)",
-        "Posición": "DL",
-        "Número": "",
-        "Peso": "289"
-      },
-      {
-        "Edad": "23",
-        "Av": "",
-        "Birth Date Mod": "4/30/2003",
-        "Universidad": "Bucknell,Minnesota",
-        "Draft Info": "",
-        "Experiencia": "1",
-        "G": "",
-        "Gs": "",
-        "Altura": "6-0",
-        "Nombre": "Ethan Robinson (IR)",
-        "Posición": "CB",
-        "Número": "",
-        "Peso": "195"
-      },
-      {
         "Edad": "26",
         "Av": "",
-        "Birth Date Mod": "7/13/2000",
-        "Universidad": "Georgia",
-        "Draft Info": "Los Angeles Chargers / 6th / 195th pick / 2022",
+        "Birth Date Mod": "3/16/2000",
+        "Universidad": "Nevada",
+        "Draft Info": "Washington Commanders / 5th / 149th pick / 2022",
         "Experiencia": "4",
         "G": "",
         "Gs": "",
-        "Altura": "6-4",
-        "Nombre": "Jamaree Salyer (IR)",
-        "Posición": "OL",
-        "Número": "69",
-        "Peso": "335"
+        "Altura": "6-6",
+        "Nombre": "Cole Turner (IR)",
+        "Posición": "TE",
+        "Número": "",
+        "Peso": "261"
       },
       {
         "Edad": "27",

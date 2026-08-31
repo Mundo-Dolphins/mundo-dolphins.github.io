@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-26T10:13:01Z",
+  "generated_at": "2026-08-31T11:26:57Z",
   "data": {
     "team": {
       "id": "mia",
@@ -15,16 +15,16 @@
     },
     "totals": {
       "opponents": 43,
-      "games": 1072,
+      "games": 1073,
       "wins": 580,
-      "losses": 487,
+      "losses": 488,
       "ties": 5,
-      "points_for": 22560,
-      "points_against": 21655,
-      "point_differential": 905,
+      "points_for": 22572,
+      "points_against": 21672,
+      "point_differential": 900,
       "regular_season_games": 931,
       "playoff_games": 41,
-      "unknown_games": 100
+      "unknown_games": 101
     },
     "rivals": [
       {
@@ -299,18 +299,18 @@
           "name": "Atlanta Falcons"
         },
         "summary": {
-          "games": 29,
+          "games": 30,
           "wins": 19,
-          "losses": 10,
+          "losses": 11,
           "ties": 0,
-          "points_for": 610,
-          "points_against": 517,
-          "point_differential": 93,
+          "points_for": 622,
+          "points_against": 534,
+          "point_differential": 88,
           "regular_season_games": 15,
           "playoff_games": 0,
-          "unknown_games": 14,
+          "unknown_games": 15,
           "first_game": "1970-11-30",
-          "last_game": "2025-10-26"
+          "last_game": "2026-08-28"
         },
         "by_season": [
           {
@@ -638,9 +638,37 @@
             "point_differential": 24,
             "regular_season_games": 1,
             "playoff_games": 0
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 12,
+            "points_against": 17,
+            "point_differential": -5,
+            "regular_season_games": 0,
+            "playoff_games": 0,
+            "unknown_games": 1
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202608280mia",
+            "season": 2026,
+            "date": "2026-08-28",
+            "week": "Preseason 3",
+            "game_type": "unknown",
+            "home_away": "home",
+            "opponent_id": "atl",
+            "opponent_name": "Atlanta Falcons",
+            "points_for": 12,
+            "points_against": 17,
+            "result": "L",
+            "margin": -5,
+            "path": "historia/partidos/atl-mia-20260828"
+          },
           {
             "game_id": "202510260atl",
             "season": 2025,
@@ -700,21 +728,6 @@
             "result": "L",
             "margin": -2,
             "path": "historia/partidos/atl-mia-20211024"
-          },
-          {
-            "game_id": "202108210mia",
-            "season": 2021,
-            "date": "2021-08-21",
-            "week": "Preseason 2",
-            "game_type": "unknown",
-            "home_away": "home",
-            "opponent_id": "atl",
-            "opponent_name": "Atlanta Falcons",
-            "points_for": 37,
-            "points_against": 17,
-            "result": "W",
-            "margin": 20,
-            "path": "historia/partidos/atl-mia-20210821"
           }
         ]
       },
