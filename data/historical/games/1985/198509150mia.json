@@ -166,6 +166,29 @@
               "Yds punt": "10",
               "Prom punt": "10",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Raul Allegre",
+              "Equipo": "CLT",
+              "XPa": "2",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "36",
+              "TD KO": "0",
+              "Yds KO": "114",
+              "Prom KO": "22.80",
+              "Nombre": "Robbie Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -410,6 +433,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "16",
+              "INT": "1",
+              "Largo pase": "34",
+              "Rating": "69.0",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "12",
+              "TD pase": "1",
+              "Yds pase": "214",
+              "Nombre": "Mike Pagel",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -421,6 +457,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-157-1",
           "Comp-Int-Yds-TD-INT": "29-48-329-2-0",
+          "Conv. en tercer down": "9-14-64%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "3-20",
           "Primeros downs": "33",
@@ -548,6 +585,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Frank Lockett",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Lyle Blackwood",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -792,6 +865,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "48",
+              "Comp": "29",
+              "INT": "0",
+              "Largo pase": "26",
+              "Rating": "94.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "329",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

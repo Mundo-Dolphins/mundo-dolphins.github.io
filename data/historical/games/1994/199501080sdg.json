@@ -101,14 +101,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "8-26-0",
           "Comp-Int-Yds-TD-INT": "24-38-262-3-0",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "0-0-0%",
+          "Conv. en tercer down": "5-10-50%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "7-47",
           "Primeros downs": "17",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-6",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "20:40",
           "Yardas netas por pase": "256",
           "Yardas totales": "282"
         },
@@ -453,6 +453,55 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "5",
+              "Largo punt": "59",
+              "Yds punt": "226",
+              "Prom punt": "45.2",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "42",
+              "TD KO": "0",
+              "Yds KO": "87",
+              "Prom KO": "29.00",
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Irving Spikes",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "7",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "7.00",
+              "Nombre": "Ronnie Williams",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -646,6 +695,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "38",
+              "Comp": "24",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "109.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "3",
+              "Yds pase": "262",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]
@@ -944,6 +1006,64 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "SDG"
+            },
+            {
+              "Nombre": "Bryan Wagner",
+              "Punts": "2",
+              "Largo punt": "51",
+              "Yds punt": "87",
+              "Prom punt": "43.5",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "John Carney",
+              "Equipo": "SDG",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "57",
+              "Prom KO": "19.00",
+              "Nombre": "Andre Coleman",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "13",
+              "TD KO": "0",
+              "Yds KO": "13",
+              "Prom KO": "13.00",
+              "Nombre": "Eric Bieniemy",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Ronnie Harmon",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "Darrien Gordon",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "SDG"
             }
           ],
           "Ofensiva": [
@@ -1185,6 +1305,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "43",
+              "Comp": "28",
+              "INT": "2",
+              "Largo pase": "18",
+              "Rating": "71.5",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "12",
+              "TD pase": "1",
+              "Yds pase": "276",
+              "Nombre": "Stan Humphries",
               "Equipo": "SDG"
             }
           ]

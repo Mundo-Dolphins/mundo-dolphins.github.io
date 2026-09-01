@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-123-1",
           "Comp-Int-Yds-TD-INT": "12-21-144-2-1",
+          "Conv. en tercer down": "6-12-50%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "3-15",
           "Primeros downs": "16",
@@ -180,6 +181,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "34",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Gary Davis",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Charlie Babb",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
               "Equipo": "MIA"
             }
           ],
@@ -359,6 +387,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "12",
+              "INT": "1",
+              "Largo pase": "46t",
+              "Rating": "90.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "144",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -495,6 +536,47 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "STL"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Jim Bakken",
+              "Equipo": "CRD",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "19.00",
+              "Nombre": "Willie Shelby",
+              "Retornos punt": "3",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "3.67",
+              "Equipo": "CRD"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Willard Harrell",
+              "Equipo": "CRD"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "12",
+              "TD KO": "0",
+              "Yds KO": "12",
+              "Prom KO": "12.00",
+              "Nombre": "Greg Westbrooks",
+              "Equipo": "CRD"
             }
           ],
           "Ofensiva": [
@@ -739,6 +821,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "STL"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "21",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "91.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "211",
+              "Nombre": "Jim Hart",
+              "Equipo": "CRD"
             }
           ]
         },

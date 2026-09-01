@@ -129,165 +129,6 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "B. MARION",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. JONES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. WOODEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. TAYLOR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "Z. THOMAS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. JACKSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. MADISON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. ARMSTRONG",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GARDENER",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. HOLLIER",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "P. SURTAIN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. WILSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "O. BRIGANCE",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "D. MARINO",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "J. JOHNSON",
-              "FR": "1"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "O. MARE",
-              "50+": "0",
-              "LONG": "37"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "D. MARINO",
-              "CMP%": "55.80",
-              "AVG": "6.19"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "T. HUTTON",
-              "IN 20": "0"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "T. MARTIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "O. MCDUFFIE",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "O. GADSDEN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "S. PRITCHETT",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "Y. GREEN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "H. GOODWIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. JOHNSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "E. PERRY",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. KONRAD",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "J. JOHNSON",
-              "AVG": "4.60",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "S. PRITCHETT",
-              "AVG": "3.40",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. MARINO",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "24-100-1",
           "Comp-Int-Yds-TD-INT": "29-52-322-3-3",
@@ -803,6 +644,59 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tom Hutton",
+              "Punts": "3",
+              "Largo punt": "41",
+              "Yds punt": "108",
+              "Prom punt": "36.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "151",
+              "Prom KO": "25.17",
+              "Nombre": "Brock Marion",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Zach Thomas",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nate Jacquet",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1045,6 +939,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "52",
+              "Comp": "29",
+              "INT": "3",
+              "Largo pase": "32t",
+              "Rating": "69.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "322",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -1053,168 +960,6 @@
       },
       "New York Jets": {
         "Coach": "Bill Parcells",
-        "Estadisticas NFL.com": {
-          "NYJ DEFENSE": [
-            {
-              "PLAYER": "V. GREEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. JONES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GORDON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. LEWIS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. COLEMAN",
-              "QBP": "0",
-              "INT TD": "1"
-            },
-            {
-              "PLAYER": "J. FARRIOR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. GLENN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. LYLE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. MICKENS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. PHIFER",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "E. OGBOGU",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. PLEASANT",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "O. STOUTMIRE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. BOOSE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. FARMER",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "NYJ FUMBLES": [
-            {
-              "PLAYER": "D. WARD",
-              "FR": "0"
-            }
-          ],
-          "NYJ KICKING": [
-            {
-              "PLAYER": "J. HALL",
-              "50+": "0",
-              "LONG": "48"
-            }
-          ],
-          "NYJ PASSING": [
-            {
-              "PLAYER": "R. LUCAS",
-              "CMP%": "47.80",
-              "AVG": "8.26"
-            }
-          ],
-          "NYJ PUNTING": [
-            {
-              "PLAYER": "T. TUPA",
-              "IN 20": "2"
-            }
-          ],
-          "NYJ RECEIVING": [
-            {
-              "PLAYER": "W. CHREBET",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "D. WARD",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "K. JOHNSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "C. MARTIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "F. BAXTER",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. ANDERSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "Q. EARLY",
-              "YAC": "0"
-            }
-          ],
-          "NYJ RUSHING": [
-            {
-              "PLAYER": "C. MARTIN",
-              "AVG": "3.60",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. ANDERSON",
-              "AVG": "7.50",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "B. PARMALEE",
-              "AVG": "12",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. LUCAS",
-              "AVG": "1",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. WARD",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "25-101-1",
           "Comp-Int-Yds-TD-INT": "11-23-190-3-0",
@@ -1716,6 +1461,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Tom Tupa",
+              "Punts": "4",
+              "Largo punt": "55",
+              "Yds punt": "158",
+              "Prom punt": "39.5",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "John Hall",
+              "Equipo": "NYJ",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "18.67",
+              "Nombre": "Dwight Stone",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "47",
+              "Prom KO": "23.50",
+              "Nombre": "Aaron Glenn",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Dedric Ward",
+              "Retornos punt": "2",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "5.50",
+              "Equipo": "NYJ"
             }
           ],
           "Ofensiva": [
@@ -1933,6 +1722,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "56t",
+              "Rating": "115.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "1",
+              "TD pase": "3",
+              "Yds pase": "190",
+              "Nombre": "Ray Lucas",
               "Equipo": "NYJ"
             }
           ]

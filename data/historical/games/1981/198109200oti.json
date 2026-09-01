@@ -151,6 +151,29 @@
               "Yds punt": "3",
               "Prom punt": "1",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Toni Fritsch",
+              "Equipo": "OTI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "39",
+              "TD KO": "0",
+              "Yds KO": "128",
+              "Prom KO": "25.60",
+              "Nombre": "Carl Roaches",
+              "Retornos punt": "3",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "3",
+              "Prom punt": "1.00",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -329,6 +352,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "16",
+              "INT": "1",
+              "Largo pase": "71t",
+              "Rating": "78.7",
+              "Capturas recibidas": "8",
+              "Yds perdidas capturas": "61",
+              "TD pase": "1",
+              "Yds pase": "178",
+              "Nombre": "Ken Stabler",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -340,11 +376,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-124-0",
           "Comp-Int-Yds-TD-INT": "18-32-144-1-1",
+          "Conv. en tercer down": "5-16-31%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-50",
           "Primeros downs": "16",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "1-11",
+          "Tiempo de posesión": "33:10",
           "Yardas netas por pase": "133",
           "Yardas totales": "257"
         },
@@ -432,6 +470,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "44",
+              "Prom KO": "22.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "5",
+              "TD KO": "0",
+              "Yds KO": "5",
+              "Prom KO": "5.00",
+              "Nombre": "Joe Rose",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "4",
+              "Largo retorno punt": "21",
+              "TD punt": "0",
+              "Yds punt": "49",
+              "Prom punt": "12.25",
               "Equipo": "MIA"
             }
           ],
@@ -720,6 +794,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "22",
+              "Rating": "59.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "82",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "7",
+              "INT": "1",
+              "Largo pase": "19",
+              "Rating": "80.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "62",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

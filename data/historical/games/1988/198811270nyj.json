@@ -121,6 +121,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "18-87-0",
           "Comp-Int-Yds-TD-INT": "17-35-353-5-0",
+          "Conv. en tercer down": "4-9-44%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "4-18",
           "Primeros downs": "20",
@@ -310,6 +311,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "24.00",
+              "Nombre": "Joe Cribbs",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "58",
+              "Prom KO": "29.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Ferrell Edmunds",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -529,6 +575,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "80t",
+              "Rating": "124.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "5",
+              "Yds pase": "353",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -540,6 +599,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-171-1",
           "Comp-Int-Yds-TD-INT": "33-52-433-4-1",
+          "Conv. en tercer down": "10-15-66%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "7-69",
           "Primeros downs": "39",
@@ -651,6 +711,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "29",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "46",
+              "Prom KO": "11.50",
+              "Nombre": "Michael Harper",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "9",
+              "TD KO": "0",
+              "Yds KO": "9",
+              "Prom KO": "9.00",
+              "Nombre": "Jo-Jo Townsell",
+              "Retornos punt": "2",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "27",
+              "Prom punt": "13.50",
               "Equipo": "NYJ"
             }
           ],
@@ -845,6 +937,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "10",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "43",
+              "Comp": "27",
+              "INT": "1",
+              "Largo pase": "35",
+              "Rating": "93.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "2",
+              "Yds pase": "341",
+              "Nombre": "Pat Ryan",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "9",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "30",
+              "Rating": "139.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "92",
+              "Nombre": "Ken O'Brien",
               "Equipo": "NYJ"
             }
           ]

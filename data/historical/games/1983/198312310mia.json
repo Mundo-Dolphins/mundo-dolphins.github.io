@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-128-1",
           "Comp-Int-Yds-TD-INT": "15-26-193-2-2",
+          "Conv. en tercer down": "6-10-60%",
           "Fumbles-perdidos": "3-3",
           "Penalizaciones-yardas": "5-30",
           "Primeros downs": "21",
@@ -195,6 +196,38 @@
               "TD punt": "",
               "Yds punt": "24",
               "Prom punt": "24",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "104",
+              "Prom KO": "17.33",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "1",
+              "Largo retorno punt": "24",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "24.00",
               "Equipo": "MIA"
             }
           ],
@@ -438,6 +471,32 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "15",
+              "INT": "2",
+              "Largo pase": "32t",
+              "Rating": "77.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "193",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Mark Clayton",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -449,6 +508,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "42-151-2",
           "Comp-Int-Yds-TD-INT": "15-29-192-1-1",
+          "Conv. en tercer down": "8-17-47%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "21",
@@ -624,6 +684,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SEA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Norm Johnson",
+              "Equipo": "SEA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "59",
+              "TD KO": "0",
+              "Yds KO": "86",
+              "Prom KO": "43.00",
+              "Nombre": "Zachary Dixon",
+              "Equipo": "SEA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "44",
+              "Prom KO": "22.00",
+              "Nombre": "David Hughes",
+              "Equipo": "SEA"
+            },
+            {
+              "Nombre": "Paul Johns",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "SEA"
             }
           ],
@@ -866,6 +962,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SEA"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "15",
+              "INT": "1",
+              "Largo pase": "40",
+              "Rating": "72.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "192",
+              "Nombre": "Dave Krieg",
+              "Equipo": "SEA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Jim Zorn",
               "Equipo": "SEA"
             }
           ]

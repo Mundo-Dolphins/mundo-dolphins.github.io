@@ -184,6 +184,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "DET"
+            },
+            {
+              "Nombre": "Jim Arnold",
+              "Punts": "3",
+              "Largo punt": "52",
+              "Yds punt": "124",
+              "Prom punt": "41.3",
+              "Equipo": "DET"
+            },
+            {
+              "FG largo": "46",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Eddie Murray",
+              "Equipo": "DET",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "57",
+              "Prom KO": "19.00",
+              "Nombre": "Mel Gray",
+              "Retornos punt": "4",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "49",
+              "Prom punt": "12.25",
+              "Equipo": "DET"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Don Overton",
+              "Equipo": "DET"
             }
           ],
           "Ofensiva": [
@@ -450,6 +490,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "DET"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "13",
+              "INT": "1",
+              "Largo pase": "26t",
+              "Rating": "73.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "173",
+              "Nombre": "Rodney Peete",
+              "Equipo": "DET"
             }
           ]
         },
@@ -466,7 +519,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "3-30",
           "Primeros downs": "17",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-20",
           "Tiempo de posesión": "27:55",
           "Yardas netas por pase": "154",
@@ -574,6 +627,50 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "4",
+              "Largo punt": "56",
+              "Yds punt": "209",
+              "Prom punt": "52.2",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "47",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "52",
+              "Prom KO": "26.00",
+              "Nombre": "Aaron Craver",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -864,6 +961,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "18",
+              "Rating": "62.6",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "174",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

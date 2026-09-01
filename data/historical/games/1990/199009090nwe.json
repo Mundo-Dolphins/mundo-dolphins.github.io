@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-177-1",
           "Comp-Int-Yds-TD-INT": "22-34-255-2-3",
+          "Conv. en tercer down": "2-9-22%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "2-25",
           "Primeros downs": "23",
@@ -246,6 +247,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "30",
+              "Prom KO": "15.00",
+              "Nombre": "Tony Collins",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "30",
+              "Prom KO": "30.00",
+              "Nombre": "Mark Higgs",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Brian Kinchen",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "4",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "31",
+              "Prom punt": "7.75",
               "Equipo": "MIA"
             }
           ],
@@ -441,6 +487,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "22",
+              "INT": "3",
+              "Largo pase": "35t",
+              "Rating": "70.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "255",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -455,7 +514,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "13",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "4-34",
           "Tiempo de posesión": "29:22",
           "Yardas netas por pase": "183",
@@ -563,6 +622,38 @@
               "TD punt": "",
               "Yds punt": "13",
               "Prom punt": "13",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Jason Staurovsky",
+              "Equipo": "NWE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "87",
+              "Prom KO": "21.75",
+              "Nombre": "Sammy Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "1.00",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Irving Fryar",
+              "Retornos punt": "1",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "13.00",
               "Equipo": "NWE"
             }
           ],
@@ -877,6 +968,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "48",
+              "Rating": "108.8",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "34",
+              "TD pase": "2",
+              "Yds pase": "217",
+              "Nombre": "Steve Grogan",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Marc Wilson",
               "Equipo": "NWE"
             }
           ]

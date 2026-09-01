@@ -135,11 +135,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-78-1",
           "Comp-Int-Yds-TD-INT": "31-48-423-4-2",
+          "Conv. en tercer down": "8-16-50%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "7-50",
           "Primeros downs": "25",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "3-29",
+          "Tiempo de posesión": "36:27",
           "Yardas netas por pase": "394",
           "Yardas totales": "472"
         },
@@ -339,6 +341,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "34",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "67",
+              "Prom KO": "16.75",
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "13",
+              "TD KO": "0",
+              "Yds KO": "13",
+              "Prom KO": "13.00",
+              "Nombre": "Eddie Hill",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Fulton Walker",
               "Equipo": "MIA"
             }
           ],
@@ -606,6 +649,32 @@
               "Yds carrera": "",
               "Objetivos": "6",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "43",
+              "Comp": "29",
+              "INT": "1",
+              "Largo pase": "50t",
+              "Rating": "118.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "403",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "5",
+              "Comp": "2",
+              "INT": "1",
+              "Largo pase": "15",
+              "Rating": "12.5",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "29",
+              "TD pase": "0",
+              "Yds pase": "20",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -773,6 +842,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "4",
+              "FGm": "2",
+              "Nombre": "Rolf Benirschke",
+              "Equipo": "SDG",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "85",
+              "Prom KO": "17.00",
+              "Nombre": "James Brooks",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Doug Beaudoin",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "Wes Chandler",
+              "Retornos punt": "1",
+              "Largo retorno punt": "56t",
+              "TD punt": "1",
+              "Yds punt": "56",
+              "Prom punt": "56.00",
               "Equipo": "SDG"
             }
           ],
@@ -991,6 +1101,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "53",
+              "Comp": "33",
+              "INT": "1",
+              "Largo pase": "47",
+              "Rating": "99.0",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "3",
+              "Yds pase": "433",
+              "Nombre": "Dan Fouts",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Chuck Muncie",
               "Equipo": "SDG"
             }
           ]

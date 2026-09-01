@@ -72,6 +72,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "21-86-0",
           "Comp-Int-Yds-TD-INT": "21-36-233-0-2",
+          "Conv. en tercer down": "4-15-26%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "8-55",
           "Primeros downs": "14",
@@ -153,6 +154,29 @@
               "TD punt": "",
               "Yds punt": "37",
               "Prom punt": "9.30",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "3",
+              "FGm": "0",
+              "Nombre": "Fred Steinfort",
+              "Equipo": "BUF",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "50",
+              "Prom KO": "25.00",
+              "Nombre": "Robb Riddick",
+              "Retornos punt": "4",
+              "Largo retorno punt": "24",
+              "TD punt": "0",
+              "Yds punt": "37",
+              "Prom punt": "9.25",
               "Equipo": "BUF"
             }
           ],
@@ -332,6 +356,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "21",
+              "INT": "2",
+              "Largo pase": "36",
+              "Rating": "54.5",
+              "Capturas recibidas": "6",
+              "Yds perdidas capturas": "61",
+              "TD pase": "0",
+              "Yds pase": "233",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -343,6 +380,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "36-151-0",
           "Comp-Int-Yds-TD-INT": "9-23-46-0-0",
+          "Conv. en tercer down": "4-15-26%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "13",
@@ -516,6 +554,56 @@
               "TD punt": "",
               "Yds punt": "62",
               "Prom punt": "62",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "4",
+              "FGm": "4",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "25",
+              "Prom KO": "25.00",
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "1",
+              "Largo retorno punt": "62",
+              "TD punt": "0",
+              "Yds punt": "62",
+              "Prom punt": "62.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -760,6 +848,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "8",
+              "INT": "0",
+              "Largo pase": "8",
+              "Rating": "44.9",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "40",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "6",
+              "Rating": "91.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "6",
+              "Nombre": "Tony Nathan",
               "Equipo": "MIA"
             }
           ]

@@ -100,10 +100,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-86-0",
           "Comp-Int-Yds-TD-INT": "21-28-311-5-0",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "4-45",
           "Primeros downs": "18",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "28:48",
           "Yardas netas por pase": "311",
@@ -259,6 +260,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "53",
+              "Prom KO": "17.67",
+              "Nombre": "Vince Heflin",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "3",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "6.00",
               "Equipo": "MIA"
             }
           ],
@@ -504,6 +537,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "21",
+              "INT": "0",
+              "Largo pase": "74t",
+              "Rating": "150.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "5",
+              "Yds pase": "311",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -515,6 +561,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-156-2",
           "Comp-Int-Yds-TD-INT": "21-36-204-0-2",
+          "Conv. en tercer down": "4-11-36%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "3-20",
           "Primeros downs": "23",
@@ -577,6 +624,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "WAS"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Mark Moseley",
+              "Equipo": "WAS",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "86",
+              "Prom KO": "28.67",
+              "Nombre": "Mike Nelms",
+              "Retornos punt": "3",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "8.00",
+              "Equipo": "WAS"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "19.00",
+              "Nombre": "Jimmy Smith",
               "Equipo": "WAS"
             }
           ],
@@ -755,6 +834,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "WAS"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "21",
+              "INT": "2",
+              "Largo pase": "26",
+              "Rating": "51.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "204",
+              "Nombre": "Joe Theismann",
               "Equipo": "WAS"
             }
           ]

@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-99-0",
           "Comp-Int-Yds-TD-INT": "13-23-167-1-3",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "8-74",
           "Primeros downs": "13",
@@ -186,6 +187,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "70",
+              "Prom KO": "14.00",
+              "Nombre": "Ron Davenport",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Bruce Hardy",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "James Pruitt",
+              "Retornos punt": "3",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "8.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -409,6 +455,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "13",
+              "INT": "3",
+              "Largo pase": "45",
+              "Rating": "54.3",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "15",
+              "TD pase": "1",
+              "Yds pase": "167",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -423,7 +482,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "4-24",
           "Primeros downs": "25",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-5",
           "Tiempo de posesión": "33:15",
           "Yardas netas por pase": "262",
@@ -547,6 +606,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "31",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Tony Franklin",
+              "Equipo": "NWE",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Irving Fryar",
+              "Retornos punt": "2",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "6.00",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Stephen Starring",
               "Equipo": "NWE"
             }
           ],
@@ -791,6 +882,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "38t",
+              "Rating": "146.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "2",
+              "Yds pase": "161",
+              "Nombre": "Tony Eason",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "41",
+              "Rating": "129.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "106",
+              "Nombre": "Steve Grogan",
               "Equipo": "NWE"
             }
           ]

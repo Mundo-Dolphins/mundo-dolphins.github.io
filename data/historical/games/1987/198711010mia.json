@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-146-1",
           "Comp-Int-Yds-TD-INT": "25-31-332-4-2",
+          "Conv. en tercer down": "6-9-66%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "26",
@@ -232,6 +233,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "90",
+              "Prom KO": "22.50",
+              "Nombre": "Troy Stradford",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Bruce Hardy",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "22",
+              "Prom punt": "7.33",
               "Equipo": "MIA"
             }
           ],
@@ -475,6 +512,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "25",
+              "INT": "2",
+              "Largo pase": "50t",
+              "Rating": "124.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "332",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -486,6 +536,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-116-1",
           "Comp-Int-Yds-TD-INT": "18-36-205-1-1",
+          "Conv. en tercer down": "9-16-56%",
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "5-35",
           "Primeros downs": "22",
@@ -631,6 +682,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "PIT"
+            },
+            {
+              "FG largo": "43",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Gary Anderson",
+              "Equipo": "PIT",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "92",
+              "Prom KO": "18.40",
+              "Nombre": "Dwight Stone",
               "Equipo": "PIT"
             }
           ],
@@ -825,6 +894,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "PIT"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "18",
+              "INT": "1",
+              "Largo pase": "23",
+              "Rating": "65.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "1",
+              "Yds pase": "205",
+              "Nombre": "Mark Malone",
               "Equipo": "PIT"
             }
           ]

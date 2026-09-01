@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "27-156-1",
           "Comp-Int-Yds-TD-INT": "18-37-228-1-1",
+          "Conv. en tercer down": "2-7-28%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "3-35",
           "Primeros downs": "23",
@@ -227,6 +228,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "CIN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Jim Breech",
+              "Equipo": "CIN",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "46",
+              "Prom KO": "15.33",
+              "Nombre": "Tim McGee",
+              "Equipo": "CIN"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "12",
+              "TD KO": "0",
+              "Yds KO": "12",
+              "Prom KO": "12.00",
+              "Nombre": "Barney Bussey",
+              "Equipo": "CIN"
+            },
+            {
+              "Nombre": "Mike Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
               "Equipo": "CIN"
             }
           ],
@@ -494,6 +531,19 @@
               "Yds carrera": "",
               "Objetivos": "5",
               "Equipo": "CIN"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "18",
+              "INT": "1",
+              "Largo pase": "21",
+              "Rating": "66.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "26",
+              "TD pase": "1",
+              "Yds pase": "228",
+              "Nombre": "Boomer Esiason",
+              "Equipo": "CIN"
             }
           ]
         },
@@ -505,10 +555,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-98-1",
           "Comp-Int-Yds-TD-INT": "26-41-262-1-0",
+          "Conv. en tercer down": "9-16-56%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "6-61",
           "Primeros downs": "22",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "3-27",
           "Tiempo de posesión": "34:13",
           "Yardas netas por pase": "235",
@@ -692,6 +743,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "42",
+              "Prom KO": "21.00",
+              "Nombre": "Troy Stradford",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "David Lewis",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "1.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
               "Equipo": "MIA"
             }
           ],
@@ -934,6 +1030,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "26",
+              "INT": "0",
+              "Largo pase": "30t",
+              "Rating": "89.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "27",
+              "TD pase": "1",
+              "Yds pase": "262",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

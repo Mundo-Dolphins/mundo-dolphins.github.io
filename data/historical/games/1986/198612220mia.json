@@ -121,6 +121,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "17-122-0",
           "Comp-Int-Yds-TD-INT": "23-39-266-3-2",
+          "Conv. en tercer down": "3-8-37%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "2-20",
           "Primeros downs": "20",
@@ -296,6 +297,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "87",
+              "Prom KO": "21.75",
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "2",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "28",
+              "Prom punt": "14.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "5",
+              "TD KO": "0",
+              "Yds KO": "5",
+              "Prom KO": "5.00",
+              "Nombre": "Larry Lee",
               "Equipo": "MIA"
             }
           ],
@@ -563,6 +596,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "39",
+              "Comp": "23",
+              "INT": "2",
+              "Largo pase": "32t",
+              "Rating": "83.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "266",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -733,6 +779,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "47",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Tony Franklin",
+              "Equipo": "NWE",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "49",
+              "Prom KO": "24.50",
+              "Nombre": "Stephen Starring",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Irving Fryar",
+              "Retornos punt": "1",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "5.00",
               "Equipo": "NWE"
             }
           ],
@@ -955,6 +1033,32 @@
               "TD carrera": "",
               "Yds carrera": "-1",
               "Objetivos": "",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "15",
+              "INT": "1",
+              "Largo pase": "32",
+              "Rating": "103.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "2",
+              "Yds pase": "226",
+              "Nombre": "Steve Grogan",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "9",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "22t",
+              "Rating": "122.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "15",
+              "TD pase": "1",
+              "Yds pase": "59",
+              "Nombre": "Tony Eason",
               "Equipo": "NWE"
             }
           ]

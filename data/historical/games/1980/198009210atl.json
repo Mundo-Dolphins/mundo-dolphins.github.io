@@ -93,11 +93,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "21-49-0",
           "Comp-Int-Yds-TD-INT": "18-36-332-2-0",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "11-94",
           "Primeros downs": "18",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "3-22",
+          "Tiempo de posesión": "27:06",
           "Yardas netas por pase": "310",
           "Yardas totales": "359"
         },
@@ -173,6 +175,29 @@
               "TD punt": "",
               "Yds punt": "24",
               "Prom punt": "8",
+              "Equipo": "ATL"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Tim Mazzetti",
+              "Equipo": "ATL",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "141",
+              "Prom KO": "28.20",
+              "Nombre": "Reggie Smith",
+              "Retornos punt": "3",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "8.00",
               "Equipo": "ATL"
             }
           ],
@@ -352,6 +377,19 @@
               "Yds carrera": "",
               "Objetivos": "7",
               "Equipo": "ATL"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "53",
+              "Rating": "100.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "22",
+              "TD pase": "2",
+              "Yds pase": "332",
+              "Nombre": "Steve Bartkowski",
+              "Equipo": "ATL"
             }
           ]
         },
@@ -363,11 +401,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-60-0",
           "Comp-Int-Yds-TD-INT": "20-36-215-2-1",
+          "Conv. en tercer down": "4-14-28%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "6-43",
           "Primeros downs": "19",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "3-29",
+          "Tiempo de posesión": "32:54",
           "Yardas netas por pase": "186",
           "Yardas totales": "246"
         },
@@ -489,6 +529,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "28",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "87",
+              "TD KO": "0",
+              "Yds KO": "120",
+              "Prom KO": "60.00",
+              "Nombre": "Don Bessillieu",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "3",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "0.33",
               "Equipo": "MIA"
             }
           ],
@@ -733,6 +805,45 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "10",
+              "INT": "0",
+              "Largo pase": "17",
+              "Rating": "56.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "75",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "14",
+              "Comp": "10",
+              "INT": "1",
+              "Largo pase": "33",
+              "Rating": "113.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "2",
+              "Yds pase": "140",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Nat Moore",
               "Equipo": "MIA"
             }
           ]

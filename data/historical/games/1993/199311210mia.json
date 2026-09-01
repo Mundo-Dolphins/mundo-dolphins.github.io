@@ -91,7 +91,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-50",
           "Primeros downs": "15",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "3-19",
           "Tiempo de posesión": "28:53",
           "Yardas netas por pase": "233",
@@ -201,6 +201,32 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Dale Hatcher",
+              "Punts": "5",
+              "Largo punt": "48",
+              "Yds punt": "218",
+              "Prom punt": "43.6",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "40",
+              "Prom KO": "20.00",
+              "Nombre": "O.J. McDuffie",
               "Equipo": "MIA"
             }
           ],
@@ -396,6 +422,19 @@
               "Yds carrera": "",
               "Objetivos": "5",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "27",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "44t",
+              "Rating": "115.0",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "19",
+              "TD pase": "2",
+              "Yds pase": "252",
+              "Nombre": "Steve DeBerg",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -568,6 +607,46 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Mike Saxon",
+              "Punts": "3",
+              "Largo punt": "59",
+              "Yds punt": "149",
+              "Prom punt": "49.7",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Scott Sisson",
+              "Equipo": "NWE",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "65",
+              "Prom KO": "21.67",
+              "Nombre": "Ray Crittenden",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "10",
+              "Prom KO": "10.00",
+              "Nombre": "Troy Brown",
+              "Retornos punt": "3",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "21",
+              "Prom punt": "7.00",
               "Equipo": "NWE"
             }
           ],
@@ -834,6 +913,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "23",
+              "INT": "1",
+              "Largo pase": "40t",
+              "Rating": "73.0",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "14",
+              "TD pase": "1",
+              "Yds pase": "275",
+              "Nombre": "Drew Bledsoe",
               "Equipo": "NWE"
             }
           ]

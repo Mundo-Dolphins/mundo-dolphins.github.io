@@ -100,11 +100,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-116-1",
           "Comp-Int-Yds-TD-INT": "20-29-338-3-0",
+          "Conv. en tercer down": "7-12-58%",
           "Fumbles-perdidos": "4-1",
           "Penalizaciones-yardas": "9-69",
           "Primeros downs": "22",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "35:48",
           "Yardas netas por pase": "338",
           "Yardas totales": "454"
         },
@@ -242,6 +244,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Nick Mike-Mayer",
+              "Equipo": "BUF",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "58",
+              "Prom KO": "19.33",
+              "Nombre": "Byron Franklin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Roland Hooks",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "BUF"
             }
           ],
@@ -465,6 +499,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "20",
+              "INT": "0",
+              "Largo pase": "65t",
+              "Rating": "142.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "338",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -476,11 +523,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "18-99-1",
           "Comp-Int-Yds-TD-INT": "26-44-245-1-4",
+          "Conv. en tercer down": "6-13-46%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "3-15",
           "Primeros downs": "22",
           "Pérdidas de balón": "4",
           "Sacks-yardas perdidas": "2-20",
+          "Tiempo de posesión": "24:12",
           "Yardas netas por pase": "225",
           "Yardas totales": "324"
         },
@@ -586,6 +635,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "90t",
+              "TD KO": "1",
+              "Yds KO": "185",
+              "Prom KO": "30.83",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "8.50",
               "Equipo": "MIA"
             }
           ],
@@ -808,6 +884,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "44",
+              "Comp": "26",
+              "INT": "4",
+              "Largo pase": "22",
+              "Rating": "44.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "1",
+              "Yds pase": "245",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

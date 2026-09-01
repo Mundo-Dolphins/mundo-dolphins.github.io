@@ -121,6 +121,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "37-236-2",
           "Comp-Int-Yds-TD-INT": "24-39-316-4-1",
+          "Conv. en tercer down": "10-13-76%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-36",
           "Primeros downs": "33",
@@ -218,6 +219,29 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "28",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "6",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "58",
+              "Prom KO": "19.33",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -485,6 +509,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "39",
+              "Comp": "24",
+              "INT": "1",
+              "Largo pase": "28",
+              "Rating": "110.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "316",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -589,6 +626,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Tony Franklin",
+              "Equipo": "NWE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "86",
+              "Prom KO": "17.20",
+              "Nombre": "Jon Williams",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Bo Robinson",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Stephen Starring",
+              "Retornos punt": "1",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "13.00",
               "Equipo": "NWE"
             }
           ],
@@ -811,6 +884,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "76t",
+              "Rating": "136.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "3",
+              "Yds pase": "313",
+              "Nombre": "Tony Eason",
               "Equipo": "NWE"
             }
           ]

@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "13-68-0",
           "Comp-Int-Yds-TD-INT": "20-48-248-2-2",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "5-4",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "18",
@@ -220,6 +221,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "91",
+              "Prom KO": "15.17",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
               "Equipo": "MIA"
             }
           ],
@@ -487,6 +515,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "48",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "29",
+              "Rating": "54.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "14",
+              "TD pase": "2",
+              "Yds pase": "248",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -706,6 +747,33 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NWE"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Tony Franklin",
+              "Equipo": "NWE",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "37",
+              "TD KO": "0",
+              "Yds KO": "67",
+              "Prom KO": "22.33",
+              "Nombre": "Stephen Starring",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Roland James",
+              "Retornos punt": "2",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "1.00",
+              "Equipo": "NWE"
             }
           ],
           "Ofensiva": [
@@ -875,6 +943,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "12",
+              "Comp": "10",
+              "INT": "0",
+              "Largo pase": "18",
+              "Rating": "130.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "71",
+              "Nombre": "Tony Eason",
               "Equipo": "NWE"
             }
           ]

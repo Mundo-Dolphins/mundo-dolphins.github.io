@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "26-89-0",
           "Comp-Int-Yds-TD-INT": "19-30-275-1-2",
+          "Conv. en tercer down": "6-11-54%",
           "Fumbles-perdidos": "4-3",
           "Penalizaciones-yardas": "6-81",
           "Primeros downs": "19",
@@ -229,6 +230,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "DAL"
+            },
+            {
+              "FG largo": "39",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Rafael Septien",
+              "Equipo": "DAL",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "70",
+              "Prom KO": "23.33",
+              "Nombre": "Butch Johnson",
+              "Retornos punt": "2",
+              "Largo retorno punt": "3",
+              "TD punt": "0",
+              "Yds punt": "3",
+              "Prom punt": "1.50",
+              "Equipo": "DAL"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Alois Blackwell",
+              "Equipo": "DAL"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "10",
+              "Prom KO": "10.00",
+              "Nombre": "Burton Lawless",
+              "Equipo": "DAL"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Randy White",
               "Equipo": "DAL"
             }
           ],
@@ -386,6 +437,19 @@
               "Yds carrera": "",
               "Objetivos": "12",
               "Equipo": "DAL"
+            },
+            {
+              "Intentos": "30",
+              "Comp": "19",
+              "INT": "2",
+              "Largo pase": "53",
+              "Rating": "76.4",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "36",
+              "TD pase": "1",
+              "Yds pase": "275",
+              "Nombre": "Roger Staubach",
+              "Equipo": "DAL"
             }
           ]
         },
@@ -397,10 +461,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-54-2",
           "Comp-Int-Yds-TD-INT": "12-18-185-0-0",
+          "Conv. en tercer down": "2-10-20%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "8-57",
           "Primeros downs": "13",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "4-33",
           "Yardas netas por pase": "152",
           "Yardas totales": "206"
@@ -588,6 +653,33 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "128",
+              "Prom KO": "25.60",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "1",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "7.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -743,6 +835,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "7",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "42",
+              "Rating": "100.5",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "33",
+              "TD pase": "0",
+              "Yds pase": "185",
+              "Nombre": "Bob Griese",
               "Equipo": "MIA"
             }
           ]

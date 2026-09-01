@@ -114,6 +114,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "17-80-1",
           "Comp-Int-Yds-TD-INT": "17-33-189-2-0",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "7-55",
           "Primeros downs": "14",
@@ -223,6 +224,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "39",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "64",
+              "Prom KO": "21.33",
+              "Nombre": "Ronnie Harmon",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "41",
+              "Prom KO": "13.67",
+              "Nombre": "Steve Tasker",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Ron Pitts",
+              "Retornos punt": "2",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "6.50",
               "Equipo": "BUF"
             }
           ],
@@ -424,6 +461,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "30",
+              "Rating": "89.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "2",
+              "Yds pase": "189",
+              "Nombre": "Jim Kelly",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -435,10 +485,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-85-0",
           "Comp-Int-Yds-TD-INT": "39-54-404-4-0",
+          "Conv. en tercer down": "9-16-56%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-64",
           "Primeros downs": "29",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-15",
           "Tiempo de posesión": "40:07",
           "Yardas netas por pase": "389",
@@ -546,6 +597,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "52",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "90",
+              "Prom KO": "22.50",
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "4",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "4.50",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Dan Johnson",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -790,6 +882,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "54",
+              "Comp": "39",
+              "INT": "0",
+              "Largo pase": "39",
+              "Rating": "118.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "15",
+              "TD pase": "4",
+              "Yds pase": "404",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

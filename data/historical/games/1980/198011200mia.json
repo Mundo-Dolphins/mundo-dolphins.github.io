@@ -107,11 +107,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "39-103-2",
           "Comp-Int-Yds-TD-INT": "22-34-251-1-2",
+          "Conv. en tercer down": "13-24-54%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "7-40",
           "Primeros downs": "21",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "5-29",
+          "Tiempo de posesión": "38:39",
           "Yardas netas por pase": "222",
           "Yardas totales": "325"
         },
@@ -245,6 +247,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "36",
+              "Prom KO": "12.00",
+              "Nombre": "Nick Giaquinto",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "37",
+              "TD KO": "0",
+              "Yds KO": "65",
+              "Prom KO": "32.50",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "9",
+              "Prom punt": "9.00",
               "Equipo": "MIA"
             }
           ],
@@ -468,6 +520,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "22",
+              "INT": "2",
+              "Largo pase": "61",
+              "Rating": "72.1",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "29",
+              "TD pase": "1",
+              "Yds pase": "251",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -636,6 +701,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "SDG"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Rolf Benirschke",
+              "Equipo": "SDG",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "88",
+              "Prom KO": "22.00",
+              "Nombre": "Mike Fuller",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Hank Bauer",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Ron Smith",
+              "Equipo": "SDG"
             }
           ],
           "Ofensiva": [
@@ -791,6 +892,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "8",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "25",
+              "INT": "0",
+              "Largo pase": "18",
+              "Rating": "100.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "3",
+              "Yds pase": "226",
+              "Nombre": "Dan Fouts",
               "Equipo": "SDG"
             }
           ]

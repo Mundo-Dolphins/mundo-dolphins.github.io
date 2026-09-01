@@ -79,10 +79,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "53-196-3",
           "Comp-Int-Yds-TD-INT": "6-7-73-0-0",
+          "Conv. en tercer down": "4-11-36%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "1-4",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-10",
           "Yardas netas por pase": "63",
           "Yardas totales": "259"
@@ -304,6 +305,15 @@
               "Yds punt": "20",
               "Prom punt": "6.70",
               "Equipo": "MIA"
+            },
+            {
+              "FG largo": "28",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
             }
           ],
           "Ofensiva": [
@@ -467,6 +477,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "7",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "--",
+              "Rating": "110.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "0",
+              "Yds pase": "73",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -478,6 +501,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-72-1",
           "Comp-Int-Yds-TD-INT": "18-28-182-0-1",
+          "Conv. en tercer down": "8-15-53%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "7-65",
           "Primeros downs": "14",
@@ -701,6 +725,15 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fred Cox",
+              "Equipo": "MIN",
+              "XPa": "1",
+              "XPm": "1"
             }
           ],
           "Ofensiva": [
@@ -909,6 +942,19 @@
               "Largo carrera": "",
               "TD carrera": "",
               "Yds carrera": "",
+              "Equipo": "MIN"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "18",
+              "INT": "1",
+              "Largo pase": "--",
+              "Rating": "67.9",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "0",
+              "Yds pase": "182",
+              "Nombre": "Fran Tarkenton",
               "Equipo": "MIN"
             }
           ]

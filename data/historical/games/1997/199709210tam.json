@@ -97,196 +97,6 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "Z. THOMAS",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. RODGERS",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. WOODEN",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. HOLLIER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. JACKSON",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GARDENER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. HARRIS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. HARRIS",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. TANNER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. TAYLOR",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. ARMSTRONG",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BOWENS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. JACOBS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. WALKER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "I. SPIKES",
-              "FR": "1"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "O. MARE",
-              "50+": "0",
-              "LONG": "0"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "D. MARINO",
-              "CMP%": "64.90",
-              "AVG": "6.35"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "K. RICHARDSON",
-              "IN 20": "0"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "O. MCDUFFIE",
-              "YAC": "55"
-            },
-            {
-              "PLAYER": "F. BARNETT",
-              "YAC": "50"
-            },
-            {
-              "PLAYER": "T. DRAYTON",
-              "YAC": "45"
-            },
-            {
-              "PLAYER": "J. MCPHAIL",
-              "YAC": "28"
-            },
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "YAC": "22"
-            },
-            {
-              "PLAYER": "C. JORDAN",
-              "YAC": "19"
-            },
-            {
-              "PLAYER": "B. MANNING",
-              "YAC": "11"
-            },
-            {
-              "PLAYER": "D. DOTSON",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "B. PARMALEE",
-              "YAC": "1"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "AVG": "2.81",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "J. MCPHAIL",
-              "AVG": "3",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "I. SPIKES",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "17-48-1",
           "Comp-Int-Yds-TD-INT": "24-37-235-2-0",
@@ -295,7 +105,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "8-86",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "26:27",
           "Yardas netas por pase": "235",
@@ -598,6 +408,32 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Kyle Richardson",
+              "Punts": "3",
+              "Largo punt": "53",
+              "Yds punt": "142",
+              "Prom punt": "47.3",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "41",
+              "TD KO": "0",
+              "Yds KO": "102",
+              "Prom KO": "25.50",
+              "Nombre": "Irving Spikes",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -840,6 +676,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "24",
+              "INT": "0",
+              "Largo pase": "24",
+              "Rating": "100.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "235",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -848,177 +697,6 @@
       },
       "Tampa Bay Buccaneers": {
         "Coach": "Tony Dungy",
-        "Estadisticas NFL.com": {
-          "TB DEFENSE": [
-            {
-              "PLAYER": "H. NICKERSON",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. BROOKS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. LYNCH",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. JOHNSON",
-              "TFL": "0",
-              "PD": "2",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. MINCY",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. PARKER",
-              "TFL": "0",
-              "PD": "5",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. ABRAHAM",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. GOOCH",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. LEGETTE",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. AHANOTU",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. CULPEPPER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. JACKSON",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. JONES",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. UPSHAW",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "TB FUMBLES": [
-            {
-              "PLAYER": "M. ALSTOTT",
-              "FR": "0"
-            }
-          ],
-          "TB KICKING": [
-            {
-              "PLAYER": "M. HUSTED",
-              "50+": "0",
-              "LONG": "22"
-            }
-          ],
-          "TB PASSING": [
-            {
-              "PLAYER": "T. DILFER",
-              "CMP%": "75",
-              "AVG": "10.33"
-            }
-          ],
-          "TB PUNTING": [
-            {
-              "col_1": "TEAM",
-              "IN 20": "0"
-            }
-          ],
-          "TB RECEIVING": [
-            {
-              "PLAYER": "W. DUNN",
-              "YAC": "106"
-            },
-            {
-              "PLAYER": "R. ANTHONY",
-              "YAC": "50"
-            },
-            {
-              "PLAYER": "H. COPELAND",
-              "YAC": "39"
-            },
-            {
-              "PLAYER": "M. ALSTOTT",
-              "YAC": "20"
-            },
-            {
-              "PLAYER": "J. HARRIS",
-              "YAC": "20"
-            },
-            {
-              "PLAYER": "K. WILLIAMS",
-              "YAC": "13"
-            }
-          ],
-          "TB RUSHING": [
-            {
-              "PLAYER": "M. ALSTOTT",
-              "AVG": "5.28",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "W. DUNN",
-              "AVG": "1.55",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "T. DILFER",
-              "AVG": "-1",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "32-109-0",
           "Comp-Int-Yds-TD-INT": "18-24-248-4-1",
@@ -1300,6 +978,38 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "TAM"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Michael Husted",
+              "Equipo": "TAM",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "24.00",
+              "Nombre": "Karl Williams",
+              "Retornos punt": "3",
+              "Largo retorno punt": "25",
+              "TD punt": "0",
+              "Yds punt": "30",
+              "Prom punt": "10.00",
+              "Equipo": "TAM"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Steve White",
+              "Equipo": "TAM"
             }
           ],
           "Ofensiva": [
@@ -1469,6 +1179,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "TAM"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "18",
+              "INT": "1",
+              "Largo pase": "58t",
+              "Rating": "129.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "248",
+              "Nombre": "Trent Dilfer",
               "Equipo": "TAM"
             }
           ]

@@ -107,11 +107,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "20-70-1",
           "Comp-Int-Yds-TD-INT": "26-47-271-1-1",
+          "Conv. en tercer down": "6-16-37%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "7-37",
           "Primeros downs": "22",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "6-35",
+          "Tiempo de posesión": "31:51",
           "Yardas netas por pase": "236",
           "Yardas totales": "306"
         },
@@ -213,6 +215,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "37",
+              "TD KO": "0",
+              "Yds KO": "89",
+              "Prom KO": "29.67",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "11",
+              "TD KO": "0",
+              "Yds KO": "11",
+              "Prom KO": "11.00",
+              "Nombre": "Eddie Hill",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "5",
+              "Largo retorno punt": "28",
+              "TD punt": "0",
+              "Yds punt": "47",
+              "Prom punt": "9.40",
               "Equipo": "MIA"
             }
           ],
@@ -480,6 +532,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "16",
+              "INT": "1",
+              "Largo pase": "31",
+              "Rating": "80.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "18",
+              "TD pase": "1",
+              "Yds pase": "169",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "10",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "59.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "17",
+              "TD pase": "0",
+              "Yds pase": "102",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -494,7 +572,7 @@
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "9-73",
           "Primeros downs": "19",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-19",
           "Yardas netas por pase": "161",
           "Yardas totales": "304"
@@ -646,6 +724,51 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "OAK"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Chris Bahr",
+              "Equipo": "RAI",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Todd Christensen",
+              "Equipo": "RAI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "25",
+              "Prom KO": "25.00",
+              "Nombre": "Art Whittington",
+              "Equipo": "RAI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Chester Willis",
+              "Equipo": "RAI"
+            },
+            {
+              "Nombre": "Ted Watts",
+              "Retornos punt": "3",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "36",
+              "Prom punt": "12.00",
+              "Equipo": "RAI"
             }
           ],
           "Ofensiva": [
@@ -912,6 +1035,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "OAK"
+            },
+            {
+              "Intentos": "39",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "37t",
+              "Rating": "81.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "19",
+              "TD pase": "3",
+              "Yds pase": "180",
+              "Nombre": "Marc Wilson",
+              "Equipo": "RAI"
             }
           ]
         },

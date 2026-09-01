@@ -101,14 +101,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "18-77-1",
           "Comp-Int-Yds-TD-INT": "21-36-360-1-1",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "0-0-0%",
+          "Conv. en tercer down": "6-10-60%",
           "Fumbles-perdidos": "4-4",
           "Penalizaciones-yardas": "9-93",
           "Primeros downs": "23",
           "Pérdidas de balón": "5",
           "Sacks-yardas perdidas": "3-21",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "22:28",
           "Yardas netas por pase": "339",
           "Yardas totales": "416"
         },
@@ -425,6 +425,37 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Chris Mohr",
+              "Punts": "2",
+              "Largo punt": "39",
+              "Yds punt": "73",
+              "Prom punt": "36.5",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Steve Christie",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "54",
+              "Prom KO": "13.50",
+              "Nombre": "Kevin Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "BUF"
             }
           ],
           "Ofensiva": [
@@ -643,6 +674,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "21",
+              "INT": "1",
+              "Largo pase": "65",
+              "Rating": "90.0",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "21",
+              "TD pase": "1",
+              "Yds pase": "360",
+              "Nombre": "Doug Flutie",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -654,14 +698,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-117-1",
           "Comp-Int-Yds-TD-INT": "23-34-235-1-1",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "0-1-0%",
+          "Conv. en tercer down": "9-14-64%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-75",
           "Primeros downs": "25",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "1-7",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "37:32",
           "Yardas netas por pase": "228",
           "Yardas totales": "345"
         },
@@ -976,6 +1020,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Klaus Wilmsmeyer",
+              "Punts": "1",
+              "Largo punt": "34",
+              "Yds punt": "34",
+              "Prom punt": "34.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "65",
+              "Prom KO": "21.67",
+              "Nombre": "John Avery",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "1",
+              "Largo retorno punt": "20",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "20.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1289,6 +1368,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "23",
+              "INT": "1",
+              "Largo pase": "56",
+              "Rating": "84.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "1",
+              "Yds pase": "235",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

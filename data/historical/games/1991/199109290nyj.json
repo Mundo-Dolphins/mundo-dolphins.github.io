@@ -254,6 +254,59 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "4",
+              "Largo punt": "50",
+              "Yds punt": "181",
+              "Prom punt": "45.2",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "53",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "66",
+              "Prom KO": "16.50",
+              "Nombre": "Aaron Craver",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "13",
+              "TD KO": "0",
+              "Yds KO": "13",
+              "Prom KO": "13.00",
+              "Nombre": "Charles Henry",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "25",
+              "Prom KO": "25.00",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "2",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "-1",
+              "Prom punt": "-0.50",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -544,6 +597,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "32",
+              "Rating": "71.3",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "20",
+              "TD pase": "1",
+              "Yds pase": "245",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "6",
+              "Comp": "5",
+              "INT": "0",
+              "Largo pase": "14",
+              "Rating": "143.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "53",
+              "Nombre": "Scott Secules",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -560,7 +639,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-25",
           "Primeros downs": "20",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "36:04",
           "Yardas netas por pase": "221",
@@ -686,6 +765,37 @@
               "TD punt": "",
               "Yds punt": "26",
               "Prom punt": "8.70",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Louie Aguiar",
+              "Punts": "3",
+              "Largo punt": "46",
+              "Yds punt": "101",
+              "Prom punt": "33.7",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "53",
+              "Prom KO": "13.25",
+              "Nombre": "Terance Mathis",
+              "Retornos punt": "3",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "26",
+              "Prom punt": "8.67",
               "Equipo": "NYJ"
             }
           ],
@@ -952,6 +1062,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "24",
+              "Rating": "116.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "221",
+              "Nombre": "Ken O'Brien",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Troy Taylor",
               "Equipo": "NYJ"
             }
           ]

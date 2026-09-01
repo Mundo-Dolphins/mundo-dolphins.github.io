@@ -207,6 +207,29 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Florian Kempf",
+              "Equipo": "OTI",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "42",
+              "Prom KO": "14.00",
+              "Nombre": "Carl Roaches",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -429,6 +452,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "13",
+              "INT": "1",
+              "Largo pase": "66",
+              "Rating": "67.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "1",
+              "Yds pase": "167",
+              "Nombre": "Oliver Luck",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -440,6 +476,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "32-148-2",
           "Comp-Int-Yds-TD-INT": "17-26-195-1-1",
+          "Conv. en tercer down": "4-11-36%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "4-34",
           "Primeros downs": "23",
@@ -581,6 +618,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "19",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "55",
+              "TD KO": "0",
+              "Yds KO": "100",
+              "Prom KO": "33.33",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "3",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "25",
+              "Prom punt": "8.33",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Mark Brown",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
               "Equipo": "MIA"
             }
           ],
@@ -781,6 +859,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "28t",
+              "Rating": "84.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "195",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

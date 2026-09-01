@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-148-1",
           "Comp-Int-Yds-TD-INT": "23-42-358-3-0",
+          "Conv. en tercer down": "6-14-42%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "4-45",
           "Primeros downs": "25",
@@ -233,6 +234,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "CLE"
+            },
+            {
+              "FG largo": "43",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Don Cockroft",
+              "Equipo": "CLE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "124",
+              "Prom KO": "24.80",
+              "Nombre": "Dino Hall",
+              "Retornos punt": "3",
+              "Largo retorno punt": "34",
+              "TD punt": "0",
+              "Yds punt": "33",
+              "Prom punt": "11.00",
+              "Equipo": "CLE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Robert Jackson",
               "Equipo": "CLE"
             }
           ],
@@ -434,6 +467,19 @@
               "Yds carrera": "",
               "Objetivos": "8",
               "Equipo": "CLE"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "23",
+              "INT": "0",
+              "Largo pase": "54",
+              "Rating": "107.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "13",
+              "TD pase": "3",
+              "Yds pase": "358",
+              "Nombre": "Brian Sipe",
+              "Equipo": "CLE"
             }
           ]
         },
@@ -445,6 +491,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-121-1",
           "Comp-Int-Yds-TD-INT": "16-31-204-2-3",
+          "Conv. en tercer down": "4-13-30%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "2-20",
           "Primeros downs": "15",
@@ -555,6 +602,47 @@
               "TD punt": "",
               "Yds punt": "11",
               "Prom punt": "11",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "38",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "113",
+              "Prom KO": "22.60",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "9",
+              "Prom punt": "9.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nat Moore",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -755,6 +843,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "12",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "10",
+              "INT": "2",
+              "Largo pase": "32",
+              "Rating": "25.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "115",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "6",
+              "INT": "1",
+              "Largo pase": "51",
+              "Rating": "89.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "89",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

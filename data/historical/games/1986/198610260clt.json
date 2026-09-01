@@ -152,6 +152,29 @@
               "Yds punt": "6",
               "Prom punt": "6",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "72",
+              "Prom KO": "18.00",
+              "Nombre": "Robbie Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "6",
+              "TD punt": "0",
+              "Yds punt": "6",
+              "Prom punt": "6.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -330,6 +353,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "14",
+              "INT": "1",
+              "Largo pase": "16",
+              "Rating": "54.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "121",
+              "Nombre": "Jack Trudeau",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -341,10 +377,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-97-1",
           "Comp-Int-Yds-TD-INT": "23-42-243-1-0",
+          "Conv. en tercer down": "9-15-60%",
           "Fumbles-perdidos": "3-0",
           "Penalizaciones-yardas": "3-30",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "32:12",
           "Yardas netas por pase": "243",
@@ -436,6 +473,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "29",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "36",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "28.00",
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "2",
+              "Largo retorno punt": "6",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "5.50",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Ron Davenport",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -702,6 +780,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "23",
+              "INT": "0",
+              "Largo pase": "27",
+              "Rating": "79.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "243",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

@@ -65,6 +65,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-169-0",
           "Comp-Int-Yds-TD-INT": "10-19-106-0-2",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "5-30",
           "Primeros downs": "18",
@@ -127,6 +128,29 @@
               "Retornos punt": "2",
               "Largo retorno punt": "",
               "TD punt": "",
+              "Yds punt": "7",
+              "Prom punt": "3.50",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "64",
+              "Prom KO": "21.33",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "2",
+              "Largo retorno punt": "6",
+              "TD punt": "0",
               "Yds punt": "7",
               "Prom punt": "3.50",
               "Equipo": "MIA"
@@ -286,6 +310,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "10",
+              "INT": "2",
+              "Largo pase": "15",
+              "Rating": "29.6",
+              "Capturas recibidas": "6",
+              "Yds perdidas capturas": "49",
+              "TD pase": "0",
+              "Yds pase": "106",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -300,7 +337,7 @@
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "6-45",
           "Primeros downs": "13",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "3-31",
           "Yardas netas por pase": "112",
           "Yardas totales": "209"
@@ -472,6 +509,38 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "OAK"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Jim Breech",
+              "Equipo": "RAI",
+              "XPa": "2",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "34",
+              "TD KO": "0",
+              "Yds KO": "34",
+              "Prom KO": "34.00",
+              "Nombre": "Larry Brunson",
+              "Equipo": "RAI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "44",
+              "TD KO": "0",
+              "Yds KO": "44",
+              "Prom KO": "44.00",
+              "Nombre": "Ira Matthews",
+              "Retornos punt": "3",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "1.67",
+              "Equipo": "RAI"
             }
           ],
           "Ofensiva": [
@@ -628,6 +697,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "OAK"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "89.8",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "31",
+              "TD pase": "1",
+              "Yds pase": "143",
+              "Nombre": "Ken Stabler",
+              "Equipo": "RAI"
             }
           ]
         },

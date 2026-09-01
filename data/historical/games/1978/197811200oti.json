@@ -255,6 +255,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Toni Fritsch",
+              "Equipo": "OTI",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "28.00",
+              "Nombre": "Larry Poole",
+              "Equipo": "OTI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Tim Wilson",
+              "Equipo": "OTI"
+            },
+            {
+              "Nombre": "Guido Merkens",
+              "Retornos punt": "3",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "26",
+              "Prom punt": "8.67",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -433,6 +469,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "10",
+              "INT": "1",
+              "Largo pase": "29",
+              "Rating": "95.4",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "15",
+              "TD pase": "1",
+              "Yds pase": "156",
+              "Nombre": "Dan Pastorini",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -444,6 +493,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "32-127-2",
           "Comp-Int-Yds-TD-INT": "23-33-349-2-1",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "9-96",
           "Primeros downs": "27",
@@ -582,6 +632,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "34",
+              "TD KO": "0",
+              "Yds KO": "108",
+              "Prom KO": "21.60",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "13.50",
+              "Nombre": "Gary Davis",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "3",
+              "Largo retorno punt": "19",
+              "TD punt": "0",
+              "Yds punt": "33",
+              "Prom punt": "11.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Charlie Babb",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
               "Equipo": "MIA"
             }
           ],
@@ -804,6 +899,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "23",
+              "INT": "1",
+              "Largo pase": "47",
+              "Rating": "111.8",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "22",
+              "TD pase": "2",
+              "Yds pase": "349",
+              "Nombre": "Bob Griese",
               "Equipo": "MIA"
             }
           ]

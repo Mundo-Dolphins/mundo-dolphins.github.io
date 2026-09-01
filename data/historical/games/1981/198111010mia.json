@@ -172,6 +172,33 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "FG largo": "44",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Mike Wood",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "47",
+              "Prom KO": "15.67",
+              "Nombre": "Kevin Williams",
+              "Equipo": "CLT"
+            },
+            {
+              "Nombre": "David Shula",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -350,6 +377,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "23",
+              "INT": "2",
+              "Largo pase": "21",
+              "Rating": "68.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "1",
+              "Yds pase": "248",
+              "Nombre": "Bert Jones",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -361,11 +401,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-146-1",
           "Comp-Int-Yds-TD-INT": "14-25-164-2-0",
+          "Conv. en tercer down": "7-12-58%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-55",
           "Primeros downs": "19",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "32:02",
           "Yardas netas por pase": "164",
           "Yardas totales": "310"
         },
@@ -503,6 +545,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "41",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "22",
+              "Prom KO": "22.00",
+              "Nombre": "Nick Giaquinto",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "6.00",
               "Equipo": "MIA"
             }
           ],
@@ -703,6 +772,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "22t",
+              "Rating": "102.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "164",
+              "Nombre": "David Woodley",
               "Equipo": "MIA"
             }
           ]

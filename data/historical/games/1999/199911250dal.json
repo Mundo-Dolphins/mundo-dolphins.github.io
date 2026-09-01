@@ -73,175 +73,6 @@
     "Equipos": {
       "Dallas Cowboys": {
         "Coach": "Chan Gailey",
-        "Estadisticas NFL.com": {
-          "DAL DEFENSE": [
-            {
-              "PLAYER": "D. COAKLEY",
-              "QBP": "0",
-              "INT TD": "1"
-            },
-            {
-              "PLAYER": "R. GODFREY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. WILLIAMS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. HAWTHORNE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. HENNINGS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. NOBLE",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. SANDERS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "G. TEAGUE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. MOBLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. SPELLMAN",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. WOODSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. AKINS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "W. DAVIS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "G. ELLIS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. HAMBRICK",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "DAL FUMBLES": [
-            {
-              "PLAYER": "T. AIKMAN",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "T. MYSLINSKI",
-              "FR": "0"
-            }
-          ],
-          "DAL KICKING": [
-            {
-              "PLAYER": "R. CUNNINGHAM",
-              "50+": "0",
-              "LONG": "36"
-            }
-          ],
-          "DAL PASSING": [
-            {
-              "PLAYER": "T. AIKMAN",
-              "CMP%": "55.17",
-              "AVG": "8"
-            }
-          ],
-          "DAL PUNTING": [
-            {
-              "PLAYER": "T. GOWIN",
-              "IN 20": "1"
-            }
-          ],
-          "DAL RECEIVING": [
-            {
-              "PLAYER": "R. ISMAIL",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. TUCKER",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "M. LUCKY",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "D. LAFLEUR",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. THOMAS",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "E. MILLS",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "E. BJORNSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "C. WARREN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "W. MCGARITY",
-              "YAC": "0"
-            }
-          ],
-          "DAL RUSHING": [
-            {
-              "PLAYER": "E. SMITH",
-              "AVG": "3.30",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "T. MYSLINSKI",
-              "AVG": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "T. AIKMAN",
-              "AVG": "-0.50",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "E. MILLS",
-              "AVG": "-1",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "34-101-0",
           "Comp-Int-Yds-TD-INT": "16-29-232-1-0",
@@ -672,6 +503,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "DAL"
+            },
+            {
+              "Nombre": "Toby Gowin",
+              "Punts": "6",
+              "Largo punt": "51",
+              "Yds punt": "259",
+              "Prom punt": "43.2",
+              "Equipo": "DAL"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Richie Cunningham",
+              "Equipo": "DAL",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Jason Tucker",
+              "Equipo": "DAL"
+            },
+            {
+              "Nombre": "Deion Sanders",
+              "Retornos punt": "1",
+              "Largo retorno punt": "-5",
+              "TD punt": "0",
+              "Yds punt": "-5",
+              "Prom punt": "-5.00",
+              "Equipo": "DAL"
             }
           ],
           "Ofensiva": [
@@ -938,6 +804,19 @@
               "Yds carrera": "-1",
               "Objetivos": "5",
               "Equipo": "DAL"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "65t",
+              "Rating": "92.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "232",
+              "Nombre": "Troy Aikman",
+              "Equipo": "DAL"
             }
           ]
         },
@@ -946,157 +825,6 @@
       },
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "R. JONES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "Z. THOMAS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. OWENS",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. MARION",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. RODGERS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. TAYLOR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "O. GADSDEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. MADISON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "P. SURTAIN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. WILSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. WOODEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. ARMSTRONG",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GARDENER",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "col_1": "TEAM",
-              "FR": "0"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "O. MARE",
-              "50+": "0",
-              "LONG": "0"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "D. MARINO",
-              "CMP%": "41.70",
-              "AVG": "4.94"
-            },
-            {
-              "PLAYER": "D. HUARD",
-              "CMP%": "80",
-              "AVG": "8.80"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "T. HUTTON",
-              "IN 20": "0"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "S. PRITCHETT",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "Y. GREEN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "T. MARTIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "O. GADSDEN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "T. DRAYTON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. KONRAD",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. JOHNSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "N. JACQUET",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "J. JOHNSON",
-              "AVG": "3.30",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. HUARD",
-              "AVG": "6",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "20-69-0",
           "Comp-Int-Yds-TD-INT": "19-41-222-0-5",
@@ -1508,6 +1236,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tom Hutton",
+              "Punts": "4",
+              "Largo punt": "45",
+              "Yds punt": "150",
+              "Prom punt": "37.5",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "3",
+              "FGm": "0",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "92",
+              "Prom KO": "18.40",
+              "Nombre": "Brock Marion",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nate Jacquet",
+              "Retornos punt": "3",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "28",
+              "Prom punt": "9.33",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1749,6 +1512,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "15",
+              "INT": "5",
+              "Largo pase": "27",
+              "Rating": "17.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "0",
+              "Yds pase": "178",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "5",
+              "Comp": "4",
+              "INT": "0",
+              "Largo pase": "27",
+              "Rating": "103.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "0",
+              "Yds pase": "44",
+              "Nombre": "Damon Huard",
               "Equipo": "MIA"
             }
           ]

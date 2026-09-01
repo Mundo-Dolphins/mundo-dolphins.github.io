@@ -100,11 +100,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-103-0",
           "Comp-Int-Yds-TD-INT": "24-47-244-2-5",
+          "Conv. en tercer down": "6-15-40%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "4-22",
           "Primeros downs": "18",
           "Pérdidas de balón": "6",
           "Sacks-yardas perdidas": "2-17",
+          "Tiempo de posesión": "31:29",
           "Yardas netas por pase": "227",
           "Yardas totales": "330"
         },
@@ -210,6 +212,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "29",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "123",
+              "Prom KO": "20.50",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "3",
+              "Largo retorno punt": "22",
+              "TD punt": "0",
+              "Yds punt": "38",
+              "Prom punt": "12.67",
               "Equipo": "MIA"
             }
           ],
@@ -477,6 +506,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "17",
+              "INT": "4",
+              "Largo pase": "43",
+              "Rating": "48.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "204",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "13",
+              "Comp": "7",
+              "INT": "1",
+              "Largo pase": "11",
+              "Rating": "27.7",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "17",
+              "TD pase": "0",
+              "Yds pase": "40",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -488,11 +543,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-154-2",
           "Comp-Int-Yds-TD-INT": "7-19-81-0-0",
+          "Conv. en tercer down": "6-15-40%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "4-30",
           "Primeros downs": "15",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-20",
+          "Tiempo de posesión": "28:31",
           "Yardas netas por pase": "61",
           "Yardas totales": "215"
         },
@@ -632,6 +689,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "TAM"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Bill Capece",
+              "Equipo": "TAM",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "17",
+              "Prom KO": "17.00",
+              "Nombre": "Michael Morton",
+              "Equipo": "TAM"
+            },
+            {
+              "Nombre": "Theo Bell",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "TAM"
             }
           ],
@@ -854,6 +938,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "TAM"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "7",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "50.5",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "81",
+              "Nombre": "Doug Williams",
               "Equipo": "TAM"
             }
           ]

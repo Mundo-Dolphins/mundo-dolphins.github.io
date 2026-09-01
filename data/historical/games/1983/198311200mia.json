@@ -184,6 +184,43 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "49",
+              "Prom KO": "16.33",
+              "Nombre": "Larry Anderson",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Ricky Porter",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "12",
+              "TD KO": "0",
+              "Yds KO": "12",
+              "Prom KO": "12.00",
+              "Nombre": "Kendall Williams",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -362,6 +399,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "9",
+              "INT": "2",
+              "Largo pase": "35",
+              "Rating": "30.0",
+              "Capturas recibidas": "6",
+              "Yds perdidas capturas": "58",
+              "TD pase": "0",
+              "Yds pase": "128",
+              "Nombre": "Mark Herrmann",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -373,10 +423,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "43-169-3",
           "Comp-Int-Yds-TD-INT": "14-21-240-1-0",
+          "Conv. en tercer down": "8-14-57%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-38",
           "Primeros downs": "23",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "35:56",
           "Yardas netas por pase": "240",
@@ -564,6 +615,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "6",
+              "Largo retorno punt": "60t",
+              "TD punt": "1",
+              "Yds punt": "97",
+              "Prom punt": "16.17",
               "Equipo": "MIA"
             }
           ],
@@ -808,6 +886,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "85t",
+              "Rating": "121.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "240",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

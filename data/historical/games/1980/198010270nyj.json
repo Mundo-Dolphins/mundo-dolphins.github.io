@@ -79,11 +79,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-71-1",
           "Comp-Int-Yds-TD-INT": "22-42-224-1-2",
+          "Conv. en tercer down": "8-14-57%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "2-23",
           "Primeros downs": "20",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "2-16",
+          "Tiempo de posesión": "27:32",
           "Yardas netas por pase": "208",
           "Yardas totales": "279"
         },
@@ -189,6 +191,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "35",
+              "Prom KO": "17.50",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "3",
+              "TD punt": "0",
+              "Yds punt": "3",
+              "Prom punt": "3.00",
               "Equipo": "MIA"
             }
           ],
@@ -412,6 +441,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "22",
+              "INT": "2",
+              "Largo pase": "22",
+              "Rating": "56.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "1",
+              "Yds pase": "224",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -423,11 +465,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "43-159-2",
           "Comp-Int-Yds-TD-INT": "11-20-175-0-3",
+          "Conv. en tercer down": "10-14-71%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "21",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "2-11",
+          "Tiempo de posesión": "32:28",
           "Yardas netas por pase": "164",
           "Yardas totales": "323"
         },
@@ -547,6 +591,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Bruce Harper",
+              "Retornos punt": "3",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "26",
+              "Prom punt": "8.67",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Ken Schroy",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Bobby Jones",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "NYJ"
             }
           ],
@@ -747,6 +832,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "11",
+              "INT": "3",
+              "Largo pase": "39",
+              "Rating": "44.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "175",
+              "Nombre": "Richard Todd",
               "Equipo": "NYJ"
             }
           ]

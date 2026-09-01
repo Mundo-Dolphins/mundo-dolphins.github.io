@@ -195,6 +195,38 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Steve Mike-Mayer",
+              "Equipo": "CLT",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "55",
+              "TD KO": "0",
+              "Yds KO": "98",
+              "Prom KO": "32.67",
+              "Nombre": "Nesby Glasgow",
+              "Retornos punt": "3",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "3.33",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "8",
+              "TD KO": "0",
+              "Yds KO": "8",
+              "Prom KO": "8.00",
+              "Nombre": "Wade Griffin",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -395,6 +427,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "25",
+              "INT": "1",
+              "Largo pase": "31t",
+              "Rating": "95.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "3",
+              "Yds pase": "304",
+              "Nombre": "Greg Landry",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "1",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Joe Washington",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -406,6 +464,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "32-100-1",
           "Comp-Int-Yds-TD-INT": "12-24-178-3-0",
+          "Conv. en tercer down": "8-14-57%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "9-76",
           "Primeros downs": "16",
@@ -518,6 +577,38 @@
               "TD punt": "",
               "Yds punt": "4",
               "Prom punt": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "43",
+              "TD KO": "0",
+              "Yds KO": "99",
+              "Prom KO": "33.00",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "4.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -740,6 +831,45 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "9",
+              "INT": "0",
+              "Largo pase": "31t",
+              "Rating": "116.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "13",
+              "TD pase": "2",
+              "Yds pase": "128",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "6",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "29t",
+              "Rating": "118.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "50",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Delvin Williams",
               "Equipo": "MIA"
             }
           ]

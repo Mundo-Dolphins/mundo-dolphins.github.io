@@ -221,6 +221,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Tony Zendejas",
+              "Equipo": "OTI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "19.00",
+              "Nombre": "Butch Woolfolk",
+              "Equipo": "OTI"
+            },
+            {
+              "Nombre": "Ernest Givins",
+              "Retornos punt": "3",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "38",
+              "Prom punt": "12.67",
+              "Equipo": "OTI"
+            },
+            {
+              "Nombre": "Allen Pinkett",
+              "Retornos punt": "1",
+              "Largo retorno punt": "-1",
+              "TD punt": "0",
+              "Yds punt": "-1",
+              "Prom punt": "-1.00",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -465,6 +501,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "9",
+              "INT": "1",
+              "Largo pase": "27",
+              "Rating": "45.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "0",
+              "Yds pase": "119",
+              "Nombre": "Oliver Luck",
+              "Equipo": "OTI"
+            },
+            {
+              "Intentos": "8",
+              "Comp": "5",
+              "INT": "1",
+              "Largo pase": "10",
+              "Rating": "38.0",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "45",
+              "Nombre": "Warren Moon",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -476,6 +538,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-128-0",
           "Comp-Int-Yds-TD-INT": "12-29-220-4-2",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "2-20",
           "Primeros downs": "17",
@@ -633,6 +696,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "24",
+              "Prom KO": "24.00",
+              "Nombre": "Ron Davenport",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Tom Toth",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "5",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "25",
+              "Prom punt": "5.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nat Moore",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -833,6 +941,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "7",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "12",
+              "INT": "2",
+              "Largo pase": "85t",
+              "Rating": "79.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "3",
+              "TD pase": "4",
+              "Yds pase": "220",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

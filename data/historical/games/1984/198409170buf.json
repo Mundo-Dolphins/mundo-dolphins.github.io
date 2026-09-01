@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "19-68-1",
           "Comp-Int-Yds-TD-INT": "23-38-259-1-0",
+          "Conv. en tercer down": "7-17-41%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "9-70",
           "Primeros downs": "16",
@@ -213,6 +214,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Joe Danelo",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "19.00",
+              "Nombre": "Don Wilson",
+              "Retornos punt": "2",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "7.00",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Van Williams",
               "Equipo": "BUF"
             }
           ],
@@ -458,6 +491,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "38",
+              "Comp": "23",
+              "INT": "0",
+              "Largo pase": "37t",
+              "Rating": "89.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "31",
+              "TD pase": "1",
+              "Yds pase": "259",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -469,6 +515,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-72-0",
           "Comp-Int-Yds-TD-INT": "26-35-296-3-1",
+          "Conv. en tercer down": "6-11-54%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "5-43",
           "Primeros downs": "23",
@@ -612,6 +659,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "54",
+              "Prom KO": "13.50",
+              "Nombre": "Vince Heflin",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "2",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "23",
+              "Prom punt": "11.50",
               "Equipo": "MIA"
             }
           ],
@@ -856,6 +930,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "26",
+              "INT": "1",
+              "Largo pase": "23",
+              "Rating": "115.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "296",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

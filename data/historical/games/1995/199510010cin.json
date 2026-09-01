@@ -119,7 +119,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-40",
           "Primeros downs": "23",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-3",
           "Tiempo de posesión": "27:33",
           "Yardas netas por pase": "198",
@@ -390,6 +390,32 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "CIN"
+            },
+            {
+              "Nombre": "Lee Johnson",
+              "Punts": "5",
+              "Largo punt": "49",
+              "Yds punt": "227",
+              "Prom punt": "45.4",
+              "Equipo": "CIN"
+            },
+            {
+              "FG largo": "28",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Doug Pelfrey",
+              "Equipo": "CIN",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "124",
+              "Prom KO": "20.67",
+              "Nombre": "David Dunn",
+              "Equipo": "CIN"
             }
           ],
           "Ofensiva": [
@@ -607,6 +633,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "CIN"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "44t",
+              "Rating": "100.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "3",
+              "TD pase": "3",
+              "Yds pase": "201",
+              "Nombre": "Jeff Blake",
+              "Equipo": "CIN"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Eric Bieniemy",
               "Equipo": "CIN"
             }
           ]
@@ -877,6 +929,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "2",
+              "Largo punt": "50",
+              "Yds punt": "97",
+              "Prom punt": "48.5",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "46",
+              "FGa": "4",
+              "FGm": "4",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "29",
+              "Prom KO": "14.50",
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "3",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "5.67",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "41",
+              "Prom KO": "20.50",
+              "Nombre": "Irving Spikes",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1118,6 +1210,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "48",
+              "Comp": "33",
+              "INT": "1",
+              "Largo pase": "58",
+              "Rating": "103.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "2",
+              "Yds pase": "450",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

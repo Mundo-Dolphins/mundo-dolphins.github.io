@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-154-0",
           "Comp-Int-Yds-TD-INT": "19-32-192-4-1",
+          "Conv. en tercer down": "4-10-40%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "4-20",
           "Primeros downs": "25",
@@ -222,6 +223,29 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "26",
+              "Prom KO": "26.00",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -467,6 +491,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "24",
+              "Rating": "118.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "4",
+              "Yds pase": "192",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "1",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Mark Clayton",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -478,6 +528,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-166-1",
           "Comp-Int-Yds-TD-INT": "21-39-267-1-1",
+          "Conv. en tercer down": "7-16-43%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-41",
           "Primeros downs": "26",
@@ -573,6 +624,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "30",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "34",
+              "Prom KO": "17.00",
+              "Nombre": "Davlin Mullen",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "7",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "7.00",
+              "Nombre": "Tony Paige",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Kirk Springs",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "NYJ"
             }
           ],
@@ -817,6 +904,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "39",
+              "Comp": "21",
+              "INT": "1",
+              "Largo pase": "28t",
+              "Rating": "73.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "32",
+              "TD pase": "1",
+              "Yds pase": "267",
+              "Nombre": "Ken O'Brien",
               "Equipo": "NYJ"
             }
           ]

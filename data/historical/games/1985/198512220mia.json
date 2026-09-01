@@ -72,6 +72,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "26-111-0",
           "Comp-Int-Yds-TD-INT": "10-24-188-0-3",
+          "Conv. en tercer down": "3-11-27%",
           "Fumbles-perdidos": "5-3",
           "Penalizaciones-yardas": "19-123",
           "Primeros downs": "11",
@@ -233,6 +234,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "50",
+              "Prom KO": "16.67",
+              "Nombre": "Anthony Steels",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "13.50",
+              "Nombre": "Don Wilson",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Rod Hill",
+              "Retornos punt": "2",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "2.00",
               "Equipo": "BUF"
             }
           ],
@@ -434,6 +462,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "10",
+              "INT": "3",
+              "Largo pase": "49",
+              "Rating": "29.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "188",
+              "Nombre": "Bruce Mathison",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -445,6 +486,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "36-179-2",
           "Comp-Int-Yds-TD-INT": "16-26-145-2-1",
+          "Conv. en tercer down": "4-9-44%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "7-47",
           "Primeros downs": "24",
@@ -620,6 +662,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "12",
+              "TD KO": "0",
+              "Yds KO": "12",
+              "Prom KO": "12.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "4",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "4.50",
               "Equipo": "MIA"
             }
           ],
@@ -930,6 +999,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "15",
+              "INT": "1",
+              "Largo pase": "23",
+              "Rating": "88.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "16",
+              "TD pase": "2",
+              "Yds pase": "136",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "2",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "9",
+              "Rating": "62.5",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "9",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

@@ -110,7 +110,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "9-57",
           "Primeros downs": "23",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-10",
           "Tiempo de posesión": "37:35",
           "Yardas netas por pase": "101",
@@ -203,6 +203,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "47",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "69",
+              "Prom KO": "23.00",
+              "Nombre": "Albert Bentley",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Clarence Verdin",
+              "Equipo": "CLT"
+            },
+            {
+              "Nombre": "Mike Prior",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -445,6 +481,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "19t",
+              "Rating": "119.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "111",
+              "Nombre": "Chris Chandler",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "0",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Ricky Turner",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -456,6 +518,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "17-58-1",
           "Comp-Int-Yds-TD-INT": "26-32-304-3-1",
+          "Conv. en tercer down": "4-7-57%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "5-40",
           "Primeros downs": "21",
@@ -563,6 +626,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "44",
+              "TD KO": "0",
+              "Yds KO": "87",
+              "Prom KO": "29.00",
+              "Nombre": "Joe Cribbs",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Ron Davenport",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "25",
+              "Prom KO": "25.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "1",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "16.00",
               "Equipo": "MIA"
             }
           ],
@@ -781,6 +889,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "26",
+              "INT": "1",
+              "Largo pase": "55",
+              "Rating": "124.5",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "304",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

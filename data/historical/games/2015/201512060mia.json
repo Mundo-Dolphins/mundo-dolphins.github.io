@@ -986,166 +986,6 @@
     "Equipos": {
       "Baltimore Ravens": {
         "Coach": "John Harbaugh",
-        "Estadisticas NFL.com": {
-          "BAL DEFENSE": [
-            {
-              "PLAYER": "D. SMITH",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. LEWIS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. MOSLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "Z. ORR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. UPSHAW",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "E. DUMERVIL",
-              "QBP": "2",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "W. HILL",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. WILLIAMS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. WRIGHT",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. ALLEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. CANTY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "Z. SMITH",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "L. WEBB",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "L. GUY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. JERNIGAN",
-              "QBP": "2",
-              "INT TD": "0"
-            }
-          ],
-          "BAL FUMBLES": [
-            {
-              "col_1": "TEAM",
-              "FR": "0"
-            }
-          ],
-          "BAL KICKING": [
-            {
-              "PLAYER": "J. TUCKER",
-              "50+": "0",
-              "LONG": "38"
-            }
-          ],
-          "BAL PASSING": [
-            {
-              "PLAYER": "M. SCHAUB",
-              "CMP%": "69.60",
-              "AVG": "6.70"
-            }
-          ],
-          "BAL PUNTING": [
-            {
-              "PLAYER": "S. KOCH",
-              "IN 20": "2"
-            }
-          ],
-          "BAL RECEIVING": [
-            {
-              "PLAYER": "J. ALLEN",
-              "YAC": "99"
-            },
-            {
-              "PLAYER": "C. GIVENS",
-              "YAC": "7"
-            },
-            {
-              "PLAYER": "K. AIKEN",
-              "YAC": "8"
-            },
-            {
-              "PLAYER": "J. BUTLER",
-              "YAC": "15"
-            },
-            {
-              "PLAYER": "D. BROWN",
-              "YAC": "2"
-            },
-            {
-              "PLAYER": "N. BOYLE",
-              "YAC": "8"
-            },
-            {
-              "PLAYER": "C. GILLMORE",
-              "YAC": "6"
-            },
-            {
-              "PLAYER": "T. WEST",
-              "YAC": "6"
-            },
-            {
-              "PLAYER": "K. JUSZCZYK",
-              "YAC": "1"
-            }
-          ],
-          "BAL RUSHING": [
-            {
-              "PLAYER": "J. ALLEN",
-              "AVG": "3.71",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "T. WEST",
-              "AVG": "3.90",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "M. SCHAUB",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "26-94-0",
           "Comp-Int-Yds-TD-INT": "32-46-308-1-2",
@@ -1465,6 +1305,210 @@
               "TFL": "",
               "Solo": "",
               "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Daryl Smith",
+              "Capturas": "1.0",
+              "Asist": "0",
+              "Tackles": "9",
+              "Solo": "9",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Kendrick Lewis",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "5",
+              "Solo": "5",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "C.J. Mosley",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "4",
+              "Solo": "4",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Elvis Dumervil",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "3",
+              "Solo": "2",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Courtney Upshaw",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "3",
+              "Solo": "2",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Will Hill",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "3",
+              "Solo": "2",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Zach Orr",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "3",
+              "Solo": "3",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Albert McClellan",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "3",
+              "Solo": "3",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Shareece Wright",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "2",
+              "Solo": "2",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Chris Canty",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "2",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Brandon Williams",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "2",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Javorius Allen",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Lardarius Webb",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Brynden Trawick",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Za'Darius Smith",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Timmy Jernigan",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "0",
+              "Solo": "0",
+              "Equipo": "RAV"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Lawrence Guy",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "0",
+              "Solo": "0",
+              "Equipo": "RAV"
             }
           ],
           "Equipos especiales": [
@@ -1533,6 +1577,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "Nombre": "Sam Koch",
+              "Punts": "5",
+              "Largo punt": "67",
+              "Yds punt": "267",
+              "Prom punt": "53.4",
+              "Equipo": "RAV"
+            },
+            {
+              "FG largo": "38",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Justin Tucker",
+              "Equipo": "RAV",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Raheem Mostert",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Kaelin Clay",
+              "Retornos punt": "4",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "40",
+              "Prom punt": "10.00",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Lardarius Webb",
+              "Retornos punt": "1",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "7.00",
+              "Equipo": "RAV"
             }
           ],
           "Ofensiva": [
@@ -1775,6 +1863,133 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "46",
+              "Comp": "32",
+              "INT": "2",
+              "Largo pase": "41t",
+              "Rating": "77.1",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "27",
+              "TD pase": "1",
+              "Yds pase": "308",
+              "Nombre": "Matt Schaub",
+              "Carreras": "1",
+              "Largo carrera": "0",
+              "TD carrera": "0",
+              "Yds carrera": "0",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Javorius Allen",
+              "Rec": "12",
+              "Largo recepción": "41t",
+              "TD recepción": "1",
+              "YAC recepción": "90",
+              "Yds recepción": "107",
+              "Carreras": "17",
+              "Largo carrera": "16",
+              "TD carrera": "0",
+              "Yds carrera": "63",
+              "Objetivos": "13",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Terrance West",
+              "Rec": "1",
+              "Largo recepción": "5",
+              "TD recepción": "0",
+              "YAC recepción": "6",
+              "Yds recepción": "5",
+              "Carreras": "8",
+              "Largo carrera": "8",
+              "TD carrera": "0",
+              "Yds carrera": "31",
+              "Objetivos": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Kamar Aiken",
+              "Rec": "6",
+              "Largo recepción": "11",
+              "TD recepción": "0",
+              "YAC recepción": "4",
+              "Yds recepción": "48",
+              "Objetivos": "11",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Jeremy Butler",
+              "Rec": "4",
+              "Largo recepción": "22",
+              "TD recepción": "0",
+              "YAC recepción": "16",
+              "Yds recepción": "43",
+              "Objetivos": "5",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Nick Boyle",
+              "Rec": "3",
+              "Largo recepción": "7",
+              "TD recepción": "0",
+              "YAC recepción": "6",
+              "Yds recepción": "15",
+              "Objetivos": "4",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Chris Givens",
+              "Rec": "3",
+              "Largo recepción": "36",
+              "TD recepción": "0",
+              "YAC recepción": "4",
+              "Yds recepción": "68",
+              "Objetivos": "8",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Daniel Brown",
+              "Rec": "1",
+              "Largo recepción": "17",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "17",
+              "Objetivos": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Crockett Gillmore",
+              "Rec": "1",
+              "Largo recepción": "7",
+              "TD recepción": "0",
+              "YAC recepción": "5",
+              "Yds recepción": "7",
+              "Objetivos": "1",
+              "Equipo": "RAV"
+            },
+            {
+              "Nombre": "Kyle Juszczyk",
+              "Rec": "1",
+              "Largo recepción": "-2",
+              "TD recepción": "0",
+              "YAC recepción": "1",
+              "Yds recepción": "-2",
+              "Objetivos": "2",
+              "Equipo": "RAV"
+            },
+            {
+              "Fumbles": "0",
+              "Fumbles perdidos": "0",
+              "Nombre": "Kendrick Lewis",
+              "Equipo": "RAV"
+            },
+            {
+              "Fumbles": "0",
+              "Fumbles perdidos": "0",
+              "Nombre": "Courtney Upshaw",
+              "Equipo": "RAV"
             }
           ]
         },
@@ -1783,163 +1998,6 @@
       },
       "Miami Dolphins": {
         "Coach": "Dan Campbell",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "K. SHEPPARD",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. JONES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. MCCAIN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. MISI",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. THOMAS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "O. VERNON",
-              "QBP": "5",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. PHILLIPS",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "N. SUH",
-              "QBP": "2",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. GARY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. GRIMES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. JENKINS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. SHELBY",
-              "QBP": "3",
-              "INT TD": "1"
-            },
-            {
-              "PLAYER": "B. MCCAIN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. FEDE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "N. HEWITT",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "L. MILLER",
-              "FR": "0"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "A. FRANKS",
-              "50+": "0",
-              "LONG": "0"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "R. TANNEHILL",
-              "CMP%": "47.40",
-              "AVG": "4.53"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "M. DARR",
-              "IN 20": "2"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "D. PARKER",
-              "YAC": "3"
-            },
-            {
-              "PLAYER": "J. LANDRY",
-              "YAC": "1"
-            },
-            {
-              "PLAYER": "L. MILLER",
-              "YAC": "1"
-            },
-            {
-              "PLAYER": "D. WILLIAMS",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. CAMERON",
-              "YAC": "7"
-            },
-            {
-              "PLAYER": "D. SIMS",
-              "YAC": "3"
-            },
-            {
-              "PLAYER": "K. STILLS",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "L. MILLER",
-              "AVG": "5.70",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "J. AJAYI",
-              "AVG": "3",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. TANNEHILL",
-              "AVG": "11",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. WILLIAMS",
-              "AVG": "1",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "26-137-0",
           "Comp-Int-Yds-TD-INT": "9-19-86-1-0",
@@ -2335,6 +2393,258 @@
               "TFL": "",
               "Solo": "1",
               "Equipo": "MIA"
+            },
+            {
+              "INT": "1",
+              "INT largo": "2",
+              "TD INT": "0",
+              "Yds INT": "2",
+              "Nombre": "Reshad Jones",
+              "Capturas": "0.0",
+              "Asist": "3",
+              "Tackles": "10",
+              "Solo": "7",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Kelvin Sheppard",
+              "Capturas": "0.0",
+              "Asist": "3",
+              "Tackles": "8",
+              "Solo": "5",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Bobby McCain",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "7",
+              "Solo": "7",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Koa Misi",
+              "Capturas": "0.0",
+              "Asist": "4",
+              "Tackles": "7",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Jelani Jenkins",
+              "Capturas": "0.0",
+              "Asist": "4",
+              "Tackles": "7",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Michael Thomas",
+              "Capturas": "0.0",
+              "Asist": "3",
+              "Tackles": "7",
+              "Solo": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Olivier Vernon",
+              "Capturas": "2.5",
+              "Asist": "2",
+              "Tackles": "6",
+              "Solo": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Jordan Phillips",
+              "Capturas": "0.0",
+              "Asist": "3",
+              "Tackles": "4",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Shamiel Gary",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "4",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Brent Grimes",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "4",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Ndamukong Suh",
+              "Capturas": "0.0",
+              "Asist": "2",
+              "Tackles": "4",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "1",
+              "INT largo": "22t",
+              "TD INT": "1",
+              "Yds INT": "22",
+              "Nombre": "Derrick Shelby",
+              "Capturas": "0.5",
+              "Asist": "1",
+              "Tackles": "3",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Neville Hewitt",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "2",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Tony Lippett",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "2",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Brice McCain",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "2",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Robert Thomas",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "1",
+              "Solo": "0",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Mike Pouncey",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Zach Vigil",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Terrence Fede",
+              "Capturas": "0.0",
+              "Asist": "0",
+              "Tackles": "1",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "John Denney",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "1",
+              "Solo": "0",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "Walt Aikens",
+              "Capturas": "0.0",
+              "Asist": "1",
+              "Tackles": "1",
+              "Solo": "0",
+              "Equipo": "MIA"
             }
           ],
           "Equipos especiales": [
@@ -2402,6 +2712,50 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Matt Darr",
+              "Punts": "9",
+              "Largo punt": "59",
+              "Yds punt": "412",
+              "Prom punt": "45.8",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Andrew Franks",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "42",
+              "Prom KO": "21.00",
+              "Nombre": "Damien Williams",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Brent Grimes",
+              "Retornos punt": "1",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "15",
+              "Prom punt": "15.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Landry",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -2619,6 +2973,111 @@
               "Largo carrera": "",
               "TD carrera": "",
               "Yds carrera": "",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "9",
+              "INT": "0",
+              "Largo pase": "38t",
+              "Rating": "78.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "4",
+              "TD pase": "1",
+              "Yds pase": "86",
+              "Nombre": "Ryan Tannehill",
+              "Carreras": "1",
+              "Largo carrera": "11",
+              "TD carrera": "0",
+              "Yds carrera": "11",
+              "Equipo": "MIA"
+            },
+            {
+              "Fumbles": "1",
+              "Fumbles perdidos": "1",
+              "Nombre": "Lamar Miller",
+              "Rec": "1",
+              "Largo recepción": "5",
+              "TD recepción": "0",
+              "YAC recepción": "1",
+              "Yds recepción": "5",
+              "Carreras": "20",
+              "Largo carrera": "22",
+              "TD carrera": "0",
+              "Yds carrera": "113",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jay Ajayi",
+              "Carreras": "4",
+              "Largo carrera": "4",
+              "TD carrera": "0",
+              "Yds carrera": "12",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Damien Williams",
+              "Rec": "1",
+              "Largo recepción": "5",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "5",
+              "Carreras": "1",
+              "Largo carrera": "1",
+              "TD carrera": "0",
+              "Yds carrera": "1",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "DeVante Parker",
+              "Rec": "3",
+              "Largo recepción": "38t",
+              "TD recepción": "1",
+              "YAC recepción": "3",
+              "Yds recepción": "63",
+              "Objetivos": "5",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Landry",
+              "Rec": "2",
+              "Largo recepción": "6",
+              "TD recepción": "0",
+              "YAC recepción": "1",
+              "Yds recepción": "5",
+              "Objetivos": "5",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jordan Cameron",
+              "Rec": "1",
+              "Largo recepción": "4",
+              "TD recepción": "0",
+              "YAC recepción": "8",
+              "Yds recepción": "4",
+              "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Dion Sims",
+              "Rec": "1",
+              "Largo recepción": "4",
+              "TD recepción": "0",
+              "YAC recepción": "3",
+              "Yds recepción": "4",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Kenny Stills",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
               "Objetivos": "1",
               "Equipo": "MIA"
             }

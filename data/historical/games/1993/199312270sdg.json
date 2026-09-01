@@ -235,6 +235,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Dale Hatcher",
+              "Punts": "2",
+              "Largo punt": "42",
+              "Yds punt": "77",
+              "Prom punt": "38.5",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "48",
+              "TD KO": "0",
+              "Yds KO": "132",
+              "Prom KO": "26.40",
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "22",
+              "Prom KO": "11.00",
+              "Nombre": "Scott Miller",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -501,6 +541,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "40",
+              "Comp": "24",
+              "INT": "3",
+              "Largo pase": "23",
+              "Rating": "56.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "260",
+              "Nombre": "Scott Mitchell",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -517,7 +570,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "3-25",
           "Primeros downs": "25",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-9",
           "Tiempo de posesión": "30:47",
           "Yardas netas por pase": "239",
@@ -639,6 +692,50 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "2",
+              "Largo punt": "42",
+              "Yds punt": "70",
+              "Prom punt": "35.0",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "John Carney",
+              "Equipo": "SDG",
+              "XPa": "6",
+              "XPm": "6"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "85",
+              "Prom KO": "28.33",
+              "Nombre": "Nate Lewis",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Natrone Means",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "Darrien Gordon",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
               "Equipo": "SDG"
             }
           ],
@@ -905,6 +1002,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "41t",
+              "Rating": "126.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "3",
+              "Yds pase": "248",
+              "Nombre": "Stan Humphries",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "John Friesz",
               "Equipo": "SDG"
             }
           ]

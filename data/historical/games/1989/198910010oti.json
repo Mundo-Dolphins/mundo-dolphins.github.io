@@ -281,6 +281,47 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Tony Zendejas",
+              "Equipo": "OTI",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Leonard Harris",
+              "Equipo": "OTI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Kenny Johnson",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "OTI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Chris Verhulst",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -547,6 +588,45 @@
               "Yds carrera": "-1",
               "Objetivos": "",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "42",
+              "Rating": "141.7",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "13",
+              "TD pase": "2",
+              "Yds pase": "254",
+              "Nombre": "Warren Moon",
+              "Equipo": "OTI"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "10",
+              "Rating": "108.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "10",
+              "Nombre": "Cody Carlson",
+              "Equipo": "OTI"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "1",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Tony Zendejas",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -558,6 +638,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "11-43-0",
           "Comp-Int-Yds-TD-INT": "12-32-117-0-2",
+          "Conv. en tercer down": "4-11-36%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-30",
           "Primeros downs": "9",
@@ -697,6 +778,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "97t",
+              "TD KO": "1",
+              "Yds KO": "138",
+              "Prom KO": "46.00",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "9",
+              "TD KO": "0",
+              "Yds KO": "9",
+              "Prom KO": "9.00",
+              "Nombre": "Brian Kinchen",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Jarvis Williams",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Troy Stradford",
+              "Retornos punt": "1",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "7.00",
               "Equipo": "MIA"
             }
           ],
@@ -963,6 +1089,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "11",
+              "INT": "2",
+              "Largo pase": "24",
+              "Rating": "19.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "103",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "3",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "14",
+              "Rating": "49.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "14",
+              "Nombre": "Scott Secules",
               "Equipo": "MIA"
             }
           ]

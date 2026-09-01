@@ -23,954 +23,869 @@
     "Equipos": {
       "Baltimore Ravens": {
         "Coach": "",
-        "Estadisticas NFL.com": {
-          "BAL DEFENSE": [
-            {
-              "PLAYER": "C. CLARK",
-              "TOT": "5",
-              "SOLO": "4",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "1",
-              "INT": "1",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "C. BOARD",
-              "TOT": "4",
-              "SOLO": "4",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "T. JEFFERSON",
-              "TOT": "4",
-              "SOLO": "3",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "P. ONWUASOR",
-              "TOT": "4",
-              "SOLO": "4",
-              "SACKS": "1",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "K. YOUNG",
-              "TOT": "4",
-              "SOLO": "4",
-              "SACKS": "1",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "2",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "K. NACUA",
-              "TOT": "3",
-              "SOLO": "3",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "P. RICARD",
-              "TOT": "3",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "D. WILLIAMS",
-              "TOT": "3",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. ANDREWS",
-              "TOT": "1",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "A. AVERETT",
-              "TOT": "1",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "2",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "T. BOWSER",
-              "TOT": "1",
-              "SOLO": "0",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "D. ELLIOTT",
-              "TOT": "1",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. HUMPHREY",
-              "TOT": "1",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. JUDON",
-              "TOT": "1",
-              "SOLO": "0",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. PIERCE",
-              "TOT": "1",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            }
-          ],
-          "BAL FUMBLES": [
-            {
-              "col_1": "TEAM",
-              "FUM": "0",
-              "LOST": "0",
-              "FR": "0"
-            }
-          ],
-          "BAL INTERCEPTIONS": [
-            {
-              "PLAYER": "C. CLARK",
-              "INT": "1",
-              "INT YDS": "25",
-              "INT TD": "0",
-              "LONG": "25"
-            },
-            {
-              "PLAYER": "S. JEAN-BAPTISTE",
-              "INT": "1",
-              "INT YDS": "0",
-              "INT TD": "0",
-              "LONG": "0"
-            }
-          ],
-          "BAL KICKING": [
-            {
-              "PLAYER": "J. TUCKER",
-              "FGM": "1",
-              "FGA": "3",
-              "XP": "1",
-              "50+": "0",
-              "LONG": "22"
-            },
-            {
-              "PLAYER": "K. VEDVIK",
-              "FGM": "1",
-              "FGA": "1",
-              "XP": "2",
-              "50+": "0",
-              "LONG": "24"
-            }
-          ],
-          "BAL KICKOFF RETURNS": [
-            {
-              "PLAYER": "J. GRANT",
-              "RET": "3",
-              "AVG": "22",
-              "TD": "0",
-              "LONG": "29"
-            }
-          ],
-          "BAL PASSING": [
-            {
-              "PLAYER": "L. JACKSON",
-              "CMP": "7",
-              "ATT": "10",
-              "YDS": "98",
-              "CMP%": "70",
-              "AVG": "9.80",
-              "TD": "1",
-              "INT": "0",
-              "SACKS": "1",
-              "RATING": "134.60"
-            },
-            {
-              "PLAYER": "R. GRIFFIN",
-              "CMP": "9",
-              "ATT": "15",
-              "YDS": "66",
-              "CMP%": "60",
-              "AVG": "4.40",
-              "TD": "0",
-              "INT": "0",
-              "SACKS": "2",
-              "RATING": "70.40"
-            }
-          ],
-          "BAL PUNT RETURNS": [
-            {
-              "PLAYER": "J. GRANT",
-              "RET": "4",
-              "AVG": "9",
-              "TD": "0",
-              "LONG": "13"
-            },
-            {
-              "PLAYER": "T. WHITE",
-              "RET": "1",
-              "AVG": "9",
-              "TD": "0",
-              "LONG": "9"
-            }
-          ],
-          "BAL PUNTING": [
-            {
-              "PLAYER": "S. KOCH",
-              "PUNTS": "2",
-              "AVG": "61",
-              "IN 20": "0",
-              "LONG": "66"
-            },
-            {
-              "PLAYER": "K. VEDVIK",
-              "PUNTS": "1",
-              "AVG": "58",
-              "IN 20": "0",
-              "LONG": "58"
-            }
-          ],
-          "BAL RECEIVING": [
-            {
-              "PLAYER": "T. WHITE",
-              "REC": "3",
-              "YDS": "70",
-              "TD": "0",
-              "TGTS": "4",
-              "LONG": "33",
-              "YAC": "30"
-            },
-            {
-              "PLAYER": "J. LASLEY",
-              "REC": "3",
-              "YDS": "30",
-              "TD": "0",
-              "TGTS": "5",
-              "LONG": "13",
-              "YAC": "10"
-            },
-            {
-              "PLAYER": "M. THOMPSON",
-              "REC": "3",
-              "YDS": "25",
-              "TD": "0",
-              "TGTS": "3",
-              "LONG": "16",
-              "YAC": "19"
-            },
-            {
-              "PLAYER": "K. DIXON",
-              "REC": "3",
-              "YDS": "18",
-              "TD": "0",
-              "TGTS": "3",
-              "LONG": "16",
-              "YAC": "24"
-            },
-            {
-              "PLAYER": "M. WILLIAMS",
-              "REC": "1",
-              "YDS": "9",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "9",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. GRANT",
-              "REC": "1",
-              "YDS": "8",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "8",
-              "YAC": "8"
-            },
-            {
-              "PLAYER": "G. EDWARDS",
-              "REC": "1",
-              "YDS": "7",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "7",
-              "YAC": "3"
-            },
-            {
-              "PLAYER": "M. ANDREWS",
-              "REC": "0",
-              "YDS": "0",
-              "TD": "0",
-              "TGTS": "3",
-              "LONG": "0",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "A. LEVRONE",
-              "REC": "0",
-              "YDS": "0",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "0",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "P. RICARD",
-              "REC": "0",
-              "YDS": "0",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "0",
-              "YAC": "0"
-            }
-          ],
-          "BAL RUSHING": [
-            {
-              "PLAYER": "D. TURNER",
-              "ATT": "5",
-              "YDS": "75",
-              "TD": "1",
-              "AVG": "15",
-              "LONG": "65",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. GRIFFIN",
-              "ATT": "5",
-              "YDS": "41",
-              "TD": "0",
-              "AVG": "8.20",
-              "LONG": "21",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "L. JACKSON",
-              "ATT": "3",
-              "YDS": "39",
-              "TD": "1",
-              "AVG": "13",
-              "LONG": "19",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "G. EDWARDS",
-              "ATT": "16",
-              "YDS": "38",
-              "TD": "0",
-              "AVG": "2.40",
-              "LONG": "10",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "M. THOMPSON",
-              "ATT": "4",
-              "YDS": "17",
-              "TD": "0",
-              "AVG": "4.30",
-              "LONG": "19",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "A. COLLINS",
-              "ATT": "1",
-              "YDS": "7",
-              "TD": "0",
-              "AVG": "7",
-              "LONG": "7",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "C. MOORE",
-              "ATT": "1",
-              "YDS": "7",
-              "TD": "0",
-              "AVG": "7",
-              "LONG": "7",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "K. DIXON",
-              "ATT": "5",
-              "YDS": "2",
-              "TD": "0",
-              "AVG": "0.40",
-              "LONG": "3",
-              "FUM": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {},
         "Estadísticas por jugador": {
-          "Defensiva": [],
-          "Equipos especiales": [],
-          "Ofensiva": []
+          "Defensiva": [
+            {
+              "INT": "1",
+              "INT largo": "25",
+              "TD INT": "0",
+              "Yds INT": "25",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Nombre": "C. CLARK",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "5",
+              "TFL": "0",
+              "Solo": "4",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "1",
+              "INT largo": "0",
+              "TD INT": "0",
+              "Yds INT": "0",
+              "Nombre": "S. JEAN-BAPTISTE",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "C. BOARD",
+              "Golpes QB": "1",
+              "Capturas": "0",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "4",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "T. JEFFERSON",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "3",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "P. ONWUASOR",
+              "Golpes QB": "1",
+              "Capturas": "1",
+              "Tackles": "4",
+              "TFL": "1",
+              "Solo": "4",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "K. YOUNG",
+              "Golpes QB": "2",
+              "Capturas": "1",
+              "Tackles": "4",
+              "TFL": "1",
+              "Solo": "4",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "K. NACUA",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "0",
+              "Solo": "3",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "P. RICARD",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "0",
+              "Solo": "2",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "D. WILLIAMS",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "1",
+              "Solo": "2",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. ANDREWS",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "2",
+              "Nombre": "A. AVERETT",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "T. BOWSER",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "0",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "D. ELLIOTT",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. HUMPHREY",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. JUDON",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "0",
+              "Equipo": "BAL"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. PIERCE",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "1",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "BAL"
+            }
+          ],
+          "Equipos especiales": [
+            {
+              "FG largo": "22",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "J. TUCKER",
+              "Equipo": "BAL",
+              "XPm": "1"
+            },
+            {
+              "FG largo": "24",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "K. VEDVIK",
+              "Punts": "1",
+              "Dentro de 20": "0",
+              "Largo punt": "58",
+              "Prom punt": "58",
+              "Equipo": "BAL",
+              "XPm": "2"
+            },
+            {
+              "Nombre": "S. KOCH",
+              "Punts": "2",
+              "Dentro de 20": "0",
+              "Largo punt": "66",
+              "Prom punt": "61",
+              "Equipo": "BAL"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Prom KO": "22",
+              "Nombre": "J. GRANT",
+              "Retornos punt": "4",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Prom punt": "9",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "T. WHITE",
+              "Retornos punt": "1",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Prom punt": "9",
+              "Equipo": "BAL"
+            }
+          ],
+          "Ofensiva": [
+            {
+              "Fumbles": "0",
+              "Intentos": "10",
+              "Comp": "7",
+              "INT": "0",
+              "Rating": "134.60",
+              "Capturas recibidas": "1",
+              "TD pase": "1",
+              "Yds pase": "98",
+              "Nombre": "L. JACKSON",
+              "Carreras": "3",
+              "Largo carrera": "19",
+              "TD carrera": "1",
+              "Yds carrera": "39",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Intentos": "15",
+              "Comp": "9",
+              "INT": "0",
+              "Rating": "70.40",
+              "Capturas recibidas": "2",
+              "TD pase": "0",
+              "Yds pase": "66",
+              "Nombre": "R. GRIFFIN",
+              "Carreras": "5",
+              "Largo carrera": "21",
+              "TD carrera": "0",
+              "Yds carrera": "41",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "D. TURNER",
+              "Carreras": "5",
+              "Largo carrera": "65",
+              "TD carrera": "1",
+              "Yds carrera": "75",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "G. EDWARDS",
+              "Rec": "1",
+              "Largo recepción": "7",
+              "TD recepción": "0",
+              "YAC recepción": "3",
+              "Yds recepción": "7",
+              "Carreras": "16",
+              "Largo carrera": "10",
+              "TD carrera": "0",
+              "Yds carrera": "38",
+              "Objetivos": "2",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "M. THOMPSON",
+              "Rec": "3",
+              "Largo recepción": "16",
+              "TD recepción": "0",
+              "YAC recepción": "19",
+              "Yds recepción": "25",
+              "Carreras": "4",
+              "Largo carrera": "19",
+              "TD carrera": "0",
+              "Yds carrera": "17",
+              "Objetivos": "3",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "A. COLLINS",
+              "Carreras": "1",
+              "Largo carrera": "7",
+              "TD carrera": "0",
+              "Yds carrera": "7",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "C. MOORE",
+              "Carreras": "1",
+              "Largo carrera": "7",
+              "TD carrera": "0",
+              "Yds carrera": "7",
+              "Equipo": "BAL"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "K. DIXON",
+              "Rec": "3",
+              "Largo recepción": "16",
+              "TD recepción": "0",
+              "YAC recepción": "24",
+              "Yds recepción": "18",
+              "Carreras": "5",
+              "Largo carrera": "3",
+              "TD carrera": "0",
+              "Yds carrera": "2",
+              "Objetivos": "3",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "T. WHITE",
+              "Rec": "3",
+              "Largo recepción": "33",
+              "TD recepción": "0",
+              "YAC recepción": "30",
+              "Yds recepción": "70",
+              "Objetivos": "4",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "J. LASLEY",
+              "Rec": "3",
+              "Largo recepción": "13",
+              "TD recepción": "0",
+              "YAC recepción": "10",
+              "Yds recepción": "30",
+              "Objetivos": "5",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "M. WILLIAMS",
+              "Rec": "1",
+              "Largo recepción": "9",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "9",
+              "Objetivos": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "J. GRANT",
+              "Rec": "1",
+              "Largo recepción": "8",
+              "TD recepción": "0",
+              "YAC recepción": "8",
+              "Yds recepción": "8",
+              "Objetivos": "2",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "M. ANDREWS",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
+              "Objetivos": "3",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "A. LEVRONE",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
+              "Objetivos": "1",
+              "Equipo": "BAL"
+            },
+            {
+              "Nombre": "P. RICARD",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
+              "Objetivos": "1",
+              "Equipo": "BAL"
+            }
+          ]
         },
         "Puntos": 27,
         "Record": ""
       },
       "Miami Dolphins": {
         "Coach": "",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "T. MCDONALD",
-              "TOT": "7",
-              "SOLO": "4",
-              "SACKS": "0",
-              "TFL": "1",
-              "PD": "1",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "K. ALONSO",
-              "TOT": "5",
-              "SOLO": "4",
-              "SACKS": "0",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "J. BAKER",
-              "TOT": "4",
-              "SOLO": "3",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. FITZPATRICK",
-              "TOT": "4",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "R. JONES",
-              "TOT": "4",
-              "SOLO": "4",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "M. SMITH",
-              "TOT": "4",
-              "SOLO": "0",
-              "SACKS": "0.50",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "C. ALLEN",
-              "TOT": "3",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "J. PITTMAN",
-              "TOT": "3",
-              "SOLO": "3",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "C. WAKE",
-              "TOT": "3",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "J. DAVIS",
-              "TOT": "2",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "J. PHILLIPS",
-              "TOT": "2",
-              "SOLO": "1",
-              "SACKS": "1",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "R. QUINN",
-              "TOT": "2",
-              "SOLO": "1",
-              "SACKS": "1",
-              "TFL": "1",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "A. SPENCE",
-              "TOT": "2",
-              "SOLO": "1",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "C. TANKERSLEY",
-              "TOT": "2",
-              "SOLO": "2",
-              "SACKS": "0",
-              "TFL": "0",
-              "PD": "0",
-              "INT": "0",
-              "QBP": "0",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "V. TAYLOR",
-              "TOT": "2",
-              "SOLO": "1",
-              "SACKS": "0.50",
-              "TFL": "0",
-              "PD": "1",
-              "INT": "0",
-              "QBP": "1",
-              "INT TD": "0",
-              "FF": "0",
-              "FR": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "R. TANNEHILL",
-              "FUM": "2",
-              "LOST": "0",
-              "FR": "2"
-            }
-          ],
-          "MIA INTERCEPTIONS": [
-            {
-              "col_1": "TEAM",
-              "INT": "0",
-              "INT YDS": "0",
-              "INT TD": "0",
-              "LONG": "0"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "J. SANDERS",
-              "FGM": "1",
-              "FGA": "1",
-              "XP": "1",
-              "50+": "0",
-              "LONG": "33"
-            }
-          ],
-          "MIA KICKOFF RETURNS": [
-            {
-              "PLAYER": "J. DAVIS",
-              "RET": "3",
-              "AVG": "23.67",
-              "TD": "0",
-              "LONG": "27"
-            },
-            {
-              "PLAYER": "T. MCTYER",
-              "RET": "2",
-              "AVG": "22.50",
-              "TD": "0",
-              "LONG": "23"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "R. TANNEHILL",
-              "CMP": "11",
-              "ATT": "16",
-              "YDS": "115",
-              "CMP%": "68.80",
-              "AVG": "7.19",
-              "TD": "1",
-              "INT": "0",
-              "SACKS": "2",
-              "RATING": "110.20"
-            },
-            {
-              "PLAYER": "D. FALES",
-              "CMP": "5",
-              "ATT": "10",
-              "YDS": "63",
-              "CMP%": "50",
-              "AVG": "6.30",
-              "TD": "0",
-              "INT": "1",
-              "SACKS": "0",
-              "RATING": "30.40"
-            },
-            {
-              "PLAYER": "B. OSWEILER",
-              "CMP": "5",
-              "ATT": "7",
-              "YDS": "23",
-              "CMP%": "71.40",
-              "AVG": "3.29",
-              "TD": "0",
-              "INT": "1",
-              "SACKS": "3",
-              "RATING": "35.70"
-            }
-          ],
-          "MIA PUNT RETURNS": [
-            {
-              "PLAYER": "J. GRANT",
-              "RET": "2",
-              "AVG": "12.50",
-              "TD": "0",
-              "LONG": "17"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "M. HAACK",
-              "PUNTS": "6",
-              "AVG": "47.80",
-              "IN 20": "1",
-              "LONG": "59"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "K. DRAKE",
-              "REC": "1",
-              "YDS": "36",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "36",
-              "YAC": "2"
-            },
-            {
-              "PLAYER": "K. STILLS",
-              "REC": "3",
-              "YDS": "28",
-              "TD": "0",
-              "TGTS": "3",
-              "LONG": "10",
-              "YAC": "3"
-            },
-            {
-              "PLAYER": "D. AMENDOLA",
-              "REC": "2",
-              "YDS": "23",
-              "TD": "1",
-              "TGTS": "4",
-              "LONG": "16",
-              "YAC": "17"
-            },
-            {
-              "PLAYER": "G. ESCOBAR",
-              "REC": "2",
-              "YDS": "19",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "13",
-              "YAC": "2"
-            },
-            {
-              "PLAYER": "M. GESICKI",
-              "REC": "1",
-              "YDS": "10",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "10",
-              "YAC": "5"
-            },
-            {
-              "PLAYER": "A. WILSON",
-              "REC": "2",
-              "YDS": "10",
-              "TD": "0",
-              "TGTS": "3",
-              "LONG": "6",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "A. DERBY",
-              "REC": "1",
-              "YDS": "8",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "8",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. GRANT",
-              "REC": "1",
-              "YDS": "7",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "7",
-              "YAC": "5"
-            },
-            {
-              "PLAYER": "M. LEWIS",
-              "REC": "1",
-              "YDS": "7",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "7",
-              "YAC": "3"
-            },
-            {
-              "PLAYER": "F. GORE",
-              "REC": "1",
-              "YDS": "1",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "1",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "I. FORD",
-              "REC": "0",
-              "YDS": "0",
-              "TD": "0",
-              "TGTS": "2",
-              "LONG": "0",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "F. OWUSU",
-              "REC": "0",
-              "YDS": "0",
-              "TD": "0",
-              "TGTS": "1",
-              "LONG": "0",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "K. DRAKE",
-              "ATT": "4",
-              "YDS": "32",
-              "TD": "0",
-              "AVG": "8",
-              "LONG": "30",
-              "FUM": "0",
-              "20+": "1"
-            },
-            {
-              "PLAYER": "S. PERRY",
-              "ATT": "3",
-              "YDS": "27",
-              "TD": "0",
-              "AVG": "9",
-              "LONG": "15",
-              "FUM": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. TANNEHILL",
-              "ATT": "1",
-              "YDS": "0",
-              "TD": "0",
-              "AVG": "0",
-              "LONG": "0",
-              "FUM": "2",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "F. GORE",
-              "ATT": "1",
-              "YDS": "-2",
-              "TD": "0",
-              "AVG": "-2",
-              "LONG": "-2",
-              "FUM": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {},
         "Estadísticas por jugador": {
-          "Defensiva": [],
-          "Equipos especiales": [],
-          "Ofensiva": []
+          "Defensiva": [
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Nombre": "T. MCDONALD",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "7",
+              "TFL": "1",
+              "Solo": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "K. ALONSO",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "5",
+              "TFL": "1",
+              "Solo": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "J. BAKER",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. FITZPATRICK",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "R. JONES",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "M. SMITH",
+              "Golpes QB": "1",
+              "Capturas": "0.50",
+              "Tackles": "4",
+              "TFL": "0",
+              "Solo": "0",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "C. ALLEN",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "J. PITTMAN",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "0",
+              "Solo": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "C. WAKE",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "3",
+              "TFL": "0",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "J. DAVIS",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "2",
+              "TFL": "0",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "J. PHILLIPS",
+              "Golpes QB": "1",
+              "Capturas": "1",
+              "Tackles": "2",
+              "TFL": "1",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "R. QUINN",
+              "Golpes QB": "1",
+              "Capturas": "1",
+              "Tackles": "2",
+              "TFL": "1",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "A. SPENCE",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "2",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Nombre": "C. TANKERSLEY",
+              "Golpes QB": "0",
+              "Capturas": "0",
+              "Tackles": "2",
+              "TFL": "0",
+              "Solo": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "INT": "0",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Nombre": "V. TAYLOR",
+              "Golpes QB": "1",
+              "Capturas": "0.50",
+              "Tackles": "2",
+              "TFL": "0",
+              "Solo": "1",
+              "Equipo": "MIA"
+            }
+          ],
+          "Equipos especiales": [
+            {
+              "FG largo": "33",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "J. SANDERS",
+              "Equipo": "MIA",
+              "XPm": "1"
+            },
+            {
+              "Nombre": "M. HAACK",
+              "Punts": "6",
+              "Dentro de 20": "1",
+              "Largo punt": "59",
+              "Prom punt": "47.80",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Prom KO": "23.67",
+              "Nombre": "J. DAVIS",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Prom KO": "22.50",
+              "Nombre": "T. MCTYER",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "J. GRANT",
+              "Retornos punt": "2",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Prom punt": "12.50",
+              "Equipo": "MIA"
+            }
+          ],
+          "Ofensiva": [
+            {
+              "Fumbles": "2",
+              "Fumbles perdidos": "0",
+              "Intentos": "16",
+              "Comp": "11",
+              "INT": "0",
+              "Rating": "110.20",
+              "Capturas recibidas": "2",
+              "TD pase": "1",
+              "Yds pase": "115",
+              "Nombre": "R. TANNEHILL",
+              "Carreras": "1",
+              "Largo carrera": "0",
+              "TD carrera": "0",
+              "Yds carrera": "0",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "5",
+              "INT": "1",
+              "Rating": "30.40",
+              "Capturas recibidas": "0",
+              "TD pase": "0",
+              "Yds pase": "63",
+              "Nombre": "D. FALES",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "7",
+              "Comp": "5",
+              "INT": "1",
+              "Rating": "35.70",
+              "Capturas recibidas": "3",
+              "TD pase": "0",
+              "Yds pase": "23",
+              "Nombre": "B. OSWEILER",
+              "Equipo": "MIA"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "K. DRAKE",
+              "Rec": "1",
+              "Largo recepción": "36",
+              "TD recepción": "0",
+              "YAC recepción": "2",
+              "Yds recepción": "36",
+              "Carreras": "4",
+              "Largo carrera": "30",
+              "TD carrera": "0",
+              "Yds carrera": "32",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "S. PERRY",
+              "Carreras": "3",
+              "Largo carrera": "15",
+              "TD carrera": "0",
+              "Yds carrera": "27",
+              "Equipo": "MIA"
+            },
+            {
+              "Fumbles": "0",
+              "Nombre": "F. GORE",
+              "Rec": "1",
+              "Largo recepción": "1",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "1",
+              "Carreras": "1",
+              "Largo carrera": "-2",
+              "TD carrera": "0",
+              "Yds carrera": "-2",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "K. STILLS",
+              "Rec": "3",
+              "Largo recepción": "10",
+              "TD recepción": "0",
+              "YAC recepción": "3",
+              "Yds recepción": "28",
+              "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "D. AMENDOLA",
+              "Rec": "2",
+              "Largo recepción": "16",
+              "TD recepción": "1",
+              "YAC recepción": "17",
+              "Yds recepción": "23",
+              "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "G. ESCOBAR",
+              "Rec": "2",
+              "Largo recepción": "13",
+              "TD recepción": "0",
+              "YAC recepción": "2",
+              "Yds recepción": "19",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "M. GESICKI",
+              "Rec": "1",
+              "Largo recepción": "10",
+              "TD recepción": "0",
+              "YAC recepción": "5",
+              "Yds recepción": "10",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "A. WILSON",
+              "Rec": "2",
+              "Largo recepción": "6",
+              "TD recepción": "0",
+              "YAC recepción": "4",
+              "Yds recepción": "10",
+              "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "A. DERBY",
+              "Rec": "1",
+              "Largo recepción": "8",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "8",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "J. GRANT",
+              "Rec": "1",
+              "Largo recepción": "7",
+              "TD recepción": "0",
+              "YAC recepción": "5",
+              "Yds recepción": "7",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "M. LEWIS",
+              "Rec": "1",
+              "Largo recepción": "7",
+              "TD recepción": "0",
+              "YAC recepción": "3",
+              "Yds recepción": "7",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "I. FORD",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
+              "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "F. OWUSU",
+              "Rec": "0",
+              "Largo recepción": "0",
+              "TD recepción": "0",
+              "YAC recepción": "0",
+              "Yds recepción": "0",
+              "Objetivos": "1",
+              "Equipo": "MIA"
+            }
+          ]
         },
         "Puntos": 10,
         "Record": ""

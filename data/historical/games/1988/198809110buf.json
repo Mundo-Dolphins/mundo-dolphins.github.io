@@ -79,6 +79,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-104-0",
           "Comp-Int-Yds-TD-INT": "15-24-231-0-1",
+          "Conv. en tercer down": "4-10-40%",
           "Fumbles-perdidos": "3-3",
           "Penalizaciones-yardas": "3-30",
           "Primeros downs": "15",
@@ -206,6 +207,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "41",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "28",
+              "Prom KO": "14.00",
+              "Nombre": "Robb Riddick",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Erroll Tucker",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "BUF"
             }
           ],
@@ -449,6 +482,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "15",
+              "INT": "1",
+              "Largo pase": "34",
+              "Rating": "76.9",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "16",
+              "TD pase": "0",
+              "Yds pase": "231",
+              "Nombre": "Jim Kelly",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -460,6 +506,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-115-0",
           "Comp-Int-Yds-TD-INT": "22-34-221-0-0",
+          "Conv. en tercer down": "7-16-43%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "16",
@@ -637,6 +684,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "31",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "66",
+              "Prom KO": "22.00",
+              "Nombre": "Jarvis Williams",
               "Equipo": "MIA"
             }
           ],
@@ -903,6 +968,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "22",
+              "INT": "0",
+              "Largo pase": "30",
+              "Rating": "83.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "2",
+              "TD pase": "0",
+              "Yds pase": "221",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

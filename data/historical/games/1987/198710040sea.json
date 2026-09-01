@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-164-1",
           "Comp-Int-Yds-TD-INT": "18-30-172-1-1",
+          "Conv. en tercer down": "8-16-50%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "9-91",
           "Primeros downs": "19",
@@ -241,6 +242,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Willie Beecher",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "18.67",
+              "Nombre": "George Farmer",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "26",
+              "Prom KO": "26.00",
+              "Nombre": "Pete Roth",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Caterbone",
+              "Retornos punt": "4",
+              "Largo retorno punt": "21",
+              "TD punt": "0",
+              "Yds punt": "45",
+              "Prom punt": "11.25",
               "Equipo": "MIA"
             }
           ],
@@ -532,6 +569,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "27",
+              "Rating": "98.1",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "12",
+              "TD pase": "1",
+              "Yds pase": "179",
+              "Nombre": "Kyle Mackey",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "4",
+              "Comp": "1",
+              "INT": "1",
+              "Largo pase": "-7",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "-7",
+              "Nombre": "Scott Stankavage",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -543,6 +606,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "25-76-1",
           "Comp-Int-Yds-TD-INT": "20-42-326-2-3",
+          "Conv. en tercer down": "7-15-46%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "9-74",
           "Primeros downs": "20",
@@ -686,6 +750,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SEA"
+            },
+            {
+              "FG largo": "20",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Scott Hagler",
+              "Equipo": "SEA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "55",
+              "Prom KO": "13.75",
+              "Nombre": "Jimmy Teal",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "SEA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "11",
+              "TD KO": "0",
+              "Yds KO": "11",
+              "Prom KO": "11.00",
+              "Nombre": "Brant Bengen",
               "Equipo": "SEA"
             }
           ],
@@ -976,6 +1072,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SEA"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "20",
+              "INT": "3",
+              "Largo pase": "47",
+              "Rating": "60.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "326",
+              "Nombre": "Bruce Mathison",
               "Equipo": "SEA"
             }
           ]

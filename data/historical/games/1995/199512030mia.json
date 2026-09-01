@@ -98,7 +98,7 @@
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "18",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-6",
           "Tiempo de posesión": "24:57",
           "Yardas netas por pase": "204",
@@ -415,6 +415,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "ATL"
+            },
+            {
+              "Nombre": "Dan Stryzinski",
+              "Punts": "3",
+              "Largo punt": "41",
+              "Yds punt": "105",
+              "Prom punt": "35.0",
+              "Equipo": "ATL"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Morten Andersen",
+              "Equipo": "ATL",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "79",
+              "Prom KO": "19.75",
+              "Nombre": "Jamal Anderson",
+              "Equipo": "ATL"
+            },
+            {
+              "Nombre": "Eric Metcalf",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "ATL"
             }
           ],
           "Ofensiva": [
@@ -584,6 +619,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "6",
+              "Equipo": "ATL"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "25",
+              "Rating": "130.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "2",
+              "Yds pase": "210",
+              "Nombre": "Jeff George",
               "Equipo": "ATL"
             }
           ]
@@ -870,6 +918,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "1",
+              "Largo punt": "38",
+              "Yds punt": "38",
+              "Prom punt": "38.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "28",
+              "Prom KO": "28.00",
+              "Nombre": "Randal Hill",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1087,6 +1170,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "50",
+              "Comp": "35",
+              "INT": "2",
+              "Largo pase": "32",
+              "Rating": "85.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "343",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

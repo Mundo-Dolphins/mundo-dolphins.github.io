@@ -174,6 +174,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "RAM"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Frank Corral",
+              "Equipo": "RAM",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "109",
+              "Prom KO": "18.17",
+              "Nombre": "Drew Hill",
+              "Equipo": "RAM"
+            },
+            {
+              "Retornos KO": "0",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "0.00",
+              "Nombre": "Ivory Sully",
+              "Equipo": "RAM"
+            },
+            {
+              "Nombre": "LeRoy Irvin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "5.00",
+              "Equipo": "RAM"
             }
           ],
           "Ofensiva": [
@@ -418,6 +454,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "RAM"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "19",
+              "INT": "4",
+              "Largo pase": "32t",
+              "Rating": "28.9",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "33",
+              "TD pase": "1",
+              "Yds pase": "209",
+              "Nombre": "Vince Ferragamo",
+              "Equipo": "RAM"
             }
           ]
         },
@@ -429,11 +478,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "44-280-2",
           "Comp-Int-Yds-TD-INT": "17-29-161-3-0",
+          "Conv. en tercer down": "9-14-64%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "7-55",
           "Primeros downs": "27",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "35:46",
           "Yardas netas por pase": "161",
           "Yardas totales": "441"
         },
@@ -539,6 +590,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "32",
+              "Prom KO": "16.00",
+              "Nombre": "Nick Giaquinto",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -761,6 +844,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "31t",
+              "Rating": "112.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "161",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Tony Nathan",
               "Equipo": "MIA"
             }
           ]

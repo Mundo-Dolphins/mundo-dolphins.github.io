@@ -267,6 +267,33 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "6",
+              "XPm": "6"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "102",
+              "Prom KO": "25.50",
+              "Nombre": "Albert Bentley",
+              "Equipo": "CLT"
+            },
+            {
+              "Nombre": "Clarence Verdin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -485,6 +512,19 @@
               "Yds carrera": "-3",
               "Objetivos": "8",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "23",
+              "INT": "1",
+              "Largo pase": "30",
+              "Rating": "106.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "4",
+              "Yds pase": "195",
+              "Nombre": "Jack Trudeau",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -496,6 +536,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "17-41-0",
           "Comp-Int-Yds-TD-INT": "23-50-219-0-2",
+          "Conv. en tercer down": "9-17-52%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "10-70",
           "Primeros downs": "16",
@@ -621,6 +662,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "47",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "82",
+              "Prom KO": "20.50",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "40",
+              "Prom KO": "20.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "1",
+              "Largo retorno punt": "70t",
+              "TD punt": "1",
+              "Yds punt": "70",
+              "Prom punt": "70.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -911,6 +997,32 @@
               "TD carrera": "",
               "Yds carrera": "-1",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "15",
+              "INT": "1",
+              "Largo pase": "20",
+              "Rating": "46.3",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "0",
+              "Yds pase": "150",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "8",
+              "INT": "1",
+              "Largo pase": "13",
+              "Rating": "33.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "69",
+              "Nombre": "Scott Secules",
               "Equipo": "MIA"
             }
           ]

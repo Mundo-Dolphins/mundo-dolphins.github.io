@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "47-206-1",
           "Comp-Int-Yds-TD-INT": "15-21-234-2-0",
+          "Conv. en tercer down": "8-13-61%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "14-95",
           "Primeros downs": "25",
@@ -229,6 +230,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Al Edwards",
+              "Retornos punt": "2",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "2.50",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Don Smith",
               "Equipo": "BUF"
             }
           ],
@@ -424,6 +457,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "43",
+              "Rating": "139.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "2",
+              "Yds pase": "234",
+              "Nombre": "Frank Reich",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -435,6 +481,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "12-35-0",
           "Comp-Int-Yds-TD-INT": "24-43-287-2-1",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "5-33",
           "Primeros downs": "20",
@@ -558,6 +605,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "35",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "16.00",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "8.00",
+              "Nombre": "Stefon Adams",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "8.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -824,6 +916,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "43",
+              "Comp": "24",
+              "INT": "1",
+              "Largo pase": "43",
+              "Rating": "82.2",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "13",
+              "TD pase": "2",
+              "Yds pase": "287",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

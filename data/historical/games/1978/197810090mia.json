@@ -65,6 +65,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-94-0",
           "Comp-Int-Yds-TD-INT": "19-35-161-0-2",
+          "Conv. en tercer down": "4-13-30%",
           "Fumbles-perdidos": "4-3",
           "Penalizaciones-yardas": "5-40",
           "Primeros downs": "15",
@@ -223,6 +224,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "CIN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Chris Bahr",
+              "Equipo": "CIN",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "74",
+              "Prom KO": "24.67",
+              "Nombre": "Archie Griffin",
+              "Equipo": "CIN"
+            },
+            {
+              "Nombre": "Dennis Law",
+              "Retornos punt": "2",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "8.50",
               "Equipo": "CIN"
             }
           ],
@@ -446,6 +474,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "CIN"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "19",
+              "INT": "2",
+              "Largo pase": "26",
+              "Rating": "42.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "161",
+              "Nombre": "Ken Anderson",
+              "Equipo": "CIN"
             }
           ]
         },
@@ -457,6 +498,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "41-183-0",
           "Comp-Int-Yds-TD-INT": "14-24-156-2-0",
+          "Conv. en tercer down": "9-16-56%",
           "Fumbles-perdidos": "5-3",
           "Penalizaciones-yardas": "7-65",
           "Primeros downs": "18",
@@ -629,6 +671,33 @@
               "Retornos punt": "2",
               "Largo retorno punt": "",
               "TD punt": "",
+              "Yds punt": "33",
+              "Prom punt": "16.50",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Nombre": "Charlie Babb",
+              "Retornos punt": "4",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "27",
+              "Prom punt": "6.75",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "2",
+              "Largo retorno punt": "20",
+              "TD punt": "0",
               "Yds punt": "33",
               "Prom punt": "16.50",
               "Equipo": "MIA"
@@ -853,6 +922,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "34",
+              "Rating": "113.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "4",
+              "TD pase": "2",
+              "Yds pase": "134",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "4",
+              "Comp": "2",
+              "INT": "0",
+              "Largo pase": "17",
+              "Rating": "66.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "22",
+              "Nombre": "Bob Griese",
               "Equipo": "MIA"
             }
           ]
