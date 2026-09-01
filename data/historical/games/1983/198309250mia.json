@@ -72,6 +72,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "25-63-0",
           "Comp-Int-Yds-TD-INT": "10-22-105-0-4",
+          "Conv. en tercer down": "1-12-8%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "7-45",
           "Primeros downs": "8",
@@ -233,6 +234,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "KAN"
+            },
+            {
+              "FG largo": "46",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Nick Lowery",
+              "Equipo": "KAN",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "5",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "3.50",
+              "Nombre": "Anthony Hancock",
               "Equipo": "KAN"
             }
           ],
@@ -434,6 +453,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "KAN"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "10",
+              "INT": "4",
+              "Largo pase": "31",
+              "Rating": "20.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "13",
+              "TD pase": "0",
+              "Yds pase": "105",
+              "Nombre": "Bill Kenney",
+              "Equipo": "KAN"
             }
           ]
         },
@@ -445,6 +477,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "47-179-1",
           "Comp-Int-Yds-TD-INT": "11-18-110-1-2",
+          "Conv. en tercer down": "6-12-50%",
           "Fumbles-perdidos": "5-5",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "20",
@@ -618,6 +651,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "62",
+              "Prom KO": "20.67",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "3",
+              "Largo retorno punt": "19",
+              "TD punt": "0",
+              "Yds punt": "33",
+              "Prom punt": "11.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Robert Sowell",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -818,6 +896,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "5",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "10",
+              "INT": "2",
+              "Largo pase": "16",
+              "Rating": "53.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "1",
+              "Yds pase": "92",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "18",
+              "Rating": "118.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "18",
+              "Nombre": "Tony Nathan",
               "Equipo": "MIA"
             }
           ]

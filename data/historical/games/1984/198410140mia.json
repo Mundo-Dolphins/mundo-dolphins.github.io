@@ -200,6 +200,24 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "49",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Florian Kempf",
+              "Equipo": "OTI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "45",
+              "Prom KO": "22.50",
+              "Nombre": "Herkie Walls",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -400,6 +418,19 @@
               "Yds carrera": "",
               "Objetivos": "5",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "19",
+              "INT": "1",
+              "Largo pase": "28",
+              "Rating": "81.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "14",
+              "TD pase": "1",
+              "Yds pase": "170",
+              "Nombre": "Warren Moon",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -411,6 +442,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-208-1",
           "Comp-Int-Yds-TD-INT": "25-32-321-3-0",
+          "Conv. en tercer down": "9-13-69%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "7-71",
           "Primeros downs": "28",
@@ -538,6 +570,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "3",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "49",
+              "Prom KO": "24.50",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "5.67",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "1",
+              "TD KO": "0",
+              "Yds KO": "1",
+              "Prom KO": "1.00",
+              "Nombre": "Mark Clayton",
               "Equipo": "MIA"
             }
           ],
@@ -782,6 +846,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "25",
+              "INT": "0",
+              "Largo pase": "32t",
+              "Rating": "139.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "3",
+              "Yds pase": "321",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "0",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Jim Jensen",
               "Equipo": "MIA"
             }
           ]

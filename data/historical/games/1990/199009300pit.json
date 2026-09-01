@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "42-122-3",
           "Comp-Int-Yds-TD-INT": "18-29-206-1-1",
+          "Conv. en tercer down": "8-17-47%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-40",
           "Primeros downs": "20",
@@ -259,6 +260,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Mark Higgs",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Troy Stradford",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "1.00",
               "Equipo": "MIA"
             }
           ],
@@ -574,6 +611,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "35t",
+              "Rating": "75.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "4",
+              "TD pase": "1",
+              "Yds pase": "175",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "118.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "31",
+              "Nombre": "Jim Jensen",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -585,6 +648,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "14-41-0",
           "Comp-Int-Yds-TD-INT": "12-25-152-0-3",
+          "Conv. en tercer down": "2-11-18%",
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "8-50",
           "Primeros downs": "8",
@@ -728,6 +792,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "PIT"
+            },
+            {
+              "FG largo": "46",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Gary Anderson",
+              "Equipo": "PIT",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "68",
+              "Prom KO": "22.67",
+              "Nombre": "Rod Woodson",
+              "Retornos punt": "2",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "9.00",
+              "Equipo": "PIT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "17",
+              "Prom KO": "17.00",
+              "Nombre": "Dwight Stone",
               "Equipo": "PIT"
             }
           ],
@@ -946,6 +1042,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "PIT"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "7",
+              "INT": "3",
+              "Largo pase": "27",
+              "Rating": "12.5",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "19",
+              "TD pase": "0",
+              "Yds pase": "76",
+              "Nombre": "Bubby Brister",
+              "Equipo": "PIT"
+            },
+            {
+              "Intentos": "7",
+              "Comp": "5",
+              "INT": "0",
+              "Largo pase": "22",
+              "Rating": "106.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "14",
+              "TD pase": "0",
+              "Yds pase": "76",
+              "Nombre": "Rick Strom",
               "Equipo": "PIT"
             }
           ]

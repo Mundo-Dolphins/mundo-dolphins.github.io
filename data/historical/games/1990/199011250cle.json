@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "20-109-1",
           "Comp-Int-Yds-TD-INT": "17-37-191-0-2",
+          "Conv. en tercer down": "6-11-54%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "7-50",
           "Primeros downs": "20",
@@ -162,6 +163,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "CLE"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Jerry Kauric",
+              "Equipo": "CLE",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "119",
+              "Prom KO": "19.83",
+              "Nombre": "Brent Fullwood",
+              "Equipo": "CLE"
+            },
+            {
+              "Nombre": "Brian Brennan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
               "Equipo": "CLE"
             }
           ],
@@ -357,6 +385,19 @@
               "Yds carrera": "-2",
               "Objetivos": "4",
               "Equipo": "CLE"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "17",
+              "INT": "2",
+              "Largo pase": "23",
+              "Rating": "39.4",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "0",
+              "Yds pase": "191",
+              "Nombre": "Bernie Kosar",
+              "Equipo": "CLE"
             }
           ]
         },
@@ -368,10 +409,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-111-1",
           "Comp-Int-Yds-TD-INT": "16-29-245-2-0",
+          "Conv. en tercer down": "11-16-68%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-28",
           "Primeros downs": "20",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "33:55",
           "Yardas netas por pase": "245",
@@ -493,6 +535,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "6",
+              "TD KO": "0",
+              "Yds KO": "6",
+              "Prom KO": "6.00",
+              "Nombre": "Rick Graf",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Mark Higgs",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "2",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "19",
+              "Prom punt": "9.50",
               "Equipo": "MIA"
             }
           ],
@@ -735,6 +813,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "35t",
+              "Rating": "106.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "245",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

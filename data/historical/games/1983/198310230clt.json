@@ -170,6 +170,29 @@
               "Yds punt": "20",
               "Prom punt": "5",
               "Equipo": "BAL"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Raul Allegre",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "83",
+              "Prom KO": "20.75",
+              "Nombre": "Ricky Porter",
+              "Retornos punt": "4",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "5.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -370,6 +393,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "15",
+              "INT": "2",
+              "Largo pase": "29",
+              "Rating": "51.8",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "17",
+              "TD pase": "1",
+              "Yds pase": "190",
+              "Nombre": "Mike Pagel",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -381,6 +417,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "43-115-1",
           "Comp-Int-Yds-TD-INT": "11-18-157-2-0",
+          "Conv. en tercer down": "5-14-35%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "2-10",
           "Primeros downs": "14",
@@ -587,6 +624,51 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "6",
+              "TD KO": "0",
+              "Yds KO": "6",
+              "Prom KO": "6.00",
+              "Nombre": "Woody Bennett",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "4",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "48",
+              "Prom punt": "12.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "23",
+              "TD punt": "0",
+              "Yds punt": "23",
+              "Prom punt": "23.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -786,6 +868,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "64",
+              "Rating": "126.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "157",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

@@ -261,6 +261,47 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "85",
+              "Prom KO": "21.25",
+              "Nombre": "Marshall Johnson",
+              "Retornos punt": "3",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "6.67",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Don Hardeman",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Bob Van Duyne",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Joe Washington",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -505,6 +546,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "15",
+              "INT": "5",
+              "Largo pase": "28",
+              "Rating": "23.9",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "53",
+              "TD pase": "0",
+              "Yds pase": "186",
+              "Nombre": "Bill Troup",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "4",
+              "Comp": "2",
+              "INT": "1",
+              "Largo pase": "10",
+              "Rating": "22.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "18",
+              "Nombre": "Mike Kirkland",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -516,6 +583,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "42-292-2",
           "Comp-Int-Yds-TD-INT": "14-22-163-3-1",
+          "Conv. en tercer down": "9-16-56%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "6-45",
           "Primeros downs": "20",
@@ -704,6 +772,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "6",
+              "XPm": "6"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Terry Anderson",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "2",
+              "Largo retorno punt": "26",
+              "TD punt": "0",
+              "Yds punt": "42",
+              "Prom punt": "21.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Charlie Babb",
+              "Retornos punt": "1",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "5.00",
               "Equipo": "MIA"
             }
           ],
@@ -992,6 +1096,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "13",
+              "INT": "0",
+              "Largo pase": "57",
+              "Rating": "127.3",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "15",
+              "TD pase": "3",
+              "Yds pase": "151",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "2",
+              "Comp": "1",
+              "INT": "1",
+              "Largo pase": "12",
+              "Rating": "29.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "12",
+              "Nombre": "Guy Benjamin",
               "Equipo": "MIA"
             }
           ]

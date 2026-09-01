@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "41-108-4",
           "Comp-Int-Yds-TD-INT": "21-32-300-0-1",
+          "Conv. en tercer down": "8-14-57%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-43",
           "Primeros downs": "24",
@@ -268,6 +269,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "10.50",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "4",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "46",
+              "Prom punt": "11.50",
               "Equipo": "MIA"
             }
           ],
@@ -511,6 +539,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "21",
+              "INT": "1",
+              "Largo pase": "36",
+              "Rating": "82.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "300",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -603,6 +644,38 @@
               "TD punt": "",
               "Yds punt": "11",
               "Prom punt": "11",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Jason Staurovsky",
+              "Equipo": "NWE",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "118",
+              "Prom KO": "19.67",
+              "Nombre": "Erroll Tucker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Kitrick Taylor",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "NWE"
             }
           ],
@@ -773,6 +846,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "32",
+              "Rating": "58.5",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "30",
+              "TD pase": "0",
+              "Yds pase": "261",
+              "Nombre": "Marc Wilson",
               "Equipo": "NWE"
             }
           ]

@@ -84,205 +84,6 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "B. MARION",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. JONES",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "Z. THOMAS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. RODGERS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "P. SURTAIN",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. MIXON",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. WALKER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. ARMSTRONG",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "L. BROMELL",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GARDENER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. HARRIS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. JACKSON",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. MADISON",
-              "TFL": "0",
-              "PD": "2",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. TANNER",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "D. MARINO",
-              "FR": "1"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "O. MARE",
-              "50+": "0",
-              "LONG": "24"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "D. MARINO",
-              "CMP%": "52.60",
-              "AVG": "5.63"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "K. WILMSMEYER",
-              "IN 20": "1"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "O. MCDUFFIE",
-              "YAC": "105"
-            },
-            {
-              "PLAYER": "N. JACQUET",
-              "YAC": "68"
-            },
-            {
-              "PLAYER": "L. THOMAS",
-              "YAC": "52"
-            },
-            {
-              "PLAYER": "E. PERRY",
-              "YAC": "42"
-            },
-            {
-              "PLAYER": "B. PARMALEE",
-              "YAC": "24"
-            },
-            {
-              "PLAYER": "O. GADSDEN",
-              "YAC": "18"
-            },
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "J. AVERY",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "S. PRITCHETT",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "T. DRAYTON",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "AVG": "4.20",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "J. AVERY",
-              "AVG": "4.17",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "S. PRITCHETT",
-              "AVG": "6",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. MARINO",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "18-79-1",
           "Comp-Int-Yds-TD-INT": "30-57-321-1-1",
@@ -638,6 +439,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Klaus Wilmsmeyer",
+              "Punts": "7",
+              "Largo punt": "54",
+              "Yds punt": "290",
+              "Prom punt": "41.4",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "24",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "24.00",
+              "Nombre": "John Avery",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Terrell Buckley",
+              "Retornos punt": "3",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "6.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -904,6 +749,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "57",
+              "Comp": "30",
+              "INT": "1",
+              "Largo pase": "31",
+              "Rating": "67.9",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "43",
+              "TD pase": "1",
+              "Yds pase": "321",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -912,200 +770,6 @@
       },
       "New York Jets": {
         "Coach": "Bill Parcells",
-        "Estadisticas NFL.com": {
-          "NYJ DEFENSE": [
-            {
-              "PLAYER": "R. MICKENS",
-              "TFL": "0",
-              "PD": "2",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "P. JOHNSON",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "V. GREEN",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. COX",
-              "TFL": "1",
-              "PD": "1",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. BROWN",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. COLEMAN",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. HENDERSON",
-              "TFL": "0",
-              "PD": "1",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. LEWIS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "O. SMITH",
-              "TFL": "0",
-              "PD": "2",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. WILLIAMS",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. CASCADDEN",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "E. LOGAN",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. PLEASANT",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. FARRIOR",
-              "TFL": "0",
-              "PD": "0",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. FERGUSON",
-              "TFL": "1",
-              "PD": "0",
-              "QBP": "1",
-              "INT TD": "0"
-            }
-          ],
-          "NYJ FUMBLES": [
-            {
-              "PLAYER": "L. JOHNSON",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "C. MARTIN",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "R. MICKENS",
-              "FR": "1"
-            }
-          ],
-          "NYJ KICKING": [
-            {
-              "PLAYER": "J. HALL",
-              "50+": "0",
-              "LONG": "0"
-            }
-          ],
-          "NYJ PASSING": [
-            {
-              "PLAYER": "V. TESTAVERDE",
-              "CMP%": "58.60",
-              "AVG": "8"
-            }
-          ],
-          "NYJ PUNTING": [
-            {
-              "PLAYER": "J. KIDD",
-              "IN 20": "1"
-            }
-          ],
-          "NYJ RECEIVING": [
-            {
-              "PLAYER": "W. CHREBET",
-              "YAC": "105"
-            },
-            {
-              "PLAYER": "K. JOHNSON",
-              "YAC": "44"
-            },
-            {
-              "PLAYER": "K. BRADY",
-              "YAC": "42"
-            },
-            {
-              "PLAYER": "D. WARD",
-              "YAC": "31"
-            },
-            {
-              "PLAYER": "F. BAXTER",
-              "YAC": "6"
-            },
-            {
-              "PLAYER": "A. VAN DYKE",
-              "YAC": "4"
-            },
-            {
-              "PLAYER": "L. JOHNSON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "C. MARTIN",
-              "YAC": "0"
-            }
-          ],
-          "NYJ RUSHING": [
-            {
-              "PLAYER": "C. MARTIN",
-              "AVG": "3.70",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "V. TESTAVERDE",
-              "AVG": "2.80",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "L. JOHNSON",
-              "AVG": "0",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "23-82-1",
           "Comp-Int-Yds-TD-INT": "17-29-232-1-1",
@@ -1479,6 +1143,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "5",
+              "Largo punt": "54",
+              "Yds punt": "213",
+              "Prom punt": "42.6",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "John Hall",
+              "Equipo": "NYJ",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "45",
+              "Prom KO": "22.50",
+              "Nombre": "Kevin Williams",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Leon Johnson",
+              "Retornos punt": "3",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "4.67",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Dedric Ward",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "NYJ"
             }
           ],
           "Ofensiva": [
@@ -1696,6 +1404,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "52",
+              "Rating": "81.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "232",
+              "Nombre": "Vinny Testaverde",
               "Equipo": "NYJ"
             }
           ]

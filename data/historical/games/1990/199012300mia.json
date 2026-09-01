@@ -142,6 +142,29 @@
               "Yds punt": "44",
               "Prom punt": "14.70",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "55",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "36",
+              "Prom KO": "12.00",
+              "Nombre": "Clarence Verdin",
+              "Retornos punt": "3",
+              "Largo retorno punt": "32",
+              "TD punt": "0",
+              "Yds punt": "44",
+              "Prom punt": "14.67",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -288,6 +311,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "30",
+              "Comp": "18",
+              "INT": "2",
+              "Largo pase": "64t",
+              "Rating": "77.4",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "29",
+              "TD pase": "2",
+              "Yds pase": "222",
+              "Nombre": "Jeff George",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -299,10 +335,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-115-1",
           "Comp-Int-Yds-TD-INT": "14-26-192-1-0",
+          "Conv. en tercer down": "7-14-50%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "3-25",
           "Primeros downs": "16",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "31:59",
           "Yardas netas por pase": "192",
@@ -428,6 +465,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Marc Logan",
               "Equipo": "MIA"
             }
           ],
@@ -646,6 +701,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "6",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "53t",
+              "Rating": "90.5",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "192",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

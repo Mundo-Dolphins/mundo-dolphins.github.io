@@ -79,14 +79,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "40-157-1",
           "Comp-Int-Yds-TD-INT": "17-29-167-3-0",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "0-0-0%",
+          "Conv. en tercer down": "7-17-41%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "0-0",
           "Primeros downs": "18",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "0-0",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "37:08",
           "Yardas netas por pase": "167",
           "Yardas totales": "324"
         },
@@ -272,6 +272,41 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "8",
+              "Largo punt": "51",
+              "Yds punt": "328",
+              "Prom punt": "41.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Aaron Craver",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "5",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "45",
+              "Prom punt": "9.00",
               "Equipo": "MIA"
             }
           ],
@@ -563,6 +598,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "30t",
+              "Rating": "109.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "3",
+              "Yds pase": "167",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -705,6 +753,46 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "7",
+              "Largo punt": "55",
+              "Yds punt": "324",
+              "Prom punt": "46.3",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "38",
+              "TD KO": "0",
+              "Yds KO": "111",
+              "Prom KO": "27.75",
+              "Nombre": "Nate Lewis",
+              "Retornos punt": "1",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "7.00",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Eric Bieniemy",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "11",
+              "TD KO": "0",
+              "Yds KO": "11",
+              "Prom KO": "11.00",
+              "Nombre": "Alfred Pupunu",
               "Equipo": "SDG"
             }
           ],
@@ -947,6 +1035,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "44",
+              "Comp": "18",
+              "INT": "4",
+              "Largo pase": "18",
+              "Rating": "11.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "140",
+              "Nombre": "Stan Humphries",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "John Kidd",
               "Equipo": "SDG"
             }
           ]

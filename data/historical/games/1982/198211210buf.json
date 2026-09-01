@@ -72,11 +72,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-132-0",
           "Comp-Int-Yds-TD-INT": "12-29-140-0-6",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "9-64",
           "Primeros downs": "18",
           "Pérdidas de balón": "7",
           "Sacks-yardas perdidas": "1-14",
+          "Tiempo de posesión": "30:55",
           "Yardas netas por pase": "126",
           "Yardas totales": "258"
         },
@@ -228,6 +230,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Efren Herrera",
+              "Equipo": "BUF",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "66",
+              "TD KO": "0",
+              "Yds KO": "98",
+              "Prom KO": "49.00",
+              "Nombre": "Mike Mosley",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "9",
+              "TD KO": "0",
+              "Yds KO": "9",
+              "Prom KO": "9.00",
+              "Nombre": "Chris Keating",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Robert Holt",
+              "Retornos punt": "1",
+              "Largo retorno punt": "21",
+              "TD punt": "0",
+              "Yds punt": "21",
+              "Prom punt": "21.00",
               "Equipo": "BUF"
             }
           ],
@@ -473,6 +516,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "12",
+              "INT": "5",
+              "Largo pase": "23",
+              "Rating": "19.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "14",
+              "TD pase": "0",
+              "Yds pase": "140",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "1",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Joe Cribbs",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -484,11 +553,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "32-122-0",
           "Comp-Int-Yds-TD-INT": "12-29-127-0-2",
+          "Conv. en tercer down": "4-15-26%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "4-30",
           "Primeros downs": "13",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "1-0",
+          "Tiempo de posesión": "29:05",
           "Yardas netas por pase": "127",
           "Yardas totales": "249"
         },
@@ -690,6 +761,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "44",
+              "Prom KO": "22.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "0.50",
               "Equipo": "MIA"
             }
           ],
@@ -934,6 +1032,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "6",
+              "INT": "1",
+              "Largo pase": "44",
+              "Rating": "27.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "79",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "13",
+              "Comp": "6",
+              "INT": "1",
+              "Largo pase": "19",
+              "Rating": "23.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "48",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

@@ -121,6 +121,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-142-1",
           "Comp-Int-Yds-TD-INT": "18-31-251-2-0",
+          "Conv. en tercer down": "6-12-50%",
           "Fumbles-perdidos": "5-1",
           "Penalizaciones-yardas": "7-34",
           "Primeros downs": "25",
@@ -296,6 +297,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "RAM"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Mike Lansford",
+              "Equipo": "RAM",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "72",
+              "Prom KO": "24.00",
+              "Nombre": "Charles White",
+              "Equipo": "RAM"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "42",
+              "Prom KO": "21.00",
+              "Nombre": "Mickey Sutton",
+              "Equipo": "RAM"
+            },
+            {
+              "Nombre": "Henry Ellard",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "RAM"
             }
           ],
@@ -475,6 +512,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "RAM"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "105.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "21",
+              "TD pase": "2",
+              "Yds pase": "251",
+              "Nombre": "Jim Everett",
+              "Equipo": "RAM"
             }
           ]
         },
@@ -486,6 +536,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "21-107-0",
           "Comp-Int-Yds-TD-INT": "29-46-403-5-1",
+          "Conv. en tercer down": "9-15-60%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "4-31",
           "Primeros downs": "23",
@@ -631,6 +682,29 @@
               "TD punt": "",
               "Yds punt": "28",
               "Prom punt": "9.30",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "18",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "106",
+              "Prom KO": "17.67",
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "3",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "28",
+              "Prom punt": "9.33",
               "Equipo": "MIA"
             }
           ],
@@ -875,6 +949,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "46",
+              "Comp": "29",
+              "INT": "1",
+              "Largo pase": "69t",
+              "Rating": "118.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "4",
+              "TD pase": "5",
+              "Yds pase": "403",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

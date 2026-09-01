@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-152-2",
           "Comp-Int-Yds-TD-INT": "11-15-162-1-0",
+          "Conv. en tercer down": "6-12-50%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-51",
           "Primeros downs": "21",
@@ -215,6 +216,24 @@
               "TD punt": "",
               "Yds punt": "26",
               "Prom punt": "8.70",
+              "Equipo": "RAI"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Chris Bahr",
+              "Equipo": "RAI",
+              "XPa": "4",
+              "XPm": "3"
+            },
+            {
+              "Nombre": "Greg Pruitt",
+              "Retornos punt": "3",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "26",
+              "Prom punt": "8.67",
               "Equipo": "RAI"
             }
           ],
@@ -394,6 +413,32 @@
               "Yds carrera": "",
               "Objetivos": "5",
               "Equipo": "RAI"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "28",
+              "Rating": "130.4",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "35",
+              "TD pase": "1",
+              "Yds pase": "162",
+              "Nombre": "Jim Plunkett",
+              "Equipo": "RAI"
+            },
+            {
+              "Intentos": "0",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Marcus Allen",
+              "Equipo": "RAI"
             }
           ]
         },
@@ -405,6 +450,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-101-0",
           "Comp-Int-Yds-TD-INT": "21-35-234-2-1",
+          "Conv. en tercer down": "4-14-28%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-41",
           "Primeros downs": "19",
@@ -580,6 +626,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "86",
+              "Prom KO": "21.50",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "3",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "5.33",
               "Equipo": "MIA"
             }
           ],
@@ -846,6 +919,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "10",
+              "INT": "1",
+              "Largo pase": "31",
+              "Rating": "58.6",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "27",
+              "TD pase": "0",
+              "Yds pase": "144",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "11",
+              "Rating": "117.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "90",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

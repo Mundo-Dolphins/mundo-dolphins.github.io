@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "49-152-1",
           "Comp-Int-Yds-TD-INT": "14-21-239-3-0",
+          "Conv. en tercer down": "12-17-70%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "21",
@@ -243,6 +244,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "DET"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Eddie Murray",
+              "Equipo": "DET",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "45",
+              "Prom KO": "22.50",
+              "Nombre": "Alvin Hall",
+              "Equipo": "DET"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "26",
+              "Prom KO": "26.00",
+              "Nombre": "Pete Mandley",
+              "Retornos punt": "1",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "16.00",
               "Equipo": "DET"
             }
           ],
@@ -400,6 +433,45 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "DET"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "48",
+              "Rating": "155.2",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "36",
+              "TD pase": "3",
+              "Yds pase": "239",
+              "Nombre": "Eric Hipple",
+              "Equipo": "DET"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "James Jones",
+              "Equipo": "DET"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Alvin Moore",
+              "Equipo": "DET"
             }
           ]
         },
@@ -411,6 +483,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "17-102-0",
           "Comp-Int-Yds-TD-INT": "23-44-247-2-2",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "4-30",
           "Primeros downs": "20",
@@ -568,6 +641,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "69",
+              "Prom KO": "23.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Joe Carter",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "3",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "22",
+              "Prom punt": "7.33",
               "Equipo": "MIA"
             }
           ],
@@ -834,6 +943,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "44",
+              "Comp": "23",
+              "INT": "2",
+              "Largo pase": "22",
+              "Rating": "65.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "2",
+              "Yds pase": "247",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

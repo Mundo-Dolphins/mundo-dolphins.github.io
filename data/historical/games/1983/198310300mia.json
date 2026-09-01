@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "21-105-1",
           "Comp-Int-Yds-TD-INT": "23-38-213-1-3",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "4-25",
           "Primeros downs": "19",
@@ -200,6 +201,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "RAM"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Chuck Nelson",
+              "Equipo": "RAM",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "29",
+              "Prom KO": "29.00",
+              "Nombre": "Robert Alexander",
+              "Equipo": "RAM"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "9",
+              "TD KO": "0",
+              "Yds KO": "9",
+              "Prom KO": "9.00",
+              "Nombre": "Mike Guman",
+              "Equipo": "RAM"
+            },
+            {
+              "Nombre": "Johnnie Johnson Jr.",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "15",
+              "Prom punt": "5.00",
+              "Equipo": "RAM"
+            },
+            {
+              "Nombre": "LeRoy Irvin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
               "Equipo": "RAM"
             }
           ],
@@ -401,6 +447,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "RAM"
+            },
+            {
+              "Intentos": "38",
+              "Comp": "23",
+              "INT": "3",
+              "Largo pase": "27",
+              "Rating": "51.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "213",
+              "Nombre": "Vince Ferragamo",
+              "Equipo": "RAM"
             }
           ]
         },
@@ -412,6 +471,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "32-173-2",
           "Comp-Int-Yds-TD-INT": "25-39-279-2-1",
+          "Conv. en tercer down": "7-15-46%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "8-124",
           "Primeros downs": "20",
@@ -553,6 +613,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Mike Kozlowski",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "31",
+              "Prom KO": "31.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "3",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "4.33",
               "Equipo": "MIA"
             }
           ],
@@ -797,6 +893,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "38",
+              "Comp": "25",
+              "INT": "1",
+              "Largo pase": "46t",
+              "Rating": "94.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "279",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Tony Nathan",
               "Equipo": "MIA"
             }
           ]

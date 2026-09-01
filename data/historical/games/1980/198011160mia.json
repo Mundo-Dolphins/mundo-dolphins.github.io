@@ -79,11 +79,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "39-166-0",
           "Comp-Int-Yds-TD-INT": "18-25-222-2-1",
+          "Conv. en tercer down": "10-17-58%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "6-60",
           "Primeros downs": "23",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "1-10",
+          "Tiempo de posesión": "31:46",
           "Yardas netas por pase": "212",
           "Yardas totales": "378"
         },
@@ -189,6 +191,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "30",
+              "Prom KO": "15.00",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "7.00",
               "Equipo": "MIA"
             }
           ],
@@ -390,6 +424,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "18",
+              "INT": "1",
+              "Largo pase": "52",
+              "Rating": "109.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "2",
+              "Yds pase": "222",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -559,6 +606,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SFO"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Ray Wersching",
+              "Equipo": "SFO",
+              "XPa": "2",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "54",
+              "Prom KO": "18.00",
+              "Nombre": "James Owens",
+              "Equipo": "SFO"
+            },
+            {
+              "Nombre": "Freddie Solomon",
+              "Retornos punt": "2",
+              "Largo retorno punt": "18",
+              "TD punt": "0",
+              "Yds punt": "29",
+              "Prom punt": "14.50",
               "Equipo": "SFO"
             }
           ],
@@ -759,6 +833,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "SFO"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "29",
+              "INT": "1",
+              "Largo pase": "19",
+              "Rating": "81.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "225",
+              "Nombre": "Steve DeBerg",
+              "Equipo": "SFO"
+            },
+            {
+              "Intentos": "4",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "17",
+              "Rating": "101.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "35",
+              "Nombre": "Joe Montana",
               "Equipo": "SFO"
             }
           ]

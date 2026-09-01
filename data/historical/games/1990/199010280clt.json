@@ -260,6 +260,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "41",
+              "Prom KO": "20.50",
+              "Nombre": "Stacey Simmons",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Albert Bentley",
+              "Equipo": "CLT"
+            },
+            {
+              "Nombre": "Clarence Verdin",
+              "Retornos punt": "3",
+              "Largo retorno punt": "36",
+              "TD punt": "0",
+              "Yds punt": "44",
+              "Prom punt": "14.67",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -478,6 +514,45 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "8",
+              "INT": "1",
+              "Largo pase": "22",
+              "Rating": "40.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "0",
+              "Yds pase": "77",
+              "Nombre": "Jeff George",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "8",
+              "Comp": "2",
+              "INT": "2",
+              "Largo pase": "13",
+              "Rating": "0.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "21",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "3",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "11",
+              "Rating": "93.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "19",
+              "Nombre": "Jack Trudeau",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -489,6 +564,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "37-206-1",
           "Comp-Int-Yds-TD-INT": "21-29-161-1-0",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "23",
@@ -662,6 +738,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "53",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Mark Higgs",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "3",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "8",
+              "Prom punt": "2.67",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -976,6 +1097,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "21",
+              "INT": "0",
+              "Largo pase": "18",
+              "Rating": "97.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "1",
+              "Yds pase": "161",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

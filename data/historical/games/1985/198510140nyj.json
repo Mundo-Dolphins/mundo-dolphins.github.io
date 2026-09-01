@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "20-74-1",
           "Comp-Int-Yds-TD-INT": "13-23-136-0-1",
+          "Conv. en tercer down": "4-10-40%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "4-31",
           "Primeros downs": "13",
@@ -165,6 +166,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "68",
+              "Prom KO": "22.67",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Lyle Blackwood",
               "Equipo": "MIA"
             }
           ],
@@ -388,6 +416,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "13",
+              "INT": "1",
+              "Largo pase": "25",
+              "Rating": "55.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "0",
+              "Yds pase": "136",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -399,10 +440,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "45-245-1",
           "Comp-Int-Yds-TD-INT": "18-28-239-1-0",
+          "Conv. en tercer down": "8-15-53%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "3-25",
           "Primeros downs": "27",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-8",
           "Tiempo de posesión": "37:14",
           "Yardas netas por pase": "231",
@@ -494,6 +536,33 @@
               "TD punt": "",
               "Yds punt": "14",
               "Prom punt": "14",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Nombre": "Kirk Springs",
+              "Retornos punt": "3",
+              "Largo retorno punt": "22",
+              "TD punt": "0",
+              "Yds punt": "45",
+              "Prom punt": "15.00",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Jo-Jo Townsell",
+              "Retornos punt": "1",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "14.00",
               "Equipo": "NYJ"
             }
           ],
@@ -716,6 +785,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "103.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "1",
+              "Yds pase": "239",
+              "Nombre": "Ken O'Brien",
               "Equipo": "NYJ"
             }
           ]

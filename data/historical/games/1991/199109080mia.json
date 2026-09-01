@@ -84,7 +84,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "11",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-17",
           "Tiempo de posesión": "25:49",
           "Yardas netas por pase": "81",
@@ -195,6 +195,37 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "Nombre": "Rohn Stark",
+              "Punts": "6",
+              "Largo punt": "61",
+              "Yds punt": "290",
+              "Prom punt": "48.3",
+              "Equipo": "CLT"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "37",
+              "TD KO": "0",
+              "Yds KO": "68",
+              "Prom KO": "22.67",
+              "Nombre": "Clarence Verdin",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -365,6 +396,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "14",
+              "Rating": "61.0",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "17",
+              "TD pase": "0",
+              "Yds pase": "98",
+              "Nombre": "Jeff George",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -503,6 +547,50 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "3",
+              "Largo punt": "47",
+              "Yds punt": "120",
+              "Prom punt": "40.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Charlie Baumann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "7",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "7.00",
+              "Nombre": "Jarvis Williams",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "4",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "43",
+              "Prom punt": "10.75",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
               "Equipo": "MIA"
             }
           ],
@@ -721,6 +809,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "14",
+              "INT": "1",
+              "Largo pase": "20",
+              "Rating": "69.9",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "1",
+              "Yds pase": "147",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

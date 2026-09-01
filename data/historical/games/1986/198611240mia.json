@@ -100,10 +100,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "36-189-2",
           "Comp-Int-Yds-TD-INT": "32-39-325-4-0",
+          "Conv. en tercer down": "12-16-75%",
           "Fumbles-perdidos": "4-0",
           "Penalizaciones-yardas": "4-21",
           "Primeros downs": "31",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "40:23",
           "Yardas netas por pase": "325",
@@ -291,6 +292,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "39",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "6",
+              "XPm": "6"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Craig Ellis",
+              "Retornos punt": "2",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "5.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -602,6 +635,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "29",
+              "INT": "0",
+              "Largo pase": "27",
+              "Rating": "137.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "288",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "3",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "118.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "37",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -613,6 +672,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "19-89-0",
           "Comp-Int-Yds-TD-INT": "14-28-216-0-2",
+          "Conv. en tercer down": "3-7-42%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "7-54",
           "Primeros downs": "17",
@@ -720,6 +780,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "42",
+              "Prom KO": "14.00",
+              "Nombre": "Jo-Jo Townsell",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "4",
+              "TD KO": "0",
+              "Yds KO": "4",
+              "Prom KO": "4.00",
+              "Nombre": "Tom Baldwin",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "29",
+              "Prom KO": "29.00",
+              "Nombre": "Bobby Humphery",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Kurt Sohn",
+              "Retornos punt": "1",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "13.00",
               "Equipo": "NYJ"
             }
           ],
@@ -920,6 +1025,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "11",
+              "INT": "1",
+              "Largo pase": "30",
+              "Rating": "59.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "0",
+              "Yds pase": "168",
+              "Nombre": "Ken O'Brien",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "7",
+              "Comp": "3",
+              "INT": "1",
+              "Largo pase": "31",
+              "Rating": "26.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "0",
+              "Yds pase": "48",
+              "Nombre": "Pat Ryan",
               "Equipo": "NYJ"
             }
           ]

@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-116-1",
           "Comp-Int-Yds-TD-INT": "16-24-226-2-1",
+          "Conv. en tercer down": "3-11-27%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "4-24",
           "Primeros downs": "20",
@@ -247,6 +248,38 @@
               "TD punt": "",
               "Yds punt": "31",
               "Prom punt": "7.80",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "39",
+              "Prom KO": "19.50",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "4",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "31",
+              "Prom punt": "7.75",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -558,6 +591,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "16",
+              "INT": "1",
+              "Largo pase": "34t",
+              "Rating": "107.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "226",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -569,6 +615,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "26-79-1",
           "Comp-Int-Yds-TD-INT": "19-44-228-0-2",
+          "Conv. en tercer down": "3-17-17%",
           "Fumbles-perdidos": "4-1",
           "Penalizaciones-yardas": "9-84",
           "Primeros downs": "17",
@@ -712,6 +759,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "PIT"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Gary Anderson",
+              "Equipo": "PIT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "120",
+              "Prom KO": "24.00",
+              "Nombre": "Todd Spencer",
+              "Equipo": "PIT"
+            },
+            {
+              "Nombre": "Rick Woods",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "15",
+              "Prom punt": "5.00",
               "Equipo": "PIT"
             }
           ],
@@ -934,6 +1008,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "6",
+              "Equipo": "PIT"
+            },
+            {
+              "Intentos": "42",
+              "Comp": "19",
+              "INT": "2",
+              "Largo pase": "35",
+              "Rating": "42.6",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "228",
+              "Nombre": "Mark Malone",
+              "Equipo": "PIT"
+            },
+            {
+              "Intentos": "2",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "David Woodley",
               "Equipo": "PIT"
             }
           ]

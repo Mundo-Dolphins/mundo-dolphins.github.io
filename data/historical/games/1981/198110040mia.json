@@ -100,11 +100,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-98-2",
           "Comp-Int-Yds-TD-INT": "21-34-306-2-0",
+          "Conv. en tercer down": "2-12-16%",
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "9-65",
           "Primeros downs": "17",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-5",
+          "Tiempo de posesión": "28:31",
           "Yardas netas por pase": "301",
           "Yardas totales": "399"
         },
@@ -258,6 +260,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "36",
+              "TD KO": "0",
+              "Yds KO": "60",
+              "Prom KO": "30.00",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "4",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "40",
+              "Prom punt": "10.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "40",
+              "Prom KO": "40.00",
+              "Nombre": "Mike Kozlowski",
               "Equipo": "MIA"
             }
           ],
@@ -503,6 +537,32 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "52",
+              "Rating": "116.9",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "279",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "5",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "16",
+              "Rating": "74.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "0",
+              "Yds pase": "27",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -514,11 +574,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "51-242-0",
           "Comp-Int-Yds-TD-INT": "28-39-310-4-1",
+          "Conv. en tercer down": "8-17-47%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "5-45",
           "Primeros downs": "32",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "2-6",
+          "Tiempo de posesión": "46:29",
           "Yardas netas por pase": "304",
           "Yardas totales": "546"
         },
@@ -652,6 +714,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "54",
+              "Prom KO": "18.00",
+              "Nombre": "Kurt Sohn",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "8",
+              "TD KO": "0",
+              "Yds KO": "8",
+              "Prom KO": "8.00",
+              "Nombre": "Kenny Lewis",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Bruce Harper",
+              "Retornos punt": "3",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "6.67",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Ken Schroy",
+              "Retornos punt": "1",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "5.00",
               "Equipo": "NYJ"
             }
           ],
@@ -918,6 +1030,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "39",
+              "Comp": "28",
+              "INT": "1",
+              "Largo pase": "46",
+              "Rating": "118.5",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "6",
+              "TD pase": "4",
+              "Yds pase": "310",
+              "Nombre": "Richard Todd",
               "Equipo": "NYJ"
             }
           ]

@@ -98,7 +98,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "3-22",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-10",
           "Tiempo de posesión": "33:20",
           "Yardas netas por pase": "176",
@@ -397,6 +397,55 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "7",
+              "Largo punt": "55",
+              "Yds punt": "324",
+              "Prom punt": "46.3",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "6",
+              "TD KO": "0",
+              "Yds KO": "6",
+              "Prom KO": "6.00",
+              "Nombre": "Charles Jordan",
+              "Retornos punt": "2",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "15",
+              "Prom punt": "7.50",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Jerris McPhail",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Irving Spikes",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -662,6 +711,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "18",
+              "INT": "0",
+              "Largo pase": "23t",
+              "Rating": "92.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "1",
+              "Yds pase": "186",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]
@@ -1042,6 +1104,55 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "Brian Hansen",
+              "Punts": "4",
+              "Largo punt": "51",
+              "Yds punt": "163",
+              "Prom punt": "40.8",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "29",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "John Hall",
+              "Equipo": "NYJ",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "93",
+              "Prom KO": "31.00",
+              "Nombre": "Aaron Glenn",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Bobby Hamilton",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "24",
+              "Prom KO": "24.00",
+              "Nombre": "Leon Johnson",
+              "Retornos punt": "6",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "37",
+              "Prom punt": "6.17",
+              "Equipo": "NYJ"
             }
           ],
           "Ofensiva": [
@@ -1283,6 +1394,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "48",
+              "Comp": "25",
+              "INT": "1",
+              "Largo pase": "33",
+              "Rating": "71.7",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "19",
+              "TD pase": "1",
+              "Yds pase": "322",
+              "Nombre": "Glenn Foley",
               "Equipo": "NYJ"
             }
           ]

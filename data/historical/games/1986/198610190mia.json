@@ -114,10 +114,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "43-214-2",
           "Comp-Int-Yds-TD-INT": "11-19-116-1-0",
+          "Conv. en tercer down": "7-16-43%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-25",
           "Primeros downs": "19",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "3-15",
           "Tiempo de posesión": "37:21",
           "Yardas netas por pase": "101",
@@ -276,6 +277,29 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "RAI"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Chris Bahr",
+              "Equipo": "RAI",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "4",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "3.50",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "RAI"
             }
           ],
           "Ofensiva": [
@@ -432,6 +456,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "RAI"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "32",
+              "Rating": "93.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "15",
+              "TD pase": "1",
+              "Yds pase": "116",
+              "Nombre": "Marc Wilson",
+              "Equipo": "RAI"
             }
           ]
         },
@@ -443,6 +480,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "13-57-1",
           "Comp-Int-Yds-TD-INT": "20-32-286-3-2",
+          "Conv. en tercer down": "4-9-44%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "2-10",
           "Primeros downs": "17",
@@ -584,6 +622,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "37",
+              "TD KO": "0",
+              "Yds KO": "77",
+              "Prom KO": "25.67",
+              "Nombre": "Ron Davenport",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "11",
+              "Prom KO": "5.50",
+              "Nombre": "Joe Carter",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "James Pruitt",
+              "Retornos punt": "2",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "5.50",
               "Equipo": "MIA"
             }
           ],
@@ -806,6 +880,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "68t",
+              "Rating": "96.6",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "13",
+              "TD pase": "3",
+              "Yds pase": "286",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

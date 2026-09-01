@@ -93,14 +93,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-250-3",
           "Comp-Int-Yds-TD-INT": "14-23-182-1-0",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "2-3-66%",
+          "Conv. en tercer down": "5-11-45%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-41",
           "Primeros downs": "24",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-8",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "32:24",
           "Yardas netas por pase": "174",
           "Yardas totales": "424"
         },
@@ -415,6 +415,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "DEN"
+            },
+            {
+              "Nombre": "Tom Rouen",
+              "Punts": "2",
+              "Largo punt": "49",
+              "Yds punt": "97",
+              "Prom punt": "48.5",
+              "Equipo": "DEN"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Jason Elam",
+              "Equipo": "DEN",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Vaughn Hebron",
+              "Equipo": "DEN"
+            },
+            {
+              "Nombre": "Darrien Gordon",
+              "Retornos punt": "2",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "7.00",
+              "Equipo": "DEN"
             }
           ],
           "Ofensiva": [
@@ -633,6 +668,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "DEN"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "33",
+              "Rating": "100.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "1",
+              "Yds pase": "182",
+              "Nombre": "John Elway",
+              "Equipo": "DEN"
             }
           ]
         },
@@ -644,14 +692,14 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "13-14-0",
           "Comp-Int-Yds-TD-INT": "26-37-243-0-2",
-          "Conv. en cuarto down": "",
-          "Conv. en tercer down": "",
+          "Conv. en cuarto down": "1-2-50%",
+          "Conv. en tercer down": "2-10-20%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "10-57",
           "Primeros downs": "14",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "1-5",
-          "Tiempo de posesión": "",
+          "Tiempo de posesión": "27:36",
           "Yardas netas por pase": "238",
           "Yardas totales": "252"
         },
@@ -934,6 +982,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Klaus Wilmsmeyer",
+              "Punts": "5",
+              "Largo punt": "56",
+              "Yds punt": "228",
+              "Prom punt": "45.6",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "35",
+              "TD KO": "0",
+              "Yds KO": "121",
+              "Prom KO": "24.20",
+              "Nombre": "John Avery",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Terrell Buckley",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1175,6 +1258,19 @@
               "TD carrera": "",
               "Yds carrera": "-3",
               "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "26",
+              "INT": "2",
+              "Largo pase": "23",
+              "Rating": "65.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "0",
+              "Yds pase": "243",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

@@ -72,11 +72,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-91-0",
           "Comp-Int-Yds-TD-INT": "21-37-206-1-1",
+          "Conv. en tercer down": "5-14-35%",
           "Fumbles-perdidos": "4-1",
           "Penalizaciones-yardas": "6-59",
           "Primeros downs": "16",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "3-21",
+          "Tiempo de posesión": "27:52",
           "Yardas netas por pase": "185",
           "Yardas totales": "276"
         },
@@ -212,6 +214,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "KAN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Nick Lowery",
+              "Equipo": "KAN",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Carlos Carson",
+              "Equipo": "KAN"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "10",
+              "Prom KO": "10.00",
+              "Nombre": "Deron Cherry",
+              "Equipo": "KAN"
+            },
+            {
+              "Nombre": "J.T. Smith",
+              "Retornos punt": "3",
+              "Largo retorno punt": "14",
+              "TD punt": "0",
+              "Yds punt": "31",
+              "Prom punt": "10.33",
               "Equipo": "KAN"
             }
           ],
@@ -413,6 +451,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "KAN"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "21",
+              "INT": "1",
+              "Largo pase": "42",
+              "Rating": "70.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "21",
+              "TD pase": "1",
+              "Yds pase": "206",
+              "Nombre": "Steve Fuller",
+              "Equipo": "KAN"
             }
           ]
         },
@@ -424,11 +475,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "40-93-2",
           "Comp-Int-Yds-TD-INT": "14-28-165-0-3",
+          "Conv. en tercer down": "7-17-41%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "4-32",
           "Primeros downs": "16",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "1-5",
+          "Tiempo de posesión": "32:08",
           "Yardas netas por pase": "160",
           "Yardas totales": "253"
         },
@@ -534,6 +587,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "39",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "49",
+              "Prom KO": "24.50",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "4",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "4.50",
               "Equipo": "MIA"
             }
           ],
@@ -800,6 +880,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "8",
+              "INT": "2",
+              "Largo pase": "39",
+              "Rating": "32.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "109",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "12",
+              "Comp": "6",
+              "INT": "1",
+              "Largo pase": "14",
+              "Rating": "28.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "0",
+              "Yds pase": "56",
+              "Nombre": "David Woodley",
               "Equipo": "MIA"
             }
           ]

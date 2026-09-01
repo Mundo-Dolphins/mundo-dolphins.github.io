@@ -308,6 +308,33 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "52",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Raul Allegre",
+              "Equipo": "CLT",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "68",
+              "Prom KO": "34.00",
+              "Nombre": "Larry Anderson",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "49",
+              "Prom KO": "24.50",
+              "Nombre": "Phil Smith",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -508,6 +535,32 @@
               "Yds carrera": "",
               "Objetivos": "5",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "11",
+              "INT": "1",
+              "Largo pase": "21",
+              "Rating": "58.2",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "28",
+              "TD pase": "1",
+              "Yds pase": "110",
+              "Nombre": "Mike Pagel",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "3",
+              "Comp": "1",
+              "INT": "1",
+              "Largo pase": "8",
+              "Rating": "2.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "8",
+              "Nombre": "Art Schlichter",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -519,6 +572,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "27-75-1",
           "Comp-Int-Yds-TD-INT": "29-41-404-4-1",
+          "Conv. en tercer down": "10-15-66%",
           "Fumbles-perdidos": "4-1",
           "Penalizaciones-yardas": "3-15",
           "Primeros downs": "29",
@@ -710,6 +764,38 @@
               "TD punt": "",
               "Yds punt": "3",
               "Prom punt": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "40",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "28.00",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "6",
+              "TD punt": "0",
+              "Yds punt": "6",
+              "Prom punt": "6.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "1",
+              "Largo retorno punt": "3",
+              "TD punt": "0",
+              "Yds punt": "3",
+              "Prom punt": "3.00",
               "Equipo": "MIA"
             }
           ],
@@ -976,6 +1062,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "29",
+              "INT": "1",
+              "Largo pase": "42",
+              "Rating": "124.4",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "17",
+              "TD pase": "4",
+              "Yds pase": "404",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

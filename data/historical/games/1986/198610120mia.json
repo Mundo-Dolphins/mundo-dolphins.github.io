@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-108-1",
           "Comp-Int-Yds-TD-INT": "20-28-218-1-2",
+          "Conv. en tercer down": "5-10-50%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "7-54",
           "Primeros downs": "18",
@@ -222,6 +223,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "35",
+              "Prom KO": "17.50",
+              "Nombre": "Ronnie Harmon",
               "Equipo": "BUF"
             }
           ],
@@ -489,6 +508,19 @@
               "Yds carrera": "-6",
               "Objetivos": "",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "20",
+              "Rating": "76.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "21",
+              "TD pase": "1",
+              "Yds pase": "218",
+              "Nombre": "Jim Kelly",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -500,6 +532,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-119-2",
           "Comp-Int-Yds-TD-INT": "24-41-337-1-1",
+          "Conv. en tercer down": "9-12-75%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "27",
@@ -617,6 +650,15 @@
               "Largo punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Fuad Reveiz",
               "Equipo": "MIA",
               "XPa": "3",
               "XPm": "3"
@@ -885,6 +927,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "24",
+              "INT": "1",
+              "Largo pase": "39",
+              "Rating": "83.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "337",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

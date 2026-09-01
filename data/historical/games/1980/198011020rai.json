@@ -79,11 +79,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-63-1",
           "Comp-Int-Yds-TD-INT": "14-25-114-0-3",
+          "Conv. en tercer down": "3-12-25%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "10",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "1-11",
+          "Tiempo de posesión": "23:04",
           "Yardas netas por pase": "103",
           "Yardas totales": "166"
         },
@@ -249,6 +251,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "35",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "35",
+              "TD KO": "0",
+              "Yds KO": "50",
+              "Prom KO": "25.00",
+              "Nombre": "Don Bessillieu",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Nick Giaquinto",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "13",
+              "TD KO": "0",
+              "Yds KO": "13",
+              "Prom KO": "13.00",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "1",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "17.00",
               "Equipo": "MIA"
             }
           ],
@@ -428,6 +475,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "11",
+              "INT": "2",
+              "Largo pase": "24",
+              "Rating": "39.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "75",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "9",
+              "Comp": "3",
+              "INT": "1",
+              "Largo pase": "19",
+              "Rating": "8.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "39",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -584,6 +657,29 @@
               "Yds punt": "27",
               "Prom punt": "6.80",
               "Equipo": "OAK"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Chris Bahr",
+              "Equipo": "RAI",
+              "XPa": "2",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "36",
+              "Prom KO": "18.00",
+              "Nombre": "Ira Matthews",
+              "Retornos punt": "4",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "27",
+              "Prom punt": "6.75",
+              "Equipo": "RAI"
             }
           ],
           "Ofensiva": [
@@ -762,6 +858,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "OAK"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "16",
+              "INT": "3",
+              "Largo pase": "17t",
+              "Rating": "64.6",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "20",
+              "TD pase": "2",
+              "Yds pase": "157",
+              "Nombre": "Jim Plunkett",
+              "Equipo": "RAI"
             }
           ]
         },

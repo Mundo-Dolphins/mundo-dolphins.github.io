@@ -93,11 +93,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "30-135-1",
           "Comp-Int-Yds-TD-INT": "20-41-223-1-2",
+          "Conv. en tercer down": "8-19-42%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "6-27",
           "Primeros downs": "22",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "2-11",
+          "Tiempo de posesión": "36:31",
           "Yardas netas por pase": "212",
           "Yardas totales": "347"
         },
@@ -267,6 +269,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "90",
+              "Prom KO": "22.50",
+              "Nombre": "Don Bessillieu",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nick Giaquinto",
+              "Retornos punt": "2",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "1.00",
               "Equipo": "MIA"
             }
           ],
@@ -468,6 +497,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "41",
+              "Rating": "53.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "1",
+              "Yds pase": "223",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -479,11 +521,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-120-2",
           "Comp-Int-Yds-TD-INT": "12-19-172-0-3",
+          "Conv. en tercer down": "5-10-50%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "8-72",
           "Primeros downs": "18",
           "Pérdidas de balón": "5",
           "Sacks-yardas perdidas": "2-20",
+          "Tiempo de posesión": "23:29",
           "Yardas netas por pase": "152",
           "Yardas totales": "272"
         },
@@ -589,6 +633,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "34",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "73",
+              "Prom KO": "24.33",
+              "Nombre": "Bruce Harper",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Bobby Jones",
               "Equipo": "NYJ"
             }
           ],
@@ -811,6 +882,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "19",
+              "Comp": "12",
+              "INT": "3",
+              "Largo pase": "47",
+              "Rating": "52.9",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "172",
+              "Nombre": "Richard Todd",
               "Equipo": "NYJ"
             }
           ]

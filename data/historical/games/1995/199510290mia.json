@@ -98,7 +98,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "2-20",
           "Primeros downs": "11",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-11",
           "Tiempo de posesión": "23:10",
           "Yardas netas por pase": "139",
@@ -413,6 +413,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Chris Mohr",
+              "Punts": "6",
+              "Largo punt": "53",
+              "Yds punt": "274",
+              "Prom punt": "45.7",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Steve Christie",
+              "Equipo": "BUF",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "98",
+              "Prom KO": "16.33",
+              "Nombre": "Yonel Jourdain",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Jeff Burris",
+              "Retornos punt": "3",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "39",
+              "Prom punt": "13.00",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Bill Brooks",
+              "Retornos punt": "1",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "15",
+              "Prom punt": "15.00",
+              "Equipo": "BUF"
             }
           ],
           "Ofensiva": [
@@ -631,6 +675,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "17",
+              "Rating": "65.5",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "147",
+              "Nombre": "Jim Kelly",
+              "Equipo": "BUF"
+            },
+            {
+              "Intentos": "5",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "3",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "3",
+              "Nombre": "Todd Collins",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -647,7 +717,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "6-45",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-18",
           "Tiempo de posesión": "36:50",
           "Yardas netas por pase": "214",
@@ -964,6 +1034,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "5",
+              "Largo punt": "53",
+              "Yds punt": "251",
+              "Prom punt": "50.2",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "22",
+              "Prom KO": "22.00",
+              "Nombre": "Randal Hill",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "4",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "22",
+              "Prom punt": "5.50",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1181,6 +1286,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "20",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "77.3",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "0",
+              "Yds pase": "232",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

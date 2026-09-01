@@ -100,11 +100,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "56-214-2",
           "Comp-Int-Yds-TD-INT": "18-23-215-2-1",
+          "Conv. en tercer down": "7-14-50%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "6-70",
           "Primeros downs": "29",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "1-16",
+          "Tiempo de posesión": "40:46",
           "Yardas netas por pase": "199",
           "Yardas totales": "413"
         },
@@ -352,6 +354,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "24",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "28",
+              "Prom KO": "14.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "12",
+              "TD KO": "0",
+              "Yds KO": "12",
+              "Prom KO": "12.00",
+              "Nombre": "Eddie Hill",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "6",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "2.00",
               "Equipo": "MIA"
             }
           ],
@@ -643,6 +681,32 @@
               "Yds carrera": "-6",
               "Objetivos": "",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "53",
+              "Rating": "114.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "16",
+              "TD pase": "2",
+              "Yds pase": "195",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "20",
+              "Rating": "118.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "20",
+              "Nombre": "Tony Nathan",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -794,6 +858,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Rolf Benirschke",
+              "Equipo": "SDG",
+              "XPa": "2",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "78",
+              "Prom KO": "15.60",
+              "Nombre": "James Brooks",
+              "Retornos punt": "3",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "5.33",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Hank Bauer",
+              "Equipo": "SDG"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Eric Sievers",
               "Equipo": "SDG"
             }
           ],
@@ -1012,6 +1117,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "15",
+              "INT": "5",
+              "Largo pase": "28t",
+              "Rating": "32.5",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "23",
+              "TD pase": "1",
+              "Yds pase": "191",
+              "Nombre": "Dan Fouts",
               "Equipo": "SDG"
             }
           ]

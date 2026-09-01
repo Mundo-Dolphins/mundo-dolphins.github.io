@@ -82,7 +82,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "8-70",
           "Primeros downs": "10",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-14",
           "Yardas netas por pase": "11",
           "Yardas totales": "190"
@@ -206,6 +206,38 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "48",
+              "FGa": "4",
+              "FGm": "3",
+              "Nombre": "Toni Fritsch",
+              "Equipo": "OTI",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "27",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "27.00",
+              "Nombre": "Rich Ellender",
+              "Retornos punt": "2",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "5.50",
+              "Equipo": "OTI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Carter Hartwig",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -362,6 +394,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "24",
+              "Rating": "64.6",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "14",
+              "TD pase": "0",
+              "Yds pase": "25",
+              "Nombre": "Dan Pastorini",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -373,6 +418,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "26-102-0",
           "Comp-Int-Yds-TD-INT": "14-26-158-0-2",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "13",
@@ -451,6 +497,56 @@
               "TD punt": "",
               "Yds punt": "10",
               "Prom punt": "10",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "51",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "18.67",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "3",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "6",
+              "Prom punt": "2.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nat Moore",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -607,6 +703,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "14",
+              "INT": "2",
+              "Largo pase": "31",
+              "Rating": "40.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "0",
+              "Yds pase": "158",
+              "Nombre": "Bob Griese",
               "Equipo": "MIA"
             }
           ]

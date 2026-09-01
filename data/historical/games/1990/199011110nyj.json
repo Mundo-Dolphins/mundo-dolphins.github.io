@@ -72,6 +72,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-128-1",
           "Comp-Int-Yds-TD-INT": "21-36-192-1-1",
+          "Conv. en tercer down": "8-16-50%",
           "Fumbles-perdidos": "5-2",
           "Penalizaciones-yardas": "5-53",
           "Primeros downs": "24",
@@ -309,6 +310,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Mark Higgs",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Martin",
+              "Retornos punt": "2",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "-1",
+              "Prom punt": "-0.50",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Troy Stradford",
+              "Retornos punt": "2",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "2.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -576,6 +622,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "21",
+              "INT": "1",
+              "Largo pase": "23",
+              "Rating": "70.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "192",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -587,6 +646,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "23-88-0",
           "Comp-Int-Yds-TD-INT": "12-25-106-0-2",
+          "Conv. en tercer down": "3-13-23%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "7-66",
           "Primeros downs": "11",
@@ -778,6 +838,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NYJ"
+            },
+            {
+              "FG largo": "24",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pat Leahy",
+              "Equipo": "NYJ",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "73",
+              "Prom KO": "18.25",
+              "Nombre": "Terance Mathis",
+              "Retornos punt": "3",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "37",
+              "Prom punt": "12.33",
+              "Equipo": "NYJ"
+            },
+            {
+              "Nombre": "James Hasty",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "NYJ"
             }
           ],
@@ -1020,6 +1112,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "12",
+              "INT": "2",
+              "Largo pase": "19",
+              "Rating": "26.4",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "40",
+              "TD pase": "0",
+              "Yds pase": "106",
+              "Nombre": "Ken O'Brien",
               "Equipo": "NYJ"
             }
           ]

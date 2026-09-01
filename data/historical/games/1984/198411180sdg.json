@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-96-2",
           "Comp-Int-Yds-TD-INT": "28-41-338-2-1",
+          "Conv. en tercer down": "5-8-62%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "24",
@@ -204,6 +205,29 @@
               "TD punt": "",
               "Yds punt": "35",
               "Prom punt": "11.70",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "41",
+              "TD KO": "0",
+              "Yds KO": "146",
+              "Prom KO": "29.20",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "3",
+              "Largo retorno punt": "27",
+              "TD punt": "0",
+              "Yds punt": "35",
+              "Prom punt": "11.67",
               "Equipo": "MIA"
             }
           ],
@@ -449,6 +473,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "28",
+              "INT": "1",
+              "Largo pase": "32",
+              "Rating": "99.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "338",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -557,6 +594,29 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Rolf Benirschke",
+              "Equipo": "SDG",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "97",
+              "Prom KO": "24.25",
+              "Nombre": "Lionel James",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "SDG"
             }
           ],
@@ -801,6 +861,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "56",
+              "Comp": "37",
+              "INT": "1",
+              "Largo pase": "44",
+              "Rating": "101.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "4",
+              "Yds pase": "380",
+              "Nombre": "Dan Fouts",
               "Equipo": "SDG"
             }
           ]

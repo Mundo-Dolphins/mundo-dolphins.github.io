@@ -65,10 +65,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-124-0",
           "Comp-Int-Yds-TD-INT": "19-29-169-0-0",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "9-69",
           "Primeros downs": "15",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "29:49",
           "Yardas netas por pase": "169",
@@ -192,6 +193,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "4",
+              "FGm": "1",
+              "Nombre": "Tony Franklin",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "56",
+              "Prom KO": "18.67",
+              "Nombre": "Joe Cribbs",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "2",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "9",
+              "Prom punt": "4.50",
               "Equipo": "MIA"
             }
           ],
@@ -435,6 +463,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "81.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "169",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -449,7 +490,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "2-15",
           "Primeros downs": "17",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-12",
           "Tiempo de posesión": "30:11",
           "Yardas netas por pase": "66",
@@ -525,6 +566,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "34",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Jason Staurovsky",
+              "Equipo": "NWE",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "39",
+              "Prom KO": "19.50",
+              "Nombre": "Sammy Martin",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Irving Fryar",
+              "Retornos punt": "3",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "4.33",
               "Equipo": "NWE"
             }
           ],
@@ -743,6 +811,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "13",
+              "Comp": "9",
+              "INT": "0",
+              "Largo pase": "22",
+              "Rating": "84.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "12",
+              "TD pase": "0",
+              "Yds pase": "78",
+              "Nombre": "Doug Flutie",
               "Equipo": "NWE"
             }
           ]

@@ -126,7 +126,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "7-40",
           "Primeros downs": "23",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "4-29",
           "Tiempo de posesión": "33:05",
           "Yardas netas por pase": "230",
@@ -252,6 +252,37 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Dale Hatcher",
+              "Punts": "4",
+              "Largo punt": "43",
+              "Yds punt": "136",
+              "Prom punt": "34.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "29",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "35",
+              "TD KO": "0",
+              "Yds KO": "150",
+              "Prom KO": "25.00",
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -495,6 +526,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "40",
+              "Comp": "22",
+              "INT": "0",
+              "Largo pase": "26",
+              "Rating": "83.2",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "29",
+              "TD pase": "1",
+              "Yds pase": "259",
+              "Nombre": "Scott Mitchell",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Keith Byars",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -665,6 +722,55 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Mike Saxon",
+              "Punts": "1",
+              "Largo punt": "34",
+              "Yds punt": "34",
+              "Prom punt": "34.0",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Matt Bahr",
+              "Equipo": "NWE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "72",
+              "Prom KO": "18.00",
+              "Nombre": "Ray Crittenden",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "8",
+              "TD KO": "0",
+              "Yds KO": "8",
+              "Prom KO": "8.00",
+              "Nombre": "Marv Cook",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Ronnie Harris",
+              "Retornos punt": "2",
+              "Largo retorno punt": "18",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "12.00",
               "Equipo": "NWE"
             }
           ],
@@ -883,6 +989,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "43",
+              "Comp": "27",
+              "INT": "1",
+              "Largo pase": "42",
+              "Rating": "107.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "4",
+              "Yds pase": "329",
+              "Nombre": "Drew Bledsoe",
               "Equipo": "NWE"
             }
           ]

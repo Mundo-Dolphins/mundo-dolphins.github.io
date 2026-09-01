@@ -86,11 +86,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "23-111-0",
           "Comp-Int-Yds-TD-INT": "14-30-140-0-2",
+          "Conv. en tercer down": "2-10-20%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "6-39",
           "Primeros downs": "15",
           "Pérdidas de balón": "3",
           "Sacks-yardas perdidas": "1-11",
+          "Tiempo de posesión": "23:52",
           "Yardas netas por pase": "129",
           "Yardas totales": "240"
         },
@@ -180,6 +182,38 @@
               "TD punt": "",
               "Yds punt": "4",
               "Prom punt": "4",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Nick Mike-Mayer",
+              "Equipo": "BUF",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "60",
+              "Prom KO": "20.00",
+              "Nombre": "Robb Riddick",
+              "Retornos punt": "3",
+              "Largo retorno punt": "22",
+              "TD punt": "0",
+              "Yds punt": "41",
+              "Prom punt": "13.67",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Lou Piccone",
+              "Retornos punt": "1",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "4.00",
               "Equipo": "BUF"
             }
           ],
@@ -403,6 +437,32 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "14",
+              "INT": "2",
+              "Largo pase": "27",
+              "Rating": "33.7",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "140",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Roosevelt Leaks",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -414,11 +474,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "47-157-0",
           "Comp-Int-Yds-TD-INT": "11-22-151-1-0",
+          "Conv. en tercer down": "8-18-44%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "4-20",
           "Primeros downs": "18",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "4-26",
+          "Tiempo de posesión": "36:08",
           "Yardas netas por pase": "125",
           "Yardas totales": "282"
         },
@@ -524,6 +586,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "24.00",
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "7",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "7.00",
+              "Nombre": "Don Bessillieu",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -746,6 +849,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "10",
+              "INT": "0",
+              "Largo pase": "33",
+              "Rating": "84.8",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "26",
+              "TD pase": "1",
+              "Yds pase": "137",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "14",
+              "Rating": "118.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "14",
+              "Nombre": "Eddie Hill",
               "Equipo": "MIA"
             }
           ]

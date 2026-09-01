@@ -216,6 +216,61 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Toni Linhart",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "37",
+              "Prom KO": "18.50",
+              "Nombre": "Joe Washington",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "3.67",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Lyle Blackwood",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "9",
+              "TD KO": "0",
+              "Yds KO": "9",
+              "Prom KO": "9.00",
+              "Nombre": "Don Hardeman",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Marshall Johnson",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -394,6 +449,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "14",
+              "Comp": "7",
+              "INT": "4",
+              "Largo pase": "32t",
+              "Rating": "49.1",
+              "Capturas recibidas": "5",
+              "Yds perdidas capturas": "32",
+              "TD pase": "1",
+              "Yds pase": "71",
+              "Nombre": "Mike Kirkland",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -405,6 +473,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "39-120-0",
           "Comp-Int-Yds-TD-INT": "15-23-195-3-2",
+          "Conv. en tercer down": "6-16-37%",
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "7-60",
           "Primeros downs": "14",
@@ -579,6 +648,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "55",
+              "Prom KO": "18.33",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "4",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "3.00",
               "Equipo": "MIA"
             }
           ],
@@ -823,6 +919,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "22",
+              "Comp": "14",
+              "INT": "2",
+              "Largo pase": "63t",
+              "Rating": "83.1",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "2",
+              "Yds pase": "188",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "7t",
+              "Rating": "135.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "7",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

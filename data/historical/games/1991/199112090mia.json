@@ -244,6 +244,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "CIN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Lee Johnson",
+              "Punts": "3",
+              "Largo punt": "54",
+              "Yds punt": "132",
+              "Prom punt": "44.0",
+              "Equipo": "CIN",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Jim Breech",
+              "Equipo": "CIN",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "7",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "105",
+              "Prom KO": "15.00",
+              "Nombre": "Shane Garrett",
+              "Equipo": "CIN"
+            },
+            {
+              "Nombre": "Mitchell Price",
+              "Retornos punt": "2",
+              "Largo retorno punt": "20",
+              "TD punt": "0",
+              "Yds punt": "28",
+              "Prom punt": "14.00",
+              "Equipo": "CIN"
             }
           ],
           "Ofensiva": [
@@ -558,6 +598,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "CIN"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "13",
+              "INT": "0",
+              "Largo pase": "48",
+              "Rating": "77.9",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "17",
+              "TD pase": "0",
+              "Yds pase": "195",
+              "Nombre": "Boomer Esiason",
+              "Equipo": "CIN"
+            },
+            {
+              "Intentos": "3",
+              "Comp": "3",
+              "INT": "0",
+              "Largo pase": "16",
+              "Rating": "108.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "12",
+              "TD pase": "0",
+              "Yds pase": "30",
+              "Nombre": "Donald Hollas",
+              "Equipo": "CIN"
             }
           ]
         },
@@ -574,7 +640,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "7-70",
           "Primeros downs": "21",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-15",
           "Tiempo de posesión": "32:14",
           "Yardas netas por pase": "266",
@@ -714,6 +780,41 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "3",
+              "Largo punt": "53",
+              "Yds punt": "152",
+              "Prom punt": "50.7",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "31",
+              "Prom KO": "31.00",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "3",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "8.00",
               "Equipo": "MIA"
             }
           ],
@@ -980,6 +1081,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "24",
+              "INT": "0",
+              "Largo pase": "43t",
+              "Rating": "128.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "3",
+              "Yds pase": "281",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "0",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "0.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Scott Secules",
               "Equipo": "MIA"
             }
           ]

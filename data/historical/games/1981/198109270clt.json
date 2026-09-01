@@ -183,6 +183,42 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "BAL"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Mike Wood",
+              "Equipo": "CLT",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "87",
+              "Prom KO": "21.75",
+              "Nombre": "Kim Anderson",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "41",
+              "TD KO": "0",
+              "Yds KO": "41",
+              "Prom KO": "41.00",
+              "Nombre": "Zachary Dixon",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Chris Foote",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -383,6 +419,19 @@
               "Yds carrera": "",
               "Objetivos": "",
               "Equipo": "BAL"
+            },
+            {
+              "Intentos": "27",
+              "Comp": "20",
+              "INT": "1",
+              "Largo pase": "67t",
+              "Rating": "137.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "3",
+              "Yds pase": "357",
+              "Nombre": "Bert Jones",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -394,11 +443,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-119-2",
           "Comp-Int-Yds-TD-INT": "19-30-309-2-0",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "22",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "32:57",
           "Yardas netas por pase": "309",
           "Yardas totales": "428"
         },
@@ -486,6 +537,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "99",
+              "Prom KO": "24.75",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "1",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "10.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
               "Equipo": "MIA"
             }
           ],
@@ -708,6 +800,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "30",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "48",
+              "Rating": "120.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "309",
+              "Nombre": "David Woodley",
               "Equipo": "MIA"
             }
           ]

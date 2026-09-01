@@ -79,11 +79,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-149-1",
           "Comp-Int-Yds-TD-INT": "15-28-296-0-0",
+          "Conv. en tercer down": "4-12-33%",
           "Fumbles-perdidos": "2-2",
           "Penalizaciones-yardas": "4-27",
           "Primeros downs": "20",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "26:58",
           "Yardas netas por pase": "296",
           "Yardas totales": "445"
         },
@@ -173,6 +175,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "71",
+              "Prom KO": "23.67",
+              "Nombre": "Don Bessillieu",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "7.00",
               "Equipo": "MIA"
             }
           ],
@@ -440,6 +469,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "54",
+              "Rating": "90.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "296",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -451,11 +493,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-162-1",
           "Comp-Int-Yds-TD-INT": "17-23-149-0-1",
+          "Conv. en tercer down": "5-11-45%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "3-36",
           "Primeros downs": "20",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "1-10",
+          "Tiempo de posesión": "33:02",
           "Yardas netas por pase": "139",
           "Yardas totales": "301"
         },
@@ -563,6 +607,29 @@
               "TD punt": "",
               "Yds punt": "11",
               "Prom punt": "11",
+              "Equipo": "WAS"
+            },
+            {
+              "FG largo": "20",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Mark Moseley",
+              "Equipo": "WAS",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "103",
+              "Prom KO": "25.75",
+              "Nombre": "Mike Nelms",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
               "Equipo": "WAS"
             }
           ],
@@ -763,6 +830,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "WAS"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "28",
+              "Rating": "72.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "0",
+              "Yds pase": "149",
+              "Nombre": "Joe Theismann",
               "Equipo": "WAS"
             }
           ]

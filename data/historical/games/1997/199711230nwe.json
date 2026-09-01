@@ -411,6 +411,50 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "John Kidd",
+              "Punts": "3",
+              "Largo punt": "42",
+              "Yds punt": "111",
+              "Prom punt": "37.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "25",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "34",
+              "TD KO": "0",
+              "Yds KO": "101",
+              "Prom KO": "20.20",
+              "Nombre": "Corey Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Dwight Hollier",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Charles Jordan",
+              "Retornos punt": "2",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "14",
+              "Prom punt": "7.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -701,6 +745,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "60",
+              "Comp": "38",
+              "INT": "3",
+              "Largo pase": "27",
+              "Rating": "61.0",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "19",
+              "TD pase": "0",
+              "Yds pase": "389",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -717,7 +774,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "8-76",
           "Primeros downs": "15",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "1-8",
           "Tiempo de posesión": "25:45",
           "Yardas netas por pase": "234",
@@ -1018,6 +1075,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Tom Tupa",
+              "Punts": "2",
+              "Largo punt": "45",
+              "Yds punt": "88",
+              "Prom punt": "44.0",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Adam Vinatieri",
+              "Equipo": "NWE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "39",
+              "Prom KO": "19.50",
+              "Nombre": "David Meggett",
+              "Retornos punt": "2",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "6.00",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "26",
+              "Prom KO": "26.00",
+              "Nombre": "Derrick Cullors",
+              "Equipo": "NWE"
             }
           ],
           "Ofensiva": [
@@ -1211,6 +1308,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "6",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "51",
+              "Rating": "83.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "0",
+              "Yds pase": "207",
+              "Nombre": "Drew Bledsoe",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "35t",
+              "Rating": "158.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "35",
+              "Nombre": "David Meggett",
               "Equipo": "NWE"
             }
           ]

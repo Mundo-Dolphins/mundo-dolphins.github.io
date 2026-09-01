@@ -114,6 +114,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "45-201-2",
           "Comp-Int-Yds-TD-INT": "11-20-218-2-0",
+          "Conv. en tercer down": "6-13-46%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "5-47",
           "Primeros downs": "21",
@@ -287,6 +288,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "28",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "13.50",
+              "Nombre": "Mike Kozlowski",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "40",
+              "Prom KO": "20.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Mark Clayton",
+              "Retornos punt": "3",
+              "Largo retorno punt": "20",
+              "TD punt": "0",
+              "Yds punt": "43",
+              "Prom punt": "14.33",
               "Equipo": "MIA"
             }
           ],
@@ -510,6 +547,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "64t",
+              "Rating": "126.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "23",
+              "TD pase": "2",
+              "Yds pase": "218",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -664,6 +714,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "John Smith",
+              "Equipo": "NWE",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "85",
+              "Prom KO": "21.25",
+              "Nombre": "Ricky Smith",
+              "Retornos punt": "1",
+              "Largo retorno punt": "17",
+              "TD punt": "0",
+              "Yds punt": "17",
+              "Prom punt": "17.00",
+              "Equipo": "NWE"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Cedric Jones",
               "Equipo": "NWE"
             }
           ],
@@ -886,6 +968,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "10",
+              "INT": "1",
+              "Largo pase": "36t",
+              "Rating": "107.0",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "19",
+              "TD pase": "2",
+              "Yds pase": "151",
+              "Nombre": "Steve Grogan",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "4",
+              "Comp": "4",
+              "INT": "0",
+              "Largo pase": "20",
+              "Rating": "118.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "3",
+              "TD pase": "0",
+              "Yds pase": "58",
+              "Nombre": "Tony Eason",
               "Equipo": "NWE"
             }
           ]

@@ -93,11 +93,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-118-0",
           "Comp-Int-Yds-TD-INT": "15-25-192-1-0",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-33",
           "Primeros downs": "17",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-19",
+          "Tiempo de posesión": "33:10",
           "Yardas netas por pase": "173",
           "Yardas totales": "291"
         },
@@ -173,6 +175,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "74",
+              "Prom KO": "14.80",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -418,6 +452,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "54",
+              "Rating": "101.4",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "19",
+              "TD pase": "1",
+              "Yds pase": "192",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Delvin Williams",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -432,7 +492,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-49",
           "Primeros downs": "15",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "2-20",
           "Yardas netas por pase": "155",
           "Yardas totales": "275"
@@ -507,6 +567,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "John Smith",
+              "Equipo": "NWE",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "39",
+              "TD KO": "0",
+              "Yds KO": "115",
+              "Prom KO": "28.75",
+              "Nombre": "Horace Ivory",
+              "Equipo": "NWE"
+            },
+            {
+              "Nombre": "Roland James",
+              "Retornos punt": "2",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "-2",
+              "Prom punt": "-1.00",
               "Equipo": "NWE"
             }
           ],
@@ -729,6 +816,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "16",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "38t",
+              "Rating": "127.9",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "20",
+              "TD pase": "1",
+              "Yds pase": "163",
+              "Nombre": "Matt Cavanaugh",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "12",
+              "Rating": "116.7",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "12",
+              "Nombre": "Harold Jackson",
               "Equipo": "NWE"
             }
           ]

@@ -221,6 +221,47 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "23",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "27",
+              "Prom KO": "13.50",
+              "Nombre": "Albert Bentley",
+              "Equipo": "CLT"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "35",
+              "Prom KO": "17.50",
+              "Nombre": "Bill Brooks",
+              "Retornos punt": "1",
+              "Largo retorno punt": "18",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "18.00",
+              "Equipo": "CLT"
+            },
+            {
+              "Nombre": "Victor Jackson",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -487,6 +528,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "13",
+              "INT": "1",
+              "Largo pase": "60",
+              "Rating": "74.6",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "33",
+              "TD pase": "0",
+              "Yds pase": "188",
+              "Nombre": "Gary Hogeboom",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "5",
+              "INT": "0",
+              "Largo pase": "16",
+              "Rating": "64.6",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "27",
+              "TD pase": "0",
+              "Yds pase": "50",
+              "Nombre": "Jack Trudeau",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -498,6 +565,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-134-2",
           "Comp-Int-Yds-TD-INT": "17-29-254-1-1",
+          "Conv. en tercer down": "4-9-44%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "6-59",
           "Primeros downs": "21",
@@ -703,6 +771,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "48",
+              "Prom KO": "24.00",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "James Pruitt",
+              "Retornos punt": "2",
+              "Largo retorno punt": "71t",
+              "TD punt": "1",
+              "Yds punt": "106",
+              "Prom punt": "53.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nat Moore",
+              "Retornos punt": "1",
+              "Largo retorno punt": "-2",
+              "TD punt": "0",
+              "Yds punt": "-2",
+              "Prom punt": "-2.00",
               "Equipo": "MIA"
             }
           ],
@@ -969,6 +1073,19 @@
               "TD carrera": "",
               "Yds carrera": "-10",
               "Objetivos": "6",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "47",
+              "Rating": "84.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "254",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

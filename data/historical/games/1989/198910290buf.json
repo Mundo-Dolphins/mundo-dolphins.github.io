@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "51-280-2",
           "Comp-Int-Yds-TD-INT": "6-9-123-1-0",
+          "Conv. en tercer down": "6-13-46%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "8-70",
           "Primeros downs": "18",
@@ -225,6 +226,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Don Beebe",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Kenneth Davis",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Mickey Sutton",
+              "Retornos punt": "2",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "10.00",
               "Equipo": "BUF"
             }
           ],
@@ -444,6 +481,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "9",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "63t",
+              "Rating": "146.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "123",
+              "Nombre": "Frank Reich",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -455,6 +505,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "18-65-0",
           "Comp-Int-Yds-TD-INT": "26-47-364-2-3",
+          "Conv. en tercer down": "6-14-42%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-29",
           "Primeros downs": "19",
@@ -564,6 +615,60 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "66",
+              "Prom KO": "16.50",
+              "Nombre": "Willard Reaves",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Yds KO": "0",
+              "Prom KO": "0.00",
+              "Nombre": "Andre Brown",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "8",
+              "TD KO": "0",
+              "Yds KO": "8",
+              "Prom KO": "8.00",
+              "Nombre": "Kerry Goode",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jarvis Williams",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -830,6 +935,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "20",
+              "INT": "3",
+              "Largo pase": "44t",
+              "Rating": "52.4",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "1",
+              "Yds pase": "255",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "11",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "44t",
+              "Rating": "119.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "109",
+              "Nombre": "Scott Secules",
               "Equipo": "MIA"
             }
           ]

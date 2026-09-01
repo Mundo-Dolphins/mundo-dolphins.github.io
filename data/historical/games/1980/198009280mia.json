@@ -93,11 +93,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-128-2",
           "Comp-Int-Yds-TD-INT": "20-38-302-1-3",
+          "Conv. en tercer down": "4-13-30%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "4-28",
           "Primeros downs": "22",
           "Pérdidas de balón": "5",
           "Sacks-yardas perdidas": "1-6",
+          "Tiempo de posesión": "30:01",
           "Yardas netas por pase": "296",
           "Yardas totales": "424"
         },
@@ -249,6 +251,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "52",
+              "Prom KO": "13.00",
+              "Nombre": "Don Bessillieu",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Nick Giaquinto",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "2",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "5",
+              "Prom punt": "2.50",
               "Equipo": "MIA"
             }
           ],
@@ -494,6 +537,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "16",
+              "INT": "0",
+              "Largo pase": "54",
+              "Rating": "118.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "1",
+              "Yds pase": "241",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "4",
+              "INT": "3",
+              "Largo pase": "35",
+              "Rating": "4.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "61",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -647,6 +716,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NOR"
+            },
+            {
+              "FG largo": "39",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Benny Ricardo",
+              "Equipo": "NOR",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "52",
+              "TD KO": "0",
+              "Yds KO": "52",
+              "Prom KO": "52.00",
+              "Nombre": "Rich Mauti",
+              "Retornos punt": "4",
+              "Largo retorno punt": "18",
+              "TD punt": "0",
+              "Yds punt": "49",
+              "Prom punt": "12.25",
+              "Equipo": "NOR"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Jimmy Rogers",
               "Equipo": "NOR"
             }
           ],
@@ -847,6 +948,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "6",
+              "Equipo": "NOR"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "31",
+              "Rating": "59.3",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "18",
+              "TD pase": "1",
+              "Yds pase": "201",
+              "Nombre": "Archie Manning",
+              "Equipo": "NOR"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Jack Holmes",
               "Equipo": "NOR"
             }
           ]

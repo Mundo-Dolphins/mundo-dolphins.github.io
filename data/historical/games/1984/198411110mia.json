@@ -100,6 +100,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "33-97-2",
           "Comp-Int-Yds-TD-INT": "20-34-246-1-1",
+          "Conv. en tercer down": "8-14-57%",
           "Fumbles-perdidos": "2-0",
           "Penalizaciones-yardas": "2-10",
           "Primeros downs": "21",
@@ -535,6 +536,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-177-0",
           "Comp-Int-Yds-TD-INT": "14-25-203-3-2",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "7-36",
           "Primeros downs": "19",
@@ -660,6 +662,83 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "PHI"
+            },
+            {
+              "FG largo": "45",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Paul McFadden",
+              "Equipo": "PHI",
+              "XPa": "3",
+              "XPm": "2"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "PHI",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "33",
+              "Prom KO": "16.50",
+              "Nombre": "Joe Hayes",
+              "Equipo": "PHI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Andre Waters",
+              "Equipo": "PHI"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "52",
+              "Prom KO": "17.33",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "3",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "23",
+              "Prom punt": "7.67",
+              "Equipo": "PHI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Eddie Hill",
+              "Equipo": "PHI"
+            },
+            {
+              "Nombre": "Evan Cooper",
+              "Retornos punt": "1",
+              "Largo retorno punt": "9",
+              "TD punt": "0",
+              "Yds punt": "9",
+              "Prom punt": "9.00",
+              "Equipo": "PHI"
+            },
+            {
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "1",
+              "Largo retorno punt": "12",
+              "TD punt": "0",
+              "Yds punt": "12",
+              "Prom punt": "12.00",
               "Equipo": "PHI"
             }
           ],
@@ -860,6 +939,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "8",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "25",
+              "Comp": "14",
+              "INT": "2",
+              "Largo pase": "38t",
+              "Rating": "88.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "3",
+              "Yds pase": "203",
+              "Nombre": "Ron Jaworski",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "34",
+              "Comp": "20",
+              "INT": "1",
+              "Largo pase": "21",
+              "Rating": "78.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "12",
+              "TD pase": "1",
+              "Yds pase": "246",
+              "Nombre": "Dan Marino",
               "Equipo": "PHI"
             }
           ]

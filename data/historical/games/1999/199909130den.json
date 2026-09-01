@@ -113,166 +113,6 @@
     "Equipos": {
       "Denver Broncos": {
         "Coach": "Mike Shanahan",
-        "Estadisticas NFL.com": {
-          "DEN DEFENSE": [
-            {
-              "PLAYER": "J. MOBLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. CROCKETT",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "G. CADREZ",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "E. BROWN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BRAXTON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. CARTER",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. ROMANOWSKI",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. TRAYLOR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. TANUVASA",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "A. WILSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "G. COGHILL",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. ELAM",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "M. LODISH",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. PRYCE",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. WATSON",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "DEN FUMBLES": [
-            {
-              "PLAYER": "B. GRIESE",
-              "FR": "1"
-            }
-          ],
-          "DEN KICKING": [
-            {
-              "PLAYER": "J. ELAM",
-              "50+": "0",
-              "LONG": "0"
-            }
-          ],
-          "DEN PASSING": [
-            {
-              "PLAYER": "B. GRIESE",
-              "CMP%": "60",
-              "AVG": "6.75"
-            }
-          ],
-          "DEN PUNTING": [
-            {
-              "PLAYER": "T. ROUEN",
-              "IN 20": "1"
-            }
-          ],
-          "DEN RECEIVING": [
-            {
-              "PLAYER": "E. MCCAFFREY",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "B. CHAMBERLAIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "S. SHARPE",
-              "YAC": "9"
-            },
-            {
-              "PLAYER": "C. DOERING",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "H. GRIFFITH",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "D. LOVILLE",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "T. DAVIS",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "D. CARSWELL",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. SMITH",
-              "YAC": "0"
-            }
-          ],
-          "DEN RUSHING": [
-            {
-              "PLAYER": "T. DAVIS",
-              "AVG": "3.21",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. LOVILLE",
-              "AVG": "9.60",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "B. GRIESE",
-              "AVG": "2",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "26-113-0",
           "Comp-Int-Yds-TD-INT": "24-40-270-3-0",
@@ -703,6 +543,46 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "DEN"
+            },
+            {
+              "Nombre": "Tom Rouen",
+              "Punts": "3",
+              "Largo punt": "54",
+              "Yds punt": "115",
+              "Prom punt": "38.3",
+              "Equipo": "DEN"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "Jason Elam",
+              "Equipo": "DEN",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "39",
+              "TD KO": "0",
+              "Yds KO": "94",
+              "Prom KO": "31.33",
+              "Nombre": "Chris Watson",
+              "Retornos punt": "1",
+              "Largo retorno punt": "3",
+              "TD punt": "0",
+              "Yds punt": "3",
+              "Prom punt": "3.00",
+              "Equipo": "DEN"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "11",
+              "TD KO": "0",
+              "Yds KO": "11",
+              "Prom KO": "11.00",
+              "Nombre": "Detron Smith",
+              "Equipo": "DEN"
             }
           ],
           "Ofensiva": [
@@ -945,6 +825,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "DEN"
+            },
+            {
+              "Intentos": "40",
+              "Comp": "24",
+              "INT": "0",
+              "Largo pase": "61t",
+              "Rating": "105.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "30",
+              "TD pase": "3",
+              "Yds pase": "270",
+              "Nombre": "Brian Griese",
+              "Equipo": "DEN"
             }
           ]
         },
@@ -953,172 +846,6 @@
       },
       "Miami Dolphins": {
         "Coach": "Jimmy Johnson",
-        "Estadisticas NFL.com": {
-          "MIA DEFENSE": [
-            {
-              "PLAYER": "Z. THOMAS",
-              "QBP": "1",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "C. JACKSON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. JONES",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "S. WOODEN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "B. MARION",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. RODGERS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "J. TAYLOR",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "L. BROMELL",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "D. GARDENER",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "K. MIXON",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "R. OWENS",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "P. SURTAIN",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. ARMSTRONG",
-              "QBP": "0",
-              "INT TD": "0"
-            },
-            {
-              "PLAYER": "T. BOWENS",
-              "QBP": "0",
-              "INT TD": "0"
-            }
-          ],
-          "MIA FUMBLES": [
-            {
-              "PLAYER": "T. BUCKLEY",
-              "FR": "0"
-            },
-            {
-              "PLAYER": "D. HOLLIER",
-              "FR": "1"
-            }
-          ],
-          "MIA KICKING": [
-            {
-              "PLAYER": "O. MARE",
-              "50+": "0",
-              "LONG": "37"
-            }
-          ],
-          "MIA PASSING": [
-            {
-              "PLAYER": "D. MARINO",
-              "CMP%": "65.20",
-              "AVG": "9.35"
-            }
-          ],
-          "MIA PUNTING": [
-            {
-              "PLAYER": "B. BARTHOLOMEW",
-              "IN 20": "1"
-            }
-          ],
-          "MIA RECEIVING": [
-            {
-              "PLAYER": "T. MARTIN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "O. MCDUFFIE",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "R. KONRAD",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "T. DRAYTON",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "Y. GREEN",
-              "YAC": "0"
-            },
-            {
-              "PLAYER": "J. AVERY",
-              "YAC": "0"
-            }
-          ],
-          "MIA RUSHING": [
-            {
-              "PLAYER": "A. AL-JABBAR",
-              "AVG": "3.75",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "J. JOHNSON",
-              "AVG": "3.20",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "R. KONRAD",
-              "AVG": "3.50",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "T. BUCKLEY",
-              "AVG": "0",
-              "20+": "0"
-            },
-            {
-              "PLAYER": "D. MARINO",
-              "AVG": "-1",
-              "20+": "0"
-            }
-          ]
-        },
         "Estadísticas": {
           "Carreras-yardas-TD": "33-111-2",
           "Comp-Int-Yds-TD-INT": "15-23-215-2-0",
@@ -1127,7 +854,7 @@
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "8-60",
           "Primeros downs": "22",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "28:43",
           "Yardas netas por pase": "215",
@@ -1606,6 +1333,41 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Brent Bartholomew",
+              "Punts": "4",
+              "Largo punt": "47",
+              "Yds punt": "174",
+              "Prom punt": "43.5",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "37",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Olindo Mare",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "5"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "33",
+              "TD KO": "0",
+              "Yds KO": "55",
+              "Prom KO": "27.50",
+              "Nombre": "John Avery",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Terrell Buckley",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -1823,6 +1585,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "40",
+              "Rating": "124.4",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "215",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

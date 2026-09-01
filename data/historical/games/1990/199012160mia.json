@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-105-1",
           "Comp-Int-Yds-TD-INT": "17-29-250-2-1",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "4-27",
           "Primeros downs": "20",
@@ -284,6 +285,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "31",
+              "Prom KO": "15.50",
+              "Nombre": "Marc Logan",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Troy Stradford",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -527,6 +560,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "17",
+              "INT": "1",
+              "Largo pase": "45",
+              "Rating": "95.5",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "2",
+              "Yds pase": "250",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -538,6 +584,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-83-1",
           "Comp-Int-Yds-TD-INT": "21-37-295-1-3",
+          "Conv. en tercer down": "5-11-45%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-25",
           "Primeros downs": "21",
@@ -667,6 +714,29 @@
               "TD punt": "",
               "Yds punt": "49",
               "Prom punt": "12.30",
+              "Equipo": "SEA"
+            },
+            {
+              "FG largo": "24",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Norm Johnson",
+              "Equipo": "SEA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Chris Warren",
+              "Retornos punt": "4",
+              "Largo retorno punt": "23",
+              "TD punt": "0",
+              "Yds punt": "49",
+              "Prom punt": "12.25",
               "Equipo": "SEA"
             }
           ],
@@ -885,6 +955,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "SEA"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "21",
+              "INT": "3",
+              "Largo pase": "25",
+              "Rating": "57.8",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "34",
+              "TD pase": "1",
+              "Yds pase": "295",
+              "Nombre": "Dave Krieg",
               "Equipo": "SEA"
             }
           ]

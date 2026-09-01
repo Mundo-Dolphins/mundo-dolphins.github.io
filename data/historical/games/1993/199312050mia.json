@@ -202,6 +202,32 @@
               "Yds punt": "28",
               "Prom punt": "9.30",
               "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Dale Hatcher",
+              "Punts": "3",
+              "Largo punt": "46",
+              "Yds punt": "109",
+              "Prom punt": "36.3",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Nombre": "O.J. McDuffie",
+              "Retornos punt": "3",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "28",
+              "Prom punt": "9.33",
+              "Equipo": "MIA"
             }
           ],
           "Ofensiva": [
@@ -444,6 +470,32 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "41",
+              "Comp": "26",
+              "INT": "2",
+              "Largo pase": "44",
+              "Rating": "79.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "1",
+              "Yds pase": "365",
+              "Nombre": "Steve DeBerg",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "2",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "7",
+              "Rating": "58.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "4",
+              "TD pase": "0",
+              "Yds pase": "7",
+              "Nombre": "Doug Pederson",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -460,7 +512,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "8-58",
           "Primeros downs": "19",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "3-16",
           "Tiempo de posesión": "31:40",
           "Yardas netas por pase": "241",
@@ -602,6 +654,37 @@
               "TD punt": "",
               "Yds punt": "2",
               "Prom punt": "2",
+              "Equipo": "NYG"
+            },
+            {
+              "Nombre": "Mike Horan",
+              "Punts": "6",
+              "Largo punt": "60",
+              "Yds punt": "294",
+              "Prom punt": "49.0",
+              "Equipo": "NYG"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "David Treadwell",
+              "Equipo": "NYG",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "34",
+              "Prom KO": "11.33",
+              "Nombre": "David Meggett",
+              "Retornos punt": "1",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "2.00",
               "Equipo": "NYG"
             }
           ],
@@ -820,6 +903,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "NYG"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "17",
+              "INT": "0",
+              "Largo pase": "54",
+              "Rating": "119.6",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "16",
+              "TD pase": "1",
+              "Yds pase": "257",
+              "Nombre": "Phil Simms",
               "Equipo": "NYG"
             }
           ]

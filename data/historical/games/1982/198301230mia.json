@@ -58,11 +58,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "41-138-1",
           "Comp-Int-Yds-TD-INT": "9-21-87-0-3",
+          "Conv. en tercer down": "8-18-44%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "3-15",
           "Primeros downs": "13",
           "Pérdidas de balón": "4",
           "Sacks-yardas perdidas": "4-27",
+          "Tiempo de posesión": "33:51",
           "Yardas netas por pase": "60",
           "Yardas totales": "198"
         },
@@ -248,6 +250,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "20",
+              "Prom KO": "20.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "3",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "20",
+              "Prom punt": "6.67",
               "Equipo": "MIA"
             }
           ],
@@ -491,6 +520,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "21",
+              "Comp": "9",
+              "INT": "3",
+              "Largo pase": "20",
+              "Rating": "15.5",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "27",
+              "TD pase": "0",
+              "Yds pase": "87",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -502,11 +544,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "24-62-0",
           "Comp-Int-Yds-TD-INT": "15-37-103-0-5",
+          "Conv. en tercer down": "4-17-23%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "6-42",
           "Primeros downs": "10",
           "Pérdidas de balón": "5",
           "Sacks-yardas perdidas": "4-26",
+          "Tiempo de posesión": "26:09",
           "Yardas netas por pase": "77",
           "Yardas totales": "139"
         },
@@ -650,6 +694,20 @@
               "TD punt": "",
               "Yds punt": "65",
               "Prom punt": "10.80",
+              "Equipo": "NYJ"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "31",
+              "Prom KO": "31.00",
+              "Nombre": "Kurt Sohn",
+              "Retornos punt": "6",
+              "Largo retorno punt": "25",
+              "TD punt": "0",
+              "Yds punt": "65",
+              "Prom punt": "10.83",
               "Equipo": "NYJ"
             }
           ],
@@ -892,6 +950,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NYJ"
+            },
+            {
+              "Intentos": "37",
+              "Comp": "15",
+              "INT": "5",
+              "Largo pase": "18",
+              "Rating": "8.8",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "26",
+              "TD pase": "0",
+              "Yds pase": "103",
+              "Nombre": "Richard Todd",
               "Equipo": "NYJ"
             }
           ]

@@ -198,6 +198,29 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "IND"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Dean Biasucci",
+              "Equipo": "CLT",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "32",
+              "TD KO": "0",
+              "Yds KO": "69",
+              "Prom KO": "17.25",
+              "Nombre": "Larry Anderson",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "CLT"
             }
           ],
           "Ofensiva": [
@@ -398,6 +421,32 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "IND"
+            },
+            {
+              "Intentos": "15",
+              "Comp": "8",
+              "INT": "2",
+              "Largo pase": "28",
+              "Rating": "58.1",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "30",
+              "TD pase": "1",
+              "Yds pase": "104",
+              "Nombre": "Mike Pagel",
+              "Equipo": "CLT"
+            },
+            {
+              "Intentos": "9",
+              "Comp": "3",
+              "INT": "1",
+              "Largo pase": "7",
+              "Rating": "2.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "13",
+              "TD pase": "0",
+              "Yds pase": "10",
+              "Nombre": "Art Schlichter",
+              "Equipo": "CLT"
             }
           ]
         },
@@ -409,6 +458,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "40-139-3",
           "Comp-Int-Yds-TD-INT": "15-30-260-2-0",
+          "Conv. en tercer down": "7-13-53%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "24",
@@ -586,6 +636,24 @@
               "TD punt": "",
               "Yds punt": "76",
               "Prom punt": "12.70",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "27",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "6",
+              "XPm": "5"
+            },
+            {
+              "Nombre": "Vince Heflin",
+              "Retornos punt": "6",
+              "Largo retorno punt": "37",
+              "TD punt": "0",
+              "Yds punt": "76",
+              "Prom punt": "12.67",
               "Equipo": "MIA"
             }
           ],
@@ -852,6 +920,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "29",
+              "Comp": "14",
+              "INT": "0",
+              "Largo pase": "80t",
+              "Rating": "102.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "257",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "3",
+              "Rating": "79.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "3",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

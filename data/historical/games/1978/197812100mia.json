@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "29-97-1",
           "Comp-Int-Yds-TD-INT": "14-26-163-0-2",
+          "Conv. en tercer down": "3-12-25%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "13",
@@ -260,6 +261,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "35",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "21",
+              "TD KO": "0",
+              "Yds KO": "21",
+              "Prom KO": "21.00",
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "2",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "3.50",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "22",
+              "Prom KO": "22.00",
+              "Nombre": "Duriel Harris",
               "Equipo": "MIA"
             }
           ],
@@ -505,6 +538,19 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "26",
+              "Comp": "14",
+              "INT": "2",
+              "Largo pase": "37",
+              "Rating": "41.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "163",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -687,6 +733,51 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "OAK"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "Errol Mann",
+              "Equipo": "RAI",
+              "XPa": "1",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "20",
+              "TD KO": "0",
+              "Yds KO": "59",
+              "Prom KO": "19.67",
+              "Nombre": "Derrick Ramsey",
+              "Equipo": "RAI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "38",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "38.00",
+              "Nombre": "Harold Hart",
+              "Equipo": "RAI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "23",
+              "Prom KO": "23.00",
+              "Nombre": "Joe Stewart",
+              "Equipo": "RAI"
+            },
+            {
+              "Nombre": "Neal Colzie",
+              "Retornos punt": "3",
+              "Largo retorno punt": "5",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "3.33",
+              "Equipo": "RAI"
             }
           ],
           "Ofensiva": [
@@ -909,6 +1000,32 @@
               "Yds carrera": "",
               "Objetivos": "3",
               "Equipo": "OAK"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "23",
+              "INT": "5",
+              "Largo pase": "24",
+              "Rating": "54.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "19",
+              "TD pase": "1",
+              "Yds pase": "251",
+              "Nombre": "Ken Stabler",
+              "Equipo": "RAI"
+            },
+            {
+              "Intentos": "2",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "12",
+              "Rating": "68.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "10",
+              "TD pase": "0",
+              "Yds pase": "12",
+              "Nombre": "David Humm",
+              "Equipo": "RAI"
             }
           ]
         },

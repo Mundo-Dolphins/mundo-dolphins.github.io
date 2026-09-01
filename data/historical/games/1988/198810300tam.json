@@ -79,10 +79,11 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "23-43-0",
           "Comp-Int-Yds-TD-INT": "27-46-266-2-0",
+          "Conv. en tercer down": "4-12-33%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "9-78",
           "Primeros downs": "20",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "29:12",
           "Yardas netas por pase": "266",
@@ -270,6 +271,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "31",
+              "FGa": "4",
+              "FGm": "1",
+              "Nombre": "Tony Franklin",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "73",
+              "Prom KO": "24.33",
+              "Nombre": "Joe Cribbs",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Schwedes",
+              "Retornos punt": "2",
+              "Largo retorno punt": "2",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "1.00",
               "Equipo": "MIA"
             }
           ],
@@ -513,6 +541,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "46",
+              "Comp": "27",
+              "INT": "0",
+              "Largo pase": "33",
+              "Rating": "89.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "2",
+              "Yds pase": "266",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -524,6 +565,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "27-79-0",
           "Comp-Int-Yds-TD-INT": "26-36-291-2-1",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "4-4",
           "Penalizaciones-yardas": "7-62",
           "Primeros downs": "21",
@@ -614,6 +656,51 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "TAM"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Donald Igwebuike",
+              "Equipo": "TAM",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "38",
+              "Prom KO": "19.00",
+              "Nombre": "Donnie Elder",
+              "Equipo": "TAM"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Don Smith",
+              "Equipo": "TAM"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "16",
+              "TD KO": "0",
+              "Yds KO": "16",
+              "Prom KO": "16.00",
+              "Nombre": "Jeff Smith",
+              "Equipo": "TAM"
+            },
+            {
+              "Nombre": "Bobby Futrell",
+              "Retornos punt": "4",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "30",
+              "Prom punt": "7.50",
               "Equipo": "TAM"
             }
           ],
@@ -904,6 +991,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "TAM"
+            },
+            {
+              "Intentos": "36",
+              "Comp": "26",
+              "INT": "1",
+              "Largo pase": "27t",
+              "Rating": "102.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "8",
+              "TD pase": "2",
+              "Yds pase": "291",
+              "Nombre": "Joe Ferguson",
               "Equipo": "TAM"
             }
           ]

@@ -51,11 +51,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "38-176-0",
           "Comp-Int-Yds-TD-INT": "9-18-76-0-2",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "16",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "2-17",
+          "Tiempo de posesión": "31:05",
           "Yardas netas por pase": "59",
           "Yardas totales": "235"
         },
@@ -173,6 +175,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "10",
+              "TD KO": "0",
+              "Yds KO": "10",
+              "Prom KO": "10.00",
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Fulton Walker",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "2",
+              "Prom punt": "1.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -374,6 +426,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "9",
+              "INT": "2",
+              "Largo pase": "17",
+              "Rating": "21.8",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "17",
+              "TD pase": "0",
+              "Yds pase": "76",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -546,6 +611,29 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "NWE"
+            },
+            {
+              "FG largo": "33",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "John Smith",
+              "Equipo": "NWE",
+              "XPa": "0",
+              "XPm": "0"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Ricky Smith",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "NWE"
             }
           ],
           "Ofensiva": [
@@ -679,6 +767,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "5",
+              "Comp": "2",
+              "INT": "1",
+              "Largo pase": "7",
+              "Rating": "8.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "13",
+              "Nombre": "Steve Grogan",
               "Equipo": "NWE"
             }
           ]

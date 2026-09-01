@@ -119,7 +119,7 @@
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "5-24",
           "Primeros downs": "26",
-          "Pérdidas de balón": "",
+          "Pérdidas de balón": "0",
           "Sacks-yardas perdidas": "0-0",
           "Tiempo de posesión": "27:33",
           "Yardas netas por pase": "212",
@@ -261,6 +261,32 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Chris Mohr",
+              "Punts": "2",
+              "Largo punt": "52",
+              "Yds punt": "102",
+              "Prom punt": "51.0",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "54",
+              "FGa": "5",
+              "FGm": "4",
+              "Nombre": "Steve Christie",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "34",
+              "TD KO": "0",
+              "Yds KO": "91",
+              "Prom KO": "22.75",
+              "Nombre": "Al Edwards",
               "Equipo": "BUF"
             }
           ],
@@ -480,6 +506,19 @@
               "Yds carrera": "",
               "Objetivos": "4",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "19",
+              "INT": "0",
+              "Largo pase": "26",
+              "Rating": "79.2",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "212",
+              "Nombre": "Jim Kelly",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -555,6 +594,50 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Reggie Roby",
+              "Punts": "2",
+              "Largo punt": "55",
+              "Yds punt": "92",
+              "Prom punt": "46.0",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "50",
+              "FGa": "3",
+              "FGm": "2",
+              "Nombre": "Pete Stoyanovich",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "62",
+              "Prom KO": "20.67",
+              "Nombre": "Bernie Parmalee",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Tony Paige",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Scott Miller",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -797,6 +880,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "2",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "33",
+              "Comp": "22",
+              "INT": "1",
+              "Largo pase": "55",
+              "Rating": "105.7",
+              "Capturas recibidas": "4",
+              "Yds perdidas capturas": "35",
+              "TD pase": "2",
+              "Yds pase": "321",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

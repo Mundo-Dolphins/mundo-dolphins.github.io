@@ -72,11 +72,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "43-144-1",
           "Comp-Int-Yds-TD-INT": "21-33-213-1-5",
+          "Conv. en tercer down": "11-16-68%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "9-44",
           "Primeros downs": "22",
           "Pérdidas de balón": "7",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "34:45",
           "Yardas netas por pase": "213",
           "Yardas totales": "357"
         },
@@ -232,6 +234,38 @@
               "TD punt": "",
               "Yds punt": "16",
               "Prom punt": "5.30",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "40",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Nick Mike-Mayer",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "19",
+              "TD KO": "0",
+              "Yds KO": "19",
+              "Prom KO": "19.00",
+              "Nombre": "Joe Cribbs",
+              "Retornos punt": "3",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "5.33",
+              "Equipo": "BUF"
+            },
+            {
+              "Nombre": "Lou Piccone",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "BUF"
             }
           ],
@@ -477,6 +511,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "32",
+              "Comp": "20",
+              "INT": "5",
+              "Largo pase": "29",
+              "Rating": "50.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "198",
+              "Nombre": "Joe Ferguson",
+              "Equipo": "BUF"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "1",
+              "INT": "0",
+              "Largo pase": "15",
+              "Rating": "118.8",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "15",
+              "Nombre": "Greg Cater",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -488,11 +548,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-90-0",
           "Comp-Int-Yds-TD-INT": "15-26-139-1-4",
+          "Conv. en tercer down": "3-10-30%",
           "Fumbles-perdidos": "4-2",
           "Penalizaciones-yardas": "6-59",
           "Primeros downs": "13",
           "Pérdidas de balón": "6",
           "Sacks-yardas perdidas": "3-29",
+          "Tiempo de posesión": "25:15",
           "Yardas netas por pase": "110",
           "Yardas totales": "200"
         },
@@ -678,6 +740,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "52",
+              "Prom KO": "26.00",
+              "Nombre": "Tony Nathan",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "7",
+              "TD KO": "0",
+              "Yds KO": "7",
+              "Prom KO": "7.00",
+              "Nombre": "Don Bessillieu",
               "Equipo": "MIA"
             }
           ],
@@ -922,6 +1016,32 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "18",
+              "Comp": "11",
+              "INT": "2",
+              "Largo pase": "19",
+              "Rating": "55.3",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "29",
+              "TD pase": "1",
+              "Yds pase": "101",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "8",
+              "Comp": "4",
+              "INT": "2",
+              "Largo pase": "18",
+              "Rating": "24.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "38",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

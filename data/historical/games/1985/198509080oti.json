@@ -212,6 +212,24 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "HOU"
+            },
+            {
+              "FG largo": "46",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Tony Zendejas",
+              "Equipo": "OTI",
+              "XPa": "3",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "30",
+              "TD KO": "0",
+              "Yds KO": "95",
+              "Prom KO": "23.75",
+              "Nombre": "Steve Tasker",
+              "Equipo": "OTI"
             }
           ],
           "Ofensiva": [
@@ -390,6 +408,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "HOU"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "12",
+              "INT": "1",
+              "Largo pase": "80t",
+              "Rating": "108.1",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "41",
+              "TD pase": "1",
+              "Yds pase": "270",
+              "Nombre": "Warren Moon",
+              "Equipo": "OTI"
             }
           ]
         },
@@ -401,6 +432,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "25-69-0",
           "Comp-Int-Yds-TD-INT": "19-31-291-1-2",
+          "Conv. en tercer down": "5-12-41%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-38",
           "Primeros downs": "17",
@@ -560,6 +592,33 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "6",
+              "Largo retorno KO": "38",
+              "TD KO": "0",
+              "Yds KO": "153",
+              "Prom KO": "25.50",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Frank Lockett",
+              "Retornos punt": "1",
+              "Largo retorno punt": "1",
+              "TD punt": "0",
+              "Yds punt": "1",
+              "Prom punt": "1.00",
               "Equipo": "MIA"
             }
           ],
@@ -826,6 +885,32 @@
               "TD carrera": "",
               "Yds carrera": "-3",
               "Objetivos": "",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "13",
+              "INT": "2",
+              "Largo pase": "45",
+              "Rating": "40.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "159",
+              "Nombre": "Dan Marino",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "7",
+              "Comp": "6",
+              "INT": "0",
+              "Largo pase": "67t",
+              "Rating": "158.3",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "132",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

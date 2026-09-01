@@ -86,11 +86,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "42-212-1",
           "Comp-Int-Yds-TD-INT": "11-24-128-1-1",
+          "Conv. en tercer down": "7-14-50%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "5-45",
           "Primeros downs": "19",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "0-0",
+          "Tiempo de posesión": "34:04",
           "Yardas netas por pase": "128",
           "Yardas totales": "340"
         },
@@ -212,6 +214,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "32",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "67",
+              "Prom KO": "22.33",
+              "Nombre": "Fulton Walker",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "3",
+              "Largo retorno punt": "8",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "1.33",
               "Equipo": "MIA"
             }
           ],
@@ -391,6 +425,19 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "11",
+              "INT": "1",
+              "Largo pase": "45",
+              "Rating": "59.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "128",
+              "Nombre": "David Woodley",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -498,6 +545,24 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "NWE"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "2",
+              "FGm": "0",
+              "Nombre": "John Smith",
+              "Equipo": "NWE",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "5",
+              "Largo retorno KO": "24",
+              "TD KO": "0",
+              "Yds KO": "107",
+              "Prom KO": "21.40",
+              "Nombre": "Tony Collins",
               "Equipo": "NWE"
             }
           ],
@@ -698,6 +763,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "4",
+              "Equipo": "NWE"
+            },
+            {
+              "Intentos": "20",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "31",
+              "Rating": "97.5",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "16",
+              "TD pase": "1",
+              "Yds pase": "138",
+              "Nombre": "Matt Cavanaugh",
               "Equipo": "NWE"
             }
           ]

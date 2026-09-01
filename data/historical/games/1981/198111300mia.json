@@ -79,11 +79,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "34-73-0",
           "Comp-Int-Yds-TD-INT": "15-30-154-1-0",
+          "Conv. en tercer down": "5-17-29%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "1-5",
           "Primeros downs": "14",
           "Pérdidas de balón": "1",
           "Sacks-yardas perdidas": "3-22",
+          "Tiempo de posesión": "28:00",
           "Yardas netas por pase": "132",
           "Yardas totales": "205"
         },
@@ -439,11 +441,13 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "31-136-1",
           "Comp-Int-Yds-TD-INT": "12-24-91-0-1",
+          "Conv. en tercer down": "7-17-41%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "8-59",
           "Primeros downs": "11",
           "Pérdidas de balón": "2",
           "Sacks-yardas perdidas": "2-11",
+          "Tiempo de posesión": "32:00",
           "Yardas netas por pase": "80",
           "Yardas totales": "216"
         },
@@ -519,6 +523,56 @@
               "TD punt": "",
               "Yds punt": "24",
               "Prom punt": "4.80",
+              "Equipo": "PHI"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Tony Franklin",
+              "Equipo": "PHI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "FG largo": "42",
+              "FGa": "2",
+              "FGm": "2",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "PHI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "41",
+              "Prom KO": "20.50",
+              "Nombre": "Wally Henry",
+              "Retornos punt": "5",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "24",
+              "Prom punt": "4.80",
+              "Equipo": "PHI"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "29",
+              "TD KO": "0",
+              "Yds KO": "61",
+              "Prom KO": "20.33",
+              "Nombre": "Fulton Walker",
+              "Equipo": "PHI"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "6",
+              "Largo retorno punt": "21",
+              "TD punt": "0",
+              "Yds punt": "73",
+              "Prom punt": "12.17",
               "Equipo": "PHI"
             }
           ],
@@ -719,6 +773,58 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "24",
+              "Comp": "12",
+              "INT": "1",
+              "Largo pase": "28",
+              "Rating": "42.2",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "91",
+              "Nombre": "Ron Jaworski",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "23",
+              "Comp": "11",
+              "INT": "0",
+              "Largo pase": "21",
+              "Rating": "63.1",
+              "Capturas recibidas": "2",
+              "Yds perdidas capturas": "15",
+              "TD pase": "0",
+              "Yds pase": "117",
+              "Nombre": "David Woodley",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "6",
+              "Comp": "4",
+              "INT": "0",
+              "Largo pase": "17t",
+              "Rating": "122.9",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "7",
+              "TD pase": "1",
+              "Yds pase": "37",
+              "Nombre": "Don Strock",
+              "Equipo": "PHI"
+            },
+            {
+              "Intentos": "1",
+              "Comp": "0",
+              "INT": "0",
+              "Largo pase": "0",
+              "Rating": "39.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "0",
+              "Nombre": "Tony Nathan",
               "Equipo": "PHI"
             }
           ]

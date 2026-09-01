@@ -249,6 +249,47 @@
               "Yds punt": "",
               "Prom punt": "",
               "Equipo": "GNB"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "2",
+              "FGm": "1",
+              "Nombre": "Al Del Greco",
+              "Equipo": "GNB",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "48",
+              "TD KO": "0",
+              "Yds KO": "138",
+              "Prom KO": "34.50",
+              "Nombre": "Phil Epps",
+              "Retornos punt": "2",
+              "Largo retorno punt": "10",
+              "TD punt": "0",
+              "Yds punt": "10",
+              "Prom punt": "5.00",
+              "Equipo": "GNB"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "15",
+              "TD KO": "0",
+              "Yds KO": "15",
+              "Prom KO": "15.00",
+              "Nombre": "Gerry Ellis",
+              "Equipo": "GNB"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "14",
+              "TD KO": "0",
+              "Yds KO": "14",
+              "Prom KO": "14.00",
+              "Nombre": "Ken Stills",
+              "Equipo": "GNB"
             }
           ],
           "Ofensiva": [
@@ -449,6 +490,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "GNB"
+            },
+            {
+              "Intentos": "35",
+              "Comp": "20",
+              "INT": "2",
+              "Largo pase": "56t",
+              "Rating": "74.3",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "6",
+              "TD pase": "2",
+              "Yds pase": "247",
+              "Nombre": "Jim Zorn",
+              "Equipo": "GNB"
             }
           ]
         },
@@ -460,6 +514,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "22-63-0",
           "Comp-Int-Yds-TD-INT": "30-44-345-5-1",
+          "Conv. en tercer down": "6-12-50%",
           "Fumbles-perdidos": "3-2",
           "Penalizaciones-yardas": "6-47",
           "Primeros downs": "24",
@@ -631,6 +686,56 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "5",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "25",
+              "TD KO": "0",
+              "Yds KO": "43",
+              "Prom KO": "21.50",
+              "Nombre": "Joe Carter",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "38",
+              "TD KO": "0",
+              "Yds KO": "57",
+              "Prom KO": "28.50",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "17",
+              "TD KO": "0",
+              "Yds KO": "17",
+              "Prom KO": "17.00",
+              "Nombre": "Lyle Blackwood",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "2",
+              "Largo retorno punt": "7",
+              "TD punt": "0",
+              "Yds punt": "7",
+              "Prom punt": "3.50",
               "Equipo": "MIA"
             }
           ],
@@ -875,6 +980,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "44",
+              "Comp": "30",
+              "INT": "1",
+              "Largo pase": "61t",
+              "Rating": "120.0",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "5",
+              "Yds pase": "345",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]

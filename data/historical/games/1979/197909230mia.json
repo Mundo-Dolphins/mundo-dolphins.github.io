@@ -107,6 +107,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "28-85-1",
           "Comp-Int-Yds-TD-INT": "16-25-160-0-2",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "0-0",
           "Penalizaciones-yardas": "8-50",
           "Primeros downs": "16",
@@ -231,6 +232,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "CHI"
+            },
+            {
+              "FG largo": "36",
+              "FGa": "3",
+              "FGm": "3",
+              "Nombre": "Bob Thomas",
+              "Equipo": "CHI",
+              "XPa": "1",
+              "XPm": "1"
+            },
+            {
+              "Retornos KO": "3",
+              "Largo retorno KO": "23",
+              "TD KO": "0",
+              "Yds KO": "58",
+              "Prom KO": "19.33",
+              "Nombre": "Brian Baschnagel",
+              "Equipo": "CHI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "18",
+              "Prom KO": "18.00",
+              "Nombre": "Steve Schubert",
+              "Equipo": "CHI"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "26",
+              "Prom KO": "26.00",
+              "Nombre": "Rickey Watts",
               "Equipo": "CHI"
             }
           ],
@@ -476,6 +513,32 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "CHI"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "11",
+              "INT": "2",
+              "Largo pase": "20",
+              "Rating": "39.0",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "5",
+              "TD pase": "0",
+              "Yds pase": "92",
+              "Nombre": "Vince Evans",
+              "Equipo": "CHI"
+            },
+            {
+              "Intentos": "8",
+              "Comp": "5",
+              "INT": "0",
+              "Largo pase": "20",
+              "Rating": "89.6",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "0",
+              "Yds pase": "68",
+              "Nombre": "Bob Avellini",
+              "Equipo": "CHI"
             }
           ]
         },
@@ -487,6 +550,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "39-193-4",
           "Comp-Int-Yds-TD-INT": "12-17-207-0-0",
+          "Conv. en tercer down": "6-10-60%",
           "Fumbles-perdidos": "3-1",
           "Penalizaciones-yardas": "4-43",
           "Primeros downs": "23",
@@ -615,6 +679,47 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "21",
+              "FGa": "3",
+              "FGm": "1",
+              "Nombre": "Uwe Von Schamann",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "28",
+              "TD KO": "0",
+              "Yds KO": "45",
+              "Prom KO": "22.50",
+              "Nombre": "Mike Kozlowski",
+              "Retornos punt": "0",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Retornos KO": "1",
+              "Largo retorno KO": "22",
+              "TD KO": "0",
+              "Yds KO": "22",
+              "Prom KO": "22.00",
+              "Nombre": "Tony Nathan",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Charlie Babb",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "MIA"
             }
           ],
@@ -859,6 +964,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "17",
+              "Comp": "12",
+              "INT": "0",
+              "Largo pase": "53",
+              "Rating": "111.6",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "11",
+              "TD pase": "0",
+              "Yds pase": "207",
+              "Nombre": "Don Strock",
               "Equipo": "MIA"
             }
           ]

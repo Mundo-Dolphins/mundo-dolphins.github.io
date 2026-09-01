@@ -93,6 +93,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "35-139-2",
           "Comp-Int-Yds-TD-INT": "13-21-131-2-0",
+          "Conv. en tercer down": "7-14-50%",
           "Fumbles-perdidos": "1-1",
           "Penalizaciones-yardas": "3-20",
           "Primeros downs": "17",
@@ -265,6 +266,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Garo Yepremian",
+              "Equipo": "MIA",
+              "XPa": "4",
+              "XPm": "4"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "31",
+              "TD KO": "0",
+              "Yds KO": "93",
+              "Prom KO": "23.25",
+              "Nombre": "Duriel Harris",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Jimmy Cefalo",
+              "Retornos punt": "1",
+              "Largo retorno punt": "16",
+              "TD punt": "0",
+              "Yds punt": "16",
+              "Prom punt": "16.00",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Nat Moore",
+              "Retornos punt": "1",
+              "Largo retorno punt": "11",
+              "TD punt": "0",
+              "Yds punt": "11",
+              "Prom punt": "11.00",
               "Equipo": "MIA"
             }
           ],
@@ -510,6 +547,32 @@
               "Yds carrera": "",
               "Objetivos": "2",
               "Equipo": "MIA"
+            },
+            {
+              "Intentos": "11",
+              "Comp": "8",
+              "INT": "0",
+              "Largo pase": "19",
+              "Rating": "130.1",
+              "Capturas recibidas": "0",
+              "Yds perdidas capturas": "0",
+              "TD pase": "1",
+              "Yds pase": "98",
+              "Nombre": "Bob Griese",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "10",
+              "Comp": "5",
+              "INT": "0",
+              "Largo pase": "19",
+              "Rating": "90.8",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "9",
+              "TD pase": "1",
+              "Yds pase": "33",
+              "Nombre": "Don Strock",
+              "Equipo": "MIA"
             }
           ]
         },
@@ -615,6 +678,38 @@
               "TD punt": "",
               "Yds punt": "4",
               "Prom punt": "4",
+              "Equipo": "SDG"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "0",
+              "FGm": "0",
+              "Nombre": "Rolf Benirschke",
+              "Equipo": "SDG",
+              "XPa": "3",
+              "XPm": "3"
+            },
+            {
+              "Retornos KO": "4",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "93",
+              "Prom KO": "23.25",
+              "Nombre": "Johnny Rodgers",
+              "Retornos punt": "1",
+              "Largo retorno punt": "13",
+              "TD punt": "0",
+              "Yds punt": "13",
+              "Prom punt": "13.00",
+              "Equipo": "SDG"
+            },
+            {
+              "Nombre": "Mike Fuller",
+              "Retornos punt": "1",
+              "Largo retorno punt": "4",
+              "TD punt": "0",
+              "Yds punt": "4",
+              "Prom punt": "4.00",
               "Equipo": "SDG"
             }
           ],
@@ -793,6 +888,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "3",
+              "Equipo": "SDG"
+            },
+            {
+              "Intentos": "30",
+              "Comp": "22",
+              "INT": "2",
+              "Largo pase": "46",
+              "Rating": "90.0",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "26",
+              "TD pase": "1",
+              "Yds pase": "313",
+              "Nombre": "Dan Fouts",
               "Equipo": "SDG"
             }
           ]

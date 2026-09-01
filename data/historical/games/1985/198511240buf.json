@@ -86,6 +86,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "19-94-0",
           "Comp-Int-Yds-TD-INT": "15-28-196-2-0",
+          "Conv. en tercer down": "5-13-38%",
           "Fumbles-perdidos": "2-1",
           "Penalizaciones-yardas": "6-30",
           "Primeros downs": "12",
@@ -197,6 +198,38 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "BUF"
+            },
+            {
+              "FG largo": "0",
+              "FGa": "1",
+              "FGm": "0",
+              "Nombre": "Scott Norwood",
+              "Equipo": "BUF",
+              "XPa": "2",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "26",
+              "TD KO": "0",
+              "Yds KO": "35",
+              "Prom KO": "17.50",
+              "Nombre": "Anthony Steels",
+              "Equipo": "BUF"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "34",
+              "Prom KO": "17.00",
+              "Nombre": "Don Wilson",
+              "Retornos punt": "1",
+              "Largo retorno punt": "0",
+              "TD punt": "0",
+              "Yds punt": "0",
+              "Prom punt": "0.00",
               "Equipo": "BUF"
             }
           ],
@@ -398,6 +431,19 @@
               "Yds carrera": "",
               "Objetivos": "1",
               "Equipo": "BUF"
+            },
+            {
+              "Intentos": "28",
+              "Comp": "15",
+              "INT": "0",
+              "Largo pase": "60t",
+              "Rating": "99.7",
+              "Capturas recibidas": "3",
+              "Yds perdidas capturas": "35",
+              "TD pase": "2",
+              "Yds pase": "196",
+              "Nombre": "Bruce Mathison",
+              "Equipo": "BUF"
             }
           ]
         },
@@ -409,6 +455,7 @@
         "Estadísticas": {
           "Carreras-yardas-TD": "41-172-1",
           "Comp-Int-Yds-TD-INT": "22-31-233-2-2",
+          "Conv. en tercer down": "6-11-54%",
           "Fumbles-perdidos": "1-0",
           "Penalizaciones-yardas": "5-41",
           "Primeros downs": "28",
@@ -566,6 +613,42 @@
               "TD punt": "",
               "Yds punt": "",
               "Prom punt": "",
+              "Equipo": "MIA"
+            },
+            {
+              "FG largo": "22",
+              "FGa": "1",
+              "FGm": "1",
+              "Nombre": "Fuad Reveiz",
+              "Equipo": "MIA",
+              "XPa": "3",
+              "XPm": "2"
+            },
+            {
+              "Retornos KO": "2",
+              "Largo retorno KO": "18",
+              "TD KO": "0",
+              "Yds KO": "29",
+              "Prom KO": "14.50",
+              "Nombre": "Lorenzo Hampton",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Tommy Vigorito",
+              "Retornos punt": "3",
+              "Largo retorno punt": "15",
+              "TD punt": "0",
+              "Yds punt": "35",
+              "Prom punt": "11.67",
+              "Equipo": "MIA"
+            },
+            {
+              "Nombre": "Glenn Blackwood",
+              "Retornos punt": "1",
+              "Largo retorno punt": "18",
+              "TD punt": "0",
+              "Yds punt": "18",
+              "Prom punt": "18.00",
               "Equipo": "MIA"
             }
           ],
@@ -810,6 +893,19 @@
               "TD carrera": "",
               "Yds carrera": "",
               "Objetivos": "1",
+              "Equipo": "MIA"
+            },
+            {
+              "Intentos": "31",
+              "Comp": "22",
+              "INT": "2",
+              "Largo pase": "22",
+              "Rating": "87.2",
+              "Capturas recibidas": "1",
+              "Yds perdidas capturas": "17",
+              "TD pase": "2",
+              "Yds pase": "233",
+              "Nombre": "Dan Marino",
               "Equipo": "MIA"
             }
           ]
