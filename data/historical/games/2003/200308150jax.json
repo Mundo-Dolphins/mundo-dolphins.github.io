@@ -23,7 +23,41 @@
     "Equipos": {
       "Jacksonville Jaguars": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "5.1",
+          "Average gain per rushing play": "3.9",
+          "Avg gain per pass play (inc.# thrown passing)": "5.9",
+          "By Passing": "15",
+          "EXTRA POINTS Made-Attempts": "3-3",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "2-2",
+          "FINAL SCORE": "27",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "1-0",
+          "GOAL TO GO EFFICIENCY": "2-4-50%",
+          "Gross yards passing": "269",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-0-0",
+          "Kicking Made-Attempts": "3-3",
+          "NET YARDS PASSING": "249",
+          "NET YARDS RUSHING": "130",
+          "Net Punting Average": "32.5",
+          "No. and Yards Interception Returns": "1-17",
+          "No. and Yards Kickoff Returns": "3-76",
+          "No. and Yards Punt Returns": "1-8",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "39-24-0",
+          "PENALTIES Number and Yards": "4-30",
+          "PUNTS Number and Average": "4-48.5",
+          "RED ZONE EFFICIENCY": "3-5-60%",
+          "THIRD DOWN EFFICIENCY": "8-15-53%",
+          "TIME OF POSSESSION": "31:40",
+          "TOTAL FIRST DOWNS": "30",
+          "TOTAL NET YARDS": "379",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "25",
+          "Tackles for a loss-number and yards": "0-0",
+          "Times thrown - yards lost attempting to pass": "3-20",
+          "Total Offensive Plays (inc. times thrown passing)": "75",
+          "Total Rushing Plays": "33"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -34,7 +68,41 @@
       },
       "Miami Dolphins": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "4.5",
+          "Average gain per rushing play": "4.5",
+          "Avg gain per pass play (inc.# thrown passing)": "4.5",
+          "By Passing": "11",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "3-3",
+          "FINAL SCORE": "23",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "0-0",
+          "GOAL TO GO EFFICIENCY": "2-2-100%",
+          "Gross yards passing": "162",
+          "KICKOFFS Number-In End Zone-Touchbacks": "6-4-3",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "152",
+          "NET YARDS RUSHING": "118",
+          "Net Punting Average": "38.7",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "5-154",
+          "No. and Yards Punt Returns": "2-44",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "32-20-1",
+          "PENALTIES Number and Yards": "9-68",
+          "PUNTS Number and Average": "3-41.3",
+          "RED ZONE EFFICIENCY": "2-4-50%",
+          "THIRD DOWN EFFICIENCY": "7-13-54%",
+          "TIME OF POSSESSION": "28:20",
+          "TOTAL FIRST DOWNS": "20",
+          "TOTAL NET YARDS": "270",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "44",
+          "Tackles for a loss-number and yards": "2-2",
+          "Times thrown - yards lost attempting to pass": "2-10",
+          "Total Offensive Plays (inc. times thrown passing)": "60",
+          "Total Rushing Plays": "26"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -50,9 +118,48 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "15 de agosto de 2003",
+      "Hora de inicio": "7:37 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Feels like 88 deg Temp: 84° F (28.9° C), viento: East 8 mph",
+      "Asistencia": "49,751",
+      "Duración": "3:08",
       "Gamebook oficial": "assets/gamebooks/2003/200308150jax.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Bill Carollo",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Tony Michalek",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Steve Stelljes",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Ben Montgomery",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "John Parry",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Steve Zimmer",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Ron Spitler",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Dick Creed",
+        "Posición": "Replay Official"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

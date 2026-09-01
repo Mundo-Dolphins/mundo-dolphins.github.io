@@ -98,10 +98,42 @@
       "Atlanta Falcons": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.9",
+          "Average gain per rushing play": "4.4",
+          "Avg gain per pass play (inc.# thrown passing)": "6.0",
           "Carreras-yardas-TD": "45-196-1",
           "Comp-Int-Yds-TD-INT": "10-21-137-0-0",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "2-2",
+          "FINAL SCORE": "20",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "2-0",
+          "GOAL TO GO EFFICIENCY": "0-1-0%",
+          "Gross yards passing": "137",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-3-1",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "133",
+          "NET YARDS RUSHING": "196",
+          "Net Punting Average": "42.1",
+          "No. and Yards Interception Returns": "1-51",
+          "No. and Yards Kickoff Returns": "0-0",
+          "No. and Yards Punt Returns": "4-36",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "21-10-0",
+          "PENALTIES Number and Yards": "11-95",
+          "PUNTS Number and Average": "9-44.8",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "1-4"
+          "RED ZONE EFFICIENCY": "0-2-0%",
+          "Sacks-yardas perdidas": "1-4",
+          "THIRD DOWN EFFICIENCY": "5-16-31%",
+          "TIME OF POSSESSION": "35:04",
+          "TOTAL FIRST DOWNS": "15",
+          "TOTAL NET YARDS": "329",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "87",
+          "Tackles for a loss-number and yards": "2-4",
+          "Times thrown - yards lost attempting to pass": "1-4",
+          "Total Offensive Plays (inc. times thrown passing)": "67",
+          "Total Rushing Plays": "45"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -442,10 +474,42 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "5.4",
+          "Average gain per rushing play": "3.8",
+          "Avg gain per pass play (inc.# thrown passing)": "6.0",
           "Carreras-yardas-TD": "17-64-0",
           "Comp-Int-Yds-TD-INT": "23-45-283-2-1",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "17",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "2-1",
+          "GOAL TO GO EFFICIENCY": "0-1-0%",
+          "Gross yards passing": "283",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-2-2",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "276",
+          "NET YARDS RUSHING": "64",
+          "Net Punting Average": "43.9",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "4-78",
+          "No. and Yards Punt Returns": "3-4",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "45-23-1",
+          "PENALTIES Number and Yards": "8-47",
+          "PUNTS Number and Average": "9-47.9",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "1-7"
+          "RED ZONE EFFICIENCY": "0-1-0%",
+          "Sacks-yardas perdidas": "1-7",
+          "THIRD DOWN EFFICIENCY": "3-14-21%",
+          "TIME OF POSSESSION": "24:56",
+          "TOTAL FIRST DOWNS": "16",
+          "TOTAL NET YARDS": "340",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "4",
+          "Tackles for a loss-number and yards": "2-4",
+          "Times thrown - yards lost attempting to pass": "1-7",
+          "Total Offensive Plays (inc. times thrown passing)": "63",
+          "Total Rushing Plays": "17"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -990,9 +1054,44 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "1 de septiembre de 2005",
+      "Hora de inicio": "7:37 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Played Outdoor on Turf: Natural",
+      "Clima": "Cloudy with Intermittent Rain, 79 grados, humedad relativa 86%, viento SW 11 mph",
+      "Asistencia": "71,616",
+      "Duración": "1:08",
       "Gamebook oficial": "assets/gamebooks/2005/200509010mia.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Walt Anderson",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Butch Hannah",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Phil McKinnely",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Gary Arthur",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Rick Patterson",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Bill Lovett",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Billy Smith",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

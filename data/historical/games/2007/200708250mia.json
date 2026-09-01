@@ -114,10 +114,43 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.8",
+          "Average gain per rushing play": "3.3",
+          "Avg gain per pass play (inc.# thrown passing)": "5.5",
+          "By Passing": "13",
           "Carreras-yardas-TD": "21-69-1",
           "Comp-Int-Yds-TD-INT": "26-45-281-3-1",
+          "EXTRA POINTS Made-Attempts": "4-4",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "0-1",
+          "FINAL SCORE": "28",
+          "FOURTH DOWN EFFICIENCY": "2-4-50%",
+          "FUMBLES Number and Lost": "2-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "281",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-3-0",
+          "Kicking Made-Attempts": "4-4",
+          "NET YARDS PASSING": "264",
+          "NET YARDS RUSHING": "69",
+          "Net Punting Average": "34.0",
+          "No. and Yards Interception Returns": "1-11",
+          "No. and Yards Kickoff Returns": "6-141",
+          "No. and Yards Punt Returns": "1-16",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "45-26-1",
+          "PENALTIES Number and Yards": "4-25",
+          "PUNTS Number and Average": "3-45.0",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "3-17"
+          "RED ZONE EFFICIENCY": "2-2-100%",
+          "Sacks-yardas perdidas": "3-17",
+          "THIRD DOWN EFFICIENCY": "8-16-50%",
+          "TIME OF POSSESSION": "29:04",
+          "TOTAL FIRST DOWNS": "20",
+          "TOTAL NET YARDS": "333",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "27",
+          "Tackles for a loss-number and yards": "2-7",
+          "Times thrown - yards lost attempting to pass": "3-17",
+          "Total Offensive Plays (inc. times thrown passing)": "69",
+          "Total Rushing Plays": "21"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -642,10 +675,43 @@
       "Tampa Bay Buccaneers": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.9",
+          "Average gain per rushing play": "4.8",
+          "Avg gain per pass play (inc.# thrown passing)": "5.0",
+          "By Passing": "12",
           "Carreras-yardas-TD": "28-133-0",
           "Comp-Int-Yds-TD-INT": "19-37-215-3-1",
+          "EXTRA POINTS Made-Attempts": "4-4",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "31",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "0-0",
+          "GOAL TO GO EFFICIENCY": "2-3-67%",
+          "Gross yards passing": "215",
+          "KICKOFFS Number-In End Zone-Touchbacks": "6-1-0",
+          "Kicking Made-Attempts": "4-4",
+          "NET YARDS PASSING": "201",
+          "NET YARDS RUSHING": "133",
+          "Net Punting Average": "34.6",
+          "No. and Yards Interception Returns": "1-2",
+          "No. and Yards Kickoff Returns": "5-143",
+          "No. and Yards Punt Returns": "3-33",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "37-19-1",
+          "PENALTIES Number and Yards": "8-65",
+          "PUNTS Number and Average": "5-37.8",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "3-14"
+          "RED ZONE EFFICIENCY": "2-4-50%",
+          "Sacks-yardas perdidas": "3-14",
+          "THIRD DOWN EFFICIENCY": "10-17-59%",
+          "TIME OF POSSESSION": "30:56",
+          "TOTAL FIRST DOWNS": "21",
+          "TOTAL NET YARDS": "334",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "35",
+          "Tackles for a loss-number and yards": "1-5",
+          "Times thrown - yards lost attempting to pass": "3-14",
+          "Total Offensive Plays (inc. times thrown passing)": "68",
+          "Total Rushing Plays": "28"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1202,9 +1268,44 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "25 de agosto de 2007",
+      "Hora de inicio": "7:38 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Mostly Cloudy, 79 grados, humedad relativa 85%, viento NE 6 mph",
+      "Asistencia": "65,660",
+      "Duración": "3:11",
       "Gamebook oficial": "assets/gamebooks/2007/200708250mia.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Jeff Triplette",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Jim Quirk",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Steve Stelljes",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Jeff Seeman",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Greg Meyer",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Duke Carroll",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Gregory Steed",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

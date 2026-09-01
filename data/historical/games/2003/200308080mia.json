@@ -23,7 +23,42 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "4.2",
+          "Average gain per rushing play": "5.7",
+          "Avg gain per pass play (inc.# thrown passing)": "3.6",
+          "By Passing": "13",
+          "EXTRA POINTS Made-Attempts": "1-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "2-2",
+          "FINAL SCORE": "19",
+          "FOURTH DOWN EFFICIENCY": "2-2-100%",
+          "FUMBLES Number and Lost": "5-2",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "198",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-4-2",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "162",
+          "NET YARDS RUSHING": "102",
+          "Net Punting Average": "41.2",
+          "No. and Yards Interception Returns": "1-0",
+          "No. and Yards Kickoff Returns": "4-77",
+          "No. and Yards Punt Returns": "3-17",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "41-25-0",
+          "PENALTIES Number and Yards": "5-36",
+          "PUNTS Number and Average": "5-46.6",
+          "Passing Made-Attempts": "0-1",
+          "RED ZONE EFFICIENCY": "2-3-67%",
+          "THIRD DOWN EFFICIENCY": "4-14-29%",
+          "TIME OF POSSESSION": "25:40",
+          "TOTAL FIRST DOWNS": "20",
+          "TOTAL NET YARDS": "264",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "17",
+          "Tackles for a loss-number and yards": "0-0",
+          "Times thrown - yards lost attempting to pass": "4-36",
+          "Total Offensive Plays (inc. times thrown passing)": "63",
+          "Total Rushing Plays": "18"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -34,7 +69,42 @@
       },
       "Tampa Bay Buccaneers": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "4.5",
+          "Average gain per rushing play": "4.1",
+          "Avg gain per pass play (inc.# thrown passing)": "4.9",
+          "By Passing": "10",
+          "EXTRA POINTS Made-Attempts": "2-3",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "0-1",
+          "FINAL SCORE": "20",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "4-1",
+          "GOAL TO GO EFFICIENCY": "3-4-75%",
+          "Gross yards passing": "149",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-0-0",
+          "Kicking Made-Attempts": "2-3",
+          "NET YARDS PASSING": "142",
+          "NET YARDS RUSHING": "152",
+          "Net Punting Average": "34.8",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "2-53",
+          "No. and Yards Punt Returns": "4-27",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "28-15-1",
+          "PENALTIES Number and Yards": "9-72",
+          "PUNTS Number and Average": "4-39.0",
+          "Passing Made-Attempts": "0-0",
+          "RED ZONE EFFICIENCY": "3-4-75%",
+          "THIRD DOWN EFFICIENCY": "8-16-50%",
+          "TIME OF POSSESSION": "34:20",
+          "TOTAL FIRST DOWNS": "18",
+          "TOTAL NET YARDS": "294",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "27",
+          "Tackles for a loss-number and yards": "1-4",
+          "Times thrown - yards lost attempting to pass": "1-7",
+          "Total Offensive Plays (inc. times thrown passing)": "66",
+          "Total Rushing Plays": "37"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -50,9 +120,48 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "8 de agosto de 2003",
+      "Hora de inicio": "7:05 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Cloudy, 84 grados, humedad relativa 76%, viento South 14 mph",
+      "Asistencia": "62,261",
+      "Duración": "3:07",
       "Gamebook oficial": "assets/gamebooks/2003/200308080mia.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Bernie Kukar",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Bill Schuster",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Phil McKinnely",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Tom Barnes",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Tom Hill",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Gene Steratore",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Steve Freeman",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Dale Harner",
+        "Posición": "Replay Official"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": [
       {

@@ -74,10 +74,42 @@
       "Kansas City Chiefs": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "5.3",
+          "Average gain per rushing play": "2.3",
+          "Avg gain per pass play (inc.# thrown passing)": "8.3",
           "Carreras-yardas-TD": "27-61-0",
           "Comp-Int-Yds-TD-INT": "17-26-230-1-1",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-3",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "3-1",
+          "GOAL TO GO EFFICIENCY": "0-0-0%",
+          "Gross yards passing": "230",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-2-1",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "224",
+          "NET YARDS RUSHING": "61",
+          "Net Punting Average": "44.0",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "3-57",
+          "No. and Yards Punt Returns": "4-39",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "26-17-1",
+          "PENALTIES Number and Yards": "3-25",
+          "PUNTS Number and Average": "5-45.4",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "1-6"
+          "RED ZONE EFFICIENCY": "0-3-0%",
+          "Rushing Made-Attempts": "0-0",
+          "Sacks-yardas perdidas": "1-6",
+          "THIRD DOWN EFFICIENCY": "3-11-27%",
+          "TIME OF POSSESSION": "28:16",
+          "TOTAL FIRST DOWNS": "14",
+          "TOTAL NET YARDS": "285",
+          "Tackles for a loss-number and yards": "3-7",
+          "Times thrown - yards lost attempting to pass": "1-6",
+          "Total Offensive Plays (inc. times thrown passing)": "54",
+          "Total Rushing Plays": "27"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -614,10 +646,42 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.0",
+          "Average gain per rushing play": "3.7",
+          "Avg gain per pass play (inc.# thrown passing)": "4.3",
           "Carreras-yardas-TD": "34-126-1",
           "Comp-Int-Yds-TD-INT": "17-24-145-0-0",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "11",
+          "FOURTH DOWN EFFICIENCY": "1-2-50%",
+          "FUMBLES Number and Lost": "1-1",
+          "GOAL TO GO EFFICIENCY": "1-2-50%",
+          "Gross yards passing": "145",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-1-0",
+          "Kicking Made-Attempts": "0-0",
+          "NET YARDS PASSING": "121",
+          "NET YARDS RUSHING": "126",
+          "Net Punting Average": "35.6",
+          "No. and Yards Interception Returns": "1-0",
+          "No. and Yards Kickoff Returns": "2-46",
+          "No. and Yards Punt Returns": "4-7",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "24-17-0",
+          "PENALTIES Number and Yards": "8-55",
+          "PUNTS Number and Average": "7-44.0",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "4-24"
+          "RED ZONE EFFICIENCY": "1-3-33%",
+          "Rushing Made-Attempts": "1-1",
+          "Sacks-yardas perdidas": "4-24",
+          "THIRD DOWN EFFICIENCY": "5-15-33%",
+          "TIME OF POSSESSION": "31:44",
+          "TOTAL FIRST DOWNS": "15",
+          "TOTAL NET YARDS": "247",
+          "Tackles for a loss-number and yards": "4-8",
+          "Times thrown - yards lost attempting to pass": "4-24",
+          "Total Offensive Plays (inc. times thrown passing)": "62",
+          "Total Rushing Plays": "34"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1136,9 +1200,52 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "16 de agosto de 2007",
+      "Hora de inicio": "7:00 PM CST",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Overcast, 92 grados, humedad relativa 47%, viento Northeast 9 mph",
+      "Asistencia": "70,217",
+      "Duración": "2:44",
       "Gamebook oficial": "assets/gamebooks/2007/200708160kan.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Pete Morelli",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Darrell Jenkins",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "George Hayward",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Charles Stewart",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Jeff Lamberth",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Jim Saracino",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Keith Ferguson",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Howard Slavin",
+        "Posición": "Replay Official"
+      },
+      {
+        "Nombre": "Terry Sullivan",
+        "Posición": "Video Operator"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

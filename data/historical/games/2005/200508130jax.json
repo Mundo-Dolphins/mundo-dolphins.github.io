@@ -106,10 +106,43 @@
       "Jacksonville Jaguars": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.6",
+          "Average gain per rushing play": "3.7",
+          "Avg gain per pass play (inc.# thrown passing)": "5.7",
+          "By Passing": "10",
           "Carreras-yardas-TD": "38-142-0",
           "Comp-Int-Yds-TD-INT": "15-25-205-2-0",
+          "EXTRA POINTS Made-Attempts": "3-3",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "2-2",
+          "FINAL SCORE": "27",
+          "FOURTH DOWN EFFICIENCY": "0-1-0%",
+          "FUMBLES Number and Lost": "0-0",
+          "GOAL TO GO EFFICIENCY": "0-2-0%",
+          "Gross yards passing": "205",
+          "KICKOFFS Number-In End Zone-Touchbacks": "6-4-1",
+          "Kicking Made-Attempts": "3-3",
+          "NET YARDS PASSING": "171",
+          "NET YARDS RUSHING": "142",
+          "Net Punting Average": "35.0",
+          "No. and Yards Interception Returns": "1--6",
+          "No. and Yards Kickoff Returns": "2-44",
+          "No. and Yards Punt Returns": "4-95",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "25-15-0",
+          "PENALTIES Number and Yards": "4-30",
+          "PUNTS Number and Average": "5-41.2",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "5-34"
+          "RED ZONE EFFICIENCY": "2-4-50%",
+          "Sacks-yardas perdidas": "5-34",
+          "THIRD DOWN EFFICIENCY": "8-17-47%",
+          "TIME OF POSSESSION": "37:15",
+          "TOTAL FIRST DOWNS": "18",
+          "TOTAL NET YARDS": "313",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "89",
+          "Tackles for a loss-number and yards": "3-7",
+          "Times thrown - yards lost attempting to pass": "5-34",
+          "Total Offensive Plays (inc. times thrown passing)": "68",
+          "Total Rushing Plays": "38"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -619,10 +652,43 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.8",
+          "Average gain per rushing play": "4.4",
+          "Avg gain per pass play (inc.# thrown passing)": "5.0",
+          "By Passing": "14",
           "Carreras-yardas-TD": "16-71-0",
           "Comp-Int-Yds-TD-INT": "23-46-241-2-1",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "17",
+          "FOURTH DOWN EFFICIENCY": "2-2-100%",
+          "FUMBLES Number and Lost": "2-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "241",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-2-0",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "233",
+          "NET YARDS RUSHING": "71",
+          "Net Punting Average": "21.0",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "4-101",
+          "No. and Yards Punt Returns": "4-31",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "46-23-1",
+          "PENALTIES Number and Yards": "6-48",
+          "PUNTS Number and Average": "6-40.2",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "1-8"
+          "RED ZONE EFFICIENCY": "2-3-67%",
+          "Sacks-yardas perdidas": "1-8",
+          "THIRD DOWN EFFICIENCY": "3-13-23%",
+          "TIME OF POSSESSION": "22:45",
+          "TOTAL FIRST DOWNS": "17",
+          "TOTAL NET YARDS": "304",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "31",
+          "Tackles for a loss-number and yards": "1-1",
+          "Times thrown - yards lost attempting to pass": "1-8",
+          "Total Offensive Plays (inc. times thrown passing)": "63",
+          "Total Rushing Plays": "16"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1159,9 +1225,44 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "13 de agosto de 2005",
+      "Hora de inicio": "7:37 PM EST",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "30% Chance of rain, 90 grados, humedad relativa 61%, viento 0 mph",
+      "Asistencia": "64,072",
+      "Duración": "3:06",
       "Gamebook oficial": "assets/gamebooks/2005/200508130jax.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Walt Coleman",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Carl Paganelli",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Ron Phares",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Bill Spyksma",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "David Wyant",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Steve Zimmer",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Richard Reels",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

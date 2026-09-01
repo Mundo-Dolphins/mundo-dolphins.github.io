@@ -74,16 +74,48 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.1",
+          "Average gain per rushing play": "2.8",
+          "Avg gain per pass play (inc.# thrown passing)": "5.8",
           "Carreras-yardas-TD": "36-102-1",
           "Comp-Int-Yds-TD-INT": "20-26-181-1-1",
           "Conv. en cuarto down": "0-0-0%",
           "Conv. en tercer down": "6-15-40%",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "0-1",
+          "FINAL SCORE": "14",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "5-1",
           "Fumbles-perdidos": "5-1",
+          "GOAL TO GO EFFICIENCY": "2-2-100%",
+          "Gross yards passing": "181",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-0-0",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "167",
+          "NET YARDS RUSHING": "102",
+          "Net Punting Average": "36.8",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "3-60",
+          "No. and Yards Punt Returns": "8-57",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "26-20-1",
+          "PENALTIES Number and Yards": "4-35",
+          "PUNTS Number and Average": "6-42.3",
           "Penalizaciones-yardas": "4-35",
           "Primeros downs": "17",
           "Pérdidas de balón": "1",
+          "RED ZONE EFFICIENCY": "2-2-100%",
           "Sacks-yardas perdidas": "3-14",
+          "THIRD DOWN EFFICIENCY": "6-15-40%",
+          "TIME OF POSSESSION": "35:10",
+          "TOTAL FIRST DOWNS": "17",
+          "TOTAL NET YARDS": "269",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "57",
+          "Tackles for a loss-number and yards": "3-6",
           "Tiempo de posesión": "35:10",
+          "Times thrown - yards lost attempting to pass": "3-14",
+          "Total Offensive Plays (inc. times thrown passing)": "65",
+          "Total Rushing Plays": "36",
           "Yardas netas por pase": "167",
           "Yardas totales": "269"
         },
@@ -537,16 +569,48 @@
       "New Orleans Saints": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "1.8",
+          "Average gain per rushing play": "2.8",
+          "Avg gain per pass play (inc.# thrown passing)": "0.9",
           "Carreras-yardas-TD": "26-74-0",
           "Comp-Int-Yds-TD-INT": "10-23-67-1-0",
           "Conv. en cuarto down": "1-1-100%",
           "Conv. en tercer down": "3-14-21%",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-2",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "1-1",
           "Fumbles-perdidos": "1-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "67",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-1-0",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "25",
+          "NET YARDS RUSHING": "74",
+          "Net Punting Average": "41.3",
+          "No. and Yards Interception Returns": "1-16",
+          "No. and Yards Kickoff Returns": "3-48",
+          "No. and Yards Punt Returns": "2-13",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "23-10-0",
+          "PENALTIES Number and Yards": "5-25",
+          "PUNTS Number and Average": "8-48.4",
           "Penalizaciones-yardas": "5-25",
           "Primeros downs": "10",
           "Pérdidas de balón": "0",
+          "RED ZONE EFFICIENCY": "1-2-50%",
           "Sacks-yardas perdidas": "5-42",
+          "THIRD DOWN EFFICIENCY": "3-14-21%",
+          "TIME OF POSSESSION": "24:50",
+          "TOTAL FIRST DOWNS": "10",
+          "TOTAL NET YARDS": "99",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "29",
+          "Tackles for a loss-number and yards": "1-2",
           "Tiempo de posesión": "24:50",
+          "Times thrown - yards lost attempting to pass": "5-42",
+          "Total Offensive Plays (inc. times thrown passing)": "54",
+          "Total Rushing Plays": "26",
           "Yardas netas por pase": "25",
           "Yardas totales": "99"
         },
@@ -968,9 +1032,48 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "28 de agosto de 2008",
+      "Hora de inicio": "7:07 PM CDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Played Dome on Turf: Momentum Turf Outdoor Weather: Partly Cloudy, Wind Chill: 98",
+      "Clima": "N/A (Indoors), 92 grados, humedad relativa 50%, viento NNW 2 mph",
+      "Asistencia": "70,008",
+      "Duración": "2:34",
       "Gamebook oficial": "assets/gamebooks/2008/200808280nor.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "John Parry",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Carl Madsen",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Derick Bowers",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Ron Marinucci",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Keith Washington",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Craig Wrolstad",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Carl Paganelli",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Jim Blackwood",
+        "Posición": "Replay Official"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

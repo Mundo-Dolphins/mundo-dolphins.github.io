@@ -23,7 +23,40 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "3.8",
+          "Average gain per rushing play": "2.8",
+          "Avg gain per pass play (inc.# thrown passing)": "4.2",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "0-0",
+          "FINAL SCORE": "7",
+          "FOURTH DOWN EFFICIENCY": "2-4-50%",
+          "FUMBLES Number and Lost": "2-0",
+          "GOAL TO GO EFFICIENCY": "0-0-0%",
+          "Gross yards passing": "234",
+          "KICKOFFS Number-In End Zone-Touchbacks": "1-1-1",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "232",
+          "NET YARDS RUSHING": "64",
+          "Net Punting Average": "27.5",
+          "No. and Yards Interception Returns": "1-36",
+          "No. and Yards Kickoff Returns": "4-91",
+          "No. and Yards Punt Returns": "5-68",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "53-22-5",
+          "PENALTIES Number and Yards": "12-79",
+          "PUNTS Number and Average": "6-33.3",
+          "RED ZONE EFFICIENCY": "0-1-0%",
+          "THIRD DOWN EFFICIENCY": "5-17-29%",
+          "TIME OF POSSESSION": "31:24",
+          "TOTAL FIRST DOWNS": "18",
+          "TOTAL NET YARDS": "296",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "104",
+          "Tackles for a loss-number and yards": "2-3",
+          "Times thrown - yards lost attempting to pass": "2-2",
+          "Total Offensive Plays (inc. times thrown passing)": "78",
+          "Total Rushing Plays": "23"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -34,7 +67,40 @@
       },
       "New Orleans Saints": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "4.0",
+          "Average gain per rushing play": "4.0",
+          "Avg gain per pass play (inc.# thrown passing)": "4.0",
+          "EXTRA POINTS Made-Attempts": "3-3",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "24",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "0-0",
+          "GOAL TO GO EFFICIENCY": "2-2-100%",
+          "Gross yards passing": "100",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-1-1",
+          "Kicking Made-Attempts": "3-3",
+          "NET YARDS PASSING": "99",
+          "NET YARDS RUSHING": "129",
+          "Net Punting Average": "33.9",
+          "No. and Yards Interception Returns": "5-30",
+          "No. and Yards Kickoff Returns": "0-0",
+          "No. and Yards Punt Returns": "4-35",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "24-11-1",
+          "PENALTIES Number and Yards": "7-64",
+          "PUNTS Number and Average": "8-42.4",
+          "RED ZONE EFFICIENCY": "2-3-67%",
+          "THIRD DOWN EFFICIENCY": "5-14-36%",
+          "TIME OF POSSESSION": "28:36",
+          "TOTAL FIRST DOWNS": "13",
+          "TOTAL NET YARDS": "228",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "65",
+          "Tackles for a loss-number and yards": "1-1",
+          "Times thrown - yards lost attempting to pass": "1-1",
+          "Total Offensive Plays (inc. times thrown passing)": "57",
+          "Total Rushing Plays": "32"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -50,9 +116,52 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "15 de agosto de 2002",
+      "Hora de inicio": "7:05 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Partly Cloudy, 88 grados, humedad relativa 61%, viento East 19 mph",
+      "Asistencia": "56,930",
+      "Duración": "3:03",
       "Gamebook oficial": "assets/gamebooks/2002/200208150mia.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Bob McElwee",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Jeff Rice",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Tony Veteri",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Gary Arthur",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Michael Banks",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Bill Lovett",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Tony Steratore",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Rex Stuart",
+        "Posición": "Replay Official"
+      },
+      {
+        "Nombre": "Mike Wimmer",
+        "Posición": "Video Operator"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

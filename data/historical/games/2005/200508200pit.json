@@ -74,10 +74,42 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "3.8",
+          "Average gain per rushing play": "2.9",
+          "Avg gain per pass play (inc.# thrown passing)": "4.1",
+          "By Passing": "11",
           "Carreras-yardas-TD": "15-43-0",
           "Comp-Int-Yds-TD-INT": "27-44-220-0-1",
+          "EXTRA POINTS Made-Attempts": "0-0",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "8-7",
+          "GOAL TO GO EFFICIENCY": "0-0-0%",
+          "Gross yards passing": "220",
+          "KICKOFFS Number-In End Zone-Touchbacks": "2-1-1",
+          "Kicking Made-Attempts": "0-0",
+          "NET YARDS PASSING": "191",
+          "NET YARDS RUSHING": "43",
+          "Net Punting Average": "38.7",
+          "No. and Yards Interception Returns": "1-0",
+          "No. and Yards Kickoff Returns": "3-74",
+          "No. and Yards Punt Returns": "4-45",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "44-27-1",
+          "PENALTIES Number and Yards": "5-39",
+          "PUNTS Number and Average": "7-40.9",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "3-29"
+          "RED ZONE EFFICIENCY": "0-2-0%",
+          "Sacks-yardas perdidas": "3-29",
+          "THIRD DOWN EFFICIENCY": "3-13-23%",
+          "TIME OF POSSESSION": "25:39",
+          "TOTAL FIRST DOWNS": "16",
+          "TOTAL NET YARDS": "234",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "45",
+          "Tackles for a loss-number and yards": "2-3",
+          "Times thrown - yards lost attempting to pass": "3-29",
+          "Total Offensive Plays (inc. times thrown passing)": "62",
+          "Total Rushing Plays": "15"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -685,10 +717,42 @@
       "Pittsburgh Steelers": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.2",
+          "Average gain per rushing play": "4.0",
+          "Avg gain per pass play (inc.# thrown passing)": "4.4",
+          "By Passing": "9",
           "Carreras-yardas-TD": "36-143-1",
           "Comp-Int-Yds-TD-INT": "15-28-143-0-1",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-2",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "2-2",
+          "GOAL TO GO EFFICIENCY": "1-3-33%",
+          "Gross yards passing": "143",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-2-1",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "132",
+          "NET YARDS RUSHING": "143",
+          "Net Punting Average": "29.0",
+          "No. and Yards Interception Returns": "1-2",
+          "No. and Yards Kickoff Returns": "1-22",
+          "No. and Yards Punt Returns": "5-15",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "28-15-1",
+          "PENALTIES Number and Yards": "4-50",
+          "PUNTS Number and Average": "9-36.2",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "2-11"
+          "RED ZONE EFFICIENCY": "1-3-33%",
+          "Sacks-yardas perdidas": "2-11",
+          "THIRD DOWN EFFICIENCY": "4-16-25%",
+          "TIME OF POSSESSION": "34:21",
+          "TOTAL FIRST DOWNS": "14",
+          "TOTAL NET YARDS": "275",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "17",
+          "Tackles for a loss-number and yards": "2-12",
+          "Times thrown - yards lost attempting to pass": "2-11",
+          "Total Offensive Plays (inc. times thrown passing)": "66",
+          "Total Rushing Plays": "36"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1195,9 +1259,44 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "20 de agosto de 2005",
+      "Hora de inicio": "8:35 PM EST",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Rain and overcast, 72 grados, humedad relativa 94%, viento SW 14 mph",
+      "Asistencia": "55,036",
+      "Duración": "3:05",
       "Gamebook oficial": "assets/gamebooks/2005/200508200pit.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Ron Winter",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Ed Coukart",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Tom Stabile",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Tom Stephan",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "John Parry",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Doug Rosenbaum",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Bob Lawing",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }
