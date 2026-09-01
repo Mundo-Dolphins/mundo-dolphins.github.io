@@ -82,10 +82,51 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "3.5",
+          "Average gain per rushing play": "1.9",
+          "Avg gain per pass play (inc.# thrown passing)": "4.4",
+          "By Passing": "9",
+          "By Penalty": "1",
+          "By Rushing": "4",
           "Carreras-yardas-TD": "21-39-1",
           "Comp-Int-Yds-TD-INT": "19-38-178-0-1",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "1-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "178",
+          "Had Blocked": "0",
+          "Interceptions": "0",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-2-1",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "170",
+          "NET YARDS RUSHING": "39",
+          "Net Punting Average": "36.4",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "3-65",
+          "No. and Yards Punt Returns": "0-0",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "38-19-1",
+          "PENALTIES Number and Yards": "5-58",
+          "PUNTS Number and Average": "7-47.3",
+          "Passing": "0",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "1-8"
+          "RED ZONE EFFICIENCY": "1-2-50%",
+          "Rushing": "1",
+          "SAFETIES": "0",
+          "Sacks-yardas perdidas": "1-8",
+          "THIRD DOWN EFFICIENCY": "7-16-44%",
+          "TIME OF POSSESSION": "26:47",
+          "TOTAL FIRST DOWNS": "14",
+          "TOTAL NET YARDS": "209",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "0",
+          "TOUCHDOWNS": "1",
+          "Tackles for a loss-number and yards": "6-12",
+          "Times thrown - yards lost attempting to pass": "1-8",
+          "Total Offensive Plays (inc. times thrown passing)": "60",
+          "Total Rushing Plays": "21"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -527,10 +568,51 @@
       "Tampa Bay Buccaneers": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "5.7",
+          "Average gain per rushing play": "3.9",
+          "Avg gain per pass play (inc.# thrown passing)": "7.2",
+          "By Passing": "12",
+          "By Penalty": "0",
+          "By Rushing": "7",
           "Carreras-yardas-TD": "28-108-1",
           "Comp-Int-Yds-TD-INT": "24-33-261-0-0",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-3",
+          "FINAL SCORE": "17",
+          "FOURTH DOWN EFFICIENCY": "0-1-0%",
+          "FUMBLES Number and Lost": "1-0",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "261",
+          "Had Blocked": "0",
+          "Interceptions": "1",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-0-0",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "252",
+          "NET YARDS RUSHING": "108",
+          "Net Punting Average": "32.2",
+          "No. and Yards Interception Returns": "1-56",
+          "No. and Yards Kickoff Returns": "2-53",
+          "No. and Yards Punt Returns": "5-36",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "33-24-0",
+          "PENALTIES Number and Yards": "5-33",
+          "PUNTS Number and Average": "5-40.2",
+          "Passing": "0",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "2-9"
+          "RED ZONE EFFICIENCY": "1-3-33%",
+          "Rushing": "1",
+          "SAFETIES": "0",
+          "Sacks-yardas perdidas": "2-9",
+          "THIRD DOWN EFFICIENCY": "4-13-31%",
+          "TIME OF POSSESSION": "33:13",
+          "TOTAL FIRST DOWNS": "19",
+          "TOTAL NET YARDS": "360",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "92",
+          "TOUCHDOWNS": "2",
+          "Tackles for a loss-number and yards": "3-12",
+          "Times thrown - yards lost attempting to pass": "2-9",
+          "Total Offensive Plays (inc. times thrown passing)": "63",
+          "Total Rushing Plays": "28"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1012,9 +1094,45 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "28 de agosto de 2004",
+      "Hora de inicio": "7:07 PM EDT",
+      "Estadio": "Raymond James Stadium",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Partly Cloudy, warm, 30% chance of rain, 88 grados, humedad relativa 61%, viento WNW 10 mph",
+      "Asistencia": "64,992",
+      "Duración": "2:52",
       "Gamebook oficial": "assets/gamebooks/2004/200408280tam.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Bernie Kukar",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Bill Schuster",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Phil McKinnely",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Tom Barnes",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Tom Hill",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Scott Steenson",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Steve Freeman",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

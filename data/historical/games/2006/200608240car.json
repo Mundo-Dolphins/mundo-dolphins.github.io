@@ -98,10 +98,51 @@
       "Carolina Panthers": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "2.8",
+          "Average gain per rushing play": "2.9",
+          "Avg gain per pass play (inc.# thrown passing)": "2.8",
+          "By Passing": "5",
+          "By Penalty": "1",
+          "By Rushing": "3",
           "Carreras-yardas-TD": "26-76-0",
           "Comp-Int-Yds-TD-INT": "9-22-89-0-0",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "4-4",
+          "FINAL SCORE": "19",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "2-0",
+          "GOAL TO GO EFFICIENCY": "0-1-0%",
+          "Gross yards passing": "89",
+          "Had Blocked": "0",
+          "KICKOFFS Number-In End Zone-Touchbacks": "6-3-1",
+          "Kicking Made-Attempts": "1-1",
+          "Kickoff Returns": "1",
+          "NET YARDS PASSING": "69",
+          "NET YARDS RUSHING": "76",
+          "Net Punting Average": "36.8",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "2-128",
+          "No. and Yards Punt Returns": "4-80",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "22-9-0",
+          "PENALTIES Number and Yards": "6-41",
+          "PUNTS Number and Average": "8-41.9",
+          "Passing": "0",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "3-20"
+          "RED ZONE EFFICIENCY": "0-1-0%",
+          "Rushing": "0",
+          "SAFETIES": "0",
+          "Sacks-yardas perdidas": "3-20",
+          "THIRD DOWN EFFICIENCY": "2-14-14%",
+          "TIME OF POSSESSION": "26:45",
+          "TOTAL FIRST DOWNS": "9",
+          "TOTAL NET YARDS": "145",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "80",
+          "TOUCHDOWNS": "1",
+          "Tackles for a loss-number and yards": "5-10",
+          "Times thrown - yards lost attempting to pass": "3-20",
+          "Total Offensive Plays (inc. times thrown passing)": "51",
+          "Total Rushing Plays": "26"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -519,10 +560,51 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.5",
+          "Average gain per rushing play": "2.8",
+          "Avg gain per pass play (inc.# thrown passing)": "5.5",
+          "By Passing": "15",
+          "By Penalty": "1",
+          "By Rushing": "4",
           "Carreras-yardas-TD": "25-70-0",
           "Comp-Int-Yds-TD-INT": "29-44-264-1-0",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-2",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "0-1-0%",
+          "FUMBLES Number and Lost": "4-1",
+          "GOAL TO GO EFFICIENCY": "1-2-50%",
+          "Gross yards passing": "264",
+          "Had Blocked": "0",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-1-1",
+          "Kicking Made-Attempts": "1-1",
+          "Kickoff Returns": "0",
+          "NET YARDS PASSING": "253",
+          "NET YARDS RUSHING": "70",
+          "Net Punting Average": "31.4",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "5-114",
+          "No. and Yards Punt Returns": "7-41",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "44-29-0",
+          "PENALTIES Number and Yards": "4-38",
+          "PUNTS Number and Average": "7-45.7",
+          "Passing": "1",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "2-11"
+          "RED ZONE EFFICIENCY": "1-3-33%",
+          "Rushing": "0",
+          "SAFETIES": "0",
+          "Sacks-yardas perdidas": "2-11",
+          "THIRD DOWN EFFICIENCY": "5-15-33%",
+          "TIME OF POSSESSION": "33:15",
+          "TOTAL FIRST DOWNS": "20",
+          "TOTAL NET YARDS": "323",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "41",
+          "TOUCHDOWNS": "1",
+          "Tackles for a loss-number and yards": "7-11",
+          "Times thrown - yards lost attempting to pass": "2-11",
+          "Total Offensive Plays (inc. times thrown passing)": "71",
+          "Total Rushing Plays": "25"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1021,9 +1103,45 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "24 de agosto de 2006",
+      "Hora de inicio": "8:07 PM EST",
+      "Estadio": "Bank of America Stadium",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Mostly Cloudy, 82 grados, humedad relativa 56%, viento SE 7 mph",
+      "Asistencia": "71,477",
+      "Duración": "3:07",
       "Gamebook oficial": "assets/gamebooks/2006/200608240car.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Walt Coleman",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Jeff Rice",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Ron Phares",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Bill Spyksma",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "David Wyant",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Steve Zimmer",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Richard Reels",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

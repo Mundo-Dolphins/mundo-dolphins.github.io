@@ -23,7 +23,41 @@
     "Equipos": {
       "Miami Dolphins": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "4.6",
+          "Average gain per rushing play": "4.2",
+          "Avg gain per pass play (inc.# thrown passing)": "4.9",
+          "By Passing": "10",
+          "EXTRA POINTS Made-Attempts": "3-3",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-2",
+          "FINAL SCORE": "24",
+          "FOURTH DOWN EFFICIENCY": "0-0-0%",
+          "FUMBLES Number and Lost": "3-1",
+          "GOAL TO GO EFFICIENCY": "2-2-100%",
+          "Gross yards passing": "159",
+          "KICKOFFS Number-In End Zone-Touchbacks": "5-2-0",
+          "Kicking Made-Attempts": "3-3",
+          "NET YARDS PASSING": "153",
+          "NET YARDS RUSHING": "148",
+          "Net Punting Average": "31.6",
+          "No. and Yards Interception Returns": "1-0",
+          "No. and Yards Kickoff Returns": "2-48",
+          "No. and Yards Punt Returns": "4-24",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "30-13-0",
+          "PENALTIES Number and Yards": "5-50",
+          "PUNTS Number and Average": "8-34.6",
+          "RED ZONE EFFICIENCY": "3-3-100%",
+          "THIRD DOWN EFFICIENCY": "3-13-23%",
+          "TIME OF POSSESSION": "30:38",
+          "TOTAL FIRST DOWNS": "18",
+          "TOTAL NET YARDS": "301",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "24",
+          "Tackles for a loss-number and yards": "5-9",
+          "Times thrown - yards lost attempting to pass": "1-6",
+          "Total Offensive Plays (inc. times thrown passing)": "66",
+          "Total Rushing Plays": "35"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -34,7 +68,41 @@
       },
       "New Orleans Saints": {
         "Coach": "",
-        "Estadísticas": {},
+        "Estadísticas": {
+          "Average gain per offensive play": "3.4",
+          "Average gain per rushing play": "4.0",
+          "Avg gain per pass play (inc.# thrown passing)": "2.8",
+          "By Passing": "5",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "0-2-0%",
+          "FUMBLES Number and Lost": "1-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "121",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-1-1",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "96",
+          "NET YARDS RUSHING": "124",
+          "Net Punting Average": "35.3",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "5-102",
+          "No. and Yards Punt Returns": "5-24",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "30-12-1",
+          "PENALTIES Number and Yards": "6-36",
+          "PUNTS Number and Average": "9-40.2",
+          "RED ZONE EFFICIENCY": "1-3-33%",
+          "THIRD DOWN EFFICIENCY": "6-18-33%",
+          "TIME OF POSSESSION": "29:22",
+          "TOTAL FIRST DOWNS": "13",
+          "TOTAL NET YARDS": "220",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "24",
+          "Tackles for a loss-number and yards": "3-7",
+          "Times thrown - yards lost attempting to pass": "4-25",
+          "Total Offensive Plays (inc. times thrown passing)": "65",
+          "Total Rushing Plays": "31"
+        },
         "Estadísticas por jugador": {
           "Defensiva": [],
           "Equipos especiales": [],
@@ -50,9 +118,50 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "28 de agosto de 2003",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Played Dome on Turf: Artificial Outdoor Weather: Clear",
+      "Asistencia": "68,477",
+      "Duración": "7:07",
       "Gamebook oficial": "assets/gamebooks/2003/200308280nor.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Ron Blum",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Chad Brown",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Mark Baltz",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Derick Bowers",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Laird Hayes",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Al Jury",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Bill Schmitz",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Bobby Skelton",
+        "Posición": "Replay Official"
+      },
+      {
+        "Nombre": "David Coleman",
+        "Posición": "Video Operator"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

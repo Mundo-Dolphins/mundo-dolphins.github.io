@@ -82,10 +82,42 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.3",
+          "Average gain per rushing play": "3.2",
+          "Avg gain per pass play (inc.# thrown passing)": "5.1",
           "Carreras-yardas-TD": "27-86-1",
           "Comp-Int-Yds-TD-INT": "18-31-196-0-0",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "2-2",
+          "FINAL SCORE": "13",
+          "FOURTH DOWN EFFICIENCY": "0-1-0%",
+          "FUMBLES Number and Lost": "1-0",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "196",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-3-2",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "174",
+          "NET YARDS RUSHING": "86",
+          "Net Punting Average": "41.8",
+          "No. and Yards Interception Returns": "2-43",
+          "No. and Yards Kickoff Returns": "3-62",
+          "No. and Yards Punt Returns": "3-12",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "31-18-0",
+          "PENALTIES Number and Yards": "10-83",
+          "PUNTS Number and Average": "6-45.3",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "3-22"
+          "RED ZONE EFFICIENCY": "1-1-100%",
+          "Sacks-yardas perdidas": "3-22",
+          "THIRD DOWN EFFICIENCY": "5-13-38%",
+          "TIME OF POSSESSION": "31:39",
+          "TOTAL FIRST DOWNS": "16",
+          "TOTAL NET YARDS": "260",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "55",
+          "Tackles for a loss-number and yards": "1-5",
+          "Times thrown - yards lost attempting to pass": "3-22",
+          "Total Offensive Plays (inc. times thrown passing)": "61",
+          "Total Rushing Plays": "27"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -586,10 +618,42 @@
       "Tampa Bay Buccaneers": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "6.0",
+          "Average gain per rushing play": "3.4",
+          "Avg gain per pass play (inc.# thrown passing)": "7.8",
           "Carreras-yardas-TD": "20-67-0",
           "Comp-Int-Yds-TD-INT": "17-26-246-1-2",
+          "EXTRA POINTS Made-Attempts": "1-1",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "10",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "1-1",
+          "GOAL TO GO EFFICIENCY": "0-0-0%",
+          "Gross yards passing": "246",
+          "KICKOFFS Number-In End Zone-Touchbacks": "3-0-0",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "233",
+          "NET YARDS RUSHING": "67",
+          "Net Punting Average": "42.2",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "1-24",
+          "No. and Yards Punt Returns": "5-21",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "26-17-2",
+          "PENALTIES Number and Yards": "9-63",
+          "PUNTS Number and Average": "5-48.6",
           "Pérdidas de balón": "2",
-          "Sacks-yardas perdidas": "4-13"
+          "RED ZONE EFFICIENCY": "0-2-0%",
+          "Sacks-yardas perdidas": "4-13",
+          "THIRD DOWN EFFICIENCY": "2-9-22%",
+          "TIME OF POSSESSION": "28:21",
+          "TOTAL FIRST DOWNS": "14",
+          "TOTAL NET YARDS": "300",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "21",
+          "Tackles for a loss-number and yards": "3-5",
+          "Times thrown - yards lost attempting to pass": "4-13",
+          "Total Offensive Plays (inc. times thrown passing)": "50",
+          "Total Rushing Plays": "20"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1075,9 +1139,48 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "19 de agosto de 2006",
+      "Hora de inicio": "7:37 PM EST",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Cloudy, 50% chance of Rain, Warm, 78 grados, humedad relativa 89%, viento ESE 5 mph",
+      "Asistencia": "65,140",
+      "Duración": "2:45",
       "Gamebook oficial": "assets/gamebooks/2006/200608190tam.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "Bill Vinovich",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Tony Michalek",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "Derick Bowers",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "John Hussey",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "Laird Hayes",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Gary Cavaletto",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Keith Ferguson",
+        "Posición": "Back Judge"
+      },
+      {
+        "Nombre": "Lloyd McPeters",
+        "Posición": "Replay Official"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }

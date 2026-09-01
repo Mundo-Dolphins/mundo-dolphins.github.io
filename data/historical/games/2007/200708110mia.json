@@ -90,10 +90,44 @@
       "Jacksonville Jaguars": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.9",
+          "Average gain per rushing play": "2.0",
+          "Avg gain per pass play (inc.# thrown passing)": "6.7",
+          "By Passing": "16",
           "Carreras-yardas-TD": "29-59-1",
           "Comp-Int-Yds-TD-INT": "27-39-327-1-0",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-2",
+          "FINAL SCORE": "17",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "2-2",
+          "GOAL TO GO EFFICIENCY": "2-2-100%",
+          "Gross yards passing": "327",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-2-0",
+          "Kicking Made-Attempts": "2-2",
+          "NET YARDS PASSING": "296",
+          "NET YARDS RUSHING": "59",
+          "Net Punting Average": "38.2",
+          "No. and Yards Interception Returns": "1-0",
+          "No. and Yards Kickoff Returns": "4-104",
+          "No. and Yards Punt Returns": "3-23",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "39-27-0",
+          "PENALTIES Number and Yards": "8-54",
+          "PUNTS Number and Average": "5-46.2",
           "Pérdidas de balón": "0",
-          "Sacks-yardas perdidas": "5-31"
+          "RED ZONE EFFICIENCY": "2-3-67%",
+          "Rushing Made-Attempts": "0-0",
+          "Sacks-yardas perdidas": "5-31",
+          "THIRD DOWN EFFICIENCY": "6-15-40%",
+          "TIME OF POSSESSION": "35:59",
+          "TOTAL FIRST DOWNS": "23",
+          "TOTAL NET YARDS": "355",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "23",
+          "Tackles for a loss-number and yards": "4-8",
+          "Times thrown - yards lost attempting to pass": "5-31",
+          "Total Offensive Plays (inc. times thrown passing)": "73",
+          "Total Rushing Plays": "29"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -607,10 +641,44 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
+          "Average gain per offensive play": "4.9",
+          "Average gain per rushing play": "5.5",
+          "Avg gain per pass play (inc.# thrown passing)": "4.4",
+          "By Passing": "4",
           "Carreras-yardas-TD": "25-138-2",
           "Comp-Int-Yds-TD-INT": "14-26-139-0-1",
+          "EXTRA POINTS Made-Attempts": "2-2",
+          "FGs - PATs Had Blocked": "0-0",
+          "FIELD GOALS Made-Attempts": "1-1",
+          "FINAL SCORE": "18",
+          "FOURTH DOWN EFFICIENCY": "1-1-100%",
+          "FUMBLES Number and Lost": "2-1",
+          "GOAL TO GO EFFICIENCY": "1-1-100%",
+          "Gross yards passing": "139",
+          "KICKOFFS Number-In End Zone-Touchbacks": "4-2-0",
+          "Kicking Made-Attempts": "1-1",
+          "NET YARDS PASSING": "129",
+          "NET YARDS RUSHING": "138",
+          "Net Punting Average": "39.7",
+          "No. and Yards Interception Returns": "0-0",
+          "No. and Yards Kickoff Returns": "4-77",
+          "No. and Yards Punt Returns": "0-0",
+          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "26-14-1",
+          "PENALTIES Number and Yards": "6-57",
+          "PUNTS Number and Average": "7-43.0",
           "Pérdidas de balón": "1",
-          "Sacks-yardas perdidas": "3-10"
+          "RED ZONE EFFICIENCY": "1-2-50%",
+          "Rushing Made-Attempts": "1-1",
+          "Sacks-yardas perdidas": "3-10",
+          "THIRD DOWN EFFICIENCY": "1-11-9%",
+          "TIME OF POSSESSION": "24:01",
+          "TOTAL FIRST DOWNS": "13",
+          "TOTAL NET YARDS": "267",
+          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "0",
+          "Tackles for a loss-number and yards": "3-7",
+          "Times thrown - yards lost attempting to pass": "3-10",
+          "Total Offensive Plays (inc. times thrown passing)": "54",
+          "Total Rushing Plays": "25"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -1093,9 +1161,44 @@
       "Tipo de partido": "preseason",
       "Estado": "final",
       "Fecha": "11 de agosto de 2007",
+      "Hora de inicio": "7:38 PM EDT",
+      "Tipo de estadio": "Al aire libre",
+      "Superficie de juego": "Césped",
+      "Clima": "Clear, 89 grados, humedad relativa 60%, viento SE 10 mph",
+      "Asistencia": "71,399",
+      "Duración": "3:04",
       "Gamebook oficial": "assets/gamebooks/2007/200708110mia.pdf"
     },
-    "Oficiales": [],
+    "Oficiales": [
+      {
+        "Nombre": "William F. Carollo",
+        "Posición": "Referee"
+      },
+      {
+        "Nombre": "Bill Schuster",
+        "Posición": "Umpire"
+      },
+      {
+        "Nombre": "John Schleyer",
+        "Posición": "Head Linesman"
+      },
+      {
+        "Nombre": "Gary Arthur",
+        "Posición": "Line Judge"
+      },
+      {
+        "Nombre": "James Coleman",
+        "Posición": "Side Judge"
+      },
+      {
+        "Nombre": "Bill Lovett",
+        "Posición": "Field Judge"
+      },
+      {
+        "Nombre": "Phil Luckett",
+        "Posición": "Back Judge"
+      }
+    ],
     "Series ofensivas": {},
     "Videos del partido": []
   }
