@@ -73,6 +73,8 @@
 
       <div class="content post__content history-season__content clearfix">
 
+        {{ partial "historia/stats-glossary-link.html" . }}
+
         {{ partial "historia/game-info.html"     $gameInfo }}
         {{ partial "historia/game-gamebook.html" (dict "href" $gamebookHref) }}
 
