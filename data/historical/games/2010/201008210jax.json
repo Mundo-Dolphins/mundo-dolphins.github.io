@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-18T11:01:28Z",
+  "generated_at": "2026-09-25T22:11:21Z",
   "page": {
     "kind": "game",
     "title": "Miami Dolphins vs Jacksonville Jaguars",
@@ -122,58 +122,57 @@
       "Jacksonville Jaguars": {
         "Coach": "",
         "Estadísticas": {
-          "Average gain per offensive play": "5.4",
-          "Average gain per rushing play": "2.8",
-          "Avg gain per pass play (inc.# thrown passing)": "6.9",
-          "By Passing": "10",
-          "By Penalty": "2",
-          "By Rushing": "5",
+          "Anotaciones de safety": "1",
+          "Balones sueltos y pérdidas": "3-1",
+          "Balones sueltos-perdidos": "3-1",
+          "Bloqueados": "0",
+          "Carrera": "1",
           "Carreras-yardas-TD": "19-54-1",
           "Comp-Int-Yds-TD-INT": "20-31-231-2-1",
           "Conv. en cuarto down": "1-2-50%",
           "Conv. en tercer down": "4-11-36%",
-          "EXTRA POINTS Made-Attempts": "3-3",
-          "FGs - PATs Had Blocked": "0-0",
-          "FIELD GOALS Made-Attempts": "1-1",
-          "FINAL SCORE": "26",
-          "FOURTH DOWN EFFICIENCY": "1-2-50%",
-          "FUMBLES Number and Lost": "3-1",
-          "Fumbles-perdidos": "3-1",
-          "GOAL TO GO EFFICIENCY": "3-3-100%",
-          "Gross yards passing": "231",
-          "Had Blocked": "0",
-          "KICKOFFS Number-In End Zone-Touchbacks": "5-0-0",
-          "Kicking Made-Attempts": "3-3",
-          "NET YARDS PASSING": "221",
-          "NET YARDS RUSHING": "54",
-          "Net Punting Average": "39.3",
-          "No. and Yards Interception Returns": "0-0",
-          "No. and Yards Kickoff Returns": "7-195",
-          "No. and Yards Punt Returns": "3-42",
-          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "31-20-1",
-          "PENALTIES Number and Yards": "5-43",
-          "PUNTS Number and Average": "3-46.0",
-          "Passing": "2",
+          "Despejes: número y promedio": "3-46.0",
+          "Eficacia en cuarto down": "1-2-50%",
+          "Eficacia en situación goal-to-go": "3-3-100%",
+          "Eficacia en tercer down": "4-11-36%",
+          "Eficacia en zona roja": "3-3-100%",
+          "FG y puntos extra bloqueados": "0-0",
+          "Goles de campo anotados-intentados": "1-1",
+          "Jugadas de carrera totales": "19",
+          "Jugadas ofensivas totales (incluye sacks)": "51",
+          "Pase": "2",
+          "Pases intentados-completados-interceptados": "31-20-1",
+          "Patadas anotadas-intentadas": "3-3",
           "Penalizaciones-yardas": "5-43",
+          "Penalizaciones: número y yardas": "5-43",
+          "Placajes detrás de la línea: número y yardas": "2-7",
+          "Por carrera": "5",
+          "Por pase": "10",
+          "Por penalización": "2",
           "Primeros downs": "17",
+          "Primeros downs totales": "17",
+          "Promedio neto de despeje": "39.3",
+          "Promedio por carrera": "2.8",
+          "Promedio por jugada de pase (incluye sacks)": "6.9",
+          "Promedio por jugada ofensiva": "5.4",
+          "Puntos extra anotados-intentados": "3-3",
           "Pérdidas de balón": "1",
-          "RED ZONE EFFICIENCY": "3-3-100%",
-          "Rushing": "1",
-          "SAFETIES": "1",
+          "Resultado final": "26",
+          "Retornos de despeje: número y yardas": "3-42",
+          "Retornos de intercepción: número y yardas": "0-0",
+          "Retornos de kickoff: número y yardas": "7-195",
+          "Sacks recibidos-yardas perdidas al pasar": "1-10",
           "Sacks-yardas perdidas": "1-10",
-          "THIRD DOWN EFFICIENCY": "4-11-36%",
-          "TIME OF POSSESSION": "26:55",
-          "TOTAL FIRST DOWNS": "17",
-          "TOTAL NET YARDS": "275",
-          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "42",
-          "TOUCHDOWNS": "3",
-          "Tackles for a loss-number and yards": "2-7",
+          "Saques de salida: total-en zona de anotación-touchbacks": "5-0-0",
           "Tiempo de posesión": "26:55",
-          "Times thrown - yards lost attempting to pass": "1-10",
-          "Total Offensive Plays (inc. times thrown passing)": "51",
-          "Total Rushing Plays": "19",
+          "Touchdowns": "3",
+          "Yardas brutas de pase": "231",
+          "Yardas netas de carrera": "54",
+          "Yardas netas de pase": "221",
           "Yardas netas por pase": "221",
-          "Yardas totales": "275"
+          "Yardas netas totales": "275",
+          "Yardas totales": "275",
+          "Yardas totales de retorno (sin kickoffs)": "42"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -187,7 +186,12 @@
               "Asist": "1",
               "Tackles": "4",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -199,7 +203,12 @@
               "Asist": "1",
               "Tackles": "4",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -247,7 +256,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "2"
             },
             {
               "INT": "0",
@@ -259,7 +273,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -271,7 +290,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -283,7 +307,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -295,7 +324,12 @@
               "Asist": "1",
               "Tackles": "3",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -307,7 +341,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -319,7 +358,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -331,7 +375,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "1"
             },
             {
               "INT": "0",
@@ -343,7 +392,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -355,7 +409,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -367,7 +426,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -559,7 +623,12 @@
               "Asist": "1",
               "Tackles": "1",
               "Solo": "0",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -571,7 +640,12 @@
               "Asist": "0",
               "Tackles": "1",
               "Solo": "1",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -593,7 +667,8 @@
               "Largo punt": "50",
               "Yds punt": "138",
               "Prom punt": "46.0",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Dentro de 20": "1"
             },
             {
               "FG largo": "38",
@@ -663,7 +738,8 @@
               "Largo carrera": "6",
               "TD carrera": "0",
               "Yds carrera": "6",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0"
             },
             {
               "Nombre": "Rashad Jennings",
@@ -676,7 +752,9 @@
               "TD carrera": "0",
               "Yds carrera": "26",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0",
+              "YAC recepción": "7"
             },
             {
               "Nombre": "Brock Bolen",
@@ -689,7 +767,9 @@
               "TD carrera": "1",
               "Yds carrera": "7",
               "Objetivos": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0",
+              "YAC recepción": "6"
             },
             {
               "Nombre": "Chad Kackert",
@@ -710,7 +790,8 @@
               "Largo carrera": "3",
               "TD carrera": "0",
               "Yds carrera": "5",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0"
             },
             {
               "Nombre": "Greg Jones",
@@ -718,7 +799,8 @@
               "Largo carrera": "2",
               "TD carrera": "0",
               "Yds carrera": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0"
             },
             {
               "Nombre": "Maurice Jones-Drew",
@@ -731,7 +813,9 @@
               "TD carrera": "0",
               "Yds carrera": "-2",
               "Objetivos": "1",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Fumbles": "0",
+              "YAC recepción": "0"
             },
             {
               "Nombre": "Mike Sims-Walker",
@@ -740,7 +824,8 @@
               "TD recepción": "0",
               "Yds recepción": "64",
               "Objetivos": "3",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "32"
             },
             {
               "Nombre": "Jarett Dillard",
@@ -749,7 +834,8 @@
               "TD recepción": "0",
               "Yds recepción": "43",
               "Objetivos": "5",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "13"
             },
             {
               "Nombre": "Mike Thomas",
@@ -758,7 +844,8 @@
               "TD recepción": "1",
               "Yds recepción": "27",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "0"
             },
             {
               "Nombre": "John Matthews",
@@ -767,7 +854,8 @@
               "TD recepción": "0",
               "Yds recepción": "7",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "6"
             },
             {
               "Nombre": "Marcedes Lewis",
@@ -776,7 +864,8 @@
               "TD recepción": "0",
               "Yds recepción": "21",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "5"
             },
             {
               "Nombre": "Tiquan Underwood",
@@ -785,7 +874,8 @@
               "TD recepción": "0",
               "Yds recepción": "14",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "5"
             },
             {
               "Nombre": "Mike Caussin",
@@ -794,7 +884,8 @@
               "TD recepción": "0",
               "Yds recepción": "16",
               "Objetivos": "1",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "2"
             },
             {
               "Nombre": "Troy Williamson",
@@ -812,7 +903,8 @@
               "TD recepción": "0",
               "Yds recepción": "0",
               "Objetivos": "1",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "0"
             },
             {
               "Nombre": "Roren Thomas",
@@ -830,13 +922,18 @@
               "TD recepción": "0",
               "Yds recepción": "0",
               "Objetivos": "2",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "YAC recepción": "0"
             },
             {
               "Fumbles": "1",
               "Fumbles perdidos": "1",
               "Nombre": "Scotty McGee",
-              "Equipo": "JAC"
+              "Equipo": "JAC",
+              "Carreras": "0",
+              "Largo carrera": "0",
+              "TD carrera": "0",
+              "Yds carrera": "0"
             }
           ]
         },
@@ -846,58 +943,57 @@
       "Miami Dolphins": {
         "Coach": "",
         "Estadísticas": {
-          "Average gain per offensive play": "5.4",
-          "Average gain per rushing play": "2.9",
-          "Avg gain per pass play (inc.# thrown passing)": "7.5",
-          "By Passing": "14",
-          "By Penalty": "1",
-          "By Rushing": "4",
+          "Anotaciones de safety": "0",
+          "Balones sueltos y pérdidas": "0-0",
+          "Balones sueltos-perdidos": "0-0",
+          "Bloqueados": "1",
+          "Carrera": "0",
           "Carreras-yardas-TD": "29-83-0",
           "Comp-Int-Yds-TD-INT": "22-30-281-3-0",
           "Conv. en cuarto down": "0-1-0%",
           "Conv. en tercer down": "6-13-46%",
-          "EXTRA POINTS Made-Attempts": "3-3",
-          "FGs - PATs Had Blocked": "0-0",
-          "FIELD GOALS Made-Attempts": "2-2",
-          "FINAL SCORE": "27",
-          "FOURTH DOWN EFFICIENCY": "0-1-0%",
-          "FUMBLES Number and Lost": "0-0",
-          "Fumbles-perdidos": "0-0",
-          "GOAL TO GO EFFICIENCY": "1-1-100%",
-          "Gross yards passing": "281",
-          "Had Blocked": "1",
-          "KICKOFFS Number-In End Zone-Touchbacks": "7-2-0",
-          "Kicking Made-Attempts": "3-3",
-          "NET YARDS PASSING": "262",
-          "NET YARDS RUSHING": "83",
-          "Net Punting Average": "27.3",
-          "No. and Yards Interception Returns": "1-0",
-          "No. and Yards Kickoff Returns": "5-124",
-          "No. and Yards Punt Returns": "0-0",
-          "PASS ATTEMPTS-COMPLETIONS-HAD INTERCEPTED": "30-22-0",
-          "PENALTIES Number and Yards": "8-72",
-          "PUNTS Number and Average": "4-37.8",
-          "Passing": "3",
+          "Despejes: número y promedio": "4-37.8",
+          "Eficacia en cuarto down": "0-1-0%",
+          "Eficacia en situación goal-to-go": "1-1-100%",
+          "Eficacia en tercer down": "6-13-46%",
+          "Eficacia en zona roja": "2-5-40%",
+          "FG y puntos extra bloqueados": "0-0",
+          "Goles de campo anotados-intentados": "2-2",
+          "Jugadas de carrera totales": "29",
+          "Jugadas ofensivas totales (incluye sacks)": "64",
+          "Pase": "3",
+          "Pases intentados-completados-interceptados": "30-22-0",
+          "Patadas anotadas-intentadas": "3-3",
           "Penalizaciones-yardas": "8-72",
+          "Penalizaciones: número y yardas": "8-72",
+          "Placajes detrás de la línea: número y yardas": "3-9",
+          "Por carrera": "4",
+          "Por pase": "14",
+          "Por penalización": "1",
           "Primeros downs": "19",
+          "Primeros downs totales": "19",
+          "Promedio neto de despeje": "27.3",
+          "Promedio por carrera": "2.9",
+          "Promedio por jugada de pase (incluye sacks)": "7.5",
+          "Promedio por jugada ofensiva": "5.4",
+          "Puntos extra anotados-intentados": "3-3",
           "Pérdidas de balón": "0",
-          "RED ZONE EFFICIENCY": "2-5-40%",
-          "Rushing": "0",
-          "SAFETIES": "0",
+          "Resultado final": "27",
+          "Retornos de despeje: número y yardas": "0-0",
+          "Retornos de intercepción: número y yardas": "1-0",
+          "Retornos de kickoff: número y yardas": "5-124",
+          "Sacks recibidos-yardas perdidas al pasar": "5-19",
           "Sacks-yardas perdidas": "5-19",
-          "THIRD DOWN EFFICIENCY": "6-13-46%",
-          "TIME OF POSSESSION": "33:05",
-          "TOTAL FIRST DOWNS": "19",
-          "TOTAL NET YARDS": "345",
-          "TOTAL RETURN YARDAGE (Not Including Kickoffs)": "0",
-          "TOUCHDOWNS": "3",
-          "Tackles for a loss-number and yards": "3-9",
+          "Saques de salida: total-en zona de anotación-touchbacks": "7-2-0",
           "Tiempo de posesión": "33:05",
-          "Times thrown - yards lost attempting to pass": "5-19",
-          "Total Offensive Plays (inc. times thrown passing)": "64",
-          "Total Rushing Plays": "29",
+          "Touchdowns": "3",
+          "Yardas brutas de pase": "281",
+          "Yardas netas de carrera": "83",
+          "Yardas netas de pase": "262",
           "Yardas netas por pase": "262",
-          "Yardas totales": "345"
+          "Yardas netas totales": "345",
+          "Yardas totales": "345",
+          "Yardas totales de retorno (sin kickoffs)": "0"
         },
         "Estadísticas por jugador": {
           "Defensiva": [
@@ -911,7 +1007,12 @@
               "Asist": "0",
               "Tackles": "5",
               "Solo": "5",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -923,7 +1024,12 @@
               "Asist": "1",
               "Tackles": "5",
               "Solo": "4",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -935,7 +1041,12 @@
               "Asist": "1",
               "Tackles": "5",
               "Solo": "4",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -947,7 +1058,12 @@
               "Asist": "1",
               "Tackles": "4",
               "Solo": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -959,7 +1075,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -971,7 +1092,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -983,7 +1109,12 @@
               "Asist": "0",
               "Tackles": "3",
               "Solo": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "1"
             },
             {
               "INT": "1",
@@ -995,7 +1126,12 @@
               "Asist": "1",
               "Tackles": "2",
               "Solo": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "1",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1007,7 +1143,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "1"
             },
             {
               "INT": "0",
@@ -1019,7 +1160,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1031,7 +1177,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "2"
             },
             {
               "INT": "0",
@@ -1055,7 +1206,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "1",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1067,7 +1223,12 @@
               "Asist": "0",
               "Tackles": "2",
               "Solo": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "1",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1139,7 +1300,12 @@
               "Asist": "0",
               "Tackles": "1",
               "Solo": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1151,7 +1317,12 @@
               "Asist": "1",
               "Tackles": "1",
               "Solo": "0",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "FF": "0",
+              "FR": "0",
+              "Pases defendidos": "0",
+              "Golpes QB": "0",
+              "TFL": "0"
             },
             {
               "INT": "0",
@@ -1209,7 +1380,8 @@
               "Largo punt": "56",
               "Yds punt": "151",
               "Prom punt": "50.3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Dentro de 20": "0"
             },
             {
               "FG largo": "31",
@@ -1218,7 +1390,11 @@
               "Nombre": "Dan Carpenter",
               "Equipo": "MIA",
               "XPa": "3",
-              "XPm": "3"
+              "XPm": "3",
+              "Retornos KO": "7",
+              "Largo retorno KO": "0",
+              "TD KO": "0",
+              "Prom KO": "68.29"
             },
             {
               "Retornos KO": "4",
@@ -1277,7 +1453,8 @@
               "Largo carrera": "8",
               "TD carrera": "0",
               "Yds carrera": "6",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0"
             },
             {
               "Intentos": "4",
@@ -1294,7 +1471,8 @@
               "Largo carrera": "13",
               "TD carrera": "0",
               "Yds carrera": "13",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0"
             },
             {
               "Nombre": "Ricky Williams",
@@ -1307,7 +1485,9 @@
               "TD carrera": "0",
               "Yds carrera": "20",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0",
+              "YAC recepción": "7"
             },
             {
               "Nombre": "Lex Hilliard",
@@ -1320,7 +1500,9 @@
               "TD carrera": "0",
               "Yds carrera": "18",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0",
+              "YAC recepción": "2"
             },
             {
               "Nombre": "Patrick Cobbs",
@@ -1333,7 +1515,9 @@
               "TD carrera": "0",
               "Yds carrera": "16",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0",
+              "YAC recepción": "11"
             },
             {
               "Nombre": "Lousaka Polite",
@@ -1346,7 +1530,9 @@
               "TD carrera": "0",
               "Yds carrera": "6",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0",
+              "YAC recepción": "8"
             },
             {
               "Nombre": "Ronnie Brown",
@@ -1359,7 +1545,9 @@
               "TD carrera": "0",
               "Yds carrera": "5",
               "Objetivos": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "Fumbles": "0",
+              "YAC recepción": "12"
             },
             {
               "Nombre": "Rolly Lumbala",
@@ -1376,7 +1564,8 @@
               "TD recepción": "0",
               "Yds recepción": "65",
               "Objetivos": "7",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "15"
             },
             {
               "Nombre": "Davone Bess",
@@ -1385,7 +1574,8 @@
               "TD recepción": "0",
               "Yds recepción": "31",
               "Objetivos": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "12"
             },
             {
               "Nombre": "Marlon Moore",
@@ -1394,7 +1584,8 @@
               "TD recepción": "0",
               "Yds recepción": "32",
               "Objetivos": "3",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "26"
             },
             {
               "Nombre": "Anthony Fasano",
@@ -1403,7 +1594,8 @@
               "TD recepción": "2",
               "Yds recepción": "66",
               "Objetivos": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "42"
             },
             {
               "Nombre": "Johnathan Nalbone",
@@ -1412,7 +1604,8 @@
               "TD recepción": "0",
               "Yds recepción": "12",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "10"
             },
             {
               "Nombre": "Julius Pruitt",
@@ -1421,7 +1614,8 @@
               "TD recepción": "0",
               "Yds recepción": "8",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "2"
             },
             {
               "Nombre": "Patrick Turner",
@@ -1439,7 +1633,8 @@
               "TD recepción": "0",
               "Yds recepción": "8",
               "Objetivos": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "0"
             },
             {
               "Nombre": "Roberto Wallace",
@@ -1448,7 +1643,8 @@
               "TD recepción": "0",
               "Yds recepción": "6",
               "Objetivos": "2",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "0"
             },
             {
               "Nombre": "Joey Haynos",
@@ -1457,7 +1653,8 @@
               "TD recepción": "0",
               "Yds recepción": "0",
               "Objetivos": "1",
-              "Equipo": "MIA"
+              "Equipo": "MIA",
+              "YAC recepción": "0"
             },
             {
               "Fumbles": "0",
