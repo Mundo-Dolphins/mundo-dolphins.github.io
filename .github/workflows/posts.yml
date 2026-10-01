@@ -9,7 +9,7 @@ on:
   repository_dispatch:
     types: [social-check]
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/15 * * * *"
 
 concurrency:
   group: check-new-social-posts
