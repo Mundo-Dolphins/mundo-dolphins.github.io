@@ -1,5 +1,9 @@
 name: Check for new social posts
 
+# Backup of the Raspberry Pi's social checker (ivoox-scrapper). Reads the
+# Bluesky RSS feeds natively and opens a PR only for posts the Pi has not
+# added after the grace period. Instagram is only handled on the Pi.
+
 on:
   workflow_dispatch:
   repository_dispatch:
@@ -20,243 +24,20 @@ jobs:
         with:
           token: ${{ secrets.PUSH }}
 
-      - name: Get latest release info for cache key
-        id: release_info
-        run: |
-          # Get just the release info to determine cache key
-          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.PAT }}" \
-                          "https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest")
-          
-          # Extract tag name for cache key
-          RELEASE_TAG=$(echo "$RESPONSE" | jq -r '.tag_name')
-          echo "Latest release: $RELEASE_TAG"
-          echo "tag_name=$RELEASE_TAG" >> $GITHUB_OUTPUT
-
-      - name: Cache checker binary
-        id: cache-checker
-        uses: actions/cache@v6
+      - name: Set up Python
+        uses: actions/setup-python@v7
         with:
-          path: |
-            ./checker
-          key: checker-binary-${{ steps.release_info.outputs.tag_name }}
-          restore-keys: |
-            checker-binary-
+          python-version: "3.12"
 
-      - name: Download checker binary
-        if: steps.cache-checker.outputs.cache-hit != 'true'
-        run: |
-          # Get the latest release info
-          echo "Fetching latest release info from: https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest"
-          
-          # Use a temporary file to store the response and status separately
-          RESPONSE_FILE=$(mktemp)
-          HTTP_STATUS=$(curl -s -w "%{http_code}" -H "Authorization: token ${{ secrets.PAT }}" \
-                             -o "$RESPONSE_FILE" \
-                             "https://api.github.com/repos/${{ secrets.CHECKER }}/releases/latest")
-          
-          echo "HTTP Status: $HTTP_STATUS"
-          
-          # Check HTTP status
-          if [ "$HTTP_STATUS" != "200" ]; then
-            echo "Error: API request failed with status $HTTP_STATUS"
-            if [ "$HTTP_STATUS" = "404" ]; then
-              echo "Repository not found or no releases exist. Please check:"
-              echo "1. Repository name in secrets.CHECKER"
-              echo "2. PAT token has access to the repository"
-              echo "3. Repository has at least one published release"
-            elif [ "$HTTP_STATUS" = "401" ]; then
-              echo "Authentication failed. Please check the PAT token permissions."
-            fi
-            echo "Response:"
-            cat "$RESPONSE_FILE"
-            rm -f "$RESPONSE_FILE"
-            exit 1
-          fi
-          
-          echo "Release info received successfully. Parsing assets..."
-          
-          # Debug: Show first few lines of the response file
-          echo "Response file content (first 10 lines):"
-          head -n 10 "$RESPONSE_FILE"
-          echo "---"
-          
-          # Debug: Check if it's valid JSON
-          if ! jq empty "$RESPONSE_FILE" 2>/dev/null; then
-            echo "Error: Response file contains invalid JSON"
-            echo "Full content:"
-            cat "$RESPONSE_FILE"
-            rm -f "$RESPONSE_FILE"
-            exit 1
-          fi
-          
-          # Check if assets exist and extract the download URL
-          ASSETS_COUNT=$(jq -r '.assets | length' "$RESPONSE_FILE")
-          if [ "$ASSETS_COUNT" = "0" ] || [ "$ASSETS_COUNT" = "null" ]; then
-            echo "Error: No assets found in the latest release"
-            RELEASE_TAG=$(jq -r '.tag_name' "$RESPONSE_FILE")
-            echo "Release tag: $RELEASE_TAG"
-            rm -f "$RESPONSE_FILE"
-            exit 1
-          fi
-          
-          echo "Found $ASSETS_COUNT assets in the release"
-          
-          # Extract the download URL for the linux-amd64 tar.gz file
-          # First, let's debug what assets we have
-          echo "Available assets:"
-          jq -r '.assets[].name' "$RESPONSE_FILE"
-          echo "---"
-          
-          # Use a simpler approach: get all assets and filter in bash
-          DOWNLOAD_URL=""
-          API_URL=""
-          
-          # Detect if running in act (local testing) to use different binary
-          if [ -n "$ACT" ]; then
-            ARCH_FILTER="darwin-amd64.tar.gz"
-            echo "Detected 'act' environment - looking for macOS binary"
-          else
-            ARCH_FILTER="linux-amd64.tar.gz"
-            echo "Production environment - looking for Linux binary"
-          fi
-          
-          while IFS= read -r asset_name; do
-            if [[ "$asset_name" == *"$ARCH_FILTER"* && "$asset_name" != *".md5"* ]]; then
-              API_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .url' "$RESPONSE_FILE")
-              DOWNLOAD_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .browser_download_url' "$RESPONSE_FILE")
-              echo "Found compatible binary: $asset_name"
-              break
-            fi
-          done < <(jq -r '.assets[].name' "$RESPONSE_FILE")
-          
-          # Fallback to linux if darwin not found
-          if [ -z "$DOWNLOAD_URL" ] && [ -n "$ACT" ]; then
-            echo "macOS binary not found, falling back to Linux binary for testing"
-            while IFS= read -r asset_name; do
-              if [[ "$asset_name" == *"linux-amd64.tar.gz"* && "$asset_name" != *".md5"* ]]; then
-                API_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .url' "$RESPONSE_FILE")
-                DOWNLOAD_URL=$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .browser_download_url' "$RESPONSE_FILE")
-                break
-              fi
-            done < <(jq -r '.assets[].name' "$RESPONSE_FILE")
-          fi
-          
-          if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
-            echo "Error: No compatible binary found in the release"
-            echo "Looked for assets containing '$ARCH_FILTER' but not '.md5'"
-            rm -f "$RESPONSE_FILE"
-            exit 1
-          fi
-          
-          echo "Downloading binary from API URL (private repo): $API_URL"
-          
-          # Clean up the response file
-          rm -f "$RESPONSE_FILE"
-          
-          # Download the binary using API URL for private repositories
-          curl -L -H "Authorization: token ${{ secrets.PAT }}" \
-               -H "Accept: application/octet-stream" \
-               -o checker.tar.gz \
-               "$API_URL"
-          
-          # Verify the download
-          if [ ! -f checker.tar.gz ]; then
-            echo "Error: Failed to download the binary"
-            exit 1
-          fi
-          
-          # Check file size (should be much larger than a few bytes)
-          FILE_SIZE=$(stat -c%s "checker.tar.gz" 2>/dev/null || stat -f%z "checker.tar.gz" 2>/dev/null || echo "0")
-          echo "Downloaded file size: $FILE_SIZE bytes"
-          
-          if [ "$FILE_SIZE" -lt 1000 ]; then
-            echo "Error: Downloaded file is too small ($FILE_SIZE bytes), likely an error response"
-            echo "File content:"
-            cat checker.tar.gz
-            exit 1
-          fi
-          
-          echo "Binary downloaded successfully"
-          tar -xzf checker.tar.gz
-          rm -f checker.tar.gz  # Clean up tar file after extraction
-          chmod +x checker
-          echo "Binary extracted and ready to use"
+      - name: Test backup scripts
+        run: python3 -m unittest discover -s scripts/backup
 
-      - name: Prepare cached binary
-        if: steps.cache-checker.outputs.cache-hit == 'true'
-        run: |
-          echo "Using cached checker binary"
-          chmod +x checker
-          echo "Cached binary ready to use"
+      - name: Add new Bluesky posts
+        env:
+          BACKUP_GRACE_MINUTES: "30"
+        run: python3 scripts/backup/social.py --data data
 
-      - name: Checkout existing new-social-posts branch (if any)
-        run: |
-          set -euo pipefail
-
-          BRANCH="new-social-posts"
-          REMOTE="origin"
-
-          echo "Checking for remote branch $REMOTE/$BRANCH"
-          if git ls-remote --exit-code --heads "$REMOTE" "$BRANCH" >/dev/null 2>&1; then
-            echo "Remote branch exists — fetching and checking out $BRANCH"
-            git fetch "$REMOTE" "$BRANCH":"$BRANCH"
-            git checkout "$BRANCH"
-            # Try to update local branch from remote using rebase to preserve local changes
-            git pull --rebase --autostash "$REMOTE" "$BRANCH" || true
-            echo "Checked out branch $BRANCH"
-          else
-            echo "Remote branch $BRANCH not found — staying on current branch"
-          fi
-
-      - name: Run checker
-        run: |
-          ./checker social --data ${GITHUB_WORKSPACE}/data
-          
-      - name: Add & Commit
-        id: add_commit
-        run: |
-          set -euo pipefail
-
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
-
-          BRANCH="new-social-posts"
-          REMOTE="origin"
-
-          # Try to fetch remote branch if it exists (won't fail pipeline)
-          git fetch "$REMOTE" "$BRANCH":"$BRANCH" || true
-
-          # Checkout the branch (use existing local branch if present)
-          if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
-            git checkout "$BRANCH"
-            git pull --rebase --autostash "$REMOTE" "$BRANCH" || true
-          else
-            git checkout -b "$BRANCH"
-          fi
-
-          # Stage changes
-          git add ./data
-
-          # If there are no staged changes, signal downstream steps and exit
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            echo "committed=false" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          # Commit and push changes to the branch
-          git commit -m "Added new social posts"
-          git push --set-upstream "$REMOTE" "$BRANCH"
-
-          echo "committed=true" >> $GITHUB_OUTPUT
-
-      - name: Create pull request
-        uses: devops-infra/action-pull-request@v1.4.0
-        if: steps.add_commit.outputs.committed == 'true'
-        with:
-          github_token: ${{ secrets.PUSH }}
-          body: "**Automated pull request after adding new social posts**"
-          title: "Added new social posts"
-          label: 'automerge'
-          source_branch: new-social-posts
-          target_branch: main
+      - name: Open or update pull request
+        env:
+          GH_TOKEN: ${{ secrets.PUSH }}
+        run: scripts/backup/open_pr.sh backup-social-posts "Added new social posts (GitHub backup)" "Added new social posts"
