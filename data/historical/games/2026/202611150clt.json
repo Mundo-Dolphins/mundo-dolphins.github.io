@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202611150clt",
+    "title": "Miami Dolphins vs Indianapolis Colts",
     "date": "2026-11-15",
-    "slug": "202611150clt",
-    "path": "historia/partidos/202611150clt",
+    "slug": "mia-clt-20261115",
+    "path": "historia/partidos/mia-clt-20261115",
     "params": {
       "game_id": "202611150clt"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Indianapolis Colts": {
+        "Coach": "Shane Steichen",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "2-3"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "10",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "15 de noviembre de 2026"
+      "Fecha": "15 de noviembre de 2026",
+      "Estadio": "Lucas Oil Stadium"
     },
     "Oficiales": [],
     "Series ofensivas": {},

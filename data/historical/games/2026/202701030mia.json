@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202701030mia",
+    "title": "Buffalo Bills vs Miami Dolphins",
     "date": "2027-01-03",
-    "slug": "202701030mia",
-    "path": "historia/partidos/202701030mia",
+    "slug": "buf-mia-20270103",
+    "path": "historia/partidos/buf-mia-20270103",
     "params": {
       "game_id": "202701030mia"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Buffalo Bills": {
+        "Coach": "Joe Brady",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "4-1"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "17",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "3 de enero de 2027"
+      "Fecha": "3 de enero de 2027",
+      "Estadio": "Hard Rock Stadium"
     },
     "Oficiales": [],
     "Series ofensivas": {},

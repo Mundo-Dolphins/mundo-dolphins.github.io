@@ -26,7 +26,8 @@
   {{ $seasonVideos := partial "historia/season-videos-data.html" (dict "year" $key) }}
   {{ $seasonVideosCountLabel := cond (eq (len $seasonVideos) 1) "1 vídeo" (printf "%d vídeos" (len $seasonVideos)) }}
   {{ $seasonVideosPageURL := relURL (printf "historia/%s/videos/" $key) }}
-  {{ $seasonGames := slice }}
+  {{ $seasonGames := index $sections "Partidos de la temporada" | default slice }}
+  {{ if not $seasonGames }}
   {{ with index hugo.Data.historical.games $key }}
     {{ range $gameId, $gameData := . }}
       {{ $info := index $gameData.sections "Información del partido" }}
@@ -53,6 +54,7 @@
       {{ end }}
     {{ end }}
     {{ $seasonGames = sort $seasonGames "date" }}
+  {{ end }}
   {{ end }}
 
   {{ if not $data }}

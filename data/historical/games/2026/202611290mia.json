@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202611290mia",
+    "title": "New York Jets vs Miami Dolphins",
     "date": "2026-11-29",
-    "slug": "202611290mia",
-    "path": "historia/partidos/202611290mia",
+    "slug": "nyj-mia-20261129",
+    "path": "historia/partidos/nyj-mia-20261129",
     "params": {
       "game_id": "202611290mia"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      },
+      "New York Jets": {
+        "Coach": "Aaron Glenn",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "2-3"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "12",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "29 de noviembre de 2026"
+      "Fecha": "29 de noviembre de 2026",
+      "Estadio": "Hard Rock Stadium"
     },
     "Oficiales": [],
     "Series ofensivas": {},

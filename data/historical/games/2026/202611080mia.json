@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202611080mia",
+    "title": "Detroit Lions vs Miami Dolphins",
     "date": "2026-11-08",
-    "slug": "202611080mia",
-    "path": "historia/partidos/202611080mia",
+    "slug": "det-mia-20261108",
+    "path": "historia/partidos/det-mia-20261108",
     "params": {
       "game_id": "202611080mia"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Detroit Lions": {
+        "Coach": "Dan Campbell",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "3-2"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "9",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "8 de noviembre de 2026"
+      "Fecha": "8 de noviembre de 2026",
+      "Estadio": "Hard Rock Stadium"
     },
     "Oficiales": [],
     "Series ofensivas": {},
