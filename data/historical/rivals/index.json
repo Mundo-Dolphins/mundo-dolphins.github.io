@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-28T19:51:26Z",
+  "generated_at": "2026-10-14T09:18:58Z",
   "data": {
     "team": {
       "id": "mia",
@@ -14,15 +14,15 @@
       "to_season": 2026
     },
     "totals": {
-      "opponents": 6,
-      "games": 6,
+      "opponents": 3,
+      "games": 3,
       "wins": 0,
-      "losses": 6,
+      "losses": 3,
       "ties": 0,
-      "points_for": 58,
-      "points_against": 149,
-      "point_differential": -91,
-      "regular_season_games": 3,
+      "points_for": 22,
+      "points_against": 63,
+      "point_differential": -41,
+      "regular_season_games": 0,
       "playoff_games": 0,
       "unknown_games": 3
     },
@@ -81,106 +81,6 @@
       },
       {
         "opponent": {
-          "id": "kan",
-          "name": "Kansas City Chiefs"
-        },
-        "summary": {
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "ties": 0,
-          "points_for": 10,
-          "points_against": 24,
-          "point_differential": -14,
-          "regular_season_games": 1,
-          "playoff_games": 0,
-          "first_game": "2026-09-27",
-          "last_game": "2026-09-27"
-        },
-        "by_season": [
-          {
-            "season": 2026,
-            "games": 1,
-            "wins": 0,
-            "losses": 1,
-            "ties": 0,
-            "points_for": 10,
-            "points_against": 24,
-            "point_differential": -14,
-            "regular_season_games": 1,
-            "playoff_games": 0
-          }
-        ],
-        "latest_games": [
-          {
-            "game_id": "202609270mia",
-            "season": 2026,
-            "date": "2026-09-27",
-            "week": "3",
-            "game_type": "regular_season",
-            "home_away": "home",
-            "opponent_id": "kan",
-            "opponent_name": "Kansas City Chiefs",
-            "points_for": 10,
-            "points_against": 24,
-            "result": "L",
-            "margin": -14,
-            "path": "historia/partidos/kan-mia-20260927"
-          }
-        ]
-      },
-      {
-        "opponent": {
-          "id": "rai",
-          "name": "Las Vegas Raiders"
-        },
-        "summary": {
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "ties": 0,
-          "points_for": 13,
-          "points_against": 27,
-          "point_differential": -14,
-          "regular_season_games": 1,
-          "playoff_games": 0,
-          "first_game": "2026-09-13",
-          "last_game": "2026-09-13"
-        },
-        "by_season": [
-          {
-            "season": 2026,
-            "games": 1,
-            "wins": 0,
-            "losses": 1,
-            "ties": 0,
-            "points_for": 13,
-            "points_against": 27,
-            "point_differential": -14,
-            "regular_season_games": 1,
-            "playoff_games": 0
-          }
-        ],
-        "latest_games": [
-          {
-            "game_id": "202609130rai",
-            "season": 2026,
-            "date": "2026-09-13",
-            "week": "1",
-            "game_type": "regular_season",
-            "home_away": "away",
-            "opponent_id": "rai",
-            "opponent_name": "Las Vegas Raiders",
-            "points_for": 13,
-            "points_against": 27,
-            "result": "L",
-            "margin": -14,
-            "path": "historia/partidos/mia-rai-20260913"
-          }
-        ]
-      },
-      {
-        "opponent": {
           "id": "nyg",
           "name": "New York Giants"
         },
@@ -228,56 +128,6 @@
             "result": "L",
             "margin": -23,
             "path": "historia/partidos/nyg-mia-20260822"
-          }
-        ]
-      },
-      {
-        "opponent": {
-          "id": "sfo",
-          "name": "San Francisco 49ers"
-        },
-        "summary": {
-          "games": 1,
-          "wins": 0,
-          "losses": 1,
-          "ties": 0,
-          "points_for": 13,
-          "points_against": 35,
-          "point_differential": -22,
-          "regular_season_games": 1,
-          "playoff_games": 0,
-          "first_game": "2026-09-20",
-          "last_game": "2026-09-20"
-        },
-        "by_season": [
-          {
-            "season": 2026,
-            "games": 1,
-            "wins": 0,
-            "losses": 1,
-            "ties": 0,
-            "points_for": 13,
-            "points_against": 35,
-            "point_differential": -22,
-            "regular_season_games": 1,
-            "playoff_games": 0
-          }
-        ],
-        "latest_games": [
-          {
-            "game_id": "202609200sfo",
-            "season": 2026,
-            "date": "2026-09-20",
-            "week": "2",
-            "game_type": "regular_season",
-            "home_away": "away",
-            "opponent_id": "sfo",
-            "opponent_name": "San Francisco 49ers",
-            "points_for": 13,
-            "points_against": 35,
-            "result": "L",
-            "margin": -22,
-            "path": "historia/partidos/mia-sfo-20260920"
           }
         ]
       },
