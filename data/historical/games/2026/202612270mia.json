@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202612270mia",
+    "title": "Los Angeles Chargers vs Miami Dolphins",
     "date": "2026-12-27",
-    "slug": "202612270mia",
-    "path": "historia/partidos/202612270mia",
+    "slug": "sdg-mia-20261227",
+    "path": "historia/partidos/sdg-mia-20261227",
     "params": {
       "game_id": "202612270mia"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Los Angeles Chargers": {
+        "Coach": "Jim Harbaugh",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "16",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "27 de diciembre de 2026"
+      "Fecha": "27 de diciembre de 2026",
+      "Estadio": "Hard Rock Stadium"
     },
     "Oficiales": [],
     "Series ofensivas": {},

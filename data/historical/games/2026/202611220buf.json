@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202611220buf",
+    "title": "Miami Dolphins vs Buffalo Bills",
     "date": "2026-11-22",
-    "slug": "202611220buf",
-    "path": "historia/partidos/202611220buf",
+    "slug": "mia-buf-20261122",
+    "path": "historia/partidos/mia-buf-20261122",
     "params": {
       "game_id": "202611220buf"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Buffalo Bills": {
+        "Coach": "Joe Brady",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "4-1"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "11",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "22 de noviembre de 2026"
+      "Fecha": "22 de noviembre de 2026",
+      "Estadio": "Highmark Stadium (II)"
     },
     "Oficiales": [],
     "Series ofensivas": {},

@@ -3,13 +3,13 @@
     "name": "mundodolphins.hugo.sectioned-page",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:18:55Z",
+  "generated_at": "2026-10-14T09:47:15Z",
   "page": {
     "kind": "game",
-    "title": "Partido 202612200gnb",
+    "title": "Miami Dolphins vs Green Bay Packers",
     "date": "2026-12-20",
-    "slug": "202612200gnb",
-    "path": "historia/partidos/202612200gnb",
+    "slug": "mia-gnb-20261220",
+    "path": "historia/partidos/mia-gnb-20261220",
     "params": {
       "game_id": "202612200gnb"
     }
@@ -20,11 +20,37 @@
       "scoring_summary": []
     },
     "Conteo de snaps": {},
-    "Equipos": {},
+    "Equipos": {
+      "Green Bay Packers": {
+        "Coach": "Matt LaFleur",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "3-2"
+      },
+      "Miami Dolphins": {
+        "Coach": "Jeff Hafley",
+        "Estadísticas": {},
+        "Estadísticas por jugador": {
+          "Defensiva": [],
+          "Equipos especiales": [],
+          "Ofensiva": []
+        },
+        "Puntos": 0,
+        "Record": "0-5"
+      }
+    },
     "Estadísticas avanzadas": {},
     "Información del partido": {
+      "Semana": "15",
+      "Tipo de partido": "regular_season",
       "Estado": "scheduled",
-      "Fecha": "20 de diciembre de 2026"
+      "Fecha": "20 de diciembre de 2026",
+      "Estadio": "Lambeau Field"
     },
     "Oficiales": [],
     "Series ofensivas": {},
