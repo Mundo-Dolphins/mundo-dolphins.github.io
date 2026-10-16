@@ -37,21 +37,25 @@
       {{- end -}}
     {{- end -}}
 
-    {{/* Extraer YouTube ID del campo video (puede ser objeto o array) */}}
-    {{- $youtubeId := "" -}}
+    {{/* Vídeos del episodio (campo video: objeto o array): id, título y si se puede incrustar */}}
+    {{- $youtubeVideos := slice -}}
     {{- with $ep.video -}}
-      {{- $videoUrl := "" -}}
-      {{- if reflect.IsSlice . -}}
-        {{- with index . 0 -}}
-          {{- $videoUrl = .url -}}
-        {{- end -}}
-      {{- else -}}
-        {{- $videoUrl = .url -}}
+      {{- $refs := . -}}
+      {{- if not (reflect.IsSlice $refs) -}}
+        {{- $refs = slice $refs -}}
       {{- end -}}
-      {{- with $videoUrl -}}
-        {{- $ytMatches := findRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` . -}}
-        {{- if $ytMatches -}}
-          {{- $youtubeId = replaceRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` `$1` (index $ytMatches 0) -}}
+      {{- range $refs -}}
+        {{- $ref := . -}}
+        {{- with $ref.url -}}
+          {{- $ytMatches := findRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` . -}}
+          {{- if $ytMatches -}}
+            {{- $id := replaceRE `(?:youtube\.com/(?:watch\?v=|.*[?&]v=)|youtu\.be/|youtube\.com/embed/)([^&?\s"'<]+)` `$1` (index $ytMatches 0) -}}
+            {{- $embeddable := true -}}
+            {{- if isset $ref "embeddable" -}}
+              {{- $embeddable = $ref.embeddable -}}
+            {{- end -}}
+            {{- $youtubeVideos = $youtubeVideos | append (dict "id" $id "title" ($ref.title | default $ep.title) "embeddable" $embeddable) -}}
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
@@ -118,7 +122,7 @@
         "ivooxLink"   $ep.link
         "audioUrl"    $ep.audio
         "imageUrl"    $ep.imgMain
-        "youtubeId"   $youtubeId
+        "youtubeVideos" $youtubeVideos
         "descFull"    $descFull
       )
     -}}

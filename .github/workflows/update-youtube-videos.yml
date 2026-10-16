@@ -2,6 +2,12 @@ name: Update YouTube Videos
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "40 6 * * *"
+
+concurrency:
+  group: update-youtube-videos
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -13,6 +19,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.PUSH }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -49,8 +57,8 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: new_video_${{ github.run_id }}
+          token: ${{ secrets.PUSH }}
+          branch: update-youtube-videos
           base: main
           title: "chore: update youtube videos from api"
           body: |
@@ -60,7 +68,7 @@ jobs:
             
             Changes include:
             - New videos added to `data/videos.json` (sorted by publication date)
-            - embeddable flag set for new videos
+            - embeddable flag and duration set from the API
             - Podcast episodes updated with video links where applicable
             - isPodcast flag set based on episode matching
             

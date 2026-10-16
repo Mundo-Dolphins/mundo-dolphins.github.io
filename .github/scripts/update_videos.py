@@ -11,7 +11,17 @@ import re
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
+import sys
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "backup"))
+import gojson  # noqa: E402
+
+
+def video_id(url: str) -> str:
+    """Return the YouTube video id of a watch URL (ignores extra params)."""
+    match = re.search(r"(?:[?&]v=|youtu\.be/)([A-Za-z0-9_-]{11})", url or "")
+    return match.group(1) if match else url or ""
 
 
 class VideoUpdater:
@@ -271,7 +281,8 @@ class VideoUpdater:
             "title": video.get("title", ""),
             "duration": video.get("duration", ""),
             "url": video.get("url", ""),
-            "published_at": video.get("published_at", "")
+            "published_at": video.get("published_at", ""),
+            "embeddable": video.get("embeddable", True),
         }
     
     def merge_videos(
@@ -280,24 +291,30 @@ class VideoUpdater:
         new_videos: List[Dict[str, Any]]
     ) -> List[Dict[str, Any]]:
         """Merge new videos with existing ones, avoiding duplicates."""
-        existing_urls = {v["url"] for v in existing}
-        
+        existing_by_id = {video_id(v["url"]): v for v in existing}
+
         # Add isPodcast flag to existing videos if missing
         for video in existing:
             if "isPodcast" not in video:
                 video["isPodcast"] = False
             if "embeddable" not in video:
                 video["embeddable"] = True
-        
-        # Filter and add only new videos
+
+        # Add new videos; fill in details the API knows and the entry lacks
+        # (e.g. videos added from the RSS feed have no duration).
         merged = existing.copy()
         added_count = 0
         for video in new_videos:
-            if video["url"] not in existing_urls:
+            current = existing_by_id.get(video_id(video["url"]))
+            if current is None:
                 video["isPodcast"] = False
                 merged.append(video)
+                existing_by_id[video_id(video["url"])] = video
                 added_count += 1
-        
+                continue
+            if not current.get("duration") and video.get("duration"):
+                current["duration"] = video["duration"]
+            current["embeddable"] = video.get("embeddable", True)
         # Sort by published_at (newest first), handle missing dates gracefully
         def get_sort_key(v):
             date_str = v.get("published_at", "")
@@ -326,12 +343,16 @@ class VideoUpdater:
         self,
         episodes: Dict[str, List[Dict[str, Any]]]
     ) -> None:
-        """Save updated episodes back to season files."""
+        """Save updated episodes back to season files.
+
+        The files are also written by the Go checker on the Raspberry Pi, so
+        they are written byte-compatible with it (see scripts/backup/gojson.py)
+        to avoid reformatting the whole file.
+        """
         for season_name, season_episodes in episodes.items():
             season_file = self.data_dir / f"{season_name}.json"
             try:
-                with open(season_file, "w", encoding="utf-8") as f:
-                    json.dump(season_episodes, f, ensure_ascii=False, indent=2)
+                gojson.write(season_file, season_episodes)
                 print(f"Saved episodes to {season_file}")
             except Exception as e:
                 print(f"Error saving {season_file}: {e}")
