@@ -9,6 +9,8 @@
     - "Equipos especiales": lista con campos de pateo/punting
 
   Se crean sub-tablas filtrando por presencia de campos relevantes.
+  Los valores del JSON son strings ("0", ""): en Hugo cualquier string no
+  vacío es truthy, así que se comparan siempre como enteros (gt (int x) 0).
 */}}
 {{ $playerStats := index . "Estadísticas por jugador" }}
 {{ $ofensiva    := index $playerStats "Ofensiva" }}
@@ -17,7 +19,7 @@
 
 {{/* ── Pase ── */}}
 {{ $passers := slice }}
-{{ range $ofensiva }}{{ if .Intentos }}{{ $passers = $passers | append . }}{{ end }}{{ end }}
+{{ range $ofensiva }}{{ if gt (int .Intentos) 0 }}{{ $passers = $passers | append . }}{{ end }}{{ end }}
 {{ if $passers }}
 <h5>Pase</h5>
 <div class="table-responsive">
@@ -48,7 +50,7 @@
 
 {{/* ── Carrera ── */}}
 {{ $rushers := slice }}
-{{ range $ofensiva }}{{ if .Acarreos }}{{ $rushers = $rushers | append . }}{{ end }}{{ end }}
+{{ range $ofensiva }}{{ if gt (int .Carreras) 0 }}{{ $rushers = $rushers | append . }}{{ end }}{{ end }}
 {{ if $rushers }}
 <h5>Carrera</h5>
 <div class="table-responsive">
@@ -62,7 +64,7 @@
     {{ range $rushers }}
     <tr>
       <td>{{ .Nombre }}</td>
-      <td>{{ .Acarreos }}</td>
+      <td>{{ .Carreras }}</td>
       <td>{{ index . "Yds carrera" }}</td>
       <td>{{ index . "TD carrera" }}</td>
       <td>{{ index . "Largo carrera" }}</td>
@@ -76,7 +78,7 @@
 {{/* ── Recepción ── */}}
 {{ $receivers := slice }}
 {{ range $ofensiva }}
-  {{ if or .Rec .Objetivos }}{{ $receivers = $receivers | append . }}{{ end }}
+  {{ if or (gt (int .Rec) 0) (gt (int .Objetivos) 0) }}{{ $receivers = $receivers | append . }}{{ end }}
 {{ end }}
 {{ if $receivers }}
 <h5>Recepción</h5>
@@ -138,27 +140,110 @@
 {{ end }}
 
 {{/* ── Equipos especiales ── */}}
-{{ if $especiales }}
-<h5>Equipos especiales</h5>
+{{ $kickers := slice }}
+{{ $punters := slice }}
+{{ $koReturners := slice }}
+{{ $puntReturners := slice }}
+{{ range $especiales }}
+  {{ if or (gt (int .FGa) 0) (gt (int .XPa) 0) }}{{ $kickers = $kickers | append . }}{{ end }}
+  {{ if gt (int .Punts) 0 }}{{ $punters = $punters | append . }}{{ end }}
+  {{ if gt (int (index . "Retornos KO")) 0 }}{{ $koReturners = $koReturners | append . }}{{ end }}
+  {{ if gt (int (index . "Retornos punt")) 0 }}{{ $puntReturners = $puntReturners | append . }}{{ end }}
+{{ end }}
+
+{{ if $kickers }}
+<h5>Pateadores</h5>
 <div class="table-responsive">
 <table class="game-stats-table">
   <thead>
     <tr>
-      <th>Jugador</th><th>FGm</th><th>FGa</th><th>XPm</th><th>XPa</th>
-      <th>Punts</th><th>Yds punt</th><th>Prom</th>
+      <th>Jugador</th><th>FGm</th><th>FGa</th><th>Largo FG</th><th>XPm</th><th>XPa</th>
     </tr>
   </thead>
   <tbody>
-    {{ range $especiales }}
+    {{ range $kickers }}
     <tr>
       <td>{{ .Nombre }}</td>
       <td>{{ .FGm }}</td>
       <td>{{ .FGa }}</td>
+      <td>{{ index . "FG largo" }}</td>
       <td>{{ .XPm }}</td>
       <td>{{ .XPa }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{ if $punters }}
+<h5>Despejes (punts)</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Punts</th><th>Yds</th><th>Prom</th><th>Largo</th><th>Dentro de 20</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $punters }}
+    <tr>
+      <td>{{ .Nombre }}</td>
       <td>{{ .Punts }}</td>
       <td>{{ index . "Yds punt" }}</td>
       <td>{{ index . "Prom punt" }}</td>
+      <td>{{ index . "Largo punt" }}</td>
+      <td>{{ index . "Dentro de 20" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{ if $koReturners }}
+<h5>Retornos de patada (KO)</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Retornos</th><th>Yds</th><th>Prom</th><th>Largo</th><th>TD</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $koReturners }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ index . "Retornos KO" }}</td>
+      <td>{{ index . "Yds retorno KO" }}</td>
+      <td>{{ index . "Prom retorno KO" }}</td>
+      <td>{{ index . "Largo retorno KO" }}</td>
+      <td>{{ index . "TD KO" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+{{ end }}
+
+{{ if $puntReturners }}
+<h5>Retornos de punt</h5>
+<div class="table-responsive">
+<table class="game-stats-table">
+  <thead>
+    <tr>
+      <th>Jugador</th><th>Retornos</th><th>Yds</th><th>Prom</th><th>Largo</th><th>TD</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $puntReturners }}
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ index . "Retornos punt" }}</td>
+      <td>{{ index . "Yds retorno punt" }}</td>
+      <td>{{ index . "Prom retorno punt" }}</td>
+      <td>{{ index . "Largo retorno punt" }}</td>
+      <td>{{ index . "TD punt" }}</td>
     </tr>
     {{ end }}
   </tbody>
