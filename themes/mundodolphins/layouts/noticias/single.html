@@ -7,7 +7,7 @@
             <h1 class="post__title">{{ .Title }}</h1>
             {{ $format := "02-01-2006 15:04" }}
             <div>Publicado: {{ partial "fecha-es.html" .Date }}</div>
-            <div>Autor: <a href="{{ .Params.AuthorLink }}">{{ .Params.Author }}</a></div>
+            {{ partial "author-line.html" . }}
         </header>
         
         <div class="content post__content clearfix">

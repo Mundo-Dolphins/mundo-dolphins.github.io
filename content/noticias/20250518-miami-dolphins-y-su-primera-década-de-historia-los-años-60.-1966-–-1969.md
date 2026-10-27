@@ -2,7 +2,7 @@
 layout: noticias
 title: Miami Dolphins, y su primera década de historia, los años 60. (1966 – 1969)
 date: 2025-05-18T21:17:00+02:00
-author: José Ramon
+author: José Ramón
 authorLink: https://bsky.app/profile/jrremis.bsky.social
 ---
 Hoy por hoy nos costaría imaginar una ciudad como Miami sin una franquicia en la NFL, y más a nosotros los dolfans, pero déjame que te cuente que transcurrieron muchos años desde la creación de la primera competición de football americano hasta la existencia de un equipo en la ciudad.

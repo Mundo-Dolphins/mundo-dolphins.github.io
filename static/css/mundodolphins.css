@@ -2519,3 +2519,6 @@ body.body {
         min-height: 420px;
     }
 }
+
+.post__author-social { margin-left: .4em; font-size: .9em; white-space: nowrap; }
+.post__author-icon { width: 1em; height: 1em; vertical-align: -.125em; margin-right: .25em; fill: currentColor; }

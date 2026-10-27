@@ -1,0 +1,20 @@
+{{- with .Params.author }}
+{{- $term := index ($.GetTerms "author") 0 }}
+<div class="post__author">Autor:
+	{{- if $term }} <a href="{{ $term.RelPermalink }}">{{ . }}</a>{{ else }} {{ . }}{{ end }}
+	{{- with $.Params.authorLink }}
+	{{- $u := urls.Parse . }}
+	{{- $host := strings.TrimPrefix "www." $u.Host }}
+	{{- $handle := path.Base $u.Path }}
+	{{- $icon := "" }}
+	{{- if eq $host "bsky.app" }}{{ $icon = "svg/bluesky.svg" }}
+	{{- else if in (slice "x.com" "twitter.com") $host }}{{ $icon = "svg/twitter.svg" }}{{ end }}
+	{{- if $icon }}
+	<a class="post__author-social" href="{{ . }}" target="_blank" rel="noopener" title="{{ $host }}">
+		{{- partial $icon (dict "class" "post__author-icon") }}@{{ $handle }}</a>
+	{{- else }}
+	<a class="post__author-social" href="{{ . }}" target="_blank" rel="noopener">{{ $host }}</a>
+	{{- end }}
+	{{- end }}
+</div>
+{{- end }}
