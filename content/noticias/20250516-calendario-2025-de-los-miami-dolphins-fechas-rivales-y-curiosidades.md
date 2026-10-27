@@ -2,7 +2,7 @@
 layout: noticias
 title: 'Calendario 2025 de los Miami Dolphins: Fechas, rivales y curiosidades'
 date: 2025-05-16T19:31:00+02:00
-author: Santos C.
+author: Santos
 authorLink: https://bsky.app/profile/mundodolphins.es
 ---
 La temporada 2025 de los Miami Dolphins promete emociones fuertes, no solo por el reto de regresar a playoffs tras una temporada pasada en la que se quedaron a las puertas , sino también por la cantidad de partidos en horario estelar y el duelo internacional en Madrid. Este será un evento histórico tanto para la franquicia como para los aficionados españoles del fútbol americano. Por primera vez, un partido oficial de temporada regular se disputará en España, y los Dolphins serán los protagonistas de este hito. 

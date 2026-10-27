@@ -6,8 +6,17 @@ copyright: Mundo Dolphins
 theme: mundodolphins
 pagination:
   pagerSize: 15
+removePathAccents: true
+taxonomies:
+  category: categories
+  tag: tags
+  author: author
 permalinks:
   news: post/:year/:slug/
+  taxonomy:
+    author: /autor/
+  term:
+    author: /autor/:slug/
 params:
   description: El podcast de los Dolphins de Miami
   dateformat: "02-01-2006"
