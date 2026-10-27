@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T09:50:44Z",
+  "generated_at": "2026-10-27T13:55:15Z",
   "data": {
     "team": {
       "id": "mia",
@@ -14,15 +14,15 @@
       "to_season": 2026
     },
     "totals": {
-      "opponents": 8,
-      "games": 8,
-      "wins": 0,
+      "opponents": 9,
+      "games": 9,
+      "wins": 1,
       "losses": 8,
       "ties": 0,
-      "points_for": 92,
-      "points_against": 195,
-      "point_differential": -103,
-      "regular_season_games": 5,
+      "points_for": 120,
+      "points_against": 220,
+      "point_differential": -100,
+      "regular_season_games": 6,
       "playoff_games": 0,
       "unknown_games": 3
     },
@@ -328,6 +328,56 @@
             "result": "L",
             "margin": -23,
             "path": "historia/partidos/nyg-mia-20260822"
+          }
+        ]
+      },
+      {
+        "opponent": {
+          "id": "nyj",
+          "name": "New York Jets"
+        },
+        "summary": {
+          "games": 1,
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "points_for": 28,
+          "points_against": 25,
+          "point_differential": 3,
+          "regular_season_games": 1,
+          "playoff_games": 0,
+          "first_game": "2026-10-25",
+          "last_game": "2026-10-25"
+        },
+        "by_season": [
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 25,
+            "point_differential": 3,
+            "regular_season_games": 1,
+            "playoff_games": 0
+          }
+        ],
+        "latest_games": [
+          {
+            "game_id": "202610250nyj",
+            "season": 2026,
+            "date": "2026-10-25",
+            "week": "7",
+            "game_type": "regular_season",
+            "home_away": "away",
+            "opponent_id": "nyj",
+            "opponent_name": "New York Jets",
+            "points_for": 28,
+            "points_against": 25,
+            "result": "W",
+            "margin": 3,
+            "path": "historia/partidos/mia-nyj-20261025"
           }
         ]
       },
