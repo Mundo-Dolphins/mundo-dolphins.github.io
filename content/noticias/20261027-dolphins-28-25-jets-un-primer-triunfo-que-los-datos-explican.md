@@ -72,13 +72,13 @@ Ollie Gordon II terminó con 103 yardas en 25 carreras y un touchdown, superando
 
 Pero el dato que importa no es su media de 4,1 yardas por carrera —inferior a las 4,9 que había promediado contra Cincinnati—, sino el papel que el ataque terrestre jugó en el cierre del partido.
 
-Miami corrió 41 veces para 156 yardas (3,8 de media) frente a los Jets. En Cincinnati había corrido 34 veces para 217, a 6,4 por intento. Por yardas por carrera, Nueva Jersey no fue más eficiente. Lo que cambió fue el contexto: el juego terrestre se utilizó durante más tiempo y, sobre todo, en la posesión que selló la victoria.
+Miami corrió 41 veces para 156 yardas (3,8 de media) frente a los Jets. En Cincinnati había corrido 34 veces para 217, a 6,4 por intento. Por yardas por carrera, los Jets no fueron más eficiente. Lo que cambió fue el contexto: el juego terrestre se utilizó durante más tiempo y, sobre todo, en la posesión que selló la victoria.
 
 Cuando los Jets recortaron la desventaja a un touchdown, el 28-25, Miami recuperó el balón con poco más de tres minutos en el reloj. Gordon abrió la serie con una carrera de 14 yardas y otra de siete que obligaron a Nueva York a gastar sus _timeouts_. Después, la ofensiva encadenó varias carreras consecutivas —con esquemas de _gap scheme_, según confirmó Hafley tras revisar las imágenes— y llegó a un fourth down y una yarda que Willis resolvió con una carrera de quarterback para primer down y control del reloj.
 
 El equipo no volvió a lanzar un pase.
 
-Ese tipo de posesión —larga, sin riesgo de turnover, con el rival fuera del juego— es lo que Miami no había conseguido cerrar con éxito en las cinco jornadas anteriores. La capacidad terrestre no nació contra los Jets; Gordon ya había anotado 100 yardas ante Minnesota y 88 contra Cincinnati. Pero en Nueva Jersey, por primera vez, el juego por tierra no solo produjo buenas estadísticas: resolvió la serie que importaba.
+Ese tipo de posesión —larga, sin riesgo de turnover, con el rival fuera del juego— es lo que Miami no había conseguido cerrar con éxito en las cinco jornadas anteriores. La capacidad terrestre no nació contra los Jets; Gordon ya había anotado 100 yardas ante Minnesota y 88 contra Cincinnati. Pero en el Metlife Stadium, por primera vez, el juego por tierra no sólo produjo buenas estadísticas: resolvió la serie que importaba.
 
 ## Douglas y Dulcich ampliaron el abanico aéreo
 
