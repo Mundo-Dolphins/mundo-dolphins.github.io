@@ -22,6 +22,28 @@ jobs:
         chmod +x scripts/notify/detect_new_articles.sh
         scripts/notify/detect_new_articles.sh
 
+    - name: 🔎 Validate Firebase service account secret
+      if: steps.detect_new.outputs.has_new_articles == 'true'
+      env:
+        SERVICE_ACCOUNT_JSON: ${{ secrets.ANDROID_FIREBASE_SERVICE_ACCOUNT_JSON }}
+      run: |
+        set -euo pipefail
+        if [[ -z "$SERVICE_ACCOUNT_JSON" ]]; then
+          echo "::error::Secret ANDROID_FIREBASE_SERVICE_ACCOUNT_JSON is empty or not set."
+          exit 1
+        fi
+        if ! echo "$SERVICE_ACCOUNT_JSON" | jq -e '
+            type == "object"
+            and .type == "service_account"
+            and (.project_id | type == "string" and length > 0)
+            and (.client_email | type == "string" and length > 0)
+            and (.private_key | type == "string" and startswith("-----BEGIN"))
+          ' >/dev/null 2>&1; then
+          echo "::error::Secret ANDROID_FIREBASE_SERVICE_ACCOUNT_JSON is not a valid service account key JSON. Generate a new key in Firebase Console (Project settings > Service accounts) and store the raw file contents with: gh secret set ANDROID_FIREBASE_SERVICE_ACCOUNT_JSON < service-account.json"
+          exit 1
+        fi
+        echo "Service account secret looks valid."
+
     - name: Authenticate to Google Cloud
       if: steps.detect_new.outputs.has_new_articles == 'true'
       id: auth
