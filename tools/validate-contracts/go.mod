@@ -1,6 +1,6 @@
 module github.com/Mundo-Dolphins/mundo-dolphins.github.io/tools/validate-contracts
 
-go 1.22
+go 1.27.3
 
 require (
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.3
