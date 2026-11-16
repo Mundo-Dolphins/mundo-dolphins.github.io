@@ -143,3 +143,16 @@ def test_gamebook_mode_skips_scheduled(repo_copy):
 def test_gamebook_window(repo_copy):
     run("stats", repo_copy, 2026, TODAY, FakeSession(pdf=False))
     assert run("gamebook", repo_copy, 2026, date(2026, 12, 15), FakeSession()) == []
+
+
+class NflDownSession(FakeSession):
+    def get(self, url, params=None, **kwargs):
+        if "nfl.com" in url:
+            raise requests.ConnectionError("nfl.com caído")
+        return super().get(url, params=params, **kwargs)
+
+
+def test_nflcom_failure_keeps_espn_stats(repo_copy):
+    assert run("stats", repo_copy, 2026, TODAY, NflDownSession(), game_id="202611150clt") == ["202611150clt"]
+    info = read(repo_copy, "games/2026/202611150clt.json")["sections"]["Información del partido"]
+    assert info["Estado"] == "final" and "Gamebook oficial" not in info

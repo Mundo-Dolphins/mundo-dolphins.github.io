@@ -125,3 +125,33 @@ def test_guard_blocks_existing_gamebook(tmp_repo):
 
 def test_guard_ignored_for_human_branches(tmp_repo):
     assert validate(tmp_repo, [GAME], base_of(final_page()), "feat/x") == []
+
+
+def test_guard_against_main_that_moved_after_branching(tmp_path):
+    """phins-stats publica en main mientras la PR automática espera: re-validar contra main debe fallar."""
+    import subprocess
+    import sys
+
+    from .conftest import REPO
+
+    def git(*args):
+        subprocess.run(["git", *args], cwd=tmp_path, check=True, capture_output=True)
+
+    git("init", "-q", "-b", "main")
+    git("config", "user.email", "t@t"), git("config", "user.name", "t")
+    write(tmp_path, GAME, scheduled_page())
+    git("add", "."), git("commit", "-qm", "scheduled")
+    git("checkout", "-qb", "auto/game-stats")
+    write(tmp_path, GAME, final_page())
+    git("commit", "-qam", "auto")
+    git("checkout", "-q", "main")
+    complete = final_page()
+    complete["sections"]["Oficiales"] = [{"Nombre": "phins-stats", "Posición": "Referee"}]
+    write(tmp_path, GAME, complete)
+    git("commit", "-qam", "phins-stats")
+    git("checkout", "-q", "auto/game-stats")
+
+    script = REPO / ".github/scripts/validate_data.py"
+    result = subprocess.run([sys.executable, str(script), "--base", "main", "--branch", "auto/game-stats"],
+                            cwd=tmp_path, capture_output=True, text=True)
+    assert result.returncode == 1 and "ya está final" in result.stdout

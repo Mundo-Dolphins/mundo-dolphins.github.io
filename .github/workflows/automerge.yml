@@ -15,6 +15,33 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'pull_request'
     steps:
+      # Se ejecuta el validador de main; el contenido de la PR solo se lee como datos.
+      - name: Checkout main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      # main puede haber avanzado mientras corrían las comprobaciones (p. ej. la pasada manual de
+      # phins-stats): se repite la protección contra pisados de las ramas auto/* con el main actual.
+      - name: Re-check auto branch against current main
+        if: startsWith(github.event.workflow_run.head_branch, 'auto/')
+        env:
+          HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          HEAD_REPO: ${{ github.event.workflow_run.head_repository.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [[ "$HEAD_REPO" != "$REPO" ]]; then
+            echo "::error::Rama auto/* desde otro repositorio ($HEAD_REPO)"
+            exit 1
+          fi
+          git fetch origin "$HEAD_SHA"
+          git worktree add --detach "$RUNNER_TEMP/pr" "$HEAD_SHA"
+          cd "$RUNNER_TEMP/pr"
+          python3 "$GITHUB_WORKSPACE/.github/scripts/validate_data.py" --base origin/main --branch "$HEAD_BRANCH" --root .
+
       - name: Merge pull request
         env:
           GH_TOKEN: ${{ secrets.PUSH }}

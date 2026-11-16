@@ -70,11 +70,16 @@ def _run_stats(root: Path, games: list[ScheduledGame], games_dir: Path, session)
             continue
         try:
             filled = fill_game_page(page, fetch_summary(game.event_id, session), game)
-            gamebook = _try_gamebook(root, game, session)
         except requests.RequestException as error:
             failures += 1
             print(f"::warning::{game.game_id}: {error}", file=sys.stderr)
             continue
+        try:
+            gamebook = _try_gamebook(root, game, session)
+        except requests.RequestException as error:
+            # El gamebook es opcional: llegará en la pasada de gamebook.
+            print(f"::warning::{game.game_id}: gamebook no disponible ({error})", file=sys.stderr)
+            gamebook = None
         if gamebook:
             filled["sections"][INFO]["Gamebook oficial"] = gamebook
         write_json(path, filled)
