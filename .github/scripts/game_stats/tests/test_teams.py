@@ -10,8 +10,8 @@ def test_lookup():
 
 
 def test_every_existing_game_suffix_is_known():
-    from .conftest import DATA
+    from .conftest import REPO
 
     codes = {t.pfr for t in ALL}
-    suffixes = {p.stem[9:] for p in (DATA / "games" / "2026").glob("*.json")}
+    suffixes = {p.stem[9:] for p in (REPO / "data/historical/games/2026").glob("*.json")}
     assert suffixes <= codes
