@@ -1,0 +1,109 @@
+name: Update Game Stats
+
+# Rellena automáticamente las fichas de los partidos de Miami ya terminados (ESPN) y añade el
+# gamebook oficial cuando NFL.com lo publica. Cada ejecución sale en segundos si no hay nada
+# que hacer; las PRs se fusionan solas tras pasar "PR checks".
+on:
+  workflow_dispatch:
+    inputs:
+      game_id:
+        description: "Forzar un partido concreto (p. ej. 202611150clt)"
+        required: false
+      season:
+        description: "Temporada (por defecto la actual)"
+        required: false
+  schedule:
+    - cron: "*/30 * * * *"
+
+concurrency:
+  group: update-game-stats
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.PUSH }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fill finished games
+        id: stats
+        env:
+          GAME_ID: ${{ inputs.game_id }}
+          SEASON: ${{ inputs.season }}
+        run: |
+          python .github/scripts/update_game_stats.py --mode stats \
+            ${GAME_ID:+--game-id "$GAME_ID"} ${SEASON:+--season "$SEASON"}
+
+      - name: Create stats pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.PUSH }}
+          branch: auto/game-stats
+          base: main
+          title: "feat: estadísticas automáticas ${{ steps.stats.outputs.changed }}"
+          body: |
+            Estadísticas provisionales de ESPN para: `${{ steps.stats.outputs.changed }}`.
+
+            - Ficha del partido (marcador, anotaciones, estadísticas de equipo y jugadores, oficiales)
+            - Récord y puntos en `seasons/`, historial en `rivals/index.json`
+            - Gamebook oficial si NFL.com ya lo ha publicado
+
+            Se sobrescribirá con la pasada manual de phins-stats.
+          labels: automerge
+          add-paths: |
+            data/historical
+            assets/gamebooks
+          delete-branch: true
+          commit-message: "feat: estadísticas automáticas ${{ steps.stats.outputs.changed }}"
+          committer: "GitHub Action <action@github.com>"
+          author: "GitHub Action <action@github.com>"
+
+      # La pasada de gamebook parte del estado de main: solo actúa sobre fichas ya fusionadas como final.
+      - name: Reset to main
+        run: |
+          git fetch origin main
+          git checkout -f main
+          git reset --hard origin/main
+          git clean -fd -- data/historical assets/gamebooks
+
+      - name: Add published gamebooks
+        id: gamebook
+        env:
+          GAME_ID: ${{ inputs.game_id }}
+          SEASON: ${{ inputs.season }}
+        run: |
+          python .github/scripts/update_game_stats.py --mode gamebook \
+            ${GAME_ID:+--game-id "$GAME_ID"} ${SEASON:+--season "$SEASON"}
+
+      - name: Create gamebook pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.PUSH }}
+          branch: auto/gamebook
+          base: main
+          title: "feat: gamebook ${{ steps.gamebook.outputs.changed }}"
+          body: |
+            Gamebook oficial de NFL.com para: `${{ steps.gamebook.outputs.changed }}`.
+          labels: automerge
+          add-paths: |
+            data/historical
+            assets/gamebooks
+          delete-branch: true
+          commit-message: "feat: gamebook ${{ steps.gamebook.outputs.changed }}"
+          committer: "GitHub Action <action@github.com>"
+          author: "GitHub Action <action@github.com>"
