@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-27T18:34:51Z",
+  "generated_at": "2026-11-15T18:00:00Z",
   "data": {
     "team": {
       "id": "mia",
@@ -15,14 +15,14 @@
     },
     "totals": {
       "opponents": 43,
-      "games": 1079,
+      "games": 1082,
       "wins": 581,
-      "losses": 493,
+      "losses": 496,
       "ties": 5,
-      "points_for": 22670,
-      "points_against": 21829,
-      "point_differential": 841,
-      "regular_season_games": 937,
+      "points_for": 22720,
+      "points_against": 21896,
+      "point_differential": 824,
+      "regular_season_games": 940,
       "playoff_games": 41,
       "unknown_games": 101
     },
@@ -4035,18 +4035,18 @@
           "name": "Detroit Lions"
         },
         "summary": {
-          "games": 14,
+          "games": 15,
           "wins": 9,
-          "losses": 5,
+          "losses": 6,
           "ties": 0,
-          "points_for": 374,
-          "points_against": 284,
-          "point_differential": 90,
-          "regular_season_games": 13,
+          "points_for": 383,
+          "points_against": 303,
+          "point_differential": 80,
+          "regular_season_games": 14,
           "playoff_games": 0,
           "unknown_games": 1,
           "first_game": "1973-12-15",
-          "last_game": "2025-08-16"
+          "last_game": "2026-11-08"
         },
         "by_season": [
           {
@@ -4217,9 +4217,36 @@
             "regular_season_games": 0,
             "playoff_games": 0,
             "unknown_games": 1
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 9,
+            "points_against": 19,
+            "point_differential": -10,
+            "regular_season_games": 1,
+            "playoff_games": 0
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202611080mia",
+            "season": 2026,
+            "date": "2026-11-08",
+            "week": "9",
+            "game_type": "regular_season",
+            "home_away": "home",
+            "opponent_id": "det",
+            "opponent_name": "Detroit Lions",
+            "points_for": 9,
+            "points_against": 19,
+            "result": "L",
+            "margin": -10,
+            "path": "historia/partidos/det-mia-20261108"
+          },
           {
             "game_id": "202508160det",
             "season": 2025,
@@ -4279,21 +4306,6 @@
             "result": "L",
             "margin": -4,
             "path": "historia/partidos/mia-det-20141109"
-          },
-          {
-            "game_id": "201012260mia",
-            "season": 2010,
-            "date": "2010-12-26",
-            "week": "16",
-            "game_type": "regular_season",
-            "home_away": "home",
-            "opponent_id": "det",
-            "opponent_name": "Detroit Lions",
-            "points_for": 27,
-            "points_against": 34,
-            "result": "L",
-            "margin": -7,
-            "path": "historia/partidos/det-mia-20101226"
           }
         ]
       },
@@ -5035,17 +5047,17 @@
           "name": "Indianapolis Colts"
         },
         "summary": {
-          "games": 78,
+          "games": 79,
           "wins": 48,
-          "losses": 30,
+          "losses": 31,
           "ties": 0,
-          "points_for": 1714,
-          "points_against": 1363,
-          "point_differential": 351,
-          "regular_season_games": 76,
+          "points_for": 1736,
+          "points_against": 1387,
+          "point_differential": 349,
+          "regular_season_games": 77,
           "playoff_games": 2,
           "first_game": "1970-11-01",
-          "last_game": "2025-09-07"
+          "last_game": "2026-11-15"
         },
         "by_season": [
           {
@@ -5575,9 +5587,36 @@
             "point_differential": -25,
             "regular_season_games": 1,
             "playoff_games": 0
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 24,
+            "point_differential": -2,
+            "regular_season_games": 1,
+            "playoff_games": 0
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202611150clt",
+            "season": 2026,
+            "date": "2026-11-15",
+            "week": "10",
+            "game_type": "regular_season",
+            "home_away": "away",
+            "opponent_id": "clt",
+            "opponent_name": "Indianapolis Colts",
+            "points_for": 22,
+            "points_against": 24,
+            "result": "L",
+            "margin": -2,
+            "path": "historia/partidos/mia-clt-20261115"
+          },
           {
             "game_id": "202509070clt",
             "season": 2025,
@@ -5637,21 +5676,6 @@
             "result": "W",
             "margin": 4,
             "path": "historia/partidos/mia-clt-20191110"
-          },
-          {
-            "game_id": "201811250clt",
-            "season": 2018,
-            "date": "2018-11-25",
-            "week": "12",
-            "game_type": "regular_season",
-            "home_away": "away",
-            "opponent_id": "clt",
-            "opponent_name": "Indianapolis Colts",
-            "points_for": 24,
-            "points_against": 27,
-            "result": "L",
-            "margin": -3,
-            "path": "historia/partidos/mia-clt-20181125"
           }
         ]
       },
@@ -8573,17 +8597,17 @@
           "name": "New England Patriots"
         },
         "summary": {
-          "games": 121,
+          "games": 122,
           "wins": 64,
-          "losses": 57,
+          "losses": 58,
           "ties": 0,
-          "points_for": 2576,
-          "points_against": 2629,
-          "point_differential": -53,
-          "regular_season_games": 117,
+          "points_for": 2595,
+          "points_against": 2653,
+          "point_differential": -58,
+          "regular_season_games": 118,
           "playoff_games": 4,
           "first_game": "1966-11-27",
-          "last_game": "2026-01-04"
+          "last_game": "2026-11-01"
         },
         "by_season": [
           {
@@ -9305,9 +9329,36 @@
             "point_differential": -34,
             "regular_season_games": 2,
             "playoff_games": 0
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 24,
+            "point_differential": -5,
+            "regular_season_games": 1,
+            "playoff_games": 0
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202611010mia",
+            "season": 2026,
+            "date": "2026-11-01",
+            "week": "8",
+            "game_type": "regular_season",
+            "home_away": "home",
+            "opponent_id": "nwe",
+            "opponent_name": "New England Patriots",
+            "points_for": 19,
+            "points_against": 24,
+            "result": "L",
+            "margin": -5,
+            "path": "historia/partidos/nwe-mia-20261101"
+          },
           {
             "game_id": "202601040nwe",
             "season": 2025,
@@ -9367,21 +9418,6 @@
             "result": "W",
             "margin": 5,
             "path": "historia/partidos/mia-nwe-20241006"
-          },
-          {
-            "game_id": "202310290mia",
-            "season": 2023,
-            "date": "2023-10-29",
-            "week": "8",
-            "game_type": "regular_season",
-            "home_away": "home",
-            "opponent_id": "nwe",
-            "opponent_name": "New England Patriots",
-            "points_for": 31,
-            "points_against": 17,
-            "result": "W",
-            "margin": 14,
-            "path": "historia/partidos/nwe-mia-20231029"
           }
         ]
       },
