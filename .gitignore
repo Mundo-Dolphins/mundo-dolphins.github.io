@@ -17,3 +17,7 @@ checker.tar.gz
 .DS_Store
 .venv
 .hugo_cache
+
+# Python
+__pycache__/
+.pytest_cache/
