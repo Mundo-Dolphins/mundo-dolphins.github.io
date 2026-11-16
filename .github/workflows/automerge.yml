@@ -1,8 +1,8 @@
 name: Automerge
 
 # Fusiona las PRs con la etiqueta `automerge` cuando "PR checks" termina con éxito.
-# main no está protegida (el CMS publica noticias directamente), así que el merge se hace
-# aquí tras la validación en lugar de con `gh pr merge --auto`.
+# La ruleset "Main" exige el check `validate` de "PR checks" (el CMS de noticias está en su lista
+# de bypass y publica directamente); este workflow hace el merge en cuanto ese check pasa.
 on:
   workflow_run:
     workflows:

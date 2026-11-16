@@ -57,10 +57,11 @@ manualmente después, que sobrescribe la ficha, la temporada y los rivales con l
 ## Restricciones y hechos verificados
 
 - **Repo público**, minutos de Actions gratuitos. `main` recibe commits directos del CMS de
-  noticias. `main` **no está protegida**
-  (`gh api .../branches/main/protection` → 404) y `allow_auto_merge` está activado: hoy
-  `gh pr merge --auto` fusiona inmediatamente sin esperar a nada. El workflow `automerge.yml`
-  consulta la API de *commit statuses* (legacy), que no ve los *check runs* de Actions.
+  noticias. *Corrección (2026-11-16, tras el despliegue):* `main` **sí está protegida** por la
+  ruleset "Main" (id 4210217; la API de protección clásica devuelve 404 y no la muestra): exige
+  PR con squash y un check obligatorio, con la rama al día (`strict`). El CMS (integración 85455)
+  y el rol de repositorio 4 están en su lista de bypass. El check obligatorio era `automerge`
+  (el job del `automerge.yml` antiguo); se ha cambiado a `validate` (job de `pr-checks`).
 - Secreto `PUSH` (PAT) ya usado para crear PRs que sí disparan workflows; reutilizarlo.
 - Patrón existente a imitar: `.github/workflows/update-youtube-videos.yml` +
   `.github/scripts/update_videos.py` (Python 3.11, `requests`,
@@ -188,10 +189,9 @@ gamebook a una ficha que ya lo tiene). Así, si Javi publica la salida de `phins
 una PR automática espera, esta no se fusiona y no pisa los datos completos. El workflow del cron,
 al ver que la ficha ya no está `scheduled`, cierra la PR obsoleta.
 
-**Auto-merge real sin proteger `main`:** `main` recibe hoy commits directos (las noticias
-"Create noticias …" desde el CMS), y una regla de protección con check obligatorio podría
-bloquearlos. Por eso **no se protege `main`**. En su lugar, el merge lo dispara el propio
-resultado de la validación: `automerge.yml` pasa a ejecutarse en `workflow_run` de
+**Auto-merge:** la ruleset "Main" exige el check `validate` (ver Restricciones), así que GitHub
+no deja fusionar nada que no haya pasado la validación; el CMS sigue publicando por bypass. El
+merge lo dispara el propio resultado de la validación: `automerge.yml` pasa a ejecutarse en `workflow_run` de
 `pr-checks` (`completed`), y solo si `conclusion == success` y la PR tiene label `automerge`
 hace `gh pr merge --squash --delete-branch` (sin `--auto`) con el token `PUSH`. Se elimina el
 `sleep 30` y la consulta a la API de *statuses*. Las PRs de vídeos/posts existentes pasan también
@@ -226,8 +226,7 @@ por la validación antes de fusionarse, que es lo deseado.
 - Descripciones de anotaciones: se intenta el formato español existente
   ("X pase de N yardas de Y (Z kick)") con plantillas para los tipos comunes; si no se reconoce
   el patrón, se deja el texto original de ESPN.
-- No proteger `main`; el merge lo dispara el éxito de `pr-checks` (`workflow_run`), para no
-  bloquear los commits directos del CMS.
+- El merge lo dispara el éxito de `pr-checks` (`workflow_run`); la ruleset "Main" exige `validate`.
 - Guarda anti-pisado en `pr-checks` para PRs `auto/*` y cierre de PRs obsoletas.
 - Validación de datos solo sobre ficheros modificados; no se arregla contenido existente.
 - Se soportan pretemporada (`pre`) y playoffs (`post`) además de temporada regular, verificando el

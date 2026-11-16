@@ -20,7 +20,7 @@
 - Gamebooks solo se buscan para partidos con fecha ≥ hoy − 14 días.
 - PRs: ramas fijas `auto/game-stats` y `auto/gamebook`, label `automerge`, token `secrets.PUSH`.
 - Rivals: replicar `phins-stats/internal/hugodata/rival_index.go` (`gameTypeFromWeek`: semana numérica → `regular_season`, contiene playoff/wild card/division/conference/super bowl/championship → `playoffs`, otro → `unknown`; `latest_games` máx. 5, más reciente primero). Un partido ya presente en `latest_games` de algún rival no se vuelve a sumar.
-- No proteger `main`; no tocar `season_stats/`.
+- No tocar `season_stats/`. (La ruleset "Main" exige ahora el check `validate`.)
 
 ## Review Focus
 
