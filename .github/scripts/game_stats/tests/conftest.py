@@ -5,7 +5,9 @@ import pytest
 
 FIXTURES = Path(__file__).parent / "fixtures"
 REPO = Path(__file__).resolve().parents[4]
-DATA = REPO / "data" / "historical"
+# Copia congelada de data/historical (main a 2026-11-16): los datos reales cambian con cada
+# partido y los tests no deben depender de ellos.
+DATA = FIXTURES / "data"
 
 
 def load(name: str):
