@@ -3,7 +3,7 @@
     "name": "mundodolphins.hugo.rival-index",
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-16T15:41:00Z",
+  "generated_at": "2026-11-22T18:00:00Z",
   "data": {
     "team": {
       "id": "mia",
@@ -15,14 +15,14 @@
     },
     "totals": {
       "opponents": 43,
-      "games": 1082,
+      "games": 1083,
       "wins": 581,
-      "losses": 496,
+      "losses": 497,
       "ties": 5,
-      "points_for": 22720,
-      "points_against": 21896,
-      "point_differential": 824,
-      "regular_season_games": 940,
+      "points_for": 22729,
+      "points_against": 21922,
+      "point_differential": 807,
+      "regular_season_games": 941,
       "playoff_games": 41,
       "unknown_games": 101
     },
@@ -1143,17 +1143,17 @@
           "name": "Buffalo Bills"
         },
         "summary": {
-          "games": 125,
+          "games": 126,
           "wins": 63,
-          "losses": 61,
+          "losses": 62,
           "ties": 1,
-          "points_for": 2658,
-          "points_against": 2660,
-          "point_differential": -2,
-          "regular_season_games": 120,
+          "points_for": 2667,
+          "points_against": 2686,
+          "point_differential": -19,
+          "regular_season_games": 121,
           "playoff_games": 5,
           "first_game": "1966-09-18",
-          "last_game": "2025-11-09"
+          "last_game": "2026-11-22"
         },
         "by_season": [
           {
@@ -1875,9 +1875,36 @@
             "point_differential": 7,
             "regular_season_games": 2,
             "playoff_games": 0
+          },
+          {
+            "season": 2026,
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 9,
+            "points_against": 26,
+            "point_differential": -17,
+            "regular_season_games": 1,
+            "playoff_games": 0
           }
         ],
         "latest_games": [
+          {
+            "game_id": "202611220buf",
+            "season": 2026,
+            "date": "2026-11-22",
+            "week": "11",
+            "game_type": "regular_season",
+            "home_away": "away",
+            "opponent_id": "buf",
+            "opponent_name": "Buffalo Bills",
+            "points_for": 9,
+            "points_against": 26,
+            "result": "L",
+            "margin": -17,
+            "path": "historia/partidos/mia-buf-20261122"
+          },
           {
             "game_id": "202511090mia",
             "season": 2025,
@@ -1937,21 +1964,6 @@
             "result": "L",
             "margin": -21,
             "path": "historia/partidos/buf-mia-20240912"
-          },
-          {
-            "game_id": "202401070mia",
-            "season": 2023,
-            "date": "2024-01-07",
-            "week": "18",
-            "game_type": "regular_season",
-            "home_away": "home",
-            "opponent_id": "buf",
-            "opponent_name": "Buffalo Bills",
-            "points_for": 14,
-            "points_against": 21,
-            "result": "L",
-            "margin": -7,
-            "path": "historia/partidos/buf-mia-20240107"
           }
         ]
       },
